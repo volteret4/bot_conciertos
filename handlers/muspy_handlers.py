@@ -246,6 +246,14 @@ class MuspyHandlers:
                         "Usa `/muspy` para acceder a todas las funciones.",
                         parse_mode='Markdown'
                     )
+                    try:
+                        import admin_notify
+                        await admin_notify.notify_async(
+                            "muspy_conectado",
+                            f"Usuario ID `{user_id}` vinculó cuenta Muspy `{email}`"
+                        )
+                    except Exception:
+                        pass
                 else:
                     await status_message.edit_text(
                         "❌ Error guardando las credenciales. Inténtalo de nuevo."
@@ -493,6 +501,15 @@ class MuspyHandlers:
                 f"📊 Total procesados: {len(muspy_artists)}\n\n"
                 f"Usa `/list` para ver tus artistas seguidos."
             )
+            if added_count > 0:
+                try:
+                    import admin_notify
+                    await admin_notify.notify_async(
+                        "muspy_importacion",
+                        f"Usuario ID `{user_id}` importó {added_count} artistas desde Muspy"
+                    )
+                except Exception:
+                    pass
 
             await query.edit_message_text(message, parse_mode='Markdown')
 

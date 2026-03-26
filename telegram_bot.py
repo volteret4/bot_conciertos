@@ -26,6 +26,7 @@ from telegram.ext import (
 
 
 # Importar módulos propios
+import admin_notify
 # APIS
 from apis.muspy_service import MuspyService
 from apis.country_state_city import CountryCityService
@@ -309,6 +310,10 @@ async def artist_selection_callback(update: Update, context: ContextTypes.DEFAUL
         await query.edit_message_text(
             f"✅ ¡Ahora sigues a '{selected_candidate['name']}'! 🎵\n"
             f"Usa `/list` para ver todos tus artistas seguidos."
+        )
+        await admin_notify.notify_async(
+            "artista_añadido",
+            f"🎵 `{selected_candidate['name']}` añadido por `{user.get('username', chat_id)}`"
         )
     else:
         await query.edit_message_text(
@@ -2724,9 +2729,7 @@ async def searchartist_command(update: Update, context: ContextTypes.DEFAULT_TYP
         active_services = [s for s, active in user_services_config.items() if active and s not in ['country_filter', 'countries']]
         if not active_services:
             await update.message.reply_text(
-                "❌ No tienes ningún servicio de búsqueda activo.\n"
-                "Usa `/serviceon <servicio>` para activar al menos uno.\n"
-                "Servicios disponibles: ticketmaster, spotify, setlistfm"
+                "❌ Ticketmaster no está disponible. Comprueba la configuración del servidor."
             )
             return
 
@@ -3722,9 +3725,8 @@ async def commands(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
         "📖 *Manejo básico:*\n"
         "/adduser <usuario> - Registrarte en el sistema\n"
-        "/notify [HH:MM] - Configurar notificaciones diarias\n"
-        "/serviceon <servicio> - Activar servicio (ticketmaster/spotify/setlistfm)\n"
-        "/serviceoff <servicio> - Desactivar servicio\n\n"
+        "/notify [HH:MM] - Configurar notificaciones semanales\n"
+        "/notify day N - Cambiar día (0=lun … 6=dom)\n\n"
 
         "🤖 *Base de datos del bot:*\n"
         "/addartist <artista> - Seguir un artista\n"
@@ -3801,6 +3803,10 @@ async def adduser_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
             f"✅ Usuario '{username}' registrado correctamente.\n"
             f"Ya puedes usar `/addartist` para seguir artistas."
         )
+        await admin_notify.notify_async(
+            "nuevo_usuario",
+            f"👤 `{username}` (chat\_id: `{chat_id}`)"
+        )
     else:
         await update.message.reply_text(
             "❌ Error al registrar el usuario. Inténtalo de nuevo."
@@ -3860,6 +3866,10 @@ async def addartist_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 f"✅ ¡Ahora sigues a '{candidates[0]['name']}'! 🎵\n"
                 f"Usa `/list` para ver todos tus artistas seguidos."
             )
+            await admin_notify.notify_async(
+                "artista_añadido",
+                f"🎵 `{candidates[0]['name']}` añadido por `{user.get('username', chat_id)}`"
+            )
         else:
             await status_message.edit_text(
                 f"ℹ️ Ya seguías a '{candidates[0]['name']}'."
@@ -3889,6 +3899,10 @@ async def addartist_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 f"✅ ¡Ahora sigues a '{best_candidate['name']}'! 🎵\n"
                 f"(Seleccionado automáticamente por alta coincidencia: {best_candidate['score']}%)\n"
                 f"Usa `/list` para ver todos tus artistas seguidos."
+            )
+            await admin_notify.notify_async(
+                "artista_añadido",
+                f"🎵 `{best_candidate['name']}` añadido por `{user.get('username', chat_id)}`"
             )
         else:
             await status_message.edit_text(
@@ -4323,8 +4337,7 @@ async def search_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not active_services:
         await update.message.reply_text(
             "❌ No tienes ningún servicio de búsqueda activo.\n"
-            "Usa `/serviceon <servicio>` para activar al menos uno.\n"
-            "Servicios disponibles: ticketmaster, spotify, setlistfm"
+            "Ticketmaster no disponible. Comprueba la configuración del servidor."
         )
         return
 
@@ -4522,8 +4535,7 @@ async def search_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not active_services:
         await update.message.reply_text(
             "❌ No tienes ningún servicio de búsqueda activo.\n"
-            "Usa `/serviceon <servicio>` para activar al menos uno.\n"
-            "Servicios disponibles: ticketmaster, spotify, setlistfm"
+            "Ticketmaster no disponible. Comprueba la configuración del servidor."
         )
         return
 
@@ -5520,8 +5532,6 @@ def main():
     application.add_handler(CommandHandler("showartist", showartist_command))
 
     # Resto de handlers (sin cambios)...
-    application.add_handler(CommandHandler("serviceon", serviceon_command))
-    application.add_handler(CommandHandler("serviceoff", serviceoff_command))
     application.add_handler(CommandHandler("country", country_command))
     application.add_handler(CommandHandler("addcountry", addcountry_command))
     application.add_handler(CommandHandler("removecountry", removecountry_command))
@@ -5530,8 +5540,8 @@ def main():
     application.add_handler(CommandHandler("refreshcountries", refreshcountries_command))
     application.add_handler(CommandHandler("config", config_command))
     application.add_handler(CommandHandler("radicale", radicale_command))
-    # /lastfm eliminado como importador de artistas (Last.fm se usa solo para metadatos internos)
-    # /spotify eliminado
+    application.add_handler(CommandHandler("lastfm", lastfm_command))
+    application.add_handler(CallbackQueryHandler(lastfm_callback_handler, pattern="^lastfm_"))
 
     # ConversationHandler para login de Muspy
     application.add_handler(muspy_login_conv_handler)
