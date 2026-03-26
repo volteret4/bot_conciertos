@@ -39,13 +39,8 @@ from handlers.calendar_handlers import CalendarHandlers
 from handlers.muspy_handlers import MuspyHandlers, MUSPY_EMAIL, MUSPY_PASSWORD, MUSPY_USERID
 # telegram handlers
 from handlers.handlers_helpers import (
-handle_notification_callback, handle_country_callback, handle_service_callback,
-handle_lastfm_period_selection, handle_lastfm_do_sync, handle_lastfm_change_limit, handle_lastfm_change_user,
-handle_spotify_authentication, handle_spotify_real_artists, handle_spotify_show_artists,
-handle_spotify_add_artists, handle_spotify_change_limit, handle_spotify_change_user,
-show_artists_page, show_artists_without_pagination, show_lastfm_artists_page, show_spotify_artists_page,
-extract_auth_code_from_input, escape_markdown_v2, handle_spotify_playlists, show_spotify_playlists_page, handle_spotify_playlist_view,
-show_spotify_playlist_artists_page, handle_spotify_playlist_follow_all
+    handle_notification_callback, handle_country_callback, handle_service_callback,
+    show_artists_page, show_artists_without_pagination, escape_markdown_v2,
 )
 
 # Configuración de logging
@@ -63,9 +58,16 @@ muspy_service = None
 muspy_handlers = None
 calendar_handlers = None
 
+async def _removed_spotify_command_placeholder():
+    pass  # /spotify eliminado — ver commit history
+
+
 async def spotify_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    """Comando /spotify - gestión de sincronización con Spotify - VERSIÓN CORREGIDA"""
-    services = get_services()
+    await update.message.reply_text("❌ El comando /spotify ha sido eliminado de esta versión del bot.")
+
+
+async def _removed_show_spotify_menu_placeholder():
+    pass  # show_spotify_menu eliminado
 
     # DIAGNÓSTICO DETALLADO
     spotify_service = services.get('spotify_service')
@@ -4061,31 +4063,31 @@ async def remove_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
             f"❌ No seguías a '{artist_name}' o no se encontró el artista."
         )
 
+_NOTIFY_DAYS = ['lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado', 'domingo']
+
 async def notify_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    """Comando /notify para configurar notificaciones"""
+    """Comando /notify para configurar notificaciones semanales"""
     chat_id = update.effective_chat.id
 
-    # Verificar que el usuario esté registrado
     user = db.get_user_by_chat_id(chat_id)
     if not user:
-        await update.message.reply_text(
-            "❌ Primero debes registrarte con `/adduser <tu_nombre>`"
-        )
+        await update.message.reply_text("❌ Primero debes registrarte con `/adduser <tu_nombre>`")
         return
 
     if not context.args:
-        # Mostrar configuración actual
-        status = "activadas" if user['notification_enabled'] else "desactivadas"
+        status = "activadas ✅" if user['notification_enabled'] else "desactivadas ❌"
+        day_idx = user.get('notification_day', 0) or 0
+        day_name = _NOTIFY_DAYS[day_idx]
         await update.message.reply_text(
             f"🔔 *Configuración de notificaciones:*\n\n"
             f"Estado: {status}\n"
-            f"Hora: {user['notification_time']}\n\n"
-            f"*Uso:*\n"
-            f"`/notify HH:MM` - Establecer hora (ej: /notify 09:00)\n"
-            f"`/notify toggle` - Activar/desactivar\n"
-            f"`/notify status` - Ver configuración actual\n\n"
-            f"*Nota:* Las notificaciones se envían mediante un script separado.\n"
-            f"Asegúrate de ejecutar `python notification_scheduler.py` en segundo plano.",
+            f"Día: {day_name} (índice {day_idx})\n"
+            f"Hora: {user.get('notification_time', '09:00')}\n\n"
+            f"*Comandos:*\n"
+            f"`/notify toggle` — Activar/desactivar\n"
+            f"`/notify HH:MM` — Cambiar hora (ej: `/notify 09:00`)\n"
+            f"`/notify day N` — Cambiar día (0=lun, 1=mar, 2=mié, 3=jue, 4=vie, 5=sáb, 6=dom)\n\n"
+            f"Las notificaciones son semanales. Asegúrate de ejecutar `python notifications.py`.",
             parse_mode='Markdown'
         )
         return
@@ -4093,42 +4095,197 @@ async def notify_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     command = context.args[0].lower()
 
     if command == "toggle":
-        # Cambiar estado de notificaciones
         new_state = user_services.toggle_notifications(user['id'])
-        status = "activadas" if new_state else "desactivadas"
-        await update.message.reply_text(
-            f"🔔 Notificaciones {status}."
-        )
-    elif command == "status":
-        # Mostrar estado actual
-        status = "activadas" if user['notification_enabled'] else "desactivadas"
-        await update.message.reply_text(
-            f"🔔 Notificaciones: {status}\n"
-            f"⏰ Hora: {user['notification_time']}"
-        )
-    else:
-        # Intentar establecer hora
-        time_str = context.args[0]
+        status = "activadas ✅" if new_state else "desactivadas ❌"
+        await update.message.reply_text(f"🔔 Notificaciones {status}.")
 
-        # Validar formato de hora
+    elif command == "day":
+        # /notify day N
+        if len(context.args) < 2:
+            await update.message.reply_text("❌ Uso: `/notify day N` (0=lun … 6=dom)", parse_mode='Markdown')
+            return
+        try:
+            day = int(context.args[1])
+            if not 0 <= day <= 6:
+                raise ValueError
+        except ValueError:
+            await update.message.reply_text("❌ El día debe ser un número entre 0 (lunes) y 6 (domingo).")
+            return
+        if user_services.set_notification_day(user['id'], day):
+            await update.message.reply_text(f"✅ Día de notificación cambiado a *{_NOTIFY_DAYS[day]}*.", parse_mode='Markdown')
+        else:
+            await update.message.reply_text("❌ Error al cambiar el día de notificación.")
+
+    else:
+        # Intentar interpretar como HH:MM
+        time_str = context.args[0]
         try:
             datetime.strptime(time_str, '%H:%M')
         except ValueError:
-            await update.message.reply_text(
-                "❌ Formato de hora inválido. Usa HH:MM (ej: 09:00)"
-            )
+            await update.message.reply_text("❌ Formato de hora inválido. Usa HH:MM (ej: 09:00)")
             return
 
-        # Establecer nueva hora
         if user_services.set_notification_time(user['id'], time_str):
             await update.message.reply_text(
-                f"✅ Hora de notificación establecida a las {time_str}\n"
-                f"🔔 Las notificaciones están {'activadas' if user['notification_enabled'] else 'desactivadas'}"
+                f"✅ Hora de notificación establecida a las *{time_str}*\n"
+                f"🔔 Notificaciones: {'activadas' if user['notification_enabled'] else 'desactivadas'}",
+                parse_mode='Markdown'
             )
         else:
-            await update.message.reply_text(
-                "❌ Error al establecer la hora de notificación."
-            )
+            await update.message.reply_text("❌ Error al establecer la hora de notificación.")
+
+
+# ─── Estados para ConversationHandler de Radicale ─────────────────────────────
+RADICALE_URL, RADICALE_USERNAME, RADICALE_PASSWORD, RADICALE_CALENDAR = range(10, 14)
+
+
+async def radicale_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Comando /radicale — gestionar integración con servidor Radicale (CalDAV)"""
+    chat_id = update.effective_chat.id
+    user = db.get_user_by_chat_id(chat_id)
+    if not user:
+        await update.message.reply_text("❌ Primero regístrate con `/adduser <nombre>`", parse_mode='Markdown')
+        return
+
+    cfg = db.get_radicale_config(user['id'])
+    if cfg:
+        status = (
+            f"✅ *Radicale configurado*\n\n"
+            f"🌐 URL: `{cfg['url']}`\n"
+            f"👤 Usuario: `{cfg['username']}`\n"
+            f"📅 Calendario: `{cfg['calendar']}`\n\n"
+        )
+        keyboard = [
+            [InlineKeyboardButton("🔗 Probar conexión", callback_data=f"radicale_test_{user['id']}")],
+            [InlineKeyboardButton("✏️ Reconfigurar", callback_data=f"radicale_setup_{user['id']}")],
+            [InlineKeyboardButton("🗑️ Eliminar configuración", callback_data=f"radicale_clear_{user['id']}")],
+        ]
+    else:
+        status = "❌ *Radicale no configurado*\n\nConfigura tu servidor Radicale para subir eventos de calendario vía CalDAV.\n\n"
+        keyboard = [
+            [InlineKeyboardButton("⚙️ Configurar Radicale", callback_data=f"radicale_setup_{user['id']}")],
+        ]
+
+    await update.message.reply_text(
+        status + "Usa `/cal` para generar o subir calendarios.",
+        reply_markup=InlineKeyboardMarkup(keyboard),
+        parse_mode='Markdown'
+    )
+
+
+async def radicale_callback_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Maneja callbacks del panel Radicale"""
+    query = update.callback_query
+    await query.answer()
+
+    parts = query.data.split("_")
+    action = parts[1]
+    user_id = int(parts[2])
+
+    user = db.get_user_by_chat_id(query.message.chat_id)
+    if not user or user['id'] != user_id:
+        await query.edit_message_text("❌ Error de autenticación.")
+        return
+
+    if action == "test":
+        cfg = db.get_radicale_config(user_id)
+        if not cfg:
+            await query.edit_message_text("❌ No hay configuración de Radicale.")
+            return
+        await query.edit_message_text("🔗 Probando conexión con Radicale...")
+        from apis.radicale import RadicaleClient
+        client = RadicaleClient(cfg['url'], cfg['username'], cfg['password'], cfg['calendar'])
+        ok, msg = client.test_connection()
+        icon = "✅" if ok else "❌"
+        await query.edit_message_text(f"{icon} {msg}")
+
+    elif action == "clear":
+        db.clear_radicale_config(user_id)
+        await query.edit_message_text("🗑️ Configuración de Radicale eliminada.")
+
+    elif action == "setup":
+        context.user_data['radicale_user_id'] = user_id
+        await query.edit_message_text(
+            "⚙️ *Configuración de Radicale*\n\n"
+            "Paso 1/4: Envía la URL base del servidor Radicale.\n"
+            "Ejemplo: `http://192.168.1.10:5232`\n\n"
+            "Escribe /cancel para cancelar.",
+            parse_mode='Markdown'
+        )
+        return RADICALE_URL
+
+
+async def radicale_url_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    context.user_data['radicale_url'] = update.message.text.strip()
+    await update.message.reply_text(
+        "Paso 2/4: Envía tu nombre de usuario de Radicale."
+    )
+    return RADICALE_USERNAME
+
+
+async def radicale_username_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    context.user_data['radicale_username'] = update.message.text.strip()
+    await update.message.reply_text(
+        "Paso 3/4: Envía tu contraseña de Radicale."
+    )
+    return RADICALE_PASSWORD
+
+
+async def radicale_password_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    context.user_data['radicale_password'] = update.message.text.strip()
+    await update.message.reply_text(
+        "Paso 4/4: Envía el nombre del calendario (ej: `conciertos`).",
+        parse_mode='Markdown'
+    )
+    return RADICALE_CALENDAR
+
+
+async def radicale_calendar_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    from telegram.ext import ConversationHandler
+    user_id = context.user_data.get('radicale_user_id')
+    if not user_id:
+        await update.message.reply_text("❌ Sesión expirada. Usa /radicale de nuevo.")
+        return ConversationHandler.END
+
+    url = context.user_data.get('radicale_url', '')
+    username = context.user_data.get('radicale_username', '')
+    password = context.user_data.get('radicale_password', '')
+    calendar = update.message.text.strip()
+
+    await update.message.reply_text("🔗 Probando conexión...")
+
+    from apis.radicale import RadicaleClient
+    client = RadicaleClient(url, username, password, calendar)
+    ok, msg = client.test_connection()
+
+    if ok:
+        db.save_radicale_config(user_id, url, username, password, calendar)
+        await update.message.reply_text(
+            f"✅ Radicale configurado correctamente.\n\n"
+            f"🌐 URL: `{url}`\n"
+            f"👤 Usuario: `{username}`\n"
+            f"📅 Calendario: `{calendar}`\n\n"
+            f"Ahora puedes usar `/cal` para subir eventos a Radicale.",
+            parse_mode='Markdown'
+        )
+    else:
+        await update.message.reply_text(
+            f"❌ No se pudo conectar: {msg}\n\n"
+            f"Revisa los datos e inténtalo de nuevo con /radicale."
+        )
+
+    for key in ('radicale_url', 'radicale_username', 'radicale_password', 'radicale_user_id'):
+        context.user_data.pop(key, None)
+
+    return ConversationHandler.END
+
+
+async def radicale_cancel_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    from telegram.ext import ConversationHandler
+    for key in ('radicale_url', 'radicale_username', 'radicale_password', 'radicale_user_id'):
+        context.user_data.pop(key, None)
+    await update.message.reply_text("❌ Configuración de Radicale cancelada.")
+    return ConversationHandler.END
 
 # ===========================
 # COMANDOS DE BÚSQUEDA
@@ -5260,6 +5417,7 @@ def main():
     logger.info("✅ Base de datos inicializada con wrapper thread-safe")
 
     db.init_muspy_tables()
+    db.init_radicale_tables()
 
     # Inicializar servicios de usuario
     user_services = UserServices(db)
@@ -5327,6 +5485,20 @@ def main():
         per_user=True
     )
 
+    # ConversationHandler para configuración de Radicale
+    radicale_conv_handler = ConversationHandler(
+        entry_points=[CallbackQueryHandler(radicale_callback_handler, pattern="^radicale_setup_")],
+        states={
+            RADICALE_URL:      [MessageHandler(filters.TEXT & ~filters.COMMAND, radicale_url_handler)],
+            RADICALE_USERNAME: [MessageHandler(filters.TEXT & ~filters.COMMAND, radicale_username_handler)],
+            RADICALE_PASSWORD: [MessageHandler(filters.TEXT & ~filters.COMMAND, radicale_password_handler)],
+            RADICALE_CALENDAR: [MessageHandler(filters.TEXT & ~filters.COMMAND, radicale_calendar_handler)],
+        },
+        fallbacks=[CommandHandler('cancel', radicale_cancel_handler)],
+        per_chat=True,
+        per_user=True
+    )
+
     # Handlers de comandos básicos
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("help", help_command))
@@ -5357,13 +5529,18 @@ def main():
     application.add_handler(CommandHandler("listcountries", listcountries_command))
     application.add_handler(CommandHandler("refreshcountries", refreshcountries_command))
     application.add_handler(CommandHandler("config", config_command))
-    application.add_handler(CommandHandler("lastfm", lastfm_command))
-    application.add_handler(CommandHandler("spotify", spotify_command))
+    application.add_handler(CommandHandler("radicale", radicale_command))
+    # /lastfm eliminado como importador de artistas (Last.fm se usa solo para metadatos internos)
+    # /spotify eliminado
 
     # ConversationHandler para login de Muspy
     application.add_handler(muspy_login_conv_handler)
     application.add_handler(CommandHandler("muspy", muspy_handlers.muspy_command))
     application.add_handler(CallbackQueryHandler(muspy_callback_handler, pattern="^muspy_"))
+
+    # ConversationHandler y callbacks de Radicale
+    application.add_handler(radicale_conv_handler)
+    application.add_handler(CallbackQueryHandler(radicale_callback_handler, pattern="^radicale_(?!setup_)"))
 
     # Callbacks específicos de países
     application.add_handler(CallbackQueryHandler(country_selection_callback, pattern="^(select_country_|cancel_country_selection)"))
@@ -5373,8 +5550,7 @@ def main():
     # Handlers de callbacks específicos (ORDEN IMPORTANTE)
     application.add_handler(CallbackQueryHandler(artist_selection_callback, pattern="^(select_artist_|cancel_artist_selection)"))
     application.add_handler(CallbackQueryHandler(list_page_callback, pattern="^list_page_"))
-    application.add_handler(CallbackQueryHandler(lastfm_callback_handler, pattern="^lastfm_"))
-    application.add_handler(CallbackQueryHandler(spotify_callback_handler, pattern="^spotify_"))
+    # lastfm_callback_handler y spotify_callback_handler eliminados
 
     # Callbacks de calendario (DESPUÉS de muspy_callback_handler)
     application.add_handler(CallbackQueryHandler(calendar_callback_handler, pattern="^cal_"))
@@ -5382,7 +5558,7 @@ def main():
     # Callback para página actual (no hace nada, solo evita errores)
     application.add_handler(CallbackQueryHandler(
         lambda update, context: update.callback_query.answer(),
-        pattern="^(current_list_page|current_lastfm_page|current_spotify_page)$"
+        pattern="^current_list_page$"
     ))
 
     # Handler genérico de configuración (DEBE IR AL FINAL de los callbacks)
