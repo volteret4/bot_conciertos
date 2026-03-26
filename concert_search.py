@@ -115,6 +115,9 @@ async def _save_concerts(database, concerts: List[Dict]):
             count = 0
             for c in concerts:
                 try:
+                    # Normalizar clave: Ticketmaster usa 'artist', DB espera 'artist_name'
+                    if 'artist_name' not in c or not c['artist_name']:
+                        c = dict(c, artist_name=c.get('artist', ''))
                     database.save_concert(c)
                     count += 1
                 except Exception as e:
