@@ -42,6 +42,7 @@ from handlers.muspy_handlers import MuspyHandlers, MUSPY_EMAIL, MUSPY_PASSWORD, 
 from handlers.handlers_helpers import (
     handle_notification_callback, handle_country_callback, handle_service_callback,
     show_artists_page, show_artists_without_pagination, escape_markdown_v2,
+    handle_lastfm_do_sync, handle_lastfm_change_limit, handle_lastfm_change_user,
 )
 
 # Configuración de logging
