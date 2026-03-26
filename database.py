@@ -81,6 +81,20 @@ class ArtistTrackerDatabase:
                 cursor.execute("ALTER TABLE users ADD COLUMN service_setlistfm BOOLEAN DEFAULT 1")
                 logger.info("Columna service_setlistfm añadida a users")
 
+            for col_name, col_sql in [
+                ('notification_day',  "ALTER TABLE users ADD COLUMN notification_day INTEGER DEFAULT 0"),
+                ('radicale_url',      "ALTER TABLE users ADD COLUMN radicale_url TEXT"),
+                ('radicale_username', "ALTER TABLE users ADD COLUMN radicale_username TEXT"),
+                ('radicale_password', "ALTER TABLE users ADD COLUMN radicale_password TEXT"),
+                ('radicale_calendar', "ALTER TABLE users ADD COLUMN radicale_calendar TEXT"),
+                ('lastfm_username',   "ALTER TABLE users ADD COLUMN lastfm_username TEXT"),
+                ('lastfm_period',     "ALTER TABLE users ADD COLUMN lastfm_period TEXT DEFAULT '12month'"),
+                ('lastfm_limit',      "ALTER TABLE users ADD COLUMN lastfm_limit INTEGER DEFAULT 50"),
+            ]:
+                if col_name not in columns:
+                    cursor.execute(col_sql)
+                    logger.info(f"Columna {col_name} añadida a users")
+
             # Tabla de artistas
             cursor.execute("""
                 CREATE TABLE IF NOT EXISTS artists (
@@ -132,6 +146,7 @@ class ArtistTrackerDatabase:
                     venue TEXT,
                     city TEXT,
                     country TEXT,
+                    country_code TEXT,
                     date TEXT,
                     time TEXT,
                     url TEXT,
@@ -140,6 +155,13 @@ class ArtistTrackerDatabase:
                     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                 )
             """)
+
+            # Migración: añadir country_code a concerts si no existe
+            cursor.execute("PRAGMA table_info(concerts)")
+            concert_cols = [col[1] for col in cursor.fetchall()]
+            if 'country_code' not in concert_cols:
+                cursor.execute("ALTER TABLE concerts ADD COLUMN country_code TEXT")
+                logger.info("Columna country_code añadida a concerts")
 
             # Nueva tabla para notificaciones enviadas
             cursor.execute("""
@@ -2459,12 +2481,12 @@ class DatabaseConcurrentWrapper:
                 # Insertar nuevo concierto
                 cursor.execute("""
                     INSERT INTO concerts (
-                        artist_name, name, venue, city, country, country_code,
+                        artist_name, concert_name, venue, city, country, country_code,
                         date, time, url, source, created_at
                     ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now'))
                 """, (
                     artist_name,
-                    concert_data.get('name', ''),
+                    concert_data.get('name', '') or concert_data.get('concert_name', ''),
                     concert_data.get('venue', ''),
                     concert_data.get('city', ''),
                     concert_data.get('country', ''),

@@ -2721,8 +2721,8 @@ def _basic_country_filter(concerts, user_countries):
     upper_codes = {c.upper() for c in user_countries}
     filtered = []
     for concert in concerts:
-        code = concert.get('country_code', '').upper()
-        name = concert.get('country', '').upper()
+        code = (concert.get('country_code') or '').upper()
+        name = (concert.get('country') or '').upper()
         # Sin info de país → incluir; código o nombre coincide → incluir
         if not code and not name:
             filtered.append(concert)

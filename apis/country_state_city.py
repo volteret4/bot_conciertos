@@ -816,8 +816,8 @@ class ArtistTrackerDatabaseExtended:
         user_countries_upper = {c.upper() for c in user_countries}
 
         for concert in concerts:
-            concert_country = concert.get('country', '').upper()
-            concert_country_code = concert.get('country_code', '').upper()
+            concert_country = (concert.get('country') or '').upper()
+            concert_country_code = (concert.get('country_code') or '').upper()
 
             # Coincidencia directa: nombre de país o código ISO
             if (concert_country and concert_country in user_countries_upper) or \
