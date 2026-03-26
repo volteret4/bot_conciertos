@@ -52,7 +52,7 @@ class ArtistTrackerDatabase:
                     chat_id INTEGER NOT NULL UNIQUE,
                     notification_time TEXT DEFAULT '09:00',
                     notification_enabled BOOLEAN DEFAULT 1,
-                    country_filter TEXT DEFAULT 'ES',
+                    country_filter TEXT DEFAULT NULL,
                     service_ticketmaster BOOLEAN DEFAULT 1,
                     service_spotify BOOLEAN DEFAULT 1,
                     service_setlistfm BOOLEAN DEFAULT 1,
@@ -66,7 +66,7 @@ class ArtistTrackerDatabase:
             columns = [col[1] for col in cursor.fetchall()]
 
             if 'country_filter' not in columns:
-                cursor.execute("ALTER TABLE users ADD COLUMN country_filter TEXT DEFAULT 'ES'")
+                cursor.execute("ALTER TABLE users ADD COLUMN country_filter TEXT DEFAULT NULL")
                 logger.info("Columna country_filter añadida a users")
 
             if 'service_ticketmaster' not in columns:
@@ -2429,8 +2429,16 @@ class DatabaseConcurrentWrapper:
                 raise e
 
     def save_concert(self, concert_data):
-        """Guarda un concierto de forma thread-safe"""
+        """Guarda un concierto de forma thread-safe.
+        Acepta tanto 'artist_name' como 'artist' como clave del nombre del artista."""
         try:
+            # Normalizar: Ticketmaster usa 'artist', el resto usa 'artist_name'
+            artist_name = (
+                concert_data.get('artist_name')
+                or concert_data.get('artist')
+                or ''
+            )
+
             with self.get_connection_context() as conn:
                 cursor = conn.cursor()
 
@@ -2439,7 +2447,7 @@ class DatabaseConcurrentWrapper:
                     SELECT id FROM concerts
                     WHERE artist_name = ? AND venue = ? AND city = ? AND date = ?
                 """, (
-                    concert_data.get('artist_name', ''),
+                    artist_name,
                     concert_data.get('venue', ''),
                     concert_data.get('city', ''),
                     concert_data.get('date', '')
@@ -2455,7 +2463,7 @@ class DatabaseConcurrentWrapper:
                         date, time, url, source, created_at
                     ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now'))
                 """, (
-                    concert_data.get('artist_name', ''),
+                    artist_name,
                     concert_data.get('name', ''),
                     concert_data.get('venue', ''),
                     concert_data.get('city', ''),
