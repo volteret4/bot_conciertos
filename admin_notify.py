@@ -28,12 +28,26 @@ def _init():
     global _ADMIN_CHAT_ID, _ADMIN_BOT_TOKEN, _initialized
     if _initialized:
         return
+    # Cargar .env si no se ha cargado aún
+    try:
+        from dotenv import load_dotenv
+        load_dotenv()
+    except ImportError:
+        pass
     _ADMIN_CHAT_ID = os.environ.get("ADMIN_CHAT_ID", "")
     _ADMIN_BOT_TOKEN = (
         os.environ.get("ADMIN_BOT_TOKEN")
-        or os.environ.get("TELEGRAM_BOT_CONCIERTOS", "")
+        or os.environ.get("TELEGRAM_BOT_CONCIERTOS")
+        or os.environ.get("TELEGRAM_BOT_TOKEN", "")
     )
-    _initialized = True
+    if _ADMIN_CHAT_ID and _ADMIN_BOT_TOKEN:
+        _initialized = True
+        logger.info(f"Admin notify configurado: chat_id={_ADMIN_CHAT_ID[:4]}…")
+    else:
+        logger.warning(
+            f"Admin notify no configurado — ADMIN_CHAT_ID={'✓' if _ADMIN_CHAT_ID else '✗'} "
+            f"ADMIN_BOT_TOKEN={'✓' if _ADMIN_BOT_TOKEN else '✗'}"
+        )
 
 
 def notify(event: str, details: str = "", silent: bool = False) -> bool:
@@ -70,6 +84,8 @@ def notify(event: str, details: str = "", silent: bool = False) -> bool:
             },
             timeout=8,
         )
+        if resp.status_code != 200:
+            logger.warning(f"Admin notify HTTP {resp.status_code}: {resp.text}")
         return resp.status_code == 200
     except Exception as e:
         if not silent:
