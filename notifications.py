@@ -188,14 +188,15 @@ class WeeklyNotificationService:
                 return row[0]
             cur.execute("""
                 INSERT INTO concerts
-                  (artist_name, concert_name, venue, city, country, date, time, url, source, concert_hash)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                  (artist_name, concert_name, venue, city, country, country_code, date, time, url, source, concert_hash)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """, (
-                concert.get('artist_name', ''),
-                concert.get('concert_name', concert.get('name', '')),
+                concert.get('artist_name') or concert.get('artist', ''),
+                concert.get('concert_name') or concert.get('name', ''),
                 concert.get('venue', ''),
                 concert.get('city', ''),
                 concert.get('country', ''),
+                concert.get('country_code', ''),
                 concert.get('date', ''),
                 concert.get('time', ''),
                 concert.get('url', ''),
@@ -380,19 +381,24 @@ class WeeklyNotificationService:
         try:
             today_str = date.today().isoformat()
             cur = conn.cursor()
+            artist_names_lower = [n.lower() for n in artist_names]
             cur.execute("""
-                SELECT artist_name, concert_name, venue, city, country, date, time, url, source
+                SELECT artist_name, concert_name, venue, city, country, country_code, date, time, url, source
                 FROM concerts
-                WHERE date >= ? AND artist_name IN ({})
+                WHERE date >= ? AND LOWER(artist_name) IN ({})
                 ORDER BY date
-            """.format(','.join('?' * len(artist_names))),
-            [today_str] + list(artist_names))
+            """.format(','.join('?' * len(artist_names_lower))),
+            [today_str] + artist_names_lower)
 
+            upper_countries = {c.upper() for c in countries} if countries else set()
             for row in cur.fetchall():
                 r = dict(row)
-                # Filtrar por países del usuario
-                if countries and r.get('country', '').upper() not in {c.upper() for c in countries}:
-                    continue
+                # Filtrar por países del usuario (acepta código ISO o nombre completo)
+                if upper_countries:
+                    country_val = (r.get('country') or '').upper()
+                    code_val = (r.get('country_code') or '').upper()
+                    if country_val not in upper_countries and code_val not in upper_countries:
+                        continue
                 concerts_by_artist.setdefault(r['artist_name'], []).append(r)
         except Exception as e:
             logger.error(f"Error leyendo conciertos de BD para usuario {user_id}: {e}")
@@ -501,7 +507,8 @@ class WeeklyNotificationService:
 # ─── Utilidades ──────────────────────────────────────────────────────────────
 
 def _make_hash(concert: Dict) -> str:
-    raw = f"{concert.get('artist_name','')}-{concert.get('venue','')}-{concert.get('date','')}"
+    artist = concert.get('artist_name') or concert.get('artist', '')
+    raw = f"{artist}-{concert.get('venue','')}-{concert.get('date','')}"
     return hashlib.md5(raw.encode()).hexdigest()
 
 
