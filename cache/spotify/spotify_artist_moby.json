@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:50:17.546845",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3OsRAKCvk37zwYcnzRf5XF"
+    },
+    "followers": {
+      "href": null,
+      "total": 2068639
+    },
+    "genres": [
+      "downtempo",
+      "trip hop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3OsRAKCvk37zwYcnzRf5XF",
+    "id": "3OsRAKCvk37zwYcnzRf5XF",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb51998989b51d8bda6a7486f2",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517451998989b51d8bda6a7486f2",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17851998989b51d8bda6a7486f2",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Moby",
+    "popularity": 68,
+    "type": "artist",
+    "uri": "spotify:artist:3OsRAKCvk37zwYcnzRf5XF"
+  }
+}

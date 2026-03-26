@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:57:13.882825",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1LsXqDdYVyONhrjAORENbu"
+    },
+    "followers": {
+      "href": null,
+      "total": 82710
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/1LsXqDdYVyONhrjAORENbu",
+    "id": "1LsXqDdYVyONhrjAORENbu",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27370a92681f8aff88714cb0296",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0270a92681f8aff88714cb0296",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485170a92681f8aff88714cb0296",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Kaoma",
+    "popularity": 55,
+    "type": "artist",
+    "uri": "spotify:artist:1LsXqDdYVyONhrjAORENbu"
+  }
+}

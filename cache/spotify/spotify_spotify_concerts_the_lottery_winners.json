@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-23T09:38:03.273770",
+  "data": [
+    {
+      "artist": "The Lottery Winners",
+      "artist_name": "The Lottery Winners",
+      "name": "The Lottery Winners Concert (3UlrDTKj)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/3UlrDTKjAyOv3sg1pqAmrd",
+      "source": "Spotify"
+    },
+    {
+      "artist": "The Lottery Winners",
+      "artist_name": "The Lottery Winners",
+      "name": "The Lottery Winners at Bridlington Spa",
+      "venue": "Bridlington Spa",
+      "city": "Bridlington",
+      "country": "GB",
+      "date": "2025-08-29",
+      "time": "4:00 PM",
+      "url": "https://open.spotify.com/concert/1B5pp5M3tZW5BtolBVsSVF",
+      "source": "Spotify"
+    },
+    {
+      "artist": "The Lottery Winners",
+      "artist_name": "The Lottery Winners",
+      "name": "The Lottery Winners at Don Valley Bowl",
+      "venue": "Don Valley Bowl",
+      "city": "Sheffield",
+      "country": "GB",
+      "date": "2025-08-30",
+      "time": "12:00 PM",
+      "url": "https://open.spotify.com/concert/6xyIi9VOpVd6tUBV2WxXo9",
+      "source": "Spotify"
+    },
+    {
+      "artist": "The Lottery Winners",
+      "artist_name": "The Lottery Winners",
+      "name": "The Lottery Winners Concert (6qMkWykD)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/6qMkWykD3YE1FVJrFBEgFB",
+      "source": "Spotify"
+    },
+    {
+      "artist": "The Lottery Winners",
+      "artist_name": "The Lottery Winners",
+      "name": "The Lottery Winners Concert (1roxOMXI)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/1roxOMXIBjxSW0SgLaOnnD",
+      "source": "Spotify"
+    }
+  ]
+}

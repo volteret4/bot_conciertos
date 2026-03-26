@@ -1,0 +1,96 @@
+{
+  "timestamp": "2025-10-23T17:08:23.669872",
+  "concerts": [
+    {
+      "artist": "LITE",
+      "name": "2025 WIDU Anniversary Celebration",
+      "venue": "Crown Theatre",
+      "city": "Fayetteville",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-10-24",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/2025-widu-anniversary-celebration-fayetteville-north-carolina-10-24-2025/event/2D0062F79F503FD6",
+      "source": "Ticketmaster",
+      "id": "G5eVZbRrLfdTp"
+    },
+    {
+      "artist": "LITE",
+      "name": "The Chi-Lites and Friends",
+      "venue": "Jacksonville Center for the Performing Arts - Moran Theater",
+      "city": "Jacksonville",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-15",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/the-chilites-and-friends-jacksonville-florida-11-15-2025/event/2200632AB04C0EC7",
+      "source": "Ticketmaster",
+      "id": "1AeFZbwGknYKZD6"
+    },
+    {
+      "artist": "LITE",
+      "name": "The O'Jays, The Spinners, The Commodores,The Chi-Lites & Sister Sledge",
+      "venue": "Toyota Arena",
+      "city": "Ontario",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-05",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/the-ojays-the-spinners-the-commodoresthe-ontario-california-12-05-2025/event/090062B48F5D1ABA",
+      "source": "Ticketmaster",
+      "id": "vvG10Zbl329onB"
+    },
+    {
+      "artist": "LITE",
+      "name": "FLEX1LITE C",
+      "venue": "North Theatre at North Shore",
+      "city": "Skokie",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-08-24",
+      "time": "20:00:00",
+      "url": "",
+      "source": "Ticketmaster",
+      "id": "Za5ju3rKuqZDdqW_V9-qv5lQKF4ny6iOF6"
+    },
+    {
+      "artist": "LITE",
+      "name": "FLEX1LITE B",
+      "venue": "North Theatre at North Shore",
+      "city": "Skokie",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-08-24",
+      "time": "20:00:00",
+      "url": "",
+      "source": "Ticketmaster",
+      "id": "Za5ju3rKuqZDetCmzifCo7laOWVVzSs118"
+    },
+    {
+      "artist": "LITE",
+      "name": "FLEX1LITE TRACK",
+      "venue": "North Theatre at North Shore",
+      "city": "Skokie",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-08-24",
+      "time": "20:00:00",
+      "url": "",
+      "source": "Ticketmaster",
+      "id": "Za5ju3rKuqZDvPMZb-H4vk8hFwIQ6L5tQd"
+    },
+    {
+      "artist": "LITE",
+      "name": "FLEX1LITE A",
+      "venue": "North Theatre at North Shore",
+      "city": "Skokie",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-08-24",
+      "time": "20:00:00",
+      "url": "",
+      "source": "Ticketmaster",
+      "id": "Za5ju3rKuqZDvb3WqLrsgepzd0jM2fZa9J"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:02:15.943528",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4JfFdF9Row7UXtdsKtT6tc"
+    },
+    "followers": {
+      "href": null,
+      "total": 145461
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/4JfFdF9Row7UXtdsKtT6tc",
+    "id": "4JfFdF9Row7UXtdsKtT6tc",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/d50f417de87096c31822c2349cb3534821ac7bec",
+        "height": 505,
+        "width": 500
+      },
+      {
+        "url": "https://i.scdn.co/image/551ecdd7db53fa31de2483ce938f7180ba01c427",
+        "height": 202,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/2b2d1b0c3a0b774f4753ec6a91d224d1bd78256b",
+        "height": 65,
+        "width": 64
+      }
+    ],
+    "name": "Darondo",
+    "popularity": 51,
+    "type": "artist",
+    "uri": "spotify:artist:4JfFdF9Row7UXtdsKtT6tc"
+  }
+}

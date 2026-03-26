@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:47:50.720535",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5NjfhpbCsSkZqIJ01F1ovW"
+    },
+    "followers": {
+      "href": null,
+      "total": 28
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/5NjfhpbCsSkZqIJ01F1ovW",
+    "id": "5NjfhpbCsSkZqIJ01F1ovW",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2733bf49a54a1b4d370fdafd032",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e023bf49a54a1b4d370fdafd032",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048517239bd5d24095285164cdae5",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Tobacco",
+    "popularity": 0,
+    "type": "artist",
+    "uri": "spotify:artist:5NjfhpbCsSkZqIJ01F1ovW"
+  }
+}

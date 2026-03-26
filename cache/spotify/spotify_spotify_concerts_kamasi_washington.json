@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-24T08:46:36.767936",
+  "data": [
+    {
+      "artist": "Kamasi Washington",
+      "artist_name": "Kamasi Washington",
+      "name": "Kamasi Washington at Cúpula Multiespacio",
+      "venue": "Cúpula Multiespacio",
+      "city": "Santiago",
+      "country": "US",
+      "date": "2025-08-30",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/3VgxgQ6gdhloIaBxBqfRzR",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Kamasi Washington",
+      "artist_name": "Kamasi Washington",
+      "name": "Kamasi Washington at C Complejo Art Media",
+      "venue": "C Complejo Art Media",
+      "city": "Comuna 15",
+      "country": "AR",
+      "date": "2025-08-31",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/2DKycRBDJTWrcRrjWDnCDd",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Kamasi Washington",
+      "artist_name": "Kamasi Washington",
+      "name": "Kamasi Washington at Circo Voador",
+      "venue": "Circo Voador",
+      "city": "Rio de Janeiro",
+      "country": "BR",
+      "date": "2025-09-04",
+      "time": "9:30 PM",
+      "url": "https://open.spotify.com/concert/2S0tMRgJaLr42pOJjpBsAK",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Kamasi Washington",
+      "artist_name": "Kamasi Washington",
+      "name": "Kamasi Washington Concert (0szYptOK)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/0szYptOKNHyaABwnptSSa0",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Kamasi Washington",
+      "artist_name": "Kamasi Washington",
+      "name": "Kamasi Washington at Blue Note Los Angeles",
+      "venue": "Blue Note Los Angeles",
+      "city": "Los Angeles",
+      "country": "US",
+      "date": "2025-09-30",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/1eFPTCQhxgpQbEt6xrZfdP",
+      "source": "Spotify"
+    }
+  ]
+}

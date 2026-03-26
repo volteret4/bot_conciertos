@@ -1,0 +1,45 @@
+{
+  "timestamp": "2025-11-03T19:50:16.785629",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5hW4L92KnC6dX9t7tYM4Ve"
+    },
+    "followers": {
+      "href": null,
+      "total": 1637157
+    },
+    "genres": [
+      "folk",
+      "singer-songwriter",
+      "folk rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5hW4L92KnC6dX9t7tYM4Ve",
+    "id": "5hW4L92KnC6dX9t7tYM4Ve",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/68cfb061951dbd44c95422a54cb70baec0722ca3",
+        "height": 784,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/ebaff9c356b21f97cb877d8e4607568b3e0cae75",
+        "height": 502,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/bc9f1f21ffa483e952a6d012420644554f91f624",
+        "height": 157,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/938613e2fe5e0ca97a524675feabea263400222f",
+        "height": 50,
+        "width": 64
+      }
+    ],
+    "name": "Joni Mitchell",
+    "popularity": 61,
+    "type": "artist",
+    "uri": "spotify:artist:5hW4L92KnC6dX9t7tYM4Ve"
+  }
+}

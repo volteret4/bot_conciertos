@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:59:50.139568",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0Nk0Nee79EErNt1I1lCxrF"
+    },
+    "followers": {
+      "href": null,
+      "total": 11793
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/0Nk0Nee79EErNt1I1lCxrF",
+    "id": "0Nk0Nee79EErNt1I1lCxrF",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2733038fd8ad132468ff70c2923",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e023038fd8ad132468ff70c2923",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048513038fd8ad132468ff70c2923",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Bobby Cole",
+    "popularity": 32,
+    "type": "artist",
+    "uri": "spotify:artist:0Nk0Nee79EErNt1I1lCxrF"
+  }
+}

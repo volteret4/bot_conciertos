@@ -1,0 +1,45 @@
+{
+  "timestamp": "2025-11-03T19:48:36.434484",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2UqjDAXnDxejEyE0CzfUrZ"
+    },
+    "followers": {
+      "href": null,
+      "total": 604923
+    },
+    "genres": [
+      "classical piano",
+      "classical",
+      "chamber music"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2UqjDAXnDxejEyE0CzfUrZ",
+    "id": "2UqjDAXnDxejEyE0CzfUrZ",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/795f15e4d860456a306055ccc995075c5dad9fa6",
+        "height": 1106,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/55c5a95549820a9d19f02c31e16e79fa9f2bc3dd",
+        "height": 708,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/f6e54b847e866ea410cfa19af2e270e6fe414df0",
+        "height": 221,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/4ed99d3b6ed0913e5ef534e28d4363826bd85f38",
+        "height": 71,
+        "width": 64
+      }
+    ],
+    "name": "Robert Schumann",
+    "popularity": 62,
+    "type": "artist",
+    "uri": "spotify:artist:2UqjDAXnDxejEyE0CzfUrZ"
+  }
+}

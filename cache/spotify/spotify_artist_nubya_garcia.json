@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:57:40.601108",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6O5k8LLRfDK8v9jj1GazAQ"
+    },
+    "followers": {
+      "href": null,
+      "total": 126048
+    },
+    "genres": [
+      "nu jazz",
+      "jazz",
+      "jazz funk"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6O5k8LLRfDK8v9jj1GazAQ",
+    "id": "6O5k8LLRfDK8v9jj1GazAQ",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebcc54044c371ab617c1b625bb",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174cc54044c371ab617c1b625bb",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178cc54044c371ab617c1b625bb",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Nubya Garcia",
+    "popularity": 38,
+    "type": "artist",
+    "uri": "spotify:artist:6O5k8LLRfDK8v9jj1GazAQ"
+  }
+}

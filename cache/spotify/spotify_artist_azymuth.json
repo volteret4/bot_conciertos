@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T20:02:06.921500",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5lYcr7Yue9FUB7MJDBtTJx"
+    },
+    "followers": {
+      "href": null,
+      "total": 110559
+    },
+    "genres": [
+      "brazilian jazz",
+      "jazz funk",
+      "jazz fusion",
+      "acid jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5lYcr7Yue9FUB7MJDBtTJx",
+    "id": "5lYcr7Yue9FUB7MJDBtTJx",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebbcae009303f229d6855b1658",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174bcae009303f229d6855b1658",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178bcae009303f229d6855b1658",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Azymuth",
+    "popularity": 45,
+    "type": "artist",
+    "uri": "spotify:artist:5lYcr7Yue9FUB7MJDBtTJx"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-11-03T19:56:33.755834",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3m5hegxlB80Z2zQb1893pc"
+    },
+    "followers": {
+      "href": null,
+      "total": 51525
+    },
+    "genres": [
+      "philly soul",
+      "disco",
+      "chicago house",
+      "post-disco",
+      "disco house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3m5hegxlB80Z2zQb1893pc",
+    "id": "3m5hegxlB80Z2zQb1893pc",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/0729e1f110b96ac6b9113b4c87998afd40fd06c4",
+        "height": 1304,
+        "width": 946
+      },
+      {
+        "url": "https://i.scdn.co/image/88276f222fcd4cda2a95b70ea2b723eef0a2d231",
+        "height": 882,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/1b85c3b47a1b64efc849d0b0dd8c9629a8b97e91",
+        "height": 276,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/f9d9d9b8e9aba920e74408798b8188a31df0c461",
+        "height": 88,
+        "width": 64
+      }
+    ],
+    "name": "Loleatta Holloway",
+    "popularity": 46,
+    "type": "artist",
+    "uri": "spotify:artist:3m5hegxlB80Z2zQb1893pc"
+  }
+}

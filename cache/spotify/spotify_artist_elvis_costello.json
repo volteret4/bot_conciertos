@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:59:58.326344",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2BGRfQgtzikz1pzAD0kaEn"
+    },
+    "followers": {
+      "href": null,
+      "total": 603366
+    },
+    "genres": [
+      "power pop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2BGRfQgtzikz1pzAD0kaEn",
+    "id": "2BGRfQgtzikz1pzAD0kaEn",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebbd95594d3201ab9c7b0349e6",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174bd95594d3201ab9c7b0349e6",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178bd95594d3201ab9c7b0349e6",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Elvis Costello",
+    "popularity": 52,
+    "type": "artist",
+    "uri": "spotify:artist:2BGRfQgtzikz1pzAD0kaEn"
+  }
+}

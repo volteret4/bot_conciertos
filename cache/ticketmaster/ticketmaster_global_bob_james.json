@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-10-23T17:09:13.833164",
+  "concerts": [
+    {
+      "artist": "Bob James",
+      "name": "Jazz Legends: BOB JAMES (2x Grammy Award-winner, George Benson Lifetime Achievement Award)",
+      "venue": "Catalina Bar & Grill",
+      "city": "Hollywood",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-01-16",
+      "time": "20:30:00",
+      "url": "https://www.ticketweb.com/event/jazz-legends-bob-james-2x-catalina-bar-grill-tickets/14628553",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AfbI4K"
+    },
+    {
+      "artist": "Bob James",
+      "name": "Jazz Legends: BOB JAMES (2x Grammy Award-winner, George Benson Lifetime Achievement Award)",
+      "venue": "Catalina Bar & Grill",
+      "city": "Hollywood",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-01-17",
+      "time": "20:30:00",
+      "url": "https://www.ticketweb.com/event/jazz-legends-bob-james-2x-catalina-bar-grill-tickets/14628563",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AfbI4N"
+    },
+    {
+      "artist": "Bob James",
+      "name": "Bob James",
+      "venue": "Ludlow Garage Cincinnati",
+      "city": "Cincinnati",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-01-30",
+      "time": "19:30:00",
+      "url": "https://www.ticketmaster.com/bob-james-cincinnati-ohio-01-30-2026/event/1600633BF04A7566",
+      "source": "Ticketmaster",
+      "id": "1AvbZbSGkRY3E4J"
+    }
+  ]
+}

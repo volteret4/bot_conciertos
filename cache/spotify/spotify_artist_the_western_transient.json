@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:46:48.327895",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1LQ84dYPrMuQQ3TEH30z0G"
+    },
+    "followers": {
+      "href": null,
+      "total": 242
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/1LQ84dYPrMuQQ3TEH30z0G",
+    "id": "1LQ84dYPrMuQQ3TEH30z0G",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2730f32382dfc18b7dc54525e60",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e020f32382dfc18b7dc54525e60",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048510f32382dfc18b7dc54525e60",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "The Western Transient",
+    "popularity": 6,
+    "type": "artist",
+    "uri": "spotify:artist:1LQ84dYPrMuQQ3TEH30z0G"
+  }
+}

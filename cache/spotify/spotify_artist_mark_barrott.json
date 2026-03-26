@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:02:13.235583",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4gL09KXlpi9W3wcoyAM15P"
+    },
+    "followers": {
+      "href": null,
+      "total": 13850
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/4gL09KXlpi9W3wcoyAM15P",
+    "id": "4gL09KXlpi9W3wcoyAM15P",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb7e3b2bc7d87d77df8120e897",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051747e3b2bc7d87d77df8120e897",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1787e3b2bc7d87d77df8120e897",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Mark Barrott",
+    "popularity": 34,
+    "type": "artist",
+    "uri": "spotify:artist:4gL09KXlpi9W3wcoyAM15P"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:49:14.061708",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4sL9uMYCk8NDAhimqhVSlB"
+    },
+    "followers": {
+      "href": null,
+      "total": 8320
+    },
+    "genres": [
+      "lo-fi house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4sL9uMYCk8NDAhimqhVSlB",
+    "id": "4sL9uMYCk8NDAhimqhVSlB",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebf58181e12733b1d08c46e743",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174f58181e12733b1d08c46e743",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178f58181e12733b1d08c46e743",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Pacific Coliseum",
+    "popularity": 30,
+    "type": "artist",
+    "uri": "spotify:artist:4sL9uMYCk8NDAhimqhVSlB"
+  }
+}

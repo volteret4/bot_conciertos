@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:59:21.255643",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3Pjo1vIMjTXaOCVI5YhB0l"
+    },
+    "followers": {
+      "href": null,
+      "total": 16150
+    },
+    "genres": [
+      "acid jazz",
+      "nu jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3Pjo1vIMjTXaOCVI5YhB0l",
+    "id": "3Pjo1vIMjTXaOCVI5YhB0l",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebc2ec41f0748c502091f7fb1e",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174c2ec41f0748c502091f7fb1e",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178c2ec41f0748c502091f7fb1e",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Flevans",
+    "popularity": 37,
+    "type": "artist",
+    "uri": "spotify:artist:3Pjo1vIMjTXaOCVI5YhB0l"
+  }
+}

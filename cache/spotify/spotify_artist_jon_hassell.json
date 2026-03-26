@@ -1,0 +1,46 @@
+{
+  "timestamp": "2025-10-23T20:56:31.837389",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5kNZV33crEsk2IMZMJ8bOQ"
+    },
+    "followers": {
+      "href": null,
+      "total": 55722
+    },
+    "genres": [
+      "ambient",
+      "minimalism",
+      "drone",
+      "avant-garde"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5kNZV33crEsk2IMZMJ8bOQ",
+    "id": "5kNZV33crEsk2IMZMJ8bOQ",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6772690000c46c40e7c0497ba4751942be7f5c",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000dd2240e7c0497ba4751942be7f5c",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000bac340e7c0497ba4751942be7f5c",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67726900008f7440e7c0497ba4751942be7f5c",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Jon Hassell",
+    "popularity": 29,
+    "type": "artist",
+    "uri": "spotify:artist:5kNZV33crEsk2IMZMJ8bOQ"
+  }
+}

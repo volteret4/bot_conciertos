@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:46:44.095135",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6HQYnRM4OzToCYPpVBInuU"
+    },
+    "followers": {
+      "href": null,
+      "total": 527694
+    },
+    "genres": [
+      "jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6HQYnRM4OzToCYPpVBInuU",
+    "id": "6HQYnRM4OzToCYPpVBInuU",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebefa4712d1cdf27fd2869a396",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174efa4712d1cdf27fd2869a396",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178efa4712d1cdf27fd2869a396",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Kamasi Washington",
+    "popularity": 51,
+    "type": "artist",
+    "uri": "spotify:artist:6HQYnRM4OzToCYPpVBInuU"
+  }
+}

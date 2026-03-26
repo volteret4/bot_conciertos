@@ -1,0 +1,49 @@
+{
+  "timestamp": "2025-11-03T20:00:56.777564",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6a27jEzxHDgONdmADAGcej"
+    },
+    "followers": {
+      "href": null,
+      "total": 59930
+    },
+    "genres": [
+      "shoegaze",
+      "trip hop",
+      "slowcore",
+      "drone",
+      "downtempo",
+      "dream pop",
+      "post-rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6a27jEzxHDgONdmADAGcej",
+    "id": "6a27jEzxHDgONdmADAGcej",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/f05800135d8e060ff2dfb6fb9dc3e9a973b21783",
+        "height": 450,
+        "width": 673
+      },
+      {
+        "url": "https://i.scdn.co/image/0c7a3f1917f67094b24afda7c7dd4208a3c90d11",
+        "height": 428,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/9eb36fefd365cb8fd42824bbb7dd003c4aba162e",
+        "height": 134,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/7009c16146a786c1c87af8ee41e14e67a3507979",
+        "height": 43,
+        "width": 64
+      }
+    ],
+    "name": "Bowery Electric",
+    "popularity": 37,
+    "type": "artist",
+    "uri": "spotify:artist:6a27jEzxHDgONdmADAGcej"
+  }
+}

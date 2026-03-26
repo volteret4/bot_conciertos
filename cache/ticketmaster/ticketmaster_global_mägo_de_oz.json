@@ -1,0 +1,57 @@
+{
+  "timestamp": "2025-10-23T17:07:53.187045",
+  "concerts": [
+    {
+      "artist": "Mägo de Oz",
+      "name": "El Mago de Oz Musical",
+      "venue": "Teatro Tepeyac",
+      "city": "México",
+      "country": "Mexico",
+      "country_code": "MX",
+      "date": "2025-11-08",
+      "time": "14:00:00",
+      "url": "https://www.ticketmaster.com.mx/el-mago-de-oz-musical-mexico-08-11-2025/event/1400633987FD5B91",
+      "source": "Ticketmaster",
+      "id": "16v8ZbSJ6G7T4mo"
+    },
+    {
+      "artist": "Mägo de Oz",
+      "name": "El Mago de Oz Musical",
+      "venue": "Teatro Tepeyac",
+      "city": "México",
+      "country": "Mexico",
+      "country_code": "MX",
+      "date": "2025-11-15",
+      "time": "14:00:00",
+      "url": "https://www.ticketmaster.com.mx/el-mago-de-oz-musical-mexico-15-11-2025/event/1400633988DE5CDF",
+      "source": "Ticketmaster",
+      "id": "16v8ZbSJFG7MPSL"
+    },
+    {
+      "artist": "Mägo de Oz",
+      "name": "El Mago de Oz Musical",
+      "venue": "Teatro Tepeyac",
+      "city": "México",
+      "country": "Mexico",
+      "country_code": "MX",
+      "date": "2025-11-22",
+      "time": "14:00:00",
+      "url": "https://www.ticketmaster.com.mx/el-mago-de-oz-musical-mexico-22-11-2025/event/1400633988DF5CE1",
+      "source": "Ticketmaster",
+      "id": "16v8ZbSJFG7MgS-"
+    },
+    {
+      "artist": "Mägo de Oz",
+      "name": "Kabrones! Ex Mago de Oz",
+      "venue": "La Maraka",
+      "city": "México",
+      "country": "Mexico",
+      "country_code": "MX",
+      "date": "2025-11-22",
+      "time": "21:30:00",
+      "url": "https://www.ticketmaster.com.mx/kabrones-ex-mago-de-oz-mexico-22-11-2025/event/3D0062898F6908BF",
+      "source": "Ticketmaster",
+      "id": "G5dVZbIJ2Q8xT"
+    }
+  ]
+}

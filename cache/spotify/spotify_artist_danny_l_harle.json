@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:58:07.039392",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1PNvaesh1mkKZucGhBuqgD"
+    },
+    "followers": {
+      "href": null,
+      "total": 76809
+    },
+    "genres": [
+      "hyperpop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1PNvaesh1mkKZucGhBuqgD",
+    "id": "1PNvaesh1mkKZucGhBuqgD",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb69aece26f9d4b5e1190e6c90",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517469aece26f9d4b5e1190e6c90",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17869aece26f9d4b5e1190e6c90",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Danny L Harle",
+    "popularity": 47,
+    "type": "artist",
+    "uri": "spotify:artist:1PNvaesh1mkKZucGhBuqgD"
+  }
+}

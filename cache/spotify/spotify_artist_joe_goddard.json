@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:03:51.829445",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/380fnmlGnkyueBMqGWx2k5"
+    },
+    "followers": {
+      "href": null,
+      "total": 111245
+    },
+    "genres": [
+      "indie soul"
+    ],
+    "href": "https://api.spotify.com/v1/artists/380fnmlGnkyueBMqGWx2k5",
+    "id": "380fnmlGnkyueBMqGWx2k5",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb94b775933bc52fe5281d8849",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517494b775933bc52fe5281d8849",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17894b775933bc52fe5281d8849",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Joe Goddard",
+    "popularity": 46,
+    "type": "artist",
+    "uri": "spotify:artist:380fnmlGnkyueBMqGWx2k5"
+  }
+}

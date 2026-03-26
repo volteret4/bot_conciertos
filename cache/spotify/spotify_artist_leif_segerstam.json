@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T19:48:38.283301",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1AZTVGOm7t5zkOcweZBivz"
+    },
+    "followers": {
+      "href": null,
+      "total": 2234
+    },
+    "genres": [
+      "classical",
+      "orchestral"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1AZTVGOm7t5zkOcweZBivz",
+    "id": "1AZTVGOm7t5zkOcweZBivz",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/c4e02290a5a8a1d4096457d15745911f3f3dffa9",
+        "height": 662,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/86d9da0e66e3e967bd6a75f76eed28404101bc57",
+        "height": 424,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/9ccfb4736e00156e56bee18be973802435948de4",
+        "height": 132,
+        "width": 199
+      },
+      {
+        "url": "https://i.scdn.co/image/7097698c9d9741f60ac31030396c84ed4cb71715",
+        "height": 42,
+        "width": 63
+      }
+    ],
+    "name": "Leif Segerstam",
+    "popularity": 34,
+    "type": "artist",
+    "uri": "spotify:artist:1AZTVGOm7t5zkOcweZBivz"
+  }
+}

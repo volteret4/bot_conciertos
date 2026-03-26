@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T19:55:36.788069",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/39ywlwtGw8RTGobakgb11L"
+    },
+    "followers": {
+      "href": null,
+      "total": 257507
+    },
+    "genres": [
+      "trip hop",
+      "downtempo",
+      "nu jazz",
+      "acid jazz",
+      "jazz house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/39ywlwtGw8RTGobakgb11L",
+    "id": "39ywlwtGw8RTGobakgb11L",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebde4e41e1e9e80abf82e646c0",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174de4e41e1e9e80abf82e646c0",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178de4e41e1e9e80abf82e646c0",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Kruder & Dorfmeister",
+    "popularity": 45,
+    "type": "artist",
+    "uri": "spotify:artist:39ywlwtGw8RTGobakgb11L"
+  }
+}

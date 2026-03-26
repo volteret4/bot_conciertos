@@ -1,0 +1,19 @@
+{
+  "timestamp": "2025-11-03T19:58:54.254951",
+  "concerts": [
+    {
+      "artist": "Emmanuel",
+      "name": "Emmanuel & Mijares  - Starlite Madrid",
+      "venue": "IFEMA -  Pabellon 12 y 14",
+      "city": "Madrid",
+      "country": "Spain",
+      "country_code": "ES",
+      "date": "2025-12-20",
+      "time": "21:30:00",
+      "image": "https://s1.ticketm.net/dam/e/3c7/2ae2499c-c61d-43fa-b24e-b56ed23773c7_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+      "url": "https://www.ticketmaster.es/event/emmanuel--mijares-starlite-madrid-tickets/1789998477?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZ2qZ16vraJboM"
+    }
+  ]
+}

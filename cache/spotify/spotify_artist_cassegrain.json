@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:59:35.773198",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4P9XqM8gl12AiZKDIAR5c3"
+    },
+    "followers": {
+      "href": null,
+      "total": 9064
+    },
+    "genres": [
+      "acid techno",
+      "acid house",
+      "dub techno"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4P9XqM8gl12AiZKDIAR5c3",
+    "id": "4P9XqM8gl12AiZKDIAR5c3",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebbaadfd3c0ee38201d8a56a3c",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174baadfd3c0ee38201d8a56a3c",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178baadfd3c0ee38201d8a56a3c",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Cassegrain",
+    "popularity": 9,
+    "type": "artist",
+    "uri": "spotify:artist:4P9XqM8gl12AiZKDIAR5c3"
+  }
+}

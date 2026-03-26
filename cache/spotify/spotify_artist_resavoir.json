@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:49:57.897915",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4Sl3fpSDeo9cMb3ouKm0rV"
+    },
+    "followers": {
+      "href": null,
+      "total": 39982
+    },
+    "genres": [
+      "jazz house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4Sl3fpSDeo9cMb3ouKm0rV",
+    "id": "4Sl3fpSDeo9cMb3ouKm0rV",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb24153e8029cf3a05031be6c6",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517424153e8029cf3a05031be6c6",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17824153e8029cf3a05031be6c6",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Resavoir",
+    "popularity": 37,
+    "type": "artist",
+    "uri": "spotify:artist:4Sl3fpSDeo9cMb3ouKm0rV"
+  }
+}

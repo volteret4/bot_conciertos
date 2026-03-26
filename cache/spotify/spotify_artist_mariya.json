@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:56:18.092405",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3cRGfp8AT72Sop59Kvg2Re"
+    },
+    "followers": {
+      "href": null,
+      "total": 297
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/3cRGfp8AT72Sop59Kvg2Re",
+    "id": "3cRGfp8AT72Sop59Kvg2Re",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27313c3adde2e3534649419cb46",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0213c3adde2e3534649419cb46",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485113c3adde2e3534649419cb46",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Mariya",
+    "popularity": 5,
+    "type": "artist",
+    "uri": "spotify:artist:3cRGfp8AT72Sop59Kvg2Re"
+  }
+}

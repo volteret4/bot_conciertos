@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T19:57:44.132119",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3uL4UpqShC4p2x1dJutoRW"
+    },
+    "followers": {
+      "href": null,
+      "total": 3698788
+    },
+    "genres": [
+      "trap metal",
+      "horrorcore",
+      "emo rap",
+      "cloud rap",
+      "rap metal"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3uL4UpqShC4p2x1dJutoRW",
+    "id": "3uL4UpqShC4p2x1dJutoRW",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb05fe4ce6473b6f00ad5aca73",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517405fe4ce6473b6f00ad5aca73",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17805fe4ce6473b6f00ad5aca73",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Ghostemane",
+    "popularity": 64,
+    "type": "artist",
+    "uri": "spotify:artist:3uL4UpqShC4p2x1dJutoRW"
+  }
+}

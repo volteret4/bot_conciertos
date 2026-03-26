@@ -1,0 +1,77 @@
+{
+  "timestamp": "2025-09-02T08:03:32.773958",
+  "concerts": [
+    {
+      "artist": "Al Stewart",
+      "name": "Al Stewart - All Ages (under 16 with adult)",
+      "venue": "Keswick Theatre",
+      "city": "Glenside",
+      "country": "US",
+      "date": "2025-09-05",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7p9GJ",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7p9GJ"
+    },
+    {
+      "artist": "Al Stewart",
+      "name": "Al Stewart with The Empty Pockets",
+      "venue": "The Vogel at Count Basie Center for the Arts",
+      "city": "Red Bank",
+      "country": "US",
+      "date": "2025-09-06",
+      "time": "19:30:00",
+      "url": "https://www.ticketmaster.com/al-stewart-with-the-empty-pockets-red-bank-new-jersey-09-06-2025/event/1D006236FA731581",
+      "source": "Ticketmaster",
+      "id": "G5vVZbNhBjspv"
+    },
+    {
+      "artist": "Al Stewart",
+      "name": "AL STEWART The Farewell Tour w/ The Empty Pockets w/ Livingston Taylor",
+      "venue": "Birchmere",
+      "city": "Alexandria",
+      "country": "US",
+      "date": "2025-09-07",
+      "time": "19:30:00",
+      "url": "https://www.ticketmaster.com/al-stewart-the-farewell-tour-w-alexandria-virginia-09-07-2025/event/150062A7C2683442",
+      "source": "Ticketmaster",
+      "id": "17A8vxG61LeQdoe"
+    },
+    {
+      "artist": "Al Stewart",
+      "name": "Venue Premium Tickets - Al Stewart Farewell Tour",
+      "venue": "York Barbican",
+      "city": "York",
+      "country": "GB",
+      "date": "2025-10-07",
+      "time": "18:00:00",
+      "url": "https://www.ticketmaster.co.uk/venue-premium-tickets-al-stewart-farewell-york-07-10-2025/event/360062FED9712694",
+      "source": "Ticketmaster",
+      "id": "17uOvxG62D_j3Qf"
+    },
+    {
+      "artist": "Al Stewart",
+      "name": "Al Stewart & The Empty Pockets - The Farewell Tour",
+      "venue": "Glasgow Royal Concert Hall",
+      "city": "Glasgow",
+      "country": "GB",
+      "date": "2025-10-17",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.co.uk/al-stewart-the-empty-pockets-the-glasgow-17-10-2025/event/36006139A9D8139A",
+      "source": "Ticketmaster",
+      "id": "1AUZk7yGketUvCQ"
+    },
+    {
+      "artist": "Al Stewart",
+      "name": "Al Stewart & the Empty Pockets",
+      "venue": "Ulster Hall Belfast",
+      "city": "Belfast",
+      "country": "GB",
+      "date": "2025-10-19",
+      "time": "19:30:00",
+      "url": "https://www.ticketmaster.ie/al-stewart-the-empty-pockets-belfast-19-10-2025/event/38006166B1CD0E4A",
+      "source": "Ticketmaster",
+      "id": "1AzZkAJGkesS8y1"
+    }
+  ]
+}

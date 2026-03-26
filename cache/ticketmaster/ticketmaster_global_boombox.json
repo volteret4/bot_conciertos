@@ -1,0 +1,83 @@
+{
+  "timestamp": "2025-10-23T17:12:12.147925",
+  "concerts": [
+    {
+      "artist": "BoomBox",
+      "name": "Escape",
+      "venue": "NOS Events Center",
+      "city": "San Bernardino",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-10-31",
+      "time": "",
+      "url": "https://on.fgtix.com/trk/Ni5m",
+      "source": "Ticketmaster",
+      "id": "vv170Zb0GkgIE-5X"
+    },
+    {
+      "artist": "BoomBox",
+      "name": "Resilience Entertainment Presents: BOOMBOX (Ukraine)",
+      "venue": "Middle East - Downstairs",
+      "city": "Cambridge",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-19",
+      "time": "19:00:00",
+      "url": "https://www.ticketweb.com/event/resilience-entertainment-presents-boombox-ukraine-middle-east-downstairs-tickets/14611023",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AfboZN"
+    },
+    {
+      "artist": "BoomBox",
+      "name": "Boombox (Ukraine)",
+      "venue": "Park West",
+      "city": "Chicago",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-23",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7pf-t",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7pf-t"
+    },
+    {
+      "artist": "BoomBox",
+      "name": "Boombassador (The Polish Ambassador and Boombox) - 16 and Over",
+      "venue": "Mission Ballroom",
+      "city": "Denver",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-27",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7jf7M",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7jf7M"
+    },
+    {
+      "artist": "BoomBox",
+      "name": "Boombassador (The Polish Ambassador and BoomBox) - All Ages (under 16 with adult)",
+      "venue": "Boulder Theater",
+      "city": "Boulder",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-31",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7jf7U",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7jf7U"
+    },
+    {
+      "artist": "BoomBox",
+      "name": "BoomBox",
+      "venue": "Music Farm",
+      "city": "Charleston",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2027-03-16",
+      "time": "21:00:00",
+      "url": "https://www.ticketmaster.com/boombox-charleston-south-carolina-03-16-2027/event/2D006230B8BE4490",
+      "source": "Ticketmaster",
+      "id": "G5eVZbNezR038"
+    }
+  ]
+}

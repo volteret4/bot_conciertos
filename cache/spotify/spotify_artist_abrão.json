@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:01:24.801620",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/58V5v9MFPcR1Ok4K6gVQsq"
+    },
+    "followers": {
+      "href": null,
+      "total": 3189
+    },
+    "genres": [
+      "indie dance"
+    ],
+    "href": "https://api.spotify.com/v1/artists/58V5v9MFPcR1Ok4K6gVQsq",
+    "id": "58V5v9MFPcR1Ok4K6gVQsq",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebb3eae9a3a5effa7bef0f71da",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174b3eae9a3a5effa7bef0f71da",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178b3eae9a3a5effa7bef0f71da",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Abrão",
+    "popularity": 30,
+    "type": "artist",
+    "uri": "spotify:artist:58V5v9MFPcR1Ok4K6gVQsq"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-11-03T19:59:33.973229",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6vbGW1gdI14163OQECQs5d"
+    },
+    "followers": {
+      "href": null,
+      "total": 7542
+    },
+    "genres": [
+      "nu jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6vbGW1gdI14163OQECQs5d",
+    "id": "6vbGW1gdI14163OQECQs5d",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6772690000c46ceb84c4b674979f00b5fb6ad3",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000dd22eb84c4b674979f00b5fb6ad3",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000bac3eb84c4b674979f00b5fb6ad3",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67726900008f74eb84c4b674979f00b5fb6ad3",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Chelsea Carmichael",
+    "popularity": 16,
+    "type": "artist",
+    "uri": "spotify:artist:6vbGW1gdI14163OQECQs5d"
+  }
+}

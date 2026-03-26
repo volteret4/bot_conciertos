@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T20:01:01.861228",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6h3rSZ8VLK7a5vXjEmhfuD"
+    },
+    "followers": {
+      "href": null,
+      "total": 429712
+    },
+    "genres": [
+      "funk",
+      "disco"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6h3rSZ8VLK7a5vXjEmhfuD",
+    "id": "6h3rSZ8VLK7a5vXjEmhfuD",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/c15c43d50317795bfd51c76d014cf8e0f5a7bd7b",
+        "height": 842,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/5c67ef02d8989c0341ea8786e485ff5640a1b772",
+        "height": 539,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/df63f2be09a675209b3c54a3dc397c515b7e1e2c",
+        "height": 168,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/a9bfb074b36eee60d1b3bd73b8cac80bf19c5506",
+        "height": 54,
+        "width": 64
+      }
+    ],
+    "name": "The Brothers Johnson",
+    "popularity": 51,
+    "type": "artist",
+    "uri": "spotify:artist:6h3rSZ8VLK7a5vXjEmhfuD"
+  }
+}

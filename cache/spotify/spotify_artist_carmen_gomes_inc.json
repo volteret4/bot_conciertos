@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:57:48.912436",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/09jehfgFvaOCPqlXsqZeES"
+    },
+    "followers": {
+      "href": null,
+      "total": 460
+    },
+    "genres": [
+      "vocal jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/09jehfgFvaOCPqlXsqZeES",
+    "id": "09jehfgFvaOCPqlXsqZeES",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebc074b7cbd5655de60e1b546e",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174c074b7cbd5655de60e1b546e",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178c074b7cbd5655de60e1b546e",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Carmen Gomes Inc.",
+    "popularity": 3,
+    "type": "artist",
+    "uri": "spotify:artist:09jehfgFvaOCPqlXsqZeES"
+  }
+}

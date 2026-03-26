@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:46:59.502191",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6ZK2nrW8aCTg8Bid7I7N10"
+    },
+    "followers": {
+      "href": null,
+      "total": 359088
+    },
+    "genres": [
+      "southern gothic",
+      "doom metal"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6ZK2nrW8aCTg8Bid7I7N10",
+    "id": "6ZK2nrW8aCTg8Bid7I7N10",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb86f7c8a4e1232d85615a6679",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517486f7c8a4e1232d85615a6679",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17886f7c8a4e1232d85615a6679",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Chelsea Wolfe",
+    "popularity": 48,
+    "type": "artist",
+    "uri": "spotify:artist:6ZK2nrW8aCTg8Bid7I7N10"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:58:10.650136",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1JcefSOP7bcWEluL0iEIaN"
+    },
+    "followers": {
+      "href": null,
+      "total": 64462
+    },
+    "genres": [
+      "acid house",
+      "acid techno",
+      "ebm",
+      "cold wave"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1JcefSOP7bcWEluL0iEIaN",
+    "id": "1JcefSOP7bcWEluL0iEIaN",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebb61b03aef8e44727006ceb72",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174b61b03aef8e44727006ceb72",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178b61b03aef8e44727006ceb72",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Helena Hauff",
+    "popularity": 24,
+    "type": "artist",
+    "uri": "spotify:artist:1JcefSOP7bcWEluL0iEIaN"
+  }
+}

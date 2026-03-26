@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-10-23T17:11:17.987340",
+  "concerts": [
+    {
+      "artist": "George Clanton",
+      "name": "GEORGE CLANTON",
+      "venue": "Proxima",
+      "city": "Warsaw",
+      "country": "Poland",
+      "country_code": "PL",
+      "date": "2026-01-25",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.pl/event/george-clanton-tickets/103128143?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZQpZ1k7d7IAd"
+    }
+  ]
+}

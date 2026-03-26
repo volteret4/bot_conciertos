@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:47:25.752757",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/36OlYBjBVyklK93GxF5RZW"
+    },
+    "followers": {
+      "href": null,
+      "total": 1232
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/36OlYBjBVyklK93GxF5RZW",
+    "id": "36OlYBjBVyklK93GxF5RZW",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb249177aa6bb44315167554dd",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174249177aa6bb44315167554dd",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178249177aa6bb44315167554dd",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Rainer Strecker",
+    "popularity": 48,
+    "type": "artist",
+    "uri": "spotify:artist:36OlYBjBVyklK93GxF5RZW"
+  }
+}

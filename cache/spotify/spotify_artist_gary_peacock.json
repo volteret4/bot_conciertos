@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T19:49:20.258086",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2k1Qcdf3sOJYCNZEPus58Y"
+    },
+    "followers": {
+      "href": null,
+      "total": 22355
+    },
+    "genres": [
+      "jazz",
+      "free jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2k1Qcdf3sOJYCNZEPus58Y",
+    "id": "2k1Qcdf3sOJYCNZEPus58Y",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/a0d55db0f08e1e31364babca01ab19e9aeb097bc",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/7a962562888beb089aaf48b8cd369e4106c02866",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/2a51c4b41ac2274ec52650b843e29880ecb8c976",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/368bd9d72e26d87b323d9b98166203213c13f43c",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Gary Peacock",
+    "popularity": 40,
+    "type": "artist",
+    "uri": "spotify:artist:2k1Qcdf3sOJYCNZEPus58Y"
+  }
+}

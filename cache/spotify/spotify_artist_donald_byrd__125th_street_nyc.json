@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:58:32.714283",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2TxgW3h1lgJJ1DkqPfMtW3"
+    },
+    "followers": {
+      "href": null,
+      "total": 1059
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/2TxgW3h1lgJJ1DkqPfMtW3",
+    "id": "2TxgW3h1lgJJ1DkqPfMtW3",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2732c58e8baf77d4d9afe33f9c3",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e022c58e8baf77d4d9afe33f9c3",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048512c58e8baf77d4d9afe33f9c3",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Donald Byrd And 125th Street, N.Y.C.",
+    "popularity": 0,
+    "type": "artist",
+    "uri": "spotify:artist:2TxgW3h1lgJJ1DkqPfMtW3"
+  }
+}

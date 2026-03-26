@@ -1,0 +1,83 @@
+{
+  "timestamp": "2025-10-23T17:08:36.962314",
+  "concerts": [
+    {
+      "artist": "Little Feat",
+      "name": "Little Feat: Strike Up the Band Tour",
+      "venue": "The Lyric",
+      "city": "Baltimore",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-10-24",
+      "time": "20:00:00",
+      "url": "https://www.etix.com/ticket/p/84832813/little-featstrike-up-the-band-tour-baltimore-the-lyric-baltimore",
+      "source": "Ticketmaster",
+      "id": "1A4ZkabGkdEb0j6"
+    },
+    {
+      "artist": "Little Feat",
+      "name": "Little Feat: Strike Up the Band Tour",
+      "venue": "The Lyric - Baltimore",
+      "city": "Baltimore",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-10-24",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7fEOS",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7fEOS"
+    },
+    {
+      "artist": "Little Feat",
+      "name": "Little Feat: Strike Up the Band Tour",
+      "venue": "The Paramount in concert with Northwell",
+      "city": "Huntington",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-10-25",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/little-feat-strike-up-the-band-huntington-new-york-10-25-2025/event/0000623DD13F526A",
+      "source": "Ticketmaster",
+      "id": "k7vGFbNMo2gan"
+    },
+    {
+      "artist": "Little Feat",
+      "name": "Little Feat: Strike Up the Band Tour",
+      "venue": "Hackensack Meridian Health Theatre at the Count Basie Center ",
+      "city": "Red Bank",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-10-26",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/little-feat-strike-up-the-band-red-bank-new-jersey-10-26-2025/event/1D006231C46F1544",
+      "source": "Ticketmaster",
+      "id": "G5vVZbN67hs47"
+    },
+    {
+      "artist": "Little Feat",
+      "name": "Little Feat",
+      "venue": "General Admission",
+      "city": "New Jersey",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-10-26",
+      "time": "19:00:00",
+      "url": "",
+      "source": "Ticketmaster",
+      "id": "Za5ju3rKuqZBrWUbl0-caGt0rbJ7Gz_Ev"
+    },
+    {
+      "artist": "Little Feat",
+      "name": "Little Feat: Strike Up the Band Tour",
+      "venue": "General Admission",
+      "city": "New Jersey",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-10-26",
+      "time": "19:00:00",
+      "url": "",
+      "source": "Ticketmaster",
+      "id": "Za5ju3rKuqZDvBh-GxrtcvdQq3sEmbrksK"
+    }
+  ]
+}

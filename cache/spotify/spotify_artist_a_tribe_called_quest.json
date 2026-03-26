@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:47:56.063859",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/09hVIj6vWgoCDtT03h8ZCa"
+    },
+    "followers": {
+      "href": null,
+      "total": 2403473
+    },
+    "genres": [
+      "jazz rap",
+      "east coast hip hop",
+      "hip hop",
+      "old school hip hop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/09hVIj6vWgoCDtT03h8ZCa",
+    "id": "09hVIj6vWgoCDtT03h8ZCa",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb774d73ae6796b6f437d89db9",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174774d73ae6796b6f437d89db9",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178774d73ae6796b6f437d89db9",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "A Tribe Called Quest",
+    "popularity": 64,
+    "type": "artist",
+    "uri": "spotify:artist:09hVIj6vWgoCDtT03h8ZCa"
+  }
+}

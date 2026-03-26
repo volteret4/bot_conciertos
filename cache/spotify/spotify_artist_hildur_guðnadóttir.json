@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:58:14.747853",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2lD1D6eEh7xQdBtnl2Ik7Y"
+    },
+    "followers": {
+      "href": null,
+      "total": 153220
+    },
+    "genres": [
+      "drone",
+      "neoclassical"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2lD1D6eEh7xQdBtnl2Ik7Y",
+    "id": "2lD1D6eEh7xQdBtnl2Ik7Y",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebdb153d114bb563a58f2b261e",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174db153d114bb563a58f2b261e",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178db153d114bb563a58f2b261e",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Hildur Guðnadóttir",
+    "popularity": 46,
+    "type": "artist",
+    "uri": "spotify:artist:2lD1D6eEh7xQdBtnl2Ik7Y"
+  }
+}

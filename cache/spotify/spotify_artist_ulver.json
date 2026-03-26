@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T20:04:41.513075",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6bYFkBNvayh3nGqxcPp7Sv"
+    },
+    "followers": {
+      "href": null,
+      "total": 192242
+    },
+    "genres": [
+      "black metal",
+      "avant-garde",
+      "drone metal",
+      "folk metal"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6bYFkBNvayh3nGqxcPp7Sv",
+    "id": "6bYFkBNvayh3nGqxcPp7Sv",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb71c44edec239468847274176",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517471c44edec239468847274176",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17871c44edec239468847274176",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Ulver",
+    "popularity": 41,
+    "type": "artist",
+    "uri": "spotify:artist:6bYFkBNvayh3nGqxcPp7Sv"
+  }
+}

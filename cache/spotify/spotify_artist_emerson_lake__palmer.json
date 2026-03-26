@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T19:58:53.969887",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0nCiidE5GgDrc5kWN3NZgZ"
+    },
+    "followers": {
+      "href": null,
+      "total": 1152803
+    },
+    "genres": [
+      "progressive rock",
+      "art rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0nCiidE5GgDrc5kWN3NZgZ",
+    "id": "0nCiidE5GgDrc5kWN3NZgZ",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/492cf7afbe3a7be6d6d2bda5c71a52e3cc1c9d3d",
+        "height": 666,
+        "width": 999
+      },
+      {
+        "url": "https://i.scdn.co/image/b08d44bef3e4d8cb3589acc61389a9d62098be47",
+        "height": 427,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/0cbd0b45bdf8659a6d73304c0ae44d8b0dca221d",
+        "height": 133,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/c2f340972877f61ac57c32e6a059a513b4805761",
+        "height": 43,
+        "width": 64
+      }
+    ],
+    "name": "Emerson, Lake & Palmer",
+    "popularity": 53,
+    "type": "artist",
+    "uri": "spotify:artist:0nCiidE5GgDrc5kWN3NZgZ"
+  }
+}

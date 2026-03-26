@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:55:02.788474",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5zjaF8JUdylMWrA7AVo3hJ"
+    },
+    "followers": {
+      "href": null,
+      "total": 80841
+    },
+    "genres": [
+      "ambient folk",
+      "indie folk"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5zjaF8JUdylMWrA7AVo3hJ",
+    "id": "5zjaF8JUdylMWrA7AVo3hJ",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb769e2648bdad94288e3c7a75",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174769e2648bdad94288e3c7a75",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178769e2648bdad94288e3c7a75",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Marissa Nadler",
+    "popularity": 34,
+    "type": "artist",
+    "uri": "spotify:artist:5zjaF8JUdylMWrA7AVo3hJ"
+  }
+}

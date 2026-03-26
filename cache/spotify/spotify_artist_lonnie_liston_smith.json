@@ -1,0 +1,46 @@
+{
+  "timestamp": "2025-11-03T19:48:58.278986",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2hdpXvaQJHBCZIVUd6cLvK"
+    },
+    "followers": {
+      "href": null,
+      "total": 93366
+    },
+    "genres": [
+      "jazz funk",
+      "jazz fusion",
+      "acid jazz",
+      "soul jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2hdpXvaQJHBCZIVUd6cLvK",
+    "id": "2hdpXvaQJHBCZIVUd6cLvK",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/11c1c390ef52edead3fbb0ac3527e9bc1d3e328b",
+        "height": 1218,
+        "width": 881
+      },
+      {
+        "url": "https://i.scdn.co/image/880d52962c84bc51b9a68bcc79b8d9b5401dfec8",
+        "height": 885,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/9f27d354a6baffb0902bca2de93b85f38275e24b",
+        "height": 277,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/cd1119cd2e6989f051888784ec18f13871984e9c",
+        "height": 88,
+        "width": 64
+      }
+    ],
+    "name": "Lonnie Liston Smith",
+    "popularity": 40,
+    "type": "artist",
+    "uri": "spotify:artist:2hdpXvaQJHBCZIVUd6cLvK"
+  }
+}

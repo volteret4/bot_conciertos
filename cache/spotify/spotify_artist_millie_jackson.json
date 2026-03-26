@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-11-03T20:02:17.477140",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/27XI002zivG9xuzrZ9dIb1"
+    },
+    "followers": {
+      "href": null,
+      "total": 162141
+    },
+    "genres": [
+      "northern soul",
+      "soul",
+      "classic soul",
+      "soul blues",
+      "quiet storm"
+    ],
+    "href": "https://api.spotify.com/v1/artists/27XI002zivG9xuzrZ9dIb1",
+    "id": "27XI002zivG9xuzrZ9dIb1",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/398f88b140723f96264b6d4960729e5f3d6fe00b",
+        "height": 1017,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/502884712750aaaa049f17f89d07742fe7547152",
+        "height": 651,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/b206a8940e56d6bc5acadc4611d3f46542789d2d",
+        "height": 203,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/bd686ce6bd4241f9de06bc87855b9b0e37d87e18",
+        "height": 65,
+        "width": 64
+      }
+    ],
+    "name": "Millie Jackson",
+    "popularity": 39,
+    "type": "artist",
+    "uri": "spotify:artist:27XI002zivG9xuzrZ9dIb1"
+  }
+}

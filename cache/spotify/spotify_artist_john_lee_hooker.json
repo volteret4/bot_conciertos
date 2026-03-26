@@ -1,0 +1,48 @@
+{
+  "timestamp": "2025-11-03T19:56:35.655701",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1yNOfXGQNGjAynk77wv85x"
+    },
+    "followers": {
+      "href": null,
+      "total": 918999
+    },
+    "genres": [
+      "blues",
+      "classic blues",
+      "blues rock",
+      "soul blues",
+      "country blues",
+      "jazz blues"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1yNOfXGQNGjAynk77wv85x",
+    "id": "1yNOfXGQNGjAynk77wv85x",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/6bcff0a9ed464621c433fb5d369c2164ebd3d2d0",
+        "height": 987,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/3b521a57a4507cbe4f981c1818af397f56614fdb",
+        "height": 632,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/42b311e986453b8b3ad3693140bd13e23c896792",
+        "height": 197,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/0f405cc6d77f02e3fc39665a7ea76308d26fdc08",
+        "height": 63,
+        "width": 64
+      }
+    ],
+    "name": "John Lee Hooker",
+    "popularity": 54,
+    "type": "artist",
+    "uri": "spotify:artist:1yNOfXGQNGjAynk77wv85x"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-11-03T19:50:03.852841",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1VEzN9lxvG6KPR3QQGsebR"
+    },
+    "followers": {
+      "href": null,
+      "total": 373284
+    },
+    "genres": [
+      "hard bop",
+      "jazz",
+      "bebop",
+      "cool jazz",
+      "free jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1VEzN9lxvG6KPR3QQGsebR",
+    "id": "1VEzN9lxvG6KPR3QQGsebR",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/7f0edf46ec91ef070e8dd73d442c8f00241416aa",
+        "height": 1500,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/3f1e8d2aae30da65b95d4984b881530e01906a9a",
+        "height": 960,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/6f55ffd40872dea2e9ade6757926ac4d1c1e3f7a",
+        "height": 300,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/15ff605d1f0a0c704b13cd6362c175f0a0d5aa73",
+        "height": 96,
+        "width": 64
+      }
+    ],
+    "name": "Sonny Rollins",
+    "popularity": 48,
+    "type": "artist",
+    "uri": "spotify:artist:1VEzN9lxvG6KPR3QQGsebR"
+  }
+}

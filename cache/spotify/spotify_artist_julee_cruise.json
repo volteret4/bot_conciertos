@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-11-03T20:03:53.544895",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4Pt1HZtuJwrQB8l0ES5iTX"
+    },
+    "followers": {
+      "href": null,
+      "total": 122520
+    },
+    "genres": [
+      "dream pop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4Pt1HZtuJwrQB8l0ES5iTX",
+    "id": "4Pt1HZtuJwrQB8l0ES5iTX",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/225e52730b148d91fbf3627b25353857a2144807",
+        "height": 1388,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/8286b19ae2b57a7000584b4847ea18559660fe27",
+        "height": 889,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/13ebe61657f40274988a921ee26500e09eac95c4",
+        "height": 278,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/bc97c94c0ee6dc28d9acf499c44f5cb3d411e0e5",
+        "height": 89,
+        "width": 64
+      }
+    ],
+    "name": "Julee Cruise",
+    "popularity": 46,
+    "type": "artist",
+    "uri": "spotify:artist:4Pt1HZtuJwrQB8l0ES5iTX"
+  }
+}

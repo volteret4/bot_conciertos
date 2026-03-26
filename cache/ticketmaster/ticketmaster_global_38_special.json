@@ -1,0 +1,57 @@
+{
+  "timestamp": "2025-10-23T17:12:31.105756",
+  "concerts": [
+    {
+      "artist": "38 Special",
+      "name": "38 Special",
+      "venue": "Gila River Resorts & Casinos - Wild Horse Pass",
+      "city": "Chandler",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-14",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/38-special-chandler-arizona-11-14-2025/event/190062B6FEAF38BC",
+      "source": "Ticketmaster",
+      "id": "17k8vxG65hXlSxH"
+    },
+    {
+      "artist": "38 Special",
+      "name": "Loverboy & 38 Special",
+      "venue": "Premier Theater at Foxwoods Resort Casino",
+      "city": "Mashantucket",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-12",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/loverboy-38-special-mashantucket-connecticut-12-12-2025/event/1D006329D72A1B90",
+      "source": "Ticketmaster",
+      "id": "G5vVZbwE91-m8"
+    },
+    {
+      "artist": "38 Special",
+      "name": "38 Special",
+      "venue": "Lynn Auditorium",
+      "city": "Lynn",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-13",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/38-special-lynn-massachusetts-12-13-2025/event/01006336E0E96799",
+      "source": "Ticketmaster",
+      "id": "vv1AvZkGUGkdOBpr_"
+    },
+    {
+      "artist": "38 Special",
+      "name": "38 Special",
+      "venue": "Deadwood Mountain Grand",
+      "city": "Deadwood",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-04-19",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/38-special-deadwood-south-dakota-04-19-2026/event/1E00631409906743",
+      "source": "Ticketmaster",
+      "id": "G5vzZbs8a0kqd"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:49:40.782661",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3wury2nd8idV4GecUg5xze"
+    },
+    "followers": {
+      "href": null,
+      "total": 560022
+    },
+    "genres": [
+      "madchester",
+      "britpop",
+      "alternative dance"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3wury2nd8idV4GecUg5xze",
+    "id": "3wury2nd8idV4GecUg5xze",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb67fc8710036b6a053baef3d5",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517467fc8710036b6a053baef3d5",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17867fc8710036b6a053baef3d5",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Primal Scream",
+    "popularity": 51,
+    "type": "artist",
+    "uri": "spotify:artist:3wury2nd8idV4GecUg5xze"
+  }
+}

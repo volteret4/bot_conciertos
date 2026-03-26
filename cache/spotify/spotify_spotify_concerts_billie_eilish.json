@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-24T08:12:39.947293",
+  "data": [
+    {
+      "artist": "Billie Eilish",
+      "artist_name": "Billie Eilish",
+      "name": "Billie Eilish at Kaseya Center",
+      "venue": "Kaseya Center",
+      "city": "Miami",
+      "country": "US",
+      "date": "2025-10-09",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/3w5gDmMOSWYvtZ6V00Gsid",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Billie Eilish",
+      "artist_name": "Billie Eilish",
+      "name": "Billie Eilish at Kaseya Center",
+      "venue": "Kaseya Center",
+      "city": "Miami",
+      "country": "US",
+      "date": "2025-10-11",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/3sMMZSIAWOuNwmmOKt3cJI",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Billie Eilish",
+      "artist_name": "Billie Eilish",
+      "name": "Billie Eilish at Kaseya Center",
+      "venue": "Kaseya Center",
+      "city": "Miami",
+      "country": "US",
+      "date": "2025-10-12",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/6o4E5ub3OPa3a6AYaDwvOD",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Billie Eilish",
+      "artist_name": "Billie Eilish",
+      "name": "Billie Eilish Concert (5atvyz40)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/5atvyz40XAEgxS6Bj6OO0S",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Billie Eilish",
+      "artist_name": "Billie Eilish",
+      "name": "Billie Eilish at Lenovo Center",
+      "venue": "Lenovo Center",
+      "city": "Raleigh",
+      "country": "US",
+      "date": "2025-10-16",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/4a8ObPpkj358Dhsjy8JuVS",
+      "source": "Spotify"
+    }
+  ]
+}

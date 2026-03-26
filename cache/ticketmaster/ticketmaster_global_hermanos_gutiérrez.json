@@ -1,0 +1,89 @@
+{
+  "timestamp": "2025-09-02T08:39:01.343387",
+  "concerts": [
+    {
+      "artist": "Hermanos Gutiérrez",
+      "name": "Hermanos Gutierrez",
+      "venue": "Red Butte Garden",
+      "city": "Salt Lake City",
+      "country": "US",
+      "date": "2025-09-16",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7b3GZ",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7b3GZ"
+    },
+    {
+      "artist": "Hermanos Gutiérrez",
+      "name": "Hermanos Gutierrez",
+      "venue": "Mountain Winery",
+      "city": "Saratoga",
+      "country": "US",
+      "date": "2025-09-19",
+      "time": "19:30:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A74Fvg",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A74Fvg"
+    },
+    {
+      "artist": "Hermanos Gutiérrez",
+      "name": "Hermanos Gutiérrez",
+      "venue": "Libbey Bowl",
+      "city": "Ojai",
+      "country": "US",
+      "date": "2025-09-20",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/hermanos-gutierrez-ojai-california-09-20-2025/event/0900627F9F332BF8",
+      "source": "Ticketmaster",
+      "id": "vv170ZbEGkXLGwRz"
+    },
+    {
+      "artist": "Hermanos Gutiérrez",
+      "name": "Hermanos Gutierrez",
+      "venue": "Union Transfer",
+      "city": "Philadelphia",
+      "country": "US",
+      "date": "2025-09-22",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A74y_3",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A74y_3"
+    },
+    {
+      "artist": "Hermanos Gutiérrez",
+      "name": "Hermanos Gutierrez",
+      "venue": "Kings Theatre",
+      "city": "Brooklyn",
+      "country": "US",
+      "date": "2025-09-23",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A74Y_7",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A74Y_7"
+    },
+    {
+      "artist": "Hermanos Gutiérrez",
+      "name": "Hermanos Gutiérrez",
+      "venue": "Lincoln Theatre",
+      "city": "Washington",
+      "country": "US",
+      "date": "2025-09-25",
+      "time": "20:30:00",
+      "url": "https://www.ticketmaster.com/hermanos-gutierrez-washington-district-of-columbia-09-25-2025/event/15006282C3DF4D8D",
+      "source": "Ticketmaster",
+      "id": "1A4Zk1eGkddMVUu"
+    },
+    {
+      "artist": "Hermanos Gutiérrez",
+      "name": "Hermanos Gutierrez",
+      "venue": "The Eastern-GA",
+      "city": "Atlanta",
+      "country": "US",
+      "date": "2025-09-27",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A74yQ3",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A74yQ3"
+    }
+  ]
+}

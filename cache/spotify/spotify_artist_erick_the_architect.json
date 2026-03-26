@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:02:26.157534",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2mQLwfvZtvtTbipKn3xHmK"
+    },
+    "followers": {
+      "href": null,
+      "total": 200377
+    },
+    "genres": [
+      "jazz rap"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2mQLwfvZtvtTbipKn3xHmK",
+    "id": "2mQLwfvZtvtTbipKn3xHmK",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb325a3bd9068581716736991f",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174325a3bd9068581716736991f",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178325a3bd9068581716736991f",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Erick the Architect",
+    "popularity": 55,
+    "type": "artist",
+    "uri": "spotify:artist:2mQLwfvZtvtTbipKn3xHmK"
+  }
+}

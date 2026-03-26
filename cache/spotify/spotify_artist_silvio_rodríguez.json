@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T19:50:03.494457",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4rUyBlggM5tZUH5QZn9ZuO"
+    },
+    "followers": {
+      "href": null,
+      "total": 1563590
+    },
+    "genres": [
+      "trova",
+      "nueva trova",
+      "singer-songwriter",
+      "latin folklore",
+      "latin folk"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4rUyBlggM5tZUH5QZn9ZuO",
+    "id": "4rUyBlggM5tZUH5QZn9ZuO",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb3e4b2f8a1f5fd4b9fab35b9f",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051743e4b2f8a1f5fd4b9fab35b9f",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1783e4b2f8a1f5fd4b9fab35b9f",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Silvio Rodríguez",
+    "popularity": 65,
+    "type": "artist",
+    "uri": "spotify:artist:4rUyBlggM5tZUH5QZn9ZuO"
+  }
+}

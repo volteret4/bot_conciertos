@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-21T08:27:17.831701",
+  "data": [
+    {
+      "artist": "Chelsea Wolf",
+      "artist_name": "Chelsea Wolf",
+      "name": "Chelsea Wolf at Will Rogers Auditorium",
+      "venue": "Will Rogers Auditorium",
+      "city": "Fort Worth",
+      "country": "US",
+      "date": "2025-09-04",
+      "time": "7:30 PM",
+      "url": "https://open.spotify.com/concert/2NyAkOHkfXoZFGLwYuW5Re",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Chelsea Wolf",
+      "artist_name": "Chelsea Wolf",
+      "name": "Chelsea Wolf at Paramount Theatre Oakland",
+      "venue": "Paramount Theatre Oakland",
+      "city": "Oakland",
+      "country": "US",
+      "date": "2025-09-09",
+      "time": "7:30 PM",
+      "url": "https://open.spotify.com/concert/48lrDm2h0o17yoyYGOP9tY",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Chelsea Wolf",
+      "artist_name": "Chelsea Wolf",
+      "name": "Chelsea Wolf at Moore Theatre",
+      "venue": "Moore Theatre",
+      "city": "Seattle",
+      "country": "US",
+      "date": "2025-09-13",
+      "time": "7:30 PM",
+      "url": "https://open.spotify.com/concert/5mUEv0orOvRMQKV7TER3FG",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Chelsea Wolf",
+      "artist_name": "Chelsea Wolf",
+      "name": "Chelsea Wolf at Moore Theatre",
+      "venue": "Moore Theatre",
+      "city": "Seattle",
+      "country": "US",
+      "date": "2025-09-14",
+      "time": "7:30 PM",
+      "url": "https://open.spotify.com/concert/2rGg0KGSE1MtXJfT8kBJVB",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Chelsea Wolf",
+      "artist_name": "Chelsea Wolf",
+      "name": "Chelsea Wolf at Orpheum Theatre",
+      "venue": "Orpheum Theatre",
+      "city": "Minneapolis",
+      "country": "US",
+      "date": "2025-09-19",
+      "time": "7:30 PM",
+      "url": "https://open.spotify.com/concert/1o8GCjTTVKRtUG539p82nS",
+      "source": "Spotify"
+    }
+  ]
+}

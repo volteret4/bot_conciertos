@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:56:35.950378",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/156RNr4LbNWLYm5k6nfsFk"
+    },
+    "followers": {
+      "href": null,
+      "total": 2743
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/156RNr4LbNWLYm5k6nfsFk",
+    "id": "156RNr4LbNWLYm5k6nfsFk",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273ab4dc0687e480d67d469f269",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02ab4dc0687e480d67d469f269",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851ab4dc0687e480d67d469f269",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "John Michael Hopkins",
+    "popularity": 32,
+    "type": "artist",
+    "uri": "spotify:artist:156RNr4LbNWLYm5k6nfsFk"
+  }
+}

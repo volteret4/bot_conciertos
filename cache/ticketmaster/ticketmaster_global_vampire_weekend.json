@@ -1,0 +1,109 @@
+{
+  "timestamp": "2025-10-23T17:05:57.162444",
+  "concerts": [
+    {
+      "artist": "Vampire Weekend",
+      "name": "Vampire Weekend Ticket + Hotel Deals",
+      "venue": "Fontainebleau Las Vegas",
+      "city": "Las Vegas",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-07",
+      "time": "20:00:00",
+      "url": "https://ad.doubleclick.net/ddm/clk/617006570;424246018;y;dc_transparent=1;?https://travel.ticketmaster.com/event/10202858?_uid=53477f82-54f0-4429-b7af-746146806a86&utm_source=FB&utm_medium=TM_ADP_VampireWeekend",
+      "source": "Ticketmaster",
+      "id": "17AYvxG6CqRyZSt"
+    },
+    {
+      "artist": "Vampire Weekend",
+      "name": "Vampire Weekend - 'Only God Was Above Us' Tour Part 2",
+      "venue": "Fontainebleau Las Vegas",
+      "city": "Las Vegas",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-07",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/vampire-weekend-only-god-was-above-las-vegas-nevada-11-07-2025/event/170062D3A3C825DA",
+      "source": "Ticketmaster",
+      "id": "17AYvxG6uCNwe9Q"
+    },
+    {
+      "artist": "Vampire Weekend",
+      "name": "Abono General 3 días Corona Capital 2025",
+      "venue": "Autodromo Hnos. Rodriguez",
+      "city": "México",
+      "country": "Mexico",
+      "country_code": "MX",
+      "date": "2025-11-14",
+      "time": "",
+      "url": "https://www.ticketmaster.com.mx/abono-general-3-dias-corona-capital-mexico-14-11-2025/event/140062B0ADE12562",
+      "source": "Ticketmaster",
+      "id": "17AZvxG65ecz34x"
+    },
+    {
+      "artist": "Vampire Weekend",
+      "name": "Abono Comfort Pass Banamex Corona Capital 2025",
+      "venue": "Autodromo Hnos. Rodriguez",
+      "city": "México",
+      "country": "Mexico",
+      "country_code": "MX",
+      "date": "2025-11-14",
+      "time": "",
+      "url": "https://www.ticketmaster.com.mx/abono-comfort-pass-banamex-corona-capital-mexico-14-11-2025/event/140062B0AE5725E7",
+      "source": "Ticketmaster",
+      "id": "17AZvxG65em4w9E"
+    },
+    {
+      "artist": "Vampire Weekend",
+      "name": "Abono Banamex Plus Corona Capital 2025",
+      "venue": "Autodromo Hnos. Rodriguez",
+      "city": "México",
+      "country": "Mexico",
+      "country_code": "MX",
+      "date": "2025-11-14",
+      "time": "",
+      "url": "https://www.ticketmaster.com.mx/abono-banamex-plus-corona-capital-2025-mexico-14-11-2025/event/140062B0B12326F1",
+      "source": "Ticketmaster",
+      "id": "17AZvxG65esFwhs"
+    },
+    {
+      "artist": "Vampire Weekend",
+      "name": "Individual General Corona Capital 2025",
+      "venue": "Autodromo Hnos. Rodriguez",
+      "city": "México",
+      "country": "Mexico",
+      "country_code": "MX",
+      "date": "2025-11-15",
+      "time": "14:00:00",
+      "url": "https://www.ticketmaster.com.mx/individual-general-corona-capital-2025-mexico-15-11-2025/event/140062B095C1170B",
+      "source": "Ticketmaster",
+      "id": "17AZvxG65e4Yoj5"
+    },
+    {
+      "artist": "Vampire Weekend",
+      "name": "Individual Banamex Plus Corona Capital 2025",
+      "venue": "Autodromo Hnos. Rodriguez",
+      "city": "México",
+      "country": "Mexico",
+      "country_code": "MX",
+      "date": "2025-11-15",
+      "time": "14:00:00",
+      "url": "https://www.ticketmaster.com.mx/individual-banamex-plus-corona-capital-2025-mexico-15-11-2025/event/140062B084A714F4",
+      "source": "Ticketmaster",
+      "id": "17AZvxG65e7tsKV"
+    },
+    {
+      "artist": "Vampire Weekend",
+      "name": "Individual Banamex Comfort Pass Corona Capital 2025",
+      "venue": "Autodromo Hnos. Rodriguez",
+      "city": "México",
+      "country": "Mexico",
+      "country_code": "MX",
+      "date": "2025-11-15",
+      "time": "14:00:00",
+      "url": "https://www.ticketmaster.com.mx/individual-banamex-comfort-pass-corona-capital-mexico-15-11-2025/event/140062B0983E1759",
+      "source": "Ticketmaster",
+      "id": "17AZvxG65eb2-q_"
+    }
+  ]
+}

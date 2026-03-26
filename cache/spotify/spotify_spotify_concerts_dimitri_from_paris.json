@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-08-21T08:37:40.970200",
+  "data": [
+    {
+      "artist": "Dimitri From Paris",
+      "artist_name": "Dimitri From Paris",
+      "name": "Dimitri From Paris at Crystal Palace Bowl",
+      "venue": "Crystal Palace Bowl",
+      "city": "London",
+      "country": "GB",
+      "date": "2025-08-24",
+      "time": "2:00 PM",
+      "url": "https://open.spotify.com/concert/55j74luN1XWPUyr6NEyeja",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Dimitri From Paris",
+      "artist_name": "Dimitri From Paris",
+      "name": "Dimitri From Paris at Auditorium Parco della Musica",
+      "venue": "Auditorium Parco della Musica",
+      "city": "Roma",
+      "country": "IT",
+      "date": "2025-09-14",
+      "time": "4:00 PM",
+      "url": "https://open.spotify.com/concert/6C4J59M2ZMvSBEfgfg80t1",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Dimitri From Paris",
+      "artist_name": "Dimitri From Paris",
+      "name": "Dimitri From Paris at Chinois",
+      "venue": "Chinois",
+      "city": "Ibiza",
+      "country": "ES",
+      "date": "2025-09-27",
+      "time": "11:30 PM",
+      "url": "https://open.spotify.com/concert/6rptD1xFPHxBTatmUG3baI",
+      "source": "Spotify"
+    }
+  ]
+}

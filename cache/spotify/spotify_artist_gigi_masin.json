@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:03:49.818820",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0dCVhSVXD9JhJh2bTySJZx"
+    },
+    "followers": {
+      "href": null,
+      "total": 42758
+    },
+    "genres": [
+      "ambient"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0dCVhSVXD9JhJh2bTySJZx",
+    "id": "0dCVhSVXD9JhJh2bTySJZx",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebc5b527ba1f84e6629eace939",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174c5b527ba1f84e6629eace939",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178c5b527ba1f84e6629eace939",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Gigi Masin",
+    "popularity": 41,
+    "type": "artist",
+    "uri": "spotify:artist:0dCVhSVXD9JhJh2bTySJZx"
+  }
+}

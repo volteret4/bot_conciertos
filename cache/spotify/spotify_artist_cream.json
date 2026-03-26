@@ -1,0 +1,46 @@
+{
+  "timestamp": "2025-09-02T08:20:43.876624",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/74oJ4qxwOZvX6oSsu1DGnw"
+    },
+    "followers": {
+      "href": null,
+      "total": 2606670
+    },
+    "genres": [
+      "classic rock",
+      "psychedelic rock",
+      "acid rock",
+      "blues rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/74oJ4qxwOZvX6oSsu1DGnw",
+    "id": "74oJ4qxwOZvX6oSsu1DGnw",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/aab6a0a0e9ca2ab17460b0451e59ba507cc5802a",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/e66b5373212e507f9695921b5899f80a926b1c92",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/a4ba54e5ad0a2ef0324205130cca16df1e19c822",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/7c7f6a3fef88d1aeacef8b8a8a9d632eb606d2b1",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Cream",
+    "popularity": 64,
+    "type": "artist",
+    "uri": "spotify:artist:74oJ4qxwOZvX6oSsu1DGnw"
+  }
+}

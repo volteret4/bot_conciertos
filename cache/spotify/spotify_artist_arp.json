@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:01:52.707579",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3p4ATdrRNiaczZdnPeZlqA"
+    },
+    "followers": {
+      "href": null,
+      "total": 28107
+    },
+    "genres": [
+      "punk",
+      "ska punk"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3p4ATdrRNiaczZdnPeZlqA",
+    "id": "3p4ATdrRNiaczZdnPeZlqA",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eba6d341e32a5e42b4010b0864",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174a6d341e32a5e42b4010b0864",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178a6d341e32a5e42b4010b0864",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Arpaviejas",
+    "popularity": 34,
+    "type": "artist",
+    "uri": "spotify:artist:3p4ATdrRNiaczZdnPeZlqA"
+  }
+}

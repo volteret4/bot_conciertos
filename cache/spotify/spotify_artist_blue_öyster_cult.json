@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-10-23T17:55:18.675639",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/00tVTdpEhQQw1bqdu8RCx2"
+    },
+    "followers": {
+      "href": null,
+      "total": 1714710
+    },
+    "genres": [
+      "classic rock",
+      "hard rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/00tVTdpEhQQw1bqdu8RCx2",
+    "id": "00tVTdpEhQQw1bqdu8RCx2",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eba50ccc99f741a7899654bc16",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174a50ccc99f741a7899654bc16",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178a50ccc99f741a7899654bc16",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Blue Öyster Cult",
+    "popularity": 62,
+    "type": "artist",
+    "uri": "spotify:artist:00tVTdpEhQQw1bqdu8RCx2"
+  }
+}

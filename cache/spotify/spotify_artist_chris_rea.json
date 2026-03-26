@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:49:55.240416",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5KEG7G8LDYlHgFDqZyEEs2"
+    },
+    "followers": {
+      "href": null,
+      "total": 1147771
+    },
+    "genres": [
+      "christmas"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5KEG7G8LDYlHgFDqZyEEs2",
+    "id": "5KEG7G8LDYlHgFDqZyEEs2",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb81aacad025d8338d125debd0",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517481aacad025d8338d125debd0",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17881aacad025d8338d125debd0",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Chris Rea",
+    "popularity": 60,
+    "type": "artist",
+    "uri": "spotify:artist:5KEG7G8LDYlHgFDqZyEEs2"
+  }
+}

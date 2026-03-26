@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T19:47:56.948602",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6U3cvMmHIab0CAGtC5tRY3"
+    },
+    "followers": {
+      "href": null,
+      "total": 64769
+    },
+    "genres": [
+      "nu jazz",
+      "french jazz",
+      "jazz",
+      "jazz fusion",
+      "acid jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6U3cvMmHIab0CAGtC5tRY3",
+    "id": "6U3cvMmHIab0CAGtC5tRY3",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebc51afaf93508ecffc2e8e038",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174c51afaf93508ecffc2e8e038",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178c51afaf93508ecffc2e8e038",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Erik Truffaz",
+    "popularity": 37,
+    "type": "artist",
+    "uri": "spotify:artist:6U3cvMmHIab0CAGtC5tRY3"
+  }
+}

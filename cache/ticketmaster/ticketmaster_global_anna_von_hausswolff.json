@@ -1,0 +1,122 @@
+{
+  "timestamp": "2025-10-23T17:10:10.043661",
+  "concerts": [
+    {
+      "artist": "Anna von Hausswolff",
+      "name": "Anna Von Hausswolff (SE)",
+      "venue": "Unknown venue",
+      "city": "København V",
+      "country": "Denmark",
+      "country_code": "DK",
+      "date": "2025-12-04",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.dk/event/anna-von-hausswolff-se--tickets/144667794?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZC4Z1kA7_Erf"
+    },
+    {
+      "artist": "Anna von Hausswolff",
+      "name": "Anna von Hausswolff",
+      "venue": "Unknown venue",
+      "city": "Johanneshov",
+      "country": "Sweden",
+      "country_code": "SE",
+      "date": "2025-12-12",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.se/event/anna-von-hausswolff-tickets/1790584504?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZq2Z16vr8p7f7"
+    },
+    {
+      "artist": "Anna von Hausswolff",
+      "name": "Anna Von Hausswolff",
+      "venue": "Thekla",
+      "city": "Bristol",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-01-25",
+      "time": "19:00:00",
+      "url": "https://www.ticketweb.uk/event/anna-von-hausswolff-thekla-tickets/14535403?REFERRAL_ID=tmfeed",
+      "source": "Ticketmaster",
+      "id": "1AwZkGNGke-2ZyC"
+    },
+    {
+      "artist": "Anna von Hausswolff",
+      "name": "Anna Von Hausswolff",
+      "venue": "YES (Pink Room)",
+      "city": "Manchester",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-01-27",
+      "time": "19:30:00",
+      "url": "https://www.ticketweb.uk/event/anna-von-hausswolff-yes-pink-room-tickets/14541943?REFERRAL_ID=tmfeed",
+      "source": "Ticketmaster",
+      "id": "1AwZkGPGkdyCx_r"
+    },
+    {
+      "artist": "Anna von Hausswolff",
+      "name": "Anna Von Hausswolff - ICONOCLASTS Tour",
+      "venue": "Unknown venue",
+      "city": "Vienna",
+      "country": "Austria",
+      "country_code": "AT",
+      "date": "2026-02-07",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.at/event/anna-von-hausswolff-iconoclasts-tour-tickets/1321648058?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZ5rZ16vG-_Fvb"
+    },
+    {
+      "artist": "Anna von Hausswolff",
+      "name": "Anna von Hausswolff ",
+      "venue": "Brick and Mortar Music Hall",
+      "city": "San Francisco",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-03-17",
+      "time": "20:00:00",
+      "url": "https://www.ticketweb.com/event/anna-von-hausswolff-brick-and-mortar-music-hall-tickets/14574903",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1Af4V0d"
+    },
+    {
+      "artist": "Anna von Hausswolff",
+      "name": "Anna Von Hausswolff: Iconoclasts Tour",
+      "venue": "The Moroccan Lounge",
+      "city": "Los Angeles",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-03-18",
+      "time": "18:30:00",
+      "url": "https://www.ticketmaster.com/anna-von-hausswolff-iconoclasts-tour-los-angeles-california-03-18-2026/event/0900632FD01B2B89",
+      "source": "Ticketmaster",
+      "id": "vv170ZbwGkT8kwma"
+    },
+    {
+      "artist": "Anna von Hausswolff",
+      "name": "Anna von Hausswolff",
+      "venue": "Empty Bottle",
+      "city": "Chicago",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-03-20",
+      "time": "21:00:00",
+      "url": "https://www.ticketweb.com/event/anna-von-hausswolff-empty-bottle-tickets/14564903",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1Af400d"
+    },
+    {
+      "artist": "Anna von Hausswolff",
+      "name": "Anna von Hausswolff: Iconoclasts Tour",
+      "venue": "The Great Hall",
+      "city": "Toronto",
+      "country": "Canada",
+      "country_code": "CA",
+      "date": "2026-03-22",
+      "time": "19:00:00",
+      "url": "https://www.ticketweb.ca/event/anna-von-hausswolff-iconoclasts-tour-the-great-hall-tickets/14564433",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1Af408S"
+    }
+  ]
+}

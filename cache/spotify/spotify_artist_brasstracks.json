@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:00:59.497128",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5sKvgmG84C0bIMWeS2SRPr"
+    },
+    "followers": {
+      "href": null,
+      "total": 122653
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/5sKvgmG84C0bIMWeS2SRPr",
+    "id": "5sKvgmG84C0bIMWeS2SRPr",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebc5490b61851982c22b4666f0",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174c5490b61851982c22b4666f0",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178c5490b61851982c22b4666f0",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Brasstracks",
+    "popularity": 43,
+    "type": "artist",
+    "uri": "spotify:artist:5sKvgmG84C0bIMWeS2SRPr"
+  }
+}

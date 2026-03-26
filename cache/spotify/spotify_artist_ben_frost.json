@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T20:03:58.437152",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6qEM4txXHvfMbOUOK9L7pl"
+    },
+    "followers": {
+      "href": null,
+      "total": 70254
+    },
+    "genres": [
+      "drone",
+      "dark ambient",
+      "ambient",
+      "experimental"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6qEM4txXHvfMbOUOK9L7pl",
+    "id": "6qEM4txXHvfMbOUOK9L7pl",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb34337c6e2c7674b7d9e63459",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517434337c6e2c7674b7d9e63459",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17834337c6e2c7674b7d9e63459",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Ben Frost",
+    "popularity": 29,
+    "type": "artist",
+    "uri": "spotify:artist:6qEM4txXHvfMbOUOK9L7pl"
+  }
+}

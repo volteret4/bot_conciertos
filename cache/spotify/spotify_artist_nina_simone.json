@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-11-03T19:48:52.849501",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7G1GBhoKtEPnP86X2PvEYO"
+    },
+    "followers": {
+      "href": null,
+      "total": 3233365
+    },
+    "genres": [
+      "vocal jazz",
+      "jazz blues",
+      "soul",
+      "soul jazz",
+      "jazz",
+      "blues"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7G1GBhoKtEPnP86X2PvEYO",
+    "id": "7G1GBhoKtEPnP86X2PvEYO",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb136c51c848c26a6cce7f9e56",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174136c51c848c26a6cce7f9e56",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178136c51c848c26a6cce7f9e56",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Nina Simone",
+    "popularity": 68,
+    "type": "artist",
+    "uri": "spotify:artist:7G1GBhoKtEPnP86X2PvEYO"
+  }
+}

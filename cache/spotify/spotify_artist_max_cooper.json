@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:59:56.588045",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0WSSKmoRbxqLf3MnXInQ2J"
+    },
+    "followers": {
+      "href": null,
+      "total": 205233
+    },
+    "genres": [
+      "minimal techno",
+      "idm",
+      "electronica"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0WSSKmoRbxqLf3MnXInQ2J",
+    "id": "0WSSKmoRbxqLf3MnXInQ2J",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb876151cdb606003d1915ac5f",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174876151cdb606003d1915ac5f",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178876151cdb606003d1915ac5f",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Max Cooper",
+    "popularity": 46,
+    "type": "artist",
+    "uri": "spotify:artist:0WSSKmoRbxqLf3MnXInQ2J"
+  }
+}

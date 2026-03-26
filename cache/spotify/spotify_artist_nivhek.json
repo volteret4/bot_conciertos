@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:55:10.940394",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5igTNru2ENU1qwU1qvlmYl"
+    },
+    "followers": {
+      "href": null,
+      "total": 7204
+    },
+    "genres": [
+      "drone",
+      "ambient",
+      "experimental"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5igTNru2ENU1qwU1qvlmYl",
+    "id": "5igTNru2ENU1qwU1qvlmYl",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2732c272d5e09c0fa7ca5b789c1",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02840e51934963a7efcfc7a698",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048512c272d5e09c0fa7ca5b789c1",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Nivhek",
+    "popularity": 6,
+    "type": "artist",
+    "uri": "spotify:artist:5igTNru2ENU1qwU1qvlmYl"
+  }
+}

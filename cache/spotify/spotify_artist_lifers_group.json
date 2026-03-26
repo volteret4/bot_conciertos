@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:55:55.989466",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5gaDwa5RCBzZaAAFb0G7oN"
+    },
+    "followers": {
+      "href": null,
+      "total": 112
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/5gaDwa5RCBzZaAAFb0G7oN",
+    "id": "5gaDwa5RCBzZaAAFb0G7oN",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebfaa03cdd74354b1338378eea",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174faa03cdd74354b1338378eea",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178faa03cdd74354b1338378eea",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Lifers Group Official",
+    "popularity": 0,
+    "type": "artist",
+    "uri": "spotify:artist:5gaDwa5RCBzZaAAFb0G7oN"
+  }
+}

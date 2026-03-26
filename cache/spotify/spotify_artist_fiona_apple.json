@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:01:51.407121",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3g2kUQ6tHLLbmkV7T4GPtL"
+    },
+    "followers": {
+      "href": null,
+      "total": 1801527
+    },
+    "genres": [
+      "art pop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3g2kUQ6tHLLbmkV7T4GPtL",
+    "id": "3g2kUQ6tHLLbmkV7T4GPtL",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebf178cbda9bd9a389581ff021",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174f178cbda9bd9a389581ff021",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178f178cbda9bd9a389581ff021",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Fiona Apple",
+    "popularity": 63,
+    "type": "artist",
+    "uri": "spotify:artist:3g2kUQ6tHLLbmkV7T4GPtL"
+  }
+}

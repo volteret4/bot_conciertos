@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T19:46:59.454144",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5jhqwsWfRaETrWPWI0Rc7u"
+    },
+    "followers": {
+      "href": null,
+      "total": 24573
+    },
+    "genres": [
+      "krautrock",
+      "dub"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5jhqwsWfRaETrWPWI0Rc7u",
+    "id": "5jhqwsWfRaETrWPWI0Rc7u",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6772690000c46caa0851297207799a426e4fc9",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000dd22aa0851297207799a426e4fc9",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000bac3aa0851297207799a426e4fc9",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67726900008f74aa0851297207799a426e4fc9",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Jah Wobble",
+    "popularity": 31,
+    "type": "artist",
+    "uri": "spotify:artist:5jhqwsWfRaETrWPWI0Rc7u"
+  }
+}

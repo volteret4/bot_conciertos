@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:49:10.238763",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0ijZjXvaWp1DWWlSvfZLIW"
+    },
+    "followers": {
+      "href": null,
+      "total": 379
+    },
+    "genres": [
+      "trip hop",
+      "big beat",
+      "downtempo"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0ijZjXvaWp1DWWlSvfZLIW",
+    "id": "0ijZjXvaWp1DWWlSvfZLIW",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273790e8705524cbeae2ae2ac7a",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02790e8705524cbeae2ae2ac7a",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851790e8705524cbeae2ae2ac7a",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Sound Me",
+    "popularity": 0,
+    "type": "artist",
+    "uri": "spotify:artist:0ijZjXvaWp1DWWlSvfZLIW"
+  }
+}

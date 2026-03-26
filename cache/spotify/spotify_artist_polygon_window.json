@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:49:36.654694",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1A6LF8jYHkaRro5x8JRT2w"
+    },
+    "followers": {
+      "href": null,
+      "total": 35318
+    },
+    "genres": [
+      "idm"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1A6LF8jYHkaRro5x8JRT2w",
+    "id": "1A6LF8jYHkaRro5x8JRT2w",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27372f4d442ace116af7bb18a68",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0272f4d442ace116af7bb18a68",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485172f4d442ace116af7bb18a68",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Polygon Window",
+    "popularity": 33,
+    "type": "artist",
+    "uri": "spotify:artist:1A6LF8jYHkaRro5x8JRT2w"
+  }
+}

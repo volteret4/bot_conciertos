@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:02:04.294756",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2ZUIJQdnxHYN1pssKbtwh5"
+    },
+    "followers": {
+      "href": null,
+      "total": 232942
+    },
+    "genres": [
+      "power metal",
+      "heavy metal"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2ZUIJQdnxHYN1pssKbtwh5",
+    "id": "2ZUIJQdnxHYN1pssKbtwh5",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb692c189be243dd2b8879d14d",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174692c189be243dd2b8879d14d",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178692c189be243dd2b8879d14d",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Avalanch",
+    "popularity": 42,
+    "type": "artist",
+    "uri": "spotify:artist:2ZUIJQdnxHYN1pssKbtwh5"
+  }
+}

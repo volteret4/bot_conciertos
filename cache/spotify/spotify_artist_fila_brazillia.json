@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T20:04:36.576497",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2wss0kNi7zdZTrxnCFxSQW"
+    },
+    "followers": {
+      "href": null,
+      "total": 60825
+    },
+    "genres": [
+      "trip hop",
+      "downtempo",
+      "nu jazz",
+      "acid jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2wss0kNi7zdZTrxnCFxSQW",
+    "id": "2wss0kNi7zdZTrxnCFxSQW",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb21137d5be836c7c49172aaf0",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517421137d5be836c7c49172aaf0",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17821137d5be836c7c49172aaf0",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Fila Brazillia",
+    "popularity": 34,
+    "type": "artist",
+    "uri": "spotify:artist:2wss0kNi7zdZTrxnCFxSQW"
+  }
+}

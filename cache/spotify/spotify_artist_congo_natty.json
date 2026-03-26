@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:59:55.032087",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1NngQUSMHaauD7UjKuaH2W"
+    },
+    "followers": {
+      "href": null,
+      "total": 79902
+    },
+    "genres": [
+      "jungle",
+      "drum and bass",
+      "ragga",
+      "dub"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1NngQUSMHaauD7UjKuaH2W",
+    "id": "1NngQUSMHaauD7UjKuaH2W",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb6c5335f2f8ba3ddef00b4f08",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051746c5335f2f8ba3ddef00b4f08",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1786c5335f2f8ba3ddef00b4f08",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Congo Natty",
+    "popularity": 37,
+    "type": "artist",
+    "uri": "spotify:artist:1NngQUSMHaauD7UjKuaH2W"
+  }
+}

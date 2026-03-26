@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:50:12.930042",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5gThGnXmcMlq5iGiBUfk46"
+    },
+    "followers": {
+      "href": null,
+      "total": 2391
+    },
+    "genres": [
+      "experimental",
+      "idm",
+      "drone",
+      "avant-garde"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5gThGnXmcMlq5iGiBUfk46",
+    "id": "5gThGnXmcMlq5iGiBUfk46",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ded33e2c49b0fb9ca5220de4606dd3d008319776",
+        "height": 512,
+        "width": 456
+      },
+      {
+        "url": "https://i.scdn.co/image/a8cf14f6a4328a755dd7401a906fbd9792020775",
+        "height": 225,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/6632a5243693f86f4aee1788765fa17526fbcce8",
+        "height": 72,
+        "width": 64
+      }
+    ],
+    "name": "Yves De Mey",
+    "popularity": 2,
+    "type": "artist",
+    "uri": "spotify:artist:5gThGnXmcMlq5iGiBUfk46"
+  }
+}

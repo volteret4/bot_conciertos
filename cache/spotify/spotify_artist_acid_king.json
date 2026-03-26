@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-11-03T20:01:25.228669",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0PK6ewFU4DbFB8Eqr58Sct"
+    },
+    "followers": {
+      "href": null,
+      "total": 106703
+    },
+    "genres": [
+      "stoner metal",
+      "sludge metal",
+      "doom metal",
+      "drone metal",
+      "space rock",
+      "acid rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0PK6ewFU4DbFB8Eqr58Sct",
+    "id": "0PK6ewFU4DbFB8Eqr58Sct",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb675b16f51695aac992867ea9",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174675b16f51695aac992867ea9",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178675b16f51695aac992867ea9",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Acid King",
+    "popularity": 34,
+    "type": "artist",
+    "uri": "spotify:artist:0PK6ewFU4DbFB8Eqr58Sct"
+  }
+}

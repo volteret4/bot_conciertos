@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T19:46:41.481550",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/28rpZV7uGYyg3nwVvHQarq"
+    },
+    "followers": {
+      "href": null,
+      "total": 7019
+    },
+    "genres": [
+      "minimalism",
+      "avant-garde"
+    ],
+    "href": "https://api.spotify.com/v1/artists/28rpZV7uGYyg3nwVvHQarq",
+    "id": "28rpZV7uGYyg3nwVvHQarq",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6772690000c46c1ac90f6244a277013efde445",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000dd221ac90f6244a277013efde445",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000bac31ac90f6244a277013efde445",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67726900008f741ac90f6244a277013efde445",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Collin Walcott",
+    "popularity": 20,
+    "type": "artist",
+    "uri": "spotify:artist:28rpZV7uGYyg3nwVvHQarq"
+  }
+}

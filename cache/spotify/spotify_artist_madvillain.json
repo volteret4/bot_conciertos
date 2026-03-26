@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T19:56:13.409637",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2aoFQUeHD1U7pL098lRsDU"
+    },
+    "followers": {
+      "href": null,
+      "total": 790466
+    },
+    "genres": [
+      "experimental hip hop",
+      "alternative hip hop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2aoFQUeHD1U7pL098lRsDU",
+    "id": "2aoFQUeHD1U7pL098lRsDU",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/bc99e9cb1976fcecb929d819b3dfc6f6fabca500",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/9d7ed68679a970b86faaea230d16334baba5ed4b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/3c14d3a5bf0dbc50595b6d5001633aae9d9e2b5f",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/ad65acde29d51f7f62a9307815d5b9029be3bb64",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Madvillain",
+    "popularity": 61,
+    "type": "artist",
+    "uri": "spotify:artist:2aoFQUeHD1U7pL098lRsDU"
+  }
+}

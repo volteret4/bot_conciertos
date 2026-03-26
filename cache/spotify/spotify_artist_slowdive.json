@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T20:04:36.150683",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/72X6FHxaShda0XeQw3vbeF"
+    },
+    "followers": {
+      "href": null,
+      "total": 1370547
+    },
+    "genres": [
+      "shoegaze",
+      "dream pop",
+      "slowcore"
+    ],
+    "href": "https://api.spotify.com/v1/artists/72X6FHxaShda0XeQw3vbeF",
+    "id": "72X6FHxaShda0XeQw3vbeF",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb653481f50df3c11791d6132a",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174653481f50df3c11791d6132a",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178653481f50df3c11791d6132a",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Slowdive",
+    "popularity": 64,
+    "type": "artist",
+    "uri": "spotify:artist:72X6FHxaShda0XeQw3vbeF"
+  }
+}

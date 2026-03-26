@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:48:16.132503",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/44QvjtHQtCiJae664kzTV9"
+    },
+    "followers": {
+      "href": null,
+      "total": 607
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/44QvjtHQtCiJae664kzTV9",
+    "id": "44QvjtHQtCiJae664kzTV9",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273e53943851d824caf5bc77231",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02e53943851d824caf5bc77231",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851e53943851d824caf5bc77231",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "J.K. Rowling",
+    "popularity": 0,
+    "type": "artist",
+    "uri": "spotify:artist:44QvjtHQtCiJae664kzTV9"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:55:24.475494",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3XFQRe2FsSOjrODygK4caW"
+    },
+    "followers": {
+      "href": null,
+      "total": 75380
+    },
+    "genres": [
+      "black metal",
+      "avant-garde",
+      "drone metal",
+      "sludge metal"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3XFQRe2FsSOjrODygK4caW",
+    "id": "3XFQRe2FsSOjrODygK4caW",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb51c2a2bcbffebc87a49711cd",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517451c2a2bcbffebc87a49711cd",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17851c2a2bcbffebc87a49711cd",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Oranssi Pazuzu",
+    "popularity": 30,
+    "type": "artist",
+    "uri": "spotify:artist:3XFQRe2FsSOjrODygK4caW"
+  }
+}

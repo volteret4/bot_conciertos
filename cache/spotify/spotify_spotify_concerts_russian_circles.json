@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-25T09:19:08.227924",
+  "data": [
+    {
+      "artist": "Russian Circles",
+      "artist_name": "Russian Circles",
+      "name": "Russian Circles at The Magic Stick",
+      "venue": "The Magic Stick",
+      "city": "Detroit",
+      "country": "US",
+      "date": "2025-09-11",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/4nQ26jG8nNwEwGdAuytBgF",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Russian Circles",
+      "artist_name": "Russian Circles",
+      "name": "Russian Circles at The Roxy at Mahall&#x27;s",
+      "venue": "The Roxy at Mahall&#x27;s",
+      "city": "Lakewood",
+      "country": "US",
+      "date": "2025-09-12",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/5saMuNn9pvYGELDtLzEgg2",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Russian Circles",
+      "artist_name": "Russian Circles",
+      "name": "Russian Circles Concert (760eoztF)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/760eoztFQRfo91pS8czou9",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Russian Circles",
+      "artist_name": "Russian Circles",
+      "name": "Russian Circles Concert (1XI98le0)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/1XI98le0ePaR2C5FdHbvf6",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Russian Circles",
+      "artist_name": "Russian Circles",
+      "name": "Russian Circles Concert (3bVcg1Wx)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/3bVcg1Wx6nZ8ncN9OV2cIN",
+      "source": "Spotify"
+    }
+  ]
+}

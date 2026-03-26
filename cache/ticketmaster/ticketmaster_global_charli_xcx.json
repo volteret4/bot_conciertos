@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-10-23T17:11:13.938217",
+  "concerts": [
+    {
+      "artist": "Charli xcx",
+      "name": "brat cave: charli xcx halloween party",
+      "venue": "Strummer's",
+      "city": "Fresno",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-10-24",
+      "time": "21:00:00",
+      "url": "https://www.ticketweb.com/event/brat-cave-charli-xcx-halloween-strummers-tickets/14569453",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1Af4toK"
+    },
+    {
+      "artist": "Charli xcx",
+      "name": "Riot Nerd Presents Charli XCX and Lady Gaga Dance Party (21 and Over)",
+      "venue": "Underground Arts",
+      "city": "Philadelphia",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-01",
+      "time": "21:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7jg4f",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7jg4f"
+    }
+  ]
+}

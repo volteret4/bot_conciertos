@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-11-03T19:49:57.255882",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1pNP4idjNnhPXDLi0Jz12R"
+    },
+    "followers": {
+      "href": null,
+      "total": 2503
+    },
+    "genres": [
+      "classical"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1pNP4idjNnhPXDLi0Jz12R",
+    "id": "1pNP4idjNnhPXDLi0Jz12R",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6772690000c46cdcb279315c45bf0c7b88805a",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000dd22dcb279315c45bf0c7b88805a",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000bac3dcb279315c45bf0c7b88805a",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67726900008f74dcb279315c45bf0c7b88805a",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Andre de Ridder",
+    "popularity": 58,
+    "type": "artist",
+    "uri": "spotify:artist:1pNP4idjNnhPXDLi0Jz12R"
+  }
+}

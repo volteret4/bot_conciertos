@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T19:55:08.916475",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6d6i5VzXGwecR7EtMasWsZ"
+    },
+    "followers": {
+      "href": null,
+      "total": 22524
+    },
+    "genres": [
+      "acid jazz",
+      "jazz funk",
+      "nederpop",
+      "big band",
+      "hollands"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6d6i5VzXGwecR7EtMasWsZ",
+    "id": "6d6i5VzXGwecR7EtMasWsZ",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebddeaba923992c6b2ce18ba3b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174ddeaba923992c6b2ce18ba3b",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178ddeaba923992c6b2ce18ba3b",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "New Cool Collective",
+    "popularity": 30,
+    "type": "artist",
+    "uri": "spotify:artist:6d6i5VzXGwecR7EtMasWsZ"
+  }
+}

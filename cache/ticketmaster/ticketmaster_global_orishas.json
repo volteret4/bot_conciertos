@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-09-02T09:04:08.862097",
+  "concerts": [
+    {
+      "artist": "Orishas",
+      "name": "Orishas",
+      "venue": "Pabellón del Palacio de los Deportes",
+      "city": "México",
+      "country": "MX",
+      "date": "2025-09-11",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com.mx/orishas-mexico-11-09-2025/event/140062ACE9864398",
+      "source": "Ticketmaster",
+      "id": "17AZvxG61St-0Cb"
+    }
+  ]
+}

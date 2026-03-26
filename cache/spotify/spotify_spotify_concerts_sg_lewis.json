@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-25T09:19:47.404165",
+  "data": [
+    {
+      "artist": "SG Lewis",
+      "artist_name": "SG Lewis",
+      "name": "SG Lewis Concert (7AI4gn3m)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/7AI4gn3mfB5jjU9LIfw4fY",
+      "source": "Spotify"
+    },
+    {
+      "artist": "SG Lewis",
+      "artist_name": "SG Lewis",
+      "name": "SG Lewis at House of Blues Dallas",
+      "venue": "House of Blues Dallas",
+      "city": "Dallas",
+      "country": "US",
+      "date": "2025-09-06",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/3pRu1cF5lORAU9FqNaVBk1",
+      "source": "Spotify"
+    },
+    {
+      "artist": "SG Lewis",
+      "artist_name": "SG Lewis",
+      "name": "SG Lewis Concert (2TJQFIcz)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/2TJQFIczZFZfYCJdqiysCd",
+      "source": "Spotify"
+    },
+    {
+      "artist": "SG Lewis",
+      "artist_name": "SG Lewis",
+      "name": "SG Lewis at Echostage",
+      "venue": "Echostage",
+      "city": "Washington",
+      "country": "US",
+      "date": "2025-09-12",
+      "time": "10:00 PM",
+      "url": "https://open.spotify.com/concert/4rxK1AXiBdfY6sCqiDFxpp",
+      "source": "Spotify"
+    },
+    {
+      "artist": "SG Lewis",
+      "artist_name": "SG Lewis",
+      "name": "SG Lewis at Royale",
+      "venue": "Royale",
+      "city": "Boston",
+      "country": "US",
+      "date": "2025-09-13",
+      "time": "9:00 PM",
+      "url": "https://open.spotify.com/concert/17IaGXtU92Nf3L8f4BuBy9",
+      "source": "Spotify"
+    }
+  ]
+}

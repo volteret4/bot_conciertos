@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T19:47:29.718074",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5THaOlI8Qr3Za3FD6FnWvK"
+    },
+    "followers": {
+      "href": null,
+      "total": 30070
+    },
+    "genres": [
+      "free jazz",
+      "jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5THaOlI8Qr3Za3FD6FnWvK",
+    "id": "5THaOlI8Qr3Za3FD6FnWvK",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6772690000c46c1ab136bda31b7bf015e4168e",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000dd221ab136bda31b7bf015e4168e",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000bac31ab136bda31b7bf015e4168e",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67726900008f741ab136bda31b7bf015e4168e",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "John Surman",
+    "popularity": 31,
+    "type": "artist",
+    "uri": "spotify:artist:5THaOlI8Qr3Za3FD6FnWvK"
+  }
+}

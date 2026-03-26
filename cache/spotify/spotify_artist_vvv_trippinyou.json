@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:48:10.599892",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7tszuN9emjCCsC7kccXTFU"
+    },
+    "followers": {
+      "href": null,
+      "total": 34093
+    },
+    "genres": [
+      "post-punk",
+      "cold wave",
+      "darkwave"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7tszuN9emjCCsC7kccXTFU",
+    "id": "7tszuN9emjCCsC7kccXTFU",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb6eca94915cb0382ddbbaf544",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051746eca94915cb0382ddbbaf544",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1786eca94915cb0382ddbbaf544",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "VVV [Trippin'you]",
+    "popularity": 38,
+    "type": "artist",
+    "uri": "spotify:artist:7tszuN9emjCCsC7kccXTFU"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:03:20.468562",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2NDijg7z6F1ahihDdCpRox"
+    },
+    "followers": {
+      "href": null,
+      "total": 588
+    },
+    "genres": [
+      "nu disco",
+      "indie dance"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2NDijg7z6F1ahihDdCpRox",
+    "id": "2NDijg7z6F1ahihDdCpRox",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebda68af6021dfd390609d0e4e",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174da68af6021dfd390609d0e4e",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178da68af6021dfd390609d0e4e",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Feel Fly",
+    "popularity": 4,
+    "type": "artist",
+    "uri": "spotify:artist:2NDijg7z6F1ahihDdCpRox"
+  }
+}

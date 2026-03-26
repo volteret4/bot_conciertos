@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-08-24T08:03:31.472823",
+  "data": [
+    {
+      "artist": "Alan Fitzpatrick",
+      "artist_name": "Alan Fitzpatrick",
+      "name": "Alan Fitzpatrick Concert (4KMsuo5e)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/4KMsuo5ebW890gUQsFwedk",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Alan Fitzpatrick",
+      "artist_name": "Alan Fitzpatrick",
+      "name": "Alan Fitzpatrick Concert (6KkvlKRx)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/6KkvlKRx8k2vbtaYToxUL2",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Alan Fitzpatrick",
+      "artist_name": "Alan Fitzpatrick",
+      "name": "Alan Fitzpatrick at Discopussy",
+      "venue": "Discopussy",
+      "city": "Las Vegas",
+      "country": "US",
+      "date": "2025-10-10",
+      "time": "10:00 PM",
+      "url": "https://open.spotify.com/concert/0DHmosP5OpZc5fttfwFP7U",
+      "source": "Spotify"
+    }
+  ]
+}

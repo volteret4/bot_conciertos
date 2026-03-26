@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:00:15.430690",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0RWcEfIRdgfnk750svBSvZ"
+    },
+    "followers": {
+      "href": null,
+      "total": 868
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/0RWcEfIRdgfnk750svBSvZ",
+    "id": "0RWcEfIRdgfnk750svBSvZ",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb23be7b10a1510858b725cdfe",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517423be7b10a1510858b725cdfe",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17823be7b10a1510858b725cdfe",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Benjamin Darren",
+    "popularity": 23,
+    "type": "artist",
+    "uri": "spotify:artist:0RWcEfIRdgfnk750svBSvZ"
+  }
+}

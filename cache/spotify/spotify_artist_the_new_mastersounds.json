@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:55:09.029236",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1DJVvIcjKhdedkuGRzW7PG"
+    },
+    "followers": {
+      "href": null,
+      "total": 93063
+    },
+    "genres": [
+      "jazz funk",
+      "funk",
+      "acid jazz",
+      "retro soul"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1DJVvIcjKhdedkuGRzW7PG",
+    "id": "1DJVvIcjKhdedkuGRzW7PG",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb690a123d47b6132bd332eb56",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174690a123d47b6132bd332eb56",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178690a123d47b6132bd332eb56",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "The New Mastersounds",
+    "popularity": 45,
+    "type": "artist",
+    "uri": "spotify:artist:1DJVvIcjKhdedkuGRzW7PG"
+  }
+}

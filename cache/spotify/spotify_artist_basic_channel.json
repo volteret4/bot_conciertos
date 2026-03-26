@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T20:02:27.798407",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/37um1uxI92g4ll61LzrtB5"
+    },
+    "followers": {
+      "href": null,
+      "total": 37751
+    },
+    "genres": [
+      "dub techno",
+      "minimal techno",
+      "idm",
+      "dub",
+      "techno"
+    ],
+    "href": "https://api.spotify.com/v1/artists/37um1uxI92g4ll61LzrtB5",
+    "id": "37um1uxI92g4ll61LzrtB5",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2731625f96455c5684cb20b396c",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e021625f96455c5684cb20b396c",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048511625f96455c5684cb20b396c",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Basic Channel",
+    "popularity": 27,
+    "type": "artist",
+    "uri": "spotify:artist:37um1uxI92g4ll61LzrtB5"
+  }
+}

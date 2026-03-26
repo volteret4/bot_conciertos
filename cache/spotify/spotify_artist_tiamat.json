@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:47:49.370957",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5SwHKKNKYToC1YzWVNWAIN"
+    },
+    "followers": {
+      "href": null,
+      "total": 161057
+    },
+    "genres": [
+      "gothic metal",
+      "doom metal",
+      "gothic rock",
+      "symphonic metal"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5SwHKKNKYToC1YzWVNWAIN",
+    "id": "5SwHKKNKYToC1YzWVNWAIN",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebd1f9e61a31b195dd9c1efbc5",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174d1f9e61a31b195dd9c1efbc5",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178d1f9e61a31b195dd9c1efbc5",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Tiamat",
+    "popularity": 39,
+    "type": "artist",
+    "uri": "spotify:artist:5SwHKKNKYToC1YzWVNWAIN"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:49:18.406292",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3AaY5O1qS0tcNPHwwMwplt"
+    },
+    "followers": {
+      "href": null,
+      "total": 52209
+    },
+    "genres": [
+      "free jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3AaY5O1qS0tcNPHwwMwplt",
+    "id": "3AaY5O1qS0tcNPHwwMwplt",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb040246e9785ab05417d5d524",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174040246e9785ab05417d5d524",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178040246e9785ab05417d5d524",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Jeff Parker",
+    "popularity": 36,
+    "type": "artist",
+    "uri": "spotify:artist:3AaY5O1qS0tcNPHwwMwplt"
+  }
+}

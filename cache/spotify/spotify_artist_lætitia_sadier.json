@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:48:29.611216",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5s8mrbpjYHWIuGYUzNTpEb"
+    },
+    "followers": {
+      "href": null,
+      "total": 24998
+    },
+    "genres": [
+      "dream pop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5s8mrbpjYHWIuGYUzNTpEb",
+    "id": "5s8mrbpjYHWIuGYUzNTpEb",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebd2eba6f3a6dea5414b6a9cb1",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174d2eba6f3a6dea5414b6a9cb1",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178d2eba6f3a6dea5414b6a9cb1",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Laetitia Sadier",
+    "popularity": 42,
+    "type": "artist",
+    "uri": "spotify:artist:5s8mrbpjYHWIuGYUzNTpEb"
+  }
+}

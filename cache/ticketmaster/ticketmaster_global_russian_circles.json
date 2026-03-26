@@ -1,0 +1,125 @@
+{
+  "timestamp": "2025-09-02T09:12:11.074471",
+  "concerts": [
+    {
+      "artist": "Russian Circles",
+      "name": "Russian Circles",
+      "venue": "Spirit Hall",
+      "city": "Pittsburgh",
+      "country": "US",
+      "date": "2025-09-14",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/russian-circles-pittsburgh-pennsylvania-09-14-2025/event/160062D8A6E44DBE",
+      "source": "Ticketmaster",
+      "id": "17AOvxG6uxJy7UX"
+    },
+    {
+      "artist": "Russian Circles",
+      "name": "Russian Circles",
+      "venue": "Rec Room",
+      "city": "Buffalo",
+      "country": "US",
+      "date": "2025-09-16",
+      "time": "20:00:00",
+      "url": "https://www.ticketweb.com/event/russian-circles-rec-room-tickets/13837644?REFERRAL_ID=tmfeed",
+      "source": "Ticketmaster",
+      "id": "1718vxG6uNbPZPi"
+    },
+    {
+      "artist": "Russian Circles",
+      "name": "Russian Circles",
+      "venue": "Rec Room",
+      "city": "Buffalo",
+      "country": "US",
+      "date": "2025-09-16",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7bE86",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7bE86"
+    },
+    {
+      "artist": "Russian Circles",
+      "name": "Russian Circles",
+      "venue": "Arrow",
+      "city": "Allentown",
+      "country": "US",
+      "date": "2025-09-17",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/russian-circles-allentown-pennsylvania-09-17-2025/event/300062D4E92722D8",
+      "source": "Ticketmaster",
+      "id": "17GZvxG6uKtaw5b"
+    },
+    {
+      "artist": "Russian Circles",
+      "name": "Russian Circles (18 and Over)",
+      "venue": "Royale Boston",
+      "city": "Boston",
+      "country": "US",
+      "date": "2025-09-19",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7bUAv",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7bUAv"
+    },
+    {
+      "artist": "Russian Circles",
+      "name": "Russian Circles w/ Blackwater Holylight",
+      "venue": "Union Transfer",
+      "city": "Philadelphia",
+      "country": "US",
+      "date": "2025-09-20",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7bU7o",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7bU7o"
+    },
+    {
+      "artist": "Russian Circles",
+      "name": "Russian Circles",
+      "venue": "Warsaw",
+      "city": "Brooklyn",
+      "country": "US",
+      "date": "2025-09-21",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/russian-circles-brooklyn-new-york-09-21-2025/event/000062D605CE8104",
+      "source": "Ticketmaster",
+      "id": "k7vGFbcbASI77"
+    },
+    {
+      "artist": "Russian Circles",
+      "name": "Russian Circles",
+      "venue": "9:30 CLUB",
+      "city": "Washington",
+      "country": "US",
+      "date": "2025-09-22",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/russian-circles-washington-district-of-columbia-09-22-2025/event/150062D4E3AD52BE",
+      "source": "Ticketmaster",
+      "id": "17A8vxG6uKNl41X"
+    },
+    {
+      "artist": "Russian Circles",
+      "name": "Russian Circles - Ages 18+",
+      "venue": "Eastside Bowl",
+      "city": "Nashville",
+      "country": "US",
+      "date": "2025-09-24",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7_wAp",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7_wAp"
+    },
+    {
+      "artist": "Russian Circles",
+      "name": "Russian Circles with Young Widows",
+      "venue": "Thalia Hall",
+      "city": "Chicago",
+      "country": "US",
+      "date": "2025-09-26",
+      "time": "20:00:00",
+      "url": "https://www.ticketweb.com/event/russian-circles-with-young-widows-thalia-hall-tickets/13830964",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AKOYP0"
+    }
+  ]
+}

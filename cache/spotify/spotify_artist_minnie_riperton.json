@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:50:01.723122",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2i1IdHG5w0wiSmJGoqAGlj"
+    },
+    "followers": {
+      "href": null,
+      "total": 485224
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/2i1IdHG5w0wiSmJGoqAGlj",
+    "id": "2i1IdHG5w0wiSmJGoqAGlj",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/80230921f3d0c8bd777b39133506f3e103317539",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/e163c4acc7c91f731bb582f6483e0143a403c896",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/09c8f830b9ffecc8d9b4a5460a97c50a33f1eea0",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/de432a427f2c495adddb36902612fcad9fca1527",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Minnie Riperton",
+    "popularity": 56,
+    "type": "artist",
+    "uri": "spotify:artist:2i1IdHG5w0wiSmJGoqAGlj"
+  }
+}

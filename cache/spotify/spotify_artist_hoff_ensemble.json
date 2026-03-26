@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-11-03T19:56:33.416318",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2STZnHVB7UQkAA8I730uAY"
+    },
+    "followers": {
+      "href": null,
+      "total": 775
+    },
+    "genres": [
+      "free jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2STZnHVB7UQkAA8I730uAY",
+    "id": "2STZnHVB7UQkAA8I730uAY",
+    "images": [],
+    "name": "Hoff ensemble",
+    "popularity": 3,
+    "type": "artist",
+    "uri": "spotify:artist:2STZnHVB7UQkAA8I730uAY"
+  }
+}

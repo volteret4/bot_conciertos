@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:56:57.046707",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0kfbhymZVdl7ufdYKXgXzE"
+    },
+    "followers": {
+      "href": null,
+      "total": 527
+    },
+    "genres": [
+      "indie dance"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0kfbhymZVdl7ufdYKXgXzE",
+    "id": "0kfbhymZVdl7ufdYKXgXzE",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb2dbdf00de495e7fd6a3867eb",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051742dbdf00de495e7fd6a3867eb",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1782dbdf00de495e7fd6a3867eb",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Jezebell",
+    "popularity": 6,
+    "type": "artist",
+    "uri": "spotify:artist:0kfbhymZVdl7ufdYKXgXzE"
+  }
+}

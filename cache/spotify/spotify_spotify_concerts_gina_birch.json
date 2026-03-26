@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-25T08:37:18.610138",
+  "data": [
+    {
+      "artist": "Gina Birch",
+      "artist_name": "Gina Birch",
+      "name": "Gina Birch at 100 Club",
+      "venue": "100 Club",
+      "city": "London",
+      "country": "GB",
+      "date": "2025-09-24",
+      "time": "7:30 PM",
+      "url": "https://open.spotify.com/concert/4P1CpsP7wsCdMiuOGyXsjP",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Gina Birch",
+      "artist_name": "Gina Birch",
+      "name": "Gina Birch at Exeter Phoenix",
+      "venue": "Exeter Phoenix",
+      "city": "Exeter",
+      "country": "US",
+      "date": "2026-01-30",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/0EBuEJ8BsFFSYvzBXI7XkI",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Gina Birch",
+      "artist_name": "Gina Birch",
+      "name": "Gina Birch at Metronome",
+      "venue": "Metronome",
+      "city": "Nottingham",
+      "country": "GB",
+      "date": "2026-02-27",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/0oLMHX5TKkI9s44I5TT4tZ",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Gina Birch",
+      "artist_name": "Gina Birch",
+      "name": "Gina Birch at The Drill",
+      "venue": "The Drill",
+      "city": "Lincoln",
+      "country": "US",
+      "date": "2026-02-28",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/6ba0DOlDBQKcgGEgxy9UVO",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Gina Birch",
+      "artist_name": "Gina Birch",
+      "name": "Gina Birch Concert (6LeJCl3j)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/6LeJCl3jih4il40up66RXI",
+      "source": "Spotify"
+    }
+  ]
+}

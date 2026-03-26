@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:49:39.514405",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1h4iSQAKdvAAm07l6FX6dy"
+    },
+    "followers": {
+      "href": null,
+      "total": 159095
+    },
+    "genres": [
+      "son cubano",
+      "bolero",
+      "latin jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1h4iSQAKdvAAm07l6FX6dy",
+    "id": "1h4iSQAKdvAAm07l6FX6dy",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb40e58c339ecac3919c5944a8",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517440e58c339ecac3919c5944a8",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17840e58c339ecac3919c5944a8",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Omara Portuondo",
+    "popularity": 53,
+    "type": "artist",
+    "uri": "spotify:artist:1h4iSQAKdvAAm07l6FX6dy"
+  }
+}

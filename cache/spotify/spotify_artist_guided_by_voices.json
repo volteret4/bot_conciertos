@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T19:58:01.270518",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4oV5EVJ0XFWsJKoOvdRPvl"
+    },
+    "followers": {
+      "href": null,
+      "total": 191363
+    },
+    "genres": [
+      "power pop",
+      "lo-fi indie",
+      "anti-folk",
+      "indie rock",
+      "indie"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4oV5EVJ0XFWsJKoOvdRPvl",
+    "id": "4oV5EVJ0XFWsJKoOvdRPvl",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb0b43f8f07778f0c5d7daadca",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051740b43f8f07778f0c5d7daadca",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1780b43f8f07778f0c5d7daadca",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Guided By Voices",
+    "popularity": 45,
+    "type": "artist",
+    "uri": "spotify:artist:4oV5EVJ0XFWsJKoOvdRPvl"
+  }
+}

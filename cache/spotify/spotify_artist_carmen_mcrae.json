@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T19:56:25.324266",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2E3nXyfocf7qfHAIFNbBuj"
+    },
+    "followers": {
+      "href": null,
+      "total": 84395
+    },
+    "genres": [
+      "vocal jazz",
+      "jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2E3nXyfocf7qfHAIFNbBuj",
+    "id": "2E3nXyfocf7qfHAIFNbBuj",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/c24c73c17bd200da5314272b171e85d0dfb5c16f",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/81704904220c8773ddf6e428dd0fc6e3b2f1d3b3",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/d624ab0438354a8faa27d690d5e186fadb0e685b",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/346f8ace9350adfd966b9a7e5f91046b6608062d",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Carmen McRae",
+    "popularity": 44,
+    "type": "artist",
+    "uri": "spotify:artist:2E3nXyfocf7qfHAIFNbBuj"
+  }
+}

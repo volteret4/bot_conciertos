@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:55:17.272925",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1f8646DgHta6Gl3eLxZTdk"
+    },
+    "followers": {
+      "href": null,
+      "total": 50697
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/1f8646DgHta6Gl3eLxZTdk",
+    "id": "1f8646DgHta6Gl3eLxZTdk",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebe3458b5dec9e034214b4c623",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174e3458b5dec9e034214b4c623",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178e3458b5dec9e034214b4c623",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Ayub Ogada",
+    "popularity": 38,
+    "type": "artist",
+    "uri": "spotify:artist:1f8646DgHta6Gl3eLxZTdk"
+  }
+}

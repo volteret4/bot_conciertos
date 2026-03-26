@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:04:41.465630",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/05lIUgmmsmTX2N9dCKc8rC"
+    },
+    "followers": {
+      "href": null,
+      "total": 187356
+    },
+    "genres": [
+      "idm",
+      "electronica"
+    ],
+    "href": "https://api.spotify.com/v1/artists/05lIUgmmsmTX2N9dCKc8rC",
+    "id": "05lIUgmmsmTX2N9dCKc8rC",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb3ebb8ea43a322d23478a2b2e",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051743ebb8ea43a322d23478a2b2e",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1783ebb8ea43a322d23478a2b2e",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Rival Consoles",
+    "popularity": 46,
+    "type": "artist",
+    "uri": "spotify:artist:05lIUgmmsmTX2N9dCKc8rC"
+  }
+}

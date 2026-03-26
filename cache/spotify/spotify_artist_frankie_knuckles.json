@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T19:55:32.926225",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/63yl9nDNrHpiAYGlNJxxjc"
+    },
+    "followers": {
+      "href": null,
+      "total": 158182
+    },
+    "genres": [
+      "chicago house",
+      "acid house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/63yl9nDNrHpiAYGlNJxxjc",
+    "id": "63yl9nDNrHpiAYGlNJxxjc",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/4430135715f2686c6ae65659dfac40472182c717",
+        "height": 707,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/7e895d1634865f4e3eba99ac1ce6ffeb036b7cac",
+        "height": 452,
+        "width": 639
+      },
+      {
+        "url": "https://i.scdn.co/image/5bbfbe4b254c5d2a0efd57ebe0ed615755857ed0",
+        "height": 141,
+        "width": 199
+      },
+      {
+        "url": "https://i.scdn.co/image/a266245c1f16dd720c5336e073caddbf7c8a130f",
+        "height": 45,
+        "width": 64
+      }
+    ],
+    "name": "Frankie Knuckles",
+    "popularity": 45,
+    "type": "artist",
+    "uri": "spotify:artist:63yl9nDNrHpiAYGlNJxxjc"
+  }
+}

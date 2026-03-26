@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:48:37.385201",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6ZV6lGY0prbqpTD0Md8i29"
+    },
+    "followers": {
+      "href": null,
+      "total": 1144499
+    },
+    "genres": [
+      "country",
+      "acoustic country"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6ZV6lGY0prbqpTD0Md8i29",
+    "id": "6ZV6lGY0prbqpTD0Md8i29",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb64d476b3bf569a20b4089f6d",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517464d476b3bf569a20b4089f6d",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17864d476b3bf569a20b4089f6d",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Scotty McCreery",
+    "popularity": 62,
+    "type": "artist",
+    "uri": "spotify:artist:6ZV6lGY0prbqpTD0Md8i29"
+  }
+}

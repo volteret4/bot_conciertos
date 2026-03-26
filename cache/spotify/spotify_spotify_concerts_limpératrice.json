@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-23T08:59:19.113769",
+  "data": [
+    {
+      "artist": "L'Impératrice",
+      "artist_name": "L'Impératrice",
+      "name": "L'Impératrice Concert (6AxeWlxK)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/6AxeWlxKrcO29n7H7LUywj",
+      "source": "Spotify"
+    },
+    {
+      "artist": "L'Impératrice",
+      "artist_name": "L'Impératrice",
+      "name": "L'Impératrice at Doss Trento",
+      "venue": "Doss Trento",
+      "city": "Trento",
+      "country": "IT",
+      "date": "2025-09-12",
+      "time": "5:00 PM",
+      "url": "https://open.spotify.com/concert/5w6lmhzd2KF7JLGuVctcM0",
+      "source": "Spotify"
+    },
+    {
+      "artist": "L'Impératrice",
+      "artist_name": "L'Impératrice",
+      "name": "L'Impératrice Concert (1vcQWWgo)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/1vcQWWgo0FVoNrATJzlhJe",
+      "source": "Spotify"
+    },
+    {
+      "artist": "L'Impératrice",
+      "artist_name": "L'Impératrice",
+      "name": "L'Impératrice at La Nuvola",
+      "venue": "La Nuvola",
+      "city": "Rome",
+      "country": "IT",
+      "date": "2025-09-13",
+      "time": "5:30 PM",
+      "url": "https://open.spotify.com/concert/2WTPI86SFhhm2phGMZWK9D",
+      "source": "Spotify"
+    },
+    {
+      "artist": "L'Impératrice",
+      "artist_name": "L'Impératrice",
+      "name": "L'Impératrice at Mana Wynwood Convention Center",
+      "venue": "Mana Wynwood Convention Center",
+      "city": "Miami",
+      "country": "US",
+      "date": "2025-10-17",
+      "time": "4:00 PM",
+      "url": "https://open.spotify.com/concert/5aPzBSMf6mdN8BUYDiFlCp",
+      "source": "Spotify"
+    }
+  ]
+}

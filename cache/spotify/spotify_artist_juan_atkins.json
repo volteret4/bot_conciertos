@@ -1,0 +1,46 @@
+{
+  "timestamp": "2025-11-03T20:02:02.015036",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/208EQzx7RmoE2Ng9gF2edh"
+    },
+    "followers": {
+      "href": null,
+      "total": 58897
+    },
+    "genres": [
+      "dub techno",
+      "minimal techno",
+      "techno",
+      "chicago house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/208EQzx7RmoE2Ng9gF2edh",
+    "id": "208EQzx7RmoE2Ng9gF2edh",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/8527b7857c3ae715260cec0cdc72910d1d5deb63",
+        "height": 667,
+        "width": 999
+      },
+      {
+        "url": "https://i.scdn.co/image/0b9b5ad01f6c69a9a5be951ce378f38dd0208db3",
+        "height": 427,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/561500450c581669344ac26cae47cf9fdcfd7bdf",
+        "height": 133,
+        "width": 199
+      },
+      {
+        "url": "https://i.scdn.co/image/6a5acf908478c6496a12bbe5b9efb3441a777db4",
+        "height": 43,
+        "width": 64
+      }
+    ],
+    "name": "Juan Atkins",
+    "popularity": 26,
+    "type": "artist",
+    "uri": "spotify:artist:208EQzx7RmoE2Ng9gF2edh"
+  }
+}

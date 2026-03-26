@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:55:02.305923",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5ZNxiPcbKgaNcBrERMpqeu"
+    },
+    "followers": {
+      "href": null,
+      "total": 4755005
+    },
+    "genres": [
+      "rock en español",
+      "folk metal",
+      "celtic rock",
+      "mexican rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5ZNxiPcbKgaNcBrERMpqeu",
+    "id": "5ZNxiPcbKgaNcBrERMpqeu",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebbba33fb29b7b06c34106b901",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174bba33fb29b7b06c34106b901",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178bba33fb29b7b06c34106b901",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Mägo de Oz",
+    "popularity": 67,
+    "type": "artist",
+    "uri": "spotify:artist:5ZNxiPcbKgaNcBrERMpqeu"
+  }
+}

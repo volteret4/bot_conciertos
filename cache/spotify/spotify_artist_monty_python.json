@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:54:47.332989",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5IxfhXIHjAOAqibxl90NZO"
+    },
+    "followers": {
+      "href": null,
+      "total": 138881
+    },
+    "genres": [
+      "comedy",
+      "spoken word"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5IxfhXIHjAOAqibxl90NZO",
+    "id": "5IxfhXIHjAOAqibxl90NZO",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb9bed9dd9939efc8842d1de29",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051749bed9dd9939efc8842d1de29",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1789bed9dd9939efc8842d1de29",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Monty Python",
+    "popularity": 41,
+    "type": "artist",
+    "uri": "spotify:artist:5IxfhXIHjAOAqibxl90NZO"
+  }
+}

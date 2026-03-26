@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-08-24T08:59:24.621495",
+  "data": [
+    {
+      "artist": "Nia Archives",
+      "artist_name": "Nia Archives",
+      "name": "Nia Archives Concert (046GX2oy)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/046GX2oyMxPGZ8tZORNdgR",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Nia Archives",
+      "artist_name": "Nia Archives",
+      "name": "Nia Archives at Mana Wynwood Convention Center",
+      "venue": "Mana Wynwood Convention Center",
+      "city": "Miami",
+      "country": "US",
+      "date": "2025-10-17",
+      "time": "4:00 PM",
+      "url": "https://open.spotify.com/concert/5aPzBSMf6mdN8BUYDiFlCp",
+      "source": "Spotify"
+    }
+  ]
+}

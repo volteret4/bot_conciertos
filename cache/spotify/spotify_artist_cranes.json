@@ -1,0 +1,46 @@
+{
+  "timestamp": "2025-11-03T19:59:59.779599",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5q2ehaRqAFmM6tLl4vaVwP"
+    },
+    "followers": {
+      "href": null,
+      "total": 87867
+    },
+    "genres": [
+      "dream pop",
+      "shoegaze",
+      "gothic rock",
+      "darkwave"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5q2ehaRqAFmM6tLl4vaVwP",
+    "id": "5q2ehaRqAFmM6tLl4vaVwP",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/9b689a91a8f948afb1a2e12ac72e6a4204c4c0b8",
+        "height": 1003,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/99fa000d260af58c492710a0c5bfb5af272ac8f4",
+        "height": 642,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/a4760a6f982b903dff44ec3a52c9e42a3a7817b2",
+        "height": 201,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/81107a09e35612902253d681a9d4a6b92a984d80",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Cranes",
+    "popularity": 36,
+    "type": "artist",
+    "uri": "spotify:artist:5q2ehaRqAFmM6tLl4vaVwP"
+  }
+}

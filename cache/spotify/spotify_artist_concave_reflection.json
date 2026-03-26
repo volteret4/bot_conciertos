@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:59:54.169222",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/18ISNHrHE9tw9xjiVh7Y37"
+    },
+    "followers": {
+      "href": null,
+      "total": 41
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/18ISNHrHE9tw9xjiVh7Y37",
+    "id": "18ISNHrHE9tw9xjiVh7Y37",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273e63ee4f2cb80d78e41542b64",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02e63ee4f2cb80d78e41542b64",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851e63ee4f2cb80d78e41542b64",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Concave Reflection",
+    "popularity": 2,
+    "type": "artist",
+    "uri": "spotify:artist:18ISNHrHE9tw9xjiVh7Y37"
+  }
+}

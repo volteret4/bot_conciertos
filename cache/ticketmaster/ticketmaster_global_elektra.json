@@ -1,0 +1,83 @@
+{
+  "timestamp": "2025-10-23T17:10:39.098225",
+  "concerts": [
+    {
+      "artist": "Elektra",
+      "name": "Compañía Nacional de Ópera - Elektra de Richard Strauss",
+      "venue": "Teatro Juarez (Fic)",
+      "city": "Guanajuato",
+      "country": "Mexico",
+      "country_code": "MX",
+      "date": "2025-10-24",
+      "time": "21:00:00",
+      "url": "https://www.ticketmaster.com.mx/compania-nacional-de-opera-elektra-de-guanajuato-24-10-2025/event/3D0062F0A8856DEB",
+      "source": "Ticketmaster",
+      "id": "G5dVZbReI-pMl"
+    },
+    {
+      "artist": "Elektra",
+      "name": "Compañía Nacional de Ópera - Elektra de Richard Strauss",
+      "venue": "Teatro Juarez (Fic)",
+      "city": "Guanajuato",
+      "country": "Mexico",
+      "country_code": "MX",
+      "date": "2025-10-25",
+      "time": "21:00:00",
+      "url": "https://www.ticketmaster.com.mx/compania-nacional-de-opera-elektra-de-guanajuato-25-10-2025/event/3D0062F0AA066F25",
+      "source": "Ticketmaster",
+      "id": "G5dVZbRenvJHP"
+    },
+    {
+      "artist": "Elektra",
+      "name": "Elektra Suite & Beethovens Violin Concerto",
+      "venue": "David Geffen Hall",
+      "city": "New York",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-01-29",
+      "time": "19:30:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7_ePp",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7_ePp"
+    },
+    {
+      "artist": "Elektra",
+      "name": "Elektra Suite & Beethovens Violin Concerto",
+      "venue": "David Geffen Hall",
+      "city": "New York",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-01-30",
+      "time": "19:30:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7_eP9",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7_eP9"
+    },
+    {
+      "artist": "Elektra",
+      "name": "Elektra Suite & Beethovens Violin Concerto",
+      "venue": "David Geffen Hall",
+      "city": "New York",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-01-31",
+      "time": "19:30:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7_ePb",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7_ePb"
+    },
+    {
+      "artist": "Elektra",
+      "name": "Elektra Suite & Beethovens Violin Concerto",
+      "venue": "David Geffen Hall",
+      "city": "New York",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-02-01",
+      "time": "14:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7_eP_",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7_eP_"
+    }
+  ]
+}

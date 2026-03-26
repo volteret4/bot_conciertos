@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T20:04:05.458375",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0X380XXQSNBYuleKzav5UO"
+    },
+    "followers": {
+      "href": null,
+      "total": 3068264
+    },
+    "genres": [
+      "industrial rock",
+      "industrial",
+      "industrial metal",
+      "alternative metal",
+      "nu metal"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0X380XXQSNBYuleKzav5UO",
+    "id": "0X380XXQSNBYuleKzav5UO",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb752fca27c5b839ea47d5100d",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174752fca27c5b839ea47d5100d",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178752fca27c5b839ea47d5100d",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Nine Inch Nails",
+    "popularity": 72,
+    "type": "artist",
+    "uri": "spotify:artist:0X380XXQSNBYuleKzav5UO"
+  }
+}

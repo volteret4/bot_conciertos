@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-24T08:09:23.721054",
+  "data": [
+    {
+      "artist": "BADBADNOTGOOD",
+      "artist_name": "BADBADNOTGOOD",
+      "name": "BADBADNOTGOOD at The Showbox",
+      "venue": "The Showbox",
+      "city": "Seattle",
+      "country": "US",
+      "date": "2025-09-05",
+      "time": "8:30 PM",
+      "url": "https://open.spotify.com/concert/26gOxTxxcBMZaZPc5tjoAP",
+      "source": "Spotify"
+    },
+    {
+      "artist": "BADBADNOTGOOD",
+      "artist_name": "BADBADNOTGOOD",
+      "name": "BADBADNOTGOOD at Malkin Bowl",
+      "venue": "Malkin Bowl",
+      "city": "Vancouver",
+      "country": "CA",
+      "date": "2025-09-06",
+      "time": "6:00 PM",
+      "url": "https://open.spotify.com/concert/5OWjH40dm34s2b71gYGs4x",
+      "source": "Spotify"
+    },
+    {
+      "artist": "BADBADNOTGOOD",
+      "artist_name": "BADBADNOTGOOD",
+      "name": "BADBADNOTGOOD at OLG Stage at Fallsview Casino",
+      "venue": "OLG Stage at Fallsview Casino",
+      "city": "Niagara Falls",
+      "country": "",
+      "date": "2025-10-16",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/5oyAMBiVrjH4RF2WSNGYOE",
+      "source": "Spotify"
+    },
+    {
+      "artist": "BADBADNOTGOOD",
+      "artist_name": "BADBADNOTGOOD",
+      "name": "BADBADNOTGOOD at Ace of Spades",
+      "venue": "Ace of Spades",
+      "city": "Sacramento",
+      "country": "US",
+      "date": "2025-11-05",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/1kdggOhGfKYZUn3jkBwSX0",
+      "source": "Spotify"
+    },
+    {
+      "artist": "BADBADNOTGOOD",
+      "artist_name": "BADBADNOTGOOD",
+      "name": "BADBADNOTGOOD Concert (5R0J1dNU)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/5R0J1dNUAFCZGMx7vBlcgh",
+      "source": "Spotify"
+    }
+  ]
+}

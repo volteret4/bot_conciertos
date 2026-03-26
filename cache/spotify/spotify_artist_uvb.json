@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:48:07.789251",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1LiE3TKOyCds5GgIaBRRRs"
+    },
+    "followers": {
+      "href": null,
+      "total": 10952
+    },
+    "genres": [
+      "acid techno",
+      "industrial",
+      "techno",
+      "hard techno"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1LiE3TKOyCds5GgIaBRRRs",
+    "id": "1LiE3TKOyCds5GgIaBRRRs",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb8f4826171894f54f40056726",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051748f4826171894f54f40056726",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1788f4826171894f54f40056726",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "UVB",
+    "popularity": 15,
+    "type": "artist",
+    "uri": "spotify:artist:1LiE3TKOyCds5GgIaBRRRs"
+  }
+}

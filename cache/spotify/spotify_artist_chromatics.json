@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-10-23T17:54:17.007807",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4tOVIRjlWWfR1RrAxyRqTE"
+    },
+    "followers": {
+      "href": null,
+      "total": 486797
+    },
+    "genres": [
+      "dream pop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4tOVIRjlWWfR1RrAxyRqTE",
+    "id": "4tOVIRjlWWfR1RrAxyRqTE",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebff7c66df88410e55c67df046",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174ff7c66df88410e55c67df046",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178ff7c66df88410e55c67df046",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Chromatics",
+    "popularity": 54,
+    "type": "artist",
+    "uri": "spotify:artist:4tOVIRjlWWfR1RrAxyRqTE"
+  }
+}

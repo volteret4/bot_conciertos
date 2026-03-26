@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:55:31.325142",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1BXw2R9ARz4MY5d1IQVJad"
+    },
+    "followers": {
+      "href": null,
+      "total": 26
+    },
+    "genres": [
+      "minimalism"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1BXw2R9ARz4MY5d1IQVJad",
+    "id": "1BXw2R9ARz4MY5d1IQVJad",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273a5510bc02d71f081016582e6",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02a5510bc02d71f081016582e6",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851a5510bc02d71f081016582e6",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Kl(aüs)",
+    "popularity": 0,
+    "type": "artist",
+    "uri": "spotify:artist:1BXw2R9ARz4MY5d1IQVJad"
+  }
+}

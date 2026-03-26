@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:57:38.900106",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6guTJsgPymDUVfqDJyz5UG"
+    },
+    "followers": {
+      "href": null,
+      "total": 184108
+    },
+    "genres": [
+      "slowcore",
+      "dream pop",
+      "shoegaze",
+      "jangle pop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6guTJsgPymDUVfqDJyz5UG",
+    "id": "6guTJsgPymDUVfqDJyz5UG",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebefd9a324798d368dde6ec5ef",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174efd9a324798d368dde6ec5ef",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178efd9a324798d368dde6ec5ef",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Galaxie 500",
+    "popularity": 38,
+    "type": "artist",
+    "uri": "spotify:artist:6guTJsgPymDUVfqDJyz5UG"
+  }
+}

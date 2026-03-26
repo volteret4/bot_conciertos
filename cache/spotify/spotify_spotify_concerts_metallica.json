@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-24T08:56:12.907208",
+  "data": [
+    {
+      "artist": "Metallica",
+      "artist_name": "Metallica",
+      "name": "Metallica Concert (3M3ue8bo)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/3M3ue8bokQ2LvXcqzCRLeR",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Metallica",
+      "artist_name": "Metallica",
+      "name": "Metallica at Adelaide Oval",
+      "venue": "Adelaide Oval",
+      "city": "Adelaide",
+      "country": "AU",
+      "date": "2025-11-05",
+      "time": "5:00 PM",
+      "url": "https://open.spotify.com/concert/38GvpLrL5MniXaCpJQ7s2L",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Metallica",
+      "artist_name": "Metallica",
+      "name": "Metallica at Marvel Stadium",
+      "venue": "Marvel Stadium",
+      "city": "Docklands",
+      "country": "AU",
+      "date": "2025-11-08",
+      "time": "5:00 PM",
+      "url": "https://open.spotify.com/concert/2yupEYoBInYLnrARLYuHaI",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Metallica",
+      "artist_name": "Metallica",
+      "name": "Metallica at Suncorp Stadium",
+      "venue": "Suncorp Stadium",
+      "city": "Milton",
+      "country": "CA",
+      "date": "2025-11-12",
+      "time": "4:30 PM",
+      "url": "https://open.spotify.com/concert/4kXG9vNKIORqG2fJ1SIQLr",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Metallica",
+      "artist_name": "Metallica",
+      "name": "Metallica Concert (76hEsZrA)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/76hEsZrAbgr1UE9qi1TCPy",
+      "source": "Spotify"
+    }
+  ]
+}

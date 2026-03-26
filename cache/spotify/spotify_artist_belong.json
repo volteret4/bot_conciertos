@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T20:00:25.062590",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3c5PAcbkeFrbWUp42FaBkW"
+    },
+    "followers": {
+      "href": null,
+      "total": 18678
+    },
+    "genres": [
+      "drone",
+      "shoegaze",
+      "ambient",
+      "dark ambient"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3c5PAcbkeFrbWUp42FaBkW",
+    "id": "3c5PAcbkeFrbWUp42FaBkW",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebc00626a66e3f4403977b047e",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174c00626a66e3f4403977b047e",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178c00626a66e3f4403977b047e",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Belong",
+    "popularity": 24,
+    "type": "artist",
+    "uri": "spotify:artist:3c5PAcbkeFrbWUp42FaBkW"
+  }
+}

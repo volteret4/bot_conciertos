@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:02:35.500335",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1MbqzxZvHtdClX1cBKU2OG"
+    },
+    "followers": {
+      "href": null,
+      "total": 112927
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/1MbqzxZvHtdClX1cBKU2OG",
+    "id": "1MbqzxZvHtdClX1cBKU2OG",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb37d4cff42a25fd6a131ee733",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517437d4cff42a25fd6a131ee733",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17837d4cff42a25fd6a131ee733",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Fuel Fandango",
+    "popularity": 35,
+    "type": "artist",
+    "uri": "spotify:artist:1MbqzxZvHtdClX1cBKU2OG"
+  }
+}

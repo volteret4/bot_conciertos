@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:54:48.370056",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6bWxFw65IEJzBYjx3SxUXd"
+    },
+    "followers": {
+      "href": null,
+      "total": 937514
+    },
+    "genres": [
+      "trip hop",
+      "downtempo"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6bWxFw65IEJzBYjx3SxUXd",
+    "id": "6bWxFw65IEJzBYjx3SxUXd",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb25f028a867e80d29b24537bd",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517425f028a867e80d29b24537bd",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17825f028a867e80d29b24537bd",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Morcheeba",
+    "popularity": 59,
+    "type": "artist",
+    "uri": "spotify:artist:6bWxFw65IEJzBYjx3SxUXd"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T20:03:37.031711",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0ybFZ2Ab08V8hueghSXm6E"
+    },
+    "followers": {
+      "href": null,
+      "total": 1123764
+    },
+    "genres": [
+      "progressive metal",
+      "progressive rock",
+      "metal",
+      "death metal",
+      "melodic death metal"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0ybFZ2Ab08V8hueghSXm6E",
+    "id": "0ybFZ2Ab08V8hueghSXm6E",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb45e1bb6e5285297f9e55e550",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517445e1bb6e5285297f9e55e550",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17845e1bb6e5285297f9e55e550",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Opeth",
+    "popularity": 57,
+    "type": "artist",
+    "uri": "spotify:artist:0ybFZ2Ab08V8hueghSXm6E"
+  }
+}

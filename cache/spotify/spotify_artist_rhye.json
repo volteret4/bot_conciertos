@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:49:59.009190",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2AcUPzkVWo81vumdzeLLRN"
+    },
+    "followers": {
+      "href": null,
+      "total": 705656
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/2AcUPzkVWo81vumdzeLLRN",
+    "id": "2AcUPzkVWo81vumdzeLLRN",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb8e2b3c095f8a891f4dd86a7b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051748e2b3c095f8a891f4dd86a7b",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1788e2b3c095f8a891f4dd86a7b",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Rhye",
+    "popularity": 61,
+    "type": "artist",
+    "uri": "spotify:artist:2AcUPzkVWo81vumdzeLLRN"
+  }
+}

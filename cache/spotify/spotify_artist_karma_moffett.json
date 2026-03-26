@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:54:44.537446",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2Qu1rV5XI4tUuM1PRrHBCS"
+    },
+    "followers": {
+      "href": null,
+      "total": 1584
+    },
+    "genres": [
+      "drone"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2Qu1rV5XI4tUuM1PRrHBCS",
+    "id": "2Qu1rV5XI4tUuM1PRrHBCS",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273b70e9ec6d1395fd4e5e02593",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02b70e9ec6d1395fd4e5e02593",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851b70e9ec6d1395fd4e5e02593",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Karma Moffett",
+    "popularity": 5,
+    "type": "artist",
+    "uri": "spotify:artist:2Qu1rV5XI4tUuM1PRrHBCS"
+  }
+}

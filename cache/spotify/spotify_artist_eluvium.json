@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:58:53.005512",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4QK3YJ6hzJdhJHE9q7kbVV"
+    },
+    "followers": {
+      "href": null,
+      "total": 75439
+    },
+    "genres": [
+      "post-rock",
+      "ambient",
+      "drone",
+      "neoclassical"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4QK3YJ6hzJdhJHE9q7kbVV",
+    "id": "4QK3YJ6hzJdhJHE9q7kbVV",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb40df99ac31b5f7eb7813b790",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517440df99ac31b5f7eb7813b790",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17840df99ac31b5f7eb7813b790",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Eluvium",
+    "popularity": 33,
+    "type": "artist",
+    "uri": "spotify:artist:4QK3YJ6hzJdhJHE9q7kbVV"
+  }
+}

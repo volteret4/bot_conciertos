@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-25T08:16:56.279546",
+  "data": [
+    {
+      "artist": "Charlotte Day Wilson",
+      "artist_name": "Charlotte Day Wilson",
+      "name": "Charlotte Day Wilson at Synovus Bank Amphitheater at Chastain Park",
+      "venue": "Synovus Bank Amphitheater at Chastain Park",
+      "city": "Atlanta",
+      "country": "US",
+      "date": "2025-10-18",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/12lo37jYTOs95tavC2qE70",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Charlotte Day Wilson",
+      "artist_name": "Charlotte Day Wilson",
+      "name": "Charlotte Day Wilson Concert (2jK5KAbp)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/2jK5KAbp6Rk8Q61N87lPAX",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Charlotte Day Wilson",
+      "artist_name": "Charlotte Day Wilson",
+      "name": "Charlotte Day Wilson at Byline Bank Aragon Ballroom",
+      "venue": "Byline Bank Aragon Ballroom",
+      "city": "Chicago",
+      "country": "US",
+      "date": "2025-10-21",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/34tce2UxFedjQqwdpR4ztc",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Charlotte Day Wilson",
+      "artist_name": "Charlotte Day Wilson",
+      "name": "Charlotte Day Wilson Concert (5c1JUC0g)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/5c1JUC0gMnbjwoxvpp0pNK",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Charlotte Day Wilson",
+      "artist_name": "Charlotte Day Wilson",
+      "name": "Charlotte Day Wilson at Freedom Mortgage Pavilion",
+      "venue": "Freedom Mortgage Pavilion",
+      "city": "Camden",
+      "country": "US",
+      "date": "2025-10-25",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/0jDgW44Co7Qpd4DFBMkd31",
+      "source": "Spotify"
+    }
+  ]
+}

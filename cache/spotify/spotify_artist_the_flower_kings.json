@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:59:22.910427",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0BI5vXwUl4lZMtARfXQ0No"
+    },
+    "followers": {
+      "href": null,
+      "total": 46937
+    },
+    "genres": [
+      "progressive rock",
+      "progressive metal",
+      "art rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0BI5vXwUl4lZMtARfXQ0No",
+    "id": "0BI5vXwUl4lZMtARfXQ0No",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebfbfe821573e3e8149c972b50",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174fbfe821573e3e8149c972b50",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178fbfe821573e3e8149c972b50",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "The Flower Kings",
+    "popularity": 25,
+    "type": "artist",
+    "uri": "spotify:artist:0BI5vXwUl4lZMtARfXQ0No"
+  }
+}

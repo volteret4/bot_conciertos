@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:59:24.183283",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/50sSN9E5i4DJzYDclAXlSo"
+    },
+    "followers": {
+      "href": null,
+      "total": 132409
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/50sSN9E5i4DJzYDclAXlSo",
+    "id": "50sSN9E5i4DJzYDclAXlSo",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebf2b1a44faf4617306c2d5bec",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174f2b1a44faf4617306c2d5bec",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178f2b1a44faf4617306c2d5bec",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Anna Calvi",
+    "popularity": 39,
+    "type": "artist",
+    "uri": "spotify:artist:50sSN9E5i4DJzYDclAXlSo"
+  }
+}

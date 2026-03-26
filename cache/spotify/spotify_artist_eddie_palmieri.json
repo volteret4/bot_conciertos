@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-11-03T19:49:14.912662",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2VviFtXYreO6Zn9n8Ibk6C"
+    },
+    "followers": {
+      "href": null,
+      "total": 233906
+    },
+    "genres": [
+      "latin jazz",
+      "salsa",
+      "son cubano",
+      "cha cha cha",
+      "mambo"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2VviFtXYreO6Zn9n8Ibk6C",
+    "id": "2VviFtXYreO6Zn9n8Ibk6C",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/3379207a21ec6bc412184687a941bd30c5af0920",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/32e943fe5916c04101ec144a7c6bece4de9a9754",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/b837f74950427c80860fd536253037383a3b5fb9",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/e445abc352059e68d431116486e0c3089e9adfe4",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Eddie Palmieri",
+    "popularity": 44,
+    "type": "artist",
+    "uri": "spotify:artist:2VviFtXYreO6Zn9n8Ibk6C"
+  }
+}

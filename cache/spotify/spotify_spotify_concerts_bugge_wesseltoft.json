@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-25T08:14:01.205729",
+  "data": [
+    {
+      "artist": "Bugge Wesseltoft",
+      "artist_name": "Bugge Wesseltoft",
+      "name": "Bugge Wesseltoft at Kulturetage",
+      "venue": "Kulturetage",
+      "city": "Oldenburg",
+      "country": "DE",
+      "date": "2025-09-25",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/194KMKoeuyIsdevbgB9n5W",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Bugge Wesseltoft",
+      "artist_name": "Bugge Wesseltoft",
+      "name": "Bugge Wesseltoft at Kulturzentrum KFZ",
+      "venue": "Kulturzentrum KFZ",
+      "city": "Marburg",
+      "country": "",
+      "date": "2025-09-26",
+      "time": "8:30 PM",
+      "url": "https://open.spotify.com/concert/3oCCPfCmhFPFjrHDYKnwNY",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Bugge Wesseltoft",
+      "artist_name": "Bugge Wesseltoft",
+      "name": "Bugge Wesseltoft at Berliner Dom",
+      "venue": "Berliner Dom",
+      "city": "Berlin",
+      "country": "DE",
+      "date": "2025-10-14",
+      "time": "9:30 PM",
+      "url": "https://open.spotify.com/concert/3zzL2sLEW0K4Wm64uOM3iV",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Bugge Wesseltoft",
+      "artist_name": "Bugge Wesseltoft",
+      "name": "Bugge Wesseltoft at Ronnie Scott&#x27;s",
+      "venue": "Ronnie Scott&#x27;s",
+      "city": "London",
+      "country": "GB",
+      "date": "2025-11-26",
+      "time": "6:30 PM",
+      "url": "https://open.spotify.com/concert/75WknSTKokpVMujlziqafV",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Bugge Wesseltoft",
+      "artist_name": "Bugge Wesseltoft",
+      "name": "Bugge Wesseltoft Concert (4aIdQqat)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/4aIdQqatsyh8fPtSGfMTRt",
+      "source": "Spotify"
+    }
+  ]
+}

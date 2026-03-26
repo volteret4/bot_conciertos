@@ -1,0 +1,122 @@
+{
+  "timestamp": "2025-10-23T17:08:33.308370",
+  "concerts": [
+    {
+      "artist": "The Lewis Express",
+      "name": "Ivan “Melon” Lewis & The Cuban Swing Express",
+      "venue": "İş Sanat İş Kuleleri Salonu",
+      "city": "İstanbul",
+      "country": "Turkey",
+      "country_code": "TR",
+      "date": "2026-04-16",
+      "time": "20:30:00",
+      "url": "https://www.biletix.com/performance/5IS06/001/TURKIYE/tr",
+      "source": "Ticketmaster",
+      "id": "Z2HyzZyMZkKqv6vve"
+    },
+    {
+      "artist": "The Lewis Express",
+      "name": "American Express Presents Roundhay Festival - Lewis Capaldi Grandstand",
+      "venue": "Roundhay Park",
+      "city": "Leeds",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-07-04",
+      "time": "13:00:00",
+      "url": "https://www.ticketmaster.co.uk/american-express-presents-roundhay-festival-lewis-leeds-04-07-2026/event/1F00632DD2B309C8",
+      "source": "Ticketmaster",
+      "id": "G5vHZbwM3iYEF"
+    },
+    {
+      "artist": "The Lewis Express",
+      "name": "American Express Presents Roundhay Festival - Lewis Capaldi",
+      "venue": "Roundhay Park",
+      "city": "Leeds",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-07-04",
+      "time": "13:00:00",
+      "url": "https://www.ticketmaster.co.uk/american-express-presents-roundhay-festival-lewis-leeds-04-07-2026/event/1F00632D948208DB",
+      "source": "Ticketmaster",
+      "id": "G5vHZbwUfOONh"
+    },
+    {
+      "artist": "The Lewis Express",
+      "name": "Lewis Capaldi - Official Premium Ticket and Hotel Experiences",
+      "venue": "Roundhay Park",
+      "city": "Leeds",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-07-04",
+      "time": "14:01:00",
+      "url": "https://www.eventtravel.com/lcrhaps?agentCodeWeblink=AF294",
+      "source": "Ticketmaster",
+      "id": "G5vHZbwWDiYNQ"
+    },
+    {
+      "artist": "The Lewis Express",
+      "name": "Amex Presents BST Hyde Park - Lewis Capaldi - Ultimate Bar Packages",
+      "venue": "Hyde Park",
+      "city": "London",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-07-11",
+      "time": "13:00:00",
+      "url": "https://www.ticketmaster.co.uk/amex-presents-bst-hyde-park-lewis-london-11-07-2026/event/3700632CAF1F11D8",
+      "source": "Ticketmaster",
+      "id": "1AdjZbwGkwR6s6b"
+    },
+    {
+      "artist": "The Lewis Express",
+      "name": "American Express Presents BST Hyde Park - Lewis Capaldi",
+      "venue": "Hyde Park",
+      "city": "London",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-07-11",
+      "time": "14:00:00",
+      "url": "https://www.ticketmaster.co.uk/american-express-presents-bst-hyde-park-london-11-07-2026/event/3700632BA6F00FA5",
+      "source": "Ticketmaster",
+      "id": "1AdjZbwGkmJHZXP"
+    },
+    {
+      "artist": "The Lewis Express",
+      "name": "Lewis Capaldi - Official Premium Ticket and Hotel Experiences",
+      "venue": "Hyde Park",
+      "city": "London",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-07-11",
+      "time": "14:01:00",
+      "url": "https://www.eventtravel.com/lcaps?agentCodeWeblink=AF294",
+      "source": "Ticketmaster",
+      "id": "1AdjZbwGkw2DYNr"
+    },
+    {
+      "artist": "The Lewis Express",
+      "name": "Amex Presents BST Hyde Park - Lewis Capaldi - Ultimate Bar Packages",
+      "venue": "Hyde Park",
+      "city": "London",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-07-12",
+      "time": "13:00:00",
+      "url": "https://www.ticketmaster.co.uk/amex-presents-bst-hyde-park-lewis-london-12-07-2026/event/3700632CB49D1429",
+      "source": "Ticketmaster",
+      "id": "1AdjZbwGkwVEo8t"
+    },
+    {
+      "artist": "The Lewis Express",
+      "name": "American Express Presents BST Hyde Park - Lewis Capaldi",
+      "venue": "Hyde Park",
+      "city": "London",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-07-12",
+      "time": "14:00:00",
+      "url": "https://www.ticketmaster.co.uk/american-express-presents-bst-hyde-park-london-12-07-2026/event/3700632BCAC316B8",
+      "source": "Ticketmaster",
+      "id": "1AdjZbwGkR1YsQz"
+    }
+  ]
+}

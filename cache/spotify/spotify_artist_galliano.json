@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:57:39.576273",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5wCNzQ86Wfer6KdOxaPlQG"
+    },
+    "followers": {
+      "href": null,
+      "total": 35895
+    },
+    "genres": [
+      "acid jazz",
+      "jazz funk"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5wCNzQ86Wfer6KdOxaPlQG",
+    "id": "5wCNzQ86Wfer6KdOxaPlQG",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebb2101f00e64b5d28647e4d93",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174b2101f00e64b5d28647e4d93",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178b2101f00e64b5d28647e4d93",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Galliano",
+    "popularity": 33,
+    "type": "artist",
+    "uri": "spotify:artist:5wCNzQ86Wfer6KdOxaPlQG"
+  }
+}

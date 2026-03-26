@@ -1,0 +1,70 @@
+{
+  "timestamp": "2025-10-23T17:06:50.221104",
+  "concerts": [
+    {
+      "artist": "Panopticon",
+      "name": "PANOPTICON with Falls of Rauros, Exulansis and Alda",
+      "venue": "Star Theater",
+      "city": "Portland",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-10-25",
+      "time": "20:00:00",
+      "url": "https://www.ticketweb.com/event/panopticon-with-falls-of-rauros-star-theater-tickets/13877234",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AK-MFV"
+    },
+    {
+      "artist": "Panopticon",
+      "name": "Decibel - Metal & Beer Festival: 3-DAY PASS (Pre-Fest at Ratio)",
+      "venue": "Fillmore Auditorium (Denver)",
+      "city": "Denver",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-04",
+      "time": "",
+      "url": "https://www.ticketmaster.com/decibel-metal-beer-festival-3day-pass-denver-colorado-12-04-2025/event/1E006267B62D2D9F",
+      "source": "Ticketmaster",
+      "id": "G5vzZbJrU53UL"
+    },
+    {
+      "artist": "Panopticon",
+      "name": "Decibel - Metal & Beer Festival: 2-DAY PASS",
+      "venue": "Fillmore Auditorium (Denver)",
+      "city": "Denver",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-05",
+      "time": "",
+      "url": "https://www.ticketmaster.com/decibel-metal-beer-festival-2day-pass-denver-colorado-12-05-2025/event/1E006267B5D42D87",
+      "source": "Ticketmaster",
+      "id": "G5vzZbJrggeU6"
+    },
+    {
+      "artist": "Panopticon",
+      "name": "Decibel - Metal & Beer Festival: Day 1 Single Day Tickets",
+      "venue": "Fillmore Auditorium (Denver)",
+      "city": "Denver",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-05",
+      "time": "18:00:00",
+      "url": "https://www.ticketmaster.com/decibel-metal-beer-festival-day-1-denver-colorado-12-05-2025/event/1E006267B4F12CC9",
+      "source": "Ticketmaster",
+      "id": "G5vzZbJrVH3Sa"
+    },
+    {
+      "artist": "Panopticon",
+      "name": "PANOPTICON | Special guest: Sunken",
+      "venue": "Klub 2progi",
+      "city": "Poznan",
+      "country": "Poland",
+      "country_code": "PL",
+      "date": "2026-04-08",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.pl/event/panopticon-%7C-special-guest-sunken-tickets/678572598?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZQpZ1k_z4wpb"
+    }
+  ]
+}

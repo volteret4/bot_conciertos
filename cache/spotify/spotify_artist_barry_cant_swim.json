@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:02:13.949428",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0vTVU0KH0CVzijsoKGsTPl"
+    },
+    "followers": {
+      "href": null,
+      "total": 279425
+    },
+    "genres": [
+      "jazz house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0vTVU0KH0CVzijsoKGsTPl",
+    "id": "0vTVU0KH0CVzijsoKGsTPl",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebef1983b696cf87738bee1ba0",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174ef1983b696cf87738bee1ba0",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178ef1983b696cf87738bee1ba0",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Barry Can't Swim",
+    "popularity": 61,
+    "type": "artist",
+    "uri": "spotify:artist:0vTVU0KH0CVzijsoKGsTPl"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:56:16.654461",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/04KmByEP6icXVY0PvJaMMp"
+    },
+    "followers": {
+      "href": null,
+      "total": 83326
+    },
+    "genres": [
+      "melodic techno"
+    ],
+    "href": "https://api.spotify.com/v1/artists/04KmByEP6icXVY0PvJaMMp",
+    "id": "04KmByEP6icXVY0PvJaMMp",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebd871c95d4b0de2e916a078df",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174d871c95d4b0de2e916a078df",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178d871c95d4b0de2e916a078df",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Mano Le Tough",
+    "popularity": 37,
+    "type": "artist",
+    "uri": "spotify:artist:04KmByEP6icXVY0PvJaMMp"
+  }
+}

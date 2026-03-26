@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-09-02T08:07:05.364938",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3HdW1zs4IHQSFa3gebmlGY"
+    },
+    "followers": {
+      "href": null,
+      "total": 32805
+    },
+    "genres": [
+      "flamenco pop",
+      "flamenco"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3HdW1zs4IHQSFa3gebmlGY",
+    "id": "3HdW1zs4IHQSFa3gebmlGY",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebc627beefbe8676250a125ae9",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174c627beefbe8676250a125ae9",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178c627beefbe8676250a125ae9",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Arco",
+    "popularity": 45,
+    "type": "artist",
+    "uri": "spotify:artist:3HdW1zs4IHQSFa3gebmlGY"
+  }
+}

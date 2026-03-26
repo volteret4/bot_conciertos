@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:58:50.080282",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4dcZVsGQzFSiXuAHyhw3qT"
+    },
+    "followers": {
+      "href": null,
+      "total": 44196
+    },
+    "genres": [
+      "stoner rock",
+      "space rock",
+      "psychedelic rock",
+      "stoner metal"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4dcZVsGQzFSiXuAHyhw3qT",
+    "id": "4dcZVsGQzFSiXuAHyhw3qT",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273e251a4bc17f41f678d03f278",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02e251a4bc17f41f678d03f278",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851e251a4bc17f41f678d03f278",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Electric Octopus",
+    "popularity": 19,
+    "type": "artist",
+    "uri": "spotify:artist:4dcZVsGQzFSiXuAHyhw3qT"
+  }
+}

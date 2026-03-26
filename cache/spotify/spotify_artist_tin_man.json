@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T20:03:25.319470",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1pnPHRg5i0WzPwGqtIoadK"
+    },
+    "followers": {
+      "href": null,
+      "total": 8836
+    },
+    "genres": [
+      "acid techno",
+      "acid house",
+      "dub techno",
+      "minimal techno"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1pnPHRg5i0WzPwGqtIoadK",
+    "id": "1pnPHRg5i0WzPwGqtIoadK",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebaab884b4ca31d851a62fa5c8",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174aab884b4ca31d851a62fa5c8",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178aab884b4ca31d851a62fa5c8",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Tin Man",
+    "popularity": 22,
+    "type": "artist",
+    "uri": "spotify:artist:1pnPHRg5i0WzPwGqtIoadK"
+  }
+}

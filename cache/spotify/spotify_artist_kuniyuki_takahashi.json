@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:47:35.421442",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/53JsFUDYcN2jw6v1nF7Z82"
+    },
+    "followers": {
+      "href": null,
+      "total": 22672
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/53JsFUDYcN2jw6v1nF7Z82",
+    "id": "53JsFUDYcN2jw6v1nF7Z82",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/e0e9801c2a540ea00bd7112f087fb3b24e8ceb0e",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/2e6572e7fec9f227668148b46cdd095f496dec14",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/6e800da2005193e95577f4e6013f34ba05da0ae8",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/2f293d0ba1a433815c1da85609ab446392849a19",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Kuniyuki Takahashi",
+    "popularity": 35,
+    "type": "artist",
+    "uri": "spotify:artist:53JsFUDYcN2jw6v1nF7Z82"
+  }
+}

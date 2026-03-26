@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T19:57:13.314783",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2Lxa3SFNEW0alfRvtdXOul"
+    },
+    "followers": {
+      "href": null,
+      "total": 4643003
+    },
+    "genres": [
+      "banda",
+      "corrido",
+      "sierreño",
+      "norteño",
+      "música mexicana"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2Lxa3SFNEW0alfRvtdXOul",
+    "id": "2Lxa3SFNEW0alfRvtdXOul",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb44718c4f816472411cd78cd4",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517444718c4f816472411cd78cd4",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17844718c4f816472411cd78cd4",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Ariel Camacho y Los Plebes Del Rancho",
+    "popularity": 67,
+    "type": "artist",
+    "uri": "spotify:artist:2Lxa3SFNEW0alfRvtdXOul"
+  }
+}

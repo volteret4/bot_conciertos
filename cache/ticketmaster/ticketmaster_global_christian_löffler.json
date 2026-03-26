@@ -1,0 +1,83 @@
+{
+  "timestamp": "2025-10-23T17:13:45.414047",
+  "concerts": [
+    {
+      "artist": "Christian Löffler",
+      "name": "Christian Löffler",
+      "venue": "Cirque Royal - Koninklijk Circus",
+      "city": "Brussels",
+      "country": "Belgium",
+      "country_code": "BE",
+      "date": "2026-02-17",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.be/event/christian-loffler-tickets/794692096",
+      "source": "Ticketmaster",
+      "id": "Z698xZG2Z1krfQ3ep"
+    },
+    {
+      "artist": "Christian Löffler",
+      "name": "Christian Löffler - Until We Meet Again Tour",
+      "venue": "Lucerna - Velký sál",
+      "city": "Praha 1",
+      "country": "Czech Republic",
+      "country_code": "CZ",
+      "date": "2026-02-20",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.cz/event/christian-loffler-until-we-meet-again-tour-tickets/1061835318?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZu0Z16vv-OgGb"
+    },
+    {
+      "artist": "Christian Löffler",
+      "name": "Christian Löffler - Until We Meet Again Tour 2026",
+      "venue": "The Opera House",
+      "city": "Toronto",
+      "country": "Canada",
+      "country_code": "CA",
+      "date": "2026-03-15",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.ca/christian-loffler-until-we-meet-again-toronto-ontario-03-15-2026/event/1000634D1C3B6184",
+      "source": "Ticketmaster",
+      "id": "1AvZZbVGkVjCUk7"
+    },
+    {
+      "artist": "Christian Löffler",
+      "name": "Christian Loffler Until We Meet Again Tour Ý North America 2026",
+      "venue": "Commonwealth Bar",
+      "city": "Calgary",
+      "country": "Canada",
+      "country_code": "CA",
+      "date": "2026-03-19",
+      "time": "20:00:00",
+      "url": "https://www.ticketweb.ca/event/christian-lffler-until-we-meet-commonwealth-bar-stage-tickets/14628063?REFERRAL_ID=tmfeed",
+      "source": "Ticketmaster",
+      "id": "1118vNf77oA6vu"
+    },
+    {
+      "artist": "Christian Löffler",
+      "name": "Christian Loffler",
+      "venue": "Commonwealth Bar & Stage",
+      "city": "Calgary",
+      "country": "Canada",
+      "country_code": "CA",
+      "date": "2026-03-19",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7qOe8",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7qOe8"
+    },
+    {
+      "artist": "Christian Löffler",
+      "name": "Christian Löffler - Until We Meet Again Tour 2026",
+      "venue": "Commodore Ballroom",
+      "city": "Vancouver",
+      "country": "Canada",
+      "country_code": "CA",
+      "date": "2026-03-20",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.ca/christian-loffler-until-we-meet-again-vancouver-british-columbia-03-20-2026/event/1100634F0C12C15B",
+      "source": "Ticketmaster",
+      "id": "1Av7ZbVGkHG7iAh"
+    }
+  ]
+}

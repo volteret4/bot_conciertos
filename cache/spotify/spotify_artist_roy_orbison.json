@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:55:24.714858",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0JDkhL4rjiPNEp92jAgJnS"
+    },
+    "followers": {
+      "href": null,
+      "total": 2312175
+    },
+    "genres": [
+      "rockabilly"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0JDkhL4rjiPNEp92jAgJnS",
+    "id": "0JDkhL4rjiPNEp92jAgJnS",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb63c7956d7de45418d7fe6b25",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517463c7956d7de45418d7fe6b25",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17863c7956d7de45418d7fe6b25",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Roy Orbison",
+    "popularity": 64,
+    "type": "artist",
+    "uri": "spotify:artist:0JDkhL4rjiPNEp92jAgJnS"
+  }
+}

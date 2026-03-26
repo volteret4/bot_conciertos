@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T19:55:06.507316",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6HN1s0JzLowapZ7nhOAJ71"
+    },
+    "followers": {
+      "href": null,
+      "total": 98516
+    },
+    "genres": [
+      "stoner rock",
+      "space rock",
+      "psychedelic rock",
+      "neo-psychedelic",
+      "stoner metal",
+      "acid rock",
+      "sludge metal"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6HN1s0JzLowapZ7nhOAJ71",
+    "id": "6HN1s0JzLowapZ7nhOAJ71",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb7da588de29d375f1964248d5",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051747da588de29d375f1964248d5",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1787da588de29d375f1964248d5",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Naxatras",
+    "popularity": 33,
+    "type": "artist",
+    "uri": "spotify:artist:6HN1s0JzLowapZ7nhOAJ71"
+  }
+}

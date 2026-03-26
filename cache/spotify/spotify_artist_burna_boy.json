@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-11-03T20:01:07.445001",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3wcj11K77LjEY1PkEazffa"
+    },
+    "followers": {
+      "href": null,
+      "total": 14099941
+    },
+    "genres": [
+      "afrobeats",
+      "afrobeat",
+      "afropop",
+      "afroswing",
+      "dancehall",
+      "afropiano"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3wcj11K77LjEY1PkEazffa",
+    "id": "3wcj11K77LjEY1PkEazffa",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebb4e44d0f4e3e47af2cf06f3f",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174b4e44d0f4e3e47af2cf06f3f",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178b4e44d0f4e3e47af2cf06f3f",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Burna Boy",
+    "popularity": 79,
+    "type": "artist",
+    "uri": "spotify:artist:3wcj11K77LjEY1PkEazffa"
+  }
+}

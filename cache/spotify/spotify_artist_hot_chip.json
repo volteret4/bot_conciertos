@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T20:04:12.487581",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/37uLId6Z5ZXCx19vuruvv5"
+    },
+    "followers": {
+      "href": null,
+      "total": 704355
+    },
+    "genres": [
+      "alternative dance",
+      "new rave",
+      "indie dance"
+    ],
+    "href": "https://api.spotify.com/v1/artists/37uLId6Z5ZXCx19vuruvv5",
+    "id": "37uLId6Z5ZXCx19vuruvv5",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebb988ca14506a2356551e7c7b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174b988ca14506a2356551e7c7b",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178b988ca14506a2356551e7c7b",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Hot Chip",
+    "popularity": 50,
+    "type": "artist",
+    "uri": "spotify:artist:37uLId6Z5ZXCx19vuruvv5"
+  }
+}

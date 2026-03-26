@@ -1,0 +1,45 @@
+{
+  "timestamp": "2025-11-03T20:03:32.650413",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/40HeNm05FEAxGx8gUOV4my"
+    },
+    "followers": {
+      "href": null,
+      "total": 122058
+    },
+    "genres": [
+      "cold wave",
+      "darkwave",
+      "post-punk",
+      "ebm",
+      "witch house",
+      "gothic rock",
+      "industrial",
+      "deathrock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/40HeNm05FEAxGx8gUOV4my",
+    "id": "40HeNm05FEAxGx8gUOV4my",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb70ba7ff772c3fd90f848450b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517470ba7ff772c3fd90f848450b",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17870ba7ff772c3fd90f848450b",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "The Soft Moon",
+    "popularity": 34,
+    "type": "artist",
+    "uri": "spotify:artist:40HeNm05FEAxGx8gUOV4my"
+  }
+}

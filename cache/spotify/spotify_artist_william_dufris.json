@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:58:36.830353",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2fjWS81VAhiUdrKPtAlWaU"
+    },
+    "followers": {
+      "href": null,
+      "total": 452
+    },
+    "genres": [
+      "spoken word"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2fjWS81VAhiUdrKPtAlWaU",
+    "id": "2fjWS81VAhiUdrKPtAlWaU",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273e1b3f2a8a930e523ba80de82",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02e1b3f2a8a930e523ba80de82",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851e1b3f2a8a930e523ba80de82",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "William Dufris",
+    "popularity": 11,
+    "type": "artist",
+    "uri": "spotify:artist:2fjWS81VAhiUdrKPtAlWaU"
+  }
+}

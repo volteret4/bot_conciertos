@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T20:01:20.779524",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2BaRBezXLTKFXliJYqaxBC"
+    },
+    "followers": {
+      "href": null,
+      "total": 2527
+    },
+    "genres": [
+      "idm",
+      "dub techno"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2BaRBezXLTKFXliJYqaxBC",
+    "id": "2BaRBezXLTKFXliJYqaxBC",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/29875012f821beecb9bba8586e462a06788c80ab",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/20a71072a781946dccc0e6258782fc472474bb6e",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/0e7a4ebc2431271ba6fcbdf80725715609e541d3",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/8b4948a0f8c423290cd7c4bd87fba1dfaa0da385",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "The 7th Plain",
+    "popularity": 16,
+    "type": "artist",
+    "uri": "spotify:artist:2BaRBezXLTKFXliJYqaxBC"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-11-03T19:56:20.138233",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1Dvfqq39HxvCJ3GvfeIFuT"
+    },
+    "followers": {
+      "href": null,
+      "total": 1040533
+    },
+    "genres": [
+      "progressive metal",
+      "sludge metal",
+      "stoner metal",
+      "metal",
+      "groove metal",
+      "stoner rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1Dvfqq39HxvCJ3GvfeIFuT",
+    "id": "1Dvfqq39HxvCJ3GvfeIFuT",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb5490f4a4c327475719679a5f",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051745490f4a4c327475719679a5f",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1785490f4a4c327475719679a5f",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Mastodon",
+    "popularity": 57,
+    "type": "artist",
+    "uri": "spotify:artist:1Dvfqq39HxvCJ3GvfeIFuT"
+  }
+}

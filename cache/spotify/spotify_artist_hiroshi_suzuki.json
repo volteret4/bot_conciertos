@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:47:30.423645",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2FatNL7pp4gwt10zTQHzbA"
+    },
+    "followers": {
+      "href": null,
+      "total": 53729
+    },
+    "genres": [
+      "jazz fusion",
+      "jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2FatNL7pp4gwt10zTQHzbA",
+    "id": "2FatNL7pp4gwt10zTQHzbA",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb56d99882e15b3b54506803dd",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517456d99882e15b3b54506803dd",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17856d99882e15b3b54506803dd",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "鈴木 弘",
+    "popularity": 40,
+    "type": "artist",
+    "uri": "spotify:artist:2FatNL7pp4gwt10zTQHzbA"
+  }
+}

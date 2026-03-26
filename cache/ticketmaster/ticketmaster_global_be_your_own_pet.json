@@ -1,0 +1,113 @@
+{
+  "timestamp": "2025-09-02T08:09:45.994232",
+  "concerts": [
+    {
+      "artist": "Be Your Own Pet",
+      "name": "Be Your Own Pet with Cheap Perfume, feverishh (Guests Under 18 Require Accompanying Adult)",
+      "venue": "Aggie Theater",
+      "city": "Fort Collins",
+      "country": "US",
+      "date": "2025-09-12",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7_Mfd",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7_Mfd"
+    },
+    {
+      "artist": "Be Your Own Pet",
+      "name": "be your own PET",
+      "venue": "Marquis",
+      "city": "Denver",
+      "country": "US",
+      "date": "2025-09-14",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/be-your-own-pet-denver-colorado-09-14-2025/event/1E0062F108495F55",
+      "source": "Ticketmaster",
+      "id": "G5vzZbR7F34W4"
+    },
+    {
+      "artist": "Be Your Own Pet",
+      "name": "Anamanaguchi w/ Be Your Own Pet",
+      "venue": "The Studio at the Factory",
+      "city": "Dallas",
+      "country": "US",
+      "date": "2025-09-20",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7pb4b",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7pb4b"
+    },
+    {
+      "artist": "Be Your Own Pet",
+      "name": "Be Your Own Pet",
+      "venue": "1884 Lounge",
+      "city": "Memphis",
+      "country": "US",
+      "date": "2025-09-21",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/be-your-own-pet-memphis-tennessee-09-21-2025/event/1B0062F0A57B3401",
+      "source": "Ticketmaster",
+      "id": "G5viZbRePrS8v"
+    },
+    {
+      "artist": "Be Your Own Pet",
+      "name": "Anamanaguchi w/ Be Your Own Pet",
+      "venue": "Cat's Cradle",
+      "city": "Carrboro",
+      "country": "US",
+      "date": "2025-10-14",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7_3xd",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7_3xd"
+    },
+    {
+      "artist": "Be Your Own Pet",
+      "name": "Anamanaguchi: The Buckwild Tour",
+      "venue": "The Masquerade - Heaven",
+      "city": "Atlanta",
+      "country": "US",
+      "date": "2025-10-16",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/anamanaguchi-the-buckwild-tour-atlanta-georgia-10-16-2025/event/0E00629E98AE5B29",
+      "source": "Ticketmaster",
+      "id": "vvG1zZbtBblPit"
+    },
+    {
+      "artist": "Be Your Own Pet",
+      "name": "Anamanaguchi - The Buckwild Tour",
+      "venue": "House of Blues Orlando",
+      "city": "Orlando",
+      "country": "US",
+      "date": "2025-10-17",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/anamanaguchi-the-buckwild-tour-orlando-florida-10-17-2025/event/220062A2DBFA42F6",
+      "source": "Ticketmaster",
+      "id": "17FOvxG615hX05U"
+    },
+    {
+      "artist": "Be Your Own Pet",
+      "name": "Be Your Own Pet and Babe Haven in Miami",
+      "venue": "Gramps Wynwood",
+      "city": "Miami",
+      "country": "US",
+      "date": "2025-10-18",
+      "time": "19:00:00",
+      "url": "https://www.ticketweb.com/event/be-your-own-pet-and-gramps-wynwood-tickets/13894424",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AKxf80"
+    },
+    {
+      "artist": "Be Your Own Pet",
+      "name": "Be Your Own Pet and Babe Haven in Tampa",
+      "venue": "Crowbar",
+      "city": "Tampa",
+      "country": "US",
+      "date": "2025-10-19",
+      "time": "19:00:00",
+      "url": "https://www.ticketweb.com/event/be-your-own-pet-and-crowbar-tickets/13888164",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AKxFA0"
+    }
+  ]
+}

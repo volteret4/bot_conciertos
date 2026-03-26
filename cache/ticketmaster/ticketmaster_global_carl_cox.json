@@ -1,0 +1,101 @@
+{
+  "timestamp": "2025-09-02T08:17:02.564905",
+  "concerts": [
+    {
+      "artist": "Carl Cox",
+      "name": "Carl Cox",
+      "venue": "[UNVRS]",
+      "city": "San Rafael, Ibiza",
+      "country": "ES",
+      "date": "2025-09-07",
+      "time": "22:30:00",
+      "url": "https://www.ticketmaster.es/event/carl-cox-tickets/154024670?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZ2qZ1kAfZ0_Y"
+    },
+    {
+      "artist": "Carl Cox",
+      "name": "Carl Cox",
+      "venue": "[UNVRS]",
+      "city": "San Rafael, Ibiza",
+      "country": "ES",
+      "date": "2025-09-14",
+      "time": "22:30:00",
+      "url": "https://www.ticketmaster.es/event/carl-cox-tickets/193076001?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZ2qZ1kkKvUZv"
+    },
+    {
+      "artist": "Carl Cox",
+      "name": "Carl Cox",
+      "venue": "[UNVRS]",
+      "city": "San Rafael, Ibiza",
+      "country": "ES",
+      "date": "2025-09-21",
+      "time": "22:30:00",
+      "url": "https://www.ticketmaster.es/event/carl-cox-tickets/501306061?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZ2qZ1kfvGkv-"
+    },
+    {
+      "artist": "Carl Cox",
+      "name": "Carl Cox",
+      "venue": "Parc Jean Drapeau",
+      "city": "Montreal",
+      "country": "CA",
+      "date": "2025-10-03",
+      "time": "17:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7_t4a",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7_t4a"
+    },
+    {
+      "artist": "Carl Cox",
+      "name": "Carl Cox Evolution Live (18+)",
+      "venue": "SILO",
+      "city": "Dallas",
+      "country": "US",
+      "date": "2025-10-10",
+      "time": "21:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7bSoo",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7bSoo"
+    },
+    {
+      "artist": "Carl Cox",
+      "name": "Carl Cox Evolution Live",
+      "venue": "Red Rocks Amphitheatre",
+      "city": "Morrison",
+      "country": "US",
+      "date": "2025-10-13",
+      "time": "18:00:00",
+      "url": "https://www.axs.com/events/885119/carl-cox-tickets",
+      "source": "Ticketmaster",
+      "id": "G5vzZbnrs9Ns_"
+    },
+    {
+      "artist": "Carl Cox",
+      "name": "Carl Cox Evolution Live",
+      "venue": "Red Rocks Amphitheatre",
+      "city": "Morrison",
+      "country": "US",
+      "date": "2025-10-13",
+      "time": "18:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A74d-4",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A74d-4"
+    },
+    {
+      "artist": "Carl Cox",
+      "name": "The Prodigy",
+      "venue": "3Arena",
+      "city": "Dublin",
+      "country": "IE",
+      "date": "2026-04-28",
+      "time": "18:30:00",
+      "url": "https://www.ticketmaster.ie/the-prodigy-dublin-28-04-2026/event/180062D3DDFF7882",
+      "source": "Ticketmaster",
+      "id": "17kZvxG6u2qTMxe"
+    }
+  ]
+}

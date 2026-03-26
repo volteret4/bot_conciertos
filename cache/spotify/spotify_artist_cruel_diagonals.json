@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T20:00:00.780099",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0C7jgMYmKXPmy5bHH5ebEN"
+    },
+    "followers": {
+      "href": null,
+      "total": 2282
+    },
+    "genres": [
+      "experimental",
+      "dark ambient",
+      "drone",
+      "ambient"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0C7jgMYmKXPmy5bHH5ebEN",
+    "id": "0C7jgMYmKXPmy5bHH5ebEN",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb113c2b1f393d4841a20e265c",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174113c2b1f393d4841a20e265c",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178113c2b1f393d4841a20e265c",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Cruel Diagonals",
+    "popularity": 6,
+    "type": "artist",
+    "uri": "spotify:artist:0C7jgMYmKXPmy5bHH5ebEN"
+  }
+}

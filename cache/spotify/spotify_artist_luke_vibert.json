@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-11-03T19:48:13.560661",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0HfxCluo7N2dhr4oRM0wBv"
+    },
+    "followers": {
+      "href": null,
+      "total": 66823
+    },
+    "genres": [
+      "idm",
+      "acid house",
+      "trip hop",
+      "acid techno",
+      "breakbeat"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0HfxCluo7N2dhr4oRM0wBv",
+    "id": "0HfxCluo7N2dhr4oRM0wBv",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6772690000c46cb6b06ad747c6d92a63f7a511",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000dd22b6b06ad747c6d92a63f7a511",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000bac3b6b06ad747c6d92a63f7a511",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67726900008f74b6b06ad747c6d92a63f7a511",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Luke Vibert",
+    "popularity": 31,
+    "type": "artist",
+    "uri": "spotify:artist:0HfxCluo7N2dhr4oRM0wBv"
+  }
+}

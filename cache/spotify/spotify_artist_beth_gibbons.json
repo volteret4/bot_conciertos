@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:57:44.166840",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6Lt6KFXX3P0v6vfrynQAMo"
+    },
+    "followers": {
+      "href": null,
+      "total": 201434
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/6Lt6KFXX3P0v6vfrynQAMo",
+    "id": "6Lt6KFXX3P0v6vfrynQAMo",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb2f171f9487d8597df9e3cfda",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051742f171f9487d8597df9e3cfda",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1782f171f9487d8597df9e3cfda",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Beth Gibbons",
+    "popularity": 44,
+    "type": "artist",
+    "uri": "spotify:artist:6Lt6KFXX3P0v6vfrynQAMo"
+  }
+}

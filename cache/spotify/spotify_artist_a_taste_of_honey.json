@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:47:43.609838",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1ii6e2pv8VIRwnTER71rMl"
+    },
+    "followers": {
+      "href": null,
+      "total": 63579
+    },
+    "genres": [
+      "disco",
+      "boogie"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1ii6e2pv8VIRwnTER71rMl",
+    "id": "1ii6e2pv8VIRwnTER71rMl",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebb5da9d3a7d3e331d4a192169",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174b5da9d3a7d3e331d4a192169",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178b5da9d3a7d3e331d4a192169",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "A Taste Of Honey",
+    "popularity": 45,
+    "type": "artist",
+    "uri": "spotify:artist:1ii6e2pv8VIRwnTER71rMl"
+  }
+}

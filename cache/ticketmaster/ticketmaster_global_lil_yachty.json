@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-10-23T17:14:18.362312",
+  "concerts": [
+    {
+      "artist": "Lil Yachty",
+      "name": "DRUSKI: THE COULDA FEST TOUR",
+      "venue": "Chase Center",
+      "city": "San Francisco",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-05",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/druski-the-coulda-fest-tour-san-francisco-california-12-05-2025/event/1C0062F09574267A",
+      "source": "Ticketmaster",
+      "id": "G5vYZbRe4qe_B"
+    },
+    {
+      "artist": "Lil Yachty",
+      "name": "DRUSKI: THE COULDA  FEST TOUR",
+      "venue": "Kia Forum",
+      "city": "Inglewood",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-06",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/druski-the-coulda-fest-tour-inglewood-california-12-06-2025/event/090062F1F587706B",
+      "source": "Ticketmaster",
+      "id": "vvG10ZbR6g-Mvl"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:05:01.308478",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1jr0mAgIhKtTeKTZwk0HjF"
+    },
+    "followers": {
+      "href": null,
+      "total": 68082
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/1jr0mAgIhKtTeKTZwk0HjF",
+    "id": "1jr0mAgIhKtTeKTZwk0HjF",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eba249afb00ba57197381ffaf0",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174a249afb00ba57197381ffaf0",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178a249afb00ba57197381ffaf0",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Los Punsetes",
+    "popularity": 40,
+    "type": "artist",
+    "uri": "spotify:artist:1jr0mAgIhKtTeKTZwk0HjF"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-25T08:45:08.888038",
+  "data": [
+    {
+      "artist": "Jamiroquai",
+      "artist_name": "Jamiroquai",
+      "name": "Jamiroquai at Palau Sant Jordi",
+      "venue": "Palau Sant Jordi",
+      "city": "Barcelona",
+      "country": "ES",
+      "date": "2025-11-06",
+      "time": "9:00 PM",
+      "url": "https://open.spotify.com/concert/3mjuZlyjxkMliI17ly67mw",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Jamiroquai",
+      "artist_name": "Jamiroquai",
+      "name": "Jamiroquai at Hallenstadion",
+      "venue": "Hallenstadion",
+      "city": "Zürich",
+      "country": "CH",
+      "date": "2025-11-11",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/5f54STzsMyfTwlqwkh7jxl",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Jamiroquai",
+      "artist_name": "Jamiroquai",
+      "name": "Jamiroquai Concert (1R74LkMy)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/1R74LkMyFkX43dJTB4M5l3",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Jamiroquai",
+      "artist_name": "Jamiroquai",
+      "name": "Jamiroquai at Wiener Stadthalle Halle D",
+      "venue": "Wiener Stadthalle Halle D",
+      "city": "Wien",
+      "country": "",
+      "date": "2025-11-15",
+      "time": "7:30 PM",
+      "url": "https://open.spotify.com/concert/2QysiShcqwx2JT7J3vnyxW",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Jamiroquai",
+      "artist_name": "Jamiroquai",
+      "name": "Jamiroquai Concert (7H9Kj0UI)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/7H9Kj0UIntuGCo9YgLpGMf",
+      "source": "Spotify"
+    }
+  ]
+}

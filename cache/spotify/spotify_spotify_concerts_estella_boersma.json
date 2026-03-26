@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-21T08:43:42.050666",
+  "data": [
+    {
+      "artist": "Estella Boersma",
+      "artist_name": "Estella Boersma",
+      "name": "Estella Boersma at Zorlu Performans Sanatları Merkezi",
+      "venue": "Zorlu Performans Sanatları Merkezi",
+      "city": "İstanbul",
+      "country": "",
+      "date": "2025-08-22",
+      "time": "6:00 PM",
+      "url": "https://open.spotify.com/concert/21PorvaPGXCq5n5VTuttMP",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Estella Boersma",
+      "artist_name": "Estella Boersma",
+      "name": "Estella Boersma at SALA APOLO",
+      "venue": "SALA APOLO",
+      "city": "Barcelona",
+      "country": "ES",
+      "date": "2025-08-30",
+      "time": "11:59 PM",
+      "url": "https://open.spotify.com/concert/2zyi1REuQaHGUv9ASHmOgv",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Estella Boersma",
+      "artist_name": "Estella Boersma",
+      "name": "Estella Boersma at Domaine de Grammont",
+      "venue": "Domaine de Grammont",
+      "city": "Montpellier",
+      "country": "FR",
+      "date": "2025-09-05",
+      "time": "3:30 PM",
+      "url": "https://open.spotify.com/concert/0dmT4GDaHMuvbZTVHLyAJi",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Estella Boersma",
+      "artist_name": "Estella Boersma",
+      "name": "Estella Boersma at Interference",
+      "venue": "Interference",
+      "city": "Balma",
+      "country": "",
+      "date": "2025-09-05",
+      "time": "11:59 PM",
+      "url": "https://open.spotify.com/concert/2iUe0PslHk3AAgYRn8cvIV",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Estella Boersma",
+      "artist_name": "Estella Boersma",
+      "name": "Estella Boersma at Club Mirador",
+      "venue": "Club Mirador",
+      "city": "ANKARA",
+      "country": "",
+      "date": "2025-09-06",
+      "time": "1:59 PM",
+      "url": "https://open.spotify.com/concert/2lwNF2NdJWySlMjXDJXYM8",
+      "source": "Spotify"
+    }
+  ]
+}

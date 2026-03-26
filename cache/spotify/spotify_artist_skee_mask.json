@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T20:04:17.245112",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2qwi0hBvI2GrbkurOnw3hZ"
+    },
+    "followers": {
+      "href": null,
+      "total": 75679
+    },
+    "genres": [
+      "idm",
+      "breakbeat"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2qwi0hBvI2GrbkurOnw3hZ",
+    "id": "2qwi0hBvI2GrbkurOnw3hZ",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6772690000c46c9ede91b19531f1f42b5ec538",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000dd229ede91b19531f1f42b5ec538",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000bac39ede91b19531f1f42b5ec538",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67726900008f749ede91b19531f1f42b5ec538",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Skee Mask",
+    "popularity": 27,
+    "type": "artist",
+    "uri": "spotify:artist:2qwi0hBvI2GrbkurOnw3hZ"
+  }
+}

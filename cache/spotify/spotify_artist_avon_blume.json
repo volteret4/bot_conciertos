@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-10-23T17:55:19.440178",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1MdPKU9m6iX38t6adSSxQF"
+    },
+    "followers": {
+      "href": null,
+      "total": 226
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/1MdPKU9m6iX38t6adSSxQF",
+    "id": "1MdPKU9m6iX38t6adSSxQF",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2735a8fc36c643a6facc7e8e89b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e025a8fc36c643a6facc7e8e89b",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048515a8fc36c643a6facc7e8e89b",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Avon Blume",
+    "popularity": 2,
+    "type": "artist",
+    "uri": "spotify:artist:1MdPKU9m6iX38t6adSSxQF"
+  }
+}

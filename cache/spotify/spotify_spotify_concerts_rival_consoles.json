@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-25T09:17:21.232198",
+  "data": [
+    {
+      "artist": "Rival Consoles",
+      "artist_name": "Rival Consoles",
+      "name": "Rival Consoles at Forte Antenne",
+      "venue": "Forte Antenne",
+      "city": "Roma",
+      "country": "IT",
+      "date": "2025-09-07",
+      "time": "9:30 PM",
+      "url": "https://open.spotify.com/concert/7KqFCFaqqUrmh4y4V2EHDp",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Rival Consoles",
+      "artist_name": "Rival Consoles",
+      "name": "Rival Consoles at Bozar",
+      "venue": "Bozar",
+      "city": "Brussels",
+      "country": "BE",
+      "date": "2025-10-08",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/1AQma7QZlivrV8I5LLmm7G",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Rival Consoles",
+      "artist_name": "Rival Consoles",
+      "name": "Rival Consoles Concert (3gRB6lpl)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/3gRB6lplGMOG02FkJ2xrEZ",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Rival Consoles",
+      "artist_name": "Rival Consoles",
+      "name": "Rival Consoles Concert (2HLNef7G)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/2HLNef7GTIVfQmv48F4mLx",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Rival Consoles",
+      "artist_name": "Rival Consoles",
+      "name": "Rival Consoles Concert (1jV90MNz)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/1jV90MNzooTtZoITAbztht",
+      "source": "Spotify"
+    }
+  ]
+}

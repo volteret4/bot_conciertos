@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:55:34.983679",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3RNrq3jvMZxD9ZyoOZbQOD"
+    },
+    "followers": {
+      "href": null,
+      "total": 9710657
+    },
+    "genres": [
+      "nu metal",
+      "metal",
+      "rap metal",
+      "alternative metal"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3RNrq3jvMZxD9ZyoOZbQOD",
+    "id": "3RNrq3jvMZxD9ZyoOZbQOD",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb29af2ffb6f4ddd6324f878bc",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517429af2ffb6f4ddd6324f878bc",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17829af2ffb6f4ddd6324f878bc",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Korn",
+    "popularity": 76,
+    "type": "artist",
+    "uri": "spotify:artist:3RNrq3jvMZxD9ZyoOZbQOD"
+  }
+}

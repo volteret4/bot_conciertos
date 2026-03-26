@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-10-23T17:05:02.430726",
+  "concerts": [
+    {
+      "artist": "ZHU",
+      "name": "Zhu",
+      "venue": "The Ruins in American Canyon",
+      "city": "American Canyon",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-10-31",
+      "time": "15:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7jkqa",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7jkqa"
+    },
+    {
+      "artist": "ZHU",
+      "name": "+1 Sunar: Pozitif Vibrations: ZHU presents Blacklizt",
+      "venue": "Volkswagen Arena",
+      "city": "İstanbul",
+      "country": "Turkey",
+      "country_code": "TR",
+      "date": "2025-12-19",
+      "time": "22:00:00",
+      "url": "https://www.biletix.com/performance/4PODW/001/TURKIYE/tr",
+      "source": "Ticketmaster",
+      "id": "Z2HyzZyMZAQ_C-vve"
+    },
+    {
+      "artist": "ZHU",
+      "name": "Leia Zhu | Camerata Schweiz | Howard Griffiths",
+      "venue": "Unknown venue",
+      "city": "Bern",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "date": "2026-03-19",
+      "time": "19:30:00",
+      "url": "https://www.ticketmaster.ch/event/leia-zhu-%7C-camerata-schweiz-%7C-howard-griffiths-tickets/588483476?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZu3Z1kpF3doU"
+    }
+  ]
+}

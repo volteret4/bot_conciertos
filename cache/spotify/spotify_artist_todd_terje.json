@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-11-03T19:47:46.420750",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/49gaZqfow2v8EEQmjGyEIw"
+    },
+    "followers": {
+      "href": null,
+      "total": 263723
+    },
+    "genres": [
+      "nu disco"
+    ],
+    "href": "https://api.spotify.com/v1/artists/49gaZqfow2v8EEQmjGyEIw",
+    "id": "49gaZqfow2v8EEQmjGyEIw",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6772690000c46cee826f3090c979fb0772e925",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000dd22ee826f3090c979fb0772e925",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000bac3ee826f3090c979fb0772e925",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67726900008f74ee826f3090c979fb0772e925",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Todd Terje",
+    "popularity": 43,
+    "type": "artist",
+    "uri": "spotify:artist:49gaZqfow2v8EEQmjGyEIw"
+  }
+}

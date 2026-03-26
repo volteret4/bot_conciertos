@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:59:07.418806",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5BRAUN0yN8557PLRZIr02W"
+    },
+    "followers": {
+      "href": null,
+      "total": 379349
+    },
+    "genres": [
+      "jazz rap",
+      "nu jazz",
+      "indie soul"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5BRAUN0yN8557PLRZIr02W",
+    "id": "5BRAUN0yN8557PLRZIr02W",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eba38669cf5ce055735f7829e6",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174a38669cf5ce055735f7829e6",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178a38669cf5ce055735f7829e6",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Ezra Collective",
+    "popularity": 59,
+    "type": "artist",
+    "uri": "spotify:artist:5BRAUN0yN8557PLRZIr02W"
+  }
+}

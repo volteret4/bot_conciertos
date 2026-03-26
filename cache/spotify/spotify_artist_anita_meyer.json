@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:50:13.084647",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7xxVm0cM4x7TUBadZQuz3S"
+    },
+    "followers": {
+      "href": null,
+      "total": 23839
+    },
+    "genres": [
+      "nederpop",
+      "hollands"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7xxVm0cM4x7TUBadZQuz3S",
+    "id": "7xxVm0cM4x7TUBadZQuz3S",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2732dcf1745e7dffd6be2e95183",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e022dcf1745e7dffd6be2e95183",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048512dcf1745e7dffd6be2e95183",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Anita Meyer",
+    "popularity": 38,
+    "type": "artist",
+    "uri": "spotify:artist:7xxVm0cM4x7TUBadZQuz3S"
+  }
+}

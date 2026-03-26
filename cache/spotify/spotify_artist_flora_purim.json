@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T19:49:45.213747",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6GaQjt3WJqroNLGfUsuMpk"
+    },
+    "followers": {
+      "href": null,
+      "total": 25696
+    },
+    "genres": [
+      "brazilian jazz",
+      "jazz fusion",
+      "latin jazz",
+      "bossa nova",
+      "vocal jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6GaQjt3WJqroNLGfUsuMpk",
+    "id": "6GaQjt3WJqroNLGfUsuMpk",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eba77a8e35e55e8556f7a91af5",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174a77a8e35e55e8556f7a91af5",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178a77a8e35e55e8556f7a91af5",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Flora Purim",
+    "popularity": 28,
+    "type": "artist",
+    "uri": "spotify:artist:6GaQjt3WJqroNLGfUsuMpk"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:56:49.365207",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6KOqPxwfNAmZPkiCnDE9yT"
+    },
+    "followers": {
+      "href": null,
+      "total": 430674
+    },
+    "genres": [
+      "new wave",
+      "power pop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6KOqPxwfNAmZPkiCnDE9yT",
+    "id": "6KOqPxwfNAmZPkiCnDE9yT",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eba4e4ffea944ea037683faf51",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174a4e4ffea944ea037683faf51",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178a4e4ffea944ea037683faf51",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Joe Jackson",
+    "popularity": 50,
+    "type": "artist",
+    "uri": "spotify:artist:6KOqPxwfNAmZPkiCnDE9yT"
+  }
+}

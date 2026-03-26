@@ -1,0 +1,48 @@
+{
+  "timestamp": "2025-11-03T20:03:13.028321",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/79S80ZWgVhIPMCHuvl6SkA"
+    },
+    "followers": {
+      "href": null,
+      "total": 346284
+    },
+    "genres": [
+      "noise rock",
+      "post-rock",
+      "industrial rock",
+      "experimental",
+      "industrial",
+      "post-punk",
+      "avant-garde",
+      "gothic rock",
+      "art rock",
+      "drone",
+      "drone metal"
+    ],
+    "href": "https://api.spotify.com/v1/artists/79S80ZWgVhIPMCHuvl6SkA",
+    "id": "79S80ZWgVhIPMCHuvl6SkA",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebe25ae69c1d10de369149a7f2",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174e25ae69c1d10de369149a7f2",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178e25ae69c1d10de369149a7f2",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Swans",
+    "popularity": 46,
+    "type": "artist",
+    "uri": "spotify:artist:79S80ZWgVhIPMCHuvl6SkA"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:57:26.056415",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2W4RGn8br96aceIfOzi8fI"
+    },
+    "followers": {
+      "href": null,
+      "total": 7051
+    },
+    "genres": [
+      "jazz house",
+      "lo-fi house",
+      "chicago house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2W4RGn8br96aceIfOzi8fI",
+    "id": "2W4RGn8br96aceIfOzi8fI",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273c0def0ec1c5ae1c74d865806",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02c0def0ec1c5ae1c74d865806",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851c0def0ec1c5ae1c74d865806",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Fresh & Low",
+    "popularity": 24,
+    "type": "artist",
+    "uri": "spotify:artist:2W4RGn8br96aceIfOzi8fI"
+  }
+}

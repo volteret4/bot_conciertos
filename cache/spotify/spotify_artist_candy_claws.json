@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:59:31.467409",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/34Xay0uKsALHCrn5LkrYeh"
+    },
+    "followers": {
+      "href": null,
+      "total": 88524
+    },
+    "genres": [
+      "shoegaze",
+      "dream pop",
+      "neo-psychedelic",
+      "slowcore"
+    ],
+    "href": "https://api.spotify.com/v1/artists/34Xay0uKsALHCrn5LkrYeh",
+    "id": "34Xay0uKsALHCrn5LkrYeh",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb37105e564207714467a51d62",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517437105e564207714467a51d62",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17837105e564207714467a51d62",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Candy Claws",
+    "popularity": 37,
+    "type": "artist",
+    "uri": "spotify:artist:34Xay0uKsALHCrn5LkrYeh"
+  }
+}

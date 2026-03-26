@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:03:54.482632",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/34PYzJSu4DHKEyhdBfsn0E"
+    },
+    "followers": {
+      "href": null,
+      "total": 93828
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/34PYzJSu4DHKEyhdBfsn0E",
+    "id": "34PYzJSu4DHKEyhdBfsn0E",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb11997963947e8ca8ba853564",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517411997963947e8ca8ba853564",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17811997963947e8ca8ba853564",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "TORRRES",
+    "popularity": 65,
+    "type": "artist",
+    "uri": "spotify:artist:34PYzJSu4DHKEyhdBfsn0E"
+  }
+}

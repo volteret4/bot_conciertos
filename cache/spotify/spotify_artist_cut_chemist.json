@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:00:03.512034",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4743DlrFCsAlAV4N26Kdgh"
+    },
+    "followers": {
+      "href": null,
+      "total": 95397
+    },
+    "genres": [
+      "trip hop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4743DlrFCsAlAV4N26Kdgh",
+    "id": "4743DlrFCsAlAV4N26Kdgh",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebbe3a1edabb53853b1239178b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174be3a1edabb53853b1239178b",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178be3a1edabb53853b1239178b",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Cut Chemist",
+    "popularity": 38,
+    "type": "artist",
+    "uri": "spotify:artist:4743DlrFCsAlAV4N26Kdgh"
+  }
+}

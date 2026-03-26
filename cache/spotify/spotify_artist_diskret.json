@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:58:31.270088",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7JxiGkTUF8p8R1Ki5CNJNH"
+    },
+    "followers": {
+      "href": null,
+      "total": 1757
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/7JxiGkTUF8p8R1Ki5CNJNH",
+    "id": "7JxiGkTUF8p8R1Ki5CNJNH",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebacd674b33af9ba731cc6c014",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174acd674b33af9ba731cc6c014",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178acd674b33af9ba731cc6c014",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Diskret",
+    "popularity": 10,
+    "type": "artist",
+    "uri": "spotify:artist:7JxiGkTUF8p8R1Ki5CNJNH"
+  }
+}

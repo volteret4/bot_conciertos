@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-10-23T20:55:30.176272",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2nSY0EIzz3eM6Y6Pc7VXkO"
+    },
+    "followers": {
+      "href": null,
+      "total": 28866
+    },
+    "genres": [
+      "nu jazz",
+      "free jazz",
+      "indie jazz",
+      "jazz",
+      "jazz fusion"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2nSY0EIzz3eM6Y6Pc7VXkO",
+    "id": "2nSY0EIzz3eM6Y6Pc7VXkO",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebd4dee36a8ee3e96ab784b394",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174d4dee36a8ee3e96ab784b394",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178d4dee36a8ee3e96ab784b394",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Ill Considered",
+    "popularity": 26,
+    "type": "artist",
+    "uri": "spotify:artist:2nSY0EIzz3eM6Y6Pc7VXkO"
+  }
+}

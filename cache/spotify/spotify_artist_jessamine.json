@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T19:56:55.986063",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/25X66pFr8eorCjpasQ2biG"
+    },
+    "followers": {
+      "href": null,
+      "total": 6796
+    },
+    "genres": [
+      "post-rock",
+      "space rock",
+      "shoegaze",
+      "slowcore",
+      "drone",
+      "jangle pop",
+      "noise rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/25X66pFr8eorCjpasQ2biG",
+    "id": "25X66pFr8eorCjpasQ2biG",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2733cd1e752a6b9a5471964ede6",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e023cd1e752a6b9a5471964ede6",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048513cd1e752a6b9a5471964ede6",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Jessamine",
+    "popularity": 10,
+    "type": "artist",
+    "uri": "spotify:artist:25X66pFr8eorCjpasQ2biG"
+  }
+}

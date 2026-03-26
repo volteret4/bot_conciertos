@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:48:33.120863",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4W3fa7tiXGVXl3KilbACqt"
+    },
+    "followers": {
+      "href": null,
+      "total": 395150
+    },
+    "genres": [
+      "soundtrack"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4W3fa7tiXGVXl3KilbACqt",
+    "id": "4W3fa7tiXGVXl3KilbACqt",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb074781eba0a9c008945cde18",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174074781eba0a9c008945cde18",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178074781eba0a9c008945cde18",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Gustavo Santaolalla",
+    "popularity": 63,
+    "type": "artist",
+    "uri": "spotify:artist:4W3fa7tiXGVXl3KilbACqt"
+  }
+}

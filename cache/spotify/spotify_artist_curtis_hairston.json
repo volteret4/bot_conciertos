@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:58:05.055831",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2lnlPzK1BZuPnaBXxMwGuS"
+    },
+    "followers": {
+      "href": null,
+      "total": 9129
+    },
+    "genres": [
+      "post-disco"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2lnlPzK1BZuPnaBXxMwGuS",
+    "id": "2lnlPzK1BZuPnaBXxMwGuS",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27331fb5487fa9043615bf42b0d",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0231fb5487fa9043615bf42b0d",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485131fb5487fa9043615bf42b0d",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Curtis Hairston",
+    "popularity": 16,
+    "type": "artist",
+    "uri": "spotify:artist:2lnlPzK1BZuPnaBXxMwGuS"
+  }
+}

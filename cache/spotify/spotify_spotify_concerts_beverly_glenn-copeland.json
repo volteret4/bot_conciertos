@@ -1,0 +1,53 @@
+{
+  "timestamp": "2025-08-24T08:12:08.421888",
+  "data": [
+    {
+      "artist": "Beverly Glenn-Copeland",
+      "artist_name": "Beverly Glenn-Copeland",
+      "name": "Beverly Glenn-Copeland at Queens Hall Edinburgh",
+      "venue": "Queens Hall Edinburgh",
+      "city": "Edinburgh",
+      "country": "GB",
+      "date": "2025-10-02",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/7zHS6AD5adMhcYYBZf7wBi",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Beverly Glenn-Copeland",
+      "artist_name": "Beverly Glenn-Copeland",
+      "name": "Beverly Glenn-Copeland at Vicar Street",
+      "venue": "Vicar Street",
+      "city": "Dublin",
+      "country": "IE",
+      "date": "2025-10-07",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/7GiN2gvycLTKsqGkI8NsfZ",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Beverly Glenn-Copeland",
+      "artist_name": "Beverly Glenn-Copeland",
+      "name": "Beverly Glenn-Copeland Concert (6xWnE3Mh)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/6xWnE3Mh55buVU3CW4xmJo",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Beverly Glenn-Copeland",
+      "artist_name": "Beverly Glenn-Copeland",
+      "name": "Beverly Glenn-Copeland Concert (7HvVY8nY)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/7HvVY8nY85g3QSFU3ZoB2c",
+      "source": "Spotify"
+    }
+  ]
+}

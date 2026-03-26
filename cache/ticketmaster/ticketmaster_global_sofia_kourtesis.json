@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-10-23T17:13:42.509129",
+  "concerts": [
+    {
+      "artist": "Sofia Kourtesis",
+      "name": "Confidence Man",
+      "venue": "Depot Mayfield",
+      "city": "Manchester",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2025-10-24",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.co.uk/confidence-man-manchester-24-10-2025/event/350062D3D55A8D54",
+      "source": "Ticketmaster",
+      "id": "17u8vxG6u24pIgf"
+    },
+    {
+      "artist": "Sofia Kourtesis",
+      "name": "One Love Wrocław Music Festival",
+      "venue": "Hala Stulecia",
+      "city": "Wroclaw",
+      "country": "Poland",
+      "country_code": "PL",
+      "date": "2025-11-22",
+      "time": "16:00:00",
+      "url": "https://www.ticketmaster.pl/event/one-love-wrocaw-music-festival-tickets/172366152?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZQpZ1kAwuJA3"
+    }
+  ]
+}

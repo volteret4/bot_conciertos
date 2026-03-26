@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:46:53.299817",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4Qh5umPyIqhfrtXDbRFA1b"
+    },
+    "followers": {
+      "href": null,
+      "total": 471
+    },
+    "genres": [
+      "drone",
+      "ambient",
+      "space music"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4Qh5umPyIqhfrtXDbRFA1b",
+    "id": "4Qh5umPyIqhfrtXDbRFA1b",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb70fbaa9bc82c5ad57b3c864a",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517470fbaa9bc82c5ad57b3c864a",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17870fbaa9bc82c5ad57b3c864a",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Wings of an Angel",
+    "popularity": 4,
+    "type": "artist",
+    "uri": "spotify:artist:4Qh5umPyIqhfrtXDbRFA1b"
+  }
+}

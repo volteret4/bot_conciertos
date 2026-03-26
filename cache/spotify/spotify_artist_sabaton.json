@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T19:48:28.693179",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3o2dn2O0FCVsWDFSh8qxgG"
+    },
+    "followers": {
+      "href": null,
+      "total": 2439092
+    },
+    "genres": [
+      "power metal",
+      "metal",
+      "heavy metal",
+      "symphonic metal",
+      "folk metal"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3o2dn2O0FCVsWDFSh8qxgG",
+    "id": "3o2dn2O0FCVsWDFSh8qxgG",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebfc0524cca1171fac8678f4bf",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174fc0524cca1171fac8678f4bf",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178fc0524cca1171fac8678f4bf",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Sabaton",
+    "popularity": 71,
+    "type": "artist",
+    "uri": "spotify:artist:3o2dn2O0FCVsWDFSh8qxgG"
+  }
+}

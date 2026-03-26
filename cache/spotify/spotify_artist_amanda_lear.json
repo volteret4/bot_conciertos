@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:55:50.478892",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0Xkd9GsWwOYETVF0kPXZIG"
+    },
+    "followers": {
+      "href": null,
+      "total": 66474
+    },
+    "genres": [
+      "hi-nrg",
+      "disco",
+      "italo disco"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0Xkd9GsWwOYETVF0kPXZIG",
+    "id": "0Xkd9GsWwOYETVF0kPXZIG",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebd3e8e3e4f55f8851e0e1c52b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174d3e8e3e4f55f8851e0e1c52b",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178d3e8e3e4f55f8851e0e1c52b",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Amanda Lear",
+    "popularity": 36,
+    "type": "artist",
+    "uri": "spotify:artist:0Xkd9GsWwOYETVF0kPXZIG"
+  }
+}

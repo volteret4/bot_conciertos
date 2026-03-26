@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:02:57.024531",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6F6So5FxbaQCaVkNSH4XdP"
+    },
+    "followers": {
+      "href": null,
+      "total": 7624
+    },
+    "genres": [
+      "shoegaze",
+      "dream pop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6F6So5FxbaQCaVkNSH4XdP",
+    "id": "6F6So5FxbaQCaVkNSH4XdP",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb448a6e6ebe1bec3c187cf3fb",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174448a6e6ebe1bec3c187cf3fb",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178448a6e6ebe1bec3c187cf3fb",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "The Fauns",
+    "popularity": 16,
+    "type": "artist",
+    "uri": "spotify:artist:6F6So5FxbaQCaVkNSH4XdP"
+  }
+}

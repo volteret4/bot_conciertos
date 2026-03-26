@@ -1,0 +1,109 @@
+{
+  "timestamp": "2025-10-23T17:11:11.621142",
+  "concerts": [
+    {
+      "artist": "Nick Cave & the Bad Seeds",
+      "name": "Nick Cave and the Bad Seeds 'Wild God' Tour",
+      "venue": "TSB Arena",
+      "city": "Wellington",
+      "country": "New Zealand",
+      "country_code": "NZ",
+      "date": "2026-02-05",
+      "time": "19:45:00",
+      "url": "https://www.ticketmaster.co.nz/nick-cave-and-the-bad-seeds-wellington-05-02-2026/event/24006312943C10D7",
+      "source": "Ticketmaster",
+      "id": "160ZkG3PdZAuevCF"
+    },
+    {
+      "artist": "Nick Cave & the Bad Seeds",
+      "name": "Nick Cave and the Bad Seeds 'Wild God' Tour",
+      "venue": "TSB Arena",
+      "city": "Wellington",
+      "country": "New Zealand",
+      "country_code": "NZ",
+      "date": "2026-02-06",
+      "time": "19:45:00",
+      "url": "https://www.ticketmaster.co.nz/nick-cave-and-the-bad-seeds-wellington-06-02-2026/event/24006312C9C319E0",
+      "source": "Ticketmaster",
+      "id": "1A0ZkG3GkdaYsEO"
+    },
+    {
+      "artist": "Nick Cave & the Bad Seeds",
+      "name": "Nick Cave & the Bad Seeds",
+      "venue": "Malahide Castle",
+      "city": "Co. Dublin",
+      "country": "Ireland",
+      "country_code": "IE",
+      "date": "2026-06-10",
+      "time": "17:00:00",
+      "url": "https://www.ticketmaster.ie/nick-cave-the-bad-seeds-co-dublin-10-06-2026/event/1800632C80DC0B95",
+      "source": "Ticketmaster",
+      "id": "1AvOZbwGkwZMZm4"
+    },
+    {
+      "artist": "Nick Cave & the Bad Seeds",
+      "name": "METRONOME PRAGUE 2026 | 3-DAY PASS - VIP",
+      "venue": "Letiště Praha Letňany",
+      "city": "Praha 9",
+      "country": "Czech Republic",
+      "country_code": "CZ",
+      "date": "2026-06-19",
+      "time": "",
+      "url": "https://www.ticketmaster.cz/event/metronome-prague-2026-%7C-3-day-pass-vip-tickets/1007073840?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZu0Z16vZ6vS-Z"
+    },
+    {
+      "artist": "Nick Cave & the Bad Seeds",
+      "name": "METRONOME PRAGUE 2026 | 3-DAY PASS",
+      "venue": "Letiště Praha Letňany",
+      "city": "Praha 9",
+      "country": "Czech Republic",
+      "country_code": "CZ",
+      "date": "2026-06-19",
+      "time": "",
+      "url": "https://www.ticketmaster.cz/event/metronome-prague-2026-%7C-3-day-pass-tickets/820368929?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZu0Z1kOOuI0t"
+    },
+    {
+      "artist": "Nick Cave & the Bad Seeds",
+      "name": "METRONOME PRAGUE 2026 | SATURDAY - VIP TICKETS",
+      "venue": "Letiště Praha Letňany",
+      "city": "Praha 9",
+      "country": "Czech Republic",
+      "country_code": "CZ",
+      "date": "2026-06-20",
+      "time": "",
+      "url": "https://www.ticketmaster.cz/event/metronome-prague-2026-%7C-saturday-vip-tickets-tickets/1664194912?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZu0Z16v_0kf03"
+    },
+    {
+      "artist": "Nick Cave & the Bad Seeds",
+      "name": "METRONOME PRAGUE 2026 | SATURDAY",
+      "venue": "Letiště Praha Letňany",
+      "city": "Praha 9",
+      "country": "Czech Republic",
+      "country_code": "CZ",
+      "date": "2026-06-20",
+      "time": "",
+      "url": "https://www.ticketmaster.cz/event/metronome-prague-2026-%7C-saturday-tickets/408634727?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZu0Z1k8FbVjE"
+    },
+    {
+      "artist": "Nick Cave & the Bad Seeds",
+      "name": "Nick Cave & The Bad Seeds",
+      "venue": "Preston Park",
+      "city": "Brighton",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-07-31",
+      "time": "13:00:00",
+      "url": "https://www.universe.com/events/nick-cave-the-bad-seeds-tickets-5HLBZX?ref=ticketmaster",
+      "source": "Ticketmaster",
+      "id": "LvZ18QGOnjValzZZNVtnN"
+    }
+  ]
+}

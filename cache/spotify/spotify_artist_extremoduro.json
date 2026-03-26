@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:03:23.459066",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3bgsNtcf5d5h9jbQbohfBK"
+    },
+    "followers": {
+      "href": null,
+      "total": 1594913
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/3bgsNtcf5d5h9jbQbohfBK",
+    "id": "3bgsNtcf5d5h9jbQbohfBK",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb12434039f9760438626cf90b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517412434039f9760438626cf90b",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17812434039f9760438626cf90b",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Extremoduro",
+    "popularity": 64,
+    "type": "artist",
+    "uri": "spotify:artist:3bgsNtcf5d5h9jbQbohfBK"
+  }
+}

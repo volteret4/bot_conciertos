@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-25T09:06:06.076176",
+  "data": [
+    {
+      "artist": "Nate Smith",
+      "artist_name": "Nate Smith",
+      "name": "Nate Smith Concert (6YUufm5X)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/6YUufm5XEfsLmHRUWjZVjd",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Nate Smith",
+      "artist_name": "Nate Smith",
+      "name": "Nate Smith at Van Andel Arena",
+      "venue": "Van Andel Arena",
+      "city": "Grand Rapids",
+      "country": "US",
+      "date": "2025-09-04",
+      "time": "7:30 PM",
+      "url": "https://open.spotify.com/concert/2tjOUEVamAUKlJfTpXfAmT",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Nate Smith",
+      "artist_name": "Nate Smith",
+      "name": "Nate Smith at Resch Center",
+      "venue": "Resch Center",
+      "city": "Green Bay",
+      "country": "US",
+      "date": "2025-09-05",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/5uxQQYkALKKbhd7ScIhJBd",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Nate Smith",
+      "artist_name": "Nate Smith",
+      "name": "Nate Smith at Xcel Energy Center",
+      "venue": "Xcel Energy Center",
+      "city": "Saint Paul",
+      "country": "US",
+      "date": "2025-09-06",
+      "time": "7:30 PM",
+      "url": "https://open.spotify.com/concert/3qUs7trF3ZKYGBMTH9F2aZ",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Nate Smith",
+      "artist_name": "Nate Smith",
+      "name": "Nate Smith Concert (7ytlOuEQ)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/7ytlOuEQofII8ZgoQnLQKd",
+      "source": "Spotify"
+    }
+  ]
+}

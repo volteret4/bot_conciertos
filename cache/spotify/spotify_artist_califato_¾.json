@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:02:50.709298",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6APnwoSgygJU8HR7EHVSyK"
+    },
+    "followers": {
+      "href": null,
+      "total": 75855
+    },
+    "genres": [
+      "flamenco"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6APnwoSgygJU8HR7EHVSyK",
+    "id": "6APnwoSgygJU8HR7EHVSyK",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb07dd46e1c7b8dc416159c05f",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517407dd46e1c7b8dc416159c05f",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17807dd46e1c7b8dc416159c05f",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Califato ¾",
+    "popularity": 39,
+    "type": "artist",
+    "uri": "spotify:artist:6APnwoSgygJU8HR7EHVSyK"
+  }
+}

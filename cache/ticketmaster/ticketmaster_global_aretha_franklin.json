@@ -1,0 +1,57 @@
+{
+  "timestamp": "2025-10-23T17:09:39.865881",
+  "concerts": [
+    {
+      "artist": "Aretha Franklin",
+      "name": "The Ultimate Chaka Khan Aretha Franklin Diana Ross Tribute Concert",
+      "venue": "Historic BAL Theatre",
+      "city": "San Leandro",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-15",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/the-ultimate-chaka-khan-aretha-franklin-san-leandro-california-11-15-2025/event/1C00631AC9FF3D84",
+      "source": "Ticketmaster",
+      "id": "G5vYZbslaTSU7"
+    },
+    {
+      "artist": "Aretha Franklin",
+      "name": "Songs of Aretha Franklin feat. Jaelee Small",
+      "venue": "Soul Mama",
+      "city": "London",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2025-12-11",
+      "time": "18:30:00",
+      "url": "https://www.universe.com/events/songs-of-aretha-franklin-feat-jaelee-small-tickets-YMX61C?ref=ticketmaster",
+      "source": "Ticketmaster",
+      "id": "LvZ18QGPy7CfL-ZZnnlGD"
+    },
+    {
+      "artist": "Aretha Franklin",
+      "name": "Aretha Franklin & the Soul Sisters - Restaurant Tables",
+      "venue": "Jazz Cafe",
+      "city": "London",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2025-12-13",
+      "time": "19:00:00",
+      "url": "https://www.ticketweb.uk/event/aretha-franklin-the-soul-jazz-cafe-tickets/14238843?REFERRAL_ID=tmfeed",
+      "source": "Ticketmaster",
+      "id": "1AdFZbNGkMVTvU5"
+    },
+    {
+      "artist": "Aretha Franklin",
+      "name": "Aretha Franklin & the Soul Sisters",
+      "venue": "Jazz Cafe",
+      "city": "London",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2025-12-13",
+      "time": "19:00:00",
+      "url": "https://www.ticketweb.uk/event/aretha-franklin-the-soul-jazz-cafe-tickets/14238803?REFERRAL_ID=tmfeed",
+      "source": "Ticketmaster",
+      "id": "1AdFZbNGkMfG-n5"
+    }
+  ]
+}

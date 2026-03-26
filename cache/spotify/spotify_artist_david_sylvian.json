@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:47:32.528605",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2oyWkw7sq99yqj12hVUHtw"
+    },
+    "followers": {
+      "href": null,
+      "total": 146933
+    },
+    "genres": [
+      "art pop",
+      "art rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2oyWkw7sq99yqj12hVUHtw",
+    "id": "2oyWkw7sq99yqj12hVUHtw",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb153fe00cabe3f49941f2edf7",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174153fe00cabe3f49941f2edf7",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178153fe00cabe3f49941f2edf7",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "David Sylvian",
+    "popularity": 40,
+    "type": "artist",
+    "uri": "spotify:artist:2oyWkw7sq99yqj12hVUHtw"
+  }
+}

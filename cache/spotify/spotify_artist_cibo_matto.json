@@ -1,0 +1,46 @@
+{
+  "timestamp": "2025-10-23T17:54:17.064888",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2te8VJxgUxcElC8Uq6eJs6"
+    },
+    "followers": {
+      "href": null,
+      "total": 148444
+    },
+    "genres": [
+      "shibuya-kei",
+      "trip hop",
+      "art pop",
+      "alternative dance"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2te8VJxgUxcElC8Uq6eJs6",
+    "id": "2te8VJxgUxcElC8Uq6eJs6",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/090fccfd5e0b661557603c6f6c6508775ee3d5b5",
+        "height": 667,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/43c2b330f4edefd91b925ef9fb3c69bf5e889787",
+        "height": 427,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/eeaee12d8e9e9897e2e917c18558367ab9bed26e",
+        "height": 133,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/999f67983e1a7a68833cf95a52946c8bbc52ec87",
+        "height": 43,
+        "width": 64
+      }
+    ],
+    "name": "Cibo Matto",
+    "popularity": 43,
+    "type": "artist",
+    "uri": "spotify:artist:2te8VJxgUxcElC8Uq6eJs6"
+  }
+}

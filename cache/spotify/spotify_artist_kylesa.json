@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-11-03T19:55:38.342828",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7mO0JGOATH8fVHvgCdZsXh"
+    },
+    "followers": {
+      "href": null,
+      "total": 100540
+    },
+    "genres": [
+      "sludge metal",
+      "stoner metal",
+      "stoner rock",
+      "doom metal",
+      "drone metal"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7mO0JGOATH8fVHvgCdZsXh",
+    "id": "7mO0JGOATH8fVHvgCdZsXh",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/c2cb3235131de64b93f140d2112a657c9c49bb2c",
+        "height": 667,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/6b74855ffb2b466578cd98c8d33a628be624d6eb",
+        "height": 427,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/87a602072b90a26a3abb3a7a5c63aa6081cf90ca",
+        "height": 133,
+        "width": 199
+      },
+      {
+        "url": "https://i.scdn.co/image/5929d897ca668da67ebedc877dd68f8780050b03",
+        "height": 43,
+        "width": 64
+      }
+    ],
+    "name": "Kylesa",
+    "popularity": 30,
+    "type": "artist",
+    "uri": "spotify:artist:7mO0JGOATH8fVHvgCdZsXh"
+  }
+}

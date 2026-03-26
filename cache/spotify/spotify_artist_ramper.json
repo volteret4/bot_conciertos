@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:49:54.218975",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/11YtbzYuNDQ4pvzfZpOmuO"
+    },
+    "followers": {
+      "href": null,
+      "total": 2236
+    },
+    "genres": [
+      "slowcore",
+      "post-rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/11YtbzYuNDQ4pvzfZpOmuO",
+    "id": "11YtbzYuNDQ4pvzfZpOmuO",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb38dd8c27126762fda6c8587d",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517438dd8c27126762fda6c8587d",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17838dd8c27126762fda6c8587d",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Ramper",
+    "popularity": 6,
+    "type": "artist",
+    "uri": "spotify:artist:11YtbzYuNDQ4pvzfZpOmuO"
+  }
+}

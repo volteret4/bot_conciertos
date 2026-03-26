@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:58:07.277826",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/45lorWzrKLxfKlWpV7r9CN"
+    },
+    "followers": {
+      "href": null,
+      "total": 1054061
+    },
+    "genres": [
+      "surf rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/45lorWzrKLxfKlWpV7r9CN",
+    "id": "45lorWzrKLxfKlWpV7r9CN",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebe52eb587043e72596e870f64",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174e52eb587043e72596e870f64",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178e52eb587043e72596e870f64",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Ben Harper",
+    "popularity": 58,
+    "type": "artist",
+    "uri": "spotify:artist:45lorWzrKLxfKlWpV7r9CN"
+  }
+}

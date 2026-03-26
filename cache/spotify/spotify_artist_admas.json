@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:01:28.634811",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6nX6QalHWzPMf7sBnaWNNU"
+    },
+    "followers": {
+      "href": null,
+      "total": 8854
+    },
+    "genres": [
+      "ethiopian jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6nX6QalHWzPMf7sBnaWNNU",
+    "id": "6nX6QalHWzPMf7sBnaWNNU",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27371d798fc7d18ec1de79f70f5",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0271d798fc7d18ec1de79f70f5",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485171d798fc7d18ec1de79f70f5",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Admas",
+    "popularity": 27,
+    "type": "artist",
+    "uri": "spotify:artist:6nX6QalHWzPMf7sBnaWNNU"
+  }
+}

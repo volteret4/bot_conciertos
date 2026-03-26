@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:05:06.230194",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/63MQldklfxkjYDoUE4Tppz"
+    },
+    "followers": {
+      "href": null,
+      "total": 2612291
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/63MQldklfxkjYDoUE4Tppz",
+    "id": "63MQldklfxkjYDoUE4Tppz",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb961ef259d6d8101edd2f80c0",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174961ef259d6d8101edd2f80c0",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178961ef259d6d8101edd2f80c0",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "M83",
+    "popularity": 70,
+    "type": "artist",
+    "uri": "spotify:artist:63MQldklfxkjYDoUE4Tppz"
+  }
+}

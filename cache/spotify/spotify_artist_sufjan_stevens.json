@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:47:24.770590",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4MXUO7sVCaFgFjoTI5ox5c"
+    },
+    "followers": {
+      "href": null,
+      "total": 2361841
+    },
+    "genres": [
+      "baroque pop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4MXUO7sVCaFgFjoTI5ox5c",
+    "id": "4MXUO7sVCaFgFjoTI5ox5c",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb96e27b3bbe99d5a772c89a2a",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517496e27b3bbe99d5a772c89a2a",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17896e27b3bbe99d5a772c89a2a",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Sufjan Stevens",
+    "popularity": 70,
+    "type": "artist",
+    "uri": "spotify:artist:4MXUO7sVCaFgFjoTI5ox5c"
+  }
+}

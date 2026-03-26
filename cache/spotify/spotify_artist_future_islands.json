@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:57:36.272560",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1WvvwcQx0tj6NdDhZZ2zZz"
+    },
+    "followers": {
+      "href": null,
+      "total": 661035
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/1WvvwcQx0tj6NdDhZZ2zZz",
+    "id": "1WvvwcQx0tj6NdDhZZ2zZz",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebccc1db114a0e4d39231a6e84",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174ccc1db114a0e4d39231a6e84",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178ccc1db114a0e4d39231a6e84",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Future Islands",
+    "popularity": 58,
+    "type": "artist",
+    "uri": "spotify:artist:1WvvwcQx0tj6NdDhZZ2zZz"
+  }
+}

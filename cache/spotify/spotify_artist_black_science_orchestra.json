@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:00:39.394224",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1EawON8MpqfiWNTQFM02wi"
+    },
+    "followers": {
+      "href": null,
+      "total": 3649
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/1EawON8MpqfiWNTQFM02wi",
+    "id": "1EawON8MpqfiWNTQFM02wi",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273da0a9e43c62b3ad42c76b2c8",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02da0a9e43c62b3ad42c76b2c8",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048513891d9b0be917f3984c18649",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Black Science Orchestra",
+    "popularity": 16,
+    "type": "artist",
+    "uri": "spotify:artist:1EawON8MpqfiWNTQFM02wi"
+  }
+}

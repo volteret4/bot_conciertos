@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T20:01:27.039860",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4sv0Fz2g8xCoMW4GBArc1k"
+    },
+    "followers": {
+      "href": null,
+      "total": 12449
+    },
+    "genres": [
+      "dub techno",
+      "minimal techno",
+      "drone",
+      "ambient"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4sv0Fz2g8xCoMW4GBArc1k",
+    "id": "4sv0Fz2g8xCoMW4GBArc1k",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273a8589a25206ee805f5175195",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02a8589a25206ee805f5175195",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851a8589a25206ee805f5175195",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Acronym",
+    "popularity": 17,
+    "type": "artist",
+    "uri": "spotify:artist:4sv0Fz2g8xCoMW4GBArc1k"
+  }
+}

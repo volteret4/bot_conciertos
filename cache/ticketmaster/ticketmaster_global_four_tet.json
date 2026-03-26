@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-10-23T17:13:31.044606",
+  "concerts": [
+    {
+      "artist": "Four Tet",
+      "name": "Four Tet",
+      "venue": "Alexandra Palace",
+      "city": "London",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2025-11-21",
+      "time": "18:30:00",
+      "url": "https://www.universe.com/events/four-tet-tickets-F9748P?ref=ticketmaster",
+      "source": "Ticketmaster",
+      "id": "LvZ18QvenDqzCpYZ-AT_y"
+    },
+    {
+      "artist": "Four Tet",
+      "name": "Four Tet",
+      "venue": "Alexandra Palace",
+      "city": "London",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2025-11-22",
+      "time": "18:30:00",
+      "url": "https://www.universe.com/events/four-tet-tickets-S1TYHR?ref=ticketmaster",
+      "source": "Ticketmaster",
+      "id": "LvZ18Qvu-FSPALZKMpnEL"
+    },
+    {
+      "artist": "Four Tet",
+      "name": "Four Tet w/ Dylan Brady",
+      "venue": "Radius - Chicago",
+      "city": "Chicago",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-29",
+      "time": "22:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7qpus",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7qpus"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "timestamp": "2025-11-03T19:59:59.162199",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/08t8fsEfRI7HSt2MlW2OTX"
+    },
+    "followers": {
+      "href": null,
+      "total": 4831
+    },
+    "genres": [
+      "hard bop",
+      "free jazz",
+      "jazz",
+      "bebop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/08t8fsEfRI7HSt2MlW2OTX",
+    "id": "08t8fsEfRI7HSt2MlW2OTX",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/9b2fcd8a2e3a3668d3443be1379ea4449f8fc758",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/259f3e542859570265135c065f9a3e116d2576de",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/b4bb2f82b4bc03d801279342e1f41a66c30cfbc5",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/2a408d55df9724d84d31cb9e8df95195f919179c",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Stanley Cowell",
+    "popularity": 15,
+    "type": "artist",
+    "uri": "spotify:artist:08t8fsEfRI7HSt2MlW2OTX"
+  }
+}

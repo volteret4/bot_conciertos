@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-11-03T19:46:49.276771",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3rfgbfpPSfXY40lzRK7Syt"
+    },
+    "followers": {
+      "href": null,
+      "total": 2255400
+    },
+    "genres": [
+      "disco",
+      "soul",
+      "classic soul",
+      "quiet storm",
+      "philly soul"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3rfgbfpPSfXY40lzRK7Syt",
+    "id": "3rfgbfpPSfXY40lzRK7Syt",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/c00b771ca8b6241bcfe316f8e8a11072714e79ef",
+        "height": 675,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/d04ae222146d052fbbe9ed2598c1c3319d4e7ebc",
+        "height": 432,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/99f49b1947bb7e1156effba51ef87c784952d344",
+        "height": 135,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/b662d4c9cbcdf2622586cd8abb34e67bd89d4c65",
+        "height": 43,
+        "width": 64
+      }
+    ],
+    "name": "Barry White",
+    "popularity": 65,
+    "type": "artist",
+    "uri": "spotify:artist:3rfgbfpPSfXY40lzRK7Syt"
+  }
+}

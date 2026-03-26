@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T20:01:01.351193",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7MJ1pB5d6Vjmzep2zQlorn"
+    },
+    "followers": {
+      "href": null,
+      "total": 52957
+    },
+    "genres": [
+      "classical",
+      "requiem",
+      "neoclassical",
+      "opera",
+      "choral"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7MJ1pB5d6Vjmzep2zQlorn",
+    "id": "7MJ1pB5d6Vjmzep2zQlorn",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/40eb3ffb36cd0c98ca76630260d09b0025be373d",
+        "height": 536,
+        "width": 500
+      },
+      {
+        "url": "https://i.scdn.co/image/e6a91cabb14e438d32d233c48485097ba9ff30ac",
+        "height": 214,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/a5f0a21ec2f0a852fbe20d37b6a235953e4212df",
+        "height": 69,
+        "width": 64
+      }
+    ],
+    "name": "Benjamin Britten",
+    "popularity": 45,
+    "type": "artist",
+    "uri": "spotify:artist:7MJ1pB5d6Vjmzep2zQlorn"
+  }
+}

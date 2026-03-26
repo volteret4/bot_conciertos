@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-11-03T19:56:19.590906",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1OHNvr18TssBKYK0A75yvx"
+    },
+    "followers": {
+      "href": null,
+      "total": 120472
+    },
+    "genres": [
+      "power metal",
+      "progressive metal",
+      "speed metal",
+      "symphonic metal",
+      "heavy metal",
+      "metal"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1OHNvr18TssBKYK0A75yvx",
+    "id": "1OHNvr18TssBKYK0A75yvx",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb0253cbcebc97ff471e976c43",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051740253cbcebc97ff471e976c43",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1780253cbcebc97ff471e976c43",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Masterplan",
+    "popularity": 40,
+    "type": "artist",
+    "uri": "spotify:artist:1OHNvr18TssBKYK0A75yvx"
+  }
+}

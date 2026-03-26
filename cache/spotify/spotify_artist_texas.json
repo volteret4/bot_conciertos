@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:47:46.511389",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5JsdVATHNPE0XdMFMRoSuf"
+    },
+    "followers": {
+      "href": null,
+      "total": 551036
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/5JsdVATHNPE0XdMFMRoSuf",
+    "id": "5JsdVATHNPE0XdMFMRoSuf",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebb4e5a53f1cf89500bec43ced",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174b4e5a53f1cf89500bec43ced",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178b4e5a53f1cf89500bec43ced",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Texas",
+    "popularity": 56,
+    "type": "artist",
+    "uri": "spotify:artist:5JsdVATHNPE0XdMFMRoSuf"
+  }
+}

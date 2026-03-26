@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-25T08:51:30.161267",
+  "data": [
+    {
+      "artist": "Kendrick Lamar",
+      "artist_name": "Kendrick Lamar",
+      "name": "Kendrick Lamar Concert (2LP0vV72)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/2LP0vV72sSKs5kStRk2BHe",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Kendrick Lamar",
+      "artist_name": "Kendrick Lamar",
+      "name": "Kendrick Lamar at Vive Claro - Distrito Cultural",
+      "venue": "Vive Claro - Distrito Cultural",
+      "city": "Bogotá",
+      "country": "",
+      "date": "2025-09-27",
+      "time": "5:00 PM",
+      "url": "https://open.spotify.com/concert/1ZIUXnKsvTyu4cF0gV5TXZ",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Kendrick Lamar",
+      "artist_name": "Kendrick Lamar",
+      "name": "Kendrick Lamar at Allianz Parque",
+      "venue": "Allianz Parque",
+      "city": "São Paulo",
+      "country": "BR",
+      "date": "2025-09-30",
+      "time": "8:30 PM",
+      "url": "https://open.spotify.com/concert/4pohf7mBA3Kxcpc5VIcvQe",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Kendrick Lamar",
+      "artist_name": "Kendrick Lamar",
+      "name": "Kendrick Lamar Concert (51yFOcgw)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/51yFOcgw5u9FsyESjOrAFj",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Kendrick Lamar",
+      "artist_name": "Kendrick Lamar",
+      "name": "Kendrick Lamar at AAMI Park",
+      "venue": "AAMI Park",
+      "city": "Melbourne",
+      "country": "AU",
+      "date": "2025-12-03",
+      "time": "12:00 AM",
+      "url": "https://open.spotify.com/concert/5x25050ljZeNrPNY7ZyD12",
+      "source": "Spotify"
+    }
+  ]
+}

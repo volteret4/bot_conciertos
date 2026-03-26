@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:59:36.756849",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4UXJsSlnKd7ltsrHebV79Q"
+    },
+    "followers": {
+      "href": null,
+      "total": 1564265
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/4UXJsSlnKd7ltsrHebV79Q",
+    "id": "4UXJsSlnKd7ltsrHebV79Q",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb6bc10cacb013806f27aa7700",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051746bc10cacb013806f27aa7700",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1786bc10cacb013806f27aa7700",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Nick Cave & The Bad Seeds",
+    "popularity": 63,
+    "type": "artist",
+    "uri": "spotify:artist:4UXJsSlnKd7ltsrHebV79Q"
+  }
+}

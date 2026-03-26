@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T20:02:46.892873",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3rxeQlsv0Sc2nyYaZ5W71T"
+    },
+    "followers": {
+      "href": null,
+      "total": 1333732
+    },
+    "genres": [
+      "jazz",
+      "cool jazz",
+      "vocal jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3rxeQlsv0Sc2nyYaZ5W71T",
+    "id": "3rxeQlsv0Sc2nyYaZ5W71T",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebabde819fe640d69f899e7844",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174abde819fe640d69f899e7844",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178abde819fe640d69f899e7844",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Chet Baker",
+    "popularity": 65,
+    "type": "artist",
+    "uri": "spotify:artist:3rxeQlsv0Sc2nyYaZ5W71T"
+  }
+}

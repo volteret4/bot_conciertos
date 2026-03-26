@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:01:16.089935",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2tVApsyMhUNv0jc7r18YUd"
+    },
+    "followers": {
+      "href": null,
+      "total": 27543
+    },
+    "genres": [
+      "minimalism"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2tVApsyMhUNv0jc7r18YUd",
+    "id": "2tVApsyMhUNv0jc7r18YUd",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebe01ae8f523bee69360e92323",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174e01ae8f523bee69360e92323",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178e01ae8f523bee69360e92323",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Nik Bärtsch",
+    "popularity": 20,
+    "type": "artist",
+    "uri": "spotify:artist:2tVApsyMhUNv0jc7r18YUd"
+  }
+}

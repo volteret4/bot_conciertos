@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:04:42.132364",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6Y1nACvxtuuTjKx2b4Rwmb"
+    },
+    "followers": {
+      "href": null,
+      "total": 34707
+    },
+    "genres": [
+      "post-rock",
+      "math rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6Y1nACvxtuuTjKx2b4Rwmb",
+    "id": "6Y1nACvxtuuTjKx2b4Rwmb",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebcbab94b095d5dd750cac1ef5",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174cbab94b095d5dd750cac1ef5",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178cbab94b095d5dd750cac1ef5",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Vessels",
+    "popularity": 25,
+    "type": "artist",
+    "uri": "spotify:artist:6Y1nACvxtuuTjKx2b4Rwmb"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-11-03T20:02:33.762229",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6ULjGlnhcCwHIJigN47K5U"
+    },
+    "followers": {
+      "href": null,
+      "total": 101437
+    },
+    "genres": [
+      "idm"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6ULjGlnhcCwHIJigN47K5U",
+    "id": "6ULjGlnhcCwHIJigN47K5U",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/c82e5ab616103c3f58ad3b1b154753ace7137d6c",
+        "height": 650,
+        "width": 650
+      },
+      {
+        "url": "https://i.scdn.co/image/506825272c23118b0aa973307f09acbca5c8f54f",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/1ca4f35338f71304cd7ea9935083e75ef682d11b",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/e2c6debf8dba76f4257fa0ecfa719e64b5a7cdd2",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "AFX",
+    "popularity": 30,
+    "type": "artist",
+    "uri": "spotify:artist:6ULjGlnhcCwHIJigN47K5U"
+  }
+}

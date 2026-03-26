@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:02:03.267711",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1nlsVMOqYZq8bVNxgLbwbR"
+    },
+    "followers": {
+      "href": null,
+      "total": 793
+    },
+    "genres": [
+      "post-disco"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1nlsVMOqYZq8bVNxgLbwbR",
+    "id": "1nlsVMOqYZq8bVNxgLbwbR",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273e0035f569f778f6cbb7a517a",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02e0035f569f778f6cbb7a517a",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851e0035f569f778f6cbb7a517a",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Aural Exciters",
+    "popularity": 4,
+    "type": "artist",
+    "uri": "spotify:artist:1nlsVMOqYZq8bVNxgLbwbR"
+  }
+}

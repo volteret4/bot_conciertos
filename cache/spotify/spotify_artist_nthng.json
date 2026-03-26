@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:47:20.929566",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1V0EQCS8125xaDrR4ZURGO"
+    },
+    "followers": {
+      "href": null,
+      "total": 38890
+    },
+    "genres": [
+      "dub techno",
+      "lo-fi house",
+      "minimal techno",
+      "ambient"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1V0EQCS8125xaDrR4ZURGO",
+    "id": "1V0EQCS8125xaDrR4ZURGO",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb934459a305f0b377dee09a5b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174934459a305f0b377dee09a5b",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178934459a305f0b377dee09a5b",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "nthng",
+    "popularity": 30,
+    "type": "artist",
+    "uri": "spotify:artist:1V0EQCS8125xaDrR4ZURGO"
+  }
+}

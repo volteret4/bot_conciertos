@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-10-23T17:51:06.471825",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0TF6B1cp2QZXLE0NjhTMT9"
+    },
+    "followers": {
+      "href": null,
+      "total": 71153
+    },
+    "genres": [
+      "math rock",
+      "post-rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0TF6B1cp2QZXLE0NjhTMT9",
+    "id": "0TF6B1cp2QZXLE0NjhTMT9",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb6d4d449a87f4f5ea90f99390",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051746d4d449a87f4f5ea90f99390",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1786d4d449a87f4f5ea90f99390",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "LITE",
+    "popularity": 35,
+    "type": "artist",
+    "uri": "spotify:artist:0TF6B1cp2QZXLE0NjhTMT9"
+  }
+}

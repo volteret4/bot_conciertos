@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:55:31.191717",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1nj6LuWJalUuYfBs0QO1sr"
+    },
+    "followers": {
+      "href": null,
+      "total": 17756
+    },
+    "genres": [
+      "japanese classical",
+      "jazz fusion"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1nj6LuWJalUuYfBs0QO1sr",
+    "id": "1nj6LuWJalUuYfBs0QO1sr",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27319fc521063d50bb71d5e8afa",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0219fc521063d50bb71d5e8afa",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485119fc521063d50bb71d5e8afa",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Osamu Kitajima",
+    "popularity": 15,
+    "type": "artist",
+    "uri": "spotify:artist:1nj6LuWJalUuYfBs0QO1sr"
+  }
+}

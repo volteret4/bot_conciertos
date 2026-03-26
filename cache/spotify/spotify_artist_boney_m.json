@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:00:53.492580",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/54R6Y0I7jGUCveDTtI21nb"
+    },
+    "followers": {
+      "href": null,
+      "total": 2319797
+    },
+    "genres": [
+      "disco"
+    ],
+    "href": "https://api.spotify.com/v1/artists/54R6Y0I7jGUCveDTtI21nb",
+    "id": "54R6Y0I7jGUCveDTtI21nb",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebaf50264c42782538634391f9",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174af50264c42782538634391f9",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178af50264c42782538634391f9",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Boney M.",
+    "popularity": 70,
+    "type": "artist",
+    "uri": "spotify:artist:54R6Y0I7jGUCveDTtI21nb"
+  }
+}

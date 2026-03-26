@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-08-30T09:18:34.010614",
+  "concerts": [
+    {
+      "artist": "Tangerine Dream",
+      "name": "Tangerine Dream - Continuum Tour 2025",
+      "venue": "Centrum Spotkania Kultur",
+      "city": "Lublin",
+      "country": "PL",
+      "date": "2025-08-30",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.pl/event/tangerine-dream-continuum-tour-2025-tickets/1340966909?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZQpZ16vuZPJ0a"
+    },
+    {
+      "artist": "Tangerine Dream",
+      "name": "Tangerine Dream - Continuum Tour 2025",
+      "venue": "Opera i Filharmonia Podlaska",
+      "city": "Białystok",
+      "country": "PL",
+      "date": "2025-08-31",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.pl/event/tangerine-dream-continuum-tour-2025-tickets/1105255689?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZQpZ16v7Aa4Qa"
+    }
+  ]
+}

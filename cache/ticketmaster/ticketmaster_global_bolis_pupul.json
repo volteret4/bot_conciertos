@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-09-02T08:13:43.466405",
+  "concerts": [
+    {
+      "artist": "Bolis Pupul",
+      "name": "Bolis Pupul, Aria Bare",
+      "venue": "Madame Lou's",
+      "city": "Seattle",
+      "country": "US",
+      "date": "2025-09-19",
+      "time": "22:00:00",
+      "url": "https://www.ticketweb.com/event/bolis-pupul-aria-bare-madame-lous-tickets/13765194",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AKqPkf"
+    },
+    {
+      "artist": "Bolis Pupul",
+      "name": "Bolis Pupul",
+      "venue": "The Garrison",
+      "city": "Toronto",
+      "country": "CA",
+      "date": "2025-09-26",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.ca/bolis-pupul-toronto-ontario-09-26-2025/event/100062BBDD4D3CE3",
+      "source": "Ticketmaster",
+      "id": "177ZvxG65RqKKSN"
+    }
+  ]
+}

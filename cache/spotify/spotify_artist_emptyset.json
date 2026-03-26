@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-11-03T19:58:55.420544",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6iVzn7VOmHkhFAnB8XAGZ4"
+    },
+    "followers": {
+      "href": null,
+      "total": 22670
+    },
+    "genres": [
+      "experimental",
+      "glitch",
+      "drone",
+      "idm",
+      "dub techno",
+      "dark ambient"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6iVzn7VOmHkhFAnB8XAGZ4",
+    "id": "6iVzn7VOmHkhFAnB8XAGZ4",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eba2db85ff3773054b26dc05b4",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174a2db85ff3773054b26dc05b4",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178a2db85ff3773054b26dc05b4",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Emptyset",
+    "popularity": 22,
+    "type": "artist",
+    "uri": "spotify:artist:6iVzn7VOmHkhFAnB8XAGZ4"
+  }
+}

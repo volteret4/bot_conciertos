@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:59:07.305950",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/465eDCqhy75fmeqc4L0RNU"
+    },
+    "followers": {
+      "href": null,
+      "total": 1526
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/465eDCqhy75fmeqc4L0RNU",
+    "id": "465eDCqhy75fmeqc4L0RNU",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb56aaa09fe100da31065083c5",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517456aaa09fe100da31065083c5",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17856aaa09fe100da31065083c5",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Eyes of Others",
+    "popularity": 8,
+    "type": "artist",
+    "uri": "spotify:artist:465eDCqhy75fmeqc4L0RNU"
+  }
+}

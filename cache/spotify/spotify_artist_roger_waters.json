@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:46:44.249272",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/40DqL6Tv84cKT2pH2NMs9r"
+    },
+    "followers": {
+      "href": null,
+      "total": 1539638
+    },
+    "genres": [
+      "progressive rock",
+      "art rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/40DqL6Tv84cKT2pH2NMs9r",
+    "id": "40DqL6Tv84cKT2pH2NMs9r",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebc81c6c0ade7ca164037ec5fb",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174c81c6c0ade7ca164037ec5fb",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178c81c6c0ade7ca164037ec5fb",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Roger Waters",
+    "popularity": 51,
+    "type": "artist",
+    "uri": "spotify:artist:40DqL6Tv84cKT2pH2NMs9r"
+  }
+}

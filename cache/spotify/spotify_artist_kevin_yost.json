@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:47:07.132214",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1FPV5yJGV2urezFSaXrYDV"
+    },
+    "followers": {
+      "href": null,
+      "total": 19219
+    },
+    "genres": [
+      "jazz house",
+      "nu jazz",
+      "acid jazz",
+      "deep house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1FPV5yJGV2urezFSaXrYDV",
+    "id": "1FPV5yJGV2urezFSaXrYDV",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eba7c0dfbbf5e5f9352b3fc535",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174a7c0dfbbf5e5f9352b3fc535",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178a7c0dfbbf5e5f9352b3fc535",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Kevin Yost",
+    "popularity": 33,
+    "type": "artist",
+    "uri": "spotify:artist:1FPV5yJGV2urezFSaXrYDV"
+  }
+}

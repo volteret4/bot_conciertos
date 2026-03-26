@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-08-25T08:05:40.362787",
+  "data": [
+    {
+      "artist": "Aphrodite",
+      "artist_name": "Aphrodite",
+      "name": "Aphrodite at Suburbia Southampton",
+      "venue": "Suburbia Southampton",
+      "city": "Southampton",
+      "country": "US",
+      "date": "2025-09-06",
+      "time": "9:00 PM",
+      "url": "https://open.spotify.com/concert/7sMFJbhhiC2HuocmdKHpu5",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Aphrodite",
+      "artist_name": "Aphrodite",
+      "name": "Aphrodite at Clock Factory Bristol",
+      "venue": "Clock Factory Bristol",
+      "city": "Bristol",
+      "country": "GB",
+      "date": "2025-09-12",
+      "time": "11:00 PM",
+      "url": "https://open.spotify.com/concert/4LSlRoxmoDFOkFyLd7QH5e",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Aphrodite",
+      "artist_name": "Aphrodite",
+      "name": "Aphrodite Concert (0kC4HRKT)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/0kC4HRKTpc5eFaPg8FRLuK",
+      "source": "Spotify"
+    }
+  ]
+}

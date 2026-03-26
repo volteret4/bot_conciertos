@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:47:46.438412",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2M6vUH7cBIGxX3bXt2tpT9"
+    },
+    "followers": {
+      "href": null,
+      "total": 552
+    },
+    "genres": [
+      "gnawa"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2M6vUH7cBIGxX3bXt2tpT9",
+    "id": "2M6vUH7cBIGxX3bXt2tpT9",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27313aa53861890acefbccf5274",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0213aa53861890acefbccf5274",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485113aa53861890acefbccf5274",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Zoumana Téréta",
+    "popularity": 7,
+    "type": "artist",
+    "uri": "spotify:artist:2M6vUH7cBIGxX3bXt2tpT9"
+  }
+}

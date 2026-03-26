@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:55:52.042114",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2N1foZRamgP1sfiYXFID9O"
+    },
+    "followers": {
+      "href": null,
+      "total": 59359
+    },
+    "genres": [
+      "indie jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2N1foZRamgP1sfiYXFID9O",
+    "id": "2N1foZRamgP1sfiYXFID9O",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebfb783fd69bed282380498070",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174fb783fd69bed282380498070",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178fb783fd69bed282380498070",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Leifur James",
+    "popularity": 44,
+    "type": "artist",
+    "uri": "spotify:artist:2N1foZRamgP1sfiYXFID9O"
+  }
+}

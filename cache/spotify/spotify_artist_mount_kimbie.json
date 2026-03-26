@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:54:51.609665",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3NUtpWpGDoffm3RCGhSHtl"
+    },
+    "followers": {
+      "href": null,
+      "total": 354033
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/3NUtpWpGDoffm3RCGhSHtl",
+    "id": "3NUtpWpGDoffm3RCGhSHtl",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebbd861e99a069e3a054c58fa7",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174bd861e99a069e3a054c58fa7",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178bd861e99a069e3a054c58fa7",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Mount Kimbie",
+    "popularity": 48,
+    "type": "artist",
+    "uri": "spotify:artist:3NUtpWpGDoffm3RCGhSHtl"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T19:50:14.859685",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2eIDAcLKnWc4D350YyzvgS"
+    },
+    "followers": {
+      "href": null,
+      "total": 194204
+    },
+    "genres": [
+      "minimal techno",
+      "techno"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2eIDAcLKnWc4D350YyzvgS",
+    "id": "2eIDAcLKnWc4D350YyzvgS",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6772690000c46c845ce16f4bb6686023eb3250",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000dd22845ce16f4bb6686023eb3250",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000bac3845ce16f4bb6686023eb3250",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67726900008f74845ce16f4bb6686023eb3250",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Jeff Mills",
+    "popularity": 36,
+    "type": "artist",
+    "uri": "spotify:artist:2eIDAcLKnWc4D350YyzvgS"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:47:49.686646",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4ag9KZorKklsMzVkcCM9jE"
+    },
+    "followers": {
+      "href": null,
+      "total": 318
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/4ag9KZorKklsMzVkcCM9jE",
+    "id": "4ag9KZorKklsMzVkcCM9jE",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27377eb86de55f515613c812953",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0277eb86de55f515613c812953",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485177eb86de55f515613c812953",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Time Is A Blind Guide",
+    "popularity": 4,
+    "type": "artist",
+    "uri": "spotify:artist:4ag9KZorKklsMzVkcCM9jE"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-24T08:35:39.157109",
+  "data": [
+    {
+      "artist": "George Clanton",
+      "artist_name": "George Clanton",
+      "name": "George Clanton at Various Venues",
+      "venue": "Various Venues",
+      "city": "Manchester",
+      "country": "GB",
+      "date": "2025-08-30",
+      "time": "12:00 PM",
+      "url": "https://open.spotify.com/concert/1c8Hm7hWClAbwLKOxOAhB3",
+      "source": "Spotify"
+    },
+    {
+      "artist": "George Clanton",
+      "artist_name": "George Clanton",
+      "name": "George Clanton Concert (4U53YOyq)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/4U53YOyq2gqeF7h4tZzWpL",
+      "source": "Spotify"
+    },
+    {
+      "artist": "George Clanton",
+      "artist_name": "George Clanton",
+      "name": "George Clanton Concert (1rvvxdvN)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/1rvvxdvNhKAIjsO6IZyGuf",
+      "source": "Spotify"
+    },
+    {
+      "artist": "George Clanton",
+      "artist_name": "George Clanton",
+      "name": "George Clanton at The Dome",
+      "venue": "The Dome",
+      "city": "London",
+      "country": "GB",
+      "date": "2025-09-03",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/5XRzEZquN4CxW0040iKSGO",
+      "source": "Spotify"
+    },
+    {
+      "artist": "George Clanton",
+      "artist_name": "George Clanton",
+      "name": "George Clanton Concert (3Vd4unPv)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/3Vd4unPvSFhZgDpTiXGIMt",
+      "source": "Spotify"
+    }
+  ]
+}

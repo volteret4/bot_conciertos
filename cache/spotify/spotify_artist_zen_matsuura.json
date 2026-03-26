@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-11-03T19:56:20.520757",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6FBOwlElYfmu5QhsxNhf1p"
+    },
+    "followers": {
+      "href": null,
+      "total": 6
+    },
+    "genres": [
+      "free jazz",
+      "krautrock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6FBOwlElYfmu5QhsxNhf1p",
+    "id": "6FBOwlElYfmu5QhsxNhf1p",
+    "images": [],
+    "name": "Zen Matsuura",
+    "popularity": 0,
+    "type": "artist",
+    "uri": "spotify:artist:6FBOwlElYfmu5QhsxNhf1p"
+  }
+}

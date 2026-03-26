@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T19:50:05.510743",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/77oD8X9qLXZhpbCjv53l5n"
+    },
+    "followers": {
+      "href": null,
+      "total": 135134
+    },
+    "genres": [
+      "neo-psychedelic",
+      "shoegaze"
+    ],
+    "href": "https://api.spotify.com/v1/artists/77oD8X9qLXZhpbCjv53l5n",
+    "id": "77oD8X9qLXZhpbCjv53l5n",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6772690000c46c8fd85a993f615737797c500e",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000dd228fd85a993f615737797c500e",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000bac38fd85a993f615737797c500e",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67726900008f748fd85a993f615737797c500e",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Mercury Rev",
+    "popularity": 38,
+    "type": "artist",
+    "uri": "spotify:artist:77oD8X9qLXZhpbCjv53l5n"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:01:00.683885",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2TRNyrjoKJnqSc9G8jCZfb"
+    },
+    "followers": {
+      "href": null,
+      "total": 29703
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/2TRNyrjoKJnqSc9G8jCZfb",
+    "id": "2TRNyrjoKJnqSc9G8jCZfb",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb0ca32e88271219592f271f62",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051740ca32e88271219592f271f62",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1780ca32e88271219592f271f62",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Brijean",
+    "popularity": 37,
+    "type": "artist",
+    "uri": "spotify:artist:2TRNyrjoKJnqSc9G8jCZfb"
+  }
+}

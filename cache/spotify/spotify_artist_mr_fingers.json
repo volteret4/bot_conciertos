@@ -1,0 +1,45 @@
+{
+  "timestamp": "2025-11-03T20:04:05.766866",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0dRiUTGvNV17AMIULRYsvn"
+    },
+    "followers": {
+      "href": null,
+      "total": 71044
+    },
+    "genres": [
+      "chicago house",
+      "acid house",
+      "jazz house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0dRiUTGvNV17AMIULRYsvn",
+    "id": "0dRiUTGvNV17AMIULRYsvn",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/549d2a5d7ab9e162e01489a0b8e40a9f4924bf1a",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/1fdee30e100a8c59c18d04ea5262855cdfe55c72",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/e7747972456b67686bce5574d8c34f8120d6029b",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/af90b2fd0485e452340016e50f25ee58f1637555",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Mr. Fingers",
+    "popularity": 35,
+    "type": "artist",
+    "uri": "spotify:artist:0dRiUTGvNV17AMIULRYsvn"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:58:28.096981",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2nCACYdIndYchzX4bxLcTW"
+    },
+    "followers": {
+      "href": null,
+      "total": 122349
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/2nCACYdIndYchzX4bxLcTW",
+    "id": "2nCACYdIndYchzX4bxLcTW",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/06648a582c0b3925d6161da71b62801f580584b6",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/6fd130f0ac7fdf963b092450e721d89ba79b8a0f",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/9b9863fc410d65a7d8a2c324b16793da09ff3d68",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/4322f190ca374ee6b421c58fa18181649a8cde12",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Toumani Diabaté",
+    "popularity": 53,
+    "type": "artist",
+    "uri": "spotify:artist:2nCACYdIndYchzX4bxLcTW"
+  }
+}

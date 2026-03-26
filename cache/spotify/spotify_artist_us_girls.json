@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:48:06.916604",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3AHFDfqhSqPBecjQDIOIJA"
+    },
+    "followers": {
+      "href": null,
+      "total": 101637
+    },
+    "genres": [
+      "art pop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3AHFDfqhSqPBecjQDIOIJA",
+    "id": "3AHFDfqhSqPBecjQDIOIJA",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb509249ba024e427566d6da8e",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174509249ba024e427566d6da8e",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178509249ba024e427566d6da8e",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "U.S. Girls",
+    "popularity": 38,
+    "type": "artist",
+    "uri": "spotify:artist:3AHFDfqhSqPBecjQDIOIJA"
+  }
+}

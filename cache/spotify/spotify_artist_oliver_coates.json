@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:59:48.093040",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2jToqK8MU3rtt0DYrgCIXM"
+    },
+    "followers": {
+      "href": null,
+      "total": 25943
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/2jToqK8MU3rtt0DYrgCIXM",
+    "id": "2jToqK8MU3rtt0DYrgCIXM",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb97334ebe0011aa4ec2d62d67",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517497334ebe0011aa4ec2d62d67",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17897334ebe0011aa4ec2d62d67",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Oliver Coates",
+    "popularity": 38,
+    "type": "artist",
+    "uri": "spotify:artist:2jToqK8MU3rtt0DYrgCIXM"
+  }
+}

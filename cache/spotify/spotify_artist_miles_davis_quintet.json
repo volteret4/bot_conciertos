@@ -1,0 +1,46 @@
+{
+  "timestamp": "2025-11-03T20:00:16.415653",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/71Ur25Abq58vksqJINpGdx"
+    },
+    "followers": {
+      "href": null,
+      "total": 332188
+    },
+    "genres": [
+      "jazz",
+      "hard bop",
+      "cool jazz",
+      "bebop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/71Ur25Abq58vksqJINpGdx",
+    "id": "71Ur25Abq58vksqJINpGdx",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/7e2b6815b5973d47cccbad1d834089231d9b737e",
+        "height": 723,
+        "width": 999
+      },
+      {
+        "url": "https://i.scdn.co/image/399ee45e619648be6ce992228b79354f31b69999",
+        "height": 463,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/9c69550b77ce6f3d040f32122bff0325e0dddd3c",
+        "height": 145,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/5b89bd24901e2d12347296e753027b70e0bfeacd",
+        "height": 46,
+        "width": 64
+      }
+    ],
+    "name": "Miles Davis Quintet",
+    "popularity": 50,
+    "type": "artist",
+    "uri": "spotify:artist:71Ur25Abq58vksqJINpGdx"
+  }
+}

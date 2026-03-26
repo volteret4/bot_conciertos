@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T20:03:53.757151",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0oKYiTD5CdNbrofRvM1dIr"
+    },
+    "followers": {
+      "href": null,
+      "total": 225814
+    },
+    "genres": [
+      "free jazz",
+      "jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0oKYiTD5CdNbrofRvM1dIr",
+    "id": "0oKYiTD5CdNbrofRvM1dIr",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6772690000c46c90d0d182686f9edf27d1b2a5",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000dd2290d0d182686f9edf27d1b2a5",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000bac390d0d182686f9edf27d1b2a5",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67726900008f7490d0d182686f9edf27d1b2a5",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Alice Coltrane",
+    "popularity": 43,
+    "type": "artist",
+    "uri": "spotify:artist:0oKYiTD5CdNbrofRvM1dIr"
+  }
+}

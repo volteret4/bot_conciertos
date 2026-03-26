@@ -1,0 +1,46 @@
+{
+  "timestamp": "2025-11-03T19:54:44.126408",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7wBFjZMHsC6nfV0HOSd6uI"
+    },
+    "followers": {
+      "href": null,
+      "total": 123257
+    },
+    "genres": [
+      "cool jazz",
+      "jazz",
+      "hard bop",
+      "bebop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7wBFjZMHsC6nfV0HOSd6uI",
+    "id": "7wBFjZMHsC6nfV0HOSd6uI",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/4ab33387d5648af39b9903ee3eef1432c33e5797",
+        "height": 1116,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/5342c92746c86eca24fa25bed01f545d0223c0d3",
+        "height": 714,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/53c6ff7f7c9875e01be1832234d495732d4c7821",
+        "height": 223,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/c2defcb5f5d9a36298a05faf4d6a99afa949a40d",
+        "height": 71,
+        "width": 64
+      }
+    ],
+    "name": "The Modern Jazz Quartet",
+    "popularity": 41,
+    "type": "artist",
+    "uri": "spotify:artist:7wBFjZMHsC6nfV0HOSd6uI"
+  }
+}

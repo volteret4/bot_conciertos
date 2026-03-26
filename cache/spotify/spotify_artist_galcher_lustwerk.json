@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T20:03:15.082859",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1c7bxvBwJrMuZKwx4EDPHf"
+    },
+    "followers": {
+      "href": null,
+      "total": 37226
+    },
+    "genres": [
+      "lo-fi house",
+      "jazz house",
+      "hip house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1c7bxvBwJrMuZKwx4EDPHf",
+    "id": "1c7bxvBwJrMuZKwx4EDPHf",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb88b6be9afc556fc7314e85dd",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517488b6be9afc556fc7314e85dd",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17888b6be9afc556fc7314e85dd",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Galcher Lustwerk",
+    "popularity": 34,
+    "type": "artist",
+    "uri": "spotify:artist:1c7bxvBwJrMuZKwx4EDPHf"
+  }
+}

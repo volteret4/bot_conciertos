@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-25T08:34:37.597106",
+  "data": [
+    {
+      "artist": "Freddie Gibbs",
+      "artist_name": "Freddie Gibbs",
+      "name": "Freddie Gibbs at The Fillmore Philadelphia",
+      "venue": "The Fillmore Philadelphia",
+      "city": "Philadelphia",
+      "country": "US",
+      "date": "2025-09-20",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/6mNIegy0cuUA2Bv7jMbiWz",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Freddie Gibbs",
+      "artist_name": "Freddie Gibbs",
+      "name": "Freddie Gibbs Concert (1Nq1DYJP)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/1Nq1DYJP4ZIFBBnXEYYZtF",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Freddie Gibbs",
+      "artist_name": "Freddie Gibbs",
+      "name": "Freddie Gibbs Concert (1fAEHvvI)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/1fAEHvvIRgzmWa4MIEknl1",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Freddie Gibbs",
+      "artist_name": "Freddie Gibbs",
+      "name": "Freddie Gibbs at Emo&#x27;s Austin",
+      "venue": "Emo&#x27;s Austin",
+      "city": "Austin",
+      "country": "US",
+      "date": "2025-09-25",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/4JRjdRdKz3G0SE00MrZGGA",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Freddie Gibbs",
+      "artist_name": "Freddie Gibbs",
+      "name": "Freddie Gibbs at South Side Ballroom",
+      "venue": "South Side Ballroom",
+      "city": "Dallas",
+      "country": "US",
+      "date": "2025-09-26",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/5WlxZ5QqmxUrdHyEVxSmJh",
+      "source": "Spotify"
+    }
+  ]
+}

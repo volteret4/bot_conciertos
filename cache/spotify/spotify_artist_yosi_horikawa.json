@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:56:36.947602",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1JSPpoXFLcEG2WhYlvmHPJ"
+    },
+    "followers": {
+      "href": null,
+      "total": 63823
+    },
+    "genres": [
+      "idm"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1JSPpoXFLcEG2WhYlvmHPJ",
+    "id": "1JSPpoXFLcEG2WhYlvmHPJ",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb843f72b9e98ac2f1b88b2602",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174843f72b9e98ac2f1b88b2602",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178843f72b9e98ac2f1b88b2602",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Yosi Horikawa",
+    "popularity": 34,
+    "type": "artist",
+    "uri": "spotify:artist:1JSPpoXFLcEG2WhYlvmHPJ"
+  }
+}

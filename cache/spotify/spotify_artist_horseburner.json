@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T19:56:37.330512",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6yQwlVvYdvOdzTkFGJCtzf"
+    },
+    "followers": {
+      "href": null,
+      "total": 3959
+    },
+    "genres": [
+      "stoner metal",
+      "sludge metal",
+      "stoner rock",
+      "doom metal",
+      "space rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6yQwlVvYdvOdzTkFGJCtzf",
+    "id": "6yQwlVvYdvOdzTkFGJCtzf",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb94906039a155f60e3437c133",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517494906039a155f60e3437c133",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17894906039a155f60e3437c133",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Horseburner",
+    "popularity": 4,
+    "type": "artist",
+    "uri": "spotify:artist:6yQwlVvYdvOdzTkFGJCtzf"
+  }
+}

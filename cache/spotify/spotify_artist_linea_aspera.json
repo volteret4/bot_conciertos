@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T19:55:57.182482",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7ovuEJn78rNJmBBnLqc1NU"
+    },
+    "followers": {
+      "href": null,
+      "total": 64368
+    },
+    "genres": [
+      "darkwave",
+      "cold wave",
+      "post-punk",
+      "ebm",
+      "gothic rock",
+      "deathrock",
+      "synthpop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7ovuEJn78rNJmBBnLqc1NU",
+    "id": "7ovuEJn78rNJmBBnLqc1NU",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebf8d1e7f4d4a7eb646b6d2004",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174f8d1e7f4d4a7eb646b6d2004",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178f8d1e7f4d4a7eb646b6d2004",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Linea Aspera",
+    "popularity": 38,
+    "type": "artist",
+    "uri": "spotify:artist:7ovuEJn78rNJmBBnLqc1NU"
+  }
+}

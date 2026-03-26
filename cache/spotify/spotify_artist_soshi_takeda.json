@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:03:02.268201",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1ViWSwtEL3r2Xcg30KhD7d"
+    },
+    "followers": {
+      "href": null,
+      "total": 6084
+    },
+    "genres": [
+      "lo-fi house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1ViWSwtEL3r2Xcg30KhD7d",
+    "id": "1ViWSwtEL3r2Xcg30KhD7d",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eba4fa87fd16f294f2d05005d3",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174a4fa87fd16f294f2d05005d3",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178a4fa87fd16f294f2d05005d3",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Soshi Takeda",
+    "popularity": 23,
+    "type": "artist",
+    "uri": "spotify:artist:1ViWSwtEL3r2Xcg30KhD7d"
+  }
+}

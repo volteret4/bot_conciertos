@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:47:25.501402",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1E4RecMXQfXOmIaJHm17kd"
+    },
+    "followers": {
+      "href": null,
+      "total": 43243
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/1E4RecMXQfXOmIaJHm17kd",
+    "id": "1E4RecMXQfXOmIaJHm17kd",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebfea322b14ddc327abba23a1b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174fea322b14ddc327abba23a1b",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178fea322b14ddc327abba23a1b",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Buddha Code",
+    "popularity": 59,
+    "type": "artist",
+    "uri": "spotify:artist:1E4RecMXQfXOmIaJHm17kd"
+  }
+}

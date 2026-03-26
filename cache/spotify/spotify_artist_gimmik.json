@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T20:04:28.859072",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3FJQ5pXR8QMsR9zzzLk09T"
+    },
+    "followers": {
+      "href": null,
+      "total": 5436
+    },
+    "genres": [
+      "idm",
+      "glitch",
+      "dub techno",
+      "drone"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3FJQ5pXR8QMsR9zzzLk09T",
+    "id": "3FJQ5pXR8QMsR9zzzLk09T",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb562417cd5a396860cad5be4d",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174562417cd5a396860cad5be4d",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178562417cd5a396860cad5be4d",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Gimmik",
+    "popularity": 10,
+    "type": "artist",
+    "uri": "spotify:artist:3FJQ5pXR8QMsR9zzzLk09T"
+  }
+}

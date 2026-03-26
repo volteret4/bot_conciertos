@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:00:13.940074",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2ccZ60qvbToQ3iDGU1Kixu"
+    },
+    "followers": {
+      "href": null,
+      "total": 777
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/2ccZ60qvbToQ3iDGU1Kixu",
+    "id": "2ccZ60qvbToQ3iDGU1Kixu",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273a11bddbaab8ce6c32a159c73",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02a11bddbaab8ce6c32a159c73",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851a11bddbaab8ce6c32a159c73",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "My Friend Dario",
+    "popularity": 7,
+    "type": "artist",
+    "uri": "spotify:artist:2ccZ60qvbToQ3iDGU1Kixu"
+  }
+}

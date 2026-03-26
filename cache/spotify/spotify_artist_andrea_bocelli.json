@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:00:45.070152",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3EA9hVIzKfFiQI0Kikz2wo"
+    },
+    "followers": {
+      "href": null,
+      "total": 3202339
+    },
+    "genres": [
+      "opera"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3EA9hVIzKfFiQI0Kikz2wo",
+    "id": "3EA9hVIzKfFiQI0Kikz2wo",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebfb101ed2a035fcfa2bd6fee1",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174fb101ed2a035fcfa2bd6fee1",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178fb101ed2a035fcfa2bd6fee1",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Andrea Bocelli",
+    "popularity": 69,
+    "type": "artist",
+    "uri": "spotify:artist:3EA9hVIzKfFiQI0Kikz2wo"
+  }
+}

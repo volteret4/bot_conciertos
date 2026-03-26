@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T20:03:34.763932",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/30uiS1n3uIGXJEYFR1GVDy"
+    },
+    "followers": {
+      "href": null,
+      "total": 409027
+    },
+    "genres": [
+      "neo-psychedelic",
+      "psychedelic rock",
+      "shoegaze",
+      "space rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/30uiS1n3uIGXJEYFR1GVDy",
+    "id": "30uiS1n3uIGXJEYFR1GVDy",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb33220055dac8da23644c86c7",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517433220055dac8da23644c86c7",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17833220055dac8da23644c86c7",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "The Brian Jonestown Massacre",
+    "popularity": 52,
+    "type": "artist",
+    "uri": "spotify:artist:30uiS1n3uIGXJEYFR1GVDy"
+  }
+}

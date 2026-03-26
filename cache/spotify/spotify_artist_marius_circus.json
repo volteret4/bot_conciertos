@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-10-23T17:54:19.116844",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6d95s8ExyRPwyrY8A8enmd"
+    },
+    "followers": {
+      "href": null,
+      "total": 2286
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/6d95s8ExyRPwyrY8A8enmd",
+    "id": "6d95s8ExyRPwyrY8A8enmd",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebe88f36039d1ce7c448a621cb",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174e88f36039d1ce7c448a621cb",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178e88f36039d1ce7c448a621cb",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Marius Circus",
+    "popularity": 3,
+    "type": "artist",
+    "uri": "spotify:artist:6d95s8ExyRPwyrY8A8enmd"
+  }
+}

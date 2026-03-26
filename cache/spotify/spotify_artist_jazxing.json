@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:56:54.670927",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2JHfUkPZJLj39PqBrRjjuK"
+    },
+    "followers": {
+      "href": null,
+      "total": 1101
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/2JHfUkPZJLj39PqBrRjjuK",
+    "id": "2JHfUkPZJLj39PqBrRjjuK",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb12f24934af73415014166aae",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517412f24934af73415014166aae",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17812f24934af73415014166aae",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Jazxing",
+    "popularity": 8,
+    "type": "artist",
+    "uri": "spotify:artist:2JHfUkPZJLj39PqBrRjjuK"
+  }
+}

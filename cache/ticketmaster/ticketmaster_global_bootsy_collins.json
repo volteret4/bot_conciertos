@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-08-07T08:20:40.572661",
+  "concerts": [
+    {
+      "artist": "Bootsy Collins",
+      "name": "Zapp Band Special Guest Bootsy Collins M & G",
+      "venue": "Music Hall Center",
+      "city": "Detroit",
+      "country": "US",
+      "date": "2025-08-08",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/zapp-band-special-guest-bootsy-collins-detroit-michigan-08-08-2025/event/080062A8DD092FBE",
+      "source": "Ticketmaster",
+      "id": "vvG1OZbnNqe3XX"
+    },
+    {
+      "artist": "Bootsy Collins",
+      "name": "Zapp Band Special Guest Bootsy Collins",
+      "venue": "Music Hall Center",
+      "city": "Detroit",
+      "country": "US",
+      "date": "2025-08-08",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/zapp-band-special-guest-bootsy-collins-detroit-michigan-08-08-2025/event/080062A6C3141E7E",
+      "source": "Ticketmaster",
+      "id": "vvG1OZbnhdAvyX"
+    }
+  ]
+}

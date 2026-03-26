@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-10-23T17:14:23.804483",
+  "concerts": [
+    {
+      "artist": "Joe Goddard",
+      "name": "Joe Goddard",
+      "venue": "Club Vinyl",
+      "city": "Denver",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-01",
+      "time": "22:00:00",
+      "url": "https://www.ticketweb.com/event/joe-goddard-club-vinyl-tickets/14512413",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1Aff38K"
+    }
+  ]
+}

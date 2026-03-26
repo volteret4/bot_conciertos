@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-11-03T20:02:52.915266",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7zi9v3F5KzAuS3MkJtm5dc"
+    },
+    "followers": {
+      "href": null,
+      "total": 11010
+    },
+    "genres": [
+      "jangle pop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7zi9v3F5KzAuS3MkJtm5dc",
+    "id": "7zi9v3F5KzAuS3MkJtm5dc",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6772690000c46c5fb1b77d3b88659278a78791",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000dd225fb1b77d3b88659278a78791",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000bac35fb1b77d3b88659278a78791",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67726900008f745fb1b77d3b88659278a78791",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "The Jazz Butcher",
+    "popularity": 18,
+    "type": "artist",
+    "uri": "spotify:artist:7zi9v3F5KzAuS3MkJtm5dc"
+  }
+}

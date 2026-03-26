@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:00:18.001662",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3pGgFAbmQ22e2LWjOtv5jH"
+    },
+    "followers": {
+      "href": null,
+      "total": 81478
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/3pGgFAbmQ22e2LWjOtv5jH",
+    "id": "3pGgFAbmQ22e2LWjOtv5jH",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebf8fdd27f579ca98e876d0663",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174f8fdd27f579ca98e876d0663",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178f8fdd27f579ca98e876d0663",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Melanie De Biasio",
+    "popularity": 40,
+    "type": "artist",
+    "uri": "spotify:artist:3pGgFAbmQ22e2LWjOtv5jH"
+  }
+}

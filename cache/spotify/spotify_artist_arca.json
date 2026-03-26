@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T20:01:52.322211",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4SsVbpTthjScTS7U2hmr1X"
+    },
+    "followers": {
+      "href": null,
+      "total": 17853218
+    },
+    "genres": [
+      "reggaeton",
+      "trap latino",
+      "urbano latino"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4SsVbpTthjScTS7U2hmr1X",
+    "id": "4SsVbpTthjScTS7U2hmr1X",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb188fba614da521f737b24f9e",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174188fba614da521f737b24f9e",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178188fba614da521f737b24f9e",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Arcángel",
+    "popularity": 83,
+    "type": "artist",
+    "uri": "spotify:artist:4SsVbpTthjScTS7U2hmr1X"
+  }
+}

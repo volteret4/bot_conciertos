@@ -1,0 +1,53 @@
+{
+  "timestamp": "2025-08-25T08:17:32.090597",
+  "data": [
+    {
+      "artist": "Chip Wickham",
+      "artist_name": "Chip Wickham",
+      "name": "Chip Wickham at Fasching",
+      "venue": "Fasching",
+      "city": "Stockholm",
+      "country": "SE",
+      "date": "2025-10-12",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/6utseMBz95hxStxqhkCEj5",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Chip Wickham",
+      "artist_name": "Chip Wickham",
+      "name": "Chip Wickham at Nefertiti",
+      "venue": "Nefertiti",
+      "city": "Göteborg",
+      "country": "SE",
+      "date": "2025-10-16",
+      "time": "6:00 PM",
+      "url": "https://open.spotify.com/concert/1c2nOQ3Pwj4MwSHZVLB5pX",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Chip Wickham",
+      "artist_name": "Chip Wickham",
+      "name": "Chip Wickham Concert (3aXoo5sz)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/3aXoo5szS7jT7qEFPKnD7e",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Chip Wickham",
+      "artist_name": "Chip Wickham",
+      "name": "Chip Wickham Concert (1rjNYVpn)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/1rjNYVpnmUSnE7XNpdTCje",
+      "source": "Spotify"
+    }
+  ]
+}

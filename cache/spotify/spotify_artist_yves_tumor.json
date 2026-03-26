@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:48:04.056872",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0qu422H5MOoQxGjd4IzHbS"
+    },
+    "followers": {
+      "href": null,
+      "total": 442820
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/0qu422H5MOoQxGjd4IzHbS",
+    "id": "0qu422H5MOoQxGjd4IzHbS",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb10afe006fe4c3309711f1966",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517410afe006fe4c3309711f1966",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17810afe006fe4c3309711f1966",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Yves Tumor",
+    "popularity": 67,
+    "type": "artist",
+    "uri": "spotify:artist:0qu422H5MOoQxGjd4IzHbS"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:56:11.352393",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/53LVoipNTQ4lvUSJ61XKU3"
+    },
+    "followers": {
+      "href": null,
+      "total": 201066
+    },
+    "genres": [
+      "post-rock",
+      "math rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/53LVoipNTQ4lvUSJ61XKU3",
+    "id": "53LVoipNTQ4lvUSJ61XKU3",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb450ed7a5008e1e6dcb3185e3",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174450ed7a5008e1e6dcb3185e3",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178450ed7a5008e1e6dcb3185e3",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "MONO",
+    "popularity": 36,
+    "type": "artist",
+    "uri": "spotify:artist:53LVoipNTQ4lvUSJ61XKU3"
+  }
+}

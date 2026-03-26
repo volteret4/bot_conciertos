@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-10-23T17:06:31.449345",
+  "concerts": [
+    {
+      "artist": "Sister Sledge",
+      "name": "The O'Jays, The Spinners, The Commodores,The Chi-Lites & Sister Sledge",
+      "venue": "Toyota Arena",
+      "city": "Ontario",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-05",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/the-ojays-the-spinners-the-commodoresthe-ontario-california-12-05-2025/event/090062B48F5D1ABA",
+      "source": "Ticketmaster",
+      "id": "vvG10Zbl329onB"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:59:19.241761",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/16eRpMNXSQ15wuJoeqguaB"
+    },
+    "followers": {
+      "href": null,
+      "total": 858535
+    },
+    "genres": [
+      "neo-psychedelic"
+    ],
+    "href": "https://api.spotify.com/v1/artists/16eRpMNXSQ15wuJoeqguaB",
+    "id": "16eRpMNXSQ15wuJoeqguaB",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb81fb61484553c2a921f8a8c6",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517481fb61484553c2a921f8a8c6",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17881fb61484553c2a921f8a8c6",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "The Flaming Lips",
+    "popularity": 52,
+    "type": "artist",
+    "uri": "spotify:artist:16eRpMNXSQ15wuJoeqguaB"
+  }
+}

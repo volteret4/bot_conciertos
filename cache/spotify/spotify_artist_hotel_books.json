@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:56:37.745779",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0PsTewblEJFN5oC1Qb7IwX"
+    },
+    "followers": {
+      "href": null,
+      "total": 120310
+    },
+    "genres": [
+      "spoken word",
+      "melodic hardcore",
+      "midwest emo"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0PsTewblEJFN5oC1Qb7IwX",
+    "id": "0PsTewblEJFN5oC1Qb7IwX",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb31c3f51b8f7f762a9ccba6cb",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517431c3f51b8f7f762a9ccba6cb",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17831c3f51b8f7f762a9ccba6cb",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Hotel Books",
+    "popularity": 35,
+    "type": "artist",
+    "uri": "spotify:artist:0PsTewblEJFN5oC1Qb7IwX"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T20:02:14.265616",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5EgMMveFcSL3rq87Wkyw4s"
+    },
+    "followers": {
+      "href": null,
+      "total": 60498
+    },
+    "genres": [
+      "jazz funk",
+      "funk"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5EgMMveFcSL3rq87Wkyw4s",
+    "id": "5EgMMveFcSL3rq87Wkyw4s",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/e8d218b73489320783ea81c3716ab8abadb0862b",
+        "height": 745,
+        "width": 853
+      },
+      {
+        "url": "https://i.scdn.co/image/7ee26bb12a0a30cc2c47a89b6a1527dc5e41ec99",
+        "height": 559,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/1494d1dfc30339835a280ef88f16bcff541adfc2",
+        "height": 175,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/467fe6797593a2db22b2914741a5c701abfa8bc1",
+        "height": 56,
+        "width": 64
+      }
+    ],
+    "name": "Lafayette Afro Rock Band",
+    "popularity": 38,
+    "type": "artist",
+    "uri": "spotify:artist:5EgMMveFcSL3rq87Wkyw4s"
+  }
+}

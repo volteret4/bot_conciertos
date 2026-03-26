@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:58:34.120705",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3HtyiTNRFO5HOPU5Cj3at7"
+    },
+    "followers": {
+      "href": null,
+      "total": 5616
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/3HtyiTNRFO5HOPU5Cj3at7",
+    "id": "3HtyiTNRFO5HOPU5Cj3at7",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb03177b6f42ef0b048fd278e6",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517403177b6f42ef0b048fd278e6",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17803177b6f42ef0b048fd278e6",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Dezron Douglas",
+    "popularity": 30,
+    "type": "artist",
+    "uri": "spotify:artist:3HtyiTNRFO5HOPU5Cj3at7"
+  }
+}

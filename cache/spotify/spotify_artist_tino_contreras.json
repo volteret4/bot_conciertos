@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:59:55.978100",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/48kCMQ00lfjWnQZCUPOYrX"
+    },
+    "followers": {
+      "href": null,
+      "total": 6692
+    },
+    "genres": [
+      "latin jazz",
+      "exotica"
+    ],
+    "href": "https://api.spotify.com/v1/artists/48kCMQ00lfjWnQZCUPOYrX",
+    "id": "48kCMQ00lfjWnQZCUPOYrX",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/c5ebd6d500dc5fd769d03fe049e8dd93002d937e",
+        "height": 401,
+        "width": 600
+      },
+      {
+        "url": "https://i.scdn.co/image/130ec04d0e1df0ea8be6f697a01cb9a888d71b61",
+        "height": 134,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/530bfd1ed864d0588d4e98763170e8a773ab19c0",
+        "height": 43,
+        "width": 64
+      }
+    ],
+    "name": "Tino Contreras",
+    "popularity": 18,
+    "type": "artist",
+    "uri": "spotify:artist:48kCMQ00lfjWnQZCUPOYrX"
+  }
+}

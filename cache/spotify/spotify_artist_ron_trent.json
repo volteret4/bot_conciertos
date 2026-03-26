@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:47:55.184186",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0TOZ0i0BHZJYKK2rvoRD2d"
+    },
+    "followers": {
+      "href": null,
+      "total": 40242
+    },
+    "genres": [
+      "chicago house",
+      "acid house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0TOZ0i0BHZJYKK2rvoRD2d",
+    "id": "0TOZ0i0BHZJYKK2rvoRD2d",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eba06885660d982b088fa8d322",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174a06885660d982b088fa8d322",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178a06885660d982b088fa8d322",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Ron Trent",
+    "popularity": 35,
+    "type": "artist",
+    "uri": "spotify:artist:0TOZ0i0BHZJYKK2rvoRD2d"
+  }
+}

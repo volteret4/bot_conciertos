@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:46:37.564394",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0rpMdBzQXf7aYRnu5fDBJy"
+    },
+    "followers": {
+      "href": null,
+      "total": 833596
+    },
+    "genres": [
+      "folk punk"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0rpMdBzQXf7aYRnu5fDBJy",
+    "id": "0rpMdBzQXf7aYRnu5fDBJy",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebb3c3b161756ef6f9c9afef38",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174b3c3b161756ef6f9c9afef38",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178b3c3b161756ef6f9c9afef38",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Violent Femmes",
+    "popularity": 56,
+    "type": "artist",
+    "uri": "spotify:artist:0rpMdBzQXf7aYRnu5fDBJy"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-11-03T19:58:31.759573",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6rxxu32JCGDpKKMPHxnSJp"
+    },
+    "followers": {
+      "href": null,
+      "total": 96873
+    },
+    "genres": [
+      "free jazz",
+      "jazz",
+      "hard bop",
+      "bebop",
+      "avant-garde"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6rxxu32JCGDpKKMPHxnSJp",
+    "id": "6rxxu32JCGDpKKMPHxnSJp",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/e77b0fac2fe8b05926adacb88896a00a50a3cbcf",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/9294f71c539ee24bd854b20c7cadbfc8dd7a7c9b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/a522c9459d11a19dd04ad84206108f7640df97c4",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/61f30d2e898eb03571f790d5e1ff8e08a9166176",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Eric Dolphy",
+    "popularity": 28,
+    "type": "artist",
+    "uri": "spotify:artist:6rxxu32JCGDpKKMPHxnSJp"
+  }
+}

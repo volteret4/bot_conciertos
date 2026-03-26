@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T20:01:31.114897",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0BqALs1lInR9TTOulUADH7"
+    },
+    "followers": {
+      "href": null,
+      "total": 100975
+    },
+    "genres": [
+      "jazz",
+      "cool jazz",
+      "hard bop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0BqALs1lInR9TTOulUADH7",
+    "id": "0BqALs1lInR9TTOulUADH7",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273b62b03a629fec8f1ac2d1c0d",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e022eceabbc54b316b88e0bd8e7",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048512eceabbc54b316b88e0bd8e7",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Ahmad Jamal Trio",
+    "popularity": 44,
+    "type": "artist",
+    "uri": "spotify:artist:0BqALs1lInR9TTOulUADH7"
+  }
+}

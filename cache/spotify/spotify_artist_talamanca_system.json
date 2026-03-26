@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:47:33.302062",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4kFx0jnLX2wqz1LiELfEsT"
+    },
+    "followers": {
+      "href": null,
+      "total": 1335
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/4kFx0jnLX2wqz1LiELfEsT",
+    "id": "4kFx0jnLX2wqz1LiELfEsT",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273791628603f5e3236525b4a22",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02803174a58947cef48d3754eb",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851791628603f5e3236525b4a22",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Talamanca System",
+    "popularity": 7,
+    "type": "artist",
+    "uri": "spotify:artist:4kFx0jnLX2wqz1LiELfEsT"
+  }
+}

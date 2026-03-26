@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:02:32.361399",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3JVoMoMV2iZOG5suiZrWY3"
+    },
+    "followers": {
+      "href": null,
+      "total": 181
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/3JVoMoMV2iZOG5suiZrWY3",
+    "id": "3JVoMoMV2iZOG5suiZrWY3",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2732f8eec7cae05c8524e61bd07",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e022f8eec7cae05c8524e61bd07",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048512f8eec7cae05c8524e61bd07",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Gridlock",
+    "popularity": 29,
+    "type": "artist",
+    "uri": "spotify:artist:3JVoMoMV2iZOG5suiZrWY3"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T19:57:46.469255",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6Ycz6NH33xJcd47215Z6Xv"
+    },
+    "followers": {
+      "href": null,
+      "total": 1059
+    },
+    "genres": [
+      "noise rock",
+      "free jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6Ycz6NH33xJcd47215Z6Xv",
+    "id": "6Ycz6NH33xJcd47215Z6Xv",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/e6e9951523ca763ff8161ddfe1ac0545d227d618",
+        "height": 658,
+        "width": 658
+      },
+      {
+        "url": "https://i.scdn.co/image/cbcf032f98ee372f61a49b21b4777129e88c9229",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/94b29b803276c6622978202073365dd33d24f894",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/810e1c8c2e553ccb1c031673e61015d391b922c6",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Glitterbust",
+    "popularity": 0,
+    "type": "artist",
+    "uri": "spotify:artist:6Ycz6NH33xJcd47215Z6Xv"
+  }
+}

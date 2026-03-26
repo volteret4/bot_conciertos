@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-11-03T20:02:46.314558",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/45g23Apmqo2x4obM7LjmpW"
+    },
+    "followers": {
+      "href": null,
+      "total": 27898
+    },
+    "genres": [
+      "dub techno",
+      "dub",
+      "minimal techno",
+      "ambient",
+      "idm"
+    ],
+    "href": "https://api.spotify.com/v1/artists/45g23Apmqo2x4obM7LjmpW",
+    "id": "45g23Apmqo2x4obM7LjmpW",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/6c199c5dbbae404ed3373e868bc04aea5c6c39f4",
+        "height": 1500,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/39fff345445cfcb948a125a9a24ea82bdc52fb54",
+        "height": 960,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/2014f738ab465687bcb7f349c6be364cfd56a16d",
+        "height": 300,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/d08577a249e7f03d5fc199a81ecb9f60314c850b",
+        "height": 96,
+        "width": 64
+      }
+    ],
+    "name": "Deepchord",
+    "popularity": 24,
+    "type": "artist",
+    "uri": "spotify:artist:45g23Apmqo2x4obM7LjmpW"
+  }
+}

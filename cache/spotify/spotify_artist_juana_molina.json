@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:54:44.792217",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/76hliHkgP5eIbVqLT7NmQ3"
+    },
+    "followers": {
+      "href": null,
+      "total": 132520
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/76hliHkgP5eIbVqLT7NmQ3",
+    "id": "76hliHkgP5eIbVqLT7NmQ3",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb5fafafe641e758ff1ed30e84",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051745fafafe641e758ff1ed30e84",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1785fafafe641e758ff1ed30e84",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Juana Molina",
+    "popularity": 38,
+    "type": "artist",
+    "uri": "spotify:artist:76hliHkgP5eIbVqLT7NmQ3"
+  }
+}

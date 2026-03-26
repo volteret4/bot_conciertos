@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-11-03T20:04:37.460600",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7a7MvRxJIoVblndypH8XgC"
+    },
+    "followers": {
+      "href": null,
+      "total": 17885
+    },
+    "genres": [
+      "idm",
+      "ambient",
+      "drone",
+      "neoclassical",
+      "glitch"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7a7MvRxJIoVblndypH8XgC",
+    "id": "7a7MvRxJIoVblndypH8XgC",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6772690000c46cb2977ed16305f664143a6dfd",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000dd22b2977ed16305f664143a6dfd",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000bac3b2977ed16305f664143a6dfd",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67726900008f74b2977ed16305f664143a6dfd",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Isan",
+    "popularity": 22,
+    "type": "artist",
+    "uri": "spotify:artist:7a7MvRxJIoVblndypH8XgC"
+  }
+}

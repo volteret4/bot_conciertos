@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T19:59:58.793450",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4qmHkMxr6pTWh5Zo74odpH"
+    },
+    "followers": {
+      "href": null,
+      "total": 315584
+    },
+    "genres": [
+      "new wave",
+      "power pop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4qmHkMxr6pTWh5Zo74odpH",
+    "id": "4qmHkMxr6pTWh5Zo74odpH",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6772690000c46c29483131546114b6fe07b0b5",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000dd2229483131546114b6fe07b0b5",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000bac329483131546114b6fe07b0b5",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67726900008f7429483131546114b6fe07b0b5",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Elvis Costello & The Attractions",
+    "popularity": 49,
+    "type": "artist",
+    "uri": "spotify:artist:4qmHkMxr6pTWh5Zo74odpH"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T20:04:56.089146",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4XpPveeg7RuYS3CgLo75t9"
+    },
+    "followers": {
+      "href": null,
+      "total": 299476
+    },
+    "genres": [
+      "black metal",
+      "shoegaze",
+      "post-rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4XpPveeg7RuYS3CgLo75t9",
+    "id": "4XpPveeg7RuYS3CgLo75t9",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb2c91a9397fb610a767476b98",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051742c91a9397fb610a767476b98",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1782c91a9397fb610a767476b98",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Deafheaven",
+    "popularity": 47,
+    "type": "artist",
+    "uri": "spotify:artist:4XpPveeg7RuYS3CgLo75t9"
+  }
+}

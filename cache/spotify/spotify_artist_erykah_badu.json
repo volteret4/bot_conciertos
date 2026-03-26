@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:02:09.400211",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7IfculRW2WXyzNQ8djX8WX"
+    },
+    "followers": {
+      "href": null,
+      "total": 3240924
+    },
+    "genres": [
+      "neo soul",
+      "r&b"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7IfculRW2WXyzNQ8djX8WX",
+    "id": "7IfculRW2WXyzNQ8djX8WX",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebfb1bc9e7ca44d473641b7842",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174fb1bc9e7ca44d473641b7842",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178fb1bc9e7ca44d473641b7842",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Erykah Badu",
+    "popularity": 67,
+    "type": "artist",
+    "uri": "spotify:artist:7IfculRW2WXyzNQ8djX8WX"
+  }
+}

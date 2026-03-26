@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-11-03T19:47:54.167267",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3mNygoyrEKLgo6sx0MzwOL"
+    },
+    "followers": {
+      "href": null,
+      "total": 303782
+    },
+    "genres": [
+      "gnawa"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3mNygoyrEKLgo6sx0MzwOL",
+    "id": "3mNygoyrEKLgo6sx0MzwOL",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/0d183847042a7c6e27c04f21fbe2273d63d03e50",
+        "height": 563,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/410e634c2945b0782700c4485f9ed77f9c9afe37",
+        "height": 360,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/0178ad8bf5b619b94872233280a3fcaff2dbcd5d",
+        "height": 113,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/ae9570d24ef433088bee1a17f6a877fd52d88c79",
+        "height": 36,
+        "width": 64
+      }
+    ],
+    "name": "Ali Farka Touré",
+    "popularity": 48,
+    "type": "artist",
+    "uri": "spotify:artist:3mNygoyrEKLgo6sx0MzwOL"
+  }
+}

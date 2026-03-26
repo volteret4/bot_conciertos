@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-10-23T17:14:08.352892",
+  "concerts": [
+    {
+      "artist": "Baiuca",
+      "name": "Baiuca and Malin Lewis",
+      "venue": "Saint Luke's",
+      "city": "Glasgow",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-01-22",
+      "time": "19:00:00",
+      "url": "https://www.universe.com/events/baiuca-and-malin-lewis-tickets-17L903?ref=ticketmaster",
+      "source": "Ticketmaster",
+      "id": "LvZ18QCX-8ZalQYZlOktp"
+    },
+    {
+      "artist": "Baiuca",
+      "name": "Baiuca (Live)",
+      "venue": "Village Underground",
+      "city": "London",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-01-23",
+      "time": "18:00:00",
+      "url": "https://www.ticketweb.uk/event/baiuca-live-village-underground-tickets/14589853?REFERRAL_ID=tmfeed",
+      "source": "Ticketmaster",
+      "id": "1AdFZbSGkUVTemp"
+    }
+  ]
+}

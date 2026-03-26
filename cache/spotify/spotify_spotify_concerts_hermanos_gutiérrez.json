@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-23T08:45:42.144095",
+  "data": [
+    {
+      "artist": "Hermanos Gutiérrez",
+      "artist_name": "Hermanos Gutiérrez",
+      "name": "Hermanos Gutiérrez Concert (1ckdeGRE)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/1ckdeGREDxuEMUumCrVxd5",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Hermanos Gutiérrez",
+      "artist_name": "Hermanos Gutiérrez",
+      "name": "Hermanos Gutiérrez at Chautauqua Auditorium",
+      "venue": "Chautauqua Auditorium",
+      "city": "Boulder",
+      "country": "US",
+      "date": "2025-09-13",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/67rSeFjk27iXO4gnkyHXIs",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Hermanos Gutiérrez",
+      "artist_name": "Hermanos Gutiérrez",
+      "name": "Hermanos Gutiérrez at Chautauqua Auditorium",
+      "venue": "Chautauqua Auditorium",
+      "city": "Boulder",
+      "country": "US",
+      "date": "2025-09-14",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/05B39AXtZAL0zwx1A0f9xD",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Hermanos Gutiérrez",
+      "artist_name": "Hermanos Gutiérrez",
+      "name": "Hermanos Gutiérrez Concert (0hVljoWn)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/0hVljoWnZ3m2xhAKw1nMPL",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Hermanos Gutiérrez",
+      "artist_name": "Hermanos Gutiérrez",
+      "name": "Hermanos Gutiérrez Concert (3u71h1w6)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/3u71h1w6u7XBdqRng8p6l5",
+      "source": "Spotify"
+    }
+  ]
+}

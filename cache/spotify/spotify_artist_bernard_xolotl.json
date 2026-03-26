@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:47:03.446313",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1zPW8LJCZtjOljaZ6Fba1e"
+    },
+    "followers": {
+      "href": null,
+      "total": 1100
+    },
+    "genres": [
+      "new age",
+      "space music",
+      "krautrock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1zPW8LJCZtjOljaZ6Fba1e",
+    "id": "1zPW8LJCZtjOljaZ6Fba1e",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27347c019030a3820b66bf16977",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0247c019030a3820b66bf16977",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485147c019030a3820b66bf16977",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Bernard Xolotl",
+    "popularity": 6,
+    "type": "artist",
+    "uri": "spotify:artist:1zPW8LJCZtjOljaZ6Fba1e"
+  }
+}

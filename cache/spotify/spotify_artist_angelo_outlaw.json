@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:55:27.843727",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4Cwu568SsbUX3te9nkAZya"
+    },
+    "followers": {
+      "href": null,
+      "total": 1528
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/4Cwu568SsbUX3te9nkAZya",
+    "id": "4Cwu568SsbUX3te9nkAZya",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb11a407c0730931134c00fded",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517411a407c0730931134c00fded",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17811a407c0730931134c00fded",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Angelo Outlaw",
+    "popularity": 11,
+    "type": "artist",
+    "uri": "spotify:artist:4Cwu568SsbUX3te9nkAZya"
+  }
+}

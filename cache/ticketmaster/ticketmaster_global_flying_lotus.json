@@ -1,0 +1,57 @@
+{
+  "timestamp": "2025-10-23T17:14:01.602126",
+  "concerts": [
+    {
+      "artist": "Flying Lotus",
+      "name": "Big Ears Festival",
+      "venue": "Downtown Knoxville",
+      "city": "Knoxville",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-03-26",
+      "time": "12:00:00",
+      "url": "https://on.fgtix.com/trk/3riK",
+      "source": "Ticketmaster",
+      "id": "G5viZbwm1jvyG"
+    },
+    {
+      "artist": "Flying Lotus",
+      "name": "Big Ears Festival",
+      "venue": "Downtown Knoxville",
+      "city": "Knoxville",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-03-27",
+      "time": "12:00:00",
+      "url": "https://on.fgtix.com/trk/3riK",
+      "source": "Ticketmaster",
+      "id": "G5viZbwm5_xZY"
+    },
+    {
+      "artist": "Flying Lotus",
+      "name": "Big Ears Festival",
+      "venue": "Downtown Knoxville",
+      "city": "Knoxville",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-03-28",
+      "time": "12:00:00",
+      "url": "https://on.fgtix.com/trk/3riK",
+      "source": "Ticketmaster",
+      "id": "G5viZbwmG83ei"
+    },
+    {
+      "artist": "Flying Lotus",
+      "name": "Big Ears Festival",
+      "venue": "Downtown Knoxville",
+      "city": "Knoxville",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-03-29",
+      "time": "12:00:00",
+      "url": "https://on.fgtix.com/trk/3riK",
+      "source": "Ticketmaster",
+      "id": "G5viZbwmuAekl"
+    }
+  ]
+}

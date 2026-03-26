@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-24T08:04:22.147875",
+  "data": [
+    {
+      "artist": "Alice Cooper",
+      "artist_name": "Alice Cooper",
+      "name": "Alice Cooper at Vibrant Music Hall",
+      "venue": "Vibrant Music Hall",
+      "city": "Waukee",
+      "country": "US",
+      "date": "2025-08-26",
+      "time": "7:30 PM",
+      "url": "https://open.spotify.com/concert/0sSvrI1henORb84YVswj4n",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Alice Cooper",
+      "artist_name": "Alice Cooper",
+      "name": "Alice Cooper Concert (4Iwct8FC)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/4Iwct8FClS6vnFNRnT9Ahe",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Alice Cooper",
+      "artist_name": "Alice Cooper",
+      "name": "Alice Cooper Concert (6MuQQQUU)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/6MuQQQUUfxKDalb2H8PiR3",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Alice Cooper",
+      "artist_name": "Alice Cooper",
+      "name": "Alice Cooper at Elvis Presley&#x27;s Memphis - Graceland Soundstage",
+      "venue": "Elvis Presley&#x27;s Memphis - Graceland Soundstage",
+      "city": "Memphis",
+      "country": "US",
+      "date": "2025-08-30",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/1yOwR5E4gG1PrDRb7hhuFZ",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Alice Cooper",
+      "artist_name": "Alice Cooper",
+      "name": "Alice Cooper Concert (0W1zECQh)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/0W1zECQhJyerpd4PmNUh0v",
+      "source": "Spotify"
+    }
+  ]
+}

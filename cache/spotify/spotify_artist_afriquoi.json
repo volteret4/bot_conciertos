@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:01:30.118253",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2WEEw0QrAOyeMHpeXnDqQT"
+    },
+    "followers": {
+      "href": null,
+      "total": 20031
+    },
+    "genres": [
+      "uk funky"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2WEEw0QrAOyeMHpeXnDqQT",
+    "id": "2WEEw0QrAOyeMHpeXnDqQT",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebe95896e6c765e7726378dd4d",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174e95896e6c765e7726378dd4d",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178e95896e6c765e7726378dd4d",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Afriquoi",
+    "popularity": 30,
+    "type": "artist",
+    "uri": "spotify:artist:2WEEw0QrAOyeMHpeXnDqQT"
+  }
+}

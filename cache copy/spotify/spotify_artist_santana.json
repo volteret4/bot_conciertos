@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-07-04T19:05:23.590097",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6GI52t8N5F02MxU0g5U69P"
+    },
+    "followers": {
+      "href": null,
+      "total": 3706205
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/6GI52t8N5F02MxU0g5U69P",
+    "id": "6GI52t8N5F02MxU0g5U69P",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb09882b1b7b33732abd60fc38",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517409882b1b7b33732abd60fc38",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17809882b1b7b33732abd60fc38",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Santana",
+    "popularity": 75,
+    "type": "artist",
+    "uri": "spotify:artist:6GI52t8N5F02MxU0g5U69P"
+  }
+}

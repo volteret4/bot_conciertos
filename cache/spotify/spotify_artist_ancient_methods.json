@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T20:01:46.704448",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2kWRgcJHbgSEAIgewkJ1g2"
+    },
+    "followers": {
+      "href": null,
+      "total": 34204
+    },
+    "genres": [
+      "ebm",
+      "industrial",
+      "acid techno"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2kWRgcJHbgSEAIgewkJ1g2",
+    "id": "2kWRgcJHbgSEAIgewkJ1g2",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2730e80da55a517cf6964b36fc9",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e020e80da55a517cf6964b36fc9",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048510e80da55a517cf6964b36fc9",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Ancient Methods",
+    "popularity": 20,
+    "type": "artist",
+    "uri": "spotify:artist:2kWRgcJHbgSEAIgewkJ1g2"
+  }
+}

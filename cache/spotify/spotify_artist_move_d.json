@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:54:52.364174",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3hwmrS8MSceZwnZYvZFf97"
+    },
+    "followers": {
+      "href": null,
+      "total": 47252
+    },
+    "genres": [
+      "dub techno",
+      "lo-fi house",
+      "jazz house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3hwmrS8MSceZwnZYvZFf97",
+    "id": "3hwmrS8MSceZwnZYvZFf97",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb7010aefba5c5cd28d79a8fcd",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051747010aefba5c5cd28d79a8fcd",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1787010aefba5c5cd28d79a8fcd",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Move D",
+    "popularity": 34,
+    "type": "artist",
+    "uri": "spotify:artist:3hwmrS8MSceZwnZYvZFf97"
+  }
+}

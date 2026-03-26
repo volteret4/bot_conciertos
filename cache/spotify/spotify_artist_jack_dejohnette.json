@@ -1,0 +1,45 @@
+{
+  "timestamp": "2025-11-03T20:00:18.858281",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7rDjbKTLlpNYJRWMm7QVxU"
+    },
+    "followers": {
+      "href": null,
+      "total": 48810
+    },
+    "genres": [
+      "jazz",
+      "jazz fusion",
+      "free jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7rDjbKTLlpNYJRWMm7QVxU",
+    "id": "7rDjbKTLlpNYJRWMm7QVxU",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6772690000c46c00138cd055cb70b74c4d91a4",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000dd2200138cd055cb70b74c4d91a4",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000bac300138cd055cb70b74c4d91a4",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67726900008f7400138cd055cb70b74c4d91a4",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Jack DeJohnette",
+    "popularity": 43,
+    "type": "artist",
+    "uri": "spotify:artist:7rDjbKTLlpNYJRWMm7QVxU"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "timestamp": "2025-10-23T17:11:48.479554",
+  "concerts": [
+    {
+      "artist": "Beats Antique",
+      "name": "Beats Antique",
+      "venue": "The Joy Theater",
+      "city": "New Orleans",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-10",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/beats-antique-new-orleans-louisiana-12-10-2025/event/1B00633DA8B95973",
+      "source": "Ticketmaster",
+      "id": "G5viZbSUIm4PS"
+    },
+    {
+      "artist": "Beats Antique",
+      "name": "Beats Antique",
+      "venue": "Culture Room",
+      "city": "Ft Lauderdale",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-13",
+      "time": "19:30:00",
+      "url": "https://www.ticketmaster.com/beats-antique-ft-lauderdale-florida-12-13-2025/event/0D00633EFC364A54",
+      "source": "Ticketmaster",
+      "id": "vvG1VZbSDHu0tf"
+    },
+    {
+      "artist": "Beats Antique",
+      "name": "Beats Antique",
+      "venue": "9:30 CLUB",
+      "city": "Washington",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-01-22",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/beats-antique-washington-district-of-columbia-01-22-2026/event/1500634195CD619A",
+      "source": "Ticketmaster",
+      "id": "16vfZbVk4G7SpkQ"
+    },
+    {
+      "artist": "Beats Antique",
+      "name": "Beats Antique",
+      "venue": "Brooklyn Bowl",
+      "city": "Brooklyn",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-01-23",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/beats-antique-brooklyn-new-york-01-23-2026/event/0000633EC5301D1E",
+      "source": "Ticketmaster",
+      "id": "k7vGFbSDAGvVr"
+    },
+    {
+      "artist": "Beats Antique",
+      "name": "Beats Antique",
+      "venue": "Ashland Armory",
+      "city": "Ashland ",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-02-12",
+      "time": "20:00:00",
+      "url": "https://www.ticketweb.com/event/beats-antique-ashland-armory-tickets/14596253",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AfppaK"
+    }
+  ]
+}

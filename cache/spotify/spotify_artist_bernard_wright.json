@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:47:01.482832",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2g8J4iI5qyYFMVHcpMcSsS"
+    },
+    "followers": {
+      "href": null,
+      "total": 30330
+    },
+    "genres": [
+      "post-disco"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2g8J4iI5qyYFMVHcpMcSsS",
+    "id": "2g8J4iI5qyYFMVHcpMcSsS",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273fab739ca361fb9ef4dbc9e7c",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02fab739ca361fb9ef4dbc9e7c",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851fab739ca361fb9ef4dbc9e7c",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Bernard Wright",
+    "popularity": 31,
+    "type": "artist",
+    "uri": "spotify:artist:2g8J4iI5qyYFMVHcpMcSsS"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-10-23T17:04:49.431344",
+  "concerts": [
+    {
+      "artist": "Kim Wilde",
+      "name": "Kim Wilde – Closer Tour 2025",
+      "venue": "SPOT  De Oosterpoort",
+      "city": "Groningen",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "date": "2025-10-24",
+      "time": "20:30:00",
+      "url": "https://www.ticketmaster.nl/event/kim-wilde--closer-tour-2025-tickets/305995?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZbpZ17GAJ4"
+    },
+    {
+      "artist": "Kim Wilde",
+      "name": "Kim Wilde",
+      "venue": "Metropool Enschede",
+      "city": "Enschede",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "date": "2025-10-25",
+      "time": "20:30:00",
+      "url": "https://www.ticketmaster.nl/event/kim-wilde-tickets/305795?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZbpZ17GAr4"
+    },
+    {
+      "artist": "Kim Wilde",
+      "name": "Kim Wilde",
+      "venue": "PHIL",
+      "city": "Haarlem",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "date": "2025-10-30",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.nl/event/kim-wilde-tickets/305741?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZbpZ17GAqv"
+    }
+  ]
+}

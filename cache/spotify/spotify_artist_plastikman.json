@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T19:49:34.826722",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7GoFQNOTX0suC6Tn59qx8n"
+    },
+    "followers": {
+      "href": null,
+      "total": 102211
+    },
+    "genres": [
+      "minimal techno",
+      "acid house",
+      "idm",
+      "acid techno",
+      "dub techno"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7GoFQNOTX0suC6Tn59qx8n",
+    "id": "7GoFQNOTX0suC6Tn59qx8n",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebc4f73ec57135027305d9ae67",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174c4f73ec57135027305d9ae67",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178c4f73ec57135027305d9ae67",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Plastikman",
+    "popularity": 32,
+    "type": "artist",
+    "uri": "spotify:artist:7GoFQNOTX0suC6Tn59qx8n"
+  }
+}

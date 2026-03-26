@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T19:57:37.670296",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7djT11AqtEBzdME1OGFfxL"
+    },
+    "followers": {
+      "href": null,
+      "total": 47252
+    },
+    "genres": [
+      "krautrock",
+      "space rock",
+      "neo-psychedelic",
+      "psychedelic rock",
+      "stoner rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7djT11AqtEBzdME1OGFfxL",
+    "id": "7djT11AqtEBzdME1OGFfxL",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebd0fb01dabd035c4decd0007b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174d0fb01dabd035c4decd0007b",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178d0fb01dabd035c4decd0007b",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Föllakzoid",
+    "popularity": 20,
+    "type": "artist",
+    "uri": "spotify:artist:7djT11AqtEBzdME1OGFfxL"
+  }
+}

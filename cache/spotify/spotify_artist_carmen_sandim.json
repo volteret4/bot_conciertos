@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:48:32.183388",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2DgUeTEJdOtSh8GJVdQZlk"
+    },
+    "followers": {
+      "href": null,
+      "total": 194
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/2DgUeTEJdOtSh8GJVdQZlk",
+    "id": "2DgUeTEJdOtSh8GJVdQZlk",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb603dc976cd57f8f9aceca71c",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174603dc976cd57f8f9aceca71c",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178603dc976cd57f8f9aceca71c",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Carmen Sandim",
+    "popularity": 2,
+    "type": "artist",
+    "uri": "spotify:artist:2DgUeTEJdOtSh8GJVdQZlk"
+  }
+}

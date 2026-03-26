@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:55:25.495866",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0kPIE8NTKTMsoXWsaHf8Jb"
+    },
+    "followers": {
+      "href": null,
+      "total": 256
+    },
+    "genres": [
+      "experimental",
+      "krautrock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0kPIE8NTKTMsoXWsaHf8Jb",
+    "id": "0kPIE8NTKTMsoXWsaHf8Jb",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebe8dabf279033c529f4990281",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174e8dabf279033c529f4990281",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178e8dabf279033c529f4990281",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Orfeón Gagarin",
+    "popularity": 0,
+    "type": "artist",
+    "uri": "spotify:artist:0kPIE8NTKTMsoXWsaHf8Jb"
+  }
+}

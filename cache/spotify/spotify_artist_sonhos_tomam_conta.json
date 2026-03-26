@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:49:02.324865",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7rVsNgf4xbMJcVPNilWTnV"
+    },
+    "followers": {
+      "href": null,
+      "total": 14469
+    },
+    "genres": [
+      "shoegaze",
+      "noise rock",
+      "slowcore",
+      "dream pop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7rVsNgf4xbMJcVPNilWTnV",
+    "id": "7rVsNgf4xbMJcVPNilWTnV",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebee6cfb9eea4e3f543f2a0566",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174ee6cfb9eea4e3f543f2a0566",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178ee6cfb9eea4e3f543f2a0566",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "sonhos tomam conta",
+    "popularity": 20,
+    "type": "artist",
+    "uri": "spotify:artist:7rVsNgf4xbMJcVPNilWTnV"
+  }
+}

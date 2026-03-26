@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:48:31.780999",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3JLUCojZaHrX2LaUkSj7Ud"
+    },
+    "followers": {
+      "href": null,
+      "total": 187479
+    },
+    "genres": [
+      "free jazz",
+      "jazz",
+      "hard bop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3JLUCojZaHrX2LaUkSj7Ud",
+    "id": "3JLUCojZaHrX2LaUkSj7Ud",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eba2104dcf543f5fd6ac5d205e",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174a2104dcf543f5fd6ac5d205e",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178a2104dcf543f5fd6ac5d205e",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Pharoah Sanders",
+    "popularity": 44,
+    "type": "artist",
+    "uri": "spotify:artist:3JLUCojZaHrX2LaUkSj7Ud"
+  }
+}

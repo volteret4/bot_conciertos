@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T20:02:31.416766",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/06uF7BP6dTC2wH1qZeGC6X"
+    },
+    "followers": {
+      "href": null,
+      "total": 65931
+    },
+    "genres": [
+      "flamenco",
+      "flamenco pop",
+      "jazz blues"
+    ],
+    "href": "https://api.spotify.com/v1/artists/06uF7BP6dTC2wH1qZeGC6X",
+    "id": "06uF7BP6dTC2wH1qZeGC6X",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27333e09a18ac4654b299181c65",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0233e09a18ac4654b299181c65",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485133e09a18ac4654b299181c65",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Pata Negra",
+    "popularity": 33,
+    "type": "artist",
+    "uri": "spotify:artist:06uF7BP6dTC2wH1qZeGC6X"
+  }
+}

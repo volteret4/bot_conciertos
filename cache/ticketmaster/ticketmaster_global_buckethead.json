@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-10-23T17:14:45.240211",
+  "concerts": [
+    {
+      "artist": "Buckethead",
+      "name": "Buckethead with Special Guests Azam Ali & Weakened Friends",
+      "venue": "The Wiltern",
+      "city": "Los Angeles",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-12",
+      "time": "18:30:00",
+      "url": "https://www.ticketmaster.com/buckethead-with-special-guests-azam-ali-los-angeles-california-12-12-2025/event/09006291AAD13596",
+      "source": "Ticketmaster",
+      "id": "vv1AaZk1oGkenVKpp"
+    },
+    {
+      "artist": "Buckethead",
+      "name": "Buckethead",
+      "venue": "Music Box",
+      "city": "San Diego",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-01-17",
+      "time": "21:00:00",
+      "url": "https://www.ticketweb.com/event/buckethead-music-box-tickets/14626813",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AfbJOK"
+    },
+    {
+      "artist": "Buckethead",
+      "name": "Buckethead",
+      "venue": "Ace of Spades",
+      "city": "Sacramento",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-01-23",
+      "time": "18:30:00",
+      "url": "https://www.ticketmaster.com/buckethead-sacramento-california-01-23-2026/event/1C006351C8E0BF19",
+      "source": "Ticketmaster",
+      "id": "G5vYZbg6Fz5H_"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:57:39.109965",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0xDPUGpGKLlnBY4xCBPS2v"
+    },
+    "followers": {
+      "href": null,
+      "total": 1649
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/0xDPUGpGKLlnBY4xCBPS2v",
+    "id": "0xDPUGpGKLlnBY4xCBPS2v",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebb385f03db98842547c8a65d4",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174b385f03db98842547c8a65d4",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178b385f03db98842547c8a65d4",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Sound Gallery by Dmitry Taras",
+    "popularity": 31,
+    "type": "artist",
+    "uri": "spotify:artist:0xDPUGpGKLlnBY4xCBPS2v"
+  }
+}

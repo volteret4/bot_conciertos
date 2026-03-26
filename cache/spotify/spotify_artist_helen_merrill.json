@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T19:50:05.766761",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4JHlHSUko0ivu6fXYT8J2q"
+    },
+    "followers": {
+      "href": null,
+      "total": 37640
+    },
+    "genres": [
+      "vocal jazz",
+      "jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4JHlHSUko0ivu6fXYT8J2q",
+    "id": "4JHlHSUko0ivu6fXYT8J2q",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/2fbd901475cbd3b4eef48fa7475cc01a385e612b",
+        "height": 1204,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/25b99736d2dd89459916565a82c9e2fa73b140ca",
+        "height": 770,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/3aff16275f9d1ae92d7438fca09e5f8f69500d46",
+        "height": 241,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/2d2a7828eb0648cd49cf6f7a174120be4ec70e64",
+        "height": 77,
+        "width": 64
+      }
+    ],
+    "name": "Helen Merrill",
+    "popularity": 35,
+    "type": "artist",
+    "uri": "spotify:artist:4JHlHSUko0ivu6fXYT8J2q"
+  }
+}

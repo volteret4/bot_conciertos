@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-10-23T17:51:52.735136",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/56aveFmMjth9yuDxLjUoEb"
+    },
+    "followers": {
+      "href": null,
+      "total": 11154
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/56aveFmMjth9yuDxLjUoEb",
+    "id": "56aveFmMjth9yuDxLjUoEb",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebcc88cd4faa16624420fe2b5d",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174cc88cd4faa16624420fe2b5d",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178cc88cd4faa16624420fe2b5d",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Il Quadro di Troisi",
+    "popularity": 16,
+    "type": "artist",
+    "uri": "spotify:artist:56aveFmMjth9yuDxLjUoEb"
+  }
+}

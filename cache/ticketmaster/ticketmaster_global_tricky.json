@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-10-23T17:05:46.380401",
+  "concerts": [
+    {
+      "artist": "Tricky",
+      "name": "Tricky",
+      "venue": "Troxy",
+      "city": "London",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-05-15",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.co.uk/tricky-london-15-05-2026/event/36006333BADB8568",
+      "source": "Ticketmaster",
+      "id": "1AUZkGSGkeBUz4I"
+    },
+    {
+      "artist": "Tricky",
+      "name": "Tricky",
+      "venue": "Aviva Studios - The Hall",
+      "city": "Manchester",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-05-16",
+      "time": "19:30:00",
+      "url": "https://www.ticketmaster.co.uk/tricky-manchester-16-05-2026/event/35006333C78EF3FA",
+      "source": "Ticketmaster",
+      "id": "1AgZkGSGkd6NR2B"
+    },
+    {
+      "artist": "Tricky",
+      "name": "Tricky",
+      "venue": "Bristol Beacon",
+      "city": "Bristol",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-05-17",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.co.uk/tricky-bristol-17-05-2026/event/37006333C91DB7BB",
+      "source": "Ticketmaster",
+      "id": "1AMZkGSGkda6hrD"
+    }
+  ]
+}

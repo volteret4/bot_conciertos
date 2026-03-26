@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:02:48.406798",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5eCoQ7aJwg63szn6Svxpme"
+    },
+    "followers": {
+      "href": null,
+      "total": 65
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/5eCoQ7aJwg63szn6Svxpme",
+    "id": "5eCoQ7aJwg63szn6Svxpme",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27385aa3d06593c1aae97b2a444",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0285aa3d06593c1aae97b2a444",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485185aa3d06593c1aae97b2a444",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Italy",
+    "popularity": 0,
+    "type": "artist",
+    "uri": "spotify:artist:5eCoQ7aJwg63szn6Svxpme"
+  }
+}

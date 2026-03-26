@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:59:16.538109",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7Dshl982TzDhBL4GBL4woB"
+    },
+    "followers": {
+      "href": null,
+      "total": 10126
+    },
+    "genres": [
+      "brazilian rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7Dshl982TzDhBL4GBL4woB",
+    "id": "7Dshl982TzDhBL4GBL4woB",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb7a2a3664c7849f53330aca3a",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051747a2a3664c7849f53330aca3a",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1787a2a3664c7849f53330aca3a",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Finis Africae",
+    "popularity": 17,
+    "type": "artist",
+    "uri": "spotify:artist:7Dshl982TzDhBL4GBL4woB"
+  }
+}

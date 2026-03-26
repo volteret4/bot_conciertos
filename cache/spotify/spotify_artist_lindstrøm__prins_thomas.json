@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-11-03T19:55:57.065706",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2U3dcuDVpg1sZiN8ZW5JWR"
+    },
+    "followers": {
+      "href": null,
+      "total": 4367
+    },
+    "genres": [
+      "nu disco"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2U3dcuDVpg1sZiN8ZW5JWR",
+    "id": "2U3dcuDVpg1sZiN8ZW5JWR",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6772690000c46c5ded8b97becf77d872833886",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000dd225ded8b97becf77d872833886",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000bac35ded8b97becf77d872833886",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67726900008f745ded8b97becf77d872833886",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Lindstrøm & Prins Thomas",
+    "popularity": 14,
+    "type": "artist",
+    "uri": "spotify:artist:2U3dcuDVpg1sZiN8ZW5JWR"
+  }
+}

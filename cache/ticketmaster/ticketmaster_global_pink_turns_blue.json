@@ -1,0 +1,96 @@
+{
+  "timestamp": "2025-10-23T17:07:05.565758",
+  "concerts": [
+    {
+      "artist": "Pink Turns Blue",
+      "name": "%100 Music Sunar: Pink Turns Blue",
+      "venue": "Roxy Club",
+      "city": "İstanbul",
+      "country": "Turkey",
+      "country_code": "TR",
+      "date": "2025-11-22",
+      "time": "22:30:00",
+      "url": "https://www.biletix.com/performance/4MKV1/001/TURKIYE/tr",
+      "source": "Ticketmaster",
+      "id": "Z2HyzZyMZA94Oevve"
+    },
+    {
+      "artist": "Pink Turns Blue",
+      "name": "Pink Turns Blue - The Black Swan UK Tour 2026",
+      "venue": "The Chapel (Old Angel)",
+      "city": "Nottingham",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-04-29",
+      "time": "19:00:00",
+      "url": "https://www.universe.com/events/pink-turns-blue-the-black-swan-uk-tour-2026-tickets-6XDQGL?ref=ticketmaster",
+      "source": "Ticketmaster",
+      "id": "LvZ18Qac_WAh1ZZZRztR0"
+    },
+    {
+      "artist": "Pink Turns Blue",
+      "name": "Pink Turns Blue - The Black Swan UK Tour 2026",
+      "venue": "Rebellion Manchester",
+      "city": "Manchester",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-04-30",
+      "time": "19:00:00",
+      "url": "https://www.universe.com/events/pink-turns-blue-the-black-swan-uk-tour-2026-tickets-HSM4VY?ref=ticketmaster",
+      "source": "Ticketmaster",
+      "id": "LvZ18QachNshtVOZRI2hX"
+    },
+    {
+      "artist": "Pink Turns Blue",
+      "name": "Pink Turns Blue - The Black Swan UK Tour 2026",
+      "venue": "Ivory Blacks",
+      "city": "Glasgow",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-05-01",
+      "time": "19:00:00",
+      "url": "https://www.universe.com/events/pink-turns-blue-the-black-swan-uk-tour-2026-tickets-0J7HGL?ref=ticketmaster",
+      "source": "Ticketmaster",
+      "id": "LvZ18QacjJXyqg8ZR_h84"
+    },
+    {
+      "artist": "Pink Turns Blue",
+      "name": "Pink Turns Blue - The Black Swan UK Tour 2026",
+      "venue": "Exchange Bristol",
+      "city": "Bristol",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-05-02",
+      "time": "19:00:00",
+      "url": "https://www.universe.com/events/pink-turns-blue-the-black-swan-uk-tour-2026-tickets-VQPRK7?ref=ticketmaster",
+      "source": "Ticketmaster",
+      "id": "LvZ18QacqfwZKOOZRE0LP"
+    },
+    {
+      "artist": "Pink Turns Blue",
+      "name": "Pink Turns Blue - The Black Swan UK Tour 2026",
+      "venue": "The Lexington",
+      "city": "London",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-05-03",
+      "time": "19:00:00",
+      "url": "https://www.universe.com/events/pink-turns-blue-the-black-swan-uk-tour-2026-tickets-WMFYBQ?ref=ticketmaster",
+      "source": "Ticketmaster",
+      "id": "LvZ18QacrrJJHvYZRX-P2"
+    },
+    {
+      "artist": "Pink Turns Blue",
+      "name": "Pink Turns Blue - The Black Swan UK Tour 2026",
+      "venue": "The Prince Albert",
+      "city": "Brighton",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-05-04",
+      "time": "19:00:00",
+      "url": "https://www.universe.com/events/pink-turns-blue-the-black-swan-uk-tour-2026-tickets-5C0W7T?ref=ticketmaster",
+      "source": "Ticketmaster",
+      "id": "LvZ18QacqDC3DlZZmWI_i"
+    }
+  ]
+}

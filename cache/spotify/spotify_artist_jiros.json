@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-10-23T17:51:58.730277",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6PuWRqblA8d62wkvaUTqXN"
+    },
+    "followers": {
+      "href": null,
+      "total": 789
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/6PuWRqblA8d62wkvaUTqXN",
+    "id": "6PuWRqblA8d62wkvaUTqXN",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb3314a29ef01112e0aca85e77",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051743314a29ef01112e0aca85e77",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1783314a29ef01112e0aca85e77",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Jiro Setsuko",
+    "popularity": 50,
+    "type": "artist",
+    "uri": "spotify:artist:6PuWRqblA8d62wkvaUTqXN"
+  }
+}

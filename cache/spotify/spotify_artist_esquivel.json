@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:58:57.718798",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6q9qh48uSldgnbJRqz2tsM"
+    },
+    "followers": {
+      "href": null,
+      "total": 156
+    },
+    "genres": [
+      "exotica"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6q9qh48uSldgnbJRqz2tsM",
+    "id": "6q9qh48uSldgnbJRqz2tsM",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2738b7b6857a5974c8446b00f24",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e028b7b6857a5974c8446b00f24",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048518b7b6857a5974c8446b00f24",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Esquivel",
+    "popularity": 0,
+    "type": "artist",
+    "uri": "spotify:artist:6q9qh48uSldgnbJRqz2tsM"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T20:02:36.438040",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1JxLnEvBPdm9baryEFzE50"
+    },
+    "followers": {
+      "href": null,
+      "total": 27748
+    },
+    "genres": [
+      "minimal techno",
+      "techno",
+      "dub techno",
+      "acid techno"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1JxLnEvBPdm9baryEFzE50",
+    "id": "1JxLnEvBPdm9baryEFzE50",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb384ca3cf22a48969e283325c",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174384ca3cf22a48969e283325c",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178384ca3cf22a48969e283325c",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Truncate",
+    "popularity": 27,
+    "type": "artist",
+    "uri": "spotify:artist:1JxLnEvBPdm9baryEFzE50"
+  }
+}

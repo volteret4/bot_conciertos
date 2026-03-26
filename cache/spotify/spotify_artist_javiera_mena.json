@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:50:04.805159",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6c0qylj1D1gqcUUN2P8Ofp"
+    },
+    "followers": {
+      "href": null,
+      "total": 192039
+    },
+    "genres": [
+      "latin indie",
+      "latin alternative",
+      "electropop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6c0qylj1D1gqcUUN2P8Ofp",
+    "id": "6c0qylj1D1gqcUUN2P8Ofp",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebd8bbb380562897bcd1f7a6d6",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174d8bbb380562897bcd1f7a6d6",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178d8bbb380562897bcd1f7a6d6",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Javiera Mena",
+    "popularity": 48,
+    "type": "artist",
+    "uri": "spotify:artist:6c0qylj1D1gqcUUN2P8Ofp"
+  }
+}

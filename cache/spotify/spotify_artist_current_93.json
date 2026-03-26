@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T20:00:02.473617",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7vF3DcPluq6lZI36VniagW"
+    },
+    "followers": {
+      "href": null,
+      "total": 76703
+    },
+    "genres": [
+      "drone metal",
+      "industrial",
+      "avant-garde",
+      "experimental",
+      "dark ambient"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7vF3DcPluq6lZI36VniagW",
+    "id": "7vF3DcPluq6lZI36VniagW",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273a2b558cf61fa2d580e49c28c",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02a2b558cf61fa2d580e49c28c",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851a2b558cf61fa2d580e49c28c",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Current 93",
+    "popularity": 33,
+    "type": "artist",
+    "uri": "spotify:artist:7vF3DcPluq6lZI36VniagW"
+  }
+}

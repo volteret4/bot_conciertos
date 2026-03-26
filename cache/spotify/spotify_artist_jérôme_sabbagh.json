@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:48:28.680369",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5QyGCDcadoRovdmVqEu8JT"
+    },
+    "followers": {
+      "href": null,
+      "total": 1026
+    },
+    "genres": [
+      "jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5QyGCDcadoRovdmVqEu8JT",
+    "id": "5QyGCDcadoRovdmVqEu8JT",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebfab514f2a25a96101f1c38ed",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174fab514f2a25a96101f1c38ed",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178fab514f2a25a96101f1c38ed",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Jerome Sabbagh",
+    "popularity": 12,
+    "type": "artist",
+    "uri": "spotify:artist:5QyGCDcadoRovdmVqEu8JT"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:59:19.878610",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2ka8z2lwkcp13fG8Wyv3xU"
+    },
+    "followers": {
+      "href": null,
+      "total": 90124
+    },
+    "genres": [
+      "bluegrass",
+      "newgrass",
+      "americana"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2ka8z2lwkcp13fG8Wyv3xU",
+    "id": "2ka8z2lwkcp13fG8Wyv3xU",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebfc9bbd6477cc3fe11e03146a",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174fc9bbd6477cc3fe11e03146a",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178fc9bbd6477cc3fe11e03146a",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Béla Fleck",
+    "popularity": 42,
+    "type": "artist",
+    "uri": "spotify:artist:2ka8z2lwkcp13fG8Wyv3xU"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T20:03:51.597322",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6s1SjCXRjeNAa3aRNiYROK"
+    },
+    "followers": {
+      "href": null,
+      "total": 34005
+    },
+    "genres": [
+      "dub techno",
+      "idm",
+      "industrial",
+      "experimental"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6s1SjCXRjeNAa3aRNiYROK",
+    "id": "6s1SjCXRjeNAa3aRNiYROK",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb91bc18ece360bee56573115e",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517491bc18ece360bee56573115e",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17891bc18ece360bee56573115e",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "SHXCXCHCXSH",
+    "popularity": 22,
+    "type": "artist",
+    "uri": "spotify:artist:6s1SjCXRjeNAa3aRNiYROK"
+  }
+}

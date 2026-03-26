@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:58:03.300205",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1TV0WTE9ukywcLGMh4j4iU"
+    },
+    "followers": {
+      "href": null,
+      "total": 32077
+    },
+    "genres": [
+      "acid house",
+      "madchester",
+      "chicago house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1TV0WTE9ukywcLGMh4j4iU",
+    "id": "1TV0WTE9ukywcLGMh4j4iU",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebc1761d863e4c32b45a813b7e",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174c1761d863e4c32b45a813b7e",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178c1761d863e4c32b45a813b7e",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "A Guy Called Gerald",
+    "popularity": 35,
+    "type": "artist",
+    "uri": "spotify:artist:1TV0WTE9ukywcLGMh4j4iU"
+  }
+}

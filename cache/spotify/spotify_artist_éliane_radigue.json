@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-11-03T19:49:53.363922",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1oG3G8tFIIseWu474ardvh"
+    },
+    "followers": {
+      "href": null,
+      "total": 26335
+    },
+    "genres": [
+      "drone",
+      "minimalism",
+      "ambient",
+      "avant-garde",
+      "experimental"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1oG3G8tFIIseWu474ardvh",
+    "id": "1oG3G8tFIIseWu474ardvh",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ae83ae18580b4962b6b87e023f48cd2e47d4b22c",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/b89bf8f232afdee55d89a98f238f28f7cf5b9763",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/5995529657f56736041c1b7e9f2ef229a24a553e",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/e711e092afc0340c191d9cb92fed065b79cced5a",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Éliane Radigue",
+    "popularity": 13,
+    "type": "artist",
+    "uri": "spotify:artist:1oG3G8tFIIseWu474ardvh"
+  }
+}

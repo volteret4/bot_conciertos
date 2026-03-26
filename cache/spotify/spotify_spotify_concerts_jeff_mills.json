@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-25T08:46:14.879183",
+  "data": [
+    {
+      "artist": "Jeff Mills",
+      "artist_name": "Jeff Mills",
+      "name": "Jeff Mills Concert (0BG3bqRE)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/0BG3bqREWzGtw4vn1rObSu",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Jeff Mills",
+      "artist_name": "Jeff Mills",
+      "name": "Jeff Mills Concert (36Ax5kOZ)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/36Ax5kOZgMM1veyxj1F252",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Jeff Mills",
+      "artist_name": "Jeff Mills",
+      "name": "Jeff Mills Concert (3oBjOCEq)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/3oBjOCEqiBhHqPLGGTQyBg",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Jeff Mills",
+      "artist_name": "Jeff Mills",
+      "name": "Jeff Mills at Jazz Cafe",
+      "venue": "Jazz Cafe",
+      "city": "London",
+      "country": "GB",
+      "date": "2025-09-27",
+      "time": "5:00 PM",
+      "url": "https://open.spotify.com/concert/0zgpvJkxC5DOHqjeQBeHRe",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Jeff Mills",
+      "artist_name": "Jeff Mills",
+      "name": "Jeff Mills at Jazz Cafe",
+      "venue": "Jazz Cafe",
+      "city": "London",
+      "country": "GB",
+      "date": "2025-09-27",
+      "time": "7:45 PM",
+      "url": "https://open.spotify.com/concert/54RZXZsCS5Bl4MTcY60R99",
+      "source": "Spotify"
+    }
+  ]
+}

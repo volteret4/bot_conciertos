@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:55:37.291506",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5CG9X521RDFWCuAhlo6QoR"
+    },
+    "followers": {
+      "href": null,
+      "total": 676780
+    },
+    "genres": [
+      "afrobeat",
+      "highlife",
+      "afropop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5CG9X521RDFWCuAhlo6QoR",
+    "id": "5CG9X521RDFWCuAhlo6QoR",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb09571fb5577b68d01d7b7506",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517409571fb5577b68d01d7b7506",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17809571fb5577b68d01d7b7506",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Fela Kuti",
+    "popularity": 47,
+    "type": "artist",
+    "uri": "spotify:artist:5CG9X521RDFWCuAhlo6QoR"
+  }
+}

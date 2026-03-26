@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:48:15.223424",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0RYyGExpy57GLGa1GtFoVo"
+    },
+    "followers": {
+      "href": null,
+      "total": 145228
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/0RYyGExpy57GLGa1GtFoVo",
+    "id": "0RYyGExpy57GLGa1GtFoVo",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/052de04a5c66dfd07db0b04e46208cc9af16b9fd",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/69526c8aa78690c8730ac50906e1770e101c0413",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/452ee9f78bc397dc43a32063d8fd89a216f19a13",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/3b8da466bf72173e2564fdfb3d4324ab95003782",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Nino Rota",
+    "popularity": 54,
+    "type": "artist",
+    "uri": "spotify:artist:0RYyGExpy57GLGa1GtFoVo"
+  }
+}

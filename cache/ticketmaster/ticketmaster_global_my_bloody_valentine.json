@@ -1,0 +1,96 @@
+{
+  "timestamp": "2025-10-23T17:14:53.494791",
+  "concerts": [
+    {
+      "artist": "my bloody valentine",
+      "name": "My Bloody Valentine",
+      "venue": "3Arena",
+      "city": "Dublin",
+      "country": "Ireland",
+      "country_code": "IE",
+      "date": "2025-11-22",
+      "time": "18:30:00",
+      "url": "https://www.ticketmaster.ie/my-bloody-valentine-dublin-22-11-2025/event/18006174EF1F9978",
+      "source": "Ticketmaster",
+      "id": "1AbZkAVGkdR6yPz"
+    },
+    {
+      "artist": "my bloody valentine",
+      "name": "My Bloody Valentine",
+      "venue": "3Arena",
+      "city": "Dublin",
+      "country": "Irl",
+      "country_code": "IRL",
+      "date": "2025-11-22",
+      "time": "18:30:00",
+      "url": "",
+      "source": "Ticketmaster",
+      "id": "Za5ju3rKuqZBsSsxkxjgFYDm2kSCourXU"
+    },
+    {
+      "artist": "my bloody valentine",
+      "name": "My Bloody Valentine",
+      "venue": "3Arena",
+      "city": "Dublin",
+      "country": "Irl",
+      "country_code": "IRL",
+      "date": "2025-11-22",
+      "time": "18:30:00",
+      "url": "",
+      "source": "Ticketmaster",
+      "id": "Za5ju3rKuqZDdWak2HLLWAAzN4-Q_EhIvt"
+    },
+    {
+      "artist": "my bloody valentine",
+      "name": "My Bloody Valentine",
+      "venue": "Aviva Studios - Warehouse",
+      "city": "Manchester",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2025-11-24",
+      "time": "18:00:00",
+      "url": "https://www.ticketmaster.co.uk/my-bloody-valentine-manchester-24-11-2025/event/3500627CDB29A6EF",
+      "source": "Ticketmaster",
+      "id": "1AdfZbEGkSh1QhR"
+    },
+    {
+      "artist": "my bloody valentine",
+      "name": "My Bloody Valentine - Venue Premium Tickets",
+      "venue": "OVO Arena, Wembley",
+      "city": "London",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2025-11-25",
+      "time": "18:00:00",
+      "url": "https://www.ticketmaster.co.uk/my-bloody-valentine-venue-premium-tickets-london-25-11-2025/event/37006323D01D4E59",
+      "source": "Ticketmaster",
+      "id": "1AMZkGNGkd86fy_"
+    },
+    {
+      "artist": "my bloody valentine",
+      "name": "my bloody valentine",
+      "venue": "OVO Arena, Wembley",
+      "city": "London",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2025-11-25",
+      "time": "18:00:00",
+      "url": "https://www.ticketmaster.co.uk/my-bloody-valentine-london-25-11-2025/event/37006274C8957047",
+      "source": "Ticketmaster",
+      "id": "1AMZkaVGkdFP9v6"
+    },
+    {
+      "artist": "my bloody valentine",
+      "name": "My Bloody Valentine",
+      "venue": "OVO Hydro",
+      "city": "Glasgow",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2025-11-27",
+      "time": "18:30:00",
+      "url": "https://www.ticketmaster.co.uk/my-bloody-valentine-glasgow-27-11-2025/event/3600627C077E5A4C",
+      "source": "Ticketmaster",
+      "id": "1AdbZbEGkY6LPtG"
+    }
+  ]
+}

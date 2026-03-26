@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:48:10.786889",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5BvJzeQpmsdsFp4HGUYUEx"
+    },
+    "followers": {
+      "href": null,
+      "total": 2032735
+    },
+    "genres": [
+      "indie",
+      "baroque pop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5BvJzeQpmsdsFp4HGUYUEx",
+    "id": "5BvJzeQpmsdsFp4HGUYUEx",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb0bb49b0b71ab3f5871860617",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051740bb49b0b71ab3f5871860617",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1780bb49b0b71ab3f5871860617",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Vampire Weekend",
+    "popularity": 61,
+    "type": "artist",
+    "uri": "spotify:artist:5BvJzeQpmsdsFp4HGUYUEx"
+  }
+}

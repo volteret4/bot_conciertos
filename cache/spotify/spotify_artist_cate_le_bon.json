@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:55:50.066563",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0LZac5VicY19QLaIUvIB0G"
+    },
+    "followers": {
+      "href": null,
+      "total": 139747
+    },
+    "genres": [
+      "art pop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0LZac5VicY19QLaIUvIB0G",
+    "id": "0LZac5VicY19QLaIUvIB0G",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eba948295910eb423e90041d88",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174a948295910eb423e90041d88",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178a948295910eb423e90041d88",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Cate Le Bon",
+    "popularity": 49,
+    "type": "artist",
+    "uri": "spotify:artist:0LZac5VicY19QLaIUvIB0G"
+  }
+}

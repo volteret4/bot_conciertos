@@ -1,0 +1,96 @@
+{
+  "timestamp": "2025-10-23T17:12:04.640830",
+  "concerts": [
+    {
+      "artist": "Blue Lake",
+      "name": "Blue October",
+      "venue": "The Union",
+      "city": "Salt Lake City",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-10-25",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/blue-october-salt-lake-city-utah-10-25-2025/event/1E0062A6FBE94328",
+      "source": "Ticketmaster",
+      "id": "G5vzZbnhDBfGI"
+    },
+    {
+      "artist": "Blue Lake",
+      "name": "Greyhaven - Keep It Quiet Tour w/ Special Guests Fox Lake & Commoner",
+      "venue": "The Parish at House of Blues Anaheim",
+      "city": "Anaheim",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-01",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/greyhaven-keep-it-quiet-tour-w-anaheim-california-12-01-2025/event/090062FDB9074530",
+      "source": "Ticketmaster",
+      "id": "vvG10ZbRUyvVfY"
+    },
+    {
+      "artist": "Blue Lake",
+      "name": "Utah Mammoth vs. St. Louis Blues",
+      "venue": "Delta Center",
+      "city": "Salt Lake City",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-01-09",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7_6PP",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7_6PP"
+    },
+    {
+      "artist": "Blue Lake",
+      "name": "Utah Mammoth vs. Columbus Blue Jackets",
+      "venue": "Delta Center",
+      "city": "Salt Lake City",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-01-11",
+      "time": "17:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7_6PJ",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7_6PJ"
+    },
+    {
+      "artist": "Blue Lake",
+      "name": "Salt Lake City Stars vs. Oklahoma City Blue",
+      "venue": "Maverik Center",
+      "city": "West Valley City",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-02-19",
+      "time": "18:00:00",
+      "url": "https://www.ticketmaster.com/salt-lake-city-stars-vs-oklahoma-west-valley-city-utah-02-19-2026/event/1E00633DA77229EE",
+      "source": "Ticketmaster",
+      "id": "G5vzZbSUEjxEm"
+    },
+    {
+      "artist": "Blue Lake",
+      "name": "Salt Lake City Stars vs. Oklahoma City Blue",
+      "venue": "Maverik Center",
+      "city": "West Valley City",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-02-20",
+      "time": "18:00:00",
+      "url": "https://www.ticketmaster.com/salt-lake-city-stars-vs-oklahoma-west-valley-city-utah-02-20-2026/event/1E00633DA77529F9",
+      "source": "Ticketmaster",
+      "id": "G5vzZbSUEq3Ey"
+    },
+    {
+      "artist": "Blue Lake",
+      "name": "Utah Mammoth vs. St. Louis Blues",
+      "venue": "Delta Center",
+      "city": "Salt Lake City",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-04-16",
+      "time": "18:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7_6J6",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7_6J6"
+    }
+  ]
+}

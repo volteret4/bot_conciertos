@@ -1,0 +1,122 @@
+{
+  "timestamp": "2025-10-23T17:11:15.217697",
+  "concerts": [
+    {
+      "artist": "Childish Gambino",
+      "name": "Candlelight: Neo-Soul Favorites ft. Songs by Prince, Childish Gambino, & More",
+      "venue": "White Eagle Hall",
+      "city": "Jersey City",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-23",
+      "time": "20:30:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7jgpe",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7jgpe"
+    },
+    {
+      "artist": "Childish Gambino",
+      "name": "Candlelight: Neo-Soul Favorites ft. Songs by Prince, Childish Gambino, & More",
+      "venue": "White Eagle Hall",
+      "city": "Jersey City",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-01-08",
+      "time": "20:30:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7jgp6",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7jgp6"
+    },
+    {
+      "artist": "Childish Gambino",
+      "name": "Childish Gambino - The New World Tour",
+      "venue": "United Center",
+      "city": "Chicago",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-09-08",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/childish-gambino-the-new-world-tour-chicago-illinois-09-08-2026/event/040060A2C4731F96",
+      "source": "Ticketmaster",
+      "id": "vvG18Zb157jsXp"
+    },
+    {
+      "artist": "Childish Gambino",
+      "name": "Childish Gambino - The New World Tour",
+      "venue": "Grand Casino Arena",
+      "city": "Saint Paul",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-09-08",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/childish-gambino-the-new-world-tour-saint-paul-minnesota-09-08-2026/event/060060A7BA093A8A",
+      "source": "Ticketmaster",
+      "id": "vvG1bZb1rBeKn1"
+    },
+    {
+      "artist": "Childish Gambino",
+      "name": "Childish Gambino - The New World Tour",
+      "venue": "Ball Arena",
+      "city": "Denver",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-09-08",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/childish-gambino-the-new-world-tour-denver-colorado-09-08-2026/event/1E0060A1D8DF41DD",
+      "source": "Ticketmaster",
+      "id": "G5vzZb16bMV6q"
+    },
+    {
+      "artist": "Childish Gambino",
+      "name": "Club Level Seating: Childish Gambino",
+      "venue": "Ball Arena",
+      "city": "Denver",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-09-08",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/club-level-seating-childish-gambino-denver-colorado-09-08-2026/event/1E0060AF85F415D1",
+      "source": "Ticketmaster",
+      "id": "G5vzZb1XAWv9o"
+    },
+    {
+      "artist": "Childish Gambino",
+      "name": "PREMIUM SEATING: CHILDISH GAMBINO",
+      "venue": "Rogers Arena Concerts",
+      "city": "Vancouver",
+      "country": "Can",
+      "country_code": "CAN",
+      "date": "2026-09-08",
+      "time": "19:00:00",
+      "url": "",
+      "source": "Ticketmaster",
+      "id": "Za5ju3rKuqZDd-UkLXyByCGFY1sf295uV9"
+    },
+    {
+      "artist": "Childish Gambino",
+      "name": "Childish Gambino - The New World Tour",
+      "venue": "Chase Center",
+      "city": "San Francisco",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-09-08",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/childish-gambino-the-new-world-tour-san-francisco-california-09-08-2026/event/1C0060A2A7C0628F",
+      "source": "Ticketmaster",
+      "id": "G5vYZb11EYk12"
+    },
+    {
+      "artist": "Childish Gambino",
+      "name": "Childish Gambino - The New World Tour",
+      "venue": "Moda Center",
+      "city": "Portland",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-09-08",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/childish-gambino-the-new-world-tour-portland-oregon-09-08-2026/event/0F0060A1E7644A41",
+      "source": "Ticketmaster",
+      "id": "vvG1HZb16E_7tv"
+    }
+  ]
+}

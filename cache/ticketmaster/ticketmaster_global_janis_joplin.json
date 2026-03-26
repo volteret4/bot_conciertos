@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-10-23T17:09:24.014388",
+  "concerts": [
+    {
+      "artist": "Janis Joplin",
+      "name": "Kozmic Blue (D) - Tribute to Janis Joplin",
+      "venue": "Spirit of 66",
+      "city": "Verviers",
+      "country": "Belgium",
+      "country_code": "BE",
+      "date": "2025-12-05",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.be/event/kozmic-blue-d-tribute-to-janis-joplin-tickets/628022492",
+      "source": "Ticketmaster",
+      "id": "Z698xZG2Z1kbIZx33"
+    }
+  ]
+}

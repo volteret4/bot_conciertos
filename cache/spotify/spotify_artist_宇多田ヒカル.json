@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:48:09.691981",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7lbSsjYACZHn1MSDXPxNF2"
+    },
+    "followers": {
+      "href": null,
+      "total": 4122934
+    },
+    "genres": [
+      "j-pop",
+      "j-r&b",
+      "anime"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7lbSsjYACZHn1MSDXPxNF2",
+    "id": "7lbSsjYACZHn1MSDXPxNF2",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebde34b7e4e334eb0260766f2e",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174de34b7e4e334eb0260766f2e",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178de34b7e4e334eb0260766f2e",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Hikaru Utada",
+    "popularity": 71,
+    "type": "artist",
+    "uri": "spotify:artist:7lbSsjYACZHn1MSDXPxNF2"
+  }
+}

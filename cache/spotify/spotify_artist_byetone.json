@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T20:01:08.347321",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6ysohaI3qDxQ5qDVAq7Vbd"
+    },
+    "followers": {
+      "href": null,
+      "total": 14552
+    },
+    "genres": [
+      "glitch",
+      "idm",
+      "minimal techno",
+      "dub techno"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6ysohaI3qDxQ5qDVAq7Vbd",
+    "id": "6ysohaI3qDxQ5qDVAq7Vbd",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb073634bf00b7ebc9f517602b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174073634bf00b7ebc9f517602b",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178073634bf00b7ebc9f517602b",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Byetone",
+    "popularity": 13,
+    "type": "artist",
+    "uri": "spotify:artist:6ysohaI3qDxQ5qDVAq7Vbd"
+  }
+}

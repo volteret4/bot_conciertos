@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:03:23.849130",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4LEiUm1SRbFMgfqnQTwUbQ"
+    },
+    "followers": {
+      "href": null,
+      "total": 3943954
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/4LEiUm1SRbFMgfqnQTwUbQ",
+    "id": "4LEiUm1SRbFMgfqnQTwUbQ",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb1a0c1f04c95539fd55ef0ebb",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051741a0c1f04c95539fd55ef0ebb",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1781a0c1f04c95539fd55ef0ebb",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Bon Iver",
+    "popularity": 76,
+    "type": "artist",
+    "uri": "spotify:artist:4LEiUm1SRbFMgfqnQTwUbQ"
+  }
+}

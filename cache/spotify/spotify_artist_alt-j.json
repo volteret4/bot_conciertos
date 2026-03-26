@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:47:11.478861",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3XHO7cRUPCLOr6jwp8vsx5"
+    },
+    "followers": {
+      "href": null,
+      "total": 3424962
+    },
+    "genres": [
+      "indie",
+      "indie rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3XHO7cRUPCLOr6jwp8vsx5",
+    "id": "3XHO7cRUPCLOr6jwp8vsx5",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb3fb5214e667e278a20878a6b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051743fb5214e667e278a20878a6b",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1783fb5214e667e278a20878a6b",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "alt-J",
+    "popularity": 67,
+    "type": "artist",
+    "uri": "spotify:artist:3XHO7cRUPCLOr6jwp8vsx5"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-09-02T08:08:43.567812",
+  "concerts": [
+    {
+      "artist": "Azymuth",
+      "name": "Azymuth & Sabrina Malheiros Australian Tour 2025",
+      "venue": "Lion Arts Factory",
+      "city": "Adelaide",
+      "country": "AU",
+      "date": "2025-10-29",
+      "time": "19:00:00",
+      "url": "https://www.moshtix.com.au/v2/event/azymuth-sabrina-malheiros-australian-tour-2025/184492",
+      "source": "Ticketmaster",
+      "id": "ZFwVzcymWZ17k733"
+    },
+    {
+      "artist": "Azymuth",
+      "name": "Azymuth & Sabrina Malheiros Australian Tour 2025",
+      "venue": "Freo.Social",
+      "city": "Fremantle",
+      "country": "AU",
+      "date": "2025-11-05",
+      "time": "19:00:00",
+      "url": "https://www.moshtix.com.au/v2/event/azymuth-sabrina-malheiros-australian-tour-2025/184535",
+      "source": "Ticketmaster",
+      "id": "ZFwVzcymWZ17k7fg"
+    }
+  ]
+}

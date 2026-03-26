@@ -1,0 +1,20 @@
+{
+  "timestamp": "2025-11-03T19:48:58.711468",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6EMR9xUcwYHrvpiSZKtN2c"
+    },
+    "followers": {
+      "href": null,
+      "total": 34429
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/6EMR9xUcwYHrvpiSZKtN2c",
+    "id": "6EMR9xUcwYHrvpiSZKtN2c",
+    "images": [],
+    "name": "Lonnie Liston Smith and the Cosmic Echoes",
+    "popularity": 0,
+    "type": "artist",
+    "uri": "spotify:artist:6EMR9xUcwYHrvpiSZKtN2c"
+  }
+}

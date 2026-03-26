@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:48:48.336221",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0eW6yRE8ePadhUe1Numam9"
+    },
+    "followers": {
+      "href": null,
+      "total": 23989
+    },
+    "genres": [
+      "pop punk"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0eW6yRE8ePadhUe1Numam9",
+    "id": "0eW6yRE8ePadhUe1Numam9",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb5feba253d63e12d1daf07ee2",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051745feba253d63e12d1daf07ee2",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1785feba253d63e12d1daf07ee2",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Sherwood",
+    "popularity": 21,
+    "type": "artist",
+    "uri": "spotify:artist:0eW6yRE8ePadhUe1Numam9"
+  }
+}

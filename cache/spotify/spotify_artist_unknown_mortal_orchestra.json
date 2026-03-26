@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:48:08.782084",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1LeVJ5GPeYDOVUjxx1y7Rp"
+    },
+    "followers": {
+      "href": null,
+      "total": 896351
+    },
+    "genres": [
+      "neo-psychedelic"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1LeVJ5GPeYDOVUjxx1y7Rp",
+    "id": "1LeVJ5GPeYDOVUjxx1y7Rp",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebe6d5bde61a28cfb8e53893e1",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174e6d5bde61a28cfb8e53893e1",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178e6d5bde61a28cfb8e53893e1",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Unknown Mortal Orchestra",
+    "popularity": 56,
+    "type": "artist",
+    "uri": "spotify:artist:1LeVJ5GPeYDOVUjxx1y7Rp"
+  }
+}

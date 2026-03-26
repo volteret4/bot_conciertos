@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:58:04.297126",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5DGJC3n9DS0Y9eY5ul9y0O"
+    },
+    "followers": {
+      "href": null,
+      "total": 147083
+    },
+    "genres": [
+      "southern gothic",
+      "ambient folk"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5DGJC3n9DS0Y9eY5ul9y0O",
+    "id": "5DGJC3n9DS0Y9eY5ul9y0O",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb25e0d38b941335ddcf8724e0",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517425e0d38b941335ddcf8724e0",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17825e0d38b941335ddcf8724e0",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Marika Hackman",
+    "popularity": 43,
+    "type": "artist",
+    "uri": "spotify:artist:5DGJC3n9DS0Y9eY5ul9y0O"
+  }
+}

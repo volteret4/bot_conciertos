@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-25T09:29:02.118176",
+  "data": [
+    {
+      "artist": "Tears for Fears",
+      "artist_name": "Tears for Fears",
+      "name": "Tears for Fears Concert (5UaxAYW2)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/5UaxAYW2S0WCTZISvwPjxl",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Tears for Fears",
+      "artist_name": "Tears for Fears",
+      "name": "Tears for Fears at Fontainebleau",
+      "venue": "Fontainebleau",
+      "city": "Las Vegas",
+      "country": "US",
+      "date": "2025-09-26",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/1nJRsEIEdkCaDGat8us1oH",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Tears for Fears",
+      "artist_name": "Tears for Fears",
+      "name": "Tears for Fears at Fontainebleau",
+      "venue": "Fontainebleau",
+      "city": "Las Vegas",
+      "country": "US",
+      "date": "2025-09-27",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/4NvXGZ9ZMdHZKfMnva4CRg",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Tears for Fears",
+      "artist_name": "Tears for Fears",
+      "name": "Tears for Fears at Fontainebleau",
+      "venue": "Fontainebleau",
+      "city": "Las Vegas",
+      "country": "US",
+      "date": "2025-10-22",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/1tEHlUmlgRrkxi5A886VOI",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Tears for Fears",
+      "artist_name": "Tears for Fears",
+      "name": "Tears for Fears Concert (76qdTjNE)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/76qdTjNExWBiK1Xuysz193",
+      "source": "Spotify"
+    }
+  ]
+}

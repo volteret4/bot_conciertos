@@ -1,0 +1,70 @@
+{
+  "timestamp": "2025-10-23T17:09:06.090072",
+  "concerts": [
+    {
+      "artist": "I Hate Models",
+      "name": "Terminal V Halloween 2025",
+      "venue": "Royal Highland Centre",
+      "city": "Edinburgh",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2025-11-01",
+      "time": "12:00:00",
+      "url": "https://www.universe.com/events/terminal-v-halloween-2025-tickets-XB15DT?ref=ticketmaster",
+      "source": "Ticketmaster",
+      "id": "LvZ18QaV_q3rSCYZIRq2W"
+    },
+    {
+      "artist": "I Hate Models",
+      "name": "Second Speed: I Hate Models Liverpool",
+      "venue": "Blackstone Street Warehouse, ",
+      "city": " Liverpool",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2025-11-22",
+      "time": "14:00:00",
+      "url": "https://www.universe.com/events/second-speed-i-hate-models-liverpool-tickets-KRFXZJ?ref=ticketmaster",
+      "source": "Ticketmaster",
+      "id": "LvZ18QGRuhb7ESOZNhfi3"
+    },
+    {
+      "artist": "I Hate Models",
+      "name": "I Hate Models",
+      "venue": "Echostage",
+      "city": "Washington",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-26",
+      "time": "22:00:00",
+      "url": "https://www.ticketmaster.com/i-hate-models-washington-district-of-columbia-11-26-2025/event/1500632ECD3537F4",
+      "source": "Ticketmaster",
+      "id": "1AvfZbwGkDuuKLV"
+    },
+    {
+      "artist": "I Hate Models",
+      "name": "I Hate Models",
+      "venue": "The Fortitude Music Hall",
+      "city": "Brisbane",
+      "country": "Australia",
+      "country_code": "AU",
+      "date": "2025-12-31",
+      "time": "22:00:00",
+      "url": "https://www.ticketmaster.com.au/i-hate-models-brisbane-31-12-2025/event/130063322C370B25",
+      "source": "Ticketmaster",
+      "id": "1k7YvNGxGAGuYiP"
+    },
+    {
+      "artist": "I Hate Models",
+      "name": "I Hate Models",
+      "venue": "PICA (Port Melbourne Industrial Centre for the Arts)",
+      "city": "Port Melbourne",
+      "country": "Australia",
+      "country_code": "AU",
+      "date": "2026-01-03",
+      "time": "17:00:00",
+      "url": "https://www.ticketmaster.com.au/i-hate-models-port-melbourne-03-01-2026/event/25006321D779218D",
+      "source": "Ticketmaster",
+      "id": "1APZkG-Gkd9r3ku"
+    }
+  ]
+}

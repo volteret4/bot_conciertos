@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-10-23T17:51:51.824065",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0KqSULB80ft2H3aFg6kJmN"
+    },
+    "followers": {
+      "href": null,
+      "total": 293956
+    },
+    "genres": [
+      "hard techno",
+      "acid techno",
+      "techno",
+      "tekno"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0KqSULB80ft2H3aFg6kJmN",
+    "id": "0KqSULB80ft2H3aFg6kJmN",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb1a0d54ab853f86eba713585b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051741a0d54ab853f86eba713585b",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1781a0d54ab853f86eba713585b",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "I Hate Models",
+    "popularity": 46,
+    "type": "artist",
+    "uri": "spotify:artist:0KqSULB80ft2H3aFg6kJmN"
+  }
+}

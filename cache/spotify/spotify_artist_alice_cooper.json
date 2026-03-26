@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T19:59:56.367761",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3EhbVgyfGd7HkpsagwL9GS"
+    },
+    "followers": {
+      "href": null,
+      "total": 4042329
+    },
+    "genres": [
+      "glam rock",
+      "hard rock",
+      "glam metal",
+      "proto-punk",
+      "classic rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3EhbVgyfGd7HkpsagwL9GS",
+    "id": "3EhbVgyfGd7HkpsagwL9GS",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb33b97c45348420d27fb92d68",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517433b97c45348420d27fb92d68",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17833b97c45348420d27fb92d68",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Alice Cooper",
+    "popularity": 63,
+    "type": "artist",
+    "uri": "spotify:artist:3EhbVgyfGd7HkpsagwL9GS"
+  }
+}

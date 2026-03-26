@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:49:59.899657",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7jLxCKIw1LMQXKAFArmyvI"
+    },
+    "followers": {
+      "href": null,
+      "total": 3158
+    },
+    "genres": [
+      "post-disco",
+      "disco",
+      "disco house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7jLxCKIw1LMQXKAFArmyvI",
+    "id": "7jLxCKIw1LMQXKAFArmyvI",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb86f8d25efbc3bc3d6db57b3a",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517486f8d25efbc3bc3d6db57b3a",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17886f8d25efbc3bc3d6db57b3a",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Rhyze",
+    "popularity": 18,
+    "type": "artist",
+    "uri": "spotify:artist:7jLxCKIw1LMQXKAFArmyvI"
+  }
+}

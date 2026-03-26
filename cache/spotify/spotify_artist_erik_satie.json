@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T19:48:33.619089",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/459INk8vcC0ebEef82WjIK"
+    },
+    "followers": {
+      "href": null,
+      "total": 940913
+    },
+    "genres": [
+      "classical",
+      "classical piano"
+    ],
+    "href": "https://api.spotify.com/v1/artists/459INk8vcC0ebEef82WjIK",
+    "id": "459INk8vcC0ebEef82WjIK",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/dd55078caac8105a3799c9d29f5172410da0c904",
+        "height": 1400,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/05107530f1e0d55767a75276343096549d9bc6ae",
+        "height": 896,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/4f3c0102db86094f5c0a99ce597ed2b67123b6f2",
+        "height": 280,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/96d037fbbb0cd750b90acc103de09bb741e45b60",
+        "height": 90,
+        "width": 64
+      }
+    ],
+    "name": "Erik Satie",
+    "popularity": 66,
+    "type": "artist",
+    "uri": "spotify:artist:459INk8vcC0ebEef82WjIK"
+  }
+}

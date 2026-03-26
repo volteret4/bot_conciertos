@@ -1,0 +1,45 @@
+{
+  "timestamp": "2025-11-03T19:56:22.265075",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/37w38cCSGgKLdayTRjna4W"
+    },
+    "followers": {
+      "href": null,
+      "total": 1829933
+    },
+    "genres": [
+      "dream pop",
+      "shoegaze",
+      "slowcore"
+    ],
+    "href": "https://api.spotify.com/v1/artists/37w38cCSGgKLdayTRjna4W",
+    "id": "37w38cCSGgKLdayTRjna4W",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6772690000c46c93b4c6192035c98af64d4da3",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000dd2293b4c6192035c98af64d4da3",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000bac393b4c6192035c98af64d4da3",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67726900008f7493b4c6192035c98af64d4da3",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Mazzy Star",
+    "popularity": 71,
+    "type": "artist",
+    "uri": "spotify:artist:37w38cCSGgKLdayTRjna4W"
+  }
+}

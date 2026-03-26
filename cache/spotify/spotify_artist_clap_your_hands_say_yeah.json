@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-10-23T17:54:19.732918",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1jSaZgaKHmgc7VTgML528r"
+    },
+    "followers": {
+      "href": null,
+      "total": 189436
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/1jSaZgaKHmgc7VTgML528r",
+    "id": "1jSaZgaKHmgc7VTgML528r",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb431a75b6e3131eaea120effe",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174431a75b6e3131eaea120effe",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178431a75b6e3131eaea120effe",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Clap Your Hands Say Yeah",
+    "popularity": 39,
+    "type": "artist",
+    "uri": "spotify:artist:1jSaZgaKHmgc7VTgML528r"
+  }
+}

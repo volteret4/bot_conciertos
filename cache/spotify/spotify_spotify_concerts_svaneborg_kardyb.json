@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-24T09:15:56.591031",
+  "data": [
+    {
+      "artist": "Svaneborg Kardyb",
+      "artist_name": "Svaneborg Kardyb",
+      "name": "Svaneborg Kardyb at Kunsthal Charlottenborg",
+      "venue": "Kunsthal Charlottenborg",
+      "city": "København K",
+      "country": "US",
+      "date": "2025-08-29",
+      "time": "4:30 PM",
+      "url": "https://open.spotify.com/concert/2FH0qhE8D1UrYv9oILVsQx",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Svaneborg Kardyb",
+      "artist_name": "Svaneborg Kardyb",
+      "name": "Svaneborg Kardyb Concert (78NFb6Vo)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/78NFb6Vo4Rfibu0yrlhdb9",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Svaneborg Kardyb",
+      "artist_name": "Svaneborg Kardyb",
+      "name": "Svaneborg Kardyb at Emmauskirche",
+      "venue": "Emmauskirche",
+      "city": "Berlin",
+      "country": "DE",
+      "date": "2025-10-15",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/73QFAmHKZrUX1mzoDHwvjh",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Svaneborg Kardyb",
+      "artist_name": "Svaneborg Kardyb",
+      "name": "Svaneborg Kardyb at Jazzclub Tonne",
+      "venue": "Jazzclub Tonne",
+      "city": "Dresden",
+      "country": "DE",
+      "date": "2025-10-16",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/0KX1TCmIcaeXeg2a1PZtd0",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Svaneborg Kardyb",
+      "artist_name": "Svaneborg Kardyb",
+      "name": "Svaneborg Kardyb at Nummer zu Platz",
+      "venue": "Nummer zu Platz",
+      "city": "Bielefeld",
+      "country": "DE",
+      "date": "2025-10-17",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/1X05YopxyfJX8ypIsUIRuQ",
+      "source": "Spotify"
+    }
+  ]
+}

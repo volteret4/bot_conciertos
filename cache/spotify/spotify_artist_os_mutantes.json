@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:55:01.388714",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5C0gCCG8N5Dh5dZytIgzLX"
+    },
+    "followers": {
+      "href": null,
+      "total": 344382
+    },
+    "genres": [
+      "mpb",
+      "brazilian rock",
+      "psychedelic rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5C0gCCG8N5Dh5dZytIgzLX",
+    "id": "5C0gCCG8N5Dh5dZytIgzLX",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb9864aff8c135cd013fb758c3",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051749864aff8c135cd013fb758c3",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1789864aff8c135cd013fb758c3",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Os Mutantes",
+    "popularity": 44,
+    "type": "artist",
+    "uri": "spotify:artist:5C0gCCG8N5Dh5dZytIgzLX"
+  }
+}

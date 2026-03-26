@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:57:50.693929",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3VdjlG06JkVAnZ19TR7ZHZ"
+    },
+    "followers": {
+      "href": null,
+      "total": 46671
+    },
+    "genres": [
+      "post-rock",
+      "space rock",
+      "drone"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3VdjlG06JkVAnZ19TR7ZHZ",
+    "id": "3VdjlG06JkVAnZ19TR7ZHZ",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb664a496a0897e11520cf2efc",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174664a496a0897e11520cf2efc",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178664a496a0897e11520cf2efc",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Grails",
+    "popularity": 27,
+    "type": "artist",
+    "uri": "spotify:artist:3VdjlG06JkVAnZ19TR7ZHZ"
+  }
+}

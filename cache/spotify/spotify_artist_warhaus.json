@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:04:25.495227",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5uy67fWgovgNdbkP1kAf7m"
+    },
+    "followers": {
+      "href": null,
+      "total": 158070
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/5uy67fWgovgNdbkP1kAf7m",
+    "id": "5uy67fWgovgNdbkP1kAf7m",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb284376488b5fecd6506144f9",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174284376488b5fecd6506144f9",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178284376488b5fecd6506144f9",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Warhaus",
+    "popularity": 49,
+    "type": "artist",
+    "uri": "spotify:artist:5uy67fWgovgNdbkP1kAf7m"
+  }
+}

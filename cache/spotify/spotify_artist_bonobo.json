@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T20:00:53.544468",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0cmWgDlu9CwTgxPhf403hb"
+    },
+    "followers": {
+      "href": null,
+      "total": 1468529
+    },
+    "genres": [
+      "trip hop",
+      "downtempo",
+      "nu jazz",
+      "electronic"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0cmWgDlu9CwTgxPhf403hb",
+    "id": "0cmWgDlu9CwTgxPhf403hb",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebb9a3462bde9f62d74aa50507",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174b9a3462bde9f62d74aa50507",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178b9a3462bde9f62d74aa50507",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Bonobo",
+    "popularity": 62,
+    "type": "artist",
+    "uri": "spotify:artist:0cmWgDlu9CwTgxPhf403hb"
+  }
+}

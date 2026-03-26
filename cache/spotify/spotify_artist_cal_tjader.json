@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-11-03T19:47:50.254887",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3XOVABzceOUTbR3iEz0ImO"
+    },
+    "followers": {
+      "href": null,
+      "total": 69642
+    },
+    "genres": [
+      "latin jazz",
+      "exotica",
+      "cool jazz",
+      "jazz",
+      "brazilian jazz",
+      "bossa nova"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3XOVABzceOUTbR3iEz0ImO",
+    "id": "3XOVABzceOUTbR3iEz0ImO",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb8a8dcbbb945c80d2e43003c5",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051748a8dcbbb945c80d2e43003c5",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1788a8dcbbb945c80d2e43003c5",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Cal Tjader",
+    "popularity": 41,
+    "type": "artist",
+    "uri": "spotify:artist:3XOVABzceOUTbR3iEz0ImO"
+  }
+}

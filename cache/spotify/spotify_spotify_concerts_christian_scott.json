@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-25T08:17:54.256419",
+  "data": [
+    {
+      "artist": "Christian Scott",
+      "artist_name": "Christian Scott",
+      "name": "Christian Scott Concert (1ipDIeYT)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/1ipDIeYTxPMgbwFI0RIsyb",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Christian Scott",
+      "artist_name": "Christian Scott",
+      "name": "Christian Scott Concert (6SetEsdW)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/6SetEsdWZzBT6SwIO78buR",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Christian Scott",
+      "artist_name": "Christian Scott",
+      "name": "Christian Scott at Wind Creek Casino and Hotel - Atmore",
+      "venue": "Wind Creek Casino and Hotel - Atmore",
+      "city": "Atmore",
+      "country": "",
+      "date": "2025-09-06",
+      "time": "9:00 PM",
+      "url": "https://open.spotify.com/concert/5coOiNQTpJiyEY5fF3mwnz",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Christian Scott",
+      "artist_name": "Christian Scott",
+      "name": "Christian Scott at Opry House",
+      "venue": "Opry House",
+      "city": "Nashville",
+      "country": "US",
+      "date": "2025-10-17",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/6mSLYuL4clWGVJx3xge6BI",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Christian Scott",
+      "artist_name": "Christian Scott",
+      "name": "Christian Scott at Dow Event Center",
+      "venue": "Dow Event Center",
+      "city": "Saginaw",
+      "country": "US",
+      "date": "2025-11-06",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/7f9ERFvJucSKkafaYyxnMz",
+      "source": "Spotify"
+    }
+  ]
+}

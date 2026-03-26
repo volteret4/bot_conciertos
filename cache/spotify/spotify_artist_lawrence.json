@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:55:49.773786",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5rwUYLyUq8gBsVaOUcUxpE"
+    },
+    "followers": {
+      "href": null,
+      "total": 372321
+    },
+    "genres": [
+      "pop soul",
+      "retro soul",
+      "christmas"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5rwUYLyUq8gBsVaOUcUxpE",
+    "id": "5rwUYLyUq8gBsVaOUcUxpE",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb1cadffeb06d98e13611359db",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051741cadffeb06d98e13611359db",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1781cadffeb06d98e13611359db",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Lawrence",
+    "popularity": 54,
+    "type": "artist",
+    "uri": "spotify:artist:5rwUYLyUq8gBsVaOUcUxpE"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:55:52.540580",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3rQBSwv53vH5WgPz4YDill"
+    },
+    "followers": {
+      "href": null,
+      "total": 3880
+    },
+    "genres": [
+      "idm",
+      "space rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3rQBSwv53vH5WgPz4YDill",
+    "id": "3rQBSwv53vH5WgPz4YDill",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb684e014d6a71231255ffd441",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174684e014d6a71231255ffd441",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178684e014d6a71231255ffd441",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Robert Leiner",
+    "popularity": 15,
+    "type": "artist",
+    "uri": "spotify:artist:3rQBSwv53vH5WgPz4YDill"
+  }
+}

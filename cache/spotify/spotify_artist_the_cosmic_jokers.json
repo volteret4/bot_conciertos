@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:59:58.162495",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/33D7mclg443drHdfEKSU1L"
+    },
+    "followers": {
+      "href": null,
+      "total": 8830
+    },
+    "genres": [
+      "krautrock",
+      "space rock",
+      "acid rock",
+      "progressive rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/33D7mclg443drHdfEKSU1L",
+    "id": "33D7mclg443drHdfEKSU1L",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2733343ae0aa4a0bd5f249c615c",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e023343ae0aa4a0bd5f249c615c",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048513343ae0aa4a0bd5f249c615c",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Cosmic Jokers",
+    "popularity": 6,
+    "type": "artist",
+    "uri": "spotify:artist:33D7mclg443drHdfEKSU1L"
+  }
+}

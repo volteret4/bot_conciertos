@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:02:07.462069",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/65dGLGjkw3UbddUg2GKQoZ"
+    },
+    "followers": {
+      "href": null,
+      "total": 879407
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/65dGLGjkw3UbddUg2GKQoZ",
+    "id": "65dGLGjkw3UbddUg2GKQoZ",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb4fbd8eb6ef7f24c18dcb8666",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051744fbd8eb6ef7f24c18dcb8666",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1784fbd8eb6ef7f24c18dcb8666",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "BADBADNOTGOOD",
+    "popularity": 62,
+    "type": "artist",
+    "uri": "spotify:artist:65dGLGjkw3UbddUg2GKQoZ"
+  }
+}

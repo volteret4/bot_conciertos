@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-10-23T17:04:38.643285",
+  "concerts": [
+    {
+      "artist": "Anita Ward",
+      "name": "Long Island Disco Fever 2025",
+      "venue": "Flagstar at Westbury Music Fair",
+      "city": "Westbury",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-27",
+      "time": "19:30:00",
+      "url": "https://www.ticketmaster.com/long-island-disco-fever-2025-westbury-new-york-12-27-2025/event/0000631ED3DC5E72",
+      "source": "Ticketmaster",
+      "id": "k7vGFbsDKMAyw"
+    }
+  ]
+}

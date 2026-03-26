@@ -1,0 +1,45 @@
+{
+  "timestamp": "2025-11-03T19:58:06.131284",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+    },
+    "followers": {
+      "href": null,
+      "total": 980510
+    },
+    "genres": [
+      "classical",
+      "choral",
+      "opera"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+    "id": "1QL7yTHrdahRMpvNtn6rI2",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/6391390229a5fb88e8e0d71e3e942b427d12d9a8",
+        "height": 1209,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/80e4fa2aac467af1b0a13201b585ae0ca27367dc",
+        "height": 774,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/28e3224e9ba32cc880794fc6192b1836b1bcb09a",
+        "height": 242,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/ce62fd096aa0cc8cd91b12814adde9fb98463c1a",
+        "height": 77,
+        "width": 64
+      }
+    ],
+    "name": "George Frideric Handel",
+    "popularity": 64,
+    "type": "artist",
+    "uri": "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+  }
+}

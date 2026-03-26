@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:01:21.372247",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6VUcgEmuIFNpnNt7iQ9NTx"
+    },
+    "followers": {
+      "href": null,
+      "total": 1171
+    },
+    "genres": [
+      "acid house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6VUcgEmuIFNpnNt7iQ9NTx",
+    "id": "6VUcgEmuIFNpnNt7iQ9NTx",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273bd2ed908c0071df1712d7ede",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02bd2ed908c0071df1712d7ede",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851bd2ed908c0071df1712d7ede",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "A Homeboy, A Hippie & A Funki Dredd",
+    "popularity": 7,
+    "type": "artist",
+    "uri": "spotify:artist:6VUcgEmuIFNpnNt7iQ9NTx"
+  }
+}

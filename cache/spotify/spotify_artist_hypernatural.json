@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-10-23T17:51:51.110234",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4OqPJ30qlGQwp9kTwrj9ER"
+    },
+    "followers": {
+      "href": null,
+      "total": 1108
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/4OqPJ30qlGQwp9kTwrj9ER",
+    "id": "4OqPJ30qlGQwp9kTwrj9ER",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eba4bff9bac0ca0e23e1e2a80d",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174a4bff9bac0ca0e23e1e2a80d",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178a4bff9bac0ca0e23e1e2a80d",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Hypernatural",
+    "popularity": 10,
+    "type": "artist",
+    "uri": "spotify:artist:4OqPJ30qlGQwp9kTwrj9ER"
+  }
+}

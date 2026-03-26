@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:56:09.787762",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3FpCFpdoJOrGuR3G7UBgC7"
+    },
+    "followers": {
+      "href": null,
+      "total": 59818
+    },
+    "genres": [
+      "dark ambient",
+      "drone",
+      "ambient"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3FpCFpdoJOrGuR3G7UBgC7",
+    "id": "3FpCFpdoJOrGuR3G7UBgC7",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb7767aad8e5e0644df1e63277",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051747767aad8e5e0644df1e63277",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1787767aad8e5e0644df1e63277",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Lustmord",
+    "popularity": 33,
+    "type": "artist",
+    "uri": "spotify:artist:3FpCFpdoJOrGuR3G7UBgC7"
+  }
+}

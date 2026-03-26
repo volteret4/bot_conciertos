@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:46:52.150396",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3dRfiJ2650SZu6GbydcHNb"
+    },
+    "followers": {
+      "href": null,
+      "total": 1606218
+    },
+    "genres": [
+      "soundtrack"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3dRfiJ2650SZu6GbydcHNb",
+    "id": "3dRfiJ2650SZu6GbydcHNb",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb86b13e4d2e65ebf694384ef4",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517486b13e4d2e65ebf694384ef4",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17886b13e4d2e65ebf694384ef4",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "John Williams",
+    "popularity": 71,
+    "type": "artist",
+    "uri": "spotify:artist:3dRfiJ2650SZu6GbydcHNb"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-25T08:08:22.729286",
+  "data": [
+    {
+      "artist": "Baxter Dury",
+      "artist_name": "Baxter Dury",
+      "name": "Baxter Dury at Mandela Hall",
+      "venue": "Mandela Hall",
+      "city": "Belfast",
+      "country": "GB",
+      "date": "2025-11-11",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/3EP0JdYbEbHOAucFE0duMJ",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Baxter Dury",
+      "artist_name": "Baxter Dury",
+      "name": "Baxter Dury at Vicar Street",
+      "venue": "Vicar Street",
+      "city": "Dublin",
+      "country": "IE",
+      "date": "2025-11-12",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/4wwERojT5oTkdx6vKUEUBQ",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Baxter Dury",
+      "artist_name": "Baxter Dury",
+      "name": "Baxter Dury at TV Studio SWG3",
+      "venue": "TV Studio SWG3",
+      "city": "Glasgow",
+      "country": "GB",
+      "date": "2025-11-14",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/7JxM9C1U29rxVapj2dIOMk",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Baxter Dury",
+      "artist_name": "Baxter Dury",
+      "name": "Baxter Dury Concert (3G2ifumS)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/3G2ifumSID3ud9GzoQkVDV",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Baxter Dury",
+      "artist_name": "Baxter Dury",
+      "name": "Baxter Dury at O2 Academy Leeds",
+      "venue": "O2 Academy Leeds",
+      "city": "Leeds",
+      "country": "GB",
+      "date": "2025-11-16",
+      "time": "6:00 PM",
+      "url": "https://open.spotify.com/concert/3q5FvIgPEfAq1iBNMvkfyy",
+      "source": "Spotify"
+    }
+  ]
+}

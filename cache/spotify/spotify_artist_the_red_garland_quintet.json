@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:57:41.310055",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0JsWkl2GlMvsvCQzYUQQ97"
+    },
+    "followers": {
+      "href": null,
+      "total": 8393
+    },
+    "genres": [
+      "hard bop",
+      "jazz",
+      "bebop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0JsWkl2GlMvsvCQzYUQQ97",
+    "id": "0JsWkl2GlMvsvCQzYUQQ97",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273bec8cf4e94b0f029541ec78f",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02bec8cf4e94b0f029541ec78f",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851bec8cf4e94b0f029541ec78f",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Red Garland Quintet",
+    "popularity": 15,
+    "type": "artist",
+    "uri": "spotify:artist:0JsWkl2GlMvsvCQzYUQQ97"
+  }
+}

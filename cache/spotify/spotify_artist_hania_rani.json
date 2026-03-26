@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:03:57.440688",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/14YzutUdMwS9yTnI0IFBaD"
+    },
+    "followers": {
+      "href": null,
+      "total": 331433
+    },
+    "genres": [
+      "neoclassical"
+    ],
+    "href": "https://api.spotify.com/v1/artists/14YzutUdMwS9yTnI0IFBaD",
+    "id": "14YzutUdMwS9yTnI0IFBaD",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb401c85eb539cb31c5af4d537",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174401c85eb539cb31c5af4d537",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178401c85eb539cb31c5af4d537",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Hania Rani",
+    "popularity": 58,
+    "type": "artist",
+    "uri": "spotify:artist:14YzutUdMwS9yTnI0IFBaD"
+  }
+}

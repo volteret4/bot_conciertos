@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:49:22.194631",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6rAZ6OYwAXqykSlPxqGy8E"
+    },
+    "followers": {
+      "href": null,
+      "total": 145952
+    },
+    "genres": [
+      "minimalism"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6rAZ6OYwAXqykSlPxqGy8E",
+    "id": "6rAZ6OYwAXqykSlPxqGy8E",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eba93037cf6b213d0754b40372",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174a93037cf6b213d0754b40372",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178a93037cf6b213d0754b40372",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Penguin Cafe Orchestra",
+    "popularity": 39,
+    "type": "artist",
+    "uri": "spotify:artist:6rAZ6OYwAXqykSlPxqGy8E"
+  }
+}

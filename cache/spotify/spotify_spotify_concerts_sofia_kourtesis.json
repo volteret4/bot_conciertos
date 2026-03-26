@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-25T09:24:02.752849",
+  "data": [
+    {
+      "artist": "Sofia Kourtesis",
+      "artist_name": "Sofia Kourtesis",
+      "name": "Sofia Kourtesis Concert (3evrUTEs)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/3evrUTEsSGfEQiKB3syt6U",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Sofia Kourtesis",
+      "artist_name": "Sofia Kourtesis",
+      "name": "Sofia Kourtesis Concert (1gkC24BV)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/1gkC24BV7NN19yB0F4Sq3e",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Sofia Kourtesis",
+      "artist_name": "Sofia Kourtesis",
+      "name": "Sofia Kourtesis at Amnesia Ibiza",
+      "venue": "Amnesia Ibiza",
+      "city": "Ibiza",
+      "country": "ES",
+      "date": "2025-08-31",
+      "time": "11:00 PM",
+      "url": "https://open.spotify.com/concert/2662IUwLJbfOzGTN9VCunT",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Sofia Kourtesis",
+      "artist_name": "Sofia Kourtesis",
+      "name": "Sofia Kourtesis Concert (7AI4gn3m)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/7AI4gn3mfB5jjU9LIfw4fY",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Sofia Kourtesis",
+      "artist_name": "Sofia Kourtesis",
+      "name": "Sofia Kourtesis at House of Blues Dallas",
+      "venue": "House of Blues Dallas",
+      "city": "Dallas",
+      "country": "US",
+      "date": "2025-09-06",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/3pRu1cF5lORAU9FqNaVBk1",
+      "source": "Spotify"
+    }
+  ]
+}

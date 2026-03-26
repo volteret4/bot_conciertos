@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-08-21T09:34:37.901262",
+  "data": [
+    {
+      "artist": "Nik Bärtsch's Ronin",
+      "artist_name": "Nik Bärtsch's Ronin",
+      "name": "Nik Bärtsch's Ronin at Schuhhaussaal",
+      "venue": "Schuhhaussaal",
+      "city": "Ulm",
+      "country": "",
+      "date": "2025-08-28",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/1hisKHl0t50PrDBWne7jl4",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Nik Bärtsch's Ronin",
+      "artist_name": "Nik Bärtsch's Ronin",
+      "name": "Nik Bärtsch's Ronin at Kulturhaus Karlstorbahnhof",
+      "venue": "Kulturhaus Karlstorbahnhof",
+      "city": "Heidelberg",
+      "country": "DE",
+      "date": "2025-10-11",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/6SGDVI8GCBE2gjS9KVimPy",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Nik Bärtsch's Ronin",
+      "artist_name": "Nik Bärtsch's Ronin",
+      "name": "Nik Bärtsch's Ronin at Kammgarn",
+      "venue": "Kammgarn",
+      "city": "Schaffhausen",
+      "country": "CH",
+      "date": "2025-10-17",
+      "time": "8:30 PM",
+      "url": "https://open.spotify.com/concert/5S7GDQChTy1Yn5n5qr6QNK",
+      "source": "Spotify"
+    }
+  ]
+}

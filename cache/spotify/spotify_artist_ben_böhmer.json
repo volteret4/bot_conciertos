@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T20:01:16.366199",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5tDjiBYUsTqzd0RkTZxK7u"
+    },
+    "followers": {
+      "href": null,
+      "total": 648098
+    },
+    "genres": [
+      "melodic house",
+      "melodic techno",
+      "progressive house",
+      "deep house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5tDjiBYUsTqzd0RkTZxK7u",
+    "id": "5tDjiBYUsTqzd0RkTZxK7u",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb55f00ec68ba01a594aaabfa7",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517455f00ec68ba01a594aaabfa7",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17855f00ec68ba01a594aaabfa7",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Ben Böhmer",
+    "popularity": 66,
+    "type": "artist",
+    "uri": "spotify:artist:5tDjiBYUsTqzd0RkTZxK7u"
+  }
+}

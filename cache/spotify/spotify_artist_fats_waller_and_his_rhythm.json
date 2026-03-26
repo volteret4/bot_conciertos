@@ -1,0 +1,46 @@
+{
+  "timestamp": "2025-11-03T19:46:42.151920",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0DYWCXTkNqGFZIf67SrWEa"
+    },
+    "followers": {
+      "href": null,
+      "total": 138988
+    },
+    "genres": [
+      "swing music",
+      "ragtime",
+      "big band",
+      "jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0DYWCXTkNqGFZIf67SrWEa",
+    "id": "0DYWCXTkNqGFZIf67SrWEa",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/eb9bf573a7ea0b60fcdd26efe306fb261bd706aa",
+        "height": 1173,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/28e6ac344cfb5187099fb6ee69c26adff5c78b16",
+        "height": 751,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/89755de8cf81a22638b2129c7ac6afb73ab49dad",
+        "height": 235,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/f2193e3a18c85cdb406c2fe052bdd767f765c398",
+        "height": 75,
+        "width": 64
+      }
+    ],
+    "name": "Fats Waller",
+    "popularity": 41,
+    "type": "artist",
+    "uri": "spotify:artist:0DYWCXTkNqGFZIf67SrWEa"
+  }
+}

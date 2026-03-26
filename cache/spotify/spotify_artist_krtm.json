@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T20:03:56.314278",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/66ZRVdaXcImO05VGORlsK5"
+    },
+    "followers": {
+      "href": null,
+      "total": 17064
+    },
+    "genres": [
+      "hard techno",
+      "industrial",
+      "acid techno",
+      "hardcore techno",
+      "gabber",
+      "tekno",
+      "techno"
+    ],
+    "href": "https://api.spotify.com/v1/artists/66ZRVdaXcImO05VGORlsK5",
+    "id": "66ZRVdaXcImO05VGORlsK5",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb16b83c23dfe8e25656c6a1fc",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517416b83c23dfe8e25656c6a1fc",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17816b83c23dfe8e25656c6a1fc",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "[KRTM]",
+    "popularity": 21,
+    "type": "artist",
+    "uri": "spotify:artist:66ZRVdaXcImO05VGORlsK5"
+  }
+}

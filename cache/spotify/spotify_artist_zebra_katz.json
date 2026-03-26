@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:57:15.885852",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5Tz4zMiRWqiQVAymWZz99a"
+    },
+    "followers": {
+      "href": null,
+      "total": 68639
+    },
+    "genres": [
+      "ballroom vogue",
+      "hip house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5Tz4zMiRWqiQVAymWZz99a",
+    "id": "5Tz4zMiRWqiQVAymWZz99a",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eba74c4a6d0d60d2c53700fc61",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174a74c4a6d0d60d2c53700fc61",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178a74c4a6d0d60d2c53700fc61",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Zebra Katz",
+    "popularity": 37,
+    "type": "artist",
+    "uri": "spotify:artist:5Tz4zMiRWqiQVAymWZz99a"
+  }
+}

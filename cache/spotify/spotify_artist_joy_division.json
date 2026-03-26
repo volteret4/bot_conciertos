@@ -1,0 +1,48 @@
+{
+  "timestamp": "2025-11-03T19:57:03.736524",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/432R46LaYsJZV2Gmc4jUV5"
+    },
+    "followers": {
+      "href": null,
+      "total": 2780346
+    },
+    "genres": [
+      "post-punk",
+      "new wave",
+      "gothic rock",
+      "darkwave",
+      "madchester",
+      "cold wave"
+    ],
+    "href": "https://api.spotify.com/v1/artists/432R46LaYsJZV2Gmc4jUV5",
+    "id": "432R46LaYsJZV2Gmc4jUV5",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/5eeddd733170399db794d2c430a8d2cde7ae1425",
+        "height": 658,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/d3c6bcb07a5ecddf86e791fa901bf3792fe6e6c7",
+        "height": 421,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/d384ebd3d3fda0ad219fed6b9014a59e65fbb385",
+        "height": 132,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/1b5195d5e9b5aac07fb0c801deb1926138222036",
+        "height": 42,
+        "width": 64
+      }
+    ],
+    "name": "Joy Division",
+    "popularity": 62,
+    "type": "artist",
+    "uri": "spotify:artist:432R46LaYsJZV2Gmc4jUV5"
+  }
+}

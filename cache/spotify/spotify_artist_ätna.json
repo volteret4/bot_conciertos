@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:01:23.912095",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4ORnI4BzjKFbUply6fRvkX"
+    },
+    "followers": {
+      "href": null,
+      "total": 38546
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/4ORnI4BzjKFbUply6fRvkX",
+    "id": "4ORnI4BzjKFbUply6fRvkX",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb96566a2ce759e2ed0b1da55f",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517496566a2ce759e2ed0b1da55f",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17896566a2ce759e2ed0b1da55f",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "ÄTNA",
+    "popularity": 39,
+    "type": "artist",
+    "uri": "spotify:artist:4ORnI4BzjKFbUply6fRvkX"
+  }
+}

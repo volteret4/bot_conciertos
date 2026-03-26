@@ -1,0 +1,45 @@
+{
+  "timestamp": "2025-11-03T20:05:00.407291",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1YFIyRFTa7povIpq08DcCA"
+    },
+    "followers": {
+      "href": null,
+      "total": 25937
+    },
+    "genres": [
+      "post-rock",
+      "krautrock",
+      "math rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1YFIyRFTa7povIpq08DcCA",
+    "id": "1YFIyRFTa7povIpq08DcCA",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/6392df2a7ae3c6ac06a7ca32efcd534292b01630",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/e17bbc200828968f44120fc963ce0da8972396d7",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/2acff5b2b706ac872da31ce8921761503a65b1f2",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/5dec97431750262997c952276faef75d5c7070f0",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Trans Am",
+    "popularity": 20,
+    "type": "artist",
+    "uri": "spotify:artist:1YFIyRFTa7povIpq08DcCA"
+  }
+}

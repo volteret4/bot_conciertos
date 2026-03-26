@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:49:16.232248",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6iSzkPnmcHb0il8i8opZbl"
+    },
+    "followers": {
+      "href": null,
+      "total": 27
+    },
+    "genres": [
+      "chillstep"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6iSzkPnmcHb0il8i8opZbl",
+    "id": "6iSzkPnmcHb0il8i8opZbl",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273190cbe4d5f27fffceb4abe4f",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02190cbe4d5f27fffceb4abe4f",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851190cbe4d5f27fffceb4abe4f",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Panna Cotta",
+    "popularity": 0,
+    "type": "artist",
+    "uri": "spotify:artist:6iSzkPnmcHb0il8i8opZbl"
+  }
+}

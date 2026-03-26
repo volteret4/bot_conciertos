@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:56:58.256246",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6TVVIyd0fsRDGg6WzHKyTP"
+    },
+    "followers": {
+      "href": null,
+      "total": 490882
+    },
+    "genres": [
+      "retro soul"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6TVVIyd0fsRDGg6WzHKyTP",
+    "id": "6TVVIyd0fsRDGg6WzHKyTP",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eba0c699d06eac9003f5cde9a2",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174a0c699d06eac9003f5cde9a2",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178a0c699d06eac9003f5cde9a2",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Durand Jones & The Indications",
+    "popularity": 63,
+    "type": "artist",
+    "uri": "spotify:artist:6TVVIyd0fsRDGg6WzHKyTP"
+  }
+}

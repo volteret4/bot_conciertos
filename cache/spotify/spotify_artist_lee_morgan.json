@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:54:49.109478",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/38C3okxv3fyyOIQUVPCdGX"
+    },
+    "followers": {
+      "href": null,
+      "total": 162816
+    },
+    "genres": [
+      "hard bop",
+      "jazz",
+      "bebop",
+      "cool jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/38C3okxv3fyyOIQUVPCdGX",
+    "id": "38C3okxv3fyyOIQUVPCdGX",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebe214842fe87630b113bd8df6",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174e214842fe87630b113bd8df6",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178e214842fe87630b113bd8df6",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Lee Morgan",
+    "popularity": 47,
+    "type": "artist",
+    "uri": "spotify:artist:38C3okxv3fyyOIQUVPCdGX"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:03:55.868346",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0EgHhNmWcjusA7F2heSD0O"
+    },
+    "followers": {
+      "href": null,
+      "total": 149850
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/0EgHhNmWcjusA7F2heSD0O",
+    "id": "0EgHhNmWcjusA7F2heSD0O",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb11ba207f3f083a4788417d25",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517411ba207f3f083a4788417d25",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17811ba207f3f083a4788417d25",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Baxter Dury",
+    "popularity": 51,
+    "type": "artist",
+    "uri": "spotify:artist:0EgHhNmWcjusA7F2heSD0O"
+  }
+}

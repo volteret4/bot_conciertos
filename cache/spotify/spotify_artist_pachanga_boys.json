@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:49:13.552538",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7EqE0DBntJS6OUT4gK9W3P"
+    },
+    "followers": {
+      "href": null,
+      "total": 40495
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/7EqE0DBntJS6OUT4gK9W3P",
+    "id": "7EqE0DBntJS6OUT4gK9W3P",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/402d94ff14ae301045a2ac943106d73fb838e002",
+        "height": 667,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/79e11b78cd2fbf013447b8d925e0d8b32e18b6d5",
+        "height": 427,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/1eb9b2579fe9668093127cd8914f1f5840298c20",
+        "height": 133,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/9b889872bf5132284a10542cc427c81ec15b7ee1",
+        "height": 43,
+        "width": 64
+      }
+    ],
+    "name": "Pachanga Boys",
+    "popularity": 32,
+    "type": "artist",
+    "uri": "spotify:artist:7EqE0DBntJS6OUT4gK9W3P"
+  }
+}

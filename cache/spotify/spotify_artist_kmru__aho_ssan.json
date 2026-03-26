@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:57:06.436013",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4XAeQuunl5LfJ0T0oldlnL"
+    },
+    "followers": {
+      "href": null,
+      "total": 44717
+    },
+    "genres": [
+      "afro house",
+      "latin house",
+      "techengue"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4XAeQuunl5LfJ0T0oldlnL",
+    "id": "4XAeQuunl5LfJ0T0oldlnL",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebd2c8950c7e3eb7954d365c48",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174d2c8950c7e3eb7954d365c48",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178d2c8950c7e3eb7954d365c48",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Karlo",
+    "popularity": 51,
+    "type": "artist",
+    "uri": "spotify:artist:4XAeQuunl5LfJ0T0oldlnL"
+  }
+}

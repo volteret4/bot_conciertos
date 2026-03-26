@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T20:02:34.422318",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1b6p8KZ14dw35fuIuDWQNV"
+    },
+    "followers": {
+      "href": null,
+      "total": 31551
+    },
+    "genres": [
+      "dark ambient",
+      "industrial",
+      "drone"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1b6p8KZ14dw35fuIuDWQNV",
+    "id": "1b6p8KZ14dw35fuIuDWQNV",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb21a002adac683f4a8eb33e19",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517421a002adac683f4a8eb33e19",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17821a002adac683f4a8eb33e19",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Vatican Shadow",
+    "popularity": 30,
+    "type": "artist",
+    "uri": "spotify:artist:1b6p8KZ14dw35fuIuDWQNV"
+  }
+}

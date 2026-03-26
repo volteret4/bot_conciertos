@@ -1,0 +1,122 @@
+{
+  "timestamp": "2025-10-23T17:13:34.537053",
+  "concerts": [
+    {
+      "artist": "Italy",
+      "name": "U.S. Women's National Team v Italy presented by The Home Depot",
+      "venue": "Inter&Co Stadium",
+      "city": "Orlando",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-28",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/us-womens-national-team-v-italy-orlando-florida-11-28-2025/event/220063120B0D5330",
+      "source": "Ticketmaster",
+      "id": "1kFOvN7OGA5d4GY"
+    },
+    {
+      "artist": "Italy",
+      "name": "USWNT v Italy Fan Appreciation Match",
+      "venue": "Chase Stadium",
+      "city": "Fort Lauderdale",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-01",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/uswnt-v-italy-fan-appreciation-match-fort-lauderdale-florida-12-01-2025/event/0D006313ED4933EC",
+      "source": "Ticketmaster",
+      "id": "vvG1VZbs2c3K2i"
+    },
+    {
+      "artist": "Italy",
+      "name": "Game 3: Brazil vs Italy",
+      "venue": "Daikin Park",
+      "city": "Houston",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-03-07",
+      "time": "12:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7QKua",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7QKua"
+    },
+    {
+      "artist": "Italy",
+      "name": "Game 5: Great Britain vs Italy",
+      "venue": "Daikin Park",
+      "city": "Houston",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-03-08",
+      "time": "12:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7QKuo",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7QKuo"
+    },
+    {
+      "artist": "Italy",
+      "name": "Game 9: Italy vs United States",
+      "venue": "Daikin Park",
+      "city": "Houston",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-03-10",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7QKu4",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7QKu4"
+    },
+    {
+      "artist": "Italy",
+      "name": "Game 10: Italy vs Mexico",
+      "venue": "Daikin Park",
+      "city": "Houston",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-03-11",
+      "time": "18:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7QKup",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7QKup"
+    },
+    {
+      "artist": "Italy",
+      "name": "Guinness Men's Six Nations: Wales V Italy",
+      "venue": "Principality Stadium",
+      "city": "Cardiff",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-03-14",
+      "time": "16:40:00",
+      "url": "https://www.eticketing.co.uk/principalitystadium/EDP/Event/Index/1454?utm_source=Ticketmaster&utm_medium=Shell-Event&utm_campaign=cl:WRU-M6N-chl:Shell-Event-v.Italy",
+      "source": "Ticketmaster",
+      "id": "1AdfZbVGkTPMIr3"
+    },
+    {
+      "artist": "Italy",
+      "name": "Men's U20s Six Nations: Wales V Italy",
+      "venue": "Rodney Parade",
+      "city": "Newport",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-03-15",
+      "time": "13:00:00",
+      "url": "https://www.eticketing.co.uk/principalitystadium/EDP/Event/Index/1477?utm_source=Ticketmaster&utm_medium=Shell-Event&utm_campaign=cl:WRU-U20s-chl:Shell-Event-v.Italy",
+      "source": "Ticketmaster",
+      "id": "1AdfZbVGkT1H96v"
+    },
+    {
+      "artist": "Italy",
+      "name": "Guinness Women's Six Nations: Wales V Italy",
+      "venue": "Cardiff Arms Park",
+      "city": "Cardiff",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-05-17",
+      "time": "12:15:00",
+      "url": "https://www.eticketing.co.uk/principalitystadium/EDP/Event/Index/1475?utm_sourceTicketmaster&utm_medium=Shell-Event&utm_campaign=cl:WRU-W6Ns-chl:Shell-Event-v.Italy",
+      "source": "Ticketmaster",
+      "id": "1AdfZbVGkTlkbwR"
+    }
+  ]
+}

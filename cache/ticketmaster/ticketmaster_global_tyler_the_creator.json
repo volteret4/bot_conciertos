@@ -1,0 +1,109 @@
+{
+  "timestamp": "2025-10-23T17:13:41.117943",
+  "concerts": [
+    {
+      "artist": "Tyler, The Creator",
+      "name": "Tyler, The Creator",
+      "venue": "Palacio de los Deportes",
+      "city": "Ciudad de México",
+      "country": "Mexico",
+      "country_code": "MX",
+      "date": "2026-03-24",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com.mx/tyler-the-creator-ciudad-de-mexico-24-03-2026/event/14006323E536361D",
+      "source": "Ticketmaster",
+      "id": "1AfZkGNGkdPuNbq"
+    },
+    {
+      "artist": "Tyler, The Creator",
+      "name": "Tyler, The Creator Estacionamiento (Boleto de Evento No Incluido)",
+      "venue": "Palacio de los Deportes",
+      "city": "Ciudad de México",
+      "country": "Mexico",
+      "country_code": "MX",
+      "date": "2026-03-24",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com.mx/tyler-the-creator-estacionamiento-boleto-de-ciudad-de-mexico-24-03-2026/event/1400632FD9AA8F4F",
+      "source": "Ticketmaster",
+      "id": "1Av8ZbwGkT_nIW2"
+    },
+    {
+      "artist": "Tyler, The Creator",
+      "name": "Tyler, The Creator",
+      "venue": "Palacio de los Deportes",
+      "city": "Ciudad de México",
+      "country": "Mexico",
+      "country_code": "MX",
+      "date": "2026-03-25",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com.mx/tyler-the-creator-ciudad-de-mexico-25-03-2026/event/14006323E66C36B1",
+      "source": "Ticketmaster",
+      "id": "1AfZkGNGkdJhdQs"
+    },
+    {
+      "artist": "Tyler, The Creator",
+      "name": "Tyler, The Creator Estacionamiento (Boleto de Evento No Incluido)",
+      "venue": "Palacio de los Deportes",
+      "city": "Ciudad de México",
+      "country": "Mexico",
+      "country_code": "MX",
+      "date": "2026-03-25",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com.mx/tyler-the-creator-estacionamiento-boleto-de-ciudad-de-mexico-25-03-2026/event/1400632FDB1591BB",
+      "source": "Ticketmaster",
+      "id": "1Av8ZbwGkThA_kD"
+    },
+    {
+      "artist": "Tyler, The Creator",
+      "name": "All Points East - Tyler, the Creator - Two Day Event",
+      "venue": "Victoria Park London",
+      "city": "London",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-08-28",
+      "time": "",
+      "url": "https://www.ticketmaster.co.uk/all-points-east-tyler-the-creator-london-28-08-2026/event/37006346F7C9C1DC",
+      "source": "Ticketmaster",
+      "id": "1AMZkukGkdMwj6j"
+    },
+    {
+      "artist": "Tyler, The Creator",
+      "name": "All Points East - Tyler, the Creator",
+      "venue": "Victoria Park London",
+      "city": "London",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-08-28",
+      "time": "14:00:00",
+      "url": "https://www.ticketmaster.co.uk/all-points-east-tyler-the-creator-london-28-08-2026/event/37006343EB84EA86",
+      "source": "Ticketmaster",
+      "id": "1AMZkudGkdl-Cnk"
+    },
+    {
+      "artist": "Tyler, The Creator",
+      "name": "All Points East - Tyler, the Creator",
+      "venue": "Victoria Park London",
+      "city": "London",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-08-29",
+      "time": "14:00:00",
+      "url": "https://www.ticketmaster.co.uk/all-points-east-tyler-the-creator-london-29-08-2026/event/37006343FB0851DC",
+      "source": "Ticketmaster",
+      "id": "1AMZkudGkdDeA6j"
+    },
+    {
+      "artist": "Tyler, The Creator",
+      "name": "Suite Guest Passes: Tyler, the Creator",
+      "venue": "Climate Pledge Arena",
+      "city": "Seattle",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-12-31",
+      "time": "19:30:00",
+      "url": "",
+      "source": "Ticketmaster",
+      "id": "Za5ju3rKuqZDvUnXku8LA155ALJbATgWC2"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:47:49.272735",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3854DTPVGm3wxqNeRMnKqn"
+    },
+    "followers": {
+      "href": null,
+      "total": 371519
+    },
+    "genres": [
+      "power metal",
+      "folk metal",
+      "rock en español",
+      "heavy metal"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3854DTPVGm3wxqNeRMnKqn",
+    "id": "3854DTPVGm3wxqNeRMnKqn",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb8068925e80acacaf279d3cad",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051748068925e80acacaf279d3cad",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1788068925e80acacaf279d3cad",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Tierra Santa",
+    "popularity": 45,
+    "type": "artist",
+    "uri": "spotify:artist:3854DTPVGm3wxqNeRMnKqn"
+  }
+}

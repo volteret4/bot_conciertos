@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:57:05.775120",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2hPgGN4uhvXAxiXQBIXOmE"
+    },
+    "followers": {
+      "href": null,
+      "total": 1004744
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/2hPgGN4uhvXAxiXQBIXOmE",
+    "id": "2hPgGN4uhvXAxiXQBIXOmE",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb22c693c66a5494d88194d543",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517422c693c66a5494d88194d543",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17822c693c66a5494d88194d543",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "KIDS SEE GHOSTS",
+    "popularity": 55,
+    "type": "artist",
+    "uri": "spotify:artist:2hPgGN4uhvXAxiXQBIXOmE"
+  }
+}

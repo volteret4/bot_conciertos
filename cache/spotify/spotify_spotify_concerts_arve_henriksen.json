@@ -1,0 +1,53 @@
+{
+  "timestamp": "2025-08-24T08:07:57.388610",
+  "data": [
+    {
+      "artist": "Arve Henriksen",
+      "artist_name": "Arve Henriksen",
+      "name": "Arve Henriksen Concert (7nRdn4AI)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/7nRdn4AIqIpPXXcF78spZZ",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Arve Henriksen",
+      "artist_name": "Arve Henriksen",
+      "name": "Arve Henriksen at Ha Concerts",
+      "venue": "Ha Concerts",
+      "city": "Ghent",
+      "country": "BE",
+      "date": "2025-09-28",
+      "time": "8:15 PM",
+      "url": "https://open.spotify.com/concert/1EOOh0z4nBABAgB2H8nJSM",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Arve Henriksen",
+      "artist_name": "Arve Henriksen",
+      "name": "Arve Henriksen at LAC Lugano Arte e Cultura",
+      "venue": "LAC Lugano Arte e Cultura",
+      "city": "Lugano",
+      "country": "CH",
+      "date": "2025-11-27",
+      "time": "9:00 PM",
+      "url": "https://open.spotify.com/concert/0I65PIs7rFtoxxcwuwsMS8",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Arve Henriksen",
+      "artist_name": "Arve Henriksen",
+      "name": "Arve Henriksen Concert (2F0UdZqm)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/2F0UdZqmCDgSMKPN9Ozvpm",
+      "source": "Spotify"
+    }
+  ]
+}

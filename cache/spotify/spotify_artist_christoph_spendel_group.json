@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:49:11.609256",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0W7yG4lmQo8cpAIQXFMRkj"
+    },
+    "followers": {
+      "href": null,
+      "total": 11
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/0W7yG4lmQo8cpAIQXFMRkj",
+    "id": "0W7yG4lmQo8cpAIQXFMRkj",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2736280db5e8725fcee2fa9d8ff",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e026280db5e8725fcee2fa9d8ff",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048516280db5e8725fcee2fa9d8ff",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Christoph Spendel Group feat. Michael Sagmeister",
+    "popularity": 0,
+    "type": "artist",
+    "uri": "spotify:artist:0W7yG4lmQo8cpAIQXFMRkj"
+  }
+}

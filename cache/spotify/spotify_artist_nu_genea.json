@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:55:14.054708",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/77J3V0V7sEOf5ifCDBSNaJ"
+    },
+    "followers": {
+      "href": null,
+      "total": 255371
+    },
+    "genres": [
+      "italo disco",
+      "italo dance"
+    ],
+    "href": "https://api.spotify.com/v1/artists/77J3V0V7sEOf5ifCDBSNaJ",
+    "id": "77J3V0V7sEOf5ifCDBSNaJ",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb8db45600764fd4ecf7f9b7cb",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051748db45600764fd4ecf7f9b7cb",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1788db45600764fd4ecf7f9b7cb",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Nu Genea",
+    "popularity": 51,
+    "type": "artist",
+    "uri": "spotify:artist:77J3V0V7sEOf5ifCDBSNaJ"
+  }
+}

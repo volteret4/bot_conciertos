@@ -1,0 +1,83 @@
+{
+  "timestamp": "2025-10-23T17:05:59.703111",
+  "concerts": [
+    {
+      "artist": "Village People",
+      "name": "Reuben James - Big People Music",
+      "venue": "Village Underground",
+      "city": "London",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2025-10-24",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.co.uk/reuben-james-big-people-music-london-24-10-2025/event/3500624C32309AF0",
+      "source": "Ticketmaster",
+      "id": "1AdfZb0GkYwGalY"
+    },
+    {
+      "artist": "Village People",
+      "name": "Bellarena Events | Soirée Disco Fever: Village People, GALA & more",
+      "venue": "BCF ARENA",
+      "city": "Fribourg",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "date": "2025-11-07",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.ch/event/bellarena-events-%7C-soiree-disco-fever-village-people-gala--more-tickets/904225701?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZu3Z1k07FPjv"
+    },
+    {
+      "artist": "Village People",
+      "name": "Bellarena Events | 2 Soirées: Disco Fever + La Notte Italiana",
+      "venue": "BCF ARENA",
+      "city": "Fribourg",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "date": "2025-11-08",
+      "time": "",
+      "url": "https://www.ticketmaster.ch/event/bellarena-events-%7C-2-soirees-disco-fever--la-notte-italiana-tickets/943984992?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZu3Z1kPdJ7J3"
+    },
+    {
+      "artist": "Village People",
+      "name": "Village People (Guests Under 18 Require Accompanying Adult)",
+      "venue": "Canyon Club-CA",
+      "city": "Agoura Hills",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-21",
+      "time": "21:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7pb4Z",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7pb4Z"
+    },
+    {
+      "artist": "Village People",
+      "name": "Village People",
+      "venue": "The Coach House",
+      "city": "San Juan Capistrano",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-22",
+      "time": "20:00:00",
+      "url": "https://www.ticketweb.com/event/village-people-the-coach-house-tickets/14441373",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AfovuS"
+    },
+    {
+      "artist": "Village People",
+      "name": "Village People",
+      "venue": "Bally's Event Center",
+      "city": "Lincoln",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-02-21",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/village-people-lincoln-rhode-island-02-21-2026/event/0100631BBAD85E01",
+      "source": "Ticketmaster",
+      "id": "vv177ZbsGkmBUAzv"
+    }
+  ]
+}

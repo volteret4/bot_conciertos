@@ -1,0 +1,53 @@
+{
+  "timestamp": "2025-08-25T09:16:21.652688",
+  "data": [
+    {
+      "artist": "Recondite",
+      "artist_name": "Recondite",
+      "name": "Recondite at Elektronik Zoo",
+      "venue": "Elektronik Zoo",
+      "city": "Kortenaken",
+      "country": "",
+      "date": "2025-09-07",
+      "time": "2:00 PM",
+      "url": "https://open.spotify.com/concert/2NFsCkOqkch4MKXRlDmTyI",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Recondite",
+      "artist_name": "Recondite",
+      "name": "Recondite Concert (441jdauA)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/441jdauAd6zbwiXAme9wZV",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Recondite",
+      "artist_name": "Recondite",
+      "name": "Recondite at Fridas Pier",
+      "venue": "Fridas Pier",
+      "city": "Stuttgart",
+      "country": "DE",
+      "date": "2025-09-27",
+      "time": "5:00 PM",
+      "url": "https://open.spotify.com/concert/6jFYjvPY4s13NSmKBtdJT6",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Recondite",
+      "artist_name": "Recondite",
+      "name": "Recondite Concert (1wqA7U2v)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/1wqA7U2vgHZ773FlVCKJM9",
+      "source": "Spotify"
+    }
+  ]
+}

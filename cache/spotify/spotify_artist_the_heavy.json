@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:58:10.531503",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0bZCak2tcRMY1dzEIuwF42"
+    },
+    "followers": {
+      "href": null,
+      "total": 488482
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/0bZCak2tcRMY1dzEIuwF42",
+    "id": "0bZCak2tcRMY1dzEIuwF42",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb1c1f2d58733718e6a4aaf00e",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051741c1f2d58733718e6a4aaf00e",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1781c1f2d58733718e6a4aaf00e",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "The Heavy",
+    "popularity": 58,
+    "type": "artist",
+    "uri": "spotify:artist:0bZCak2tcRMY1dzEIuwF42"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:57:16.504466",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5iVQW9vS6cqVGS5ENxM7Xf"
+    },
+    "followers": {
+      "href": null,
+      "total": 651
+    },
+    "genres": [
+      "indie dance",
+      "disco house",
+      "nu disco"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5iVQW9vS6cqVGS5ENxM7Xf",
+    "id": "5iVQW9vS6cqVGS5ENxM7Xf",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb74db6d9e4d9ffc31aa089108",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517474db6d9e4d9ffc31aa089108",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17874db6d9e4d9ffc31aa089108",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Kayroy",
+    "popularity": 4,
+    "type": "artist",
+    "uri": "spotify:artist:5iVQW9vS6cqVGS5ENxM7Xf"
+  }
+}

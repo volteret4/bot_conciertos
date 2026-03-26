@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:57:01.104707",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6DDMnrPzjH1gAFHh07YkLn"
+    },
+    "followers": {
+      "href": null,
+      "total": 2111
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/6DDMnrPzjH1gAFHh07YkLn",
+    "id": "6DDMnrPzjH1gAFHh07YkLn",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb43bdd209afde16753d14821d",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517443bdd209afde16753d14821d",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17843bdd209afde16753d14821d",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Jonny From Space",
+    "popularity": 15,
+    "type": "artist",
+    "uri": "spotify:artist:6DDMnrPzjH1gAFHh07YkLn"
+  }
+}

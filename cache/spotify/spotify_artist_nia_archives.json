@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T20:01:52.389341",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7BMR0fwtEvzGtK4rNGdoiQ"
+    },
+    "followers": {
+      "href": null,
+      "total": 226401
+    },
+    "genres": [
+      "jungle",
+      "drum and bass",
+      "uk garage"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7BMR0fwtEvzGtK4rNGdoiQ",
+    "id": "7BMR0fwtEvzGtK4rNGdoiQ",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb55888ad142d602809ce631f8",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517455888ad142d602809ce631f8",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17855888ad142d602809ce631f8",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Nia Archives",
+    "popularity": 56,
+    "type": "artist",
+    "uri": "spotify:artist:7BMR0fwtEvzGtK4rNGdoiQ"
+  }
+}

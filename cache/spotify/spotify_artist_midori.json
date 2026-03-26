@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:50:14.651741",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7hFplpD37bub6anEVuJ5EO"
+    },
+    "followers": {
+      "href": null,
+      "total": 2523
+    },
+    "genres": [
+      "new age",
+      "celtic"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7hFplpD37bub6anEVuJ5EO",
+    "id": "7hFplpD37bub6anEVuJ5EO",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2735bfde4a754bfc48c94aa8416",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e025bfde4a754bfc48c94aa8416",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048515bfde4a754bfc48c94aa8416",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Midori",
+    "popularity": 22,
+    "type": "artist",
+    "uri": "spotify:artist:7hFplpD37bub6anEVuJ5EO"
+  }
+}

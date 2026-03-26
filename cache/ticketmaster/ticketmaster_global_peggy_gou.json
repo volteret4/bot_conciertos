@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-10-23T17:09:57.910962",
+  "concerts": [
+    {
+      "artist": "Peggy Gou",
+      "name": "Peggy Gou",
+      "venue": "Brooklyn Mirage",
+      "city": "Brooklyn",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-10-24",
+      "time": "22:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7_auz",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7_auz"
+    },
+    {
+      "artist": "Peggy Gou",
+      "name": "PEGGY GOU | PACHA ICONS",
+      "venue": "Pacha ICONS | FIVE Luxe JBR",
+      "city": "Dubai",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "date": "2025-12-06",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.ae/event/peggy-gou-%7C-pacha-icons-tickets/770949124",
+      "source": "Ticketmaster",
+      "id": "Z698xZ52Z1kqYPa70"
+    },
+    {
+      "artist": "Peggy Gou",
+      "name": "AO LIVE Presents Peggy Gou",
+      "venue": "Melbourne Park",
+      "city": "Melbourne",
+      "country": "Australia",
+      "country_code": "AU",
+      "date": "2026-02-01",
+      "time": "16:00:00",
+      "url": "https://www.ticketmaster.com.au/ao-live-presents-peggy-gou-melbourne-01-02-2026/event/25006346F2AB61B6",
+      "source": "Ticketmaster",
+      "id": "1APZkukGkdwnUkU"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:04:16.034934",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2NArTWfXN317Ok1Ale3xkX"
+    },
+    "followers": {
+      "href": null,
+      "total": 11799
+    },
+    "genres": [
+      "lo-fi house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2NArTWfXN317Ok1Ale3xkX",
+    "id": "2NArTWfXN317Ok1Ale3xkX",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb5ecab0551804f2e5b7c977af",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051745ecab0551804f2e5b7c977af",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1785ecab0551804f2e5b7c977af",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "AceMo",
+    "popularity": 23,
+    "type": "artist",
+    "uri": "spotify:artist:2NArTWfXN317Ok1Ale3xkX"
+  }
+}

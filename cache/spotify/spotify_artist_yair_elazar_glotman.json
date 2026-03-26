@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:57:46.992580",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5WauIMQCkt1pLvm15mi22B"
+    },
+    "followers": {
+      "href": null,
+      "total": 5089
+    },
+    "genres": [
+      "dark ambient",
+      "neoclassical",
+      "drone",
+      "ambient"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5WauIMQCkt1pLvm15mi22B",
+    "id": "5WauIMQCkt1pLvm15mi22B",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebffa5d3b896f4853114e3f91f",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174ffa5d3b896f4853114e3f91f",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178ffa5d3b896f4853114e3f91f",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Yair Elazar Glotman",
+    "popularity": 31,
+    "type": "artist",
+    "uri": "spotify:artist:5WauIMQCkt1pLvm15mi22B"
+  }
+}

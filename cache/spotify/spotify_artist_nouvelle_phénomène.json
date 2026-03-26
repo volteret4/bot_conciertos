@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:55:13.573439",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4hjFIN06klMfVMLuhZAyf7"
+    },
+    "followers": {
+      "href": null,
+      "total": 19200
+    },
+    "genres": [
+      "cold wave",
+      "darkwave",
+      "synthpop",
+      "post-punk"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4hjFIN06klMfVMLuhZAyf7",
+    "id": "4hjFIN06klMfVMLuhZAyf7",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebdda1731c891148ac70f1877d",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174dda1731c891148ac70f1877d",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178dda1731c891148ac70f1877d",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Nouvelle Phénomène",
+    "popularity": 37,
+    "type": "artist",
+    "uri": "spotify:artist:4hjFIN06klMfVMLuhZAyf7"
+  }
+}

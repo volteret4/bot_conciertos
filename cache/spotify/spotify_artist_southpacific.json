@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:49:10.730936",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5eeXcEsflXi3q0GiIw1mCL"
+    },
+    "followers": {
+      "href": null,
+      "total": 12171
+    },
+    "genres": [
+      "shoegaze",
+      "slowcore",
+      "dream pop",
+      "space rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5eeXcEsflXi3q0GiIw1mCL",
+    "id": "5eeXcEsflXi3q0GiIw1mCL",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb976e3d4c3d11bcb44d88eaa4",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174976e3d4c3d11bcb44d88eaa4",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178976e3d4c3d11bcb44d88eaa4",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Southpacific",
+    "popularity": 36,
+    "type": "artist",
+    "uri": "spotify:artist:5eeXcEsflXi3q0GiIw1mCL"
+  }
+}

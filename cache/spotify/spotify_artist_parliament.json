@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:49:18.401954",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5SMVzTJyKFJ7TUb46DglcH"
+    },
+    "followers": {
+      "href": null,
+      "total": 817090
+    },
+    "genres": [
+      "funk",
+      "funk rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5SMVzTJyKFJ7TUb46DglcH",
+    "id": "5SMVzTJyKFJ7TUb46DglcH",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb6d32e1e62d928ac057284b4c",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051746d32e1e62d928ac057284b4c",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1786d32e1e62d928ac057284b4c",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Parliament",
+    "popularity": 48,
+    "type": "artist",
+    "uri": "spotify:artist:5SMVzTJyKFJ7TUb46DglcH"
+  }
+}

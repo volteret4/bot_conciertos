@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:50:13.959954",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0FmOK4kdUOM0JKMFLUzHDh"
+    },
+    "followers": {
+      "href": null,
+      "total": 4720
+    },
+    "genres": [
+      "idm",
+      "breakbeat",
+      "lo-fi house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0FmOK4kdUOM0JKMFLUzHDh",
+    "id": "0FmOK4kdUOM0JKMFLUzHDh",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273bd5e2b95123134ce7e0fead8",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02bd5e2b95123134ce7e0fead8",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851bd5e2b95123134ce7e0fead8",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Microlith",
+    "popularity": 9,
+    "type": "artist",
+    "uri": "spotify:artist:0FmOK4kdUOM0JKMFLUzHDh"
+  }
+}

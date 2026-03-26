@@ -1,0 +1,57 @@
+{
+  "timestamp": "2025-10-23T17:06:51.673062",
+  "concerts": [
+    {
+      "artist": "Charlie Parker",
+      "name": "Charlie Parker with Strings",
+      "venue": "Cinquième salle",
+      "city": "Montréal",
+      "country": "Can",
+      "country_code": "CAN",
+      "date": "2025-11-27",
+      "time": "20:00:00",
+      "url": "",
+      "source": "Ticketmaster",
+      "id": "Za5ju3rKuqZDd69DxmL4u7g_tpjGFWJCvr"
+    },
+    {
+      "artist": "Charlie Parker",
+      "name": "The Place To Be prior to Charlie Berens",
+      "venue": "The Place To Be at The Parker",
+      "city": "Fort Lauderdale",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-04",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/the-place-to-be-prior-to-fort-lauderdale-florida-12-04-2025/event/0D0062BEF44F4941",
+      "source": "Ticketmaster",
+      "id": "vvG1VZblDVKVPv"
+    },
+    {
+      "artist": "Charlie Parker",
+      "name": "The Haller Club prior to Charlie Berens",
+      "venue": "The Haller Club at The Parker",
+      "city": "Fort Lauderdale",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-04",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/the-haller-club-prior-to-charlie-fort-lauderdale-florida-12-04-2025/event/0D0062BEF4D4495A",
+      "source": "Ticketmaster",
+      "id": "vvG1VZblDVg7PQ"
+    },
+    {
+      "artist": "Charlie Parker",
+      "name": "Charlie Berens: The Lost and Found Tour",
+      "venue": "Wells Hall at The Parker",
+      "city": "Ft Lauderdale",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-04",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/charlie-berens-the-lost-and-found-ft-lauderdale-florida-12-04-2025/event/0D0062BEC2013491",
+      "source": "Ticketmaster",
+      "id": "vvG1VZblDeZK3o"
+    }
+  ]
+}

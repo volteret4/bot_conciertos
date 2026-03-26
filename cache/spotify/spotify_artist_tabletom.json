@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:47:34.685365",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3rNIGWm5Dz3ni9lRcDgJip"
+    },
+    "followers": {
+      "href": null,
+      "total": 13393
+    },
+    "genres": [
+      "flamenco"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3rNIGWm5Dz3ni9lRcDgJip",
+    "id": "3rNIGWm5Dz3ni9lRcDgJip",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273aed996fc83dd0f09baa99f6f",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02aed996fc83dd0f09baa99f6f",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851aed996fc83dd0f09baa99f6f",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Tabletom",
+    "popularity": 25,
+    "type": "artist",
+    "uri": "spotify:artist:3rNIGWm5Dz3ni9lRcDgJip"
+  }
+}

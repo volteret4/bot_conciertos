@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:57:24.088042",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7HWm8K49cNGqMTZtdoV2BC"
+    },
+    "followers": {
+      "href": null,
+      "total": 3840
+    },
+    "genres": [
+      "dub techno",
+      "minimal techno"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7HWm8K49cNGqMTZtdoV2BC",
+    "id": "7HWm8K49cNGqMTZtdoV2BC",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27384f4dd8391a1d095ef550a06",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0284f4dd8391a1d095ef550a06",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485184f4dd8391a1d095ef550a06",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Forward Strategy Group",
+    "popularity": 2,
+    "type": "artist",
+    "uri": "spotify:artist:7HWm8K49cNGqMTZtdoV2BC"
+  }
+}

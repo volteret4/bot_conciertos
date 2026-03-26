@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:59:57.083458",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5yE5AG06GxRrh6Hw9qSJOQ"
+    },
+    "followers": {
+      "href": null,
+      "total": 3468
+    },
+    "genres": [
+      "ambient",
+      "drone"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5yE5AG06GxRrh6Hw9qSJOQ",
+    "id": "5yE5AG06GxRrh6Hw9qSJOQ",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eba3ea16307053b3591cc2ea55",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174a3ea16307053b3591cc2ea55",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178a3ea16307053b3591cc2ea55",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "David Cordero",
+    "popularity": 31,
+    "type": "artist",
+    "uri": "spotify:artist:5yE5AG06GxRrh6Hw9qSJOQ"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:57:45.908616",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2bN5hXtWZXEIfnHO34eXfe"
+    },
+    "followers": {
+      "href": null,
+      "total": 47520
+    },
+    "genres": [
+      "jazz house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2bN5hXtWZXEIfnHO34eXfe",
+    "id": "2bN5hXtWZXEIfnHO34eXfe",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb07b3234ab7b108c79cee6a2f",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517407b3234ab7b108c79cee6a2f",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17807b3234ab7b108c79cee6a2f",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Beverly Glenn-Copeland",
+    "popularity": 33,
+    "type": "artist",
+    "uri": "spotify:artist:2bN5hXtWZXEIfnHO34eXfe"
+  }
+}

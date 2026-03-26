@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:03:01.918917",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6PsuUa5ijopH2T8rVzHSZc"
+    },
+    "followers": {
+      "href": null,
+      "total": 15286
+    },
+    "genres": [
+      "spoken word",
+      "experimental"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6PsuUa5ijopH2T8rVzHSZc",
+    "id": "6PsuUa5ijopH2T8rVzHSZc",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebb2fd15ea07b1afdcf5f04e21",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174b2fd15ea07b1afdcf5f04e21",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178b2fd15ea07b1afdcf5f04e21",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Voice Actor",
+    "popularity": 28,
+    "type": "artist",
+    "uri": "spotify:artist:6PsuUa5ijopH2T8rVzHSZc"
+  }
+}

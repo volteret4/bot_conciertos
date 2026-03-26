@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:04:55.823239",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5IbUz6BcOu6IVY512oxavP"
+    },
+    "followers": {
+      "href": null,
+      "total": 49095
+    },
+    "genres": [
+      "flamenco"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5IbUz6BcOu6IVY512oxavP",
+    "id": "5IbUz6BcOu6IVY512oxavP",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb34959d72589ac5b7fa308d8d",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517434959d72589ac5b7fa308d8d",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17834959d72589ac5b7fa308d8d",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Niño de Elche",
+    "popularity": 54,
+    "type": "artist",
+    "uri": "spotify:artist:5IbUz6BcOu6IVY512oxavP"
+  }
+}

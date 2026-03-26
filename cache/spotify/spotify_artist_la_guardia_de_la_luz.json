@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-10-23T17:51:06.767253",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3QJ6QhOP17iKUWXscpJrMP"
+    },
+    "followers": {
+      "href": null,
+      "total": 158
+    },
+    "genres": [
+      "indie dance",
+      "organic house",
+      "nu disco"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3QJ6QhOP17iKUWXscpJrMP",
+    "id": "3QJ6QhOP17iKUWXscpJrMP",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2730c1663019c1478e14936a346",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e020c1663019c1478e14936a346",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048510c1663019c1478e14936a346",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "La Guardia De La Luz",
+    "popularity": 0,
+    "type": "artist",
+    "uri": "spotify:artist:3QJ6QhOP17iKUWXscpJrMP"
+  }
+}

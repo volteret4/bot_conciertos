@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-10-23T17:55:18.457594",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1GWV70Reko15eV2nHCm0bM"
+    },
+    "followers": {
+      "href": null,
+      "total": 95418
+    },
+    "genres": [
+      "art rock",
+      "synthpop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1GWV70Reko15eV2nHCm0bM",
+    "id": "1GWV70Reko15eV2nHCm0bM",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/8242e8681d3af50bb889b75e28faba2f88e71210",
+        "height": 1019,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/77de78249742d3b320c01421950a8979b0498801",
+        "height": 652,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/1c8994f8eb6b8d25bda06a2ab986fe175e8dbd3f",
+        "height": 204,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/d9bf387f13b9a2bbcc10b94db377043da511c0f6",
+        "height": 65,
+        "width": 64
+      }
+    ],
+    "name": "The Blue Nile",
+    "popularity": 42,
+    "type": "artist",
+    "uri": "spotify:artist:1GWV70Reko15eV2nHCm0bM"
+  }
+}

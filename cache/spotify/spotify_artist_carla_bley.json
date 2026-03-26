@@ -1,0 +1,45 @@
+{
+  "timestamp": "2025-10-23T17:55:15.719834",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4Byg6TGm4z9TEkUDvEJBGO"
+    },
+    "followers": {
+      "href": null,
+      "total": 36330
+    },
+    "genres": [
+      "free jazz",
+      "jazz",
+      "avant-garde"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4Byg6TGm4z9TEkUDvEJBGO",
+    "id": "4Byg6TGm4z9TEkUDvEJBGO",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6772690000c46cdab8d4f6a7d8f23ae0c9847d",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000dd22dab8d4f6a7d8f23ae0c9847d",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000bac3dab8d4f6a7d8f23ae0c9847d",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67726900008f74dab8d4f6a7d8f23ae0c9847d",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Carla Bley",
+    "popularity": 31,
+    "type": "artist",
+    "uri": "spotify:artist:4Byg6TGm4z9TEkUDvEJBGO"
+  }
+}

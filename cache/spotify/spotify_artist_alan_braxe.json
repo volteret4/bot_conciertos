@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:00:59.646204",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/24JRvbKfTcF2x7c2kCCJrW"
+    },
+    "followers": {
+      "href": null,
+      "total": 40884
+    },
+    "genres": [
+      "french house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/24JRvbKfTcF2x7c2kCCJrW",
+    "id": "24JRvbKfTcF2x7c2kCCJrW",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebb1fad66ab3965d69814b4485",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174b1fad66ab3965d69814b4485",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178b1fad66ab3965d69814b4485",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Alan Braxe",
+    "popularity": 59,
+    "type": "artist",
+    "uri": "spotify:artist:24JRvbKfTcF2x7c2kCCJrW"
+  }
+}

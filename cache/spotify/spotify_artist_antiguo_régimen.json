@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T20:01:49.348104",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3sl7DZHjyHVFXcif3zRqLN"
+    },
+    "followers": {
+      "href": null,
+      "total": 4815
+    },
+    "genres": [
+      "post-punk",
+      "cold wave",
+      "darkwave",
+      "mexican ska"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3sl7DZHjyHVFXcif3zRqLN",
+    "id": "3sl7DZHjyHVFXcif3zRqLN",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273265705e16ed9f6322da780fd",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02265705e16ed9f6322da780fd",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851265705e16ed9f6322da780fd",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Antiguo Régimen",
+    "popularity": 9,
+    "type": "artist",
+    "uri": "spotify:artist:3sl7DZHjyHVFXcif3zRqLN"
+  }
+}

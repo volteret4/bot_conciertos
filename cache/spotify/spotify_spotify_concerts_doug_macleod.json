@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-24T08:26:52.645926",
+  "data": [
+    {
+      "artist": "Doug MacLeod",
+      "artist_name": "Doug MacLeod",
+      "name": "Doug MacLeod Concert (4EvMYEa1)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/4EvMYEa1lct7bSbhWKcMN0",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Doug MacLeod",
+      "artist_name": "Doug MacLeod",
+      "name": "Doug MacLeod Concert (7ssLjnEx)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/7ssLjnExvow3UIjOlPi8zt",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Doug MacLeod",
+      "artist_name": "Doug MacLeod",
+      "name": "Doug MacLeod Concert (0uqWDHxI)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/0uqWDHxIzZN2NHp4S1bGYo",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Doug MacLeod",
+      "artist_name": "Doug MacLeod",
+      "name": "Doug MacLeod at Blues In The Schools Residency",
+      "venue": "Blues In The Schools Residency",
+      "city": "Marietta",
+      "country": "",
+      "date": "2025-10-07",
+      "time": "12:00 PM",
+      "url": "https://open.spotify.com/concert/5JHFLMGK0mKLj0RvXAeWe5",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Doug MacLeod",
+      "artist_name": "Doug MacLeod",
+      "name": "Doug MacLeod at Blues In The Schools Residency",
+      "venue": "Blues In The Schools Residency",
+      "city": "Marietta",
+      "country": "",
+      "date": "2025-10-08",
+      "time": "12:00 PM",
+      "url": "https://open.spotify.com/concert/3MBIbvhMZCnmMTdBOVmBxW",
+      "source": "Spotify"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "timestamp": "2025-10-23T17:05:06.494337",
+  "concerts": [
+    {
+      "artist": "Charlotte de Witte",
+      "name": "EDC Orlando",
+      "venue": "Tinker Field",
+      "city": "Orlando",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-07",
+      "time": "",
+      "url": "https://on.fgtix.com/trk/8uFM",
+      "source": "Ticketmaster",
+      "id": "1AeFZbpGkXm1sRl"
+    },
+    {
+      "artist": "Charlotte de Witte",
+      "name": "Charlotte de Witte - 21+",
+      "venue": "Factory 93",
+      "city": "Los Angeles",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-08",
+      "time": "17:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7jKr7",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7jKr7"
+    },
+    {
+      "artist": "Charlotte de Witte",
+      "name": "Charlotte de Witte",
+      "venue": "Flanders Expo",
+      "city": "Ghent",
+      "country": "Belgium",
+      "country_code": "BE",
+      "date": "2026-02-06",
+      "time": "20:30:00",
+      "url": "https://www.ticketmaster.be/event/charlotte-de-witte-tickets/1025597167",
+      "source": "Ticketmaster",
+      "id": "Z698xZG2Z16vZPp9AE"
+    },
+    {
+      "artist": "Charlotte de Witte",
+      "name": "Charlotte de Witte",
+      "venue": "Flanders Expo",
+      "city": "Ghent",
+      "country": "Belgium",
+      "country_code": "BE",
+      "date": "2026-02-07",
+      "time": "20:30:00",
+      "url": "https://www.ticketmaster.be/event/charlotte-de-witte-tickets/1196325866",
+      "source": "Ticketmaster",
+      "id": "Z698xZG2Z16vkpGP-J"
+    }
+  ]
+}

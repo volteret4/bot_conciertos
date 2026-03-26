@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T20:03:02.356713",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3baxdZ69449O6BMd7yuYXv"
+    },
+    "followers": {
+      "href": null,
+      "total": 133768
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/3baxdZ69449O6BMd7yuYXv",
+    "id": "3baxdZ69449O6BMd7yuYXv",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/2452f3fe76b36a0fae1f80cd97d3585363efafcc",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/390accadb708c4c4712cbe50afe28b50e8cdc41b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/63d0bb30e802807744384fbfe69edeb52b129a24",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/06235d3ebe45430aa17df7220dab680b31fe3a72",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Siniestro Total",
+    "popularity": 40,
+    "type": "artist",
+    "uri": "spotify:artist:3baxdZ69449O6BMd7yuYXv"
+  }
+}

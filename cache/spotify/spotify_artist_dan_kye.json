@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:00:13.451240",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/05YrP00agTrYezUyAsukKf"
+    },
+    "followers": {
+      "href": null,
+      "total": 34999
+    },
+    "genres": [
+      "jazz house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/05YrP00agTrYezUyAsukKf",
+    "id": "05YrP00agTrYezUyAsukKf",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb9ba0fc61164d9aa2473a370e",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051749ba0fc61164d9aa2473a370e",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1789ba0fc61164d9aa2473a370e",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Dan Kye",
+    "popularity": 41,
+    "type": "artist",
+    "uri": "spotify:artist:05YrP00agTrYezUyAsukKf"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:01:24.180815",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1WgXqy2Dd70QQOU7Ay074N"
+    },
+    "followers": {
+      "href": null,
+      "total": 4700749
+    },
+    "genres": [
+      "norwegian pop",
+      "art pop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1WgXqy2Dd70QQOU7Ay074N",
+    "id": "1WgXqy2Dd70QQOU7Ay074N",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebeefc6f13cec94fe613a6c1c8",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174eefc6f13cec94fe613a6c1c8",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178eefc6f13cec94fe613a6c1c8",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "AURORA",
+    "popularity": 73,
+    "type": "artist",
+    "uri": "spotify:artist:1WgXqy2Dd70QQOU7Ay074N"
+  }
+}

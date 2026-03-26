@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:47:44.661672",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1xpBuU9oUPQIYw2bP0XOu8"
+    },
+    "followers": {
+      "href": null,
+      "total": 12754
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/1xpBuU9oUPQIYw2bP0XOu8",
+    "id": "1xpBuU9oUPQIYw2bP0XOu8",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/420937a9037451e63c463ba12819b97f833a143e",
+        "height": 400,
+        "width": 665
+      },
+      {
+        "url": "https://i.scdn.co/image/662c86d6fc2dc5bc3e7cc2e6720874d83dcc73b8",
+        "height": 385,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/79a83bca78fed825f06e72b82b29561f5c2c7e55",
+        "height": 120,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/c843a6e2c33ccdb7357227f663cce3922f2d3bc1",
+        "height": 38,
+        "width": 63
+      }
+    ],
+    "name": "Gloria Ann Taylor",
+    "popularity": 27,
+    "type": "artist",
+    "uri": "spotify:artist:1xpBuU9oUPQIYw2bP0XOu8"
+  }
+}

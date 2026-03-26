@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:55:27.260186",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/12X85dtebfc7JTZ8iMBT2o"
+    },
+    "followers": {
+      "href": null,
+      "total": 43666
+    },
+    "genres": [
+      "highlife",
+      "afrobeat",
+      "afropop",
+      "hiplife"
+    ],
+    "href": "https://api.spotify.com/v1/artists/12X85dtebfc7JTZ8iMBT2o",
+    "id": "12X85dtebfc7JTZ8iMBT2o",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb9b84a869f67e4ea36d833bab",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051749b84a869f67e4ea36d833bab",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1789b84a869f67e4ea36d833bab",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Osibisa",
+    "popularity": 28,
+    "type": "artist",
+    "uri": "spotify:artist:12X85dtebfc7JTZ8iMBT2o"
+  }
+}

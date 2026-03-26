@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:58:32.332930",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1M5wLoT4Yub4wWOZAcj7z0"
+    },
+    "followers": {
+      "href": null,
+      "total": 12668
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/1M5wLoT4Yub4wWOZAcj7z0",
+    "id": "1M5wLoT4Yub4wWOZAcj7z0",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2737795a5fb973bb50f173684b3",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e027795a5fb973bb50f173684b3",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048517795a5fb973bb50f173684b3",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Pino Donaggio",
+    "popularity": 40,
+    "type": "artist",
+    "uri": "spotify:artist:1M5wLoT4Yub4wWOZAcj7z0"
+  }
+}

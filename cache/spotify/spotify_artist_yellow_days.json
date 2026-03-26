@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:04:00.376991",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3dv4Q4q3LWOnbLJnC6GgTY"
+    },
+    "followers": {
+      "href": null,
+      "total": 474359
+    },
+    "genres": [
+      "bedroom pop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3dv4Q4q3LWOnbLJnC6GgTY",
+    "id": "3dv4Q4q3LWOnbLJnC6GgTY",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb1c9110bde524edfc6569f7bf",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051741c9110bde524edfc6569f7bf",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1781c9110bde524edfc6569f7bf",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Yellow Days",
+    "popularity": 44,
+    "type": "artist",
+    "uri": "spotify:artist:3dv4Q4q3LWOnbLJnC6GgTY"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "timestamp": "2025-11-03T19:56:51.969263",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4jLpm91Tyk2TRgv43bMfZO"
+    },
+    "followers": {
+      "href": null,
+      "total": 39014
+    },
+    "genres": [
+      "disco house",
+      "indie dance",
+      "nu disco"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4jLpm91Tyk2TRgv43bMfZO",
+    "id": "4jLpm91Tyk2TRgv43bMfZO",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/38bff9fa3b08d7484459d5e06317a082b07d9798",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/79b4d92bd87f8c8c0460ffca194078a339dfe831",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/c0eb41030d68848e4822762a33b8998b8bdc5a98",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/e188ab49f069b35353ee0befae5db348e9d107b5",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Gerd Janson",
+    "popularity": 40,
+    "type": "artist",
+    "uri": "spotify:artist:4jLpm91Tyk2TRgv43bMfZO"
+  }
+}

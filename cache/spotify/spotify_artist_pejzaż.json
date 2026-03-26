@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:49:21.343947",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5PWnUGbA3SNGNE7U9YPnXH"
+    },
+    "followers": {
+      "href": null,
+      "total": 9382
+    },
+    "genres": [
+      "jazz house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5PWnUGbA3SNGNE7U9YPnXH",
+    "id": "5PWnUGbA3SNGNE7U9YPnXH",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb83108c1e30b7900aadaa6d1b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517483108c1e30b7900aadaa6d1b",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17883108c1e30b7900aadaa6d1b",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Pejzaż",
+    "popularity": 39,
+    "type": "artist",
+    "uri": "spotify:artist:5PWnUGbA3SNGNE7U9YPnXH"
+  }
+}

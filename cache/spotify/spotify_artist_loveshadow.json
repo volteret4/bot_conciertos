@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:02:58.994274",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0GkDenXPntgMBSzRZab1JM"
+    },
+    "followers": {
+      "href": null,
+      "total": 1375
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/0GkDenXPntgMBSzRZab1JM",
+    "id": "0GkDenXPntgMBSzRZab1JM",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eba059df10b48d61d07ca0012f",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174a059df10b48d61d07ca0012f",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178a059df10b48d61d07ca0012f",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Loveshadow",
+    "popularity": 13,
+    "type": "artist",
+    "uri": "spotify:artist:0GkDenXPntgMBSzRZab1JM"
+  }
+}

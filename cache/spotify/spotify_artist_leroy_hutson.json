@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:56:39.989599",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5YJjMGHVQj1IHBabXX8lH6"
+    },
+    "followers": {
+      "href": null,
+      "total": 40727
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/5YJjMGHVQj1IHBabXX8lH6",
+    "id": "5YJjMGHVQj1IHBabXX8lH6",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273fcd6b09031da964df73a07aa",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02fcd6b09031da964df73a07aa",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851fcd6b09031da964df73a07aa",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Leroy Hutson",
+    "popularity": 33,
+    "type": "artist",
+    "uri": "spotify:artist:5YJjMGHVQj1IHBabXX8lH6"
+  }
+}

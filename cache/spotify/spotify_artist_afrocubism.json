@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-11-03T20:01:30.546229",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2Los7jf0DpltIz39dDgNen"
+    },
+    "followers": {
+      "href": null,
+      "total": 31313
+    },
+    "genres": [
+      "son cubano"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2Los7jf0DpltIz39dDgNen",
+    "id": "2Los7jf0DpltIz39dDgNen",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6772690000c46c8a2dd7c05e52cb660733356f",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000dd228a2dd7c05e52cb660733356f",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000bac38a2dd7c05e52cb660733356f",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67726900008f748a2dd7c05e52cb660733356f",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "AfroCubism",
+    "popularity": 35,
+    "type": "artist",
+    "uri": "spotify:artist:2Los7jf0DpltIz39dDgNen"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "timestamp": "2025-10-23T17:11:08.598968",
+  "concerts": [
+    {
+      "artist": "Caribou",
+      "name": "Caribou",
+      "venue": "Unknown venue",
+      "city": "Vienna",
+      "country": "Austria",
+      "country_code": "AT",
+      "date": "2025-12-02",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.at/event/caribou-tickets/895773830?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZ5rZ1kx4qSOY"
+    },
+    {
+      "artist": "Caribou",
+      "name": "Caribou",
+      "venue": "The Great Hall - Cardiff University Students' Union",
+      "city": "Cardiff",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2025-12-06",
+      "time": "19:00:00",
+      "url": "https://www.universe.com/events/caribou-tickets-YN5ZPR?ref=ticketmaster",
+      "source": "Ticketmaster",
+      "id": "LvZ18_W0S2gXXf8ZxvMC6"
+    },
+    {
+      "artist": "Caribou",
+      "name": "Caribou",
+      "venue": "Barrowland Ballroom",
+      "city": "Glasgow",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2025-12-08",
+      "time": "19:00:00",
+      "url": "https://www.universe.com/events/caribou-tickets-WMC9K2?ref=ticketmaster",
+      "source": "Ticketmaster",
+      "id": "LvZ18QZXgwohoA8Z-_jcn"
+    },
+    {
+      "artist": "Caribou",
+      "name": "Caribou",
+      "venue": "The Glasshouse International Centre for Music",
+      "city": "Gateshead",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2025-12-09",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.co.uk/caribou-gateshead-09-12-2025/event/37006315A83F2105",
+      "source": "Ticketmaster",
+      "id": "1AMZkG4GkeI2w7A"
+    },
+    {
+      "artist": "Caribou",
+      "name": "Caribou",
+      "venue": "Vicar Street",
+      "city": "Dublin",
+      "country": "Ireland",
+      "country_code": "IE",
+      "date": "2025-12-10",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.ie/caribou-dublin-10-12-2025/event/180062BEAAE58C8C",
+      "source": "Ticketmaster",
+      "id": "17kZvxG65BnybwG"
+    },
+    {
+      "artist": "Caribou",
+      "name": "Caribou",
+      "venue": "Vicar Street",
+      "city": "Dublin",
+      "country": "Ireland",
+      "country_code": "IE",
+      "date": "2025-12-11",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.ie/caribou-dublin-11-12-2025/event/180062BEEBB0AB13",
+      "source": "Ticketmaster",
+      "id": "17kZvxG65Dli1iK"
+    },
+    {
+      "artist": "Caribou",
+      "name": "Caribou",
+      "venue": "Vicar Street",
+      "city": "Dublin",
+      "country": "Ireland",
+      "country_code": "IE",
+      "date": "2025-12-12",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.ie/caribou-dublin-12-12-2025/event/180062BEED05AB3F",
+      "source": "Ticketmaster",
+      "id": "17kZvxG65DcvQiT"
+    },
+    {
+      "artist": "Caribou",
+      "name": "Repercussion",
+      "venue": "Depot Mayfield",
+      "city": "Manchester",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2025-12-13",
+      "time": "18:00:00",
+      "url": "https://www.ticketmaster.co.uk/repercussion-manchester-13-12-2025/event/35006338D760B4A8",
+      "source": "Ticketmaster",
+      "id": "1AgZkGzGkd9b53I"
+    }
+  ]
+}

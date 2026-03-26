@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T20:03:22.486098",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5NXHXK6hOCotCF8lvGM1I0"
+    },
+    "followers": {
+      "href": null,
+      "total": 766420
+    },
+    "genres": [
+      "progressive rock",
+      "progressive metal",
+      "art rock",
+      "space rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5NXHXK6hOCotCF8lvGM1I0",
+    "id": "5NXHXK6hOCotCF8lvGM1I0",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebc4f72407be5d96db73982400",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174c4f72407be5d96db73982400",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178c4f72407be5d96db73982400",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Porcupine Tree",
+    "popularity": 52,
+    "type": "artist",
+    "uri": "spotify:artist:5NXHXK6hOCotCF8lvGM1I0"
+  }
+}

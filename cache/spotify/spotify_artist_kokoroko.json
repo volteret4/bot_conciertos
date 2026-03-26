@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:02:30.039049",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3u9rbdcmA6CxjxOAkjaeFr"
+    },
+    "followers": {
+      "href": null,
+      "total": 367882
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/3u9rbdcmA6CxjxOAkjaeFr",
+    "id": "3u9rbdcmA6CxjxOAkjaeFr",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb4195eb7322a35b79fee7d169",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051744195eb7322a35b79fee7d169",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1784195eb7322a35b79fee7d169",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Kokoroko",
+    "popularity": 53,
+    "type": "artist",
+    "uri": "spotify:artist:3u9rbdcmA6CxjxOAkjaeFr"
+  }
+}

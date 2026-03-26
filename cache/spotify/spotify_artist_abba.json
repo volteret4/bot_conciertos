@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-09-02T08:01:42.351695",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0LcJLqbBmaGUft1e9Mm8HV"
+    },
+    "followers": {
+      "href": null,
+      "total": 14618637
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/0LcJLqbBmaGUft1e9Mm8HV",
+    "id": "0LcJLqbBmaGUft1e9Mm8HV",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb81a5ec3c9b4a6750440904d8",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517481a5ec3c9b4a6750440904d8",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17881a5ec3c9b4a6750440904d8",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "ABBA",
+    "popularity": 83,
+    "type": "artist",
+    "uri": "spotify:artist:0LcJLqbBmaGUft1e9Mm8HV"
+  }
+}

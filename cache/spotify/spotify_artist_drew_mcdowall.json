@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:56:24.044688",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3jAdN6k0KlW1X48AUizxn4"
+    },
+    "followers": {
+      "href": null,
+      "total": 8987
+    },
+    "genres": [
+      "experimental",
+      "drone",
+      "dark ambient",
+      "ambient"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3jAdN6k0KlW1X48AUizxn4",
+    "id": "3jAdN6k0KlW1X48AUizxn4",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebd9fc9bb9537160f6b4d94f33",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174d9fc9bb9537160f6b4d94f33",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178d9fc9bb9537160f6b4d94f33",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Drew McDowall",
+    "popularity": 17,
+    "type": "artist",
+    "uri": "spotify:artist:3jAdN6k0KlW1X48AUizxn4"
+  }
+}

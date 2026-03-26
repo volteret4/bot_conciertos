@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:48:52.229941",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1EtljEomHERXIPTXgs0hEh"
+    },
+    "followers": {
+      "href": null,
+      "total": 890
+    },
+    "genres": [
+      "anti-folk"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1EtljEomHERXIPTXgs0hEh",
+    "id": "1EtljEomHERXIPTXgs0hEh",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb456e672798250c2ee44b1cb3",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174456e672798250c2ee44b1cb3",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178456e672798250c2ee44b1cb3",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Ana Silvera",
+    "popularity": 2,
+    "type": "artist",
+    "uri": "spotify:artist:1EtljEomHERXIPTXgs0hEh"
+  }
+}

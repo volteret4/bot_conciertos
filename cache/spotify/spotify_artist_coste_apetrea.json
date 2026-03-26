@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:01:50.359128",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2D2dE18TIv4gNbl4t9j2ct"
+    },
+    "followers": {
+      "href": null,
+      "total": 444
+    },
+    "genres": [
+      "jazz fusion"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2D2dE18TIv4gNbl4t9j2ct",
+    "id": "2D2dE18TIv4gNbl4t9j2ct",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273e1c10872e11bccb097286e4d",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02e1c10872e11bccb097286e4d",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851e1c10872e11bccb097286e4d",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Coste Apetrea",
+    "popularity": 13,
+    "type": "artist",
+    "uri": "spotify:artist:2D2dE18TIv4gNbl4t9j2ct"
+  }
+}

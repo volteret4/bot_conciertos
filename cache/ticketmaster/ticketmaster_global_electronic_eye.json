@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-10-23T17:10:38.809041",
+  "concerts": [
+    {
+      "artist": "Electronic Eye",
+      "name": "Cyclops \"The Eye Spy Tour\" - Pittsburgh, PA",
+      "venue": "Enclave Pittsburgh",
+      "city": "Pittsburgh",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-20",
+      "time": "21:00:00",
+      "url": "https://www.universe.com/events/cyclops-the-eye-spy-tour-pittsburgh-pa-tickets-W9HCMX?ref=ticketmaster",
+      "source": "Ticketmaster",
+      "id": "LvZ18Q6yqkffm6YZlQQOh"
+    },
+    {
+      "artist": "Electronic Eye",
+      "name": "CYCLOPS PRESENTS \"THE EYE SPY TOUR\"",
+      "venue": "The Mercury Music Lounge",
+      "city": "Lakewood",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-21",
+      "time": "20:00:00",
+      "url": "https://www.ticketweb.com/event/cyclops-presents-the-eye-spy-the-mercury-music-lounge-tickets/13892464",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AKx3o0"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-21T08:51:37.014564",
+  "data": [
+    {
+      "artist": "Genesis Owusu",
+      "artist_name": "Genesis Owusu",
+      "name": "Genesis Owusu at Sydney Opera House",
+      "venue": "Sydney Opera House",
+      "city": "Sydney",
+      "country": "AU",
+      "date": "2025-09-18",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/30nNNnflweZrlDHNCVbTiY",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Genesis Owusu",
+      "artist_name": "Genesis Owusu",
+      "name": "Genesis Owusu at Sydney Opera House",
+      "venue": "Sydney Opera House",
+      "city": "Sydney",
+      "country": "AU",
+      "date": "2025-09-19",
+      "time": "7:30 PM",
+      "url": "https://open.spotify.com/concert/5FprHtJyuwXBTW8r7uarrj",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Genesis Owusu",
+      "artist_name": "Genesis Owusu",
+      "name": "Genesis Owusu at Sydney Opera House",
+      "venue": "Sydney Opera House",
+      "city": "Sydney",
+      "country": "AU",
+      "date": "2025-09-20",
+      "time": "7:30 PM",
+      "url": "https://open.spotify.com/concert/1ZTJaXNTSrWvYaZqP6CfkN",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Genesis Owusu",
+      "artist_name": "Genesis Owusu",
+      "name": "Genesis Owusu at The Night Cat",
+      "venue": "The Night Cat",
+      "city": "Fitzroy",
+      "country": "AU",
+      "date": "2025-09-24",
+      "time": "7:30 PM",
+      "url": "https://open.spotify.com/concert/2QiXpRCTDXbMK1niUEKuD8",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Genesis Owusu",
+      "artist_name": "Genesis Owusu",
+      "name": "Genesis Owusu at The Night Cat",
+      "venue": "The Night Cat",
+      "city": "Fitzroy",
+      "country": "AU",
+      "date": "2025-09-25",
+      "time": "7:30 PM",
+      "url": "https://open.spotify.com/concert/6yP6t2aq7hamAKK6jCNzbj",
+      "source": "Spotify"
+    }
+  ]
+}

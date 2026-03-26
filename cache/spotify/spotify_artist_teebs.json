@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:03:33.088532",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2L2unNFaPbDxjg3NqzpqhJ"
+    },
+    "followers": {
+      "href": null,
+      "total": 118301
+    },
+    "genres": [
+      "idm"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2L2unNFaPbDxjg3NqzpqhJ",
+    "id": "2L2unNFaPbDxjg3NqzpqhJ",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb75d1644d614715c551d7debf",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517475d1644d614715c551d7debf",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17875d1644d614715c551d7debf",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Teebs",
+    "popularity": 37,
+    "type": "artist",
+    "uri": "spotify:artist:2L2unNFaPbDxjg3NqzpqhJ"
+  }
+}

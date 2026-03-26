@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-11-03T19:48:34.120267",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2AZOALDIBORfbzKTuliwdJ"
+    },
+    "followers": {
+      "href": null,
+      "total": 4389087
+    },
+    "genres": [
+      "latin pop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2AZOALDIBORfbzKTuliwdJ",
+    "id": "2AZOALDIBORfbzKTuliwdJ",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/45025bd1014527e8f113b22fa647da7a142c3d6c",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/08e7785dae72d4730b79232aebd448962e7f2e0a",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/94f061c54cad2a0bdd69845a04e7f2d8cedae529",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/d593b2ddc79b818da125081155a009485b42f1ed",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Cristian Castro",
+    "popularity": 74,
+    "type": "artist",
+    "uri": "spotify:artist:2AZOALDIBORfbzKTuliwdJ"
+  }
+}

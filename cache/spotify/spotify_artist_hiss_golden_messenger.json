@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:58:21.391644",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/37eqxl8DyLd5sQN54wYJbE"
+    },
+    "followers": {
+      "href": null,
+      "total": 95840
+    },
+    "genres": [
+      "americana",
+      "alt country"
+    ],
+    "href": "https://api.spotify.com/v1/artists/37eqxl8DyLd5sQN54wYJbE",
+    "id": "37eqxl8DyLd5sQN54wYJbE",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebcb7b523fa487bd10fccc535e",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174cb7b523fa487bd10fccc535e",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178cb7b523fa487bd10fccc535e",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Hiss Golden Messenger",
+    "popularity": 44,
+    "type": "artist",
+    "uri": "spotify:artist:37eqxl8DyLd5sQN54wYJbE"
+  }
+}

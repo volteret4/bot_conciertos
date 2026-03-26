@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-09-02T08:16:18.024177",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3RBjHIjeNEgQTkq2e0xU6d"
+    },
+    "followers": {
+      "href": null,
+      "total": 132
+    },
+    "genres": [
+      "chicago house",
+      "hip house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3RBjHIjeNEgQTkq2e0xU6d",
+    "id": "3RBjHIjeNEgQTkq2e0xU6d",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27392336895fd83e92d8905c331",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0292336895fd83e92d8905c331",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485192336895fd83e92d8905c331",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Cacao",
+    "popularity": 7,
+    "type": "artist",
+    "uri": "spotify:artist:3RBjHIjeNEgQTkq2e0xU6d"
+  }
+}

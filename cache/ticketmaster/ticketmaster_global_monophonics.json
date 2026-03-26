@@ -1,0 +1,70 @@
+{
+  "timestamp": "2025-10-23T17:07:43.507789",
+  "concerts": [
+    {
+      "artist": "Monophonics",
+      "name": "Garanti BBVA Genç Konserleri: Monophonics",
+      "venue": "Blind İstanbul",
+      "city": "İstanbul",
+      "country": "Turkey",
+      "country_code": "TR",
+      "date": "2025-11-02",
+      "time": "20:30:00",
+      "url": "https://www.biletix.com/performance/4SCGZ/001/TURKIYE/tr",
+      "source": "Ticketmaster",
+      "id": "Z2HyzZyMZAquo0vve"
+    },
+    {
+      "artist": "Monophonics",
+      "name": "Monophonics",
+      "venue": "Electric Ballroom",
+      "city": "London",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2025-11-04",
+      "time": "19:00:00",
+      "url": "https://www.ticketweb.uk/event/monophonics-electric-ballroom-tickets/13764144?REFERRAL_ID=tmfeed",
+      "source": "Ticketmaster",
+      "id": "17GOvxG65Su8-jf"
+    },
+    {
+      "artist": "Monophonics",
+      "name": "Monophonics",
+      "venue": "Manchester Gorilla",
+      "city": "Manchester",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2025-11-05",
+      "time": "19:30:00",
+      "url": "https://www.ticketweb.uk/event/monophonics-gorilla-tickets/13778394?REFERRAL_ID=tmfeed",
+      "source": "Ticketmaster",
+      "id": "17GOvxG6G5R1f65"
+    },
+    {
+      "artist": "Monophonics",
+      "name": "Monophonics",
+      "venue": "Wardrobe",
+      "city": "Leeds",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2025-11-06",
+      "time": "19:00:00",
+      "url": "https://www.ticketweb.uk/event/monophonics-wardrobe-tickets/13783184?REFERRAL_ID=tmfeed",
+      "source": "Ticketmaster",
+      "id": "17GOvxG6GCLfOP4"
+    },
+    {
+      "artist": "Monophonics",
+      "name": "Moe's Alley Presents: Monophonics",
+      "venue": "Moe's Alley",
+      "city": "Santa Cruz",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-30",
+      "time": "20:00:00",
+      "url": "https://www.ticketweb.com/event/moes-alley-presents-monophonics-moes-alley-tickets/14591423",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1Afpo8N"
+    }
+  ]
+}

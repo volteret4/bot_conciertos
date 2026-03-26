@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-11-03T20:04:26.463845",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2VAvhf61GgLYmC6C8anyX1"
+    },
+    "followers": {
+      "href": null,
+      "total": 737648
+    },
+    "genres": [
+      "idm",
+      "ambient",
+      "trip hop",
+      "downtempo",
+      "electronic"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2VAvhf61GgLYmC6C8anyX1",
+    "id": "2VAvhf61GgLYmC6C8anyX1",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/c533bf6f08a42119065d8c2171cdfa8e96720b4c",
+        "height": 902,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/c0b33a8d211600d70dcda3077d6a582da34321b0",
+        "height": 578,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/cefe6c830485f48e0d14c9c779d7bd61c8852161",
+        "height": 180,
+        "width": 199
+      },
+      {
+        "url": "https://i.scdn.co/image/d178796bb8003ec506629e0e63939599cbaba85c",
+        "height": 58,
+        "width": 64
+      }
+    ],
+    "name": "Boards of Canada",
+    "popularity": 55,
+    "type": "artist",
+    "uri": "spotify:artist:2VAvhf61GgLYmC6C8anyX1"
+  }
+}

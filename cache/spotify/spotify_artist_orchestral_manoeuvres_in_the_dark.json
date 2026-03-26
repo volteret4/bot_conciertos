@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:04:18.116506",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7wJ9NwdRWtN92NunmXuwBk"
+    },
+    "followers": {
+      "href": null,
+      "total": 890495
+    },
+    "genres": [
+      "new wave",
+      "synthpop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7wJ9NwdRWtN92NunmXuwBk",
+    "id": "7wJ9NwdRWtN92NunmXuwBk",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb242a32e4d72aa217bce81a79",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174242a32e4d72aa217bce81a79",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178242a32e4d72aa217bce81a79",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Orchestral Manoeuvres In The Dark",
+    "popularity": 59,
+    "type": "artist",
+    "uri": "spotify:artist:7wJ9NwdRWtN92NunmXuwBk"
+  }
+}

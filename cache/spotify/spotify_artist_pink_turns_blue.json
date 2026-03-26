@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T19:49:32.317963",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/47oP5alMot58ggzcFwldky"
+    },
+    "followers": {
+      "href": null,
+      "total": 88592
+    },
+    "genres": [
+      "gothic rock",
+      "post-punk",
+      "darkwave",
+      "deathrock",
+      "cold wave"
+    ],
+    "href": "https://api.spotify.com/v1/artists/47oP5alMot58ggzcFwldky",
+    "id": "47oP5alMot58ggzcFwldky",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebc2f7a6398684b57a85f75000",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174c2f7a6398684b57a85f75000",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178c2f7a6398684b57a85f75000",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Pink Turns Blue",
+    "popularity": 38,
+    "type": "artist",
+    "uri": "spotify:artist:47oP5alMot58ggzcFwldky"
+  }
+}

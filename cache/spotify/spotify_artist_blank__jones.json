@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:02:27.380523",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2XTff332rrZaE1rBM47Krp"
+    },
+    "followers": {
+      "href": null,
+      "total": 122100
+    },
+    "genres": [
+      "lounge",
+      "trance"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2XTff332rrZaE1rBM47Krp",
+    "id": "2XTff332rrZaE1rBM47Krp",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb51828664021ab3ce733fd2a2",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517451828664021ab3ce733fd2a2",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17851828664021ab3ce733fd2a2",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Blank & Jones",
+    "popularity": 53,
+    "type": "artist",
+    "uri": "spotify:artist:2XTff332rrZaE1rBM47Krp"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:03:58.311575",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4oLeXFyACqeem2VImYeBFe"
+    },
+    "followers": {
+      "href": null,
+      "total": 2208707
+    },
+    "genres": [
+      "stutter house",
+      "house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4oLeXFyACqeem2VImYeBFe",
+    "id": "4oLeXFyACqeem2VImYeBFe",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb381c41adc678e4ce864eb274",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174381c41adc678e4ce864eb274",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178381c41adc678e4ce864eb274",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Fred again..",
+    "popularity": 77,
+    "type": "artist",
+    "uri": "spotify:artist:4oLeXFyACqeem2VImYeBFe"
+  }
+}

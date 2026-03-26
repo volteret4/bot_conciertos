@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:56:15.480634",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/497rp5TEzJffeBnUT0BeE1"
+    },
+    "followers": {
+      "href": null,
+      "total": 132085
+    },
+    "genres": [
+      "nu jazz",
+      "indie jazz",
+      "jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/497rp5TEzJffeBnUT0BeE1",
+    "id": "497rp5TEzJffeBnUT0BeE1",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb44c2e97b10985c058a7ced1a",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517444c2e97b10985c058a7ced1a",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17844c2e97b10985c058a7ced1a",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Mammal Hands",
+    "popularity": 40,
+    "type": "artist",
+    "uri": "spotify:artist:497rp5TEzJffeBnUT0BeE1"
+  }
+}

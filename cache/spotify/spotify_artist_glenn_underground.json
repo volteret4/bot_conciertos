@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:48:08.013336",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1ZdinLDX0e8r5dIlWLpmAc"
+    },
+    "followers": {
+      "href": null,
+      "total": 31983
+    },
+    "genres": [
+      "chicago house",
+      "jazz house",
+      "deep house",
+      "acid house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1ZdinLDX0e8r5dIlWLpmAc",
+    "id": "1ZdinLDX0e8r5dIlWLpmAc",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27339accfd7716ad7bacd0876db",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0239accfd7716ad7bacd0876db",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485139accfd7716ad7bacd0876db",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Glenn Underground",
+    "popularity": 26,
+    "type": "artist",
+    "uri": "spotify:artist:1ZdinLDX0e8r5dIlWLpmAc"
+  }
+}

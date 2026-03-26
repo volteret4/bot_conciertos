@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-10-23T17:09:05.198905",
+  "concerts": [
+    {
+      "artist": "Jenny Hval",
+      "name": "XXXIV FESTIWAL ARS CAMERALIS: JENNY HVAL",
+      "venue": "Kinoteatr Rialto",
+      "city": "Katowice",
+      "country": "Poland",
+      "country_code": "PL",
+      "date": "2025-11-29",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.pl/event/xxxiv-festiwal-ars-cameralis-jenny-hval-tickets/374516505?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZQpZ1kuVfpfA"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:57:25.084666",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/41tQApRtxMjO3t4EIxdmfx"
+    },
+    "followers": {
+      "href": null,
+      "total": 72504
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/41tQApRtxMjO3t4EIxdmfx",
+    "id": "41tQApRtxMjO3t4EIxdmfx",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/3412b070436aeeb877f25ae5abc905e5a4c5e9ca",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/a2059353d44b07be1e5851a6d3517b434c7cebaa",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/dd2a5c351ff122a9e1e07b4d636af09f5121f0b0",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/b1e2e1d479251636ca68d6023cf9e4eab5c7a6fb",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "FRANK T",
+    "popularity": 33,
+    "type": "artist",
+    "uri": "spotify:artist:41tQApRtxMjO3t4EIxdmfx"
+  }
+}

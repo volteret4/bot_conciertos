@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-11-03T19:48:34.544406",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1WFsBUAgQmrGQQEUyFKS60"
+    },
+    "followers": {
+      "href": null,
+      "total": 127807
+    },
+    "genres": [
+      "post-punk"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1WFsBUAgQmrGQQEUyFKS60",
+    "id": "1WFsBUAgQmrGQQEUyFKS60",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/80fabaa57072b59c748dcaac612d177d40f48b0e",
+        "height": 700,
+        "width": 700
+      },
+      {
+        "url": "https://i.scdn.co/image/671c47e7e1a078f4a73628c4e72e97d7fc1e112b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/1237aa095e5c24a3ac5058c7a03f195eecf5af18",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/7ac4e4ee153674ce817a96cc9790824239d60310",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Savages",
+    "popularity": 26,
+    "type": "artist",
+    "uri": "spotify:artist:1WFsBUAgQmrGQQEUyFKS60"
+  }
+}

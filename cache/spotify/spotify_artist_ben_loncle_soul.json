@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:00:26.321449",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2dJTa3mUidZAO9sKcY72tK"
+    },
+    "followers": {
+      "href": null,
+      "total": 307660
+    },
+    "genres": [
+      "jazz blues",
+      "indie soul"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2dJTa3mUidZAO9sKcY72tK",
+    "id": "2dJTa3mUidZAO9sKcY72tK",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb19216d88b665a54069ecf690",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517419216d88b665a54069ecf690",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17819216d88b665a54069ecf690",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Ben L'Oncle Soul",
+    "popularity": 52,
+    "type": "artist",
+    "uri": "spotify:artist:2dJTa3mUidZAO9sKcY72tK"
+  }
+}

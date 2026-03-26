@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:59:50.461782",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0QWrMNukfcVOmgEU0FEDyD"
+    },
+    "followers": {
+      "href": null,
+      "total": 951608
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/0QWrMNukfcVOmgEU0FEDyD",
+    "id": "0QWrMNukfcVOmgEU0FEDyD",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb9cc73a463d6301a1bfc05c7f",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051749cc73a463d6301a1bfc05c7f",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1789cc73a463d6301a1bfc05c7f",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Jacob Collier",
+    "popularity": 59,
+    "type": "artist",
+    "uri": "spotify:artist:0QWrMNukfcVOmgEU0FEDyD"
+  }
+}

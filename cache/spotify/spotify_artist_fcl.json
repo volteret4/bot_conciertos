@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:59:08.432234",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5P1m0YM0AYTKGI5ugWfQwe"
+    },
+    "followers": {
+      "href": null,
+      "total": 5742
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/5P1m0YM0AYTKGI5ugWfQwe",
+    "id": "5P1m0YM0AYTKGI5ugWfQwe",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27349681b01ad9255a71d21d99f",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0249681b01ad9255a71d21d99f",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485149681b01ad9255a71d21d99f",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "FCL",
+    "popularity": 25,
+    "type": "artist",
+    "uri": "spotify:artist:5P1m0YM0AYTKGI5ugWfQwe"
+  }
+}

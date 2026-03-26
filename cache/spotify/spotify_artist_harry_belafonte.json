@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-11-03T20:00:24.182213",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6Tw1ktF4xMmzaLLbe98I2z"
+    },
+    "followers": {
+      "href": null,
+      "total": 279099
+    },
+    "genres": [
+      "calypso"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6Tw1ktF4xMmzaLLbe98I2z",
+    "id": "6Tw1ktF4xMmzaLLbe98I2z",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/a59b477875a9c8d3956cd514e2829b9b95248849",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/3be0b5a14eeeb3aec59aa2af7ee4806b59c90c43",
+        "height": 905,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/97362dc2c96029b1136966ed325a48b0c1309994",
+        "height": 283,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/6652cba08c6914e0321baed66bf894ccf187efc9",
+        "height": 90,
+        "width": 64
+      }
+    ],
+    "name": "Harry Belafonte",
+    "popularity": 60,
+    "type": "artist",
+    "uri": "spotify:artist:6Tw1ktF4xMmzaLLbe98I2z"
+  }
+}

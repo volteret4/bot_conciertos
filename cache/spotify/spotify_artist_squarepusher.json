@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:47:22.706085",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4mtHSXwIHihO6MWNq5Qoko"
+    },
+    "followers": {
+      "href": null,
+      "total": 264934
+    },
+    "genres": [
+      "idm",
+      "breakcore",
+      "glitch"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4mtHSXwIHihO6MWNq5Qoko",
+    "id": "4mtHSXwIHihO6MWNq5Qoko",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb39d046b747ad13d7fbf6f041",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517439d046b747ad13d7fbf6f041",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17839d046b747ad13d7fbf6f041",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Squarepusher",
+    "popularity": 40,
+    "type": "artist",
+    "uri": "spotify:artist:4mtHSXwIHihO6MWNq5Qoko"
+  }
+}

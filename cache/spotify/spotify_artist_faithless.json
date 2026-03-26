@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:59:11.235547",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5T4UKHhr4HGIC0VzdZQtAE"
+    },
+    "followers": {
+      "href": null,
+      "total": 739025
+    },
+    "genres": [
+      "trip hop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5T4UKHhr4HGIC0VzdZQtAE",
+    "id": "5T4UKHhr4HGIC0VzdZQtAE",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb2a9d5c143d566bbdbfd571f4",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051742a9d5c143d566bbdbfd571f4",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1782a9d5c143d566bbdbfd571f4",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Faithless",
+    "popularity": 59,
+    "type": "artist",
+    "uri": "spotify:artist:5T4UKHhr4HGIC0VzdZQtAE"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "timestamp": "2025-11-03T19:58:52.023646",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4F7Q5NV6h5TSwCainz8S5A"
+    },
+    "followers": {
+      "href": null,
+      "total": 965425
+    },
+    "genres": [
+      "jazz",
+      "big band",
+      "swing music",
+      "cool jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4F7Q5NV6h5TSwCainz8S5A",
+    "id": "4F7Q5NV6h5TSwCainz8S5A",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/1e24691a352233bbe989a311d921f17e7892a87e",
+        "height": 1154,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/c169af91bf56ac7d3962000f6ab237e1586d9732",
+        "height": 739,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/b6a297e56436a75ffcab7f594dafc46c9872f793",
+        "height": 231,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/2ac71fb8c2ff235d2484d40d274473767eaf07b5",
+        "height": 74,
+        "width": 64
+      }
+    ],
+    "name": "Duke Ellington",
+    "popularity": 58,
+    "type": "artist",
+    "uri": "spotify:artist:4F7Q5NV6h5TSwCainz8S5A"
+  }
+}

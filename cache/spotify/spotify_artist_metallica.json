@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T20:03:39.587182",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2ye2Wgw4gimLv2eAKyk1NB"
+    },
+    "followers": {
+      "href": null,
+      "total": 32197726
+    },
+    "genres": [
+      "metal",
+      "thrash metal",
+      "rock",
+      "heavy metal",
+      "hard rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2ye2Wgw4gimLv2eAKyk1NB",
+    "id": "2ye2Wgw4gimLv2eAKyk1NB",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb69ca98dd3083f1082d740e44",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517469ca98dd3083f1082d740e44",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17869ca98dd3083f1082d740e44",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Metallica",
+    "popularity": 82,
+    "type": "artist",
+    "uri": "spotify:artist:2ye2Wgw4gimLv2eAKyk1NB"
+  }
+}

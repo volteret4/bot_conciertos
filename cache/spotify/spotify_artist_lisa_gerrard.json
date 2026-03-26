@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-11-03T19:57:43.159684",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3C4MmUJYQN9svNdedAR2BK"
+    },
+    "followers": {
+      "href": null,
+      "total": 208998
+    },
+    "genres": [
+      "soundtrack"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3C4MmUJYQN9svNdedAR2BK",
+    "id": "3C4MmUJYQN9svNdedAR2BK",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/e9210a0a99eab042304456351ea0bd97a8788fe5",
+        "height": 822,
+        "width": 810
+      },
+      {
+        "url": "https://i.scdn.co/image/0bf971ade91ca270ef46af0ed790e2da67d806a4",
+        "height": 649,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/9231df1a2d87636a0305412a2ad8cb8dd2fb3217",
+        "height": 203,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/7993f68f05bd694de19d4a8592fe20569519e1e8",
+        "height": 65,
+        "width": 64
+      }
+    ],
+    "name": "Lisa Gerrard",
+    "popularity": 64,
+    "type": "artist",
+    "uri": "spotify:artist:3C4MmUJYQN9svNdedAR2BK"
+  }
+}

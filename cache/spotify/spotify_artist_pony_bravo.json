@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:04:14.951357",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2e1wMFU6VpZkcLil2g7MrF"
+    },
+    "followers": {
+      "href": null,
+      "total": 25893
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/2e1wMFU6VpZkcLil2g7MrF",
+    "id": "2e1wMFU6VpZkcLil2g7MrF",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb55859e8af1fe28ebc27fe06b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517455859e8af1fe28ebc27fe06b",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17855859e8af1fe28ebc27fe06b",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Pony Bravo",
+    "popularity": 27,
+    "type": "artist",
+    "uri": "spotify:artist:2e1wMFU6VpZkcLil2g7MrF"
+  }
+}

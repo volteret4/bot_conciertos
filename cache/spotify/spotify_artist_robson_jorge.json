@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:57:02.467275",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/59giNkLqQNTZs8MnlrkUhM"
+    },
+    "followers": {
+      "href": null,
+      "total": 9425
+    },
+    "genres": [
+      "brazilian jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/59giNkLqQNTZs8MnlrkUhM",
+    "id": "59giNkLqQNTZs8MnlrkUhM",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2733bcd1849d72fd6d81bd69142",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e029945ce822d07842f2519898a",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851c0d8803fd9dd5ae9db1b2402",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Robson Jorge",
+    "popularity": 33,
+    "type": "artist",
+    "uri": "spotify:artist:59giNkLqQNTZs8MnlrkUhM"
+  }
+}

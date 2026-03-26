@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:55:04.780206",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/41gy1E3ZlSK5KOjiDiqgmH"
+    },
+    "followers": {
+      "href": null,
+      "total": 15516
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/41gy1E3ZlSK5KOjiDiqgmH",
+    "id": "41gy1E3ZlSK5KOjiDiqgmH",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eba0656cb21de02a9e8ef9df07",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174a0656cb21de02a9e8ef9df07",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178a0656cb21de02a9e8ef9df07",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Natureboy Flako",
+    "popularity": 29,
+    "type": "artist",
+    "uri": "spotify:artist:41gy1E3ZlSK5KOjiDiqgmH"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "timestamp": "2025-10-23T17:12:46.410306",
+  "concerts": [
+    {
+      "artist": "Alfa Mist",
+      "name": "Alfa Mist feat. The Black Snow Orchestra",
+      "venue": "Royal Albert Hall",
+      "city": "London",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2025-11-25",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.co.uk/alfa-mist-feat-the-black-snow-london-25-11-2025/event/1F0062BEBD254FBD",
+      "source": "Ticketmaster",
+      "id": "G5vHZblBWafXW"
+    },
+    {
+      "artist": "Alfa Mist",
+      "name": "Alfa Mist",
+      "venue": "Palladium",
+      "city": "Warsaw",
+      "country": "Poland",
+      "country_code": "PL",
+      "date": "2026-02-09",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.pl/event/alfa-mist-tickets/878587002?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZQpZ1k-zp6Ze"
+    },
+    {
+      "artist": "Alfa Mist",
+      "name": "Alfa Mist",
+      "venue": "Whelans",
+      "city": "Dublin",
+      "country": "Ireland",
+      "country_code": "IE",
+      "date": "2026-03-19",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.ie/alfa-mist-dublin-19-03-2026/event/18006324CEAE7496",
+      "source": "Ticketmaster",
+      "id": "1AbZkG0GkdClE3p"
+    },
+    {
+      "artist": "Alfa Mist",
+      "name": "Alfa Mist feat. The Black Snow Orchestra",
+      "venue": "Manchester New Century Hall",
+      "city": "Manchester",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-03-22",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.co.uk/alfa-mist-feat-the-black-snow-manchester-22-03-2026/event/37006323CBEC4E34",
+      "source": "Ticketmaster",
+      "id": "1AMZkGNGkd5D7zV"
+    },
+    {
+      "artist": "Alfa Mist",
+      "name": "Alfa Mist feat. The Black Snow Orchestra",
+      "venue": "The Lantern, Bristol Beacon",
+      "city": "Bristol",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-03-23",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.co.uk/alfa-mist-feat-the-black-snow-bristol-23-03-2026/event/37006323EDA75205",
+      "source": "Ticketmaster",
+      "id": "1AMZkGNGkdctgFA"
+    },
+    {
+      "artist": "Alfa Mist",
+      "name": "Alfa Mist feat. The Black Snow Orchestra",
+      "venue": "The Lantern, Bristol Beacon",
+      "city": "Bristol",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-03-24",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.co.uk/alfa-mist-feat-the-black-snow-bristol-24-03-2026/event/37006323EFB35244",
+      "source": "Ticketmaster",
+      "id": "1AMZkGNGkdRiga7"
+    }
+  ]
+}

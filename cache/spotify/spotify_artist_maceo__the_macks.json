@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-11-03T20:02:18.580353",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0rDIqnqwAmDPL1gyzoFH9y"
+    },
+    "followers": {
+      "href": null,
+      "total": 15560
+    },
+    "genres": [
+      "funk",
+      "jazz funk"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0rDIqnqwAmDPL1gyzoFH9y",
+    "id": "0rDIqnqwAmDPL1gyzoFH9y",
+    "images": [],
+    "name": "Maceo And The Macks",
+    "popularity": 35,
+    "type": "artist",
+    "uri": "spotify:artist:0rDIqnqwAmDPL1gyzoFH9y"
+  }
+}

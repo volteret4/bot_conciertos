@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:57:21.163342",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0f3PsS9IQ6whvNMFFKnpjl"
+    },
+    "followers": {
+      "href": null,
+      "total": 87959
+    },
+    "genres": [
+      "choral",
+      "christmas",
+      "requiem",
+      "classical"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0f3PsS9IQ6whvNMFFKnpjl",
+    "id": "0f3PsS9IQ6whvNMFFKnpjl",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb6de6da5cea55bb5be533c5ae",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051746de6da5cea55bb5be533c5ae",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1786de6da5cea55bb5be533c5ae",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Choir of King's College, Cambridge",
+    "popularity": 52,
+    "type": "artist",
+    "uri": "spotify:artist:0f3PsS9IQ6whvNMFFKnpjl"
+  }
+}

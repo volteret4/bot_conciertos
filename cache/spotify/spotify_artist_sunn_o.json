@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:47:29.376736",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2ScEhgArBEdKyU4vNHSyiY"
+    },
+    "followers": {
+      "href": null,
+      "total": 1119746
+    },
+    "genres": [
+      "punjabi hip hop",
+      "punjabi pop",
+      "bhangra",
+      "desi hip hop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2ScEhgArBEdKyU4vNHSyiY",
+    "id": "2ScEhgArBEdKyU4vNHSyiY",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb36b18d0042c9f3e0182a2cab",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517436b18d0042c9f3e0182a2cab",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17836b18d0042c9f3e0182a2cab",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Sunny Malton",
+    "popularity": 59,
+    "type": "artist",
+    "uri": "spotify:artist:2ScEhgArBEdKyU4vNHSyiY"
+  }
+}

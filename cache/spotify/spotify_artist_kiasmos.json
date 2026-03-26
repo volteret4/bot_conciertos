@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:57:19.484685",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6X8lhZ7YaRUBlOsOYimlyD"
+    },
+    "followers": {
+      "href": null,
+      "total": 297988
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/6X8lhZ7YaRUBlOsOYimlyD",
+    "id": "6X8lhZ7YaRUBlOsOYimlyD",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb09b55d86f0b4bddd1d5b010b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517409b55d86f0b4bddd1d5b010b",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17809b55d86f0b4bddd1d5b010b",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Kiasmos",
+    "popularity": 51,
+    "type": "artist",
+    "uri": "spotify:artist:6X8lhZ7YaRUBlOsOYimlyD"
+  }
+}

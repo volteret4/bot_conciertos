@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T20:04:18.118886",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4Sw0SFu1fFdYXdAEVdrqnO"
+    },
+    "followers": {
+      "href": null,
+      "total": 166193
+    },
+    "genres": [
+      "slowcore",
+      "anti-folk",
+      "indie folk"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4Sw0SFu1fFdYXdAEVdrqnO",
+    "id": "4Sw0SFu1fFdYXdAEVdrqnO",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb5d0b68b962a3d96e3676e133",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051745d0b68b962a3d96e3676e133",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1785d0b68b962a3d96e3676e133",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Mount Eerie",
+    "popularity": 40,
+    "type": "artist",
+    "uri": "spotify:artist:4Sw0SFu1fFdYXdAEVdrqnO"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:59:15.499434",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0KmBIwN1qmQbXpR4wtJX88"
+    },
+    "followers": {
+      "href": null,
+      "total": 29837
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/0KmBIwN1qmQbXpR4wtJX88",
+    "id": "0KmBIwN1qmQbXpR4wtJX88",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eba2f0e88e0a155dde0e7b4e9b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174a2f0e88e0a155dde0e7b4e9b",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178a2f0e88e0a155dde0e7b4e9b",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Fieh",
+    "popularity": 25,
+    "type": "artist",
+    "uri": "spotify:artist:0KmBIwN1qmQbXpR4wtJX88"
+  }
+}

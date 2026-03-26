@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:55:14.500990",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/45iKINJMAx2jo8ZQxYSNXs"
+    },
+    "followers": {
+      "href": null,
+      "total": 268
+    },
+    "genres": [
+      "hardstyle"
+    ],
+    "href": "https://api.spotify.com/v1/artists/45iKINJMAx2jo8ZQxYSNXs",
+    "id": "45iKINJMAx2jo8ZQxYSNXs",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2731d5883272299f5b34af97da2",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e029b6d5146b6f92f0c0aba6af4",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048519b6d5146b6f92f0c0aba6af4",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Nuron",
+    "popularity": 1,
+    "type": "artist",
+    "uri": "spotify:artist:45iKINJMAx2jo8ZQxYSNXs"
+  }
+}

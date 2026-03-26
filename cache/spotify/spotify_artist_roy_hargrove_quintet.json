@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:58:06.519232",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1691tt3rtiWk8dmfbKWHtc"
+    },
+    "followers": {
+      "href": null,
+      "total": 16737
+    },
+    "genres": [
+      "jazz",
+      "hard bop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1691tt3rtiWk8dmfbKWHtc",
+    "id": "1691tt3rtiWk8dmfbKWHtc",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2737f7019589be36990abb98cfa",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e027f7019589be36990abb98cfa",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048517f7019589be36990abb98cfa",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Roy Hargrove Quintet",
+    "popularity": 24,
+    "type": "artist",
+    "uri": "spotify:artist:1691tt3rtiWk8dmfbKWHtc"
+  }
+}

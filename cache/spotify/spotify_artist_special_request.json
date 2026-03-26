@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T20:04:35.535965",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/59xdAObFYuaKO2phzzz07H"
+    },
+    "followers": {
+      "href": null,
+      "total": 43599
+    },
+    "genres": [
+      "jungle",
+      "breakbeat",
+      "idm"
+    ],
+    "href": "https://api.spotify.com/v1/artists/59xdAObFYuaKO2phzzz07H",
+    "id": "59xdAObFYuaKO2phzzz07H",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb3db52fb9903967410a0079b1",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051743db52fb9903967410a0079b1",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1783db52fb9903967410a0079b1",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Special Request",
+    "popularity": 35,
+    "type": "artist",
+    "uri": "spotify:artist:59xdAObFYuaKO2phzzz07H"
+  }
+}

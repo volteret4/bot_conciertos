@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T20:03:53.176300",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1nnYnPVlwfNoUu6nKyYAqK"
+    },
+    "followers": {
+      "href": null,
+      "total": 2821
+    },
+    "genres": [
+      "shoegaze",
+      "cold wave",
+      "darkwave",
+      "dream pop",
+      "post-punk"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1nnYnPVlwfNoUu6nKyYAqK",
+    "id": "1nnYnPVlwfNoUu6nKyYAqK",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2739bd8724647fe5b89c11093cf",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e029bd8724647fe5b89c11093cf",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048519bd8724647fe5b89c11093cf",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Screen Vinyl Image",
+    "popularity": 4,
+    "type": "artist",
+    "uri": "spotify:artist:1nnYnPVlwfNoUu6nKyYAqK"
+  }
+}

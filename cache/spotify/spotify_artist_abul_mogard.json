@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T20:03:51.025738",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4bNteCe0Beu161GmkB8Rq7"
+    },
+    "followers": {
+      "href": null,
+      "total": 25588
+    },
+    "genres": [
+      "drone",
+      "ambient",
+      "dark ambient",
+      "experimental"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4bNteCe0Beu161GmkB8Rq7",
+    "id": "4bNteCe0Beu161GmkB8Rq7",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebf3acc9e1fe43f9e303bd396c",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174f3acc9e1fe43f9e303bd396c",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178f3acc9e1fe43f9e303bd396c",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Abul Mogard",
+    "popularity": 28,
+    "type": "artist",
+    "uri": "spotify:artist:4bNteCe0Beu161GmkB8Rq7"
+  }
+}

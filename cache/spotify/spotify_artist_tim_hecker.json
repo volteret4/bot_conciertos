@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-11-03T20:04:20.391492",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1qiwaJwjKod5WhcYZ76O1B"
+    },
+    "followers": {
+      "href": null,
+      "total": 159945
+    },
+    "genres": [
+      "drone",
+      "ambient",
+      "dark ambient",
+      "idm",
+      "experimental",
+      "minimalism"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1qiwaJwjKod5WhcYZ76O1B",
+    "id": "1qiwaJwjKod5WhcYZ76O1B",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebcd1bb3562720521214eb29d1",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174cd1bb3562720521214eb29d1",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178cd1bb3562720521214eb29d1",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Tim Hecker",
+    "popularity": 41,
+    "type": "artist",
+    "uri": "spotify:artist:1qiwaJwjKod5WhcYZ76O1B"
+  }
+}

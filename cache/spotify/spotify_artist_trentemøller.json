@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:47:55.267230",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4O71i7ke5iIBX6RNSFoZbS"
+    },
+    "followers": {
+      "href": null,
+      "total": 408259
+    },
+    "genres": [
+      "minimal techno",
+      "electronica"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4O71i7ke5iIBX6RNSFoZbS",
+    "id": "4O71i7ke5iIBX6RNSFoZbS",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb9945ffb28d032cea141fc5c3",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051749945ffb28d032cea141fc5c3",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1789945ffb28d032cea141fc5c3",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "trentemøller",
+    "popularity": 45,
+    "type": "artist",
+    "uri": "spotify:artist:4O71i7ke5iIBX6RNSFoZbS"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "timestamp": "2025-11-03T20:00:57.226700",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0ETEZyxwSBvcETExvkgWU9"
+    },
+    "followers": {
+      "href": null,
+      "total": 13
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/0ETEZyxwSBvcETExvkgWU9",
+    "id": "0ETEZyxwSBvcETExvkgWU9",
+    "images": [],
+    "name": "Boy Dude",
+    "popularity": 8,
+    "type": "artist",
+    "uri": "spotify:artist:0ETEZyxwSBvcETExvkgWU9"
+  }
+}

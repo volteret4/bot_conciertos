@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T20:00:58.963168",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5jWuVnPLmjABrgCGianzs9"
+    },
+    "followers": {
+      "href": null,
+      "total": 140338
+    },
+    "genres": [
+      "funk",
+      "post-disco",
+      "jazz funk",
+      "acid jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5jWuVnPLmjABrgCGianzs9",
+    "id": "5jWuVnPLmjABrgCGianzs9",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebfb23f26af03a976c97f2bd6e",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174fb23f26af03a976c97f2bd6e",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178fb23f26af03a976c97f2bd6e",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Brass Construction",
+    "popularity": 30,
+    "type": "artist",
+    "uri": "spotify:artist:5jWuVnPLmjABrgCGianzs9"
+  }
+}

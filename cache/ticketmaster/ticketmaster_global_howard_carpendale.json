@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-10-23T17:11:09.679807",
+  "concerts": [
+    {
+      "artist": "Howard Carpendale",
+      "name": "Howard Carpendale - Meine Abschiedstour",
+      "venue": "SWT Arena",
+      "city": "Trier",
+      "country": "Germany",
+      "country_code": "DE",
+      "date": "2026-03-17",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.de/event/howard-carpendale-meine-abschiedstour-tickets/555303?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZC2Z1744Gd"
+    },
+    {
+      "artist": "Howard Carpendale",
+      "name": "Howard Carpendale | Box seat in the Ticketmaster Suite",
+      "venue": "Uber Arena",
+      "city": "Berlin",
+      "country": "Germany",
+      "country_code": "DE",
+      "date": "2026-04-16",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.de/event/howard-carpendale-%7C-box-seat-in-the-ticketmaster-suite-tickets/406310170?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZC2Z1k8kG8AY"
+    },
+    {
+      "artist": "Howard Carpendale",
+      "name": "Howard Carpendale | Box seat in the Ticketmaster Suite",
+      "venue": "Barclays Arena",
+      "city": "Hamburg",
+      "country": "Germany",
+      "country_code": "DE",
+      "date": "2026-04-18",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.de/event/howard-carpendale-%7C-box-seat-in-the-ticketmaster-suite-tickets/1837693860?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZC2Z16vOMQK-O"
+    }
+  ]
+}

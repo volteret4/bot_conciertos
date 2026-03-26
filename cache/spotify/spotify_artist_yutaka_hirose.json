@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:47:09.154172",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1FdNQlWcuAjkLTEx7xHf25"
+    },
+    "followers": {
+      "href": null,
+      "total": 2672
+    },
+    "genres": [
+      "ambient",
+      "minimalism",
+      "new age"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1FdNQlWcuAjkLTEx7xHf25",
+    "id": "1FdNQlWcuAjkLTEx7xHf25",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273cacbb1a933003394d0be87fd",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02cacbb1a933003394d0be87fd",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851cacbb1a933003394d0be87fd",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Yutaka Hirose",
+    "popularity": 10,
+    "type": "artist",
+    "uri": "spotify:artist:1FdNQlWcuAjkLTEx7xHf25"
+  }
+}

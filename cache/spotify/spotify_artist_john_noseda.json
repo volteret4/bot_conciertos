@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:55:12.141506",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1GHQDN0HXk1MVl7zyhqlXA"
+    },
+    "followers": {
+      "href": null,
+      "total": 4200
+    },
+    "genres": [
+      "italo disco",
+      "italo dance",
+      "indie dance"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1GHQDN0HXk1MVl7zyhqlXA",
+    "id": "1GHQDN0HXk1MVl7zyhqlXA",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebb3441fade27a082124b55949",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174b3441fade27a082124b55949",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178b3441fade27a082124b55949",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "John Noseda",
+    "popularity": 22,
+    "type": "artist",
+    "uri": "spotify:artist:1GHQDN0HXk1MVl7zyhqlXA"
+  }
+}

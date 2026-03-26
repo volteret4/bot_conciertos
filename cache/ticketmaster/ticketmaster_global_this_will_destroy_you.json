@@ -1,0 +1,149 @@
+{
+  "timestamp": "2025-09-02T09:24:44.623498",
+  "concerts": [
+    {
+      "artist": "This Will Destroy You",
+      "name": "The Sound of Animals Fighting",
+      "venue": "Neptune Theatre",
+      "city": "Seattle",
+      "country": "US",
+      "date": "2025-09-25",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/the-sound-of-animals-fighting-seattle-washington-09-25-2025/event/0F006287EB54284E",
+      "source": "Ticketmaster",
+      "id": "vvG1HZbILl4e-C"
+    },
+    {
+      "artist": "This Will Destroy You",
+      "name": "The Sound of Animals Fighting w/ This Will Destroy You",
+      "venue": "Roseland Theater",
+      "city": "Portland",
+      "country": "US",
+      "date": "2025-09-26",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A74Y3o",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A74Y3o"
+    },
+    {
+      "artist": "This Will Destroy You",
+      "name": "The Sound of Animals Fighting",
+      "venue": "Ace of Spades",
+      "city": "Sacramento",
+      "country": "US",
+      "date": "2025-09-27",
+      "time": "18:00:00",
+      "url": "https://www.ticketmaster.com/the-sound-of-animals-fighting-sacramento-california-09-27-2025/event/1C006288C49138D5",
+      "source": "Ticketmaster",
+      "id": "G5vYZbIN70KN4"
+    },
+    {
+      "artist": "This Will Destroy You",
+      "name": "The Sound of Animals Fighting",
+      "venue": "House of Blues Anaheim",
+      "city": "Anaheim",
+      "country": "US",
+      "date": "2025-09-28",
+      "time": "18:00:00",
+      "url": "https://www.ticketmaster.com/the-sound-of-animals-fighting-anaheim-california-09-28-2025/event/0900627FBF5241F3",
+      "source": "Ticketmaster",
+      "id": "vv170ZbEGkXTf06S"
+    },
+    {
+      "artist": "This Will Destroy You",
+      "name": "The Sound of Animals Fighting w/ The Casket Lottery",
+      "venue": "Roxy Theatre-CA",
+      "city": "West Hollywood",
+      "country": "US",
+      "date": "2025-09-29",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A74Mo3",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A74Mo3"
+    },
+    {
+      "artist": "This Will Destroy You",
+      "name": "The Sound of Animals Fighting",
+      "venue": "The Fillmore Silver Spring",
+      "city": "Silver Spring",
+      "country": "US",
+      "date": "2025-10-03",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/the-sound-of-animals-fighting-silver-spring-maryland-10-03-2025/event/15006283BF254EE7",
+      "source": "Ticketmaster",
+      "id": "1A4Zk1dGkeTafDE"
+    },
+    {
+      "artist": "This Will Destroy You",
+      "name": "The Sound of Animals Fighting w/ Soft Blue Shimmer",
+      "venue": "Union Transfer",
+      "city": "Philadelphia",
+      "country": "US",
+      "date": "2025-10-04",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A74yqF",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A74yqF"
+    },
+    {
+      "artist": "This Will Destroy You",
+      "name": "The Sound of Animals Fighting (16 & Over)",
+      "venue": "Webster Hall",
+      "city": "New York",
+      "country": "US",
+      "date": "2025-10-05",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A74yqo",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A74yqo"
+    },
+    {
+      "artist": "This Will Destroy You",
+      "name": "This Will Destroy You",
+      "venue": "Exit/In",
+      "city": "Nashville",
+      "country": "US",
+      "date": "2025-10-07",
+      "time": "20:00:00",
+      "url": "https://www.ticketweb.com/event/this-will-destroy-you-exitin-tickets/13948444",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AKPFo7"
+    },
+    {
+      "artist": "This Will Destroy You",
+      "name": "The Sound of Animals Fighting w/ This Will Destroy You",
+      "venue": "The Studio at the Factory",
+      "city": "Dallas",
+      "country": "US",
+      "date": "2025-10-11",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7p_uZ",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7p_uZ"
+    },
+    {
+      "artist": "This Will Destroy You",
+      "name": "The Sound of Animals Fighting",
+      "venue": "House of Blues Houston",
+      "city": "Houston",
+      "country": "US",
+      "date": "2025-10-12",
+      "time": "18:00:00",
+      "url": "https://www.ticketmaster.com/the-sound-of-animals-fighting-houston-texas-10-12-2025/event/3A006282793E12FD",
+      "source": "Ticketmaster",
+      "id": "G5dIZbIay2-5W"
+    },
+    {
+      "artist": "This Will Destroy You",
+      "name": "This Will Destroy You",
+      "venue": "Empire Control Room",
+      "city": "Austin",
+      "country": "US",
+      "date": "2025-10-13",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/this-will-destroy-you-austin-texas-10-13-2025/event/3A006308E5D74DF9",
+      "source": "Ticketmaster",
+      "id": "G5dIZbYNPgVMy"
+    }
+  ]
+}

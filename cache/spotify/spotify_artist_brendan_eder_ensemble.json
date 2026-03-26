@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:58:46.217108",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5wqMw7XAQ9M9kpO5ImZ6NK"
+    },
+    "followers": {
+      "href": null,
+      "total": 8389
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/5wqMw7XAQ9M9kpO5ImZ6NK",
+    "id": "5wqMw7XAQ9M9kpO5ImZ6NK",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb25d256445fe96ca333964816",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517425d256445fe96ca333964816",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17825d256445fe96ca333964816",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Brendan Eder Ensemble",
+    "popularity": 31,
+    "type": "artist",
+    "uri": "spotify:artist:5wqMw7XAQ9M9kpO5ImZ6NK"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-10-27T15:29:05.573666",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3heR1it0slFXjaa7E62zpw"
+    },
+    "followers": {
+      "href": null,
+      "total": 599822
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/3heR1it0slFXjaa7E62zpw",
+    "id": "3heR1it0slFXjaa7E62zpw",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebb5284f252810c3aaea017cf9",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174b5284f252810c3aaea017cf9",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178b5284f252810c3aaea017cf9",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Maldita Nerea",
+    "popularity": 53,
+    "type": "artist",
+    "uri": "spotify:artist:3heR1it0slFXjaa7E62zpw"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:48:54.648625",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6gkWznnJkdkwRPVcmnrays"
+    },
+    "followers": {
+      "href": null,
+      "total": 725391
+    },
+    "genres": [
+      "disco",
+      "philly soul"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6gkWznnJkdkwRPVcmnrays",
+    "id": "6gkWznnJkdkwRPVcmnrays",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb3e3e634435f477df50760eae",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051743e3e634435f477df50760eae",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1783e3e634435f477df50760eae",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Sister Sledge",
+    "popularity": 58,
+    "type": "artist",
+    "uri": "spotify:artist:6gkWznnJkdkwRPVcmnrays"
+  }
+}

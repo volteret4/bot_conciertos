@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:57:48.488248",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1iTlOqIrZy8DlvCPJY2sjS"
+    },
+    "followers": {
+      "href": null,
+      "total": 308992
+    },
+    "genres": [
+      "nederpop",
+      "classic rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1iTlOqIrZy8DlvCPJY2sjS",
+    "id": "1iTlOqIrZy8DlvCPJY2sjS",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebd7b257fdbe94a7e59687c03a",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174d7b257fdbe94a7e59687c03a",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178d7b257fdbe94a7e59687c03a",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Golden Earring",
+    "popularity": 53,
+    "type": "artist",
+    "uri": "spotify:artist:1iTlOqIrZy8DlvCPJY2sjS"
+  }
+}

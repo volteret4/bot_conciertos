@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T19:56:19.092100",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4XARewdsOxt5tw3uROBGHj"
+    },
+    "followers": {
+      "href": null,
+      "total": 17749
+    },
+    "genres": [
+      "progressive rock",
+      "art rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4XARewdsOxt5tw3uROBGHj",
+    "id": "4XARewdsOxt5tw3uROBGHj",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/60dfe17ca31aab7552298dae88233d92eeb60a85",
+        "height": 1043,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/ddafcdf2d18984ee9fd5d08bfffe488e98087ab7",
+        "height": 668,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/60bbc34290f2eb60fe565065dcd8fcabf25c6a7e",
+        "height": 209,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/4acf8b84e6a61a68c9b63515ee4d2220de0e26a8",
+        "height": 67,
+        "width": 64
+      }
+    ],
+    "name": "Nick Mason",
+    "popularity": 25,
+    "type": "artist",
+    "uri": "spotify:artist:4XARewdsOxt5tw3uROBGHj"
+  }
+}

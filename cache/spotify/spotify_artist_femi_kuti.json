@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:55:37.730682",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6kgrtA0dlnVpWB6zjpXrRb"
+    },
+    "followers": {
+      "href": null,
+      "total": 75921
+    },
+    "genres": [
+      "afrobeat",
+      "afropop",
+      "highlife"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6kgrtA0dlnVpWB6zjpXrRb",
+    "id": "6kgrtA0dlnVpWB6zjpXrRb",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb367088b4f37d522db8216381",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174367088b4f37d522db8216381",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178367088b4f37d522db8216381",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Femi Kuti",
+    "popularity": 36,
+    "type": "artist",
+    "uri": "spotify:artist:6kgrtA0dlnVpWB6zjpXrRb"
+  }
+}

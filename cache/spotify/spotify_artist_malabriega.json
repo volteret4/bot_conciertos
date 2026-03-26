@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:04:58.806266",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0d2O3ERAOLECMOFsl3v626"
+    },
+    "followers": {
+      "href": null,
+      "total": 719
+    },
+    "genres": [
+      "progressive rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0d2O3ERAOLECMOFsl3v626",
+    "id": "0d2O3ERAOLECMOFsl3v626",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273b552fdd03015aa9601d26846",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02b552fdd03015aa9601d26846",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851b552fdd03015aa9601d26846",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Malabriega",
+    "popularity": 4,
+    "type": "artist",
+    "uri": "spotify:artist:0d2O3ERAOLECMOFsl3v626"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T19:58:08.310050",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0HU0U9kdXEHZVxUNbuQe8S"
+    },
+    "followers": {
+      "href": null,
+      "total": 659363
+    },
+    "genres": [
+      "soul",
+      "classic soul"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0HU0U9kdXEHZVxUNbuQe8S",
+    "id": "0HU0U9kdXEHZVxUNbuQe8S",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/2c9a122b0f6a1c6f083b1725f309d3a25636f4ae",
+        "height": 1235,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/c7decc8fb14fe3e855f56aea9649ab917a2a5058",
+        "height": 791,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/e9572942a7d56dba62135a6fc36fc9b279634d29",
+        "height": 247,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/2d63d3348d80c10508361c4ca7b52bdad8c08ba5",
+        "height": 79,
+        "width": 64
+      }
+    ],
+    "name": "Donny Hathaway",
+    "popularity": 56,
+    "type": "artist",
+    "uri": "spotify:artist:0HU0U9kdXEHZVxUNbuQe8S"
+  }
+}

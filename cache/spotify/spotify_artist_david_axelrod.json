@@ -1,0 +1,46 @@
+{
+  "timestamp": "2025-11-03T20:02:05.189353",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4hCKF3RZSkFSMntkfCxO74"
+    },
+    "followers": {
+      "href": null,
+      "total": 39525
+    },
+    "genres": [
+      "jazz funk",
+      "baroque pop",
+      "acid rock",
+      "jazz fusion"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4hCKF3RZSkFSMntkfCxO74",
+    "id": "4hCKF3RZSkFSMntkfCxO74",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/9b36040e4f24fe8af6a384551afbfc88f2bab6ce",
+        "height": 1011,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/f9c5cfaced03fa0dea6d1fcb8715903b58de5e4c",
+        "height": 647,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ef9993346c2c212558ee3971a799d74d85701a5f",
+        "height": 202,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/317af7cfdc8dbda8336be479a198e4f13284970b",
+        "height": 65,
+        "width": 64
+      }
+    ],
+    "name": "David Axelrod",
+    "popularity": 28,
+    "type": "artist",
+    "uri": "spotify:artist:4hCKF3RZSkFSMntkfCxO74"
+  }
+}

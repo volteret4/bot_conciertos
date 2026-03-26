@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-10-23T17:54:16.859295",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/75BN2bMrpeLl89blBiaFuv"
+    },
+    "followers": {
+      "href": null,
+      "total": 20085
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/75BN2bMrpeLl89blBiaFuv",
+    "id": "75BN2bMrpeLl89blBiaFuv",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb804a45948184cc964684adfd",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174804a45948184cc964684adfd",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178804a45948184cc964684adfd",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Evian Christ",
+    "popularity": 23,
+    "type": "artist",
+    "uri": "spotify:artist:75BN2bMrpeLl89blBiaFuv"
+  }
+}

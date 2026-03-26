@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T20:03:00.033956",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2wOqMjp9TyABvtHdOSOTUS"
+    },
+    "followers": {
+      "href": null,
+      "total": 5718531
+    },
+    "genres": [
+      "classical",
+      "classical piano",
+      "chamber music"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2wOqMjp9TyABvtHdOSOTUS",
+    "id": "2wOqMjp9TyABvtHdOSOTUS",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eba636b0b244253f602a629796",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174a636b0b244253f602a629796",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178a636b0b244253f602a629796",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Ludwig van Beethoven",
+    "popularity": 71,
+    "type": "artist",
+    "uri": "spotify:artist:2wOqMjp9TyABvtHdOSOTUS"
+  }
+}

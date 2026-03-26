@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:48:15.444090",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0TT8QDLfXPmcv2k9h9Ro2h"
+    },
+    "followers": {
+      "href": null,
+      "total": 292
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/0TT8QDLfXPmcv2k9h9Ro2h",
+    "id": "0TT8QDLfXPmcv2k9h9Ro2h",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273e71c5af0a64841f15102ca11",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02e71c5af0a64841f15102ca11",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851e71c5af0a64841f15102ca11",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Patrick Rothfuss",
+    "popularity": 10,
+    "type": "artist",
+    "uri": "spotify:artist:0TT8QDLfXPmcv2k9h9Ro2h"
+  }
+}

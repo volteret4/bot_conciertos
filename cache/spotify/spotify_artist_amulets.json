@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T20:01:45.787252",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5e96t65iOLrmqH2gzEXhIt"
+    },
+    "followers": {
+      "href": null,
+      "total": 8495
+    },
+    "genres": [
+      "drone",
+      "ambient",
+      "post-rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5e96t65iOLrmqH2gzEXhIt",
+    "id": "5e96t65iOLrmqH2gzEXhIt",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb080f28b26dbe098cfb66d8d0",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174080f28b26dbe098cfb66d8d0",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178080f28b26dbe098cfb66d8d0",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Amulets",
+    "popularity": 14,
+    "type": "artist",
+    "uri": "spotify:artist:5e96t65iOLrmqH2gzEXhIt"
+  }
+}

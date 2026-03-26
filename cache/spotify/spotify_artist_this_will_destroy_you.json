@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:47:47.505187",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0MG4LXIw7n4x0wjDc6WYXk"
+    },
+    "followers": {
+      "href": null,
+      "total": 260834
+    },
+    "genres": [
+      "post-rock",
+      "math rock",
+      "drone metal"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0MG4LXIw7n4x0wjDc6WYXk",
+    "id": "0MG4LXIw7n4x0wjDc6WYXk",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb34fd77d2971ee28c7cec1a8e",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517434fd77d2971ee28c7cec1a8e",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17834fd77d2971ee28c7cec1a8e",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "This Will Destroy You",
+    "popularity": 41,
+    "type": "artist",
+    "uri": "spotify:artist:0MG4LXIw7n4x0wjDc6WYXk"
+  }
+}

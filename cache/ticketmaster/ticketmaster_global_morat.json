@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-09-02T09:00:12.151824",
+  "concerts": [
+    {
+      "artist": "Morat",
+      "name": "Morat",
+      "venue": "Auditorio Benito Juarez Guadalajara",
+      "city": "Zapopan",
+      "country": "MX",
+      "date": "2025-10-22",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com.mx/morat-zapopan-22-10-2025/event/3D006310DD554278",
+      "source": "Ticketmaster",
+      "id": "G5dVZbsdq4faz"
+    },
+    {
+      "artist": "Morat",
+      "name": "iHeartRadio Fiesta Latina",
+      "venue": "Kaseya Center",
+      "city": "Miami",
+      "country": "US",
+      "date": "2025-10-25",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/iheartradio-fiesta-latina-miami-florida-10-25-2025/event/0D0062D8A28A1588",
+      "source": "Ticketmaster",
+      "id": "vvG1VZbcxxx-pF"
+    }
+  ]
+}

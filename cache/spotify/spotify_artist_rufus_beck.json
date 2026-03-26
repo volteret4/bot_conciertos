@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:00:23.183064",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0k1GSac9WpPipEpPNVrKwb"
+    },
+    "followers": {
+      "href": null,
+      "total": 14455
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/0k1GSac9WpPipEpPNVrKwb",
+    "id": "0k1GSac9WpPipEpPNVrKwb",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273ea2d3a53f72674f8449125f4",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02ea2d3a53f72674f8449125f4",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851ea2d3a53f72674f8449125f4",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Rufus Beck",
+    "popularity": 43,
+    "type": "artist",
+    "uri": "spotify:artist:0k1GSac9WpPipEpPNVrKwb"
+  }
+}

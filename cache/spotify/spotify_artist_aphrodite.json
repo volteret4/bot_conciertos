@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T20:01:50.810959",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1SsdsVIIKLUe54OsHzm5uQ"
+    },
+    "followers": {
+      "href": null,
+      "total": 63747
+    },
+    "genres": [
+      "jungle",
+      "drum and bass",
+      "breakbeat"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1SsdsVIIKLUe54OsHzm5uQ",
+    "id": "1SsdsVIIKLUe54OsHzm5uQ",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb1fad742ebb6bac3dbb9b5911",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051741fad742ebb6bac3dbb9b5911",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1781fad742ebb6bac3dbb9b5911",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Aphrodite",
+    "popularity": 33,
+    "type": "artist",
+    "uri": "spotify:artist:1SsdsVIIKLUe54OsHzm5uQ"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-09-02T08:26:20.445898",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1Ia5VEcWRXwnC0KGsxnloQ"
+    },
+    "followers": {
+      "href": null,
+      "total": 12427
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/1Ia5VEcWRXwnC0KGsxnloQ",
+    "id": "1Ia5VEcWRXwnC0KGsxnloQ",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eba8b9cac8b02457def50f681f",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174a8b9cac8b02457def50f681f",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178a8b9cac8b02457def50f681f",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Dremen",
+    "popularity": 24,
+    "type": "artist",
+    "uri": "spotify:artist:1Ia5VEcWRXwnC0KGsxnloQ"
+  }
+}

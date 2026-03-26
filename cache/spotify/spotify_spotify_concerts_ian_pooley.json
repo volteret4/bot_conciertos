@@ -1,0 +1,53 @@
+{
+  "timestamp": "2025-08-25T08:42:43.543244",
+  "data": [
+    {
+      "artist": "Ian Pooley",
+      "artist_name": "Ian Pooley",
+      "name": "Ian Pooley at La Terrrazza",
+      "venue": "La Terrrazza",
+      "city": "Barcelona",
+      "country": "ES",
+      "date": "2025-09-20",
+      "time": "11:59 PM",
+      "url": "https://open.spotify.com/concert/3FFijnjVa6Na4x4WdmhY7H",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Ian Pooley",
+      "artist_name": "Ian Pooley",
+      "name": "Ian Pooley at Mad Radio Miami",
+      "venue": "Mad Radio Miami",
+      "city": "Miami",
+      "country": "US",
+      "date": "2025-10-10",
+      "time": "5:00 PM",
+      "url": "https://open.spotify.com/concert/4hx7nmK2sNeiCgqXMNsu4t",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Ian Pooley",
+      "artist_name": "Ian Pooley",
+      "name": "Ian Pooley at Mad Radio Miami",
+      "venue": "Mad Radio Miami",
+      "city": "Miami",
+      "country": "US",
+      "date": "2025-10-10",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/434YtIHYgjTRx7HeL9DZ9e",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Ian Pooley",
+      "artist_name": "Ian Pooley",
+      "name": "Ian Pooley Concert (6TKdjhuQ)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/6TKdjhuQPwHW7lMdRF7vAk",
+      "source": "Spotify"
+    }
+  ]
+}

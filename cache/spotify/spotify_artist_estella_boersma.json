@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:00:45.461981",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4UCy3TOuu2eA6zNY50JQSV"
+    },
+    "followers": {
+      "href": null,
+      "total": 18604
+    },
+    "genres": [
+      "acid techno",
+      "hard techno"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4UCy3TOuu2eA6zNY50JQSV",
+    "id": "4UCy3TOuu2eA6zNY50JQSV",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb607bd06b5c3ef49315a2f82d",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174607bd06b5c3ef49315a2f82d",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178607bd06b5c3ef49315a2f82d",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Estella Boersma",
+    "popularity": 25,
+    "type": "artist",
+    "uri": "spotify:artist:4UCy3TOuu2eA6zNY50JQSV"
+  }
+}

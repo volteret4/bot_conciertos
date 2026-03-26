@@ -1,0 +1,57 @@
+{
+  "timestamp": "2025-10-23T17:05:52.555599",
+  "concerts": [
+    {
+      "artist": "U.S. Girls",
+      "name": "U.S. Girls",
+      "venue": "The Grand Social",
+      "city": "Dublin",
+      "country": "Ireland",
+      "country_code": "IE",
+      "date": "2025-10-27",
+      "time": "19:30:00",
+      "url": "https://www.ticketmaster.ie/us-girls-dublin-27-10-2025/event/180062BCA37672B9",
+      "source": "Ticketmaster",
+      "id": "17kZvxG65wNqE1y"
+    },
+    {
+      "artist": "U.S. Girls",
+      "name": "U.S. Girls",
+      "venue": "Band On The Wall.",
+      "city": "Manchester",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2025-10-29",
+      "time": "19:30:00",
+      "url": "https://www.ticketweb.uk/event/us-girls-band-on-the-wall-tickets/13799874?REFERRAL_ID=tmfeed",
+      "source": "Ticketmaster",
+      "id": "17GOvxG6GJCnNGZ"
+    },
+    {
+      "artist": "U.S. Girls",
+      "name": "IHSAA Girls Volleyball State Finals",
+      "venue": "Gainbridge Fieldhouse",
+      "city": "Indianapolis",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-08",
+      "time": "11:00:00",
+      "url": "https://www.ticketmaster.com/ihsaa-girls-volleyball-state-finals-indianapolis-indiana-11-08-2025/event/05006339C8E74CE3",
+      "source": "Ticketmaster",
+      "id": "vv1AAZkGyGkdFyVSN"
+    },
+    {
+      "artist": "U.S. Girls",
+      "name": "TV Girl",
+      "venue": "Neal S Blaisdell Arena",
+      "city": "Honolulu",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-21",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/tv-girl-honolulu-hawaii-11-21-2025/event/0A0062CA0A3D61CF",
+      "source": "Ticketmaster",
+      "id": "vvG1IZbiI12p62"
+    }
+  ]
+}

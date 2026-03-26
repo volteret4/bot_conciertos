@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T20:01:51.185540",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2WkbQa3nUn6DtcsirdKttO"
+    },
+    "followers": {
+      "href": null,
+      "total": 383
+    },
+    "genres": [
+      "dark ambient",
+      "industrial rock",
+      "noise rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2WkbQa3nUn6DtcsirdKttO",
+    "id": "2WkbQa3nUn6DtcsirdKttO",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2733187baaf0a571270b4d03276",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e023187baaf0a571270b4d03276",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048513187baaf0a571270b4d03276",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Apokrifna Realnost",
+    "popularity": 1,
+    "type": "artist",
+    "uri": "spotify:artist:2WkbQa3nUn6DtcsirdKttO"
+  }
+}

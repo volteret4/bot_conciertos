@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-10-23T17:04:39.861658",
+  "concerts": [
+    {
+      "artist": "Kamasi Washington",
+      "name": "Kamasi Washington",
+      "venue": "Golden Gate Theater",
+      "city": "San Francisco",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-15",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7bOf9",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7bOf9"
+    }
+  ]
+}

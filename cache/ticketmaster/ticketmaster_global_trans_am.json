@@ -1,0 +1,70 @@
+{
+  "timestamp": "2025-10-23T17:15:15.316648",
+  "concerts": [
+    {
+      "artist": "Trans Am",
+      "name": "Super 70s Rock Show ft. Super Trans AM",
+      "venue": "Mickey's Black Box",
+      "city": "Lititz",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-08",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/super-70s-rock-show-ft-super-lititz-pennsylvania-11-08-2025/event/020062E6C4252EE7",
+      "source": "Ticketmaster",
+      "id": "vvG1FZbmh7a3DE"
+    },
+    {
+      "artist": "Trans Am",
+      "name": "Almost Queen",
+      "venue": "F.M. Kirby Center",
+      "city": "Wilkes Barre",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-22",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/almost-queen-wilkes-barre-pennsylvania-11-22-2025/event/02006307883E3672",
+      "source": "Ticketmaster",
+      "id": "vv16eZkG6xdZA276Fd"
+    },
+    {
+      "artist": "Trans Am",
+      "name": "Yacht Lobsters & The Super 70's Rock Show",
+      "venue": "Gramercy Theatre",
+      "city": "New York",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-13",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/yacht-lobsters-the-super-70s-rock-new-york-new-york-12-13-2025/event/00006336B65823FE",
+      "source": "Ticketmaster",
+      "id": "k7vGFbSQUpe2X"
+    },
+    {
+      "artist": "Trans Am",
+      "name": "Almost Queen: A Tribute to QUEEN",
+      "venue": "Troy Savings Bank Music Hall",
+      "city": "Troy",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-01-17",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/almost-queen-a-tribute-to-queen-troy-new-york-01-17-2026/event/0000632FDA3C2AEA",
+      "source": "Ticketmaster",
+      "id": "k7vGFbwTQ2eln"
+    },
+    {
+      "artist": "Trans Am",
+      "name": "2026 Trans Am General Admission",
+      "venue": "Watkins Glen International",
+      "city": "Watkins Glen",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-07-19",
+      "time": "08:00:00",
+      "url": "",
+      "source": "Ticketmaster",
+      "id": "Za5ju3rKuqZDeJbR_RtJqGVBGQdRdsRovu"
+    }
+  ]
+}

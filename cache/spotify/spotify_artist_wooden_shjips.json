@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-11-03T19:47:00.439060",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/35rFgnhlSSYflP4HpC3JM0"
+    },
+    "followers": {
+      "href": null,
+      "total": 103887
+    },
+    "genres": [
+      "neo-psychedelic",
+      "psychedelic rock",
+      "space rock",
+      "shoegaze",
+      "krautrock",
+      "stoner rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/35rFgnhlSSYflP4HpC3JM0",
+    "id": "35rFgnhlSSYflP4HpC3JM0",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb2d7296444854ff49f5b2e78b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051742d7296444854ff49f5b2e78b",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1782d7296444854ff49f5b2e78b",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Wooden Shjips",
+    "popularity": 35,
+    "type": "artist",
+    "uri": "spotify:artist:35rFgnhlSSYflP4HpC3JM0"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:01:21.810487",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6lDjEqCQQ6acNSzyDYhE75"
+    },
+    "followers": {
+      "href": null,
+      "total": 9457
+    },
+    "genres": [
+      "acid jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6lDjEqCQQ6acNSzyDYhE75",
+    "id": "6lDjEqCQQ6acNSzyDYhE75",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebc7959b3aa5ec8d48af770660",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174c7959b3aa5ec8d48af770660",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178c7959b3aa5ec8d48af770660",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "A Man Called Adam",
+    "popularity": 29,
+    "type": "artist",
+    "uri": "spotify:artist:6lDjEqCQQ6acNSzyDYhE75"
+  }
+}

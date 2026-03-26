@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:03:52.172946",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1FVo44KTXqxo3JxXADWTd9"
+    },
+    "followers": {
+      "href": null,
+      "total": 24670
+    },
+    "genres": [
+      "idm"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1FVo44KTXqxo3JxXADWTd9",
+    "id": "1FVo44KTXqxo3JxXADWTd9",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb59d8a2406fe806de9b649178",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517459d8a2406fe806de9b649178",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17859d8a2406fe806de9b649178",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Call Super",
+    "popularity": 22,
+    "type": "artist",
+    "uri": "spotify:artist:1FVo44KTXqxo3JxXADWTd9"
+  }
+}

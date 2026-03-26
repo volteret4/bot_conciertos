@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:55:59.287172",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2EFsfh1zewsSWhDINv7j1I"
+    },
+    "followers": {
+      "href": null,
+      "total": 64611
+    },
+    "genres": [
+      "lo-fi house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2EFsfh1zewsSWhDINv7j1I",
+    "id": "2EFsfh1zewsSWhDINv7j1I",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb122e3b13b849efb9b6fb6bec",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174122e3b13b849efb9b6fb6bec",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178122e3b13b849efb9b6fb6bec",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Logic1000",
+    "popularity": 44,
+    "type": "artist",
+    "uri": "spotify:artist:2EFsfh1zewsSWhDINv7j1I"
+  }
+}

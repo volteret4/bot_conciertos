@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-10-23T17:08:20.930085",
+  "concerts": [
+    {
+      "artist": "Fela Kuti",
+      "name": "The Legacy of Fela Kuti",
+      "venue": "Jazz Cafe",
+      "city": "London",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-01-21",
+      "time": "19:00:00",
+      "url": "https://www.ticketweb.uk/event/the-legacy-of-fela-kuti-jazz-cafe-tickets/14631233?REFERRAL_ID=tmfeed",
+      "source": "Ticketmaster",
+      "id": "1AwZkufGkeD_dZK"
+    },
+    {
+      "artist": "Fela Kuti",
+      "name": "The Legacy of Fela Kuti - Restaurant",
+      "venue": "Jazz Cafe",
+      "city": "London",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-01-21",
+      "time": "19:00:00",
+      "url": "https://www.ticketweb.uk/event/the-legacy-of-fela-kuti-jazz-cafe-tickets/14631243?REFERRAL_ID=tmfeed",
+      "source": "Ticketmaster",
+      "id": "1AwZkufGkeHISZ_"
+    }
+  ]
+}

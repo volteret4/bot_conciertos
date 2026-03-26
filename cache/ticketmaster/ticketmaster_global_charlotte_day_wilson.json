@@ -1,0 +1,96 @@
+{
+  "timestamp": "2025-10-23T17:04:50.889032",
+  "concerts": [
+    {
+      "artist": "Charlotte Day Wilson",
+      "name": "GIVEON: Dear Beloved, The Tour",
+      "venue": "Fox Theatre Detroit",
+      "city": "Detroit",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-10-23",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/giveon-dear-beloved-the-tour-detroit-michigan-10-23-2025/event/080062F2E42549AA",
+      "source": "Ticketmaster",
+      "id": "vvG1OZbR50afJn"
+    },
+    {
+      "artist": "Charlotte Day Wilson",
+      "name": "GIVEON: Dear Beloved, The Tour",
+      "venue": "Freedom Mortgage Pavilion ",
+      "city": "Camden",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-10-25",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/giveon-dear-beloved-the-tour-camden-new-jersey-10-25-2025/event/020062F0A65C3C15",
+      "source": "Ticketmaster",
+      "id": "vvG1FZbReJ9dY4"
+    },
+    {
+      "artist": "Charlotte Day Wilson",
+      "name": "GIVEON: Dear Beloved, The Tour",
+      "venue": "Coca-Cola Coliseum",
+      "city": "Toronto",
+      "country": "Canada",
+      "country_code": "CA",
+      "date": "2025-10-27",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.ca/giveon-dear-beloved-the-tour-toronto-ontario-10-27-2025/event/100062F09929246A",
+      "source": "Ticketmaster",
+      "id": "177ZvxG62e_13on"
+    },
+    {
+      "artist": "Charlotte Day Wilson",
+      "name": "GIVEON: Dear Beloved, The Tour",
+      "venue": "The Anthem",
+      "city": "Washington",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-10-30",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/giveon-dear-beloved-the-tour-washington-district-of-columbia-10-30-2025/event/150062F5B3402D95",
+      "source": "Ticketmaster",
+      "id": "17A8vxG62pS8eU4"
+    },
+    {
+      "artist": "Charlotte Day Wilson",
+      "name": "GIVEON: Dear Beloved, The Tour",
+      "venue": "Skyla Credit Union Amphitheatre",
+      "city": "Charlotte",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-01",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/giveon-dear-beloved-the-tour-charlotte-north-carolina-11-01-2025/event/2D0062F0C39E9785",
+      "source": "Ticketmaster",
+      "id": "G5eVZbRddEtrA"
+    },
+    {
+      "artist": "Charlotte Day Wilson",
+      "name": "GIVEON: Dear Beloved, The Tour",
+      "venue": "MGM Music Hall at Fenway",
+      "city": "Boston",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-04",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/giveon-dear-beloved-the-tour-boston-massachusetts-11-04-2025/event/010062EFBB4B7135",
+      "source": "Ticketmaster",
+      "id": "vvG17ZbmXD3M7g"
+    },
+    {
+      "artist": "Charlotte Day Wilson",
+      "name": "GIVEON: Dear Beloved, The Tour",
+      "venue": "Madison Square Garden",
+      "city": "New York",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-06",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/giveon-dear-beloved-the-tour-new-york-new-york-11-06-2025/event/3B0062F2C7B312A5",
+      "source": "Ticketmaster",
+      "id": "G5diZbR56is1P"
+    }
+  ]
+}

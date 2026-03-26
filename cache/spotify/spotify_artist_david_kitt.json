@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:04:20.104569",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/28y00xccuksu45VpgNVo3E"
+    },
+    "followers": {
+      "href": null,
+      "total": 12768
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/28y00xccuksu45VpgNVo3E",
+    "id": "28y00xccuksu45VpgNVo3E",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb7cad013751b77039f4408a3a",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051747cad013751b77039f4408a3a",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1787cad013751b77039f4408a3a",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "David Kitt",
+    "popularity": 24,
+    "type": "artist",
+    "uri": "spotify:artist:28y00xccuksu45VpgNVo3E"
+  }
+}

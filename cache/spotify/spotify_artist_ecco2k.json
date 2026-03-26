@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:58:44.121611",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6hG0VsXXlD10l60TqiIHIX"
+    },
+    "followers": {
+      "href": null,
+      "total": 345859
+    },
+    "genres": [
+      "cloud rap",
+      "hyperpop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6hG0VsXXlD10l60TqiIHIX",
+    "id": "6hG0VsXXlD10l60TqiIHIX",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eba4caf4073b40cef9206c8012",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174a4caf4073b40cef9206c8012",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178a4caf4073b40cef9206c8012",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Ecco2k",
+    "popularity": 60,
+    "type": "artist",
+    "uri": "spotify:artist:6hG0VsXXlD10l60TqiIHIX"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:54:54.433879",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6nLkWu5DSXItXcB6q2ISTO"
+    },
+    "followers": {
+      "href": null,
+      "total": 24957
+    },
+    "genres": [
+      "cool jazz",
+      "jazz",
+      "bebop",
+      "hard bop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6nLkWu5DSXItXcB6q2ISTO",
+    "id": "6nLkWu5DSXItXcB6q2ISTO",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27372af4a9b46118c869296f4c8",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0272af4a9b46118c869296f4c8",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485172af4a9b46118c869296f4c8",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Gerry Mulligan Quartet",
+    "popularity": 35,
+    "type": "artist",
+    "uri": "spotify:artist:6nLkWu5DSXItXcB6q2ISTO"
+  }
+}

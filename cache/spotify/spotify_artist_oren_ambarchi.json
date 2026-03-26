@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-11-03T20:01:44.379741",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1fIzM2bmsXG77E5EMPtdKW"
+    },
+    "followers": {
+      "href": null,
+      "total": 25206
+    },
+    "genres": [
+      "drone",
+      "ambient",
+      "experimental",
+      "drone metal",
+      "avant-garde",
+      "minimalism"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1fIzM2bmsXG77E5EMPtdKW",
+    "id": "1fIzM2bmsXG77E5EMPtdKW",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb622bc05b2c5c89e8965c568c",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174622bc05b2c5c89e8965c568c",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178622bc05b2c5c89e8965c568c",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Oren Ambarchi",
+    "popularity": 25,
+    "type": "artist",
+    "uri": "spotify:artist:1fIzM2bmsXG77E5EMPtdKW"
+  }
+}

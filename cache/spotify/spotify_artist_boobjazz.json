@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-11-03T20:00:53.927860",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3Mr0TYDJS6j1DhpLPlnwgv"
+    },
+    "followers": {
+      "href": null,
+      "total": 253
+    },
+    "genres": [
+      "lo-fi house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3Mr0TYDJS6j1DhpLPlnwgv",
+    "id": "3Mr0TYDJS6j1DhpLPlnwgv",
+    "images": [],
+    "name": "Boobjazz",
+    "popularity": 2,
+    "type": "artist",
+    "uri": "spotify:artist:3Mr0TYDJS6j1DhpLPlnwgv"
+  }
+}

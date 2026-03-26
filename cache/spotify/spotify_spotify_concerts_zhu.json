@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-08-25T09:43:33.599132",
+  "data": [
+    {
+      "artist": "ZHU",
+      "artist_name": "ZHU",
+      "name": "ZHU at Movistar Arena",
+      "venue": "Movistar Arena",
+      "city": "Bogotá",
+      "country": "CO",
+      "date": "2025-09-12",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/2tBpw722Dtuye28XVat0yk",
+      "source": "Spotify"
+    },
+    {
+      "artist": "ZHU",
+      "artist_name": "ZHU",
+      "name": "ZHU Concert (7xhIx0uW)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/7xhIx0uWpZE1gRYqLMQcPr",
+      "source": "Spotify"
+    },
+    {
+      "artist": "ZHU",
+      "artist_name": "ZHU",
+      "name": "ZHU Concert (2MzMhWLX)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/2MzMhWLXmu3SubdjtuJQu7",
+      "source": "Spotify"
+    }
+  ]
+}

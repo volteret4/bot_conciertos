@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:04:56.815674",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3n8qeKQViV1waeCzZmS4Tx"
+    },
+    "followers": {
+      "href": null,
+      "total": 95655
+    },
+    "genres": [
+      "noise rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3n8qeKQViV1waeCzZmS4Tx",
+    "id": "3n8qeKQViV1waeCzZmS4Tx",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb86083eef603223612db54a07",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517486083eef603223612db54a07",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17886083eef603223612db54a07",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Kim Gordon",
+    "popularity": 26,
+    "type": "artist",
+    "uri": "spotify:artist:3n8qeKQViV1waeCzZmS4Tx"
+  }
+}

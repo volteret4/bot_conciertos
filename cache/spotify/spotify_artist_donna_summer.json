@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:04:24.370493",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2eogQKWWoohI3BSnoG7E2U"
+    },
+    "followers": {
+      "href": null,
+      "total": 2161147
+    },
+    "genres": [
+      "disco",
+      "hi-nrg"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2eogQKWWoohI3BSnoG7E2U",
+    "id": "2eogQKWWoohI3BSnoG7E2U",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb9e708b5a9b76b98301d35123",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051749e708b5a9b76b98301d35123",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1789e708b5a9b76b98301d35123",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Donna Summer",
+    "popularity": 63,
+    "type": "artist",
+    "uri": "spotify:artist:2eogQKWWoohI3BSnoG7E2U"
+  }
+}

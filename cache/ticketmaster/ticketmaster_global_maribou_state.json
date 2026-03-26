@@ -1,0 +1,109 @@
+{
+  "timestamp": "2025-10-23T17:08:50.312707",
+  "concerts": [
+    {
+      "artist": "Maribou State",
+      "name": "Lakes Music Festival 2025",
+      "venue": "Hagley Park Entertainment Triangle",
+      "city": "Christchurch Central",
+      "country": "New Zealand",
+      "country_code": "NZ",
+      "date": "2025-12-28",
+      "time": "12:30:00",
+      "url": "https://www.moshtix.co.nz/v2/event/lakes-music-festival-2025/184141",
+      "source": "Ticketmaster",
+      "id": "ZFwVzcymWZ17k7Av"
+    },
+    {
+      "artist": "Maribou State",
+      "name": "Rhythm and Vines 2025",
+      "venue": "Waiohika Estate Vineyard",
+      "city": "Gisborne",
+      "country": "New Zealand",
+      "country_code": "NZ",
+      "date": "2025-12-29",
+      "time": "14:00:00",
+      "url": "https://www.moshtix.co.nz/v2/event/rhythm-and-vines-2025/175493",
+      "source": "Ticketmaster",
+      "id": "ZFwVzcymWZ17Ag3K"
+    },
+    {
+      "artist": "Maribou State",
+      "name": "New Year's At The Bowl: Two Day GA",
+      "venue": "Arts Centre Melbourne, Sidney Myer Music Bowl",
+      "city": "Linlithgow Ave",
+      "country": "Australia",
+      "country_code": "AU",
+      "date": "2025-12-31",
+      "time": "",
+      "url": "https://www.ticketmaster.com.au/new-years-at-the-bowl-two-linlithgow-ave-31-12-2025/event/13006328BB6B40AF",
+      "source": "Ticketmaster",
+      "id": "1AKZkGIGkeDQVeR"
+    },
+    {
+      "artist": "Maribou State",
+      "name": "New Year's At The Bowl: Two Day VIP",
+      "venue": "Arts Centre Melbourne, Sidney Myer Music Bowl",
+      "city": "Linlithgow Ave",
+      "country": "Australia",
+      "country_code": "AU",
+      "date": "2025-12-31",
+      "time": "",
+      "url": "https://www.ticketmaster.com.au/new-years-at-the-bowl-two-linlithgow-ave-31-12-2025/event/13006328BB7940B4",
+      "source": "Ticketmaster",
+      "id": "1AKZkGIGkeDrfeV"
+    },
+    {
+      "artist": "Maribou State",
+      "name": "New Year's At The Bowl: NYD Single Day - VIP",
+      "venue": "Arts Centre Melbourne, Sidney Myer Music Bowl",
+      "city": "Linlithgow Ave",
+      "country": "Australia",
+      "country_code": "AU",
+      "date": "2026-01-01",
+      "time": "14:00:00",
+      "url": "https://www.ticketmaster.com.au/new-years-at-the-bowl-nyd-linlithgow-ave-01-01-2026/event/13006328BB2940AD",
+      "source": "Ticketmaster",
+      "id": "1AKZkGIGkeD1fec"
+    },
+    {
+      "artist": "Maribou State",
+      "name": "New Year's At The Bowl: NYD Single Day - GA",
+      "venue": "Arts Centre Melbourne, Sidney Myer Music Bowl",
+      "city": "Linlithgow Ave",
+      "country": "Australia",
+      "country_code": "AU",
+      "date": "2026-01-01",
+      "time": "14:00:00",
+      "url": "https://www.ticketmaster.com.au/new-years-at-the-bowl-nyd-linlithgow-ave-01-01-2026/event/13006328BB2940A9",
+      "source": "Ticketmaster",
+      "id": "1AKZkGIGkeD1fet"
+    },
+    {
+      "artist": "Maribou State",
+      "name": "Maribou State, Santigold & Pond",
+      "venue": "Red Hill Auditorium",
+      "city": "Red Hill ",
+      "country": "Australia",
+      "country_code": "AU",
+      "date": "2026-01-04",
+      "time": "18:30:00",
+      "url": "https://www.moshtix.com.au/v2/event/maribou-state-santigold-pond/187125",
+      "source": "Ticketmaster",
+      "id": "ZFwVzcymWZ17k67P"
+    },
+    {
+      "artist": "Maribou State",
+      "name": "LIDO Festival 2026 - Maribou State",
+      "venue": "Victoria Park London",
+      "city": "London",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-06-20",
+      "time": "14:00:00",
+      "url": "https://www.ticketmaster.co.uk/lido-festival-2026-maribou-state-london-20-06-2026/event/3700634F8FB736F0",
+      "source": "Ticketmaster",
+      "id": "1AdjZbVGkX2cShY"
+    }
+  ]
+}

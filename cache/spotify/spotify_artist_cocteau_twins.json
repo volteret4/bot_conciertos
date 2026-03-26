@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T20:04:57.075773",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5Wabl1lPdNOeIn0SQ5A1mp"
+    },
+    "followers": {
+      "href": null,
+      "total": 1384078
+    },
+    "genres": [
+      "dream pop",
+      "shoegaze",
+      "gothic rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5Wabl1lPdNOeIn0SQ5A1mp",
+    "id": "5Wabl1lPdNOeIn0SQ5A1mp",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb00f01cecce8a4475c3de0998",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517400f01cecce8a4475c3de0998",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17800f01cecce8a4475c3de0998",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Cocteau Twins",
+    "popularity": 65,
+    "type": "artist",
+    "uri": "spotify:artist:5Wabl1lPdNOeIn0SQ5A1mp"
+  }
+}

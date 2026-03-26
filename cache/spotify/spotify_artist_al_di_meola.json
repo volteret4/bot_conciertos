@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:58:27.178827",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3bBWKHfpepPOychRNFzg4q"
+    },
+    "followers": {
+      "href": null,
+      "total": 172516
+    },
+    "genres": [
+      "jazz fusion",
+      "flamenco"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3bBWKHfpepPOychRNFzg4q",
+    "id": "3bBWKHfpepPOychRNFzg4q",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebf4313d696ee5ec58c57d231b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174f4313d696ee5ec58c57d231b",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178f4313d696ee5ec58c57d231b",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Al Di Meola",
+    "popularity": 41,
+    "type": "artist",
+    "uri": "spotify:artist:3bBWKHfpepPOychRNFzg4q"
+  }
+}

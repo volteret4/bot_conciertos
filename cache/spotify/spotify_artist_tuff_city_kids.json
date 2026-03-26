@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-11-03T19:48:04.139707",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3tUtnhxnXl3zZdQUOpcyq6"
+    },
+    "followers": {
+      "href": null,
+      "total": 9304
+    },
+    "genres": [
+      "indie dance"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3tUtnhxnXl3zZdQUOpcyq6",
+    "id": "3tUtnhxnXl3zZdQUOpcyq6",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6772690000c46c8ced8575d058efad85fd0fdc",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000dd228ced8575d058efad85fd0fdc",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000bac38ced8575d058efad85fd0fdc",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67726900008f748ced8575d058efad85fd0fdc",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Tuff City Kids",
+    "popularity": 25,
+    "type": "artist",
+    "uri": "spotify:artist:3tUtnhxnXl3zZdQUOpcyq6"
+  }
+}

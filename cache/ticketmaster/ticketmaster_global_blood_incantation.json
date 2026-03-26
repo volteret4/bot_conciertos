@@ -1,0 +1,96 @@
+{
+  "timestamp": "2025-10-23T17:14:47.267521",
+  "concerts": [
+    {
+      "artist": "Blood Incantation",
+      "name": "BLOOD INCANTATION with special guests Secret Chiefs 3 ",
+      "venue": "The Triffid",
+      "city": "Newstead",
+      "country": "Australia",
+      "country_code": "AU",
+      "date": "2025-11-05",
+      "time": "19:30:00",
+      "url": "https://www.moshtix.com.au/v2/event/blood-incantation-with-special-guests-secret-chiefs-3/182446",
+      "source": "Ticketmaster",
+      "id": "ZFwVzcymWZ17keok"
+    },
+    {
+      "artist": "Blood Incantation",
+      "name": "BLOOD INCANTATION + Secret Chiefs 3",
+      "venue": "Manning Bar",
+      "city": "Camperdown",
+      "country": "Australia",
+      "country_code": "AU",
+      "date": "2025-11-07",
+      "time": "20:00:00",
+      "url": "https://www.moshtix.com.au/v2/event/blood-incantation-secret-chiefs-3/182450",
+      "source": "Ticketmaster",
+      "id": "ZFwVzcymWZ17keo8"
+    },
+    {
+      "artist": "Blood Incantation",
+      "name": "BLOOD INCANTATION (USA) + Secret Chiefs 3 (USA)",
+      "venue": "Northcote Theatre",
+      "city": "Northcote",
+      "country": "Australia",
+      "country_code": "AU",
+      "date": "2025-11-08",
+      "time": "19:30:00",
+      "url": "https://www.moshtix.com.au/v2/event/blood-incantation-usa-secret-chiefs-3-usa-/182453",
+      "source": "Ticketmaster",
+      "id": "ZFwVzcymWZ17keoK"
+    },
+    {
+      "artist": "Blood Incantation",
+      "name": "BLOOD INCANTATION with special guests Secret Chiefs 3",
+      "venue": "Lion Arts Factory",
+      "city": "Adelaide",
+      "country": "Australia",
+      "country_code": "AU",
+      "date": "2025-11-13",
+      "time": "19:00:00",
+      "url": "https://www.moshtix.com.au/v2/event/blood-incantation-with-special-guests-secret-chiefs-3/182445",
+      "source": "Ticketmaster",
+      "id": "ZFwVzcymWZ17keoA"
+    },
+    {
+      "artist": "Blood Incantation",
+      "name": "Decibel - Metal & Beer Festival: 3-DAY PASS (Pre-Fest at Ratio)",
+      "venue": "Fillmore Auditorium (Denver)",
+      "city": "Denver",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-04",
+      "time": "",
+      "url": "https://www.ticketmaster.com/decibel-metal-beer-festival-3day-pass-denver-colorado-12-04-2025/event/1E006267B62D2D9F",
+      "source": "Ticketmaster",
+      "id": "G5vzZbJrU53UL"
+    },
+    {
+      "artist": "Blood Incantation",
+      "name": "Decibel - Metal & Beer Festival: 2-DAY PASS",
+      "venue": "Fillmore Auditorium (Denver)",
+      "city": "Denver",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-05",
+      "time": "",
+      "url": "https://www.ticketmaster.com/decibel-metal-beer-festival-2day-pass-denver-colorado-12-05-2025/event/1E006267B5D42D87",
+      "source": "Ticketmaster",
+      "id": "G5vzZbJrggeU6"
+    },
+    {
+      "artist": "Blood Incantation",
+      "name": "Decibel - Metal & Beer Festival: Day 1 Single Day Tickets",
+      "venue": "Fillmore Auditorium (Denver)",
+      "city": "Denver",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-05",
+      "time": "18:00:00",
+      "url": "https://www.ticketmaster.com/decibel-metal-beer-festival-day-1-denver-colorado-12-05-2025/event/1E006267B4F12CC9",
+      "source": "Ticketmaster",
+      "id": "G5vzZbJrVH3Sa"
+    }
+  ]
+}

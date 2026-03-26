@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T20:04:59.301456",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2PoiNhvPSC4fivyrDJOoru"
+    },
+    "followers": {
+      "href": null,
+      "total": 13722
+    },
+    "genres": [
+      "spoken word",
+      "ambient"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2PoiNhvPSC4fivyrDJOoru",
+    "id": "2PoiNhvPSC4fivyrDJOoru",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6772690000c46c463b7f6b1f690b3596b455c9",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000dd22463b7f6b1f690b3596b455c9",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000bac3463b7f6b1f690b3596b455c9",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67726900008f74463b7f6b1f690b3596b455c9",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Lord Of The Isles",
+    "popularity": 32,
+    "type": "artist",
+    "uri": "spotify:artist:2PoiNhvPSC4fivyrDJOoru"
+  }
+}

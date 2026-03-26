@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-10-23T17:06:53.420686",
+  "concerts": [
+    {
+      "artist": "Acid Pauli",
+      "name": "Monolink - Tour 2025",
+      "venue": "Uber Eats Music Hall",
+      "city": "Berlin",
+      "country": "Germany",
+      "country_code": "DE",
+      "date": "2025-11-21",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.de/event/monolink-tour-2025-tickets/310335676?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZC2Z1kG8Gg_U"
+    }
+  ]
+}

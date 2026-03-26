@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:59:38.236448",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7MSoMSIgrEtwDJ0iUCJwSD"
+    },
+    "followers": {
+      "href": null,
+      "total": 21644
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/7MSoMSIgrEtwDJ0iUCJwSD",
+    "id": "7MSoMSIgrEtwDJ0iUCJwSD",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebefb8e9ee1d9eec2c216da70a",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174efb8e9ee1d9eec2c216da70a",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178efb8e9ee1d9eec2c216da70a",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Eddie Chacon",
+    "popularity": 30,
+    "type": "artist",
+    "uri": "spotify:artist:7MSoMSIgrEtwDJ0iUCJwSD"
+  }
+}

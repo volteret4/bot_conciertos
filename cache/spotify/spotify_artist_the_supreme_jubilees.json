@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-11-03T20:03:17.851885",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5XduRGfkKVRVqyEJ0D9trw"
+    },
+    "followers": {
+      "href": null,
+      "total": 11054
+    },
+    "genres": [
+      "classic soul"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5XduRGfkKVRVqyEJ0D9trw",
+    "id": "5XduRGfkKVRVqyEJ0D9trw",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/40e830011ce72f90af8b716559ee98b9a4f452df",
+        "height": 430,
+        "width": 675
+      },
+      {
+        "url": "https://i.scdn.co/image/1abf7582b281d17d38e97984b795aa32d1009a1d",
+        "height": 408,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/b578e89d91df2b5f7afd2fc359968c924b7c9c3a",
+        "height": 127,
+        "width": 199
+      },
+      {
+        "url": "https://i.scdn.co/image/1dcbecac16392749b3bdf761e67ecd16c00f3cc9",
+        "height": 41,
+        "width": 64
+      }
+    ],
+    "name": "Supreme Jubilees",
+    "popularity": 31,
+    "type": "artist",
+    "uri": "spotify:artist:5XduRGfkKVRVqyEJ0D9trw"
+  }
+}

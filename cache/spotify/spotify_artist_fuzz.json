@@ -1,0 +1,45 @@
+{
+  "timestamp": "2025-11-03T19:57:37.161115",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/64CktFSdicLd9XQzV6gkMg"
+    },
+    "followers": {
+      "href": null,
+      "total": 25324
+    },
+    "genres": [
+      "garage rock",
+      "psychobilly",
+      "horror punk"
+    ],
+    "href": "https://api.spotify.com/v1/artists/64CktFSdicLd9XQzV6gkMg",
+    "id": "64CktFSdicLd9XQzV6gkMg",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/3b1d1145b87acf2671d77d327a68e565f5a62a5f",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/c2ee4dcc4c792f390cce279f40cf766a4f391b5c",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/032d290d2342dc90309043ac0a0ad3de6096f291",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/c0eea583e0da2594fc4877bc0a65413d7abfd0f1",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "The Fuzztones",
+    "popularity": 25,
+    "type": "artist",
+    "uri": "spotify:artist:64CktFSdicLd9XQzV6gkMg"
+  }
+}

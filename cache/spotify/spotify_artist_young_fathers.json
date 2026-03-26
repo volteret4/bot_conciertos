@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:47:07.147581",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5mZC7ndY6oGMxJentRwsuV"
+    },
+    "followers": {
+      "href": null,
+      "total": 260336
+    },
+    "genres": [
+      "experimental hip hop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5mZC7ndY6oGMxJentRwsuV",
+    "id": "5mZC7ndY6oGMxJentRwsuV",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebbea3573b4a8ee78897d8f0a9",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174bea3573b4a8ee78897d8f0a9",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178bea3573b4a8ee78897d8f0a9",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Young Fathers",
+    "popularity": 47,
+    "type": "artist",
+    "uri": "spotify:artist:5mZC7ndY6oGMxJentRwsuV"
+  }
+}

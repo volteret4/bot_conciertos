@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:04:16.910706",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4pPNd0lTQ2LJdrJvxEktuD"
+    },
+    "followers": {
+      "href": null,
+      "total": 2914
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/4pPNd0lTQ2LJdrJvxEktuD",
+    "id": "4pPNd0lTQ2LJdrJvxEktuD",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb3f1b25ea5c01a5ffdcdaf6bd",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051743f1b25ea5c01a5ffdcdaf6bd",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1783f1b25ea5c01a5ffdcdaf6bd",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "DJ Healer",
+    "popularity": 47,
+    "type": "artist",
+    "uri": "spotify:artist:4pPNd0lTQ2LJdrJvxEktuD"
+  }
+}

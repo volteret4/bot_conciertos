@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:49:56.962398",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3uaHfXYx9Fh4HjqMbrWn5S"
+    },
+    "followers": {
+      "href": null,
+      "total": 119002
+    },
+    "genres": [
+      "jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3uaHfXYx9Fh4HjqMbrWn5S",
+    "id": "3uaHfXYx9Fh4HjqMbrWn5S",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb2cf1737642c7f6e5f34e75b1",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051742cf1737642c7f6e5f34e75b1",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1782cf1737642c7f6e5f34e75b1",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Joshua Redman",
+    "popularity": 41,
+    "type": "artist",
+    "uri": "spotify:artist:3uaHfXYx9Fh4HjqMbrWn5S"
+  }
+}

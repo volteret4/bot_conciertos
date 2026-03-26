@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:49:37.674766",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/33EUXrFKGjpUSGacqEHhU4"
+    },
+    "followers": {
+      "href": null,
+      "total": 1786883
+    },
+    "genres": [
+      "proto-punk",
+      "glam rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/33EUXrFKGjpUSGacqEHhU4",
+    "id": "33EUXrFKGjpUSGacqEHhU4",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb21e6d14c3d8aab9887380d00",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517421e6d14c3d8aab9887380d00",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17821e6d14c3d8aab9887380d00",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Iggy Pop",
+    "popularity": 64,
+    "type": "artist",
+    "uri": "spotify:artist:33EUXrFKGjpUSGacqEHhU4"
+  }
+}

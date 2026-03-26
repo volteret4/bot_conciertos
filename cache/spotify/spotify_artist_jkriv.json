@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-10-23T17:51:58.859367",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1E7Z1EQlB22dXWNzsAxY0K"
+    },
+    "followers": {
+      "href": null,
+      "total": 10279
+    },
+    "genres": [
+      "nu disco",
+      "disco house",
+      "funky house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1E7Z1EQlB22dXWNzsAxY0K",
+    "id": "1E7Z1EQlB22dXWNzsAxY0K",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb593e41d7e6f89bb7f82c66fa",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174593e41d7e6f89bb7f82c66fa",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178593e41d7e6f89bb7f82c66fa",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "JKriv",
+    "popularity": 37,
+    "type": "artist",
+    "uri": "spotify:artist:1E7Z1EQlB22dXWNzsAxY0K"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T20:03:16.810273",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5HJ2kX5UTwN4Ns8fB5Rn1I"
+    },
+    "followers": {
+      "href": null,
+      "total": 277919
+    },
+    "genres": [
+      "experimental hip hop",
+      "horrorcore",
+      "experimental",
+      "alternative hip hop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5HJ2kX5UTwN4Ns8fB5Rn1I",
+    "id": "5HJ2kX5UTwN4Ns8fB5Rn1I",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebcc61b54c332a2c8baaaf375b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174cc61b54c332a2c8baaaf375b",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178cc61b54c332a2c8baaaf375b",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "clipping.",
+    "popularity": 45,
+    "type": "artist",
+    "uri": "spotify:artist:5HJ2kX5UTwN4Ns8fB5Rn1I"
+  }
+}

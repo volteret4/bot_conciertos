@@ -1,0 +1,45 @@
+{
+  "timestamp": "2025-11-03T20:03:35.985298",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/314EDjJCQdcNfzwefA7daH"
+    },
+    "followers": {
+      "href": null,
+      "total": 56852
+    },
+    "genres": [
+      "shoegaze",
+      "dream pop",
+      "slowcore"
+    ],
+    "href": "https://api.spotify.com/v1/artists/314EDjJCQdcNfzwefA7daH",
+    "id": "314EDjJCQdcNfzwefA7daH",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6772690000c46c8f337eadd441a195d8cf00a1",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000dd228f337eadd441a195d8cf00a1",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000bac38f337eadd441a195d8cf00a1",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67726900008f748f337eadd441a195d8cf00a1",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Fleeting Joys",
+    "popularity": 34,
+    "type": "artist",
+    "uri": "spotify:artist:314EDjJCQdcNfzwefA7daH"
+  }
+}

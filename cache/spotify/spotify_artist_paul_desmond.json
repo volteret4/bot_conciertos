@@ -1,0 +1,46 @@
+{
+  "timestamp": "2025-11-03T19:58:26.506107",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/68l2i6GeNtwQlhKS59u5bu"
+    },
+    "followers": {
+      "href": null,
+      "total": 179046
+    },
+    "genres": [
+      "cool jazz",
+      "jazz",
+      "bossa nova",
+      "brazilian jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/68l2i6GeNtwQlhKS59u5bu",
+    "id": "68l2i6GeNtwQlhKS59u5bu",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/87db29f66c8b57d93f06887967bbe325e40f7e49",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/c6dd112d083683c626b3767bef78a78342c68db5",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/df1d845f56fef54d6464f09b9d99870d3c309b5b",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/5358c42d63d06001f5669ec68c95c16dde955d0b",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Paul Desmond",
+    "popularity": 51,
+    "type": "artist",
+    "uri": "spotify:artist:68l2i6GeNtwQlhKS59u5bu"
+  }
+}

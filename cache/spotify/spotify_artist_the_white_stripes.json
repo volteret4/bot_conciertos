@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:46:49.579167",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4F84IBURUo98rz4r61KF70"
+    },
+    "followers": {
+      "href": null,
+      "total": 3535451
+    },
+    "genres": [
+      "garage rock",
+      "blues rock",
+      "rock",
+      "alternative rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4F84IBURUo98rz4r61KF70",
+    "id": "4F84IBURUo98rz4r61KF70",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb70cc06de8fc28226d4743cd9",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517470cc06de8fc28226d4743cd9",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17870cc06de8fc28226d4743cd9",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "The White Stripes",
+    "popularity": 68,
+    "type": "artist",
+    "uri": "spotify:artist:4F84IBURUo98rz4r61KF70"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:57:24.174491",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2dfxY7YDuYCUtWFzWTS6IR"
+    },
+    "followers": {
+      "href": null,
+      "total": 141633
+    },
+    "genres": [
+      "midwest emo",
+      "emo",
+      "math rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2dfxY7YDuYCUtWFzWTS6IR",
+    "id": "2dfxY7YDuYCUtWFzWTS6IR",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb06e3302d2bc0973320c06020",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517406e3302d2bc0973320c06020",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17806e3302d2bc0973320c06020",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Foxing",
+    "popularity": 42,
+    "type": "artist",
+    "uri": "spotify:artist:2dfxY7YDuYCUtWFzWTS6IR"
+  }
+}

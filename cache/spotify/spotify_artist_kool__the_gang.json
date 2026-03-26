@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:55:34.313773",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3VNITwohbvU5Wuy5PC6dsI"
+    },
+    "followers": {
+      "href": null,
+      "total": 2815138
+    },
+    "genres": [
+      "disco",
+      "funk"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3VNITwohbvU5Wuy5PC6dsI",
+    "id": "3VNITwohbvU5Wuy5PC6dsI",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb69287c3f1b150bbead642499",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517469287c3f1b150bbead642499",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17869287c3f1b150bbead642499",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Kool & The Gang",
+    "popularity": 67,
+    "type": "artist",
+    "uri": "spotify:artist:3VNITwohbvU5Wuy5PC6dsI"
+  }
+}

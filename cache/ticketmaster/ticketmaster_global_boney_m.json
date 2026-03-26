@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-10-23T17:12:11.110248",
+  "concerts": [
+    {
+      "artist": "Boney M.",
+      "name": "Boney M.Xperience & Fabba",
+      "venue": "The Palms at Crown",
+      "city": "Southbank ",
+      "country": "Australia",
+      "country_code": "AU",
+      "date": "2025-10-25",
+      "time": "19:30:00",
+      "url": "https://www.ticketmaster.com.au/boney-mxperience-fabba-southbank-25-10-2025/event/250062E2B11A1624",
+      "source": "Ticketmaster",
+      "id": "17a8vxG6C1sk-b0"
+    },
+    {
+      "artist": "Boney M.",
+      "name": "Boney M LIVE at Manchester Cathedral",
+      "venue": "Manchester Cathedral",
+      "city": "Manchester",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2025-11-01",
+      "time": "18:00:00",
+      "url": "https://www.universe.com/events/boney-m-live-at-manchester-cathedral-tickets-6XFQVB?ref=ticketmaster",
+      "source": "Ticketmaster",
+      "id": "LvZ18Q5EeIum7YZZ0U0YT"
+    },
+    {
+      "artist": "Boney M.",
+      "name": "Boney M. Live in Coventry Cathedral",
+      "venue": "Coventry Cathedral",
+      "city": "Coventry",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2025-11-07",
+      "time": "19:00:00",
+      "url": "https://www.universe.com/events/boney-m-live-in-coventry-cathedral-tickets-NJQSCP?ref=ticketmaster",
+      "source": "Ticketmaster",
+      "id": "LvZ18Q6WEpBZe18Zlulwj"
+    }
+  ]
+}

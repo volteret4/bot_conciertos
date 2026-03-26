@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-11-03T19:56:51.499200",
+  "concerts": [
+    {
+      "artist": "Jamiroquai",
+      "name": "Jamiroquai - The Heels Of Steel Tour | VIP Packages",
+      "venue": "Palau Sant Jordi",
+      "city": "Barcelona",
+      "country": "Spain",
+      "country_code": "ES",
+      "date": "2025-11-06",
+      "time": "21:00:00",
+      "image": "https://s1.ticketm.net/dam/a/4f6/d1ce9beb-1096-4bd7-9f95-50655f0a74f6_RETINA_PORTRAIT_16_9.jpg",
+      "url": "https://www.ticketmaster.es/event/jamiroquai-the-heels-of-steel-tour-%7C-vip-packages-tickets/1835656793?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZ2qZ16vOg_prK"
+    },
+    {
+      "artist": "Jamiroquai",
+      "name": "Jamiroquai - The Heels Of Steel Tour",
+      "venue": "Palau Sant Jordi",
+      "city": "Barcelona",
+      "country": "Spain",
+      "country_code": "ES",
+      "date": "2025-11-06",
+      "time": "21:00:00",
+      "image": "https://s1.ticketm.net/dam/a/4f6/d1ce9beb-1096-4bd7-9f95-50655f0a74f6_RETINA_PORTRAIT_16_9.jpg",
+      "url": "https://www.ticketmaster.es/event/jamiroquai-the-heels-of-steel-tour-tickets/1270283910?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZ2qZ16vaY1d08"
+    },
+    {
+      "artist": "Jamiroquai",
+      "name": "Jamiroquai - Icónica Santalucia Sevilla Fest.",
+      "venue": "Plaza de España",
+      "city": "Sevilla",
+      "country": "Spain",
+      "country_code": "ES",
+      "date": "2026-07-16",
+      "time": "22:30:00",
+      "image": "https://s1.ticketm.net/dam/a/4f6/d1ce9beb-1096-4bd7-9f95-50655f0a74f6_RETINA_PORTRAIT_16_9.jpg",
+      "url": "https://www.ticketmaster.es/event/jamiroquai-iconica-santalucia-sevilla-fest-tickets/2034594644?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZ2qZ16eZVpf_7"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-10-23T17:55:15.909161",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7jxJ25p0pPjk0MStloN6o6"
+    },
+    "followers": {
+      "href": null,
+      "total": 778297
+    },
+    "genres": [
+      "power metal",
+      "speed metal",
+      "symphonic metal",
+      "metal",
+      "folk metal",
+      "medieval metal",
+      "heavy metal"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7jxJ25p0pPjk0MStloN6o6",
+    "id": "7jxJ25p0pPjk0MStloN6o6",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb26139a78b669ae67aacde9f3",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517426139a78b669ae67aacde9f3",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17826139a78b669ae67aacde9f3",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Blind Guardian",
+    "popularity": 51,
+    "type": "artist",
+    "uri": "spotify:artist:7jxJ25p0pPjk0MStloN6o6"
+  }
+}

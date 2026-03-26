@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-10-23T17:11:53.598240",
+  "concerts": [
+    {
+      "artist": "Eric Bibb",
+      "name": "January Blues Festival: Eric Bibb",
+      "venue": "229",
+      "city": "London",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-01-05",
+      "time": "19:00:00",
+      "url": "https://www.ticketweb.uk/event/january-blues-festival-eric-bibb-229-tickets/14295643?REFERRAL_ID=tmfeed",
+      "source": "Ticketmaster",
+      "id": "1AdFZbJGkBMJ3bL"
+    },
+    {
+      "artist": "Eric Bibb",
+      "name": "January Blues Festival: Eric Bibb",
+      "venue": "229",
+      "city": "London",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-01-06",
+      "time": "19:00:00",
+      "url": "https://www.ticketweb.uk/event/january-blues-festival-eric-bibb-229-tickets/14295653?REFERRAL_ID=tmfeed",
+      "source": "Ticketmaster",
+      "id": "1AdFZbJGkBzwe_n"
+    },
+    {
+      "artist": "Eric Bibb",
+      "name": "Eric Bibb",
+      "venue": "Oran Mor",
+      "city": "Glasgow",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-03-15",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.co.uk/eric-bibb-glasgow-15-03-2026/event/36006347965D6D65",
+      "source": "Ticketmaster",
+      "id": "16UZku6PPZAC6C6k"
+    }
+  ]
+}

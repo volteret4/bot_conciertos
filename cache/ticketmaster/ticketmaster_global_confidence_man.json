@@ -1,0 +1,83 @@
+{
+  "timestamp": "2025-10-23T17:11:27.806249",
+  "concerts": [
+    {
+      "artist": "Confidence Man",
+      "name": "Confidence Man",
+      "venue": "Depot Mayfield",
+      "city": "Manchester",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2025-10-24",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.co.uk/confidence-man-manchester-24-10-2025/event/350062D3D55A8D54",
+      "source": "Ticketmaster",
+      "id": "17u8vxG6u24pIgf"
+    },
+    {
+      "artist": "Confidence Man",
+      "name": "Confidence Man - Official Ticket and Hotel Bundls",
+      "venue": "Depot Mayfield",
+      "city": "Manchester",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2025-10-24",
+      "time": "20:01:00",
+      "url": "https://app.bundl.travel/event/the-warehouse-project-2",
+      "source": "Ticketmaster",
+      "id": "17u8vxG6CrMmoSn"
+    },
+    {
+      "artist": "Confidence Man",
+      "name": "New Year's At The Bowl: Two Day GA",
+      "venue": "Arts Centre Melbourne, Sidney Myer Music Bowl",
+      "city": "Linlithgow Ave",
+      "country": "Australia",
+      "country_code": "AU",
+      "date": "2025-12-31",
+      "time": "",
+      "url": "https://www.ticketmaster.com.au/new-years-at-the-bowl-two-linlithgow-ave-31-12-2025/event/13006328BB6B40AF",
+      "source": "Ticketmaster",
+      "id": "1AKZkGIGkeDQVeR"
+    },
+    {
+      "artist": "Confidence Man",
+      "name": "New Year's At The Bowl: Two Day VIP",
+      "venue": "Arts Centre Melbourne, Sidney Myer Music Bowl",
+      "city": "Linlithgow Ave",
+      "country": "Australia",
+      "country_code": "AU",
+      "date": "2025-12-31",
+      "time": "",
+      "url": "https://www.ticketmaster.com.au/new-years-at-the-bowl-two-linlithgow-ave-31-12-2025/event/13006328BB7940B4",
+      "source": "Ticketmaster",
+      "id": "1AKZkGIGkeDrfeV"
+    },
+    {
+      "artist": "Confidence Man",
+      "name": "New Year's At The Bowl: NYE Single Day - VIP",
+      "venue": "Arts Centre Melbourne, Sidney Myer Music Bowl",
+      "city": "Linlithgow Ave",
+      "country": "Australia",
+      "country_code": "AU",
+      "date": "2025-12-31",
+      "time": "16:00:00",
+      "url": "https://www.ticketmaster.com.au/new-years-at-the-bowl-nye-linlithgow-ave-31-12-2025/event/13006328BAFB40A7",
+      "source": "Ticketmaster",
+      "id": "1AKZkGIGkeBXVeE"
+    },
+    {
+      "artist": "Confidence Man",
+      "name": "New Year's At The Bowl: NYE Single Day - GA",
+      "venue": "Arts Centre Melbourne, Sidney Myer Music Bowl",
+      "city": "Linlithgow Ave",
+      "country": "Australia",
+      "country_code": "AU",
+      "date": "2025-12-31",
+      "time": "16:00:00",
+      "url": "https://www.ticketmaster.com.au/new-years-at-the-bowl-nye-linlithgow-ave-31-12-2025/event/13006328B10D4025",
+      "source": "Ticketmaster",
+      "id": "1AKZkGIGkesdfZP"
+    }
+  ]
+}

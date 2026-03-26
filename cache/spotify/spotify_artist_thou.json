@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T19:47:48.269281",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4KoZpKiPeX4jIi7Euwcfuo"
+    },
+    "followers": {
+      "href": null,
+      "total": 101794
+    },
+    "genres": [
+      "sludge metal",
+      "drone metal",
+      "doom metal",
+      "stoner metal",
+      "drone"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4KoZpKiPeX4jIi7Euwcfuo",
+    "id": "4KoZpKiPeX4jIi7Euwcfuo",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb40b0465fe3765cb99e3d42cd",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517440b0465fe3765cb99e3d42cd",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17840b0465fe3765cb99e3d42cd",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Thou",
+    "popularity": 36,
+    "type": "artist",
+    "uri": "spotify:artist:4KoZpKiPeX4jIi7Euwcfuo"
+  }
+}

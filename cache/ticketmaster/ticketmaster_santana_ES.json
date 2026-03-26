@@ -1,0 +1,27 @@
+{
+  "timestamp": "2025-07-04T19:05:23.965966",
+  "concerts": [
+    {
+      "artist": "santana",
+      "name": "Gloosito - Belt to Ass",
+      "venue": "Sala Santana 27 - Sala Blue",
+      "city": "Bilbao",
+      "date": "2025-11-22",
+      "time": "21:45:00",
+      "image": "https://s1.ticketm.net/dam/a/c06/3703f376-0dc8-4159-ba15-b0d0c16b4c06_RETINA_LANDSCAPE_16_9.jpg",
+      "url": "https://www.ticketmaster.es/event/gloosito-belt-to-ass-tickets/1207853604?language=en-us",
+      "id": "Z698xZ2qZ16vF6-Kb7"
+    },
+    {
+      "artist": "santana",
+      "name": "Gloosito - Belt to Ass | Paquetes VIP",
+      "venue": "Sala Santana 27 - Sala Blue",
+      "city": "Bilbao",
+      "date": "2025-11-22",
+      "time": "21:45:00",
+      "image": "https://s1.ticketm.net/dam/a/c06/3703f376-0dc8-4159-ba15-b0d0c16b4c06_RETINA_LANDSCAPE_16_9.jpg",
+      "url": "https://www.ticketmaster.es/event/gloosito-belt-to-ass-%7C-paquetes-vip-tickets/529534465?language=en-us",
+      "id": "Z698xZ2qZ1kftfVoP"
+    }
+  ]
+}

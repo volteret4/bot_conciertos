@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:49:34.108450",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1OwarW4LEHnoep20ixRA0y"
+    },
+    "followers": {
+      "href": null,
+      "total": 1154969
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/1OwarW4LEHnoep20ixRA0y",
+    "id": "1OwarW4LEHnoep20ixRA0y",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebfa79a501274aae1d9de3a201",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174fa79a501274aae1d9de3a201",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178fa79a501274aae1d9de3a201",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Robert Plant",
+    "popularity": 56,
+    "type": "artist",
+    "uri": "spotify:artist:1OwarW4LEHnoep20ixRA0y"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-11-03T19:48:51.825239",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1QwvlTkLsKbaB3JT1AV245"
+    },
+    "followers": {
+      "href": null,
+      "total": 27539
+    },
+    "genres": [
+      "ebm",
+      "cold wave",
+      "industrial",
+      "darkwave",
+      "dub techno"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1QwvlTkLsKbaB3JT1AV245",
+    "id": "1QwvlTkLsKbaB3JT1AV245",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6772690000c46caf5216c990fe74b249a8de08",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000dd22af5216c990fe74b249a8de08",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000bac3af5216c990fe74b249a8de08",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67726900008f74af5216c990fe74b249a8de08",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Silent Servant",
+    "popularity": 19,
+    "type": "artist",
+    "uri": "spotify:artist:1QwvlTkLsKbaB3JT1AV245"
+  }
+}

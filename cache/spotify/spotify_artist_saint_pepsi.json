@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-11-03T19:48:25.766059",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3b014NFgLGBMV2q0sGyFQM"
+    },
+    "followers": {
+      "href": null,
+      "total": 41110
+    },
+    "genres": [
+      "vaporwave"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3b014NFgLGBMV2q0sGyFQM",
+    "id": "3b014NFgLGBMV2q0sGyFQM",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/d4be568b75d7beb692df5c98f735437611377d05",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/b747eabb5004a36764e09565294e9c81a47107a9",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/2d44897f92deec6f22ddd1f3fd27d6c3450e3ea8",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/db9c1656e5c8aa93b5ee9a0fd51cf6f93e41ac36",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Saint Pepsi",
+    "popularity": 14,
+    "type": "artist",
+    "uri": "spotify:artist:3b014NFgLGBMV2q0sGyFQM"
+  }
+}

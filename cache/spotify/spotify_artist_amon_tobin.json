@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:47:51.242086",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3mvkWMe6swnknwscwvGCHO"
+    },
+    "followers": {
+      "href": null,
+      "total": 271695
+    },
+    "genres": [
+      "idm",
+      "trip hop",
+      "nu jazz",
+      "downtempo"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3mvkWMe6swnknwscwvGCHO",
+    "id": "3mvkWMe6swnknwscwvGCHO",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebc2a1fce6cff99142dd2ad808",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174c2a1fce6cff99142dd2ad808",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178c2a1fce6cff99142dd2ad808",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Amon Tobin",
+    "popularity": 42,
+    "type": "artist",
+    "uri": "spotify:artist:3mvkWMe6swnknwscwvGCHO"
+  }
+}

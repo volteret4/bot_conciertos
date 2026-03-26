@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T19:47:27.706043",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4N99bzdRBNRi7hGNCpMuhu"
+    },
+    "followers": {
+      "href": null,
+      "total": 81828
+    },
+    "genres": [
+      "ebm",
+      "industrial",
+      "darkwave",
+      "industrial metal",
+      "industrial rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4N99bzdRBNRi7hGNCpMuhu",
+    "id": "4N99bzdRBNRi7hGNCpMuhu",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb39e80569478dba2651920e5c",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517439e80569478dba2651920e5c",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17839e80569478dba2651920e5c",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Suicide Commando",
+    "popularity": 34,
+    "type": "artist",
+    "uri": "spotify:artist:4N99bzdRBNRi7hGNCpMuhu"
+  }
+}

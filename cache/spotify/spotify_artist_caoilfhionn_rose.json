@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:04:03.161682",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6YRqlhH88xZ7h2WOhwNYOb"
+    },
+    "followers": {
+      "href": null,
+      "total": 10706
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/6YRqlhH88xZ7h2WOhwNYOb",
+    "id": "6YRqlhH88xZ7h2WOhwNYOb",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebc0961803d4c0d44bebf84d11",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174c0961803d4c0d44bebf84d11",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178c0961803d4c0d44bebf84d11",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Caoilfhionn Rose",
+    "popularity": 32,
+    "type": "artist",
+    "uri": "spotify:artist:6YRqlhH88xZ7h2WOhwNYOb"
+  }
+}

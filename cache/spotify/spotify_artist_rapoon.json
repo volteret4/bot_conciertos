@@ -1,0 +1,46 @@
+{
+  "timestamp": "2025-11-03T20:03:40.538561",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3rZRPN25ZcxuWzcBPgYPYn"
+    },
+    "followers": {
+      "href": null,
+      "total": 4688
+    },
+    "genres": [
+      "dark ambient",
+      "drone",
+      "ambient",
+      "space rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3rZRPN25ZcxuWzcBPgYPYn",
+    "id": "3rZRPN25ZcxuWzcBPgYPYn",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/cd818979660717a649f024ed473e1d43834f1ea8",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/e901c699f9657ee34b7122dbae4d4cfe033560e9",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ba0c9dee349f97b4b9471526346b3ec23a0bfa91",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/96f285676713190e5095f4310530a27d606f9f3f",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Rapoon",
+    "popularity": 11,
+    "type": "artist",
+    "uri": "spotify:artist:3rZRPN25ZcxuWzcBPgYPYn"
+  }
+}

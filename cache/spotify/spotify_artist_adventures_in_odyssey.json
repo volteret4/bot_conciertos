@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:01:28.967351",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3TaTCYiv3QcamWjvRCcz6Q"
+    },
+    "followers": {
+      "href": null,
+      "total": 19571
+    },
+    "genres": [
+      "soundtrack"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3TaTCYiv3QcamWjvRCcz6Q",
+    "id": "3TaTCYiv3QcamWjvRCcz6Q",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebca9070a34d955855e05c5c81",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174ca9070a34d955855e05c5c81",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178ca9070a34d955855e05c5c81",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Gavin Greenaway",
+    "popularity": 65,
+    "type": "artist",
+    "uri": "spotify:artist:3TaTCYiv3QcamWjvRCcz6Q"
+  }
+}

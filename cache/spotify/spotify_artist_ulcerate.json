@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:48:07.920714",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3Bv5btxNbwbt79fcjw9DAg"
+    },
+    "followers": {
+      "href": null,
+      "total": 66470
+    },
+    "genres": [
+      "death metal",
+      "avant-garde",
+      "black metal"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3Bv5btxNbwbt79fcjw9DAg",
+    "id": "3Bv5btxNbwbt79fcjw9DAg",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebc11ea5a3b067a3bdb09aac3c",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174c11ea5a3b067a3bdb09aac3c",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178c11ea5a3b067a3bdb09aac3c",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Ulcerate",
+    "popularity": 32,
+    "type": "artist",
+    "uri": "spotify:artist:3Bv5btxNbwbt79fcjw9DAg"
+  }
+}

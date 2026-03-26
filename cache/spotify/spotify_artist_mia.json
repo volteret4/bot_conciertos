@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:56:10.726913",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0QJIPDAEDILuo8AIq3pMuU"
+    },
+    "followers": {
+      "href": null,
+      "total": 1475746
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/0QJIPDAEDILuo8AIq3pMuU",
+    "id": "0QJIPDAEDILuo8AIq3pMuU",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebd75b03e7f83d62dcd55617ca",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174d75b03e7f83d62dcd55617ca",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178d75b03e7f83d62dcd55617ca",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "M.I.A.",
+    "popularity": 66,
+    "type": "artist",
+    "uri": "spotify:artist:0QJIPDAEDILuo8AIq3pMuU"
+  }
+}

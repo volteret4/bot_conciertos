@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:00:56.748682",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0oSGxfWSnnOXhD2fKuz2Gy"
+    },
+    "followers": {
+      "href": null,
+      "total": 11772580
+    },
+    "genres": [
+      "glam rock",
+      "art rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0oSGxfWSnnOXhD2fKuz2Gy",
+    "id": "0oSGxfWSnnOXhD2fKuz2Gy",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebb78f77c5583ae99472dd4a49",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174b78f77c5583ae99472dd4a49",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178b78f77c5583ae99472dd4a49",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "David Bowie",
+    "popularity": 76,
+    "type": "artist",
+    "uri": "spotify:artist:0oSGxfWSnnOXhD2fKuz2Gy"
+  }
+}

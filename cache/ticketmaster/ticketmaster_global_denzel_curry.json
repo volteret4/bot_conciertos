@@ -1,0 +1,83 @@
+{
+  "timestamp": "2025-10-23T17:11:35.500884",
+  "concerts": [
+    {
+      "artist": "Denzel Curry",
+      "name": "Denzel Curry & Freddie Gibbs & Earl Sweatshirt",
+      "venue": "Red Rocks Amphitheatre",
+      "city": "Morrison",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-10-31",
+      "time": "18:30:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A73Fvp",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A73Fvp"
+    },
+    {
+      "artist": "Denzel Curry",
+      "name": "Deftones",
+      "venue": "Vorst Nationaal/Forest National",
+      "city": "Forest (Brussels)",
+      "country": "Belgium",
+      "country_code": "BE",
+      "date": "2026-01-30",
+      "time": "18:30:00",
+      "url": "https://www.ticketmaster.be/event/deftones-tickets/339483927",
+      "source": "Ticketmaster",
+      "id": "Z698xZG2Z1kGy3d0E"
+    },
+    {
+      "artist": "Denzel Curry",
+      "name": "Deftones",
+      "venue": "Unknown venue",
+      "city": "Amsterdam",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "date": "2026-02-10",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.nl/event/deftones-tickets/939006714?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZbpZ1k0yZkjf"
+    },
+    {
+      "artist": "Denzel Curry",
+      "name": "Deftones",
+      "venue": "bp pulse LIVE",
+      "city": "Birmingham",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-02-12",
+      "time": "18:00:00",
+      "url": "https://www.ticketmaster.co.uk/deftones-birmingham-12-02-2026/event/230062E79CB909FB",
+      "source": "Ticketmaster",
+      "id": "17FYvxG6Crjm8ED"
+    },
+    {
+      "artist": "Denzel Curry",
+      "name": "Deftones",
+      "venue": "OVO Hydro",
+      "city": "Glasgow",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-02-13",
+      "time": "18:30:00",
+      "url": "https://www.ticketmaster.co.uk/deftones-glasgow-13-02-2026/event/360062E3FA0D687F",
+      "source": "Ticketmaster",
+      "id": "17uOvxG6C2Bdp-T"
+    },
+    {
+      "artist": "Denzel Curry",
+      "name": "Deftones",
+      "venue": "The O2",
+      "city": "London",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-02-20",
+      "time": "18:30:00",
+      "url": "https://www.ticketmaster.co.uk/deftones-london-20-02-2026/event/350062E7A42E1418",
+      "source": "Ticketmaster",
+      "id": "17u8vxG6Cr05-8b"
+    }
+  ]
+}

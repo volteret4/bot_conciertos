@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:46:38.498651",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6mQd5HeHhMBZK8u2bTCduH"
+    },
+    "followers": {
+      "href": null,
+      "total": 100468
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/6mQd5HeHhMBZK8u2bTCduH",
+    "id": "6mQd5HeHhMBZK8u2bTCduH",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb973670b242ad4b03220906b3",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174973670b242ad4b03220906b3",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178973670b242ad4b03220906b3",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Vivienne Mort",
+    "popularity": 37,
+    "type": "artist",
+    "uri": "spotify:artist:6mQd5HeHhMBZK8u2bTCduH"
+  }
+}

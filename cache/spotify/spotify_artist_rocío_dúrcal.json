@@ -1,0 +1,45 @@
+{
+  "timestamp": "2025-11-03T19:58:37.977089",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2uyweLa0mvPZH6eRzDddeB"
+    },
+    "followers": {
+      "href": null,
+      "total": 5392491
+    },
+    "genres": [
+      "ranchera",
+      "mariachi",
+      "bolero"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2uyweLa0mvPZH6eRzDddeB",
+    "id": "2uyweLa0mvPZH6eRzDddeB",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/2ae2272c989c4a0921f0dd99240ef51784fda6f3",
+        "height": 1422,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/d4f854dd5fe28d74710c41baf26d754991b8edf6",
+        "height": 910,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/e86759a8a0e91494b1874e5a3fc927063f495efc",
+        "height": 284,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/8890be26dd9f62c0a767a28210c7d3abd3026951",
+        "height": 91,
+        "width": 64
+      }
+    ],
+    "name": "Rocío Dúrcal",
+    "popularity": 69,
+    "type": "artist",
+    "uri": "spotify:artist:2uyweLa0mvPZH6eRzDddeB"
+  }
+}

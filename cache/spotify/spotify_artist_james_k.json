@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:47:13.808396",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/25BObiRSDCMwVrBGIVaLIf"
+    },
+    "followers": {
+      "href": null,
+      "total": 31886
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/25BObiRSDCMwVrBGIVaLIf",
+    "id": "25BObiRSDCMwVrBGIVaLIf",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebfcda38aee80d5653690eb7a0",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174fcda38aee80d5653690eb7a0",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178fcda38aee80d5653690eb7a0",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "james K",
+    "popularity": 47,
+    "type": "artist",
+    "uri": "spotify:artist:25BObiRSDCMwVrBGIVaLIf"
+  }
+}

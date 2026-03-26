@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:00:38.776258",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1yxSLGMDHlW21z4YXirZDS"
+    },
+    "followers": {
+      "href": null,
+      "total": 9567097
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/1yxSLGMDHlW21z4YXirZDS",
+    "id": "1yxSLGMDHlW21z4YXirZDS",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebb3037310c07b99cbefbd2c6d",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174b3037310c07b99cbefbd2c6d",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178b3037310c07b99cbefbd2c6d",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Black Eyed Peas",
+    "popularity": 81,
+    "type": "artist",
+    "uri": "spotify:artist:1yxSLGMDHlW21z4YXirZDS"
+  }
+}

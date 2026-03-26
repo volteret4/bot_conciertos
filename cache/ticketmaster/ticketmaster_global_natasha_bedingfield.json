@@ -1,0 +1,89 @@
+{
+  "timestamp": "2025-09-02T09:01:17.323097",
+  "concerts": [
+    {
+      "artist": "Natasha Bedingfield",
+      "name": "Natasha Bedingfield",
+      "venue": "Big Night Live",
+      "city": "Boston",
+      "country": "US",
+      "date": "2025-09-25",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/natasha-bedingfield-boston-massachusetts-09-25-2025/event/010062D1A2CC3825",
+      "source": "Ticketmaster",
+      "id": "vvG17ZbckxSdOP"
+    },
+    {
+      "artist": "Natasha Bedingfield",
+      "name": "Oceans Calling",
+      "venue": "Ocean City Inlet",
+      "city": "Ocean City",
+      "country": "US",
+      "date": "2025-09-26",
+      "time": "",
+      "url": "https://on.fgtix.com/trk/jpFM",
+      "source": "Ticketmaster",
+      "id": "1AvfZb0GkwUiVFs"
+    },
+    {
+      "artist": "Natasha Bedingfield",
+      "name": "Natasha Bedingfield",
+      "venue": "Toad's Place",
+      "city": "New Haven",
+      "country": "US",
+      "date": "2025-09-28",
+      "time": "20:00:00",
+      "url": "https://www.etix.com/ticket/p/35849545/natasha-bedingfield-new-haven-toads-place-of-new-haven",
+      "source": "Ticketmaster",
+      "id": "G5vVZbcxO_o5H"
+    },
+    {
+      "artist": "Natasha Bedingfield",
+      "name": "Natasha Bedingfield",
+      "venue": "Toads Place - CT",
+      "city": "New Haven",
+      "country": "US",
+      "date": "2025-09-28",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7bE8k",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7bE8k"
+    },
+    {
+      "artist": "Natasha Bedingfield",
+      "name": "Natasha Bedingfield",
+      "venue": "9:30 CLUB",
+      "city": "Washington",
+      "country": "US",
+      "date": "2025-09-30",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/natasha-bedingfield-washington-district-of-columbia-09-30-2025/event/150062D294C72B29",
+      "source": "Ticketmaster",
+      "id": "17A8vxG6u1fswit"
+    },
+    {
+      "artist": "Natasha Bedingfield",
+      "name": "Natasha Bedingfield",
+      "venue": "Theatre of Living Arts",
+      "city": "Philadelphia",
+      "country": "US",
+      "date": "2025-10-01",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/natasha-bedingfield-philadelphia-pennsylvania-10-01-2025/event/020062D1FAE08C09",
+      "source": "Ticketmaster",
+      "id": "vvG1FZbc6BzFYa"
+    },
+    {
+      "artist": "Natasha Bedingfield",
+      "name": "Natasha Bedingfield",
+      "venue": "Irving Plaza Powered By Verizon 5G",
+      "city": "New York",
+      "country": "US",
+      "date": "2025-10-07",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/natasha-bedingfield-new-york-new-york-10-07-2025/event/000062D32F9AB567",
+      "source": "Ticketmaster",
+      "id": "k7vGFbcGRJl4E"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "timestamp": "2025-10-23T17:15:15.982518",
+  "concerts": [
+    {
+      "artist": "Protomartyr",
+      "name": "Protomartyr",
+      "venue": "Brudenell Social Club",
+      "city": "Leeds",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2025-11-10",
+      "time": "19:30:00",
+      "url": "https://www.universe.com/events/protomartyr-tickets-9SD1FW?ref=ticketmaster",
+      "source": "Ticketmaster",
+      "id": "LvZ18QdonZ03E2YZc4yfS"
+    },
+    {
+      "artist": "Protomartyr",
+      "name": "Protomartyr",
+      "venue": "Brudenell Social Club",
+      "city": "Leeds",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2025-11-11",
+      "time": "19:30:00",
+      "url": "https://www.universe.com/events/protomartyr-tickets-9YNSGK?ref=ticketmaster",
+      "source": "Ticketmaster",
+      "id": "LvZ18QdolvPN49OZid5qz"
+    },
+    {
+      "artist": "Protomartyr",
+      "name": "Protomartyr - a Decade of the Agent Intellect",
+      "venue": "Whelans",
+      "city": "Dublin",
+      "country": "Ireland",
+      "country_code": "IE",
+      "date": "2025-11-14",
+      "time": "20:15:00",
+      "url": "https://www.ticketmaster.ie/protomartyr-a-decade-of-the-agent-dublin-14-11-2025/event/180062B7D4F68EC6",
+      "source": "Ticketmaster",
+      "id": "17kZvxG65LfWIDk"
+    },
+    {
+      "artist": "Protomartyr",
+      "name": "Protomartyr - a Decade of the Agent Intellect",
+      "venue": "Whelans",
+      "city": "Dublin",
+      "country": "Ireland",
+      "country_code": "IE",
+      "date": "2025-11-15",
+      "time": "20:15:00",
+      "url": "https://www.ticketmaster.ie/protomartyr-a-decade-of-the-agent-dublin-15-11-2025/event/180062B7D4F88EDE",
+      "source": "Ticketmaster",
+      "id": "17kZvxG65LfXFDr"
+    },
+    {
+      "artist": "Protomartyr",
+      "name": "Protomartyr - 10 Years of The Agent Intellect with Accessory",
+      "venue": "Thalia Hall",
+      "city": "Chicago",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-15",
+      "time": "20:00:00",
+      "url": "https://www.ticketweb.com/event/protomartyr-10-years-thalia-hall-tickets/14610433",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1Afb88S"
+    },
+    {
+      "artist": "Protomartyr",
+      "name": "Protomartyr: 10 Years of The Agent Intellect",
+      "venue": "Warsaw",
+      "city": "Brooklyn",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-19",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/protomartyr-10-years-of-the-agent-brooklyn-new-york-12-19-2025/event/00006348E1467033",
+      "source": "Ticketmaster",
+      "id": "k7vGFbVN-oEZS"
+    }
+  ]
+}

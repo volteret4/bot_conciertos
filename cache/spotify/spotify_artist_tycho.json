@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:48:05.976426",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5oOhM2DFWab8XhSdQiITry"
+    },
+    "followers": {
+      "href": null,
+      "total": 721939
+    },
+    "genres": [
+      "chillwave",
+      "downtempo",
+      "idm"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5oOhM2DFWab8XhSdQiITry",
+    "id": "5oOhM2DFWab8XhSdQiITry",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb86e6efcd925f506fbc7620cb",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517486e6efcd925f506fbc7620cb",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17886e6efcd925f506fbc7620cb",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Tycho",
+    "popularity": 55,
+    "type": "artist",
+    "uri": "spotify:artist:5oOhM2DFWab8XhSdQiITry"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T20:01:03.912665",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4iRZAbYvBqnxrbs6K25aJ7"
+    },
+    "followers": {
+      "href": null,
+      "total": 353187
+    },
+    "genres": [
+      "jazz",
+      "cool jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4iRZAbYvBqnxrbs6K25aJ7",
+    "id": "4iRZAbYvBqnxrbs6K25aJ7",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/b6f7dc3c16f95e6df120af205d4007f518b01e0e",
+        "height": 865,
+        "width": 873
+      },
+      {
+        "url": "https://i.scdn.co/image/842f5ac6934f8c1bc783a3b344f008dfa919b692",
+        "height": 634,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/291e690bbe1ca00d9190d23d1c579a6e9c85ed60",
+        "height": 198,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/9aeee9c29f033e2e9a684e37816ddc3df2521692",
+        "height": 63,
+        "width": 64
+      }
+    ],
+    "name": "The Dave Brubeck Quartet",
+    "popularity": 56,
+    "type": "artist",
+    "uri": "spotify:artist:4iRZAbYvBqnxrbs6K25aJ7"
+  }
+}

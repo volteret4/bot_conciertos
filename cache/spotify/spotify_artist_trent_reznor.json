@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:04:03.605066",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6cadOIa5DTh6a5mGo5r4bh"
+    },
+    "followers": {
+      "href": null,
+      "total": 219456
+    },
+    "genres": [
+      "soundtrack"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6cadOIa5DTh6a5mGo5r4bh",
+    "id": "6cadOIa5DTh6a5mGo5r4bh",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb0178d25a117d796ce3ba4fee",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051740178d25a117d796ce3ba4fee",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1780178d25a117d796ce3ba4fee",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Trent Reznor and Atticus Ross",
+    "popularity": 53,
+    "type": "artist",
+    "uri": "spotify:artist:6cadOIa5DTh6a5mGo5r4bh"
+  }
+}

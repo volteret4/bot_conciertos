@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T19:46:46.483878",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/34W7ZCX0LZeJd8q6boKGOk"
+    },
+    "followers": {
+      "href": null,
+      "total": 110723
+    },
+    "genres": [
+      "jazz",
+      "cool jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/34W7ZCX0LZeJd8q6boKGOk",
+    "id": "34W7ZCX0LZeJd8q6boKGOk",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/e007cff62c3265800fb3b5e717d6e9388970aa74",
+        "height": 1093,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/4b7e1669b41b752b37d96a3d18a648e02bbd6975",
+        "height": 700,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/4e33db90ed439fb72946f85cea8fd1f263fc0270",
+        "height": 219,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/5704d2815810612450b91f3d1488413f06d5a47b",
+        "height": 70,
+        "width": 64
+      }
+    ],
+    "name": "Ben Webster",
+    "popularity": 52,
+    "type": "artist",
+    "uri": "spotify:artist:34W7ZCX0LZeJd8q6boKGOk"
+  }
+}

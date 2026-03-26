@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:55:15.503102",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5IDs1CK15HegSAhGEbSYXo"
+    },
+    "followers": {
+      "href": null,
+      "total": 1304172
+    },
+    "genres": [
+      "yacht rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5IDs1CK15HegSAhGEbSYXo",
+    "id": "5IDs1CK15HegSAhGEbSYXo",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb32077f76ce695c7dfa2686aa",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517432077f76ce695c7dfa2686aa",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17832077f76ce695c7dfa2686aa",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Billy Ocean",
+    "popularity": 63,
+    "type": "artist",
+    "uri": "spotify:artist:5IDs1CK15HegSAhGEbSYXo"
+  }
+}

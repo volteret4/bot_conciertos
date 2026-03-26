@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:48:28.340404",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2lcTnsxS7VwYCBZl8kaqyR"
+    },
+    "followers": {
+      "href": null,
+      "total": 1182
+    },
+    "genres": [
+      "ambient"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2lcTnsxS7VwYCBZl8kaqyR",
+    "id": "2lcTnsxS7VwYCBZl8kaqyR",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebb670ebebea3d56213381cf51",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174b670ebebea3d56213381cf51",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178b670ebebea3d56213381cf51",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Saariselka",
+    "popularity": 2,
+    "type": "artist",
+    "uri": "spotify:artist:2lcTnsxS7VwYCBZl8kaqyR"
+  }
+}

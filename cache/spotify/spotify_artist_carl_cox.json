@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-09-02T08:17:02.917470",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/19SmlbABtI4bXz864MLqOS"
+    },
+    "followers": {
+      "href": null,
+      "total": 856563
+    },
+    "genres": [
+      "techno",
+      "tech house",
+      "house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/19SmlbABtI4bXz864MLqOS",
+    "id": "19SmlbABtI4bXz864MLqOS",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb6c21953cc4157aa2f4627ff3",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051746c21953cc4157aa2f4627ff3",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1786c21953cc4157aa2f4627ff3",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Carl Cox",
+    "popularity": 56,
+    "type": "artist",
+    "uri": "spotify:artist:19SmlbABtI4bXz864MLqOS"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-25T08:12:11.925515",
+  "data": [
+    {
+      "artist": "Bolis Pupul",
+      "artist_name": "Bolis Pupul",
+      "name": "Bolis Pupul at El Cid",
+      "venue": "El Cid",
+      "city": "Beverly Hills",
+      "country": "",
+      "date": "2025-09-18",
+      "time": "7:30 PM",
+      "url": "https://open.spotify.com/concert/0mCQPHhmoGFIZ8u8mbj2Nx",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Bolis Pupul",
+      "artist_name": "Bolis Pupul",
+      "name": "Bolis Pupul Concert (4nCLN9Mj)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/4nCLN9Mj9R5woxKfwk8cIa",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Bolis Pupul",
+      "artist_name": "Bolis Pupul",
+      "name": "Bolis Pupul Concert (5X5RTYzE)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/5X5RTYzEqczcdttu22fA8X",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Bolis Pupul",
+      "artist_name": "Bolis Pupul",
+      "name": "Bolis Pupul Concert (5ZtBP5dd)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/5ZtBP5dd0uqhUQxznZtOy7",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Bolis Pupul",
+      "artist_name": "Bolis Pupul",
+      "name": "Bolis Pupul Concert (3NjE6776)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/3NjE6776Y895FnWSJE43MO",
+      "source": "Spotify"
+    }
+  ]
+}

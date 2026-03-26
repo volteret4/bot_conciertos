@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:46:49.687495",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4FZ3j1oH43e7cukCALsCwf"
+    },
+    "followers": {
+      "href": null,
+      "total": 1418696
+    },
+    "genres": [
+      "blues rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4FZ3j1oH43e7cukCALsCwf",
+    "id": "4FZ3j1oH43e7cukCALsCwf",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb16204ddc5822afc3e4a1cecf",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517416204ddc5822afc3e4a1cecf",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17816204ddc5822afc3e4a1cecf",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Jack White",
+    "popularity": 55,
+    "type": "artist",
+    "uri": "spotify:artist:4FZ3j1oH43e7cukCALsCwf"
+  }
+}

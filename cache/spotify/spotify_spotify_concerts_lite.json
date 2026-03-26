@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-23T08:59:41.080025",
+  "data": [
+    {
+      "artist": "LITE",
+      "artist_name": "LITE",
+      "name": "LITE Concert (3F64Ffy8)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/3F64Ffy8HiJvqHvdVtLo6D",
+      "source": "Spotify"
+    },
+    {
+      "artist": "LITE",
+      "artist_name": "LITE",
+      "name": "LITE at The Pearl",
+      "venue": "The Pearl",
+      "city": "Vancouver",
+      "country": "CA",
+      "date": "2025-10-10",
+      "time": "6:30 PM",
+      "url": "https://open.spotify.com/concert/6soaKUhjLwpCGKD2xOV6PQ",
+      "source": "Spotify"
+    },
+    {
+      "artist": "LITE",
+      "artist_name": "LITE",
+      "name": "LITE at The Crocodile",
+      "venue": "The Crocodile",
+      "city": "Seattle",
+      "country": "US",
+      "date": "2025-10-11",
+      "time": "5:30 PM",
+      "url": "https://open.spotify.com/concert/6CmsLfXenbBanQKQ50UstS",
+      "source": "Spotify"
+    },
+    {
+      "artist": "LITE",
+      "artist_name": "LITE",
+      "name": "LITE Concert (5t3r9tX3)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/5t3r9tX3nLIfuPoZjCdFbV",
+      "source": "Spotify"
+    },
+    {
+      "artist": "LITE",
+      "artist_name": "LITE",
+      "name": "LITE Concert (1HMT8Jhv)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/1HMT8JhvrjadGHtFZRELms",
+      "source": "Spotify"
+    }
+  ]
+}

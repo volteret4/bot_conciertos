@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-10-23T17:11:42.777000",
+  "concerts": [
+    {
+      "artist": "Dax J",
+      "name": "Escape",
+      "venue": "NOS Events Center",
+      "city": "San Bernardino",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-10-31",
+      "time": "",
+      "url": "https://on.fgtix.com/trk/Ni5m",
+      "source": "Ticketmaster",
+      "id": "vv170Zb0GkgIE-5X"
+    },
+    {
+      "artist": "Dax J",
+      "name": "DAX - Lonely Dirt Road Tour",
+      "venue": "Summit Music Hall",
+      "city": "Denver",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-09",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/dax-lonely-dirt-road-tour-denver-colorado-11-09-2025/event/1E0062CCF69C5BB4",
+      "source": "Ticketmaster",
+      "id": "G5vzZbiSUEAmV"
+    }
+  ]
+}

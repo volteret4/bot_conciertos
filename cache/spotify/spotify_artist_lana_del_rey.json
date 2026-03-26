@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:58:24.213046",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/00FQb4jTyendYWaN8pK0wa"
+    },
+    "followers": {
+      "href": null,
+      "total": 51874552
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/00FQb4jTyendYWaN8pK0wa",
+    "id": "00FQb4jTyendYWaN8pK0wa",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebb99cacf8acd5378206767261",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174b99cacf8acd5378206767261",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178b99cacf8acd5378206767261",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Lana Del Rey",
+    "popularity": 88,
+    "type": "artist",
+    "uri": "spotify:artist:00FQb4jTyendYWaN8pK0wa"
+  }
+}

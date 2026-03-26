@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T19:57:14.780723",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0zrITRPa44Q4Ny0t1IPjEI"
+    },
+    "followers": {
+      "href": null,
+      "total": 2215
+    },
+    "genres": [
+      "italo disco",
+      "italo dance",
+      "chicago house",
+      "hi-nrg",
+      "post-disco"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0zrITRPa44Q4Ny0t1IPjEI",
+    "id": "0zrITRPa44Q4Ny0t1IPjEI",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebe38b9bc61ff5b3c4d26540ba",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174e38b9bc61ff5b3c4d26540ba",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178e38b9bc61ff5b3c4d26540ba",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Kasso",
+    "popularity": 15,
+    "type": "artist",
+    "uri": "spotify:artist:0zrITRPa44Q4Ny0t1IPjEI"
+  }
+}

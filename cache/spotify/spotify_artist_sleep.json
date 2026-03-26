@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:48:55.908545",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2n2RSaZqBuUUukhbLlpnE6"
+    },
+    "followers": {
+      "href": null,
+      "total": 2831665
+    },
+    "genres": [
+      "progressive metal",
+      "metalcore"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2n2RSaZqBuUUukhbLlpnE6",
+    "id": "2n2RSaZqBuUUukhbLlpnE6",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebd00c2ff422829437e6b5f1e0",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174d00c2ff422829437e6b5f1e0",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178d00c2ff422829437e6b5f1e0",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Sleep Token",
+    "popularity": 78,
+    "type": "artist",
+    "uri": "spotify:artist:2n2RSaZqBuUUukhbLlpnE6"
+  }
+}

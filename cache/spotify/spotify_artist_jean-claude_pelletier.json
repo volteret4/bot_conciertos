@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:49:21.382078",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/42p3g3D8cZOy2WcTCKSNoh"
+    },
+    "followers": {
+      "href": null,
+      "total": 22
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/42p3g3D8cZOy2WcTCKSNoh",
+    "id": "42p3g3D8cZOy2WcTCKSNoh",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273ed0d412dbd0dc5dc6b3dfb16",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02ed0d412dbd0dc5dc6b3dfb16",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851ed0d412dbd0dc5dc6b3dfb16",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Jean Claude Pelletier Et Son Orchestre",
+    "popularity": 0,
+    "type": "artist",
+    "uri": "spotify:artist:42p3g3D8cZOy2WcTCKSNoh"
+  }
+}

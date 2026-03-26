@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T19:49:38.795532",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6liAMWkVf5LH7YR9yfFy1Y"
+    },
+    "followers": {
+      "href": null,
+      "total": 2341625
+    },
+    "genres": [
+      "trip hop",
+      "downtempo"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6liAMWkVf5LH7YR9yfFy1Y",
+    "id": "6liAMWkVf5LH7YR9yfFy1Y",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/05d3721739aee511a898081ab140daa7890a0120",
+        "height": 680,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/27802710b01453435de93d71bab2c9988a841ace",
+        "height": 435,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/333ac38e3c8ab5fcdc238cc46535a4abb802eccc",
+        "height": 136,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/10052054c06626f6a900e687b20886e462f75568",
+        "height": 44,
+        "width": 64
+      }
+    ],
+    "name": "Portishead",
+    "popularity": 65,
+    "type": "artist",
+    "uri": "spotify:artist:6liAMWkVf5LH7YR9yfFy1Y"
+  }
+}

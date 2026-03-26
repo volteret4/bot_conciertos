@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T19:57:26.234559",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7MSUfLeTdDEoZiJPDSBXgi"
+    },
+    "followers": {
+      "href": null,
+      "total": 830287
+    },
+    "genres": [
+      "ambient",
+      "art rock",
+      "krautrock",
+      "minimalism",
+      "drone",
+      "glam rock",
+      "space music"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7MSUfLeTdDEoZiJPDSBXgi",
+    "id": "7MSUfLeTdDEoZiJPDSBXgi",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb5533ce5711f95f0c436b30fe",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051745533ce5711f95f0c436b30fe",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1785533ce5711f95f0c436b30fe",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Brian Eno",
+    "popularity": 60,
+    "type": "artist",
+    "uri": "spotify:artist:7MSUfLeTdDEoZiJPDSBXgi"
+  }
+}

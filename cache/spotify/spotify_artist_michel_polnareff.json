@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:49:36.025589",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7aKldvGENbL4bj8TCWHuhT"
+    },
+    "followers": {
+      "href": null,
+      "total": 245667
+    },
+    "genres": [
+      "variété française",
+      "chanson",
+      "french pop",
+      "french house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7aKldvGENbL4bj8TCWHuhT",
+    "id": "7aKldvGENbL4bj8TCWHuhT",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb655cdecda4f3f4bfc15c78d9",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174655cdecda4f3f4bfc15c78d9",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178655cdecda4f3f4bfc15c78d9",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Michel Polnareff",
+    "popularity": 47,
+    "type": "artist",
+    "uri": "spotify:artist:7aKldvGENbL4bj8TCWHuhT"
+  }
+}

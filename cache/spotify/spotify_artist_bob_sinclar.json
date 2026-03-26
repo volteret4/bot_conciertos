@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:48:53.701240",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5YFS41yoX0YuFY39fq21oN"
+    },
+    "followers": {
+      "href": null,
+      "total": 734721
+    },
+    "genres": [
+      "french house",
+      "disco house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5YFS41yoX0YuFY39fq21oN",
+    "id": "5YFS41yoX0YuFY39fq21oN",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb41ee41ab4f9aa860d5afaaa2",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517441ee41ab4f9aa860d5afaaa2",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17841ee41ab4f9aa860d5afaaa2",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Bob Sinclar",
+    "popularity": 69,
+    "type": "artist",
+    "uri": "spotify:artist:5YFS41yoX0YuFY39fq21oN"
+  }
+}

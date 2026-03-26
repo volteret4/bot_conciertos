@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T19:58:29.940103",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5Il27M5JXuQLgwDgVrQMgo"
+    },
+    "followers": {
+      "href": null,
+      "total": 72476
+    },
+    "genres": [
+      "french house",
+      "nu disco",
+      "disco house",
+      "funky house",
+      "disco"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5Il27M5JXuQLgwDgVrQMgo",
+    "id": "5Il27M5JXuQLgwDgVrQMgo",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eba1e0998d49346fc0eaf1a989",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174a1e0998d49346fc0eaf1a989",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178a1e0998d49346fc0eaf1a989",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Dimitri From Paris",
+    "popularity": 45,
+    "type": "artist",
+    "uri": "spotify:artist:5Il27M5JXuQLgwDgVrQMgo"
+  }
+}

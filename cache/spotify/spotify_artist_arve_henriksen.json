@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:58:12.191331",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/32pN1An13076I4PTMzn2g7"
+    },
+    "followers": {
+      "href": null,
+      "total": 26153
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/32pN1An13076I4PTMzn2g7",
+    "id": "32pN1An13076I4PTMzn2g7",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebc731464111ff67afa4fbe0e3",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174c731464111ff67afa4fbe0e3",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178c731464111ff67afa4fbe0e3",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Arve Henriksen",
+    "popularity": 38,
+    "type": "artist",
+    "uri": "spotify:artist:32pN1An13076I4PTMzn2g7"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "timestamp": "2025-08-01T16:37:55.383177",
+  "concerts": [
+    {
+      "artist": "The Smiths",
+      "name": "Lauren Spencer Smith - THE ART OF BEING A MESS TOUR",
+      "venue": "La Riviera",
+      "city": "Madrid",
+      "country": "Spain",
+      "country_code": "ES",
+      "date": "2025-09-03",
+      "time": "21:00:00",
+      "image": "https://s1.ticketm.net/dam/a/1fd/6ec58e06-e186-4a20-bd31-444ff7c541fd_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+      "url": "https://www.ticketmaster.es/event/lauren-spencer-smith-the-art-of-being-a-mess-tour-tickets/713048275?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZ2qZ1kjKvFag"
+    },
+    {
+      "artist": "The Smiths",
+      "name": "Lauren Spencer Smith - THE ART OF BEING A MESS TOUR | VIP Packages",
+      "venue": "La Riviera",
+      "city": "Madrid",
+      "country": "Spain",
+      "country_code": "ES",
+      "date": "2025-09-03",
+      "time": "21:00:00",
+      "image": "https://s1.ticketm.net/dam/a/1fd/6ec58e06-e186-4a20-bd31-444ff7c541fd_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+      "url": "https://www.ticketmaster.es/event/lauren-spencer-smith-the-art-of-being-a-mess-tour-%7C-vip-packages-tickets/368329705?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZ2qZ1kuIGtjA"
+    },
+    {
+      "artist": "The Smiths",
+      "name": "Lauren Spencer Smith - THE ART OF BEING A MESS TOUR",
+      "venue": "Sala Razzmatazz 1",
+      "city": "Barcelona",
+      "country": "Spain",
+      "country_code": "ES",
+      "date": "2025-09-04",
+      "time": "20:30:00",
+      "image": "https://s1.ticketm.net/dam/a/1fd/6ec58e06-e186-4a20-bd31-444ff7c541fd_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+      "url": "https://www.ticketmaster.es/event/lauren-spencer-smith-the-art-of-being-a-mess-tour-tickets/1110863834?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZ2qZ16v78-NOV"
+    },
+    {
+      "artist": "The Smiths",
+      "name": "Lauren Spencer Smith - THE ART OF BEING A MESS TOUR | VIP Packages",
+      "venue": "Sala Razzmatazz 1",
+      "city": "Barcelona",
+      "country": "Spain",
+      "country_code": "ES",
+      "date": "2025-09-04",
+      "time": "20:30:00",
+      "image": "https://s1.ticketm.net/dam/a/1fd/6ec58e06-e186-4a20-bd31-444ff7c541fd_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+      "url": "https://www.ticketmaster.es/event/lauren-spencer-smith-the-art-of-being-a-mess-tour-%7C-vip-packages-tickets/601310819?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZ2qZ1kbvG8O_"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:04:19.399780",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2x7EATekOPhFGRx3syMGEC"
+    },
+    "followers": {
+      "href": null,
+      "total": 253255
+    },
+    "genres": [
+      "nu disco",
+      "alternative dance"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2x7EATekOPhFGRx3syMGEC",
+    "id": "2x7EATekOPhFGRx3syMGEC",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb05dacd07ad341a94d7bf33fe",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517405dacd07ad341a94d7bf33fe",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17805dacd07ad341a94d7bf33fe",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "The Knocks",
+    "popularity": 57,
+    "type": "artist",
+    "uri": "spotify:artist:2x7EATekOPhFGRx3syMGEC"
+  }
+}

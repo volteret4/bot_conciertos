@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-25T08:14:27.358534",
+  "data": [
+    {
+      "artist": "Béla Fleck",
+      "artist_name": "Béla Fleck",
+      "name": "Béla Fleck Concert (6830ENt7)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/6830ENt70uyTRofCLlgtzL",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Béla Fleck",
+      "artist_name": "Béla Fleck",
+      "name": "Béla Fleck at The UC Theatre",
+      "venue": "The UC Theatre",
+      "city": "Berkeley",
+      "country": "US",
+      "date": "2025-08-26",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/3OhK1bDDdzopSPS6B6Rkv2",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Béla Fleck",
+      "artist_name": "Béla Fleck",
+      "name": "Béla Fleck at The John G. Shedd Institute for the Arts",
+      "venue": "The John G. Shedd Institute for the Arts",
+      "city": "Eugene",
+      "country": "US",
+      "date": "2025-08-28",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/549xKbnyfSvaF2LpVgNwWm",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Béla Fleck",
+      "artist_name": "Béla Fleck",
+      "name": "Béla Fleck at Arlene Schnitzer Concert Hall",
+      "venue": "Arlene Schnitzer Concert Hall",
+      "city": "Portland",
+      "country": "US",
+      "date": "2025-08-29",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/7aL2G0PrHTE4DFaqp86bC2",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Béla Fleck",
+      "artist_name": "Béla Fleck",
+      "name": "Béla Fleck Concert (4VlSBJBv)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/4VlSBJBvvJECE0b6RoKwVj",
+      "source": "Spotify"
+    }
+  ]
+}

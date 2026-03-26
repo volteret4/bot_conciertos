@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:58:27.811682",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0AiTwNtYX8m4uhfU7rJ8RD"
+    },
+    "followers": {
+      "href": null,
+      "total": 266909
+    },
+    "genres": [
+      "anti-folk",
+      "singer-songwriter"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0AiTwNtYX8m4uhfU7rJ8RD",
+    "id": "0AiTwNtYX8m4uhfU7rJ8RD",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb24bb71737da8f4ba12c9904f",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517424bb71737da8f4ba12c9904f",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17824bb71737da8f4ba12c9904f",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Ani DiFranco",
+    "popularity": 43,
+    "type": "artist",
+    "uri": "spotify:artist:0AiTwNtYX8m4uhfU7rJ8RD"
+  }
+}

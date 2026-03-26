@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T20:04:23.241142",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4X42BfuhWCAZ2swiVze9O0"
+    },
+    "followers": {
+      "href": null,
+      "total": 439527
+    },
+    "genres": [
+      "progressive rock",
+      "progressive metal",
+      "art rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4X42BfuhWCAZ2swiVze9O0",
+    "id": "4X42BfuhWCAZ2swiVze9O0",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebdd6a829fe551b655d40c229c",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174dd6a829fe551b655d40c229c",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178dd6a829fe551b655d40c229c",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Steven Wilson",
+    "popularity": 49,
+    "type": "artist",
+    "uri": "spotify:artist:4X42BfuhWCAZ2swiVze9O0"
+  }
+}

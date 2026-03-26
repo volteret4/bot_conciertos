@@ -1,0 +1,96 @@
+{
+  "timestamp": "2025-10-23T17:08:53.621370",
+  "concerts": [
+    {
+      "artist": "Dave Matthews Band",
+      "name": "The Dave Matthews Tribute Band - Tomorrow We Die Tour",
+      "venue": "Emerald Theatre",
+      "city": "Mount Clemens",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-10-25",
+      "time": "20:00:00",
+      "url": "https://www.ticketweb.com/event/the-dave-matthews-tribute-band-emerald-theatre-tickets/13835724",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AKOgj0"
+    },
+    {
+      "artist": "Dave Matthews Band",
+      "name": "The Dave Matthews Tribute Band",
+      "venue": "Middle Ages Beer Hall",
+      "city": "Syracuse",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-07",
+      "time": "20:00:00",
+      "url": "https://www.ticketweb.com/event/the-dave-matthews-tribute-band-middle-ages-beer-hall-tickets/14521163",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1Aff-AN"
+    },
+    {
+      "artist": "Dave Matthews Band",
+      "name": "The Dave Matthews Tribute Band",
+      "venue": "Garcia's at The Capitol Theatre",
+      "city": "Port Chester",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-29",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/the-dave-matthews-tribute-band-port-chester-new-york-12-29-2025/event/1D006333EA5A2D4C",
+      "source": "Ticketmaster",
+      "id": "G5vVZbS2npxgG"
+    },
+    {
+      "artist": "Dave Matthews Band",
+      "name": "90's EXPLOSION! ...OASIS + THIRD EYE BLIND + DAVE MATTHEWS BAND + QUEENS OF THE STONE AGE TRIBUTES",
+      "venue": "Gaslamp Long Beach",
+      "city": "Long Beach",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-01-03",
+      "time": "19:00:00",
+      "url": "https://www.ticketweb.com/event/90s-explosion-oasis-third-gaslamp-long-beach-tickets/14580673",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AfpZ_S"
+    },
+    {
+      "artist": "Dave Matthews Band",
+      "name": "Dave Matthews Tribute Band",
+      "venue": "Rams Head On Stage",
+      "city": "Annapolis",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-01-25",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7QFGV",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7QFGV"
+    },
+    {
+      "artist": "Dave Matthews Band",
+      "name": "Dave Matthews Tribute Band - Tomorrow We Die Tour",
+      "venue": "Goodyear Theater",
+      "city": "Akron",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-01-31",
+      "time": "19:30:00",
+      "url": "https://www.ticketmaster.com/dave-matthews-tribute-band-tomorrow-we-akron-ohio-01-31-2026/event/0500632CE063442E",
+      "source": "Ticketmaster",
+      "id": "vv17fZbwGkSObV8m"
+    },
+    {
+      "artist": "Dave Matthews Band",
+      "name": "Dave Matthews Tribute Band",
+      "venue": "Aura",
+      "city": "Portland",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-02-13",
+      "time": "21:00:00",
+      "url": "https://www.ticketmaster.com/dave-matthews-tribute-band-portland-maine-02-13-2026/event/01006338ADF539EC",
+      "source": "Ticketmaster",
+      "id": "vv1AvZkGzGkecWKEi"
+    }
+  ]
+}

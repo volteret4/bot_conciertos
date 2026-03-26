@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:57:29.544316",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0B9P7RXrukgIdmutz9XMVN"
+    },
+    "followers": {
+      "href": null,
+      "total": 13974
+    },
+    "genres": [
+      "chicago house",
+      "acid house",
+      "hip house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0B9P7RXrukgIdmutz9XMVN",
+    "id": "0B9P7RXrukgIdmutz9XMVN",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2739ddcfcbc464524b772d0cd14",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e029ddcfcbc464524b772d0cd14",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048519ddcfcbc464524b772d0cd14",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Farley \"Jackmaster\" Funk",
+    "popularity": 21,
+    "type": "artist",
+    "uri": "spotify:artist:0B9P7RXrukgIdmutz9XMVN"
+  }
+}

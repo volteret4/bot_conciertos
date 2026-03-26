@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:58:35.776439",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0ZqIS2lymC1L302RRSmoTM"
+    },
+    "followers": {
+      "href": null,
+      "total": 229
+    },
+    "genres": [
+      "ambient",
+      "idm"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0ZqIS2lymC1L302RRSmoTM",
+    "id": "0ZqIS2lymC1L302RRSmoTM",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273bf40e0985b57fb5afc4e3112",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02bf40e0985b57fb5afc4e3112",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851bf40e0985b57fb5afc4e3112",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Dreamfish",
+    "popularity": 3,
+    "type": "artist",
+    "uri": "spotify:artist:0ZqIS2lymC1L302RRSmoTM"
+  }
+}

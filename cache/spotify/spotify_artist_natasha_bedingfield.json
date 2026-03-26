@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:00:24.061833",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7o95ZoZt5ZYn31e9z1Hc0a"
+    },
+    "followers": {
+      "href": null,
+      "total": 1905229
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/7o95ZoZt5ZYn31e9z1Hc0a",
+    "id": "7o95ZoZt5ZYn31e9z1Hc0a",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb59bb5a8e6b7d6b4df92d32f4",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517459bb5a8e6b7d6b4df92d32f4",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17859bb5a8e6b7d6b4df92d32f4",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Natasha Bedingfield",
+    "popularity": 71,
+    "type": "artist",
+    "uri": "spotify:artist:7o95ZoZt5ZYn31e9z1Hc0a"
+  }
+}

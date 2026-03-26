@@ -1,0 +1,45 @@
+{
+  "timestamp": "2025-11-03T19:49:19.326317",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3U3C9o6UTYNdEsDckpRyvX"
+    },
+    "followers": {
+      "href": null,
+      "total": 342580
+    },
+    "genres": [
+      "jazz fusion",
+      "jazz funk",
+      "jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3U3C9o6UTYNdEsDckpRyvX",
+    "id": "3U3C9o6UTYNdEsDckpRyvX",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/8de960fde28cad7306b1a7af5da461d24b95a1c5",
+        "height": 953,
+        "width": 916
+      },
+      {
+        "url": "https://i.scdn.co/image/e4c1ebe3e808e1a4f1c998a51301a1238d8b2ccd",
+        "height": 666,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/5f90cbae9c0c98f14a4ccdc1e85a38b69120eb1a",
+        "height": 208,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/4c1d5a43dc3de969bae7b1ed7ceac2310e14605e",
+        "height": 67,
+        "width": 64
+      }
+    ],
+    "name": "Jaco Pastorius",
+    "popularity": 40,
+    "type": "artist",
+    "uri": "spotify:artist:3U3C9o6UTYNdEsDckpRyvX"
+  }
+}

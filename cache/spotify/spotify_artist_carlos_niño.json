@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:55:11.132792",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/55Ox89YvyME4t8bYTIJsRu"
+    },
+    "followers": {
+      "href": null,
+      "total": 13971
+    },
+    "genres": [
+      "ambient"
+    ],
+    "href": "https://api.spotify.com/v1/artists/55Ox89YvyME4t8bYTIJsRu",
+    "id": "55Ox89YvyME4t8bYTIJsRu",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebff8883ac4450115cb968bf74",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174ff8883ac4450115cb968bf74",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178ff8883ac4450115cb968bf74",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Carlos Niño",
+    "popularity": 30,
+    "type": "artist",
+    "uri": "spotify:artist:55Ox89YvyME4t8bYTIJsRu"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:04:19.071213",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0fDF0jjmdouCIeWhNnblwV"
+    },
+    "followers": {
+      "href": null,
+      "total": 468084
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/0fDF0jjmdouCIeWhNnblwV",
+    "id": "0fDF0jjmdouCIeWhNnblwV",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/267ee5fdca8d015c7b45b19bd495f1b37a90e041",
+        "height": 284,
+        "width": 250
+      },
+      {
+        "url": "https://i.scdn.co/image/99a943edda9b98f984c9d5a0cfc400b4fcab3f22",
+        "height": 227,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/d6e7fc72d7d9527f4479f085ccd1f3184d38f71f",
+        "height": 73,
+        "width": 64
+      }
+    ],
+    "name": "Buckethead",
+    "popularity": 49,
+    "type": "artist",
+    "uri": "spotify:artist:0fDF0jjmdouCIeWhNnblwV"
+  }
+}

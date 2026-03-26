@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T19:48:35.393156",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2YMcVZW7930T6vyQikJJpG"
+    },
+    "followers": {
+      "href": null,
+      "total": 7367
+    },
+    "genres": [
+      "industrial",
+      "hard techno",
+      "acid techno",
+      "ebm",
+      "tekno"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2YMcVZW7930T6vyQikJJpG",
+    "id": "2YMcVZW7930T6vyQikJJpG",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2731a0a139239ce4b766a2a8f7e",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e021a0a139239ce4b766a2a8f7e",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048511a0a139239ce4b766a2a8f7e",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Scalameriya",
+    "popularity": 10,
+    "type": "artist",
+    "uri": "spotify:artist:2YMcVZW7930T6vyQikJJpG"
+  }
+}

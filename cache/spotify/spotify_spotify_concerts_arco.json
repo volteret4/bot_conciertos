@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-24T08:07:23.228853",
+  "data": [
+    {
+      "artist": "Arco",
+      "artist_name": "Arco",
+      "name": "Arco at El Corral de las Cigüeñas",
+      "venue": "El Corral de las Cigüeñas",
+      "city": "Cáceres",
+      "country": "ES",
+      "date": "2025-09-12",
+      "time": "9:00 PM",
+      "url": "https://open.spotify.com/concert/65jxg5E0CPlLp6q7L0O3wp",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Arco",
+      "artist_name": "Arco",
+      "name": "Arco Concert (2xWDmKu7)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/2xWDmKu7bziCYtb1zwq9ZW",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Arco",
+      "artist_name": "Arco",
+      "name": "Arco Concert (4Qdfgx6I)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/4Qdfgx6IBohA02LbHLarzA",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Arco",
+      "artist_name": "Arco",
+      "name": "Arco at Círculo del Arte",
+      "venue": "Círculo del Arte",
+      "city": "Toledo",
+      "country": "US",
+      "date": "2025-10-24",
+      "time": "9:00 PM",
+      "url": "https://open.spotify.com/concert/6DIo2VwIivkv0llYISDzBB",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Arco",
+      "artist_name": "Arco",
+      "name": "Arco at Sala Supra",
+      "venue": "Sala Supra",
+      "city": "Sevilla",
+      "country": "ES",
+      "date": "2025-11-15",
+      "time": "9:00 PM",
+      "url": "https://open.spotify.com/concert/4HGVobRxNKkoYvgQywzyxx",
+      "source": "Spotify"
+    }
+  ]
+}

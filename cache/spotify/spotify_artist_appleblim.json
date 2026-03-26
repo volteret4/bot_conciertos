@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:01:51.829537",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7ugvHO0W3IoAWzOgKrHxqr"
+    },
+    "followers": {
+      "href": null,
+      "total": 6907
+    },
+    "genres": [
+      "dub techno",
+      "dubstep"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7ugvHO0W3IoAWzOgKrHxqr",
+    "id": "7ugvHO0W3IoAWzOgKrHxqr",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273b97b1896b2a514de491fe13e",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02b97b1896b2a514de491fe13e",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851b97b1896b2a514de491fe13e",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Appleblim",
+    "popularity": 13,
+    "type": "artist",
+    "uri": "spotify:artist:7ugvHO0W3IoAWzOgKrHxqr"
+  }
+}

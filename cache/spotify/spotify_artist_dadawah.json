@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T20:00:12.389517",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6Xx653QgibdcjA4RfW6iyU"
+    },
+    "followers": {
+      "href": null,
+      "total": 2369
+    },
+    "genres": [
+      "dub",
+      "roots reggae",
+      "rocksteady"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6Xx653QgibdcjA4RfW6iyU",
+    "id": "6Xx653QgibdcjA4RfW6iyU",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273d3cbd168bce48ab668daa32b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02d3cbd168bce48ab668daa32b",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851d3cbd168bce48ab668daa32b",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Dadawah",
+    "popularity": 11,
+    "type": "artist",
+    "uri": "spotify:artist:6Xx653QgibdcjA4RfW6iyU"
+  }
+}

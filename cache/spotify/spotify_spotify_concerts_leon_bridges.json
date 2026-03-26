@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-25T08:55:40.883685",
+  "data": [
+    {
+      "artist": "Leon Bridges",
+      "artist_name": "Leon Bridges",
+      "name": "Leon Bridges Concert (48d11eea)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/48d11eeaq6IbgBpLtqjhqk",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Leon Bridges",
+      "artist_name": "Leon Bridges",
+      "name": "Leon Bridges Concert (6pO2tjqe)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/6pO2tjqejEbt7mpYjuMLS6",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Leon Bridges",
+      "artist_name": "Leon Bridges",
+      "name": "Leon Bridges at Budweiser Stage",
+      "venue": "Budweiser Stage",
+      "city": "Toronto",
+      "country": "CA",
+      "date": "2025-08-28",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/3qhWUuYg2Dl2ZdbE88mF9v",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Leon Bridges",
+      "artist_name": "Leon Bridges",
+      "name": "Leon Bridges Concert (2Pni17V6)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/2Pni17V6FDCkXihcfEW2mA",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Leon Bridges",
+      "artist_name": "Leon Bridges",
+      "name": "Leon Bridges at Thompson&#x27;s Point",
+      "venue": "Thompson&#x27;s Point",
+      "city": "Portland",
+      "country": "US",
+      "date": "2025-08-31",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/6UdMCy9fcwgpB3nK33vghQ",
+      "source": "Spotify"
+    }
+  ]
+}

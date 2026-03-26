@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T19:58:28.314285",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1Uss5lIRTz73DGdleyKYXB"
+    },
+    "followers": {
+      "href": null,
+      "total": 3486
+    },
+    "genres": [
+      "idm",
+      "glitch"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1Uss5lIRTz73DGdleyKYXB",
+    "id": "1Uss5lIRTz73DGdleyKYXB",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/2de93861af46ed213e2efb36732a06b099e8cecd",
+        "height": 563,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/dba43cd3c802842066923de051db387e86cc4330",
+        "height": 360,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/752dde91e2c59c2165c03531c2319f550702a273",
+        "height": 113,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/161ebac180a949b9542fd90c83d551f41b2f0f51",
+        "height": 36,
+        "width": 64
+      }
+    ],
+    "name": "Diamond Version",
+    "popularity": 3,
+    "type": "artist",
+    "uri": "spotify:artist:1Uss5lIRTz73DGdleyKYXB"
+  }
+}

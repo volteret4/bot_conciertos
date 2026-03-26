@@ -1,0 +1,45 @@
+{
+  "timestamp": "2025-11-03T19:59:57.393787",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0AeOzXbHJu8q2xqILEOLEO"
+    },
+    "followers": {
+      "href": null,
+      "total": 47908
+    },
+    "genres": [
+      "requiem",
+      "classical",
+      "opera"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0AeOzXbHJu8q2xqILEOLEO",
+    "id": "0AeOzXbHJu8q2xqILEOLEO",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/e480b555e90666003864b23cd532db0d0603aa55",
+        "height": 1009,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/d7282239ae7318ff1f059009127ef3dad776e831",
+        "height": 646,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/e64c5cf97d009b4d8ef372dd3332513603f7a4ba",
+        "height": 202,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/b57a7d0025bf6385aff09d74da89e6192e291355",
+        "height": 65,
+        "width": 64
+      }
+    ],
+    "name": "Nikolaus Harnoncourt",
+    "popularity": 49,
+    "type": "artist",
+    "uri": "spotify:artist:0AeOzXbHJu8q2xqILEOLEO"
+  }
+}

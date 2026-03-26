@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-10-23T17:08:54.300429",
+  "concerts": [
+    {
+      "artist": "Curtis Mayfield",
+      "name": "The Curtom Orchestra Presents Curtis Mayfield - Restaurant",
+      "venue": "Jazz Cafe",
+      "city": "London",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-06-02",
+      "time": "19:00:00",
+      "url": "https://www.ticketweb.uk/event/the-curtom-orchestra-presents-curtis-jazz-cafe-tickets/14557703?REFERRAL_ID=tmfeed",
+      "source": "Ticketmaster",
+      "id": "1AdFZbwGkSbbwnP"
+    },
+    {
+      "artist": "Curtis Mayfield",
+      "name": "The Curtom Orchestra Presents Curtis Mayfield",
+      "venue": "Jazz Cafe",
+      "city": "London",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-06-02",
+      "time": "19:00:00",
+      "url": "https://www.ticketweb.uk/event/the-curtom-orchestra-presents-curtis-jazz-cafe-tickets/14557693?REFERRAL_ID=tmfeed",
+      "source": "Ticketmaster",
+      "id": "1AdFZbwGkSbbwnn"
+    },
+    {
+      "artist": "Curtis Mayfield",
+      "name": "The Curtom Orchestra presents Curtis Mayfield",
+      "venue": "Jazz Cafe",
+      "city": "London",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2026-06-02",
+      "time": "19:00:00",
+      "url": "https://www.universe.com/events/the-curtom-orchestra-presents-curtis-mayfield-tickets-D3XZ57?ref=ticketmaster",
+      "source": "Ticketmaster",
+      "id": "LvZ18QGREOF7ESOZnhpDl"
+    }
+  ]
+}

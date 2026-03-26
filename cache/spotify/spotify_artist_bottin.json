@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T20:00:55.807563",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5raxAhTYYjNAtPT1mq3a2L"
+    },
+    "followers": {
+      "href": null,
+      "total": 7827
+    },
+    "genres": [
+      "italo disco",
+      "nu disco",
+      "italo dance",
+      "disco house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5raxAhTYYjNAtPT1mq3a2L",
+    "id": "5raxAhTYYjNAtPT1mq3a2L",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebcb225f71f1c92f96176261d2",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174cb225f71f1c92f96176261d2",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178cb225f71f1c92f96176261d2",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Bottin",
+    "popularity": 21,
+    "type": "artist",
+    "uri": "spotify:artist:5raxAhTYYjNAtPT1mq3a2L"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "timestamp": "2025-11-03T19:50:04.645482",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6aVjo0xHSiuW5hkasoYSR3"
+    },
+    "followers": {
+      "href": null,
+      "total": 449198
+    },
+    "genres": [
+      "sludge metal",
+      "grunge",
+      "stoner metal",
+      "stoner rock",
+      "drone metal",
+      "doom metal",
+      "noise rock",
+      "post-grunge"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6aVjo0xHSiuW5hkasoYSR3",
+    "id": "6aVjo0xHSiuW5hkasoYSR3",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebfaf762be8363dac6f5580d52",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174faf762be8363dac6f5580d52",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178faf762be8363dac6f5580d52",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Melvins",
+    "popularity": 48,
+    "type": "artist",
+    "uri": "spotify:artist:6aVjo0xHSiuW5hkasoYSR3"
+  }
+}

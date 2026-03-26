@@ -1,0 +1,45 @@
+{
+  "timestamp": "2025-11-03T20:02:16.542818",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2JRvXPGWiINrnJljNJhG5s"
+    },
+    "followers": {
+      "href": null,
+      "total": 299144
+    },
+    "genres": [
+      "funk",
+      "soul",
+      "jazz funk"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2JRvXPGWiINrnJljNJhG5s",
+    "id": "2JRvXPGWiINrnJljNJhG5s",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/2439ee3f609c4039a544a4505d7294f3240a290d",
+        "height": 562,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/126f45bb09f1174ff5a44c986e3b00c33e5a0d5d",
+        "height": 360,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/3720bab80224913c5c0ddb991a01148ef9b6b0da",
+        "height": 112,
+        "width": 199
+      },
+      {
+        "url": "https://i.scdn.co/image/e045177813c9d1784000d16b6a8a98fb598bb8e7",
+        "height": 36,
+        "width": 64
+      }
+    ],
+    "name": "The Meters",
+    "popularity": 48,
+    "type": "artist",
+    "uri": "spotify:artist:2JRvXPGWiINrnJljNJhG5s"
+  }
+}

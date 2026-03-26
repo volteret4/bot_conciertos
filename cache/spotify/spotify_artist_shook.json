@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:48:49.845951",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3JKd43oYlE7ifoodXetsuw"
+    },
+    "followers": {
+      "href": null,
+      "total": 45527
+    },
+    "genres": [
+      "nu disco",
+      "french house",
+      "synthwave"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3JKd43oYlE7ifoodXetsuw",
+    "id": "3JKd43oYlE7ifoodXetsuw",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb424853f02ef9c86bb0da7450",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174424853f02ef9c86bb0da7450",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178424853f02ef9c86bb0da7450",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Shook",
+    "popularity": 36,
+    "type": "artist",
+    "uri": "spotify:artist:3JKd43oYlE7ifoodXetsuw"
+  }
+}

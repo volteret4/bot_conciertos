@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:59:37.617298",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6nDeZk1AU320DQaj8pD80O"
+    },
+    "followers": {
+      "href": null,
+      "total": 21310
+    },
+    "genres": [
+      "drone",
+      "ambient",
+      "space music",
+      "dark ambient"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6nDeZk1AU320DQaj8pD80O",
+    "id": "6nDeZk1AU320DQaj8pD80O",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebda1ff5837c7329bf44a03aaf",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174da1ff5837c7329bf44a03aaf",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178da1ff5837c7329bf44a03aaf",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Celer",
+    "popularity": 32,
+    "type": "artist",
+    "uri": "spotify:artist:6nDeZk1AU320DQaj8pD80O"
+  }
+}

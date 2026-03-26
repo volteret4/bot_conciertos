@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:59:48.981843",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5Kv477c3fjT3ifEOm1Kh0A"
+    },
+    "followers": {
+      "href": null,
+      "total": 15466
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/5Kv477c3fjT3ifEOm1Kh0A",
+    "id": "5Kv477c3fjT3ifEOm1Kh0A",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb2c4e278476f1bb3ff4bfd3cb",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051742c4e278476f1bb3ff4bfd3cb",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1782c4e278476f1bb3ff4bfd3cb",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Cochemea",
+    "popularity": 36,
+    "type": "artist",
+    "uri": "spotify:artist:5Kv477c3fjT3ifEOm1Kh0A"
+  }
+}

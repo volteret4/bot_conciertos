@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:48:32.718598",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/64CGnwp39uOxZSq2BfqWsi"
+    },
+    "followers": {
+      "href": null,
+      "total": 25677
+    },
+    "genres": [
+      "flamenco"
+    ],
+    "href": "https://api.spotify.com/v1/artists/64CGnwp39uOxZSq2BfqWsi",
+    "id": "64CGnwp39uOxZSq2BfqWsi",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2736263abb669877474fa78bc95",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e026263abb669877474fa78bc95",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048516263abb669877474fa78bc95",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Manolo Sanlucar",
+    "popularity": 31,
+    "type": "artist",
+    "uri": "spotify:artist:64CGnwp39uOxZSq2BfqWsi"
+  }
+}

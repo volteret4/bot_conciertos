@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-10-23T20:52:06.404204",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6eDKMXn3OBIkI8jcY7JtlI"
+    },
+    "followers": {
+      "href": null,
+      "total": 59041
+    },
+    "genres": [
+      "vaporwave",
+      "chillwave"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6eDKMXn3OBIkI8jcY7JtlI",
+    "id": "6eDKMXn3OBIkI8jcY7JtlI",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb4205564ba1357895fc307c33",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051744205564ba1357895fc307c33",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1784205564ba1357895fc307c33",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "ESPRIT 空想",
+    "popularity": 49,
+    "type": "artist",
+    "uri": "spotify:artist:6eDKMXn3OBIkI8jcY7JtlI"
+  }
+}

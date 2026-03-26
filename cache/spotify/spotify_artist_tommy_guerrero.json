@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:58:01.033827",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5qnkHpjyS6CUxH1UUy82B7"
+    },
+    "followers": {
+      "href": null,
+      "total": 196825
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/5qnkHpjyS6CUxH1UUy82B7",
+    "id": "5qnkHpjyS6CUxH1UUy82B7",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6772690000c46cf312f225fb9b3ed2720750fc",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000dd22f312f225fb9b3ed2720750fc",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000bac3f312f225fb9b3ed2720750fc",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67726900008f74f312f225fb9b3ed2720750fc",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Tommy Guerrero",
+    "popularity": 50,
+    "type": "artist",
+    "uri": "spotify:artist:5qnkHpjyS6CUxH1UUy82B7"
+  }
+}

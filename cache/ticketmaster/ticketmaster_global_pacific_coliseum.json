@@ -1,0 +1,70 @@
+{
+  "timestamp": "2025-10-23T17:06:47.476898",
+  "concerts": [
+    {
+      "artist": "Pacific Coliseum",
+      "name": "Contact Music Festival",
+      "venue": "Pacific Coliseum",
+      "city": "Vancouver",
+      "country": "Canada",
+      "country_code": "CA",
+      "date": "2025-12-26",
+      "time": "18:00:00",
+      "url": "https://www.ticketleader.ca/events/detail/contact25",
+      "source": "Ticketmaster",
+      "id": "1aoZkGt0ZF3ZeuF"
+    },
+    {
+      "artist": "Pacific Coliseum",
+      "name": "Contact Music Festival",
+      "venue": "Pacific Coliseum",
+      "city": "Vancouver",
+      "country": "Canada",
+      "country_code": "CA",
+      "date": "2025-12-27",
+      "time": "18:00:00",
+      "url": "https://www.ticketleader.ca/events/detail/contact25",
+      "source": "Ticketmaster",
+      "id": "1aoZkGt0AF3ZeCF"
+    },
+    {
+      "artist": "Pacific Coliseum",
+      "name": "Oregon State Beavers Mens Basketball vs. Pacific Tigers Mens Basketball",
+      "venue": "Gill Coliseum",
+      "city": "Corvallis",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-01-17",
+      "time": "",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7qAat",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7qAat"
+    },
+    {
+      "artist": "Pacific Coliseum",
+      "name": "Subtronics: Fibonacci Tour 2026",
+      "venue": "Pacific Coliseum",
+      "city": "Vancouver",
+      "country": "Canada",
+      "country_code": "CA",
+      "date": "2026-02-07",
+      "time": "20:00:00",
+      "url": "https://ticketleader.ca/events/detail/subtronics26",
+      "source": "Ticketmaster",
+      "id": "1F78vNf0ZpZ781kk"
+    },
+    {
+      "artist": "Pacific Coliseum",
+      "name": "Louis Tomlinson",
+      "venue": "Pacific Coliseum",
+      "city": "Vancouver",
+      "country": "Canada",
+      "country_code": "CA",
+      "date": "2026-06-03",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7qZvd",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7qZvd"
+    }
+  ]
+}

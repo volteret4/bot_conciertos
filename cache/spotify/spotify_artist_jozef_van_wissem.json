@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:46:59.559858",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1mC0FqPLboQUFfxYuthfdn"
+    },
+    "followers": {
+      "href": null,
+      "total": 36204
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/1mC0FqPLboQUFfxYuthfdn",
+    "id": "1mC0FqPLboQUFfxYuthfdn",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebd1214a3f8a1632f9ebc928e4",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174d1214a3f8a1632f9ebc928e4",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178d1214a3f8a1632f9ebc928e4",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Jozef Van Wissem",
+    "popularity": 33,
+    "type": "artist",
+    "uri": "spotify:artist:1mC0FqPLboQUFfxYuthfdn"
+  }
+}

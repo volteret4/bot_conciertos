@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-10-23T17:55:16.930625",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6I1HySHVBxauGTpv00Gohc"
+    },
+    "followers": {
+      "href": null,
+      "total": 7767
+    },
+    "genres": [
+      "ambient"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6I1HySHVBxauGTpv00Gohc",
+    "id": "6I1HySHVBxauGTpv00Gohc",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb60c0f811cd25d2e2e8397798",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517460c0f811cd25d2e2e8397798",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17860c0f811cd25d2e2e8397798",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Blue Lake",
+    "popularity": 31,
+    "type": "artist",
+    "uri": "spotify:artist:6I1HySHVBxauGTpv00Gohc"
+  }
+}

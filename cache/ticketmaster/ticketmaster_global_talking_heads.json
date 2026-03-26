@@ -1,0 +1,109 @@
+{
+  "timestamp": "2025-10-23T17:05:30.812313",
+  "concerts": [
+    {
+      "artist": "Talking Heads",
+      "name": "Pink Talking Fish:  A Fusion of Pink Floyd, Talking Heads and Phish",
+      "venue": "Ventura Theater",
+      "city": "Ventura",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-10-29",
+      "time": "20:00:00",
+      "url": "https://www.ticketweb.com/event/pink-talking-fish-a-ventura-theater-tickets/13763354",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AKqNuf"
+    },
+    {
+      "artist": "Talking Heads",
+      "name": "Start Making Sense - a Tribute to Talking Heads",
+      "venue": "Mr Smalls Theatre",
+      "city": "Millvale",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-01",
+      "time": "20:00:00",
+      "url": "https://www.ticketweb.com/event/start-making-sense-mr-smalls-theatre-tickets/13881434",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AKxv8V"
+    },
+    {
+      "artist": "Talking Heads",
+      "name": "HeartByrne - A Talking Heads Tribute",
+      "venue": "Tannahill's Tavern and Music Hall",
+      "city": "Fort Worth",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-01",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/heartbyrne-a-talking-heads-tribute-fort-worth-texas-11-01-2025/event/0C0062F0E2FA3D85",
+      "source": "Ticketmaster",
+      "id": "vvG1YZbRdxXNUA"
+    },
+    {
+      "artist": "Talking Heads",
+      "name": "Cloudbreak Music Fest & Clock-Out Lounge Present: Coool Babies (tribute to Talking Heads) w/ Lushy",
+      "venue": "Clock-Out Lounge",
+      "city": "Seattle",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-07",
+      "time": "21:00:00",
+      "url": "https://www.ticketweb.com/event/cloudbreak-music-fest-clock-clock-out-lounge-tickets/14611343",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1Afboud"
+    },
+    {
+      "artist": "Talking Heads",
+      "name": "Magic Bag Presents: Start Making Sense: A Talking Heads Tribute with Falooshh",
+      "venue": "The Magic Bag",
+      "city": "Ferndale",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-14",
+      "time": "19:00:00",
+      "url": "https://www.ticketweb.com/event/magic-bag-presents-start-making-the-magic-bag-tickets/13900534",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AK0ZfV"
+    },
+    {
+      "artist": "Talking Heads",
+      "name": "A Phish After-Party  Pink Talking Fish  A Fusion of Pink Floyd, Talking Heads and Phish",
+      "venue": "Cutting Room",
+      "city": "New York",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-28",
+      "time": "23:59:00",
+      "url": "https://www.ticketweb.com/event/a-phish-after-party-cutting-room-tickets/14566753",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1Af4JqK"
+    },
+    {
+      "artist": "Talking Heads",
+      "name": "STOP MAKING SENSE: A Film by Jonathan Demme and Talking Heads",
+      "venue": "Uptown Theatre Napa",
+      "city": "Napa",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-01-10",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/stop-making-sense-a-film-by-napa-california-01-10-2026/event/1C0062F8D4944AF6",
+      "source": "Ticketmaster",
+      "id": "G5vYZbRNfP7lU"
+    },
+    {
+      "artist": "Talking Heads",
+      "name": "The Black Jacket Symphony Presents Talking Heads' 'Stop Making Sense'",
+      "venue": "The Charleston Music Hall",
+      "city": "Charleston",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-01-18",
+      "time": "19:30:00",
+      "url": "https://www.ticketmaster.com/the-black-jacket-symphony-presents-talking-charleston-south-carolina-01-18-2026/event/2D006323AEED6ED7",
+      "source": "Ticketmaster",
+      "id": "G5eVZbwCmDpD9"
+    }
+  ]
+}

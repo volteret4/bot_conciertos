@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:46:40.420394",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5BbJK5OOcFsL9YF7cNI3Jl"
+    },
+    "followers": {
+      "href": null,
+      "total": 263
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/5BbJK5OOcFsL9YF7cNI3Jl",
+    "id": "5BbJK5OOcFsL9YF7cNI3Jl",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb0c12c97d5476e51f4bbb4ebe",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051740c12c97d5476e51f4bbb4ebe",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1780c12c97d5476e51f4bbb4ebe",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "WANDER",
+    "popularity": 0,
+    "type": "artist",
+    "uri": "spotify:artist:5BbJK5OOcFsL9YF7cNI3Jl"
+  }
+}

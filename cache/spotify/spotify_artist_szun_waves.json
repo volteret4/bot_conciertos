@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:47:33.730431",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0UovNspE5r3Cxdsok7ZUp1"
+    },
+    "followers": {
+      "href": null,
+      "total": 8090
+    },
+    "genres": [
+      "nu jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0UovNspE5r3Cxdsok7ZUp1",
+    "id": "0UovNspE5r3Cxdsok7ZUp1",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb770e5470dd94cc1cfd1ab346",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174770e5470dd94cc1cfd1ab346",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178770e5470dd94cc1cfd1ab346",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Szun Waves",
+    "popularity": 8,
+    "type": "artist",
+    "uri": "spotify:artist:0UovNspE5r3Cxdsok7ZUp1"
+  }
+}

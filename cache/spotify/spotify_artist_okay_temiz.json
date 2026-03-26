@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:47:45.598587",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6yajM6C42NTolTtmV0q2cq"
+    },
+    "followers": {
+      "href": null,
+      "total": 9807
+    },
+    "genres": [
+      "free jazz",
+      "anatolian rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6yajM6C42NTolTtmV0q2cq",
+    "id": "6yajM6C42NTolTtmV0q2cq",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2735847a4ff913f71fd030a7474",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e025847a4ff913f71fd030a7474",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048515847a4ff913f71fd030a7474",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Okay Temiz",
+    "popularity": 21,
+    "type": "artist",
+    "uri": "spotify:artist:6yajM6C42NTolTtmV0q2cq"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T20:04:35.202512",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2m62cc253Xvd9qYQ8d2X3d"
+    },
+    "followers": {
+      "href": null,
+      "total": 1683266
+    },
+    "genres": [
+      "progressive rock",
+      "classic rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2m62cc253Xvd9qYQ8d2X3d",
+    "id": "2m62cc253Xvd9qYQ8d2X3d",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/3e90d18b7375a0e78340d23f72822646c4cc3b70",
+        "height": 1028,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/112b078d34b51f977720805963334611383ee1c1",
+        "height": 658,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/63e9f6ec84b77cd5d8631c7d6e9c2f3273693254",
+        "height": 206,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/50beb6c019cacb758e07f102168add254b0acd18",
+        "height": 66,
+        "width": 64
+      }
+    ],
+    "name": "The Alan Parsons Project",
+    "popularity": 62,
+    "type": "artist",
+    "uri": "spotify:artist:2m62cc253Xvd9qYQ8d2X3d"
+  }
+}

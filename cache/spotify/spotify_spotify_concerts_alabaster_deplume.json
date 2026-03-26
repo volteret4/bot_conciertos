@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-25T08:02:53.432746",
+  "data": [
+    {
+      "artist": "Alabaster dePlume",
+      "artist_name": "Alabaster dePlume",
+      "name": "Alabaster dePlume at Jazz Festival Willisau GmbH",
+      "venue": "Jazz Festival Willisau GmbH",
+      "city": "Willisau",
+      "country": "",
+      "date": "2025-08-29",
+      "time": "10:00 PM",
+      "url": "https://open.spotify.com/concert/7JkdIO916cuGoPQQastN9E",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Alabaster dePlume",
+      "artist_name": "Alabaster dePlume",
+      "name": "Alabaster dePlume at La Batie Festival 2025",
+      "venue": "La Batie Festival 2025",
+      "city": "Genève",
+      "country": "",
+      "date": "2025-09-12",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/0DAW2ptB3yqEeaNjPWmMk8",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Alabaster dePlume",
+      "artist_name": "Alabaster dePlume",
+      "name": "Alabaster dePlume at DR Koncerthuset Studie 2",
+      "venue": "DR Koncerthuset Studie 2",
+      "city": "København",
+      "country": "",
+      "date": "2025-10-15",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/7kyI43GDaw1uY7D8dtArAU",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Alabaster dePlume",
+      "artist_name": "Alabaster dePlume",
+      "name": "Alabaster dePlume at Kulttuuritehdas Korjaamo",
+      "venue": "Kulttuuritehdas Korjaamo",
+      "city": "Helsinki",
+      "country": "FI",
+      "date": "2025-10-16",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/3PzlRrYIz1kw2bvYVAWu50",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Alabaster dePlume",
+      "artist_name": "Alabaster dePlume",
+      "name": "Alabaster dePlume at Stockholm Jazz Festival",
+      "venue": "Stockholm Jazz Festival",
+      "city": "Stockholm",
+      "country": "SE",
+      "date": "2025-10-17",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/3MrO2FQbZtscNWIub7Zo5y",
+      "source": "Spotify"
+    }
+  ]
+}

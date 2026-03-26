@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-25T08:34:52.988397",
+  "data": [
+    {
+      "artist": "Front Line Assembly",
+      "artist_name": "Front Line Assembly",
+      "name": "Front Line Assembly at DNA Lounge",
+      "venue": "DNA Lounge",
+      "city": "San Francisco",
+      "country": "US",
+      "date": "2025-09-11",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/4fPV1dBgYXQVKPqoR123jL",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Front Line Assembly",
+      "artist_name": "Front Line Assembly",
+      "name": "Front Line Assembly at Music Box",
+      "venue": "Music Box",
+      "city": "San Diego",
+      "country": "US",
+      "date": "2025-09-13",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/6CRwYAaOYMz0KoYDQrgN4B",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Front Line Assembly",
+      "artist_name": "Front Line Assembly",
+      "name": "Front Line Assembly at Star Theater",
+      "venue": "Star Theater",
+      "city": "Portland",
+      "country": "US",
+      "date": "2025-09-14",
+      "time": "7:30 PM",
+      "url": "https://open.spotify.com/concert/1nTKl8PolnkOQylSLD8Ybk",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Front Line Assembly",
+      "artist_name": "Front Line Assembly",
+      "name": "Front Line Assembly at El Corazon",
+      "venue": "El Corazon",
+      "city": "Seattle",
+      "country": "US",
+      "date": "2025-09-16",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/63CysTglKTvJgupSEBPMey",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Front Line Assembly",
+      "artist_name": "Front Line Assembly",
+      "name": "Front Line Assembly Concert (4OAGtdTm)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/4OAGtdTmokjQ9LkDdKVoV2",
+      "source": "Spotify"
+    }
+  ]
+}

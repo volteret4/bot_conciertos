@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:58:22.372046",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/24s7xIYqpJHdIFcPsdffvz"
+    },
+    "followers": {
+      "href": null,
+      "total": 1258
+    },
+    "genres": [
+      "lo-fi house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/24s7xIYqpJHdIFcPsdffvz",
+    "id": "24s7xIYqpJHdIFcPsdffvz",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273c617a496c2b096963e4a12fd",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02c617a496c2b096963e4a12fd",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851c617a496c2b096963e4a12fd",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Deep88",
+    "popularity": 5,
+    "type": "artist",
+    "uri": "spotify:artist:24s7xIYqpJHdIFcPsdffvz"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:49:17.575219",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0KyUH5WmspOhuIQAnw42Fb"
+    },
+    "followers": {
+      "href": null,
+      "total": 28075
+    },
+    "genres": [
+      "acid house",
+      "acid techno"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0KyUH5WmspOhuIQAnw42Fb",
+    "id": "0KyUH5WmspOhuIQAnw42Fb",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb5974e92b915a79b58b5a2c7c",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051745974e92b915a79b58b5a2c7c",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1785974e92b915a79b58b5a2c7c",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Paranoid London",
+    "popularity": 29,
+    "type": "artist",
+    "uri": "spotify:artist:0KyUH5WmspOhuIQAnw42Fb"
+  }
+}

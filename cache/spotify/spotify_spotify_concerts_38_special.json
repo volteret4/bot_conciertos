@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-24T08:00:24.506696",
+  "data": [
+    {
+      "artist": "38 Special",
+      "artist_name": "38 Special",
+      "name": "38 Special Concert (1Ry0DkFo)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/1Ry0DkFo318R0jkltnV7PK",
+      "source": "Spotify"
+    },
+    {
+      "artist": "38 Special",
+      "artist_name": "38 Special",
+      "name": "38 Special at The Theater at MGM National Harbor",
+      "venue": "The Theater at MGM National Harbor",
+      "city": "Oxon Hill",
+      "country": "BO",
+      "date": "2025-08-24",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/7viBrr4jtD8uSC69ZMe4PP",
+      "source": "Spotify"
+    },
+    {
+      "artist": "38 Special",
+      "artist_name": "38 Special",
+      "name": "38 Special Concert (1eXl4TdN)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/1eXl4TdNRvu7UV6UVsGNdm",
+      "source": "Spotify"
+    },
+    {
+      "artist": "38 Special",
+      "artist_name": "38 Special",
+      "name": "38 Special at Chinook Winds Casino Resort",
+      "venue": "Chinook Winds Casino Resort",
+      "city": "Lincoln City",
+      "country": "US",
+      "date": "2025-09-06",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/7JAFGMdcjLgu0rUiQvdTXG",
+      "source": "Spotify"
+    },
+    {
+      "artist": "38 Special",
+      "artist_name": "38 Special",
+      "name": "38 Special Concert (6eNDVwHY)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/6eNDVwHY6ppagFM6uaduVK",
+      "source": "Spotify"
+    }
+  ]
+}

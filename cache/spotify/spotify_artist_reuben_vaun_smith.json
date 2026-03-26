@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:04:05.541065",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2moJAoZqWQ7Q568tptPn0P"
+    },
+    "followers": {
+      "href": null,
+      "total": 5956
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/2moJAoZqWQ7Q568tptPn0P",
+    "id": "2moJAoZqWQ7Q568tptPn0P",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eba2250bd9cd76e10a100b7495",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174a2250bd9cd76e10a100b7495",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178a2250bd9cd76e10a100b7495",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Reuben Vaun Smith",
+    "popularity": 27,
+    "type": "artist",
+    "uri": "spotify:artist:2moJAoZqWQ7Q568tptPn0P"
+  }
+}

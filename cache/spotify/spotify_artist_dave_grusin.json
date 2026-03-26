@@ -1,0 +1,45 @@
+{
+  "timestamp": "2025-11-03T19:57:59.977945",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0SPkat5bgfP5wo2kbqZIwu"
+    },
+    "followers": {
+      "href": null,
+      "total": 70302
+    },
+    "genres": [
+      "smooth jazz",
+      "jazz fusion",
+      "jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0SPkat5bgfP5wo2kbqZIwu",
+    "id": "0SPkat5bgfP5wo2kbqZIwu",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/29135f6101e2b98e0ab188693c41ba48bd248c4b",
+        "height": 1149,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/2262f4c6abae99085c0980b04ad587489e6b83d7",
+        "height": 735,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/323fa46872e87d2dde0c806d639aa7c603bdf7b5",
+        "height": 230,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/3774ea36e5068f21a59d394da34b684f136eaca0",
+        "height": 74,
+        "width": 64
+      }
+    ],
+    "name": "Dave Grusin",
+    "popularity": 42,
+    "type": "artist",
+    "uri": "spotify:artist:0SPkat5bgfP5wo2kbqZIwu"
+  }
+}

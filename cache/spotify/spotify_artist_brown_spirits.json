@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T20:01:02.307184",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6kGqdMrX1clLXAOCnA7S6h"
+    },
+    "followers": {
+      "href": null,
+      "total": 2256
+    },
+    "genres": [
+      "krautrock",
+      "space rock",
+      "neo-psychedelic"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6kGqdMrX1clLXAOCnA7S6h",
+    "id": "6kGqdMrX1clLXAOCnA7S6h",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2734d89d1f5a39475bb17c3d1ab",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e024d89d1f5a39475bb17c3d1ab",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048514d89d1f5a39475bb17c3d1ab",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Brown Spirits",
+    "popularity": 12,
+    "type": "artist",
+    "uri": "spotify:artist:6kGqdMrX1clLXAOCnA7S6h"
+  }
+}

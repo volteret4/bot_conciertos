@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:48:57.810357",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1CoZyIx7UvdxT5c8UkMzHd"
+    },
+    "followers": {
+      "href": null,
+      "total": 3654193
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/1CoZyIx7UvdxT5c8UkMzHd",
+    "id": "1CoZyIx7UvdxT5c8UkMzHd",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eba6524d02e26778b0b99a33d5",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174a6524d02e26778b0b99a33d5",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178a6524d02e26778b0b99a33d5",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Jorja Smith",
+    "popularity": 71,
+    "type": "artist",
+    "uri": "spotify:artist:1CoZyIx7UvdxT5c8UkMzHd"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-10-23T20:57:32.627655",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/14CMndDKSsMSvZYXFLZRfn"
+    },
+    "followers": {
+      "href": null,
+      "total": 110865
+    },
+    "genres": [
+      "singer-songwriter"
+    ],
+    "href": "https://api.spotify.com/v1/artists/14CMndDKSsMSvZYXFLZRfn",
+    "id": "14CMndDKSsMSvZYXFLZRfn",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebefe8d1f2eb254481020d3281",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174efe8d1f2eb254481020d3281",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178efe8d1f2eb254481020d3281",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Nacho Vegas",
+    "popularity": 43,
+    "type": "artist",
+    "uri": "spotify:artist:14CMndDKSsMSvZYXFLZRfn"
+  }
+}

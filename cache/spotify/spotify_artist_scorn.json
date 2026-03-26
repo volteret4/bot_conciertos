@@ -1,0 +1,49 @@
+{
+  "timestamp": "2025-11-03T20:02:38.356132",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0sKlAr34dAjAdb7a9yriqX"
+    },
+    "followers": {
+      "href": null,
+      "total": 20880
+    },
+    "genres": [
+      "industrial",
+      "industrial metal",
+      "dark ambient",
+      "idm",
+      "industrial rock",
+      "trip hop",
+      "experimental"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0sKlAr34dAjAdb7a9yriqX",
+    "id": "0sKlAr34dAjAdb7a9yriqX",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/f8b2fa4e496b6347eb1f69ad61ef8ce392c71bf8",
+        "height": 695,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/0673537081a93ee8d9ceb4cf6934109f0cf505e8",
+        "height": 445,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/eebc7d8d0d7e0a1dd05603f7d59d7e7f6bc36529",
+        "height": 139,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/de7fc6aafaa6edae9a7589c13802ad4349116952",
+        "height": 45,
+        "width": 64
+      }
+    ],
+    "name": "Scorn",
+    "popularity": 21,
+    "type": "artist",
+    "uri": "spotify:artist:0sKlAr34dAjAdb7a9yriqX"
+  }
+}

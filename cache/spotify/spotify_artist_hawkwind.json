@@ -1,0 +1,46 @@
+{
+  "timestamp": "2025-11-03T20:03:19.691794",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2jK54ZlZhTF1TxygsVeR05"
+    },
+    "followers": {
+      "href": null,
+      "total": 137085
+    },
+    "genres": [
+      "space rock",
+      "progressive rock",
+      "krautrock",
+      "psychedelic rock",
+      "proto-punk",
+      "acid rock",
+      "hard rock",
+      "stoner rock",
+      "art rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2jK54ZlZhTF1TxygsVeR05",
+    "id": "2jK54ZlZhTF1TxygsVeR05",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb7b59f34904a85204edb79eec",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051747b59f34904a85204edb79eec",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1787b59f34904a85204edb79eec",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Hawkwind",
+    "popularity": 38,
+    "type": "artist",
+    "uri": "spotify:artist:2jK54ZlZhTF1TxygsVeR05"
+  }
+}

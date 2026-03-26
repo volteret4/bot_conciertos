@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-10-23T17:15:03.815627",
+  "concerts": [
+    {
+      "artist": "Xiu Xiu",
+      "name": "ERASERHEAD XIU XIU",
+      "venue": "Klub 2progi",
+      "city": "Poznan",
+      "country": "Poland",
+      "country_code": "PL",
+      "date": "2025-11-19",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.pl/event/eraserhead-xiu-xiu-tickets/1096632102?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZQpZ16vepbw7e"
+    },
+    {
+      "artist": "Xiu Xiu",
+      "name": "ERASERHEAD XIU XIU",
+      "venue": "Hybrydy",
+      "city": "Warsaw",
+      "country": "Poland",
+      "country_code": "PL",
+      "date": "2025-11-20",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.pl/event/eraserhead-xiu-xiu-tickets/1310056550?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZQpZ16vG8vp48"
+    },
+    {
+      "artist": "Xiu Xiu",
+      "name": "La Original Sonora Dinamita de Lucho Argain y XIU Garcia",
+      "venue": "Teatro Metropolitan",
+      "city": "México",
+      "country": "Mexico",
+      "country_code": "MX",
+      "date": "2025-12-14",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com.mx/la-original-sonora-dinamita-de-lucho-mexico-14-12-2025/event/1400631F934116F1",
+      "source": "Ticketmaster",
+      "id": "1Av8ZbsGkXK8ohs"
+    }
+  ]
+}

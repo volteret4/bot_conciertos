@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:56:15.563103",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2nDJxXJ7PtW7eLpFXcGH3u"
+    },
+    "followers": {
+      "href": null,
+      "total": 20588
+    },
+    "genres": [
+      "noise rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2nDJxXJ7PtW7eLpFXcGH3u",
+    "id": "2nDJxXJ7PtW7eLpFXcGH3u",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb90f18284cea219b6182cc85b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517490f18284cea219b6182cc85b",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17890f18284cea219b6182cc85b",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Mandy, Indiana",
+    "popularity": 19,
+    "type": "artist",
+    "uri": "spotify:artist:2nDJxXJ7PtW7eLpFXcGH3u"
+  }
+}

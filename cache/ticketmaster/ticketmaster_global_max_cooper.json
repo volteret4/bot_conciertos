@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-09-02T08:57:16.572376",
+  "concerts": [
+    {
+      "artist": "Max Cooper",
+      "name": "Max Cooper",
+      "venue": "Aviva Studios - The Hall",
+      "city": "Manchester",
+      "country": "GB",
+      "date": "2025-09-26",
+      "time": "18:00:00",
+      "url": "https://www.ticketmaster.co.uk/max-cooper-manchester-26-09-2025/event/350062B6F45B70AA",
+      "source": "Ticketmaster",
+      "id": "17u8vxG65hVpMen"
+    }
+  ]
+}

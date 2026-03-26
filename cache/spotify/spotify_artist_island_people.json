@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:04:38.712897",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/06pkUJtvwH93XlSdc0RAOY"
+    },
+    "followers": {
+      "href": null,
+      "total": 70458
+    },
+    "genres": [
+      "nz reggae",
+      "reggae"
+    ],
+    "href": "https://api.spotify.com/v1/artists/06pkUJtvwH93XlSdc0RAOY",
+    "id": "06pkUJtvwH93XlSdc0RAOY",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb690d54b9d979ab1d9fd74687",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174690d54b9d979ab1d9fd74687",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178690d54b9d979ab1d9fd74687",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Tomorrow People",
+    "popularity": 44,
+    "type": "artist",
+    "uri": "spotify:artist:06pkUJtvwH93XlSdc0RAOY"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-10-23T17:07:58.102304",
+  "concerts": [
+    {
+      "artist": "Neu!",
+      "name": "Alain Frei „ALLES NEU“",
+      "venue": "THE HALL Zürich",
+      "city": "Dübendorf",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "date": "2026-05-30",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.ch/event/alain-frei-alles-neu-tickets/711163082?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZu3Z1kjoANee"
+    }
+  ]
+}

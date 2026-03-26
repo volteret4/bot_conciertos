@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-21T08:25:18.894157",
+  "data": [
+    {
+      "artist": "Carl Cox",
+      "artist_name": "Carl Cox",
+      "name": "Carl Cox at [UNVRS]",
+      "venue": "[UNVRS]",
+      "city": "San Rafael, Ibiza",
+      "country": "ES",
+      "date": "2025-08-24",
+      "time": "10:30 PM",
+      "url": "https://open.spotify.com/concert/6L8ESLylgvs7E63pLrbeIx",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Carl Cox",
+      "artist_name": "Carl Cox",
+      "name": "Carl Cox at [UNVRS]",
+      "venue": "[UNVRS]",
+      "city": "San Rafael, Ibiza",
+      "country": "ES",
+      "date": "2025-08-31",
+      "time": "10:30 PM",
+      "url": "https://open.spotify.com/concert/5iERS7kWHr3Fa2cYAGREl5",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Carl Cox",
+      "artist_name": "Carl Cox",
+      "name": "Carl Cox at Club Space Miami",
+      "venue": "Club Space Miami",
+      "city": "Miami",
+      "country": "US",
+      "date": "2025-09-05",
+      "time": "11:00 PM",
+      "url": "https://open.spotify.com/concert/4FUtHB2ilzGaKgtw58SVYm",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Carl Cox",
+      "artist_name": "Carl Cox",
+      "name": "Carl Cox at Residenzschloss Ludwigsburg",
+      "venue": "Residenzschloss Ludwigsburg",
+      "city": "LUDWIGSBURG",
+      "country": "DE",
+      "date": "2025-09-06",
+      "time": "3:00 PM",
+      "url": "https://open.spotify.com/concert/6RSRV2h05evZJQAlqPeJ9H",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Carl Cox",
+      "artist_name": "Carl Cox",
+      "name": "Carl Cox at [UNVRS]",
+      "venue": "[UNVRS]",
+      "city": "San Rafael, Ibiza",
+      "country": "ES",
+      "date": "2025-09-07",
+      "time": "10:30 PM",
+      "url": "https://open.spotify.com/concert/6ZpQlmECYW2D4x25fF5mKu",
+      "source": "Spotify"
+    }
+  ]
+}

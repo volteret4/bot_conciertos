@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:49:54.208045",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2A5d1n2pC54Ks3HR1kNWEu"
+    },
+    "followers": {
+      "href": null,
+      "total": 23392
+    },
+    "genres": [
+      "dark ambient",
+      "drone",
+      "experimental"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2A5d1n2pC54Ks3HR1kNWEu",
+    "id": "2A5d1n2pC54Ks3HR1kNWEu",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebf35b108cc3ae91a67093fd4b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174f35b108cc3ae91a67093fd4b",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178f35b108cc3ae91a67093fd4b",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Raime",
+    "popularity": 17,
+    "type": "artist",
+    "uri": "spotify:artist:2A5d1n2pC54Ks3HR1kNWEu"
+  }
+}

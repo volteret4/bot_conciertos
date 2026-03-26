@@ -1,0 +1,33 @@
+{
+  "timestamp": "2025-11-03T19:48:17.087807",
+  "concerts": [
+    {
+      "artist": "Rush",
+      "name": "BIG TIME RUSH - IN REAL LIFE WORLDWIDE",
+      "venue": "Sant Jordi Club",
+      "city": "Barcelona",
+      "country": "Spain",
+      "country_code": "ES",
+      "date": "2025-11-29",
+      "time": "21:00:00",
+      "image": "https://s1.ticketm.net/dam/a/11e/830785d3-cbda-41f0-8d6c-b1483266911e_SOURCE",
+      "url": "https://www.ticketmaster.es/event/big-time-rush-in-real-life-worldwide-tickets/1168185111?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZ2qZ16vAIkA7o"
+    },
+    {
+      "artist": "Rush",
+      "name": "BIG TIME RUSH - IN REAL LIFE WORLDWIDE",
+      "venue": "Palacio Vistalegre",
+      "city": "Madrid",
+      "country": "Spain",
+      "country_code": "ES",
+      "date": "2025-11-30",
+      "time": "21:00:00",
+      "image": "https://s1.ticketm.net/dam/a/11e/830785d3-cbda-41f0-8d6c-b1483266911e_SOURCE",
+      "url": "https://www.ticketmaster.es/event/big-time-rush-in-real-life-worldwide-tickets/339094412?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZ2qZ1kGyef83"
+    }
+  ]
+}

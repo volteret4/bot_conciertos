@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T20:02:54.975695",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2P6ygesd9xg5DPOBnda2jg"
+    },
+    "followers": {
+      "href": null,
+      "total": 299720
+    },
+    "genres": [
+      "minimalism",
+      "classical"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2P6ygesd9xg5DPOBnda2jg",
+    "id": "2P6ygesd9xg5DPOBnda2jg",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6772690000c46cedb7f6a934fb857e0d757fae",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000dd22edb7f6a934fb857e0d757fae",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000bac3edb7f6a934fb857e0d757fae",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67726900008f74edb7f6a934fb857e0d757fae",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Arvo Pärt",
+    "popularity": 52,
+    "type": "artist",
+    "uri": "spotify:artist:2P6ygesd9xg5DPOBnda2jg"
+  }
+}

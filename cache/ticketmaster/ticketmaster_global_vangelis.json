@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-10-23T17:05:57.898832",
+  "concerts": [
+    {
+      "artist": "Vangelis",
+      "name": "Vangelis - Original Symphonic Concert",
+      "venue": "O2 universum",
+      "city": "Praha 9",
+      "country": "Czech Republic",
+      "country_code": "CZ",
+      "date": "2026-02-27",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.cz/event/vangelis-original-symphonic-concert-tickets/599595533?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZu0Z1kp_p4fS"
+    }
+  ]
+}

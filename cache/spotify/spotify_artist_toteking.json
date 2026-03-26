@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:47:53.318135",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/224rbIjYbXaTI7lnP2ZMNJ"
+    },
+    "followers": {
+      "href": null,
+      "total": 277125
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/224rbIjYbXaTI7lnP2ZMNJ",
+    "id": "224rbIjYbXaTI7lnP2ZMNJ",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb7e15576a7a0d680561d9fe92",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051747e15576a7a0d680561d9fe92",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1787e15576a7a0d680561d9fe92",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "ToteKing",
+    "popularity": 49,
+    "type": "artist",
+    "uri": "spotify:artist:224rbIjYbXaTI7lnP2ZMNJ"
+  }
+}

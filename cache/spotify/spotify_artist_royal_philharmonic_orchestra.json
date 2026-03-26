@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:48:16.346562",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0MvSBMGRQJY3mRwIbJsqF1"
+    },
+    "followers": {
+      "href": null,
+      "total": 195987
+    },
+    "genres": [
+      "orchestral",
+      "classical"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0MvSBMGRQJY3mRwIbJsqF1",
+    "id": "0MvSBMGRQJY3mRwIbJsqF1",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebf9cd4a9062ded7cb2b8a351b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174f9cd4a9062ded7cb2b8a351b",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178f9cd4a9062ded7cb2b8a351b",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Royal Philharmonic Orchestra",
+    "popularity": 68,
+    "type": "artist",
+    "uri": "spotify:artist:0MvSBMGRQJY3mRwIbJsqF1"
+  }
+}

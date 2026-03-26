@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:00:21.517283",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2LeVITWZ1zWLnIF6gJRAmG"
+    },
+    "followers": {
+      "href": null,
+      "total": 2902
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/2LeVITWZ1zWLnIF6gJRAmG",
+    "id": "2LeVITWZ1zWLnIF6gJRAmG",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27387f22e59523ccb9574fec8ab",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0287f22e59523ccb9574fec8ab",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485187f22e59523ccb9574fec8ab",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Beans",
+    "popularity": 21,
+    "type": "artist",
+    "uri": "spotify:artist:2LeVITWZ1zWLnIF6gJRAmG"
+  }
+}

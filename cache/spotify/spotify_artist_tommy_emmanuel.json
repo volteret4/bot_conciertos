@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:58:55.096278",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6HjfVflhYjbu6PSIsFOjwM"
+    },
+    "followers": {
+      "href": null,
+      "total": 211088
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/6HjfVflhYjbu6PSIsFOjwM",
+    "id": "6HjfVflhYjbu6PSIsFOjwM",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb202dcc14c5b6405ce84b8c33",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174202dcc14c5b6405ce84b8c33",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178202dcc14c5b6405ce84b8c33",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Tommy Emmanuel",
+    "popularity": 46,
+    "type": "artist",
+    "uri": "spotify:artist:6HjfVflhYjbu6PSIsFOjwM"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "timestamp": "2025-11-03T19:59:34.652080",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3ejLRcSbNwwvFbVWnStKvB"
+    },
+    "followers": {
+      "href": null,
+      "total": 145
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/3ejLRcSbNwwvFbVWnStKvB",
+    "id": "3ejLRcSbNwwvFbVWnStKvB",
+    "images": [],
+    "name": "Jean Carne",
+    "popularity": 0,
+    "type": "artist",
+    "uri": "spotify:artist:3ejLRcSbNwwvFbVWnStKvB"
+  }
+}

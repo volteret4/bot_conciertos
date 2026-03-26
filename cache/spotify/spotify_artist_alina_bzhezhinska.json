@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:01:16.217276",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4ziDIu5XdfA2rQpEAvs0BN"
+    },
+    "followers": {
+      "href": null,
+      "total": 4821
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/4ziDIu5XdfA2rQpEAvs0BN",
+    "id": "4ziDIu5XdfA2rQpEAvs0BN",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb25771d4548d44256e057aced",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517425771d4548d44256e057aced",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17825771d4548d44256e057aced",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Alina Bzhezhinska",
+    "popularity": 18,
+    "type": "artist",
+    "uri": "spotify:artist:4ziDIu5XdfA2rQpEAvs0BN"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-09-02T08:33:53.151661",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0Y4inQK6OespitzD6ijMwb"
+    },
+    "followers": {
+      "href": null,
+      "total": 1453212
+    },
+    "genres": [
+      "alternative hip hop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0Y4inQK6OespitzD6ijMwb",
+    "id": "0Y4inQK6OespitzD6ijMwb",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb499def7bd0369aa26a22273c",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174499def7bd0369aa26a22273c",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178499def7bd0369aa26a22273c",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Freddie Gibbs",
+    "popularity": 75,
+    "type": "artist",
+    "uri": "spotify:artist:0Y4inQK6OespitzD6ijMwb"
+  }
+}

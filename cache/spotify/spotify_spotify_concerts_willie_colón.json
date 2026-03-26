@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-25T09:41:20.567766",
+  "data": [
+    {
+      "artist": "Willie Colón",
+      "artist_name": "Willie Colón",
+      "name": "Willie Colón at Ritz Theatre",
+      "venue": "Ritz Theatre",
+      "city": "Elizabeth",
+      "country": "US",
+      "date": "2025-09-20",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/2cMq8JPE4W5hgh3HdQAspA",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Willie Colón",
+      "artist_name": "Willie Colón",
+      "name": "Willie Colón at Hard Rock Live",
+      "venue": "Hard Rock Live",
+      "city": "Hollywood",
+      "country": "US",
+      "date": "2025-10-03",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/3QKuO6tbENvUnAYJfECPsI",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Willie Colón",
+      "artist_name": "Willie Colón",
+      "name": "Willie Colón at Mohegan Sun Arena",
+      "venue": "Mohegan Sun Arena",
+      "city": "Uncasville",
+      "country": "",
+      "date": "2025-10-18",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/4TccOOp7naeYOT54Dv8N9i",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Willie Colón",
+      "artist_name": "Willie Colón",
+      "name": "Willie Colón Concert (2BHIyt9B)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/2BHIyt9BiKRQClr7DBW7zP",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Willie Colón",
+      "artist_name": "Willie Colón",
+      "name": "Willie Colón at Hard Rock Live at Etess Arena",
+      "venue": "Hard Rock Live at Etess Arena",
+      "city": "Atlantic City",
+      "country": "",
+      "date": "2025-11-29",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/5cKMdvzFgq0QPtJMq8vXpU",
+      "source": "Spotify"
+    }
+  ]
+}

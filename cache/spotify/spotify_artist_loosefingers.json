@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:56:01.127279",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1vbs5ghUw3aJTLwlVdIqKb"
+    },
+    "followers": {
+      "href": null,
+      "total": 884
+    },
+    "genres": [
+      "chicago house",
+      "acid house",
+      "jazz house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1vbs5ghUw3aJTLwlVdIqKb",
+    "id": "1vbs5ghUw3aJTLwlVdIqKb",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2734c766660bbe89d92f7fdfe0a",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e024c766660bbe89d92f7fdfe0a",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048514c766660bbe89d92f7fdfe0a",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Loosefingers",
+    "popularity": 16,
+    "type": "artist",
+    "uri": "spotify:artist:1vbs5ghUw3aJTLwlVdIqKb"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:46:40.569685",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7MynOMOTsGz8NFcPUImWAp"
+    },
+    "followers": {
+      "href": null,
+      "total": 126927
+    },
+    "genres": [
+      "new age"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7MynOMOTsGz8NFcPUImWAp",
+    "id": "7MynOMOTsGz8NFcPUImWAp",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb3909a929a250d31740fd477d",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051743909a929a250d31740fd477d",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1783909a929a250d31740fd477d",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Andreas Vollenweider",
+    "popularity": 47,
+    "type": "artist",
+    "uri": "spotify:artist:7MynOMOTsGz8NFcPUImWAp"
+  }
+}

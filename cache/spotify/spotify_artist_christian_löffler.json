@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:03:01.378671",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3tSvlEzeDnVbQJBTkIA6nO"
+    },
+    "followers": {
+      "href": null,
+      "total": 311596
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/3tSvlEzeDnVbQJBTkIA6nO",
+    "id": "3tSvlEzeDnVbQJBTkIA6nO",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebf46b7dae92c87c26e0f659ae",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174f46b7dae92c87c26e0f659ae",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178f46b7dae92c87c26e0f659ae",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Christian Löffler",
+    "popularity": 54,
+    "type": "artist",
+    "uri": "spotify:artist:3tSvlEzeDnVbQJBTkIA6nO"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T20:03:34.579643",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/17dbJyUCrxh4I7iyUrjaHU"
+    },
+    "followers": {
+      "href": null,
+      "total": 97481
+    },
+    "genres": [
+      "idm",
+      "minimal techno",
+      "techno"
+    ],
+    "href": "https://api.spotify.com/v1/artists/17dbJyUCrxh4I7iyUrjaHU",
+    "id": "17dbJyUCrxh4I7iyUrjaHU",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb1e972f7af091d87b2aec15af",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051741e972f7af091d87b2aec15af",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1781e972f7af091d87b2aec15af",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Carl Craig",
+    "popularity": 36,
+    "type": "artist",
+    "uri": "spotify:artist:17dbJyUCrxh4I7iyUrjaHU"
+  }
+}

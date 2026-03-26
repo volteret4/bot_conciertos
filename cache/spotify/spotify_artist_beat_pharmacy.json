@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:00:22.455718",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5TkowXlIfYZJPGnnu5mXpA"
+    },
+    "followers": {
+      "href": null,
+      "total": 3399
+    },
+    "genres": [
+      "dub techno",
+      "dub"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5TkowXlIfYZJPGnnu5mXpA",
+    "id": "5TkowXlIfYZJPGnnu5mXpA",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebdaa2cb04930ddf33fb23a01a",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174daa2cb04930ddf33fb23a01a",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178daa2cb04930ddf33fb23a01a",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Beat Pharmacy",
+    "popularity": 11,
+    "type": "artist",
+    "uri": "spotify:artist:5TkowXlIfYZJPGnnu5mXpA"
+  }
+}

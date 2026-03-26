@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:58:48.189821",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2uFUBdaVGtyMqckSeCl0Qj"
+    },
+    "followers": {
+      "href": null,
+      "total": 3998256
+    },
+    "genres": [
+      "neoclassical",
+      "classical"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2uFUBdaVGtyMqckSeCl0Qj",
+    "id": "2uFUBdaVGtyMqckSeCl0Qj",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb86008946f7c35b22282d7e8c",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517486008946f7c35b22282d7e8c",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17886008946f7c35b22282d7e8c",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Ludovico Einaudi",
+    "popularity": 77,
+    "type": "artist",
+    "uri": "spotify:artist:2uFUBdaVGtyMqckSeCl0Qj"
+  }
+}

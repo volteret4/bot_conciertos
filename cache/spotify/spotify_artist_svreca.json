@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:47:31.501934",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/69M3zvyUT5ffpKTCFUNFz5"
+    },
+    "followers": {
+      "href": null,
+      "total": 6332
+    },
+    "genres": [
+      "dub techno",
+      "minimal techno"
+    ],
+    "href": "https://api.spotify.com/v1/artists/69M3zvyUT5ffpKTCFUNFz5",
+    "id": "69M3zvyUT5ffpKTCFUNFz5",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273e456385e71f418e46cab8c73",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02e456385e71f418e46cab8c73",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851e456385e71f418e46cab8c73",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Svreca",
+    "popularity": 9,
+    "type": "artist",
+    "uri": "spotify:artist:69M3zvyUT5ffpKTCFUNFz5"
+  }
+}

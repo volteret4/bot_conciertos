@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:55:46.119057",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3FdLhnmXynPvZkbILPpB6d"
+    },
+    "followers": {
+      "href": null,
+      "total": 138041
+    },
+    "genres": [
+      "afropop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3FdLhnmXynPvZkbILPpB6d",
+    "id": "3FdLhnmXynPvZkbILPpB6d",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb75cf0827b3e31d174e24470e",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517475cf0827b3e31d174e24470e",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17875cf0827b3e31d174e24470e",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Ladysmith Black Mambazo",
+    "popularity": 46,
+    "type": "artist",
+    "uri": "spotify:artist:3FdLhnmXynPvZkbILPpB6d"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T20:03:39.847420",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7qdsk0UXx2jCX7jbp6rxeq"
+    },
+    "followers": {
+      "href": null,
+      "total": 55857
+    },
+    "genres": [
+      "idm",
+      "ambient",
+      "dub techno",
+      "drone"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7qdsk0UXx2jCX7jbp6rxeq",
+    "id": "7qdsk0UXx2jCX7jbp6rxeq",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebd78e5687c34374d0e53fb436",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174d78e5687c34374d0e53fb436",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178d78e5687c34374d0e53fb436",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "The Black Dog",
+    "popularity": 39,
+    "type": "artist",
+    "uri": "spotify:artist:7qdsk0UXx2jCX7jbp6rxeq"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:02:37.519844",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/40JyDxGqtYSowWYT2jaive"
+    },
+    "followers": {
+      "href": null,
+      "total": 149325
+    },
+    "genres": [
+      "techno",
+      "tech house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/40JyDxGqtYSowWYT2jaive",
+    "id": "40JyDxGqtYSowWYT2jaive",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb09c1b793da541798350ae3a9",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517409c1b793da541798350ae3a9",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17809c1b793da541798350ae3a9",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Alan Fitzpatrick",
+    "popularity": 49,
+    "type": "artist",
+    "uri": "spotify:artist:40JyDxGqtYSowWYT2jaive"
+  }
+}

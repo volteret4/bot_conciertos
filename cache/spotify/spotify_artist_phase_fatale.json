@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T20:02:58.444327",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1jjplgZcgCwhU7JlGhBQiw"
+    },
+    "followers": {
+      "href": null,
+      "total": 24413
+    },
+    "genres": [
+      "ebm",
+      "industrial",
+      "darkwave"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1jjplgZcgCwhU7JlGhBQiw",
+    "id": "1jjplgZcgCwhU7JlGhBQiw",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb374df698828c0b00ce137806",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174374df698828c0b00ce137806",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178374df698828c0b00ce137806",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Phase Fatale",
+    "popularity": 23,
+    "type": "artist",
+    "uri": "spotify:artist:1jjplgZcgCwhU7JlGhBQiw"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:02:10.460898",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1U0FaHAc4fcwQcYEJFgkm9"
+    },
+    "followers": {
+      "href": null,
+      "total": 183487
+    },
+    "genres": [
+      "post-rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1U0FaHAc4fcwQcYEJFgkm9",
+    "id": "1U0FaHAc4fcwQcYEJFgkm9",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb79ae7fc26defca3ca2d11906",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517479ae7fc26defca3ca2d11906",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17879ae7fc26defca3ca2d11906",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Balmorhea",
+    "popularity": 47,
+    "type": "artist",
+    "uri": "spotify:artist:1U0FaHAc4fcwQcYEJFgkm9"
+  }
+}

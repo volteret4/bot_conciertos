@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:47:53.158442",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3WggbHDpj4rPKbL97zG5MQ"
+    },
+    "followers": {
+      "href": null,
+      "total": 156231
+    },
+    "genres": [
+      "post-rock",
+      "math rock",
+      "krautrock",
+      "slowcore"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3WggbHDpj4rPKbL97zG5MQ",
+    "id": "3WggbHDpj4rPKbL97zG5MQ",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb65930d5d33164e03e26c0978",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517465930d5d33164e03e26c0978",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17865930d5d33164e03e26c0978",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Tortoise",
+    "popularity": 41,
+    "type": "artist",
+    "uri": "spotify:artist:3WggbHDpj4rPKbL97zG5MQ"
+  }
+}

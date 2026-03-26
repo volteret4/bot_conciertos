@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-10-23T17:51:07.328363",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3iNrNJ38T7OEaI1UofQcIB"
+    },
+    "followers": {
+      "href": null,
+      "total": 98041
+    },
+    "genres": [
+      "flamenco",
+      "flamenco pop",
+      "flamenco urbano"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3iNrNJ38T7OEaI1UofQcIB",
+    "id": "3iNrNJ38T7OEaI1UofQcIB",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eba5a0e0ae54399f25776995e0",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174a5a0e0ae54399f25776995e0",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178a5a0e0ae54399f25776995e0",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "La Plazuela",
+    "popularity": 43,
+    "type": "artist",
+    "uri": "spotify:artist:3iNrNJ38T7OEaI1UofQcIB"
+  }
+}

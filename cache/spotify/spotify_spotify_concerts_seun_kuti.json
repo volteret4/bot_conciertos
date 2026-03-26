@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-24T09:11:36.666281",
+  "data": [
+    {
+      "artist": "Seun Kuti",
+      "artist_name": "Seun Kuti",
+      "name": "Seun Kuti at Cella Monte",
+      "venue": "Cella Monte",
+      "city": "Cella Monte",
+      "country": "IT",
+      "date": "2025-08-27",
+      "time": "2:00 PM",
+      "url": "https://open.spotify.com/concert/3l0kTez58bpNEyZ5SfDoSe",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Seun Kuti",
+      "artist_name": "Seun Kuti",
+      "name": "Seun Kuti Concert (2nrAHtmh)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/2nrAHtmhPZH2Y8KMaswqeJ",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Seun Kuti",
+      "artist_name": "Seun Kuti",
+      "name": "Seun Kuti at Grande Halle de la Villette",
+      "venue": "Grande Halle de la Villette",
+      "city": "PARIS",
+      "country": "FR",
+      "date": "2025-08-28",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/7uBS6FoiAEGMXkESES9TL0",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Seun Kuti",
+      "artist_name": "Seun Kuti",
+      "name": "Seun Kuti Concert (4kH43Rw6)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/4kH43Rw6ayNeda9j9nPh5y",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Seun Kuti",
+      "artist_name": "Seun Kuti",
+      "name": "Seun Kuti at Parker Lennon",
+      "venue": "Parker Lennon",
+      "city": "Bologna",
+      "country": "IT",
+      "date": "2025-08-29",
+      "time": "9:00 PM",
+      "url": "https://open.spotify.com/concert/0COC8GlbFcFc0KmeSOAj7L",
+      "source": "Spotify"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:03:15.449430",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1oSPZhvZMIrWW5I41kPkkY"
+    },
+    "followers": {
+      "href": null,
+      "total": 10856490
+    },
+    "genres": [
+      "k-pop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1oSPZhvZMIrWW5I41kPkkY",
+    "id": "1oSPZhvZMIrWW5I41kPkkY",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebcb08296cca5a2d197caabb79",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174cb08296cca5a2d197caabb79",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178cb08296cca5a2d197caabb79",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Jimin",
+    "popularity": 79,
+    "type": "artist",
+    "uri": "spotify:artist:1oSPZhvZMIrWW5I41kPkkY"
+  }
+}

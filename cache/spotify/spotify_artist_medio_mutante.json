@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T20:04:41.144333",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5RMu0ad6XhMpx0Sb4oArx9"
+    },
+    "followers": {
+      "href": null,
+      "total": 15654
+    },
+    "genres": [
+      "cold wave",
+      "darkwave",
+      "electroclash",
+      "post-punk",
+      "synthpop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5RMu0ad6XhMpx0Sb4oArx9",
+    "id": "5RMu0ad6XhMpx0Sb4oArx9",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebb138e318d8b99d1da477f648",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174b138e318d8b99d1da477f648",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178b138e318d8b99d1da477f648",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Medio Mutante",
+    "popularity": 20,
+    "type": "artist",
+    "uri": "spotify:artist:5RMu0ad6XhMpx0Sb4oArx9"
+  }
+}

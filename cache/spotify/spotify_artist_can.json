@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:59:30.642412",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1wGIhYkKWSq4yACtTkCkSX"
+    },
+    "followers": {
+      "href": null,
+      "total": 16376263
+    },
+    "genres": [
+      "latin hip hop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1wGIhYkKWSq4yACtTkCkSX",
+    "id": "1wGIhYkKWSq4yACtTkCkSX",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eba91405d63c939682e4efdcbc",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174a91405d63c939682e4efdcbc",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178a91405d63c939682e4efdcbc",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Canserbero",
+    "popularity": 73,
+    "type": "artist",
+    "uri": "spotify:artist:1wGIhYkKWSq4yACtTkCkSX"
+  }
+}

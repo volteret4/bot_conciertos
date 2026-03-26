@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:04:00.722636",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4uiuj3kqeIHmTH87B7VMnr"
+    },
+    "followers": {
+      "href": null,
+      "total": 32056
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/4uiuj3kqeIHmTH87B7VMnr",
+    "id": "4uiuj3kqeIHmTH87B7VMnr",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb20aacee54a0d68c0d4ce3619",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517420aacee54a0d68c0d4ce3619",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17820aacee54a0d68c0d4ce3619",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Los Enemigos",
+    "popularity": 30,
+    "type": "artist",
+    "uri": "spotify:artist:4uiuj3kqeIHmTH87B7VMnr"
+  }
+}

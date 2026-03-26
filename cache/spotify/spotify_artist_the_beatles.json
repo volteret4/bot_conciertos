@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:05:03.931218",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2"
+    },
+    "followers": {
+      "href": null,
+      "total": 30731465
+    },
+    "genres": [
+      "classic rock",
+      "psychedelic rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3WrFJ7ztbogyGnTHbHJFl2",
+    "id": "3WrFJ7ztbogyGnTHbHJFl2",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebe9348cc01ff5d55971b22433",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174e9348cc01ff5d55971b22433",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178e9348cc01ff5d55971b22433",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "The Beatles",
+    "popularity": 83,
+    "type": "artist",
+    "uri": "spotify:artist:3WrFJ7ztbogyGnTHbHJFl2"
+  }
+}

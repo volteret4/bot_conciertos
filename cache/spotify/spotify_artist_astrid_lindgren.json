@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:55:56.679191",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3MDsnjqnEd5TJaYsuacX1I"
+    },
+    "followers": {
+      "href": null,
+      "total": 75183
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/3MDsnjqnEd5TJaYsuacX1I",
+    "id": "3MDsnjqnEd5TJaYsuacX1I",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb118b1b41e6040555fe3a0f6b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174118b1b41e6040555fe3a0f6b",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178118b1b41e6040555fe3a0f6b",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Astrid Lindgren",
+    "popularity": 59,
+    "type": "artist",
+    "uri": "spotify:artist:3MDsnjqnEd5TJaYsuacX1I"
+  }
+}

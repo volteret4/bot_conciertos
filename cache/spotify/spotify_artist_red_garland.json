@@ -1,0 +1,46 @@
+{
+  "timestamp": "2025-11-03T19:57:41.059176",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/35iymrFS4VnsKn35ebHKX9"
+    },
+    "followers": {
+      "href": null,
+      "total": 72405
+    },
+    "genres": [
+      "jazz",
+      "hard bop",
+      "cool jazz",
+      "bebop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/35iymrFS4VnsKn35ebHKX9",
+    "id": "35iymrFS4VnsKn35ebHKX9",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/d2eb2b8d27ed067ff0a649c74d280a04446d7211",
+        "height": 1151,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/dd5c21173bc998548a20343ca189adc300ad6a66",
+        "height": 737,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/0b399a318feadaa400a3ae3eb274fe395c370191",
+        "height": 230,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/64c6305f23cee4433f2898095e76705e41b248d2",
+        "height": 74,
+        "width": 64
+      }
+    ],
+    "name": "Red Garland",
+    "popularity": 50,
+    "type": "artist",
+    "uri": "spotify:artist:35iymrFS4VnsKn35ebHKX9"
+  }
+}

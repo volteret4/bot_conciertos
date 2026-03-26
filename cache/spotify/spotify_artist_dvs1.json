@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:00:12.142248",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2xrOogbM0l6NzOSp4zZ3IP"
+    },
+    "followers": {
+      "href": null,
+      "total": 45841
+    },
+    "genres": [
+      "minimal techno",
+      "dub techno"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2xrOogbM0l6NzOSp4zZ3IP",
+    "id": "2xrOogbM0l6NzOSp4zZ3IP",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2733649bc28dda3847d71082928",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e023649bc28dda3847d71082928",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048513649bc28dda3847d71082928",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "DVS1",
+    "popularity": 25,
+    "type": "artist",
+    "uri": "spotify:artist:2xrOogbM0l6NzOSp4zZ3IP"
+  }
+}

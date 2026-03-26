@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:59:20.946490",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/08GQAI4eElDnROBrJRGE0X"
+    },
+    "followers": {
+      "href": null,
+      "total": 13982790
+    },
+    "genres": [
+      "classic rock",
+      "yacht rock",
+      "soft rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/08GQAI4eElDnROBrJRGE0X",
+    "id": "08GQAI4eElDnROBrJRGE0X",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebc8752dd511cda8c31e9daee8",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174c8752dd511cda8c31e9daee8",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178c8752dd511cda8c31e9daee8",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Fleetwood Mac",
+    "popularity": 83,
+    "type": "artist",
+    "uri": "spotify:artist:08GQAI4eElDnROBrJRGE0X"
+  }
+}

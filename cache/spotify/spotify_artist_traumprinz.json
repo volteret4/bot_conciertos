@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-11-03T19:47:54.617767",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7AOdp2CXbaCubZirZQRz6z"
+    },
+    "followers": {
+      "href": null,
+      "total": 10317
+    },
+    "genres": [
+      "dub techno"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7AOdp2CXbaCubZirZQRz6z",
+    "id": "7AOdp2CXbaCubZirZQRz6z",
+    "images": [],
+    "name": "Traumprinz",
+    "popularity": 18,
+    "type": "artist",
+    "uri": "spotify:artist:7AOdp2CXbaCubZirZQRz6z"
+  }
+}

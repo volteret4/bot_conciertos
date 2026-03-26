@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T19:49:54.261898",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2dTieljE0C4ydCdUPIPLRW"
+    },
+    "followers": {
+      "href": null,
+      "total": 4806
+    },
+    "genres": [
+      "folklore argentino",
+      "latin folklore",
+      "tango",
+      "villancicos",
+      "folclor andino"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2dTieljE0C4ydCdUPIPLRW",
+    "id": "2dTieljE0C4ydCdUPIPLRW",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273f3db92b487f131ddc5168f60",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02f3db92b487f131ddc5168f60",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851f3db92b487f131ddc5168f60",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Ariel Ramírez",
+    "popularity": 42,
+    "type": "artist",
+    "uri": "spotify:artist:2dTieljE0C4ydCdUPIPLRW"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:50:00.183204",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4aa8e2k6EG6znuh0Iew4IN"
+    },
+    "followers": {
+      "href": null,
+      "total": 3196
+    },
+    "genres": [
+      "ambient"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4aa8e2k6EG6znuh0Iew4IN",
+    "id": "4aa8e2k6EG6znuh0Iew4IN",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2738c7af18f0b37e86b8fb7c595",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e028c7af18f0b37e86b8fb7c595",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048518c7af18f0b37e86b8fb7c595",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Vito Ricci",
+    "popularity": 10,
+    "type": "artist",
+    "uri": "spotify:artist:4aa8e2k6EG6znuh0Iew4IN"
+  }
+}

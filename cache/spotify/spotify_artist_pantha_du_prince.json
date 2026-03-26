@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:49:16.723859",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7Go2Fj2YWEQkYBqTVQArYi"
+    },
+    "followers": {
+      "href": null,
+      "total": 111022
+    },
+    "genres": [
+      "minimal techno",
+      "idm"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7Go2Fj2YWEQkYBqTVQArYi",
+    "id": "7Go2Fj2YWEQkYBqTVQArYi",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb6770b20162cc13f9a58d20ef",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051746770b20162cc13f9a58d20ef",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1786770b20162cc13f9a58d20ef",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Pantha Du Prince",
+    "popularity": 28,
+    "type": "artist",
+    "uri": "spotify:artist:7Go2Fj2YWEQkYBqTVQArYi"
+  }
+}

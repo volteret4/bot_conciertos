@@ -1,0 +1,57 @@
+{
+  "timestamp": "2025-10-23T17:13:05.065987",
+  "concerts": [
+    {
+      "artist": "BT",
+      "name": "BT Kingsley",
+      "venue": "Oxnard Levity Live",
+      "city": "Oxnard",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-10-25",
+      "time": "18:00:00",
+      "url": "https://www.ticketweb.com/event/bt-kingsley-oxnard-levity-live-tickets/14553653",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1Af4K_K"
+    },
+    {
+      "artist": "BT",
+      "name": "BT Kingsley",
+      "venue": "Oxnard Levity Live",
+      "city": "Oxnard",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-10-25",
+      "time": "20:30:00",
+      "url": "https://www.ticketweb.com/event/bt-kingsley-oxnard-levity-live-tickets/14553673",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1Af4K_S"
+    },
+    {
+      "artist": "BT",
+      "name": "BT Kingsley",
+      "venue": "Oxnard Levity Live",
+      "city": "Oxnard",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-10-26",
+      "time": "18:00:00",
+      "url": "https://www.ticketweb.com/event/bt-kingsley-oxnard-levity-live-tickets/14553663",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1Af4K_N"
+    },
+    {
+      "artist": "BT",
+      "name": "Test Event - Do Not Purchase (BT Hybrid)",
+      "venue": "CPH Ireland",
+      "city": "Dublin",
+      "country": "Ireland",
+      "country_code": "IE",
+      "date": "2026-09-22",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.ie/test-event-do-not-purchase-bt-dublin-22-09-2026/event/180058B5A87F0AD0",
+      "source": "Ticketmaster",
+      "id": "17kZvbG65pILYl8"
+    }
+  ]
+}

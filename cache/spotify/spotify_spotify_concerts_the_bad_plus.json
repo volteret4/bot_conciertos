@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-25T09:29:50.397595",
+  "data": [
+    {
+      "artist": "The Bad Plus",
+      "artist_name": "The Bad Plus",
+      "name": "The Bad Plus at The Alluvion",
+      "venue": "The Alluvion",
+      "city": "Traverse City",
+      "country": "US",
+      "date": "2025-10-18",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/4XuvkW4g1nJYhT45QmUU0n",
+      "source": "Spotify"
+    },
+    {
+      "artist": "The Bad Plus",
+      "artist_name": "The Bad Plus",
+      "name": "The Bad Plus Concert (6gKqhEbI)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/6gKqhEbIUMSrkRAvEP1VZT",
+      "source": "Spotify"
+    },
+    {
+      "artist": "The Bad Plus",
+      "artist_name": "The Bad Plus",
+      "name": "The Bad Plus at Atwood Music Hall",
+      "venue": "Atwood Music Hall",
+      "city": "Madison",
+      "country": "US",
+      "date": "2025-10-22",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/1yRqvTt51ycZQSrWq9KSxt",
+      "source": "Spotify"
+    },
+    {
+      "artist": "The Bad Plus",
+      "artist_name": "The Bad Plus",
+      "name": "The Bad Plus at Vivarium",
+      "venue": "Vivarium",
+      "city": "Milwaukee",
+      "country": "US",
+      "date": "2025-10-23",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/08qTJYyZOhxCIBDHMXOWUC",
+      "source": "Spotify"
+    },
+    {
+      "artist": "The Bad Plus",
+      "artist_name": "The Bad Plus",
+      "name": "The Bad Plus at Constellation",
+      "venue": "Constellation",
+      "city": "Chicago",
+      "country": "US",
+      "date": "2025-10-24",
+      "time": "8:30 PM",
+      "url": "https://open.spotify.com/concert/12vz7mGk8CkDgV1IDVhgth",
+      "source": "Spotify"
+    }
+  ]
+}

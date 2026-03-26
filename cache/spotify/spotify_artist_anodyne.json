@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:01:48.779522",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/46HAZTDJXaXL5dS9D5Jlwp"
+    },
+    "followers": {
+      "href": null,
+      "total": 1242
+    },
+    "genres": [
+      "idm",
+      "glitch"
+    ],
+    "href": "https://api.spotify.com/v1/artists/46HAZTDJXaXL5dS9D5Jlwp",
+    "id": "46HAZTDJXaXL5dS9D5Jlwp",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebbcf084ed132bdc1fdaad1e18",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174bcf084ed132bdc1fdaad1e18",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178bcf084ed132bdc1fdaad1e18",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Anodyne",
+    "popularity": 2,
+    "type": "artist",
+    "uri": "spotify:artist:46HAZTDJXaXL5dS9D5Jlwp"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-10-23T20:56:32.783196",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1LoZxxInSyuVFKSMAB4BPl"
+    },
+    "followers": {
+      "href": null,
+      "total": 30440
+    },
+    "genres": [
+      "dub techno",
+      "idm"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1LoZxxInSyuVFKSMAB4BPl",
+    "id": "1LoZxxInSyuVFKSMAB4BPl",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb158da9891e116a55ea93834f",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174158da9891e116a55ea93834f",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178158da9891e116a55ea93834f",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "DJ Python",
+    "popularity": 31,
+    "type": "artist",
+    "uri": "spotify:artist:1LoZxxInSyuVFKSMAB4BPl"
+  }
+}

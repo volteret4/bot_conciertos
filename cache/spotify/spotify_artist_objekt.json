@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:55:15.112910",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/44z1nVVXZE8d4njcQmQLWc"
+    },
+    "followers": {
+      "href": null,
+      "total": 51661
+    },
+    "genres": [
+      "idm",
+      "breakbeat"
+    ],
+    "href": "https://api.spotify.com/v1/artists/44z1nVVXZE8d4njcQmQLWc",
+    "id": "44z1nVVXZE8d4njcQmQLWc",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebe2d77385e1d818300405421c",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174e2d77385e1d818300405421c",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178e2d77385e1d818300405421c",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Objekt",
+    "popularity": 23,
+    "type": "artist",
+    "uri": "spotify:artist:44z1nVVXZE8d4njcQmQLWc"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-10-23T17:07:13.493719",
+  "concerts": [
+    {
+      "artist": "Elvis Presley",
+      "name": "An Evening with Priscilla Presley - Life After Elvis",
+      "venue": "Bruce Mason Centre",
+      "city": "Takapuna Beach",
+      "country": "New Zealand",
+      "country_code": "NZ",
+      "date": "2025-11-20",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.co.nz/an-evening-with-priscilla-presley-life-takapuna-beach-20-11-2025/event/240063158D600D69",
+      "source": "Ticketmaster",
+      "id": "1kaZvNAbGAubZgt"
+    },
+    {
+      "artist": "Elvis Presley",
+      "name": "Elvis' 91st \"Birthday Bash featuring From Austria  Dennis Jale  Lead Vocals with The TCB Band   Members & Guests Glen D. Hardin, Terry Blackwood, Larry Strickland, Boh Carter, Paul Leim, Donna & Craig Morris, Larry Hall, Mike Brignardello, Kerry Marx, The Holladay Sisters , Bobby Ogdin with Special Guests Jillian Cardarelli ,  Deborah Allen, Thomas Gabriel Hosted by Donna Presley",
+      "venue": "3rd and Lindsley",
+      "city": "Nashville",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-01-09",
+      "time": "19:00:00",
+      "url": "https://www.ticketweb.com/event/elvis-91st-birthday-bash-dennis-3rd-and-lindsley-tickets/14532783",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1Affwrd"
+    }
+  ]
+}

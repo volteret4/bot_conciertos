@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:58:59.745734",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/13ccXrK7AmXb4TddMkE7jy"
+    },
+    "followers": {
+      "href": null,
+      "total": 433004
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/13ccXrK7AmXb4TddMkE7jy",
+    "id": "13ccXrK7AmXb4TddMkE7jy",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb48b022c3b26b9d1e82a32b3a",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517448b022c3b26b9d1e82a32b3a",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17848b022c3b26b9d1e82a32b3a",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Everything But The Girl",
+    "popularity": 60,
+    "type": "artist",
+    "uri": "spotify:artist:13ccXrK7AmXb4TddMkE7jy"
+  }
+}

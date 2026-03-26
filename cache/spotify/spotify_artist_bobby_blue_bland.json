@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T20:00:41.824634",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/48nwxUvPJZkm8uPa7xMzmj"
+    },
+    "followers": {
+      "href": null,
+      "total": 179074
+    },
+    "genres": [
+      "blues",
+      "soul blues",
+      "classic blues",
+      "soul",
+      "classic soul"
+    ],
+    "href": "https://api.spotify.com/v1/artists/48nwxUvPJZkm8uPa7xMzmj",
+    "id": "48nwxUvPJZkm8uPa7xMzmj",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/7a3cfae4df22dcd8b4cce106108d5171761095ba",
+        "height": 406,
+        "width": 466
+      },
+      {
+        "url": "https://i.scdn.co/image/ddc2e61c94af610b20c2862f6d6b31f9272edd31",
+        "height": 174,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/4d3f3a96066c6afac23ef27788f99c8753e9164d",
+        "height": 56,
+        "width": 64
+      }
+    ],
+    "name": "Bobby \"Blue\" Bland",
+    "popularity": 49,
+    "type": "artist",
+    "uri": "spotify:artist:48nwxUvPJZkm8uPa7xMzmj"
+  }
+}

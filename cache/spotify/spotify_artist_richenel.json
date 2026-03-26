@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:50:00.745564",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4qCqydJrYlIMV6hBsGmNAA"
+    },
+    "followers": {
+      "href": null,
+      "total": 5005
+    },
+    "genres": [
+      "nederpop",
+      "boogie"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4qCqydJrYlIMV6hBsGmNAA",
+    "id": "4qCqydJrYlIMV6hBsGmNAA",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2736ac588b8d7b31824def3f5ff",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e026ac588b8d7b31824def3f5ff",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048516ac588b8d7b31824def3f5ff",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Richenel",
+    "popularity": 19,
+    "type": "artist",
+    "uri": "spotify:artist:4qCqydJrYlIMV6hBsGmNAA"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-10-23T17:07:18.231479",
+  "concerts": [
+    {
+      "artist": "Tito Puente",
+      "name": "Tito Puente JR",
+      "venue": "Ludlow Garage Cincinnati",
+      "city": "Cincinnati",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-07",
+      "time": "19:30:00",
+      "url": "https://www.ticketmaster.com/tito-puente-jr-cincinnati-ohio-11-07-2025/event/160062BAB1E423CF",
+      "source": "Ticketmaster",
+      "id": "17AOvxG65nsye22"
+    },
+    {
+      "artist": "Tito Puente",
+      "name": "Tito Puente Jr. and his Latin Jazz Ensemble",
+      "venue": "Blue Note Jazz Club",
+      "city": "New York",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-22",
+      "time": "12:30:00",
+      "url": "https://www.ticketweb.com/event/tito-puente-jr-and-his-blue-note-jazz-club-tickets/13804084",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AKO7e7"
+    },
+    {
+      "artist": "Tito Puente",
+      "name": "Tito Puente Jr. and his Latin Jazz Ensemble",
+      "venue": "Blue Note Jazz Club",
+      "city": "New York",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-22",
+      "time": "14:30:00",
+      "url": "https://www.ticketweb.com/event/tito-puente-jr-and-his-blue-note-jazz-club-tickets/13804094",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AKO7ef"
+    }
+  ]
+}

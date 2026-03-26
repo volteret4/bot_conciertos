@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:59:07.185040",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/00WeoVQbYetdrq9rbkVoLj"
+    },
+    "followers": {
+      "href": null,
+      "total": 26699
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/00WeoVQbYetdrq9rbkVoLj",
+    "id": "00WeoVQbYetdrq9rbkVoLj",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273ddad47b8ed3402b7ec3ee048",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02ddad47b8ed3402b7ec3ee048",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851ddad47b8ed3402b7ec3ee048",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Exuma",
+    "popularity": 25,
+    "type": "artist",
+    "uri": "spotify:artist:00WeoVQbYetdrq9rbkVoLj"
+  }
+}

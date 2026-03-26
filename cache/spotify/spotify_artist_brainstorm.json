@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T20:00:58.569146",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6IlOclSCHgJ9Aix6QEktkO"
+    },
+    "followers": {
+      "href": null,
+      "total": 31632
+    },
+    "genres": [
+      "power metal",
+      "heavy metal",
+      "metal"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6IlOclSCHgJ9Aix6QEktkO",
+    "id": "6IlOclSCHgJ9Aix6QEktkO",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebdf5101fb0b82a947c57e6a04",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174df5101fb0b82a947c57e6a04",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178df5101fb0b82a947c57e6a04",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Brainstorm",
+    "popularity": 29,
+    "type": "artist",
+    "uri": "spotify:artist:6IlOclSCHgJ9Aix6QEktkO"
+  }
+}

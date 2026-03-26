@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-10-23T17:08:13.986272",
+  "concerts": [
+    {
+      "artist": "Genesis Owusu",
+      "name": "Harvest Rock 2025 - General Admission - 2 Day Pass",
+      "venue": "Murlawirrapurka and Ityamai-Itpina/Rymill and King Rodney Parks",
+      "city": "Adelaide",
+      "country": "Australia",
+      "country_code": "AU",
+      "date": "2025-10-25",
+      "time": "",
+      "url": "https://www.ticketmaster.com.au/harvest-rock-2025-general-admission-2-adelaide-25-10-2025/event/2500630BD5A414E3",
+      "source": "Ticketmaster",
+      "id": "1AefZbYGkR4tvKN"
+    },
+    {
+      "artist": "Genesis Owusu",
+      "name": "Harvest Rock 2025 - General Admission",
+      "venue": "Murlawirrapurka and Ityamai-Itpina/Rymill and King Rodney Parks",
+      "city": "Adelaide",
+      "country": "Australia",
+      "country_code": "AU",
+      "date": "2025-10-25",
+      "time": "11:00:00",
+      "url": "https://www.ticketmaster.com.au/harvest-rock-2025-general-admission-adelaide-25-10-2025/event/2500630BD5BB14E9",
+      "source": "Ticketmaster",
+      "id": "1AefZbYGkR4msKt"
+    }
+  ]
+}

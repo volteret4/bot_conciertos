@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T19:47:24.715476",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1WRM9i067hd2ujxxi8FI3m"
+    },
+    "followers": {
+      "href": null,
+      "total": 1821797
+    },
+    "genres": [
+      "classic rock",
+      "acid rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1WRM9i067hd2ujxxi8FI3m",
+    "id": "1WRM9i067hd2ujxxi8FI3m",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/8208d86ed91c50bc9ffbf8f436c6e323e6bda480",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/e7f03ec842ea8390a79b577557751a96502512a6",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ff45518ba53ce6709c177b946a36938619f10aec",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/4d9f763b4d854a8c3a0d263d55be88ed02acfdd3",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Steppenwolf",
+    "popularity": 59,
+    "type": "artist",
+    "uri": "spotify:artist:1WRM9i067hd2ujxxi8FI3m"
+  }
+}

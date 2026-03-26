@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-21T09:57:21.836313",
+  "data": [
+    {
+      "artist": "Spiritualized",
+      "artist_name": "Spiritualized",
+      "name": "Spiritualized at Kings Theatre",
+      "venue": "Kings Theatre",
+      "city": "Brooklyn",
+      "country": "US",
+      "date": "2025-09-25",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/1Hrf1OmjnarGPz0nAaywH5",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Spiritualized",
+      "artist_name": "Spiritualized",
+      "name": "Spiritualized at Orpheum Theatre",
+      "venue": "Orpheum Theatre",
+      "city": "Los Angeles",
+      "country": "US",
+      "date": "2025-09-28",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/1d9dhVae2ACnNCcOroou3P",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Spiritualized",
+      "artist_name": "Spiritualized",
+      "name": "Spiritualized at Worthing Assembly Hall",
+      "venue": "Worthing Assembly Hall",
+      "city": "Worthing",
+      "country": "MH",
+      "date": "2025-10-22",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/3ChuF9jewEuA7ImGCr39if",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Spiritualized",
+      "artist_name": "Spiritualized",
+      "name": "Spiritualized at Foro Indierocks!",
+      "venue": "Foro Indierocks!",
+      "city": "Mexico",
+      "country": "MX",
+      "date": "2025-11-01",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/3CCOAGiZDqsa1Uv25uHIf1",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Spiritualized",
+      "artist_name": "Spiritualized",
+      "name": "Spiritualized at Teatro Regio",
+      "venue": "Teatro Regio",
+      "city": "Parma",
+      "country": "IT",
+      "date": "2025-11-15",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/3DN76TYJMNoEoSi5SMslj4",
+      "source": "Spotify"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-24T08:37:36.586207",
+  "data": [
+    {
+      "artist": "Guru Guru",
+      "artist_name": "Guru Guru",
+      "name": "Guru Guru Concert (6oA5g5Yx)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/6oA5g5YxNdsjRotCvgpJ0S",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Guru Guru",
+      "artist_name": "Guru Guru",
+      "name": "Guru Guru Concert (0AMAE0MC)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/0AMAE0MCTr0NqwyOkT2nPn",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Guru Guru",
+      "artist_name": "Guru Guru",
+      "name": "Guru Guru Concert (74eKDC2z)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/74eKDC2zI3ttpuXjMQKfQx",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Guru Guru",
+      "artist_name": "Guru Guru",
+      "name": "Guru Guru at Lindenkeller",
+      "venue": "Lindenkeller",
+      "city": "Freising",
+      "country": "DE",
+      "date": "2025-11-22",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/2W7JeVe560T3UdTwSgxrQb",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Guru Guru",
+      "artist_name": "Guru Guru",
+      "name": "Guru Guru Concert (6swPjX1h)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/6swPjX1hwhZlexE82VJPwf",
+      "source": "Spotify"
+    }
+  ]
+}

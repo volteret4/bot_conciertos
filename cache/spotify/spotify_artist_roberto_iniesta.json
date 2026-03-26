@@ -1,0 +1,20 @@
+{
+  "timestamp": "2025-10-23T17:51:54.109780",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6RBvfqTS8ig5KQnHB5ddy9"
+    },
+    "followers": {
+      "href": null,
+      "total": 2161
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/6RBvfqTS8ig5KQnHB5ddy9",
+    "id": "6RBvfqTS8ig5KQnHB5ddy9",
+    "images": [],
+    "name": "Roberto Iniesta",
+    "popularity": 23,
+    "type": "artist",
+    "uri": "spotify:artist:6RBvfqTS8ig5KQnHB5ddy9"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:04:47.235447",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0N1TIXCk9Q9JbEPXQDclEL"
+    },
+    "followers": {
+      "href": null,
+      "total": 177903
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/0N1TIXCk9Q9JbEPXQDclEL",
+    "id": "0N1TIXCk9Q9JbEPXQDclEL",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb8a55ff57ba3b97bf716af16f",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051748a55ff57ba3b97bf716af16f",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1788a55ff57ba3b97bf716af16f",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Los Planetas",
+    "popularity": 46,
+    "type": "artist",
+    "uri": "spotify:artist:0N1TIXCk9Q9JbEPXQDclEL"
+  }
+}

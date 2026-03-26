@@ -1,0 +1,20 @@
+{
+  "timestamp": "2025-10-23T17:55:14.645514",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4SAfqdANVfJPZssMMnuTdd"
+    },
+    "followers": {
+      "href": null,
+      "total": 23
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/4SAfqdANVfJPZssMMnuTdd",
+    "id": "4SAfqdANVfJPZssMMnuTdd",
+    "images": [],
+    "name": "Bob Blank",
+    "popularity": 0,
+    "type": "artist",
+    "uri": "spotify:artist:4SAfqdANVfJPZssMMnuTdd"
+  }
+}

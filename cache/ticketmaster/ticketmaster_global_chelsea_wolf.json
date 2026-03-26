@@ -1,0 +1,53 @@
+{
+  "timestamp": "2025-09-02T08:18:20.539488",
+  "concerts": [
+    {
+      "artist": "Chelsea Wolf",
+      "name": "2-Day Ticket - Soundside Music Festival",
+      "venue": "Soundside Music Festival at Seaside Park",
+      "city": "Bridgeport ",
+      "country": "US",
+      "date": "2025-09-27",
+      "time": "",
+      "url": "https://www.ticketmaster.com/2day-ticket-soundside-music-festival-bridgeport-connecticut-09-27-2025/event/1D00627912ED3544",
+      "source": "Ticketmaster",
+      "id": "G5vVZbE03DK47"
+    },
+    {
+      "artist": "Chelsea Wolf",
+      "name": "Sunday Ticket - Soundside Music Festival",
+      "venue": "Soundside Music Festival at Seaside Park",
+      "city": "Bridgeport ",
+      "country": "US",
+      "date": "2025-09-28",
+      "time": "11:45:00",
+      "url": "https://www.ticketmaster.com/sunday-ticket-soundside-music-festival-bridgeport-connecticut-09-28-2025/event/1D00627921AE3716",
+      "source": "Ticketmaster",
+      "id": "G5vVZbE0-lNjp"
+    },
+    {
+      "artist": "Chelsea Wolf",
+      "name": "All Things Go Music Festival - 2 DAY PASS: Renee Rapp, Kacey Musgraves",
+      "venue": "Budweiser Stage",
+      "city": "Toronto",
+      "country": "CA",
+      "date": "2025-10-04",
+      "time": "",
+      "url": "https://www.ticketmaster.ca/all-things-go-music-festival-2-toronto-ontario-10-04-2025/event/100062CBDE2B4281",
+      "source": "Ticketmaster",
+      "id": "177ZvxG6GRr1V1v"
+    },
+    {
+      "artist": "Chelsea Wolf",
+      "name": "All Things Go Music Festival - SATURDAY: Renee Rapp, Remi Wolf & more",
+      "venue": "Budweiser Stage",
+      "city": "Toronto",
+      "country": "CA",
+      "date": "2025-10-04",
+      "time": "12:30:00",
+      "url": "https://www.ticketmaster.ca/all-things-go-music-festival-saturday-toronto-ontario-10-04-2025/event/100062CBDE284264",
+      "source": "Ticketmaster",
+      "id": "177ZvxG6GRr17a0"
+    }
+  ]
+}

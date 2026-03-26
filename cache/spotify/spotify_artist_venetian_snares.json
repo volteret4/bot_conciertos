@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T20:02:32.778105",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7eKIP3IoPoUAZgZuvMM6hf"
+    },
+    "followers": {
+      "href": null,
+      "total": 140201
+    },
+    "genres": [
+      "breakcore",
+      "idm",
+      "glitch",
+      "speedcore",
+      "hardcore techno",
+      "jungle",
+      "breakbeat"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7eKIP3IoPoUAZgZuvMM6hf",
+    "id": "7eKIP3IoPoUAZgZuvMM6hf",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebf5ea7fe5822b33f0d6f1cf19",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174f5ea7fe5822b33f0d6f1cf19",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178f5ea7fe5822b33f0d6f1cf19",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Venetian Snares",
+    "popularity": 35,
+    "type": "artist",
+    "uri": "spotify:artist:7eKIP3IoPoUAZgZuvMM6hf"
+  }
+}

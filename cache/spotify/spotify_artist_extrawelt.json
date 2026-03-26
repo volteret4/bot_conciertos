@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:59:00.697410",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3VRvi42U8SsiT4YKP5LNCB"
+    },
+    "followers": {
+      "href": null,
+      "total": 163781
+    },
+    "genres": [
+      "minimal techno"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3VRvi42U8SsiT4YKP5LNCB",
+    "id": "3VRvi42U8SsiT4YKP5LNCB",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebf193f0b654d3a3c560e20d0a",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174f193f0b654d3a3c560e20d0a",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178f193f0b654d3a3c560e20d0a",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Extrawelt",
+    "popularity": 36,
+    "type": "artist",
+    "uri": "spotify:artist:3VRvi42U8SsiT4YKP5LNCB"
+  }
+}

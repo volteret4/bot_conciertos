@@ -1,0 +1,20 @@
+{
+  "timestamp": "2025-11-03T19:48:40.065920",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2fZWxCjysg2ycaHitvGNIv"
+    },
+    "followers": {
+      "href": null,
+      "total": 7
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/2fZWxCjysg2ycaHitvGNIv",
+    "id": "2fZWxCjysg2ycaHitvGNIv",
+    "images": [],
+    "name": "Servicio Al Cliente",
+    "popularity": 0,
+    "type": "artist",
+    "uri": "spotify:artist:2fZWxCjysg2ycaHitvGNIv"
+  }
+}

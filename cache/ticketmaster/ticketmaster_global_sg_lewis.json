@@ -1,0 +1,70 @@
+{
+  "timestamp": "2025-10-23T17:06:08.131655",
+  "concerts": [
+    {
+      "artist": "SG Lewis",
+      "name": "SG Lewis (Live) | Anemoia [Live Tour] 2025",
+      "venue": "170 Russell",
+      "city": "Melbourne",
+      "country": "Australia",
+      "country_code": "AU",
+      "date": "2025-11-16",
+      "time": "19:30:00",
+      "url": "https://www.moshtix.com.au/v2/event/sg-lewis-live-anemoia-live-tour-2025/185750",
+      "source": "Ticketmaster",
+      "id": "ZFwVzcymWZ17kAq8"
+    },
+    {
+      "artist": "SG Lewis",
+      "name": "Rüfüs Du Sol - Inhale/Exhale World Tour",
+      "venue": "The Outer Fields at Western Springs",
+      "city": "Western Springs",
+      "country": "New Zealand",
+      "country_code": "NZ",
+      "date": "2025-11-29",
+      "time": "18:30:00",
+      "url": "https://www.ticketmaster.co.nz/rufus-du-sol-inhaleexhale-world-tour-western-springs-29-11-2025/event/2400614FF8B7281F",
+      "source": "Ticketmaster",
+      "id": "1Ae8ZbfGkTzcwOL"
+    },
+    {
+      "artist": "SG Lewis",
+      "name": "SG Lewis",
+      "venue": "O2 Academy Brixton",
+      "city": "London",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2025-12-05",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.co.uk/sg-lewis-london-05-12-2025/event/3E00630FEC1C18F8",
+      "source": "Ticketmaster",
+      "id": "G5dzZbYTi6vNz"
+    },
+    {
+      "artist": "SG Lewis",
+      "name": "SG Lewis",
+      "venue": "O2 Ritz Manchester",
+      "city": "Manchester",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2025-12-12",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.co.uk/sg-lewis-manchester-12-12-2025/event/3E00630EA8171A41",
+      "source": "Ticketmaster",
+      "id": "G5dzZbYBIAstv"
+    },
+    {
+      "artist": "SG Lewis",
+      "name": "SG Lewis",
+      "venue": "O2 Academy Bristol",
+      "city": "Bristol",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2025-12-13",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.co.uk/sg-lewis-bristol-13-12-2025/event/3E00630FC822145E",
+      "source": "Ticketmaster",
+      "id": "G5dzZbYTFF-or"
+    }
+  ]
+}

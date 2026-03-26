@@ -1,0 +1,45 @@
+{
+  "timestamp": "2025-11-03T19:55:47.147853",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6sd3qv6kReAdo6WsLBtXX4"
+    },
+    "followers": {
+      "href": null,
+      "total": 68768
+    },
+    "genres": [
+      "ambient",
+      "drone",
+      "new age"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6sd3qv6kReAdo6WsLBtXX4",
+    "id": "6sd3qv6kReAdo6WsLBtXX4",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/3a176f954a08e614bcac1c1fe673af6351dc4970",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/6d119f6242151ce90e6140686a43ebe2075d2334",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/e3abe13c2ec3ede54b385e499281a7ca4b96adf4",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/5c923ef6ffe9cc1d0254cb1d6940146a1ac839be",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Laraaji",
+    "popularity": 42,
+    "type": "artist",
+    "uri": "spotify:artist:6sd3qv6kReAdo6WsLBtXX4"
+  }
+}

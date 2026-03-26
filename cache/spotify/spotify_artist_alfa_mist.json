@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T20:01:40.860814",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2i1CPudyCUjL50Wqjv8AMI"
+    },
+    "followers": {
+      "href": null,
+      "total": 299911
+    },
+    "genres": [
+      "nu jazz",
+      "jazz rap",
+      "jazz fusion",
+      "jazz",
+      "indie jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2i1CPudyCUjL50Wqjv8AMI",
+    "id": "2i1CPudyCUjL50Wqjv8AMI",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebe247a1683a0b42005d35d414",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174e247a1683a0b42005d35d414",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178e247a1683a0b42005d35d414",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Alfa Mist",
+    "popularity": 51,
+    "type": "artist",
+    "uri": "spotify:artist:2i1CPudyCUjL50Wqjv8AMI"
+  }
+}

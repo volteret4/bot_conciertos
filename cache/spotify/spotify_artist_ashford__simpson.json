@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T20:02:01.858894",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2EURsXo9qlt1aMWlviGCRi"
+    },
+    "followers": {
+      "href": null,
+      "total": 518286
+    },
+    "genres": [
+      "disco",
+      "post-disco"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2EURsXo9qlt1aMWlviGCRi",
+    "id": "2EURsXo9qlt1aMWlviGCRi",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/36dccc4ec3002689941c020919122a0076d6f6de",
+        "height": 1218,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/672747ecb701b5d56e4f47ad09288070b8080cf8",
+        "height": 780,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/1356b93f6fc4c940fbce617cd7a96e72a50e54f4",
+        "height": 244,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/100c6c5beb520825b1e76aa501341b5fefe5eeb6",
+        "height": 78,
+        "width": 64
+      }
+    ],
+    "name": "Ashford & Simpson",
+    "popularity": 42,
+    "type": "artist",
+    "uri": "spotify:artist:2EURsXo9qlt1aMWlviGCRi"
+  }
+}

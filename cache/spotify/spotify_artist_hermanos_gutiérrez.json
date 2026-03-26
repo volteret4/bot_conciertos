@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:58:02.969342",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/73mSg0dykFyhvU96tb5xQV"
+    },
+    "followers": {
+      "href": null,
+      "total": 793887
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/73mSg0dykFyhvU96tb5xQV",
+    "id": "73mSg0dykFyhvU96tb5xQV",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb5211c31290a0d915d4ee2225",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051745211c31290a0d915d4ee2225",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1785211c31290a0d915d4ee2225",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Hermanos Gutiérrez",
+    "popularity": 66,
+    "type": "artist",
+    "uri": "spotify:artist:73mSg0dykFyhvU96tb5xQV"
+  }
+}

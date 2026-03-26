@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-10-23T17:04:36.127086",
+  "concerts": [
+    {
+      "artist": "Waaju",
+      "name": "Waaju X Majid Bekkas - Restaurant",
+      "venue": "Jazz Cafe",
+      "city": "London",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2025-11-19",
+      "time": "19:00:00",
+      "url": "https://www.ticketweb.uk/event/waaju-x-majid-bekkas-jazz-cafe-tickets/13909174?REFERRAL_ID=tmfeed",
+      "source": "Ticketmaster",
+      "id": "17GOvxG62N5nvsp"
+    },
+    {
+      "artist": "Waaju",
+      "name": "Waaju X Majid Bekkas",
+      "venue": "Jazz Cafe",
+      "city": "London",
+      "country": "Great Britain",
+      "country_code": "GB",
+      "date": "2025-11-19",
+      "time": "19:00:00",
+      "url": "https://www.ticketweb.uk/event/waaju-x-majid-bekkas-jazz-cafe-tickets/13909184?REFERRAL_ID=tmfeed",
+      "source": "Ticketmaster",
+      "id": "17GOvxG62N5nvw6"
+    }
+  ]
+}

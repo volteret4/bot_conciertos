@@ -1,0 +1,50 @@
+{
+  "timestamp": "2025-11-03T19:58:27.095912",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4X3dUbGsTpVH6EbxtWnj6T"
+    },
+    "followers": {
+      "href": null,
+      "total": 24229
+    },
+    "genres": [
+      "drone",
+      "ambient",
+      "glitch",
+      "dark ambient",
+      "idm",
+      "experimental",
+      "minimalism",
+      "neoclassical"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4X3dUbGsTpVH6EbxtWnj6T",
+    "id": "4X3dUbGsTpVH6EbxtWnj6T",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/64f69015a4ce6224963bcf163ef1da6f64c8d564",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/72e86ffa84a81d88e76ff075f6190e404e4cc1cc",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/a2d1aa8645faab9880f8c442ad9e4285d724e83c",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/c835832501d5e433e40d99218075ace7dd1067b9",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Taylor Deupree",
+    "popularity": 30,
+    "type": "artist",
+    "uri": "spotify:artist:4X3dUbGsTpVH6EbxtWnj6T"
+  }
+}

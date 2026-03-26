@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:49:33.163209",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6zvul52xwTWzilBZl6BUbT"
+    },
+    "followers": {
+      "href": null,
+      "total": 3548327
+    },
+    "genres": [
+      "alternative rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6zvul52xwTWzilBZl6BUbT",
+    "id": "6zvul52xwTWzilBZl6BUbT",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb419ffe5eb82b7460c76a986a",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174419ffe5eb82b7460c76a986a",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178419ffe5eb82b7460c76a986a",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Pixies",
+    "popularity": 68,
+    "type": "artist",
+    "uri": "spotify:artist:6zvul52xwTWzilBZl6BUbT"
+  }
+}

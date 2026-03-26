@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-10-23T17:51:52.119557",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2HNNSjjaK20NZ9PDZ2EMwU"
+    },
+    "followers": {
+      "href": null,
+      "total": 16706
+    },
+    "genres": [
+      "french house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2HNNSjjaK20NZ9PDZ2EMwU",
+    "id": "2HNNSjjaK20NZ9PDZ2EMwU",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebd43a7032602dacc5fc358194",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174d43a7032602dacc5fc358194",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178d43a7032602dacc5fc358194",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "I:Cube",
+    "popularity": 33,
+    "type": "artist",
+    "uri": "spotify:artist:2HNNSjjaK20NZ9PDZ2EMwU"
+  }
+}

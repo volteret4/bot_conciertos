@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-25T08:59:16.250794",
+  "data": [
+    {
+      "artist": "Makaya McCraven",
+      "artist_name": "Makaya McCraven",
+      "name": "Makaya McCraven at Vivarium",
+      "venue": "Vivarium",
+      "city": "Milwaukee",
+      "country": "US",
+      "date": "2025-09-26",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/1y1B1VEbwTWYiweXrwAON2",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Makaya McCraven",
+      "artist_name": "Makaya McCraven",
+      "name": "Makaya McCraven at Thalia Hall",
+      "venue": "Thalia Hall",
+      "city": "Chicago",
+      "country": "US",
+      "date": "2025-10-01",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/6kmWjX4ANubyOGGsdI1Wyo",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Makaya McCraven",
+      "artist_name": "Makaya McCraven",
+      "name": "Makaya McCraven Concert (0xYxWEDb)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/0xYxWEDbj2FksEj0dSGpj3",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Makaya McCraven",
+      "artist_name": "Makaya McCraven",
+      "name": "Makaya McCraven Concert (69SWONPj)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/69SWONPjfRPwWZ72PWUpAR",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Makaya McCraven",
+      "artist_name": "Makaya McCraven",
+      "name": "Makaya McCraven at Solar Myth",
+      "venue": "Solar Myth",
+      "city": "Philadelphia",
+      "country": "US",
+      "date": "2025-10-04",
+      "time": "3:00 PM",
+      "url": "https://open.spotify.com/concert/2E2HT6QmdmbnZPORioETa2",
+      "source": "Spotify"
+    }
+  ]
+}

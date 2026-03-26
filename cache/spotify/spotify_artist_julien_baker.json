@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:02:59.914739",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/12zbUHbPHL5DGuJtiUfsip"
+    },
+    "followers": {
+      "href": null,
+      "total": 523478
+    },
+    "genres": [
+      "ambient folk"
+    ],
+    "href": "https://api.spotify.com/v1/artists/12zbUHbPHL5DGuJtiUfsip",
+    "id": "12zbUHbPHL5DGuJtiUfsip",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb8b2bd6b3cd88b0146f13ac99",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051748b2bd6b3cd88b0146f13ac99",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1788b2bd6b3cd88b0146f13ac99",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Julien Baker",
+    "popularity": 62,
+    "type": "artist",
+    "uri": "spotify:artist:12zbUHbPHL5DGuJtiUfsip"
+  }
+}

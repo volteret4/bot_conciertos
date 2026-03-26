@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-10-23T20:57:30.009674",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/755pQSGUy6rtPrUCbnJTvi"
+    },
+    "followers": {
+      "href": null,
+      "total": 128581
+    },
+    "genres": [
+      "afrobeat"
+    ],
+    "href": "https://api.spotify.com/v1/artists/755pQSGUy6rtPrUCbnJTvi",
+    "id": "755pQSGUy6rtPrUCbnJTvi",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/683b46e963c1db53727703a1aff9a707b0b0ecc1",
+        "height": 753,
+        "width": 600
+      },
+      {
+        "url": "https://i.scdn.co/image/34d39ce677a551ab9bb1ac6ea90ba29931dd2f14",
+        "height": 251,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/62fed4c1838ab9b7ec56dbae82d36b7342ac9037",
+        "height": 80,
+        "width": 64
+      }
+    ],
+    "name": "William Onyeabor",
+    "popularity": 36,
+    "type": "artist",
+    "uri": "spotify:artist:755pQSGUy6rtPrUCbnJTvi"
+  }
+}

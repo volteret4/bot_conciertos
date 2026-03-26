@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-10-23T17:55:17.670009",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7tLLSEaHMMJPbsYAz8MkEw"
+    },
+    "followers": {
+      "href": null,
+      "total": 266437
+    },
+    "genres": [
+      "philly soul",
+      "classic soul",
+      "quiet storm"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7tLLSEaHMMJPbsYAz8MkEw",
+    "id": "7tLLSEaHMMJPbsYAz8MkEw",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/6195b23ffb571534704463ceec5c2d9d0cf0d1f1",
+        "height": 222,
+        "width": 510
+      },
+      {
+        "url": "https://i.scdn.co/image/1d6d0269618719439229701fca0b4d5d342dff04",
+        "height": 87,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/6448545d8be103edcf2a822cb4a3b761aa9ef954",
+        "height": 28,
+        "width": 64
+      }
+    ],
+    "name": "Blue Magic",
+    "popularity": 40,
+    "type": "artist",
+    "uri": "spotify:artist:7tLLSEaHMMJPbsYAz8MkEw"
+  }
+}

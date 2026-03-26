@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:57:29.246093",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6eu3TBnYM3SrkUU59SFhgp"
+    },
+    "followers": {
+      "href": null,
+      "total": 24632
+    },
+    "genres": [
+      "dub techno",
+      "minimal techno"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6eu3TBnYM3SrkUU59SFhgp",
+    "id": "6eu3TBnYM3SrkUU59SFhgp",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/9d579dd932b36f1745acf6a8c83f0631f7688d82",
+        "height": 356,
+        "width": 440
+      },
+      {
+        "url": "https://i.scdn.co/image/20e08a86fc85879ad30165eddf83a06bbf085daf",
+        "height": 162,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/85d8668a962c3b2f8551cd7ba73b0206827e7a04",
+        "height": 52,
+        "width": 64
+      }
+    ],
+    "name": "Function",
+    "popularity": 23,
+    "type": "artist",
+    "uri": "spotify:artist:6eu3TBnYM3SrkUU59SFhgp"
+  }
+}

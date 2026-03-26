@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:00:11.196715",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2D0dwHG2dDfVIHLx7Lf3lR"
+    },
+    "followers": {
+      "href": null,
+      "total": 27
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/2D0dwHG2dDfVIHLx7Lf3lR",
+    "id": "2D0dwHG2dDfVIHLx7Lf3lR",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273701a1c52f0f23ffdf48947d4",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02701a1c52f0f23ffdf48947d4",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851701a1c52f0f23ffdf48947d4",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "D.D.King",
+    "popularity": 0,
+    "type": "artist",
+    "uri": "spotify:artist:2D0dwHG2dDfVIHLx7Lf3lR"
+  }
+}

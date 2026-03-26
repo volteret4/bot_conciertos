@@ -1,0 +1,50 @@
+{
+  "timestamp": "2025-11-03T20:02:51.768114",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5E3H2KyR31E2Dj3K6vIUe9"
+    },
+    "followers": {
+      "href": null,
+      "total": 27013
+    },
+    "genres": [
+      "dub techno",
+      "glitch",
+      "idm",
+      "ambient",
+      "drone",
+      "experimental",
+      "minimal techno",
+      "dark ambient"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5E3H2KyR31E2Dj3K6vIUe9",
+    "id": "5E3H2KyR31E2Dj3K6vIUe9",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/a8f47addcc6d9b7c3d95346ca26146737f104e39",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/73e092cb0563dd87cc3663785ec216fdabd19576",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/2ed1ee1517507d3349b1d73d1e7edabd99ea2cd0",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/a0e1326a175d97c3f171f112b3d55c087df46706",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Vladislav Delay",
+    "popularity": 21,
+    "type": "artist",
+    "uri": "spotify:artist:5E3H2KyR31E2Dj3K6vIUe9"
+  }
+}

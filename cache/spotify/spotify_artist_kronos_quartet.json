@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:55:36.345749",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0M6xcJTswOl2qvExCJhiS3"
+    },
+    "followers": {
+      "href": null,
+      "total": 128375
+    },
+    "genres": [
+      "minimalism",
+      "avant-garde"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0M6xcJTswOl2qvExCJhiS3",
+    "id": "0M6xcJTswOl2qvExCJhiS3",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb7541238308a98e1a55593eaf",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051747541238308a98e1a55593eaf",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1787541238308a98e1a55593eaf",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Kronos Quartet",
+    "popularity": 49,
+    "type": "artist",
+    "uri": "spotify:artist:0M6xcJTswOl2qvExCJhiS3"
+  }
+}

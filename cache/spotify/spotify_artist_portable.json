@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T20:02:53.414125",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5Sq9h4GMnTD99EyfZmYgqe"
+    },
+    "followers": {
+      "href": null,
+      "total": 453907
+    },
+    "genres": [
+      "afro adura",
+      "afrobeats",
+      "afrobeat",
+      "afropiano",
+      "fújì"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5Sq9h4GMnTD99EyfZmYgqe",
+    "id": "5Sq9h4GMnTD99EyfZmYgqe",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb8a61d8a305ed2b81eaac53ed",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051748a61d8a305ed2b81eaac53ed",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1788a61d8a305ed2b81eaac53ed",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Portable",
+    "popularity": 47,
+    "type": "artist",
+    "uri": "spotify:artist:5Sq9h4GMnTD99EyfZmYgqe"
+  }
+}

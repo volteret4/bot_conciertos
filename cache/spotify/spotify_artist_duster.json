@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:58:37.064601",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5AyEXCtu3xnnsTGCo4RVZh"
+    },
+    "followers": {
+      "href": null,
+      "total": 1268113
+    },
+    "genres": [
+      "slowcore",
+      "shoegaze"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5AyEXCtu3xnnsTGCo4RVZh",
+    "id": "5AyEXCtu3xnnsTGCo4RVZh",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebcd67bffd1bac79ac28e77d79",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174cd67bffd1bac79ac28e77d79",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178cd67bffd1bac79ac28e77d79",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Duster",
+    "popularity": 63,
+    "type": "artist",
+    "uri": "spotify:artist:5AyEXCtu3xnnsTGCo4RVZh"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T19:48:35.907713",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/39iHRO9MH9To3gjW7wqaW1"
+    },
+    "followers": {
+      "href": null,
+      "total": 60532
+    },
+    "genres": [
+      "brazilian jazz",
+      "exotica"
+    ],
+    "href": "https://api.spotify.com/v1/artists/39iHRO9MH9To3gjW7wqaW1",
+    "id": "39iHRO9MH9To3gjW7wqaW1",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/c6165e7be8092cc71c5d5cb10378b009f05f1141",
+        "height": 1223,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/63df454bd2cd99f004e5812a13d6b408c2d963e4",
+        "height": 783,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/a4095dce60f8a5f2633d2c84f3caaa09ef166a46",
+        "height": 245,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/8218646a9351018629fc523947a7370972ea8e12",
+        "height": 78,
+        "width": 64
+      }
+    ],
+    "name": "Lalo Schifrin",
+    "popularity": 43,
+    "type": "artist",
+    "uri": "spotify:artist:39iHRO9MH9To3gjW7wqaW1"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-21T09:50:43.370651",
+  "data": [
+    {
+      "artist": "SPELLLING",
+      "artist_name": "SPELLLING",
+      "name": "SPELLLING at Green Room at War Memorial Performing Arts Center",
+      "venue": "Green Room at War Memorial Performing Arts Center",
+      "city": "San Francisco",
+      "country": "US",
+      "date": "2025-08-21",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/2sNOfwLMTF6OYbw1SW0VR9",
+      "source": "Spotify"
+    },
+    {
+      "artist": "SPELLLING",
+      "artist_name": "SPELLLING",
+      "name": "SPELLLING at Harlow&#x27;s",
+      "venue": "Harlow&#x27;s",
+      "city": "Sacramento",
+      "country": "US",
+      "date": "2025-08-27",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/6OeGghFY3cSJFsaFLVscRi",
+      "source": "Spotify"
+    },
+    {
+      "artist": "SPELLLING",
+      "artist_name": "SPELLLING",
+      "name": "SPELLLING at Wonder Ballroom",
+      "venue": "Wonder Ballroom",
+      "city": "Portland",
+      "country": "US",
+      "date": "2025-08-29",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/5cnu7IuFZYnmw2bFmd40Uv",
+      "source": "Spotify"
+    },
+    {
+      "artist": "SPELLLING",
+      "artist_name": "SPELLLING",
+      "name": "SPELLLING at Bumbershoot Festival",
+      "venue": "Bumbershoot Festival",
+      "city": "Seattle",
+      "country": "US",
+      "date": "2025-08-31",
+      "time": "12:00 AM",
+      "url": "https://open.spotify.com/concert/6BkQXpnYWG6zUkm4A94Zi9",
+      "source": "Spotify"
+    },
+    {
+      "artist": "SPELLLING",
+      "artist_name": "SPELLLING",
+      "name": "SPELLLING at Biltmore Cabaret",
+      "venue": "Biltmore Cabaret",
+      "city": "Vancouver",
+      "country": "CA",
+      "date": "2025-09-01",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/6wCdPvXGYQ29pVrfX9R7jr",
+      "source": "Spotify"
+    }
+  ]
+}

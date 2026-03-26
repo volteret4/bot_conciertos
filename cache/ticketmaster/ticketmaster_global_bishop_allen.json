@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-10-23T17:11:57.493046",
+  "concerts": [
+    {
+      "artist": "Bishop Allen",
+      "name": "Bishop Allen, Mates of State",
+      "venue": "Bowery Ballroom",
+      "city": "New York",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-01-16",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/bishop-allen-mates-of-state-new-york-new-york-01-16-2026/event/0000633AEC516E6C",
+      "source": "Ticketmaster",
+      "id": "k7vGFbSlifpyi"
+    },
+    {
+      "artist": "Bishop Allen",
+      "name": "Bishop Allen & Mates of State",
+      "venue": "The Atlantis",
+      "city": "Washington",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-01-17",
+      "time": "19:30:00",
+      "url": "https://www.ticketmaster.com/bishop-allen-mates-of-state-washington-district-of-columbia-01-17-2026/event/15006342D24173C3",
+      "source": "Ticketmaster",
+      "id": "1A4ZkueGkd3892d"
+    }
+  ]
+}

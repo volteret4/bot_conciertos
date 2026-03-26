@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:05:02.307873",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5akVqMzdZOdbMYbE4vNZWD"
+    },
+    "followers": {
+      "href": null,
+      "total": 118280
+    },
+    "genres": [
+      "idm",
+      "glitch"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5akVqMzdZOdbMYbE4vNZWD",
+    "id": "5akVqMzdZOdbMYbE4vNZWD",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb05495f31f111bfd93f003272",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517405495f31f111bfd93f003272",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17805495f31f111bfd93f003272",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Plaid",
+    "popularity": 35,
+    "type": "artist",
+    "uri": "spotify:artist:5akVqMzdZOdbMYbE4vNZWD"
+  }
+}

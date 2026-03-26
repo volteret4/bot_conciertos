@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:00:14.589858",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3P7GUpAMTpK7gAKGMMVbTX"
+    },
+    "followers": {
+      "href": null,
+      "total": 3022
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/3P7GUpAMTpK7gAKGMMVbTX",
+    "id": "3P7GUpAMTpK7gAKGMMVbTX",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273ad1c578a6072b929d8db54bb",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02ad1c578a6072b929d8db54bb",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851ad1c578a6072b929d8db54bb",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Das Komplex",
+    "popularity": 17,
+    "type": "artist",
+    "uri": "spotify:artist:3P7GUpAMTpK7gAKGMMVbTX"
+  }
+}

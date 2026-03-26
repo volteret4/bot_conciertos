@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:57:04.716071",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2Rx0z858A7kkwR2tiDdIIg"
+    },
+    "followers": {
+      "href": null,
+      "total": 31
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/2Rx0z858A7kkwR2tiDdIIg",
+    "id": "2Rx0z858A7kkwR2tiDdIIg",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb681c1402341af1cb1a3db46c",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174681c1402341af1cb1a3db46c",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178681c1402341af1cb1a3db46c",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Jupiter Calm",
+    "popularity": 41,
+    "type": "artist",
+    "uri": "spotify:artist:2Rx0z858A7kkwR2tiDdIIg"
+  }
+}

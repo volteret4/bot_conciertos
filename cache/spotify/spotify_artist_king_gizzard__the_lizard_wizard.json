@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:03:52.791404",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6XYvaoDGE0VmRt83Jss9Sn"
+    },
+    "followers": {
+      "href": null,
+      "total": 1320146
+    },
+    "genres": [
+      "neo-psychedelic",
+      "psychedelic rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6XYvaoDGE0VmRt83Jss9Sn",
+    "id": "6XYvaoDGE0VmRt83Jss9Sn",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebce4d5d32d9cea72f886ddf88",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174ce4d5d32d9cea72f886ddf88",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178ce4d5d32d9cea72f886ddf88",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "King Gizzard & The Lizard Wizard",
+    "popularity": 33,
+    "type": "artist",
+    "uri": "spotify:artist:6XYvaoDGE0VmRt83Jss9Sn"
+  }
+}

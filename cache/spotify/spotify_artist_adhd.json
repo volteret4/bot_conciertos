@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:01:23.287863",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0UZEK8LmwlztF7lgqEYKte"
+    },
+    "followers": {
+      "href": null,
+      "total": 10996
+    },
+    "genres": [
+      "indie jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0UZEK8LmwlztF7lgqEYKte",
+    "id": "0UZEK8LmwlztF7lgqEYKte",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb491c871981c9b49088e884da",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174491c871981c9b49088e884da",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178491c871981c9b49088e884da",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "ADHD",
+    "popularity": 14,
+    "type": "artist",
+    "uri": "spotify:artist:0UZEK8LmwlztF7lgqEYKte"
+  }
+}

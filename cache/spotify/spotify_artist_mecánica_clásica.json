@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:56:25.930243",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1GSiPq4CTmEsbhMegGEOCa"
+    },
+    "followers": {
+      "href": null,
+      "total": 712
+    },
+    "genres": [
+      "drone",
+      "krautrock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1GSiPq4CTmEsbhMegGEOCa",
+    "id": "1GSiPq4CTmEsbhMegGEOCa",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb4500d47eca8af5fd9133d56e",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051744500d47eca8af5fd9133d56e",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1784500d47eca8af5fd9133d56e",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Mecánica Clásica",
+    "popularity": 3,
+    "type": "artist",
+    "uri": "spotify:artist:1GSiPq4CTmEsbhMegGEOCa"
+  }
+}

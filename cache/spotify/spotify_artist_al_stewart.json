@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T19:47:24.620919",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0DW7boyjvbaSP3OJ72sXgC"
+    },
+    "followers": {
+      "href": null,
+      "total": 322474
+    },
+    "genres": [
+      "yacht rock",
+      "soft rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0DW7boyjvbaSP3OJ72sXgC",
+    "id": "0DW7boyjvbaSP3OJ72sXgC",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ccaee5b70c1958b1496e16dcb50d2d6e98356862",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/8c5e32b1ef51d9dd2f5d5fa075624417b3ede012",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/124ec7d296932dd8f8edba85db3983cbf8112a55",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/f5823f7b50ecb56b0dfd05974ccd45835c36c6be",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Al Stewart",
+    "popularity": 54,
+    "type": "artist",
+    "uri": "spotify:artist:0DW7boyjvbaSP3OJ72sXgC"
+  }
+}

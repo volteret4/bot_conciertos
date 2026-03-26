@@ -1,0 +1,19 @@
+{
+  "timestamp": "2025-08-01T16:36:34.800608",
+  "concerts": [
+    {
+      "artist": "Charlotte de Witte",
+      "name": "Charlotte de Witte",
+      "venue": "[UNVRS]",
+      "city": "San Rafael, Ibiza",
+      "country": "Spain",
+      "country_code": "ES",
+      "date": "2025-09-22",
+      "time": "23:30:00",
+      "image": "https://s1.ticketm.net/dam/a/b31/99b5f881-cfdb-46b2-b9e7-2b46dd54db31_SOURCE",
+      "url": "https://www.ticketmaster.es/event/charlotte-de-witte-tickets/1846687095?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZ2qZ16v-kQ6e4"
+    }
+  ]
+}

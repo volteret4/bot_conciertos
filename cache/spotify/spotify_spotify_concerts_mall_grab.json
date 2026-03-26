@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-21T09:24:35.621832",
+  "data": [
+    {
+      "artist": "Mall Grab",
+      "artist_name": "Mall Grab",
+      "name": "Mall Grab at Zürich Openair",
+      "venue": "Zürich Openair",
+      "city": "Opfikon",
+      "country": "",
+      "date": "2025-08-29",
+      "time": "3:00 PM",
+      "url": "https://open.spotify.com/concert/27RRKcjNAy6TQeaCstqyGK",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Mall Grab",
+      "artist_name": "Mall Grab",
+      "name": "Mall Grab at Cervantes&#x27; Masterpiece Ballroom &amp; Other Side",
+      "venue": "Cervantes&#x27; Masterpiece Ballroom &amp; Other Side",
+      "city": "Denver",
+      "country": "US",
+      "date": "2025-09-25",
+      "time": "8:30 PM",
+      "url": "https://open.spotify.com/concert/5nrlVFUSpENnyttN6pGHjk",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Mall Grab",
+      "artist_name": "Mall Grab",
+      "name": "Mall Grab at Outset",
+      "venue": "Outset",
+      "city": "Chicago",
+      "country": "US",
+      "date": "2025-09-26",
+      "time": "10:00 PM",
+      "url": "https://open.spotify.com/concert/5Q7GO4SHpkVydjDyS1eoiv",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Mall Grab",
+      "artist_name": "Mall Grab",
+      "name": "Mall Grab at The Concourse Project",
+      "venue": "The Concourse Project",
+      "city": "Austin",
+      "country": "US",
+      "date": "2025-09-27",
+      "time": "9:00 PM",
+      "url": "https://open.spotify.com/concert/32h247lwOAupzKkuzVzi0K",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Mall Grab",
+      "artist_name": "Mall Grab",
+      "name": "Mall Grab at Echostage",
+      "venue": "Echostage",
+      "city": "Washington",
+      "country": "US",
+      "date": "2025-10-04",
+      "time": "10:00 PM",
+      "url": "https://open.spotify.com/concert/1bQbzKE9nD3IwUzBDuJAht",
+      "source": "Spotify"
+    }
+  ]
+}

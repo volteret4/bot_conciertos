@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-25T08:01:06.454551",
+  "data": [
+    {
+      "artist": "AJ Lee & Blue Summit",
+      "artist_name": "AJ Lee & Blue Summit",
+      "name": "AJ Lee & Blue Summit at Old Town School of Folk Music",
+      "venue": "Old Town School of Folk Music",
+      "city": "Chicago",
+      "country": "US",
+      "date": "2025-09-04",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/3f7XhkrZqAe7Ffxd7zm1FM",
+      "source": "Spotify"
+    },
+    {
+      "artist": "AJ Lee & Blue Summit",
+      "artist_name": "AJ Lee & Blue Summit",
+      "name": "AJ Lee & Blue Summit at Wheatland Music Festival",
+      "venue": "Wheatland Music Festival",
+      "city": "Remus",
+      "country": "",
+      "date": "2025-09-06",
+      "time": "5:00 PM",
+      "url": "https://open.spotify.com/concert/3NToWUnp9a2xd5XDbuSEn6",
+      "source": "Spotify"
+    },
+    {
+      "artist": "AJ Lee & Blue Summit",
+      "artist_name": "AJ Lee & Blue Summit",
+      "name": "AJ Lee & Blue Summit Concert (0YliZe9t)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/0YliZe9tNgy3BOOLm4c7NU",
+      "source": "Spotify"
+    },
+    {
+      "artist": "AJ Lee & Blue Summit",
+      "artist_name": "AJ Lee & Blue Summit",
+      "name": "AJ Lee & Blue Summit Concert (4e2YyQK6)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/4e2YyQK68hRCGaieTi0RKE",
+      "source": "Spotify"
+    },
+    {
+      "artist": "AJ Lee & Blue Summit",
+      "artist_name": "AJ Lee & Blue Summit",
+      "name": "AJ Lee & Blue Summit Concert (2xsW4URt)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/2xsW4URtgeufoCugV0TphV",
+      "source": "Spotify"
+    }
+  ]
+}

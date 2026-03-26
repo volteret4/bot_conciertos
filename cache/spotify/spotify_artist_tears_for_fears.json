@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:02:47.786858",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4bthk9UfsYUYdcFyqxmSUU"
+    },
+    "followers": {
+      "href": null,
+      "total": 4104885
+    },
+    "genres": [
+      "new wave",
+      "synthpop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4bthk9UfsYUYdcFyqxmSUU",
+    "id": "4bthk9UfsYUYdcFyqxmSUU",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb1e63dea1bded4ae1d53b5c9a",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051741e63dea1bded4ae1d53b5c9a",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1781e63dea1bded4ae1d53b5c9a",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Tears For Fears",
+    "popularity": 73,
+    "type": "artist",
+    "uri": "spotify:artist:4bthk9UfsYUYdcFyqxmSUU"
+  }
+}

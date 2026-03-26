@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:48:06.265887",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0blJzvevdXrp21YeI2vbco"
+    },
+    "followers": {
+      "href": null,
+      "total": 1717003
+    },
+    "genres": [
+      "gothic metal",
+      "gothic rock",
+      "doom metal"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0blJzvevdXrp21YeI2vbco",
+    "id": "0blJzvevdXrp21YeI2vbco",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb843df562d1bad7f5163fd164",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174843df562d1bad7f5163fd164",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178843df562d1bad7f5163fd164",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Type O Negative",
+    "popularity": 65,
+    "type": "artist",
+    "uri": "spotify:artist:0blJzvevdXrp21YeI2vbco"
+  }
+}

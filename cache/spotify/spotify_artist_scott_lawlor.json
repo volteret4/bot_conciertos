@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:55:49.521838",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3pvf5pxGh46naJSfS8sxKi"
+    },
+    "followers": {
+      "href": null,
+      "total": 237
+    },
+    "genres": [
+      "drone",
+      "dark ambient",
+      "ambient",
+      "space music"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3pvf5pxGh46naJSfS8sxKi",
+    "id": "3pvf5pxGh46naJSfS8sxKi",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273025ae709f2efbee264a8025e",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02025ae709f2efbee264a8025e",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851025ae709f2efbee264a8025e",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Scott Lawlor",
+    "popularity": 0,
+    "type": "artist",
+    "uri": "spotify:artist:3pvf5pxGh46naJSfS8sxKi"
+  }
+}

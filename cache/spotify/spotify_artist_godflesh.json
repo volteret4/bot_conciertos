@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-11-03T19:57:47.526345",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5A4ebXQf38xWIq0xSWLhsS"
+    },
+    "followers": {
+      "href": null,
+      "total": 97901
+    },
+    "genres": [
+      "industrial metal",
+      "industrial",
+      "industrial rock",
+      "sludge metal",
+      "drone metal",
+      "noise rock",
+      "stoner metal",
+      "ebm",
+      "groove metal",
+      "drone"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5A4ebXQf38xWIq0xSWLhsS",
+    "id": "5A4ebXQf38xWIq0xSWLhsS",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb3e617b802484514cfdbc7b1b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051743e617b802484514cfdbc7b1b",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1783e617b802484514cfdbc7b1b",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Godflesh",
+    "popularity": 35,
+    "type": "artist",
+    "uri": "spotify:artist:5A4ebXQf38xWIq0xSWLhsS"
+  }
+}

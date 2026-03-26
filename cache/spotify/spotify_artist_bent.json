@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T20:00:27.007683",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/22dFwJoRBV51ue5TGnC7Dt"
+    },
+    "followers": {
+      "href": null,
+      "total": 2000983
+    },
+    "genres": [
+      "drill"
+    ],
+    "href": "https://api.spotify.com/v1/artists/22dFwJoRBV51ue5TGnC7Dt",
+    "id": "22dFwJoRBV51ue5TGnC7Dt",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb807f22297ee3cb75dff9370e",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174807f22297ee3cb75dff9370e",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178807f22297ee3cb75dff9370e",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Beny Jr",
+    "popularity": 71,
+    "type": "artist",
+    "uri": "spotify:artist:22dFwJoRBV51ue5TGnC7Dt"
+  }
+}

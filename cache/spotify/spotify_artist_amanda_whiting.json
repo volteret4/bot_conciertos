@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:46:50.196778",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6PGBkPJLeNHQQTM3wvlVv5"
+    },
+    "followers": {
+      "href": null,
+      "total": 8302
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/6PGBkPJLeNHQQTM3wvlVv5",
+    "id": "6PGBkPJLeNHQQTM3wvlVv5",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb7f37c4e67167c5915240de33",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051747f37c4e67167c5915240de33",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1787f37c4e67167c5915240de33",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Amanda Whiting",
+    "popularity": 29,
+    "type": "artist",
+    "uri": "spotify:artist:6PGBkPJLeNHQQTM3wvlVv5"
+  }
+}

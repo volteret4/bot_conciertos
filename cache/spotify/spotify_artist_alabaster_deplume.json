@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:47:12.562488",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3LfKt6bEMIfFIEryeai8Mm"
+    },
+    "followers": {
+      "href": null,
+      "total": 77132
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/3LfKt6bEMIfFIEryeai8Mm",
+    "id": "3LfKt6bEMIfFIEryeai8Mm",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb79e7e6483840d0cea31d8c04",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517479e7e6483840d0cea31d8c04",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17879e7e6483840d0cea31d8c04",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Alabaster DePlume",
+    "popularity": 44,
+    "type": "artist",
+    "uri": "spotify:artist:3LfKt6bEMIfFIEryeai8Mm"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:00:11.337832",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6JGGS3JOcMIxa0QF6pFnzN"
+    },
+    "followers": {
+      "href": null,
+      "total": 13536
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/6JGGS3JOcMIxa0QF6pFnzN",
+    "id": "6JGGS3JOcMIxa0QF6pFnzN",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebc613aed6949bd9990e823dad",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174c613aed6949bd9990e823dad",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178c613aed6949bd9990e823dad",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "D.K.",
+    "popularity": 30,
+    "type": "artist",
+    "uri": "spotify:artist:6JGGS3JOcMIxa0QF6pFnzN"
+  }
+}

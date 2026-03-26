@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T20:04:24.285088",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/75U40yZLLPglFgXbDVnmVs"
+    },
+    "followers": {
+      "href": null,
+      "total": 719721
+    },
+    "genres": [
+      "progressive rock",
+      "progressive metal",
+      "art rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/75U40yZLLPglFgXbDVnmVs",
+    "id": "75U40yZLLPglFgXbDVnmVs",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebc1e9722c0564d96a92317ce4",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174c1e9722c0564d96a92317ce4",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178c1e9722c0564d96a92317ce4",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "The Mars Volta",
+    "popularity": 49,
+    "type": "artist",
+    "uri": "spotify:artist:75U40yZLLPglFgXbDVnmVs"
+  }
+}

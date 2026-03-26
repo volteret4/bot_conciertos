@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:56:08.840280",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0LLilNa5TUAaUwJwLyOf2b"
+    },
+    "followers": {
+      "href": null,
+      "total": 48751
+    },
+    "genres": [
+      "sea shanties"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0LLilNa5TUAaUwJwLyOf2b",
+    "id": "0LLilNa5TUAaUwJwLyOf2b",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb2e4f097c1869a2c2d9effa72",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051742e4f097c1869a2c2d9effa72",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1782e4f097c1869a2c2d9effa72",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "The Lottery Winners",
+    "popularity": 42,
+    "type": "artist",
+    "uri": "spotify:artist:0LLilNa5TUAaUwJwLyOf2b"
+  }
+}

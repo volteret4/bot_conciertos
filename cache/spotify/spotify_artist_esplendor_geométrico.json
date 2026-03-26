@@ -1,0 +1,46 @@
+{
+  "timestamp": "2025-11-03T19:58:57.438714",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2fdQ3IohBfaqdzJdLjPQ7S"
+    },
+    "followers": {
+      "href": null,
+      "total": 13497
+    },
+    "genres": [
+      "industrial",
+      "noise music",
+      "cold wave",
+      "ebm"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2fdQ3IohBfaqdzJdLjPQ7S",
+    "id": "2fdQ3IohBfaqdzJdLjPQ7S",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/5dec0f3ae512ac40b90beff64318ce99ab9c7f7c",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/6d50057a191f3e4b9bdcc5e50b9001f4a4789e6f",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/9770a12263e9c13c96ee3d477d44d25df6a0d9be",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/5b4df9d01214cf3c164a4d5c4bb07a804bff704a",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Esplendor Geométrico",
+    "popularity": 12,
+    "type": "artist",
+    "uri": "spotify:artist:2fdQ3IohBfaqdzJdLjPQ7S"
+  }
+}

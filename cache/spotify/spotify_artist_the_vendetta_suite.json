@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:48:12.662466",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/75nwrrHApnMCgLrW7ZI7f1"
+    },
+    "followers": {
+      "href": null,
+      "total": 377
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/75nwrrHApnMCgLrW7ZI7f1",
+    "id": "75nwrrHApnMCgLrW7ZI7f1",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27326532e002a65b9aadf9b1c02",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0226532e002a65b9aadf9b1c02",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485126532e002a65b9aadf9b1c02",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "The Vendetta Suite",
+    "popularity": 5,
+    "type": "artist",
+    "uri": "spotify:artist:75nwrrHApnMCgLrW7ZI7f1"
+  }
+}

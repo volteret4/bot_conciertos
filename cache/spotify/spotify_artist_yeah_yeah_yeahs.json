@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:47:05.413863",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3TNt4aUIxgfy9aoaft5Jj2"
+    },
+    "followers": {
+      "href": null,
+      "total": 1475850
+    },
+    "genres": [
+      "indie rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3TNt4aUIxgfy9aoaft5Jj2",
+    "id": "3TNt4aUIxgfy9aoaft5Jj2",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb746654923d25b6bf7c16e899",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174746654923d25b6bf7c16e899",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178746654923d25b6bf7c16e899",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Yeah Yeah Yeahs",
+    "popularity": 66,
+    "type": "artist",
+    "uri": "spotify:artist:3TNt4aUIxgfy9aoaft5Jj2"
+  }
+}

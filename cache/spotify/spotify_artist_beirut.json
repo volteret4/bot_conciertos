@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-10-23T20:57:32.317477",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6pmxr66tMAePxzOLfjGNcX"
+    },
+    "followers": {
+      "href": null,
+      "total": 1030183
+    },
+    "genres": [
+      "baroque pop",
+      "indie folk"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6pmxr66tMAePxzOLfjGNcX",
+    "id": "6pmxr66tMAePxzOLfjGNcX",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb1c85bc2fe1b0a8c8b81c6623",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051741c85bc2fe1b0a8c8b81c6623",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1781c85bc2fe1b0a8c8b81c6623",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Beirut",
+    "popularity": 53,
+    "type": "artist",
+    "uri": "spotify:artist:6pmxr66tMAePxzOLfjGNcX"
+  }
+}

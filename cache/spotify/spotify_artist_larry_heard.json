@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:03:54.908188",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3j7teie3p6UnbA8nW51Trz"
+    },
+    "followers": {
+      "href": null,
+      "total": 64969
+    },
+    "genres": [
+      "chicago house",
+      "acid house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3j7teie3p6UnbA8nW51Trz",
+    "id": "3j7teie3p6UnbA8nW51Trz",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/29dd50d9a51002524ea2354c9fed0b5ec34b8ae6",
+        "height": 408,
+        "width": 600
+      },
+      {
+        "url": "https://i.scdn.co/image/e6319a032b80971f9ad197ffbaf9763375510907",
+        "height": 136,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/6102c4e90dc6709babf9c0452a92f43a1293aaf9",
+        "height": 44,
+        "width": 64
+      }
+    ],
+    "name": "Larry Heard",
+    "popularity": 34,
+    "type": "artist",
+    "uri": "spotify:artist:3j7teie3p6UnbA8nW51Trz"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-09-02T08:49:41.396803",
+  "concerts": [
+    {
+      "artist": "Kollektiv Turmstrasse",
+      "name": "Kollektiv Turmstrasse, Adana Twins (21 and Over)",
+      "venue": "Terminal 5",
+      "city": "New York",
+      "country": "US",
+      "date": "2025-09-27",
+      "time": "22:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7_yJ4",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7_yJ4"
+    }
+  ]
+}

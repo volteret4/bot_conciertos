@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:47:45.675673",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3DIaOWIVFxJdTYyEb9mXzi"
+    },
+    "followers": {
+      "href": null,
+      "total": 27264
+    },
+    "genres": [
+      "chicago house",
+      "acid house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3DIaOWIVFxJdTYyEb9mXzi",
+    "id": "3DIaOWIVFxJdTYyEb9mXzi",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebb805d45d0e120b17fa4ec34a",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174b805d45d0e120b17fa4ec34a",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178b805d45d0e120b17fa4ec34a",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Ten City",
+    "popularity": 32,
+    "type": "artist",
+    "uri": "spotify:artist:3DIaOWIVFxJdTYyEb9mXzi"
+  }
+}

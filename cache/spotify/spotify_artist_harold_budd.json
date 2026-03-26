@@ -1,0 +1,46 @@
+{
+  "timestamp": "2025-11-03T20:01:05.235686",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3uOCouLFR4bVx0XeiQJSbl"
+    },
+    "followers": {
+      "href": null,
+      "total": 117597
+    },
+    "genres": [
+      "ambient",
+      "minimalism",
+      "shoegaze",
+      "drone"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3uOCouLFR4bVx0XeiQJSbl",
+    "id": "3uOCouLFR4bVx0XeiQJSbl",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/fa206638f0f0408a8cee35eb2e9395fc29ea67fa",
+        "height": 1140,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/59380452d8cdcaf8170ed06f7cf99d72ef95f1b1",
+        "height": 729,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/275a10541466a4fd40d4852210aba6dc8ade844b",
+        "height": 228,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/8c4fe0e9e7ebb652a1bd5a9a92ac55b82adff486",
+        "height": 73,
+        "width": 64
+      }
+    ],
+    "name": "Harold Budd",
+    "popularity": 56,
+    "type": "artist",
+    "uri": "spotify:artist:3uOCouLFR4bVx0XeiQJSbl"
+  }
+}

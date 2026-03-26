@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:56:23.694278",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2KlYUQBiTC45CUPtKpJYkW"
+    },
+    "followers": {
+      "href": null,
+      "total": 204
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/2KlYUQBiTC45CUPtKpJYkW",
+    "id": "2KlYUQBiTC45CUPtKpJYkW",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27308024b07e68962e1961d4906",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0293507c99318b08dd130738c8",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485108024b07e68962e1961d4906",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Christopher McCray",
+    "popularity": 8,
+    "type": "artist",
+    "uri": "spotify:artist:2KlYUQBiTC45CUPtKpJYkW"
+  }
+}

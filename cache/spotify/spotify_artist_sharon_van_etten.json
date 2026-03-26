@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:48:11.563572",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2wJ4vsxWd7df7dRU4KcoDe"
+    },
+    "followers": {
+      "href": null,
+      "total": 587411
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/2wJ4vsxWd7df7dRU4KcoDe",
+    "id": "2wJ4vsxWd7df7dRU4KcoDe",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb44bf77f28461ee5d6e10cabe",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517444bf77f28461ee5d6e10cabe",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17844bf77f28461ee5d6e10cabe",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Sharon Van Etten",
+    "popularity": 53,
+    "type": "artist",
+    "uri": "spotify:artist:2wJ4vsxWd7df7dRU4KcoDe"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:54:55.022680",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1s3AE3Wi4ht5xUHxBAUUqz"
+    },
+    "followers": {
+      "href": null,
+      "total": 355
+    },
+    "genres": [
+      "yacht rock",
+      "aor"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1s3AE3Wi4ht5xUHxBAUUqz",
+    "id": "1s3AE3Wi4ht5xUHxBAUUqz",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2735eb306a10d3c8667824e9127",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e025eb306a10d3c8667824e9127",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048515eb306a10d3c8667824e9127",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Kristle Murden",
+    "popularity": 2,
+    "type": "artist",
+    "uri": "spotify:artist:1s3AE3Wi4ht5xUHxBAUUqz"
+  }
+}

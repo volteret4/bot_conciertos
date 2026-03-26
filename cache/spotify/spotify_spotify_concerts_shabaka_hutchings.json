@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-25T09:21:45.827262",
+  "data": [
+    {
+      "artist": "Shabaka Hutchings",
+      "artist_name": "Shabaka Hutchings",
+      "name": "Shabaka Hutchings at Goriški amfiteater SNG",
+      "venue": "Goriški amfiteater SNG",
+      "city": "Nova Gorica",
+      "country": "",
+      "date": "2025-08-28",
+      "time": "5:00 PM",
+      "url": "https://open.spotify.com/concert/28511d8EB8eMAK2kJakHeU",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Shabaka Hutchings",
+      "artist_name": "Shabaka Hutchings",
+      "name": "Shabaka Hutchings Concert (3ZskH88q)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/3ZskH88qvb7xGNIIzyZyDw",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Shabaka Hutchings",
+      "artist_name": "Shabaka Hutchings",
+      "name": "Shabaka Hutchings Concert (19QpTzCe)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/19QpTzCe9zlY7i4jgdPEKF",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Shabaka Hutchings",
+      "artist_name": "Shabaka Hutchings",
+      "name": "Shabaka Hutchings Concert (4Svbgwdc)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/4SvbgwdcN98smTgONdXNrT",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Shabaka Hutchings",
+      "artist_name": "Shabaka Hutchings",
+      "name": "Shabaka Hutchings at Barbican Centre",
+      "venue": "Barbican Centre",
+      "city": "London",
+      "country": "GB",
+      "date": "2025-11-19",
+      "time": "5:00 PM",
+      "url": "https://open.spotify.com/concert/7wr8QeLBqOPNIxKe1NHmS1",
+      "source": "Spotify"
+    }
+  ]
+}

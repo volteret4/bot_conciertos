@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T20:04:39.344163",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3y1SoTOdrmRNTBVph5T0VZ"
+    },
+    "followers": {
+      "href": null,
+      "total": 198063
+    },
+    "genres": [
+      "french house",
+      "acid house",
+      "techno"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3y1SoTOdrmRNTBVph5T0VZ",
+    "id": "3y1SoTOdrmRNTBVph5T0VZ",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb7a4809df7e00b6420a18a4c0",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051747a4809df7e00b6420a18a4c0",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1787a4809df7e00b6420a18a4c0",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Laurent Garnier",
+    "popularity": 38,
+    "type": "artist",
+    "uri": "spotify:artist:3y1SoTOdrmRNTBVph5T0VZ"
+  }
+}

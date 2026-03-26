@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-08-23T08:49:12.043005",
+  "data": [
+    {
+      "artist": "JKriv",
+      "artist_name": "JKriv",
+      "name": "JKriv Concert (559vGcGh)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/559vGcGhsZxyzn8uUjrBEC",
+      "source": "Spotify"
+    },
+    {
+      "artist": "JKriv",
+      "artist_name": "JKriv",
+      "name": "JKriv at Xanadu",
+      "venue": "Xanadu",
+      "city": "New York City",
+      "country": "US",
+      "date": "2025-09-07",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/37zO3ULaHhwb8JuhmVl248",
+      "source": "Spotify"
+    },
+    {
+      "artist": "JKriv",
+      "artist_name": "JKriv",
+      "name": "JKriv at Public Records",
+      "venue": "Public Records",
+      "city": "New York",
+      "country": "US",
+      "date": "2025-09-13",
+      "time": "11:00 PM",
+      "url": "https://open.spotify.com/concert/3pyLMy6HSaGRSTJBzZhRQs",
+      "source": "Spotify"
+    }
+  ]
+}

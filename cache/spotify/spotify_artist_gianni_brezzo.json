@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:02:49.420676",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3JJR0ExBP5G8uyhcViM14W"
+    },
+    "followers": {
+      "href": null,
+      "total": 17966
+    },
+    "genres": [
+      "nu jazz",
+      "jazz funk"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3JJR0ExBP5G8uyhcViM14W",
+    "id": "3JJR0ExBP5G8uyhcViM14W",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebe97f777e854173df1a81da85",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174e97f777e854173df1a81da85",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178e97f777e854173df1a81da85",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Gianni Brezzo",
+    "popularity": 39,
+    "type": "artist",
+    "uri": "spotify:artist:3JJR0ExBP5G8uyhcViM14W"
+  }
+}

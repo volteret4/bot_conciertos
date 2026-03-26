@@ -1,0 +1,70 @@
+{
+  "timestamp": "2025-10-23T17:09:38.927511",
+  "concerts": [
+    {
+      "artist": "Foxing",
+      "name": "*SOLD OUT* Foxing with Pool Kids",
+      "venue": "Thalia Hall",
+      "city": "Chicago",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-03",
+      "time": "20:00:00",
+      "url": "https://www.ticketweb.com/event/sold-out-foxing-with-pool-thalia-hall-tickets/14586773",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AfpkqS"
+    },
+    {
+      "artist": "Foxing",
+      "name": "*SOLD OUT* Foxing with Pool Kids",
+      "venue": "Thalia Hall",
+      "city": "Chicago",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-04",
+      "time": "20:00:00",
+      "url": "https://www.ticketweb.com/event/sold-out-foxing-with-pool-thalia-hall-tickets/14575553",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1Af4g4K"
+    },
+    {
+      "artist": "Foxing",
+      "name": "Foxing",
+      "venue": "Delmar Hall",
+      "city": "Saint Louis",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-05",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/foxing-saint-louis-missouri-12-05-2025/event/06006333E6CC8F37",
+      "source": "Ticketmaster",
+      "id": "vv1AkZkGSGkdJSFHM"
+    },
+    {
+      "artist": "Foxing",
+      "name": "Foxing",
+      "venue": "The Pageant",
+      "city": "Saint Louis",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-06",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/foxing-saint-louis-missouri-12-06-2025/event/0600633AC1E6745D",
+      "source": "Ticketmaster",
+      "id": "vv17bZbSGklvyEoq"
+    },
+    {
+      "artist": "Foxing",
+      "name": "Foxing has moved to The Pageant",
+      "venue": "The Pageant",
+      "city": "Saint Louis",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-06",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/foxing-has-moved-to-the-pageant-saint-louis-missouri-12-06-2025/event/060063369D1C21E8",
+      "source": "Ticketmaster",
+      "id": "vv1kvOvNutGAu6e6I"
+    }
+  ]
+}

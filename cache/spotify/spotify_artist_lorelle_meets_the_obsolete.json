@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T19:56:01.766552",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/79ckv9yY9WAKcH8KfrvmiP"
+    },
+    "followers": {
+      "href": null,
+      "total": 18921
+    },
+    "genres": [
+      "neo-psychedelic",
+      "space rock",
+      "psychedelic rock",
+      "shoegaze",
+      "krautrock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/79ckv9yY9WAKcH8KfrvmiP",
+    "id": "79ckv9yY9WAKcH8KfrvmiP",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebecca758cbf6698af98bd1daf",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174ecca758cbf6698af98bd1daf",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178ecca758cbf6698af98bd1daf",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Lorelle Meets The Obsolete",
+    "popularity": 26,
+    "type": "artist",
+    "uri": "spotify:artist:79ckv9yY9WAKcH8KfrvmiP"
+  }
+}

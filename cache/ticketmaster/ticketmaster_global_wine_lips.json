@@ -1,0 +1,70 @@
+{
+  "timestamp": "2025-10-23T17:15:15.006283",
+  "concerts": [
+    {
+      "artist": "Wine Lips",
+      "name": "Wine Lips with Mister Pets & Sleep Country",
+      "venue": "The Pearl",
+      "city": "Vancouver",
+      "country": "Canada",
+      "country_code": "CA",
+      "date": "2025-11-06",
+      "time": "20:30:00",
+      "url": "https://www.ticketweb.ca/event/wine-lips-with-mister-pets-the-pearl-tickets/14472983",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AfowJd"
+    },
+    {
+      "artist": "Wine Lips",
+      "name": "Wine Lips (21+)",
+      "venue": "The Get Down Music Venue",
+      "city": "Portland",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-07",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7b_bs",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7b_bs"
+    },
+    {
+      "artist": "Wine Lips",
+      "name": "WINE LIPS W/ KING BOB & THE DOG INDIANA @ Lucky Bar",
+      "venue": "Lucky Bar",
+      "city": "Victoria",
+      "country": "Canada",
+      "country_code": "CA",
+      "date": "2025-11-09",
+      "time": "19:00:00",
+      "url": "https://www.ticketweb.ca/event/wine-lips-w-king-bob-lucky-bar-tickets/13905124",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AK0A70"
+    },
+    {
+      "artist": "Wine Lips",
+      "name": "Wine Lips (18 & Over with Valid Government ID)",
+      "venue": "7th Street Entry",
+      "city": "Minneapolis",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-19",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7jvAO",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7jvAO"
+    },
+    {
+      "artist": "Wine Lips",
+      "name": "WINE LIPS, Mr. Phylzzz, The Rosies",
+      "venue": "Grog Shop",
+      "city": "Cleveland Heights",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-22",
+      "time": "20:30:00",
+      "url": "https://www.ticketweb.com/event/wine-lips-mr-phylzzz-the-grog-shop-tickets/13962954",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AKPxPf"
+    }
+  ]
+}

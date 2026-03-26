@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:02:09.864496",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4NkfNPTsDtbPntbU1pBYVt"
+    },
+    "followers": {
+      "href": null,
+      "total": 12413
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/4NkfNPTsDtbPntbU1pBYVt",
+    "id": "4NkfNPTsDtbPntbU1pBYVt",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb726c275ffe4d7d5cb9631044",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174726c275ffe4d7d5cb9631044",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178726c275ffe4d7d5cb9631044",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Meg Baird",
+    "popularity": 16,
+    "type": "artist",
+    "uri": "spotify:artist:4NkfNPTsDtbPntbU1pBYVt"
+  }
+}

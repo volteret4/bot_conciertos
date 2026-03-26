@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-09-02T08:52:58.810777",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6XyY86QOPPrYVGvF9ch6wz"
+    },
+    "followers": {
+      "href": null,
+      "total": 31121194
+    },
+    "genres": [
+      "nu metal",
+      "rap metal",
+      "rock",
+      "alternative metal"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6XyY86QOPPrYVGvF9ch6wz",
+    "id": "6XyY86QOPPrYVGvF9ch6wz",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb527d95dabbe8b8b527e8136f",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174527d95dabbe8b8b527e8136f",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178527d95dabbe8b8b527e8136f",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Linkin Park",
+    "popularity": 91,
+    "type": "artist",
+    "uri": "spotify:artist:6XyY86QOPPrYVGvF9ch6wz"
+  }
+}

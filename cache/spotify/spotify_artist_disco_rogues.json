@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:58:30.737496",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/75MhYfA62U82o10iLJaU6a"
+    },
+    "followers": {
+      "href": null,
+      "total": 34
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/75MhYfA62U82o10iLJaU6a",
+    "id": "75MhYfA62U82o10iLJaU6a",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb4e42b2358de813ee9202ba67",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051744e42b2358de813ee9202ba67",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1784e42b2358de813ee9202ba67",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Disco Rogues",
+    "popularity": 0,
+    "type": "artist",
+    "uri": "spotify:artist:75MhYfA62U82o10iLJaU6a"
+  }
+}

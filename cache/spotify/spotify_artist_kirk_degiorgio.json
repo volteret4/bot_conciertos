@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:58:23.448743",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2Dcqwokizs4vSMXCVFqfQs"
+    },
+    "followers": {
+      "href": null,
+      "total": 2810
+    },
+    "genres": [
+      "dub techno"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2Dcqwokizs4vSMXCVFqfQs",
+    "id": "2Dcqwokizs4vSMXCVFqfQs",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb82f26952dd3b19e6095d97cf",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517482f26952dd3b19e6095d97cf",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17882f26952dd3b19e6095d97cf",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Kirk Degiorgio",
+    "popularity": 8,
+    "type": "artist",
+    "uri": "spotify:artist:2Dcqwokizs4vSMXCVFqfQs"
+  }
+}

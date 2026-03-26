@@ -1,0 +1,101 @@
+{
+  "timestamp": "2025-09-02T08:08:49.274486",
+  "concerts": [
+    {
+      "artist": "B12",
+      "name": "2025 Suite License Fee - PF&B12",
+      "venue": "Intuit Dome",
+      "city": "Inglewood",
+      "country": "US",
+      "date": "2025-10-01",
+      "time": "20:00:00",
+      "url": "",
+      "source": "Ticketmaster",
+      "id": "Za5ju3rKuqZB5M2y5g7ueLhWEgvQLRAvq"
+    },
+    {
+      "artist": "B12",
+      "name": "2025 Suite License Fee - F&B12",
+      "venue": "Intuit Dome",
+      "city": "Inglewood",
+      "country": "US",
+      "date": "2025-10-01",
+      "time": "20:00:00",
+      "url": "",
+      "source": "Ticketmaster",
+      "id": "Za5ju3rKuqZBEQ4hF4CqCTQskBiI5cZSA"
+    },
+    {
+      "artist": "B12",
+      "name": "2025 Suite License Fee - PF&B12",
+      "venue": "Intuit Dome",
+      "city": "Inglewood",
+      "country": "US",
+      "date": "2025-10-01",
+      "time": "20:00:00",
+      "url": "",
+      "source": "Ticketmaster",
+      "id": "Za5ju3rKuqZDdP0B6oVPWa7tsoOEVS7Twt"
+    },
+    {
+      "artist": "B12",
+      "name": "2025 Suite License Fee - F&B12",
+      "venue": "Intuit Dome",
+      "city": "Inglewood",
+      "country": "US",
+      "date": "2025-10-01",
+      "time": "20:00:00",
+      "url": "",
+      "source": "Ticketmaster",
+      "id": "Za5ju3rKuqZDdggZBPE__G5zU15E3yb31_"
+    },
+    {
+      "artist": "B12",
+      "name": "2025 Suite License Fee - F&B12",
+      "venue": "Intuit Dome",
+      "city": "Inglewood",
+      "country": "US",
+      "date": "2025-10-01",
+      "time": "20:00:00",
+      "url": "",
+      "source": "Ticketmaster",
+      "id": "Za5ju3rKuqZDe0F6U0xvuaj135L6Q6kzUX"
+    },
+    {
+      "artist": "B12",
+      "name": "2025 Suite License Fee - PF&B12",
+      "venue": "Intuit Dome",
+      "city": "Inglewood",
+      "country": "US",
+      "date": "2025-10-01",
+      "time": "20:00:00",
+      "url": "",
+      "source": "Ticketmaster",
+      "id": "Za5ju3rKuqZDeViGR5NwP6ghBqGhHFGTjY"
+    },
+    {
+      "artist": "B12",
+      "name": "2025 Suite License Fee - PF&B12",
+      "venue": "Intuit Dome",
+      "city": "Inglewood",
+      "country": "US",
+      "date": "2025-10-01",
+      "time": "20:00:00",
+      "url": "",
+      "source": "Ticketmaster",
+      "id": "Za5ju3rKuqZDvP2uSlI6ueWaATStvapbgL"
+    },
+    {
+      "artist": "B12",
+      "name": "2025 Suite License Fee - F&B12",
+      "venue": "Intuit Dome",
+      "city": "Inglewood",
+      "country": "US",
+      "date": "2025-10-01",
+      "time": "20:00:00",
+      "url": "",
+      "source": "Ticketmaster",
+      "id": "Za5ju3rKuqZDvsbDUiXd4aTnk5I6_PtN2a"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:00:35.404821",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6S6PrVKF41V5qJxz4fZB56"
+    },
+    "followers": {
+      "href": null,
+      "total": 2184
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/6S6PrVKF41V5qJxz4fZB56",
+    "id": "6S6PrVKF41V5qJxz4fZB56",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb666fb1d4f4ad253a749d2ce5",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174666fb1d4f4ad253a749d2ce5",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178666fb1d4f4ad253a749d2ce5",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Big Ever",
+    "popularity": 21,
+    "type": "artist",
+    "uri": "spotify:artist:6S6PrVKF41V5qJxz4fZB56"
+  }
+}

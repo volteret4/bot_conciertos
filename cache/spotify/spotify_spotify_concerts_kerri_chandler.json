@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-24T08:47:31.689629",
+  "data": [
+    {
+      "artist": "Kerri Chandler",
+      "artist_name": "Kerri Chandler",
+      "name": "Kerri Chandler Concert (1KaD3IM1)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/1KaD3IM1MYpU9Gp0OalhNo",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Kerri Chandler",
+      "artist_name": "Kerri Chandler",
+      "name": "Kerri Chandler at Chinois",
+      "venue": "Chinois",
+      "city": "Ibiza",
+      "country": "ES",
+      "date": "2025-09-04",
+      "time": "11:30 PM",
+      "url": "https://open.spotify.com/concert/6N5KMPxs4CXVW9E9aMG8Lu",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Kerri Chandler",
+      "artist_name": "Kerri Chandler",
+      "name": "Kerri Chandler Concert (3CHLqF3F)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/3CHLqF3FdMQmQTc6PeCJrI",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Kerri Chandler",
+      "artist_name": "Kerri Chandler",
+      "name": "Kerri Chandler at Het Sieraad",
+      "venue": "Het Sieraad",
+      "city": "Amsterdam",
+      "country": "NL",
+      "date": "2025-09-12",
+      "time": "11:00 PM",
+      "url": "https://open.spotify.com/concert/7EwohYPWdGdtdYol8Q2rG2",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Kerri Chandler",
+      "artist_name": "Kerri Chandler",
+      "name": "Kerri Chandler Concert (0pbIZPGi)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/0pbIZPGijWPfuFEdDN3kKe",
+      "source": "Spotify"
+    }
+  ]
+}

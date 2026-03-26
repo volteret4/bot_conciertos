@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:55:37.202685",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4DbVGBurfbrdLW2ZwfwdmP"
+    },
+    "followers": {
+      "href": null,
+      "total": 141160
+    },
+    "genres": [
+      "indie jazz",
+      "nu jazz",
+      "jazz",
+      "jazz funk"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4DbVGBurfbrdLW2ZwfwdmP",
+    "id": "4DbVGBurfbrdLW2ZwfwdmP",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebac10f67387d5f957d1366262",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174ac10f67387d5f957d1366262",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178ac10f67387d5f957d1366262",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Takuya Kuroda",
+    "popularity": 41,
+    "type": "artist",
+    "uri": "spotify:artist:4DbVGBurfbrdLW2ZwfwdmP"
+  }
+}

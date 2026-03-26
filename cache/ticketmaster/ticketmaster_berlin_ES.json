@@ -1,0 +1,19 @@
+{
+  "timestamp": "2025-11-03T20:00:27.558517",
+  "concerts": [
+    {
+      "artist": "Berlin",
+      "name": "Laia Alcolea",
+      "venue": "Café Berlín",
+      "city": "Madrid",
+      "country": "Spain",
+      "country_code": "ES",
+      "date": "2026-02-13",
+      "time": "20:30:00",
+      "image": "https://s1.ticketm.net/dam/a/f3b/90caa8a0-019c-43b4-bde0-d444f5e3ef3b_RETINA_LANDSCAPE_16_9.jpg",
+      "url": "https://www.ticketmaster.es/event/laia-alcolea-tickets/1373316977?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZ2qZ16vuSGpPM"
+    }
+  ]
+}

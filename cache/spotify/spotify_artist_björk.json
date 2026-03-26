@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:00:38.336973",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7w29UYBi0qsHi5RTcv3lmA"
+    },
+    "followers": {
+      "href": null,
+      "total": 2460476
+    },
+    "genres": [
+      "art pop",
+      "trip hop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7w29UYBi0qsHi5RTcv3lmA",
+    "id": "7w29UYBi0qsHi5RTcv3lmA",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb8885fa2ceadc7658d65e1121",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051748885fa2ceadc7658d65e1121",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1788885fa2ceadc7658d65e1121",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Björk",
+    "popularity": 70,
+    "type": "artist",
+    "uri": "spotify:artist:7w29UYBi0qsHi5RTcv3lmA"
+  }
+}

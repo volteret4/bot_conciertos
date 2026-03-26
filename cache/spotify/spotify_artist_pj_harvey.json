@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T20:04:28.468974",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/12VaqyEhgwDRuFfEqbnrpz"
+    },
+    "followers": {
+      "href": null,
+      "total": 1201155
+    },
+    "genres": [
+      "art pop",
+      "alternative rock",
+      "singer-songwriter"
+    ],
+    "href": "https://api.spotify.com/v1/artists/12VaqyEhgwDRuFfEqbnrpz",
+    "id": "12VaqyEhgwDRuFfEqbnrpz",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebb7b587363a285846586f6f74",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174b7b587363a285846586f6f74",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178b7b587363a285846586f6f74",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "PJ Harvey",
+    "popularity": 57,
+    "type": "artist",
+    "uri": "spotify:artist:12VaqyEhgwDRuFfEqbnrpz"
+  }
+}

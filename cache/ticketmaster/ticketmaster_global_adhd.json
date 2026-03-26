@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-10-23T17:12:34.195261",
+  "concerts": [
+    {
+      "artist": "ADHD",
+      "name": "ADHD foredrag med Mette Cornelius -  Ro i rampelys - kaos i privaten",
+      "venue": "Unknown venue",
+      "city": "Aarhus C",
+      "country": "Denmark",
+      "country_code": "DK",
+      "date": "2025-10-30",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.dk/event/adhd-foredrag-med-mette-cornelius-ro-i-rampelys-kaos-i-privaten-tickets/1608986754?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZC4Z16vbFJkqf"
+    },
+    {
+      "artist": "ADHD",
+      "name": "ADHD foredrag med Mette Cornelius -  Ro i rampelys - kaos i privaten",
+      "venue": "ZBC",
+      "city": "Roskilde",
+      "country": "Denmark",
+      "country_code": "DK",
+      "date": "2025-11-12",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.dk/event/adhd-foredrag-med-mette-cornelius-ro-i-rampelys-kaos-i-privaten-tickets/1019687448?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZC4Z16vZ_Q6oF"
+    },
+    {
+      "artist": "ADHD",
+      "name": "ADHD foredrag med Mette Cornelius -  Ro i rampelys - kaos i privaten",
+      "venue": "KU.BE",
+      "city": "Frederiksberg",
+      "country": "Denmark",
+      "country_code": "DK",
+      "date": "2025-11-13",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.dk/event/adhd-foredrag-med-mette-cornelius-ro-i-rampelys-kaos-i-privaten-tickets/1008903959?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZC4Z16vZF0dP_"
+    }
+  ]
+}

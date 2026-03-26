@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T19:55:17.585077",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/562Od3CffWedyz2BbeYWVn"
+    },
+    "followers": {
+      "href": null,
+      "total": 680292
+    },
+    "genres": [
+      "progressive rock",
+      "new age"
+    ],
+    "href": "https://api.spotify.com/v1/artists/562Od3CffWedyz2BbeYWVn",
+    "id": "562Od3CffWedyz2BbeYWVn",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/b04f41784ba49ed0875cbd018e0e0e55c94344eb",
+        "height": 802,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/a420aea5fb5de33569e84eab68d9976d6c35ef8c",
+        "height": 513,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/f7316730ce369138342928cf5abcc80e9f64fde1",
+        "height": 160,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/d15ba8b33a09376d318c3a20c87b08d7916d2350",
+        "height": 51,
+        "width": 64
+      }
+    ],
+    "name": "Mike Oldfield",
+    "popularity": 58,
+    "type": "artist",
+    "uri": "spotify:artist:562Od3CffWedyz2BbeYWVn"
+  }
+}

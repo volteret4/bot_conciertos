@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:02:58.596333",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5tdfcn1EwWqTKoxHyv9G6g"
+    },
+    "followers": {
+      "href": null,
+      "total": 2535
+    },
+    "genres": [
+      "ambient",
+      "jungle"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5tdfcn1EwWqTKoxHyv9G6g",
+    "id": "5tdfcn1EwWqTKoxHyv9G6g",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273b5fecd4f2caac82c7518a218",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02b5fecd4f2caac82c7518a218",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851b5fecd4f2caac82c7518a218",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "MLO",
+    "popularity": 15,
+    "type": "artist",
+    "uri": "spotify:artist:5tdfcn1EwWqTKoxHyv9G6g"
+  }
+}

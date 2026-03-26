@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-10-23T17:51:55.207132",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3WaJSfKnzc65VDgmj2zU8B"
+    },
+    "followers": {
+      "href": null,
+      "total": 1822355
+    },
+    "genres": [
+      "indie rock",
+      "post-punk"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3WaJSfKnzc65VDgmj2zU8B",
+    "id": "3WaJSfKnzc65VDgmj2zU8B",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebc31f8e7aad462874455cf070",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174c31f8e7aad462874455cf070",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178c31f8e7aad462874455cf070",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Interpol",
+    "popularity": 61,
+    "type": "artist",
+    "uri": "spotify:artist:3WaJSfKnzc65VDgmj2zU8B"
+  }
+}

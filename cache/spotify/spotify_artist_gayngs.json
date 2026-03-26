@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:02:49.846056",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3OUN7gnsDijEfvaHpXAAzI"
+    },
+    "followers": {
+      "href": null,
+      "total": 26408
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/3OUN7gnsDijEfvaHpXAAzI",
+    "id": "3OUN7gnsDijEfvaHpXAAzI",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eba7506a160655f5ba728027e2",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174a7506a160655f5ba728027e2",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178a7506a160655f5ba728027e2",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Gayngs",
+    "popularity": 20,
+    "type": "artist",
+    "uri": "spotify:artist:3OUN7gnsDijEfvaHpXAAzI"
+  }
+}

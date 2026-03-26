@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:55:39.296865",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7FEUkVfaBCIk5HQ6176Pnw"
+    },
+    "followers": {
+      "href": null,
+      "total": 5236
+    },
+    "genres": [
+      "dub techno",
+      "minimal techno"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7FEUkVfaBCIk5HQ6176Pnw",
+    "id": "7FEUkVfaBCIk5HQ6176Pnw",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebde7d242efba80dccd0066f57",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174de7d242efba80dccd0066f57",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178de7d242efba80dccd0066f57",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "L.B. Dub Corp",
+    "popularity": 16,
+    "type": "artist",
+    "uri": "spotify:artist:7FEUkVfaBCIk5HQ6176Pnw"
+  }
+}

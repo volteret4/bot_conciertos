@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-21T09:16:27.276656",
+  "data": [
+    {
+      "artist": "Kruder & Dorfmeister",
+      "artist_name": "Kruder & Dorfmeister",
+      "name": "Kruder & Dorfmeister at Citizens House of Blues Boston",
+      "venue": "Citizens House of Blues Boston",
+      "city": "Boston",
+      "country": "US",
+      "date": "2025-09-04",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/21uxz0mEMPAgNM4tYPUFPn",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Kruder & Dorfmeister",
+      "artist_name": "Kruder & Dorfmeister",
+      "name": "Kruder & Dorfmeister at Brooklyn Paramount",
+      "venue": "Brooklyn Paramount",
+      "city": "Brooklyn",
+      "country": "US",
+      "date": "2025-09-05",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/5BreJHZ0nGlKqTZEY48BBy",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Kruder & Dorfmeister",
+      "artist_name": "Kruder & Dorfmeister",
+      "name": "Kruder & Dorfmeister at The Auditorium",
+      "venue": "The Auditorium",
+      "city": "Chicago",
+      "country": "US",
+      "date": "2025-09-06",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/3c3CB59JQY5yq2PsZQeGP3",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Kruder & Dorfmeister",
+      "artist_name": "Kruder & Dorfmeister",
+      "name": "Kruder & Dorfmeister at Howard Theatre",
+      "venue": "Howard Theatre",
+      "city": "Washington",
+      "country": "US",
+      "date": "2025-09-07",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/6yK6rrzab15mKOCfc9OTwP",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Kruder & Dorfmeister",
+      "artist_name": "Kruder & Dorfmeister",
+      "name": "Kruder & Dorfmeister at Greek Theatre",
+      "venue": "Greek Theatre",
+      "city": "Los Angeles",
+      "country": "US",
+      "date": "2025-09-11",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/45W6xGTyWJgEujC8dRQnUP",
+      "source": "Spotify"
+    }
+  ]
+}

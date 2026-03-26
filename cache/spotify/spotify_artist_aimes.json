@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:01:23.483405",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1r5OA725l8wh0nFdPnL8wc"
+    },
+    "followers": {
+      "href": null,
+      "total": 1097
+    },
+    "genres": [
+      "nu disco",
+      "indie dance"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1r5OA725l8wh0nFdPnL8wc",
+    "id": "1r5OA725l8wh0nFdPnL8wc",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273acfc27a517f93e4d4c0583e2",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02acfc27a517f93e4d4c0583e2",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851acfc27a517f93e4d4c0583e2",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "AIMES",
+    "popularity": 5,
+    "type": "artist",
+    "uri": "spotify:artist:1r5OA725l8wh0nFdPnL8wc"
+  }
+}

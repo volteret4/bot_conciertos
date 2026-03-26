@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-10-23T17:09:41.855103",
+  "concerts": [
+    {
+      "artist": "Front Line Assembly",
+      "name": "Front Line Assembly with Special Guests",
+      "venue": "Lee's Palace",
+      "city": "Toronto",
+      "country": "Canada",
+      "country_code": "CA",
+      "date": "2026-04-29",
+      "time": "20:00:00",
+      "url": "https://www.ticketweb.ca/event/front-line-assembly-with-special-lees-palace-tickets/14571853",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1Af4s-K"
+    },
+    {
+      "artist": "Front Line Assembly",
+      "name": "Front Line Assembly",
+      "venue": "Fairmount Theatre",
+      "city": "Montreal",
+      "country": "Canada",
+      "country_code": "CA",
+      "date": "2026-04-30",
+      "time": "20:00:00",
+      "url": "https://www.universe.com/events/front-line-assembly-tickets-F2NWL5?ref=ticketmaster",
+      "source": "Ticketmaster",
+      "id": "LvZ18Qu888S-DiYZ0Dohx"
+    }
+  ]
+}

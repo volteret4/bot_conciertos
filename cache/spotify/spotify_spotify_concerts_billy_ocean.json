@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-21T08:16:50.073250",
+  "data": [
+    {
+      "artist": "Billy Ocean",
+      "artist_name": "Billy Ocean",
+      "name": "Billy Ocean at Royal Theatre, National Convention Centre",
+      "venue": "Royal Theatre, National Convention Centre",
+      "city": "Canberra",
+      "country": "AU",
+      "date": "2025-09-13",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/2sNvLg6KHlaYLB53Ule90H",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Billy Ocean",
+      "artist_name": "Billy Ocean",
+      "name": "Billy Ocean at Adelaide Entertainment Centre Theatre",
+      "venue": "Adelaide Entertainment Centre Theatre",
+      "city": "Hindmarsh",
+      "country": "AU",
+      "date": "2025-09-15",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/4faDWpfq7G0u53mdKgubn4",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Billy Ocean",
+      "artist_name": "Billy Ocean",
+      "name": "Billy Ocean at Riverside Theatre, Perth Convention and Exhibition Centre",
+      "venue": "Riverside Theatre, Perth Convention and Exhibition Centre",
+      "city": "Perth",
+      "country": "AU",
+      "date": "2025-09-17",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/3VEn2lFNcyfwAVhxIVcYUw",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Billy Ocean",
+      "artist_name": "Billy Ocean",
+      "name": "Billy Ocean at The Star Gold Coast",
+      "venue": "The Star Gold Coast",
+      "city": "Broadbeach",
+      "country": "AU",
+      "date": "2025-09-20",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/26ymFmzLb4oPVgaP3k1QTL",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Billy Ocean",
+      "artist_name": "Billy Ocean",
+      "name": "Billy Ocean at Brisbane Convention &amp; Exhibition Centre",
+      "venue": "Brisbane Convention &amp; Exhibition Centre",
+      "city": "South Bank",
+      "country": "AU",
+      "date": "2025-09-21",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/2kOwotrKLKRfJemsRYYcEK",
+      "source": "Spotify"
+    }
+  ]
+}

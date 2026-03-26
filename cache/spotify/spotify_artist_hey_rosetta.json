@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:58:13.517265",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/52ue4x5xVjLx4cw2HEXMhi"
+    },
+    "followers": {
+      "href": null,
+      "total": 49418
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/52ue4x5xVjLx4cw2HEXMhi",
+    "id": "52ue4x5xVjLx4cw2HEXMhi",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/28496928302300a3d9a67b2b13b9f9ee1bccb7ff",
+        "height": 682,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/e33569c6f8f13c53e2a88e62d33d0c20b064432f",
+        "height": 436,
+        "width": 639
+      },
+      {
+        "url": "https://i.scdn.co/image/2085ae4a4e3a72147b11f663a2918a0f8cf32cc9",
+        "height": 136,
+        "width": 199
+      },
+      {
+        "url": "https://i.scdn.co/image/e9018aae25285f5e8e2b35a52cc60d091047d246",
+        "height": 44,
+        "width": 64
+      }
+    ],
+    "name": "Hey Rosetta!",
+    "popularity": 28,
+    "type": "artist",
+    "uri": "spotify:artist:52ue4x5xVjLx4cw2HEXMhi"
+  }
+}

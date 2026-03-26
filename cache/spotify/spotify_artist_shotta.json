@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:48:50.227039",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6kSbf0Xe8Bdhitd3d6Jr2z"
+    },
+    "followers": {
+      "href": null,
+      "total": 152919
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/6kSbf0Xe8Bdhitd3d6Jr2z",
+    "id": "6kSbf0Xe8Bdhitd3d6Jr2z",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb189a65eb5eceaa93fc0210e8",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174189a65eb5eceaa93fc0210e8",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178189a65eb5eceaa93fc0210e8",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Shotta",
+    "popularity": 40,
+    "type": "artist",
+    "uri": "spotify:artist:6kSbf0Xe8Bdhitd3d6Jr2z"
+  }
+}

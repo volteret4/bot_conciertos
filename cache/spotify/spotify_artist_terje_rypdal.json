@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T19:48:19.113483",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3EFzYPEP2mCQoqcLjoWwK1"
+    },
+    "followers": {
+      "href": null,
+      "total": 27833
+    },
+    "genres": [
+      "jazz fusion",
+      "free jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3EFzYPEP2mCQoqcLjoWwK1",
+    "id": "3EFzYPEP2mCQoqcLjoWwK1",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6772690000c46c27073aa5cb21ff5563f714d9",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000dd2227073aa5cb21ff5563f714d9",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000bac327073aa5cb21ff5563f714d9",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67726900008f7427073aa5cb21ff5563f714d9",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Terje Rypdal",
+    "popularity": 30,
+    "type": "artist",
+    "uri": "spotify:artist:3EFzYPEP2mCQoqcLjoWwK1"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:03:21.010108",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/07wydlLRa4ovoB9JT1fmSh"
+    },
+    "followers": {
+      "href": null,
+      "total": 10110
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/07wydlLRa4ovoB9JT1fmSh",
+    "id": "07wydlLRa4ovoB9JT1fmSh",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273b7106f875caade0439a9d139",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e024893f86b2d3649e98648b053",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048514893f86b2d3649e98648b053",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "The Zenmenn",
+    "popularity": 28,
+    "type": "artist",
+    "uri": "spotify:artist:07wydlLRa4ovoB9JT1fmSh"
+  }
+}

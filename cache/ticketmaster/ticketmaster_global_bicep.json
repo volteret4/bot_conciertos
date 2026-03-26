@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-09-02T08:11:11.734672",
+  "concerts": [
+    {
+      "artist": "Bicep",
+      "name": "III Points",
+      "venue": "Mana Wynwood Convention Center",
+      "city": "Miami",
+      "country": "US",
+      "date": "2025-10-18",
+      "time": "16:00:00",
+      "url": "https://on.fgtix.com/trk/cp4M",
+      "source": "Ticketmaster",
+      "id": "vvG1VZbs9knS_j"
+    }
+  ]
+}

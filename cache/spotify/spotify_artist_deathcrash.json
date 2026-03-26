@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:47:12.954774",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7m7gr3M1p4S92xuwXvorEH"
+    },
+    "followers": {
+      "href": null,
+      "total": 11171
+    },
+    "genres": [
+      "slowcore",
+      "post-rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7m7gr3M1p4S92xuwXvorEH",
+    "id": "7m7gr3M1p4S92xuwXvorEH",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb63b77321fa9b16be06cf2bf8",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517463b77321fa9b16be06cf2bf8",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17863b77321fa9b16be06cf2bf8",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "deathcrash",
+    "popularity": 17,
+    "type": "artist",
+    "uri": "spotify:artist:7m7gr3M1p4S92xuwXvorEH"
+  }
+}

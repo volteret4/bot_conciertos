@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-10-23T20:56:32.448918",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5Qnpdt4MtT54U7fFNEYDTZ"
+    },
+    "followers": {
+      "href": null,
+      "total": 15596
+    },
+    "genres": [
+      "new wave"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5Qnpdt4MtT54U7fFNEYDTZ",
+    "id": "5Qnpdt4MtT54U7fFNEYDTZ",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb230aa48b235be5ea477c7708",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174230aa48b235be5ea477c7708",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178230aa48b235be5ea477c7708",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Hipsway",
+    "popularity": 24,
+    "type": "artist",
+    "uri": "spotify:artist:5Qnpdt4MtT54U7fFNEYDTZ"
+  }
+}

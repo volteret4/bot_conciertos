@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-10-23T17:10:17.008091",
+  "concerts": [
+    {
+      "artist": "Hiss Golden Messenger",
+      "name": "Hiss Golden Messenger",
+      "venue": "The Senate",
+      "city": "Columbia",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-07",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/hiss-golden-messenger-columbia-south-carolina-11-07-2025/event/2D00630CD2FC398A",
+      "source": "Ticketmaster",
+      "id": "G5eVZbYS3TdJ1"
+    },
+    {
+      "artist": "Hiss Golden Messenger",
+      "name": "Hiss Golden Messenger",
+      "venue": "Steven Tanger Center for the Performing Arts",
+      "city": "Greensboro",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-01-17",
+      "time": "19:30:00",
+      "url": "https://www.ticketmaster.com/hiss-golden-messenger-greensboro-north-carolina-01-17-2026/event/2D0062A6A6F426A0",
+      "source": "Ticketmaster",
+      "id": "G5eVZbnQJWeQO"
+    },
+    {
+      "artist": "Hiss Golden Messenger",
+      "name": "Hiss Golden Messenger w/ Jim Bryson - Winterruption YEG 2026",
+      "venue": "McDougall United Church",
+      "city": "Edmonton",
+      "country": "Canada",
+      "country_code": "CA",
+      "date": "2026-01-23",
+      "time": "19:00:00",
+      "url": "https://www.ticketweb.ca/event/hiss-golden-messenger-w-jim-mcdougall-united-church-tickets/14628373",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AfbIuS"
+    }
+  ]
+}

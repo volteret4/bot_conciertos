@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:56:24.531591",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2w7aH9RfRWfODKlj0WI8By"
+    },
+    "followers": {
+      "href": null,
+      "total": 9078
+    },
+    "genres": [
+      "drone",
+      "ambient",
+      "post-rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2w7aH9RfRWfODKlj0WI8By",
+    "id": "2w7aH9RfRWfODKlj0WI8By",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebe83943343a943b25f563a31f",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174e83943343a943b25f563a31f",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178e83943343a943b25f563a31f",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Mark McGuire",
+    "popularity": 15,
+    "type": "artist",
+    "uri": "spotify:artist:2w7aH9RfRWfODKlj0WI8By"
+  }
+}

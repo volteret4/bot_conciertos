@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:46:51.427987",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/73a6pNH4YtLNgDbPQwXveo"
+    },
+    "followers": {
+      "href": null,
+      "total": 710820
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/73a6pNH4YtLNgDbPQwXveo",
+    "id": "73a6pNH4YtLNgDbPQwXveo",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb839bbba2f3489bdf77dc29c6",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174839bbba2f3489bdf77dc29c6",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178839bbba2f3489bdf77dc29c6",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Kim Wilde",
+    "popularity": 56,
+    "type": "artist",
+    "uri": "spotify:artist:73a6pNH4YtLNgDbPQwXveo"
+  }
+}

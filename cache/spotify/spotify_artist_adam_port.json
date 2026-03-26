@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:49:37.807217",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2loEsOijJ6XiGzWYFXMIRk"
+    },
+    "followers": {
+      "href": null,
+      "total": 334989
+    },
+    "genres": [
+      "afro house",
+      "house",
+      "afro tech"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2loEsOijJ6XiGzWYFXMIRk",
+    "id": "2loEsOijJ6XiGzWYFXMIRk",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb722acdd4bb9e3aac45436d08",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174722acdd4bb9e3aac45436d08",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178722acdd4bb9e3aac45436d08",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Adam Port",
+    "popularity": 71,
+    "type": "artist",
+    "uri": "spotify:artist:2loEsOijJ6XiGzWYFXMIRk"
+  }
+}

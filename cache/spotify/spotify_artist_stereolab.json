@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T20:04:21.992719",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3Rj0tDHoX7C5NFq5DKIpHt"
+    },
+    "followers": {
+      "href": null,
+      "total": 397901
+    },
+    "genres": [
+      "art pop",
+      "krautrock",
+      "post-rock",
+      "neo-psychedelic"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3Rj0tDHoX7C5NFq5DKIpHt",
+    "id": "3Rj0tDHoX7C5NFq5DKIpHt",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebe5aecb2a4e2bff9782f9e2f2",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174e5aecb2a4e2bff9782f9e2f2",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178e5aecb2a4e2bff9782f9e2f2",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Stereolab",
+    "popularity": 52,
+    "type": "artist",
+    "uri": "spotify:artist:3Rj0tDHoX7C5NFq5DKIpHt"
+  }
+}

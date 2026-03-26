@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:59:12.461552",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6GRC8segVAr34gm6pjfSoQ"
+    },
+    "followers": {
+      "href": null,
+      "total": 1281825
+    },
+    "genres": [
+      "colombian pop",
+      "latin pop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6GRC8segVAr34gm6pjfSoQ",
+    "id": "6GRC8segVAr34gm6pjfSoQ",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb398cb99bf90b9f0d48de6ac3",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174398cb99bf90b9f0d48de6ac3",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178398cb99bf90b9f0d48de6ac3",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Fanny Lu",
+    "popularity": 59,
+    "type": "artist",
+    "uri": "spotify:artist:6GRC8segVAr34gm6pjfSoQ"
+  }
+}

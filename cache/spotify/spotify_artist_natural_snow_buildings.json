@@ -1,0 +1,50 @@
+{
+  "timestamp": "2025-11-03T19:55:04.471402",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6Y6w2HnL3GM49hOa74QhOO"
+    },
+    "followers": {
+      "href": null,
+      "total": 21237
+    },
+    "genres": [
+      "drone",
+      "dark ambient",
+      "experimental",
+      "ambient",
+      "post-rock",
+      "ambient folk",
+      "avant-garde",
+      "drone metal"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6Y6w2HnL3GM49hOa74QhOO",
+    "id": "6Y6w2HnL3GM49hOa74QhOO",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/2f4874ae1fc4bf7efb154dd00aa6ee5388804329",
+        "height": 644,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/f41ac4aea57e9d25d2a12a137b92ec8c1ff0038d",
+        "height": 412,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/f8053fa47f562c45208cf727d1c63b2d303f89ef",
+        "height": 129,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/cb3183e35727d323995fef73512a39e39474c47b",
+        "height": 41,
+        "width": 64
+      }
+    ],
+    "name": "Natural Snow Buildings",
+    "popularity": 21,
+    "type": "artist",
+    "uri": "spotify:artist:6Y6w2HnL3GM49hOa74QhOO"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:55:26.268662",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/59qbV3rRGsoRm8cExxayGi"
+    },
+    "followers": {
+      "href": null,
+      "total": 479
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/59qbV3rRGsoRm8cExxayGi",
+    "id": "59qbV3rRGsoRm8cExxayGi",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2734e6f1258d554f8202ec996a1",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e024e6f1258d554f8202ec996a1",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048514e6f1258d554f8202ec996a1",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Oro Azul",
+    "popularity": 2,
+    "type": "artist",
+    "uri": "spotify:artist:59qbV3rRGsoRm8cExxayGi"
+  }
+}

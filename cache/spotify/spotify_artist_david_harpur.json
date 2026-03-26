@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:58:07.621997",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3uFpS7kttgSpsRWFNzKZ2k"
+    },
+    "followers": {
+      "href": null,
+      "total": 89790
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/3uFpS7kttgSpsRWFNzKZ2k",
+    "id": "3uFpS7kttgSpsRWFNzKZ2k",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eba6422a980938bfce632b401b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174a6422a980938bfce632b401b",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178a6422a980938bfce632b401b",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Joshua David Harris",
+    "popularity": 57,
+    "type": "artist",
+    "uri": "spotify:artist:3uFpS7kttgSpsRWFNzKZ2k"
+  }
+}

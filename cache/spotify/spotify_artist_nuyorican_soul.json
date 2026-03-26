@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:55:15.018589",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2pMSfxqqpW87tzVwPQxeFw"
+    },
+    "followers": {
+      "href": null,
+      "total": 38521
+    },
+    "genres": [
+      "acid jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2pMSfxqqpW87tzVwPQxeFw",
+    "id": "2pMSfxqqpW87tzVwPQxeFw",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273104edeb602da5c558eccb8f1",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e024e46d75a1f655f8b51089e57",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851104edeb602da5c558eccb8f1",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Nuyorican Soul",
+    "popularity": 31,
+    "type": "artist",
+    "uri": "spotify:artist:2pMSfxqqpW87tzVwPQxeFw"
+  }
+}

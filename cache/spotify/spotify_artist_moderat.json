@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:50:17.520592",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2exkZbmNqMKnT8LRWuxWgy"
+    },
+    "followers": {
+      "href": null,
+      "total": 763384
+    },
+    "genres": [
+      "idm",
+      "electronica"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2exkZbmNqMKnT8LRWuxWgy",
+    "id": "2exkZbmNqMKnT8LRWuxWgy",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb55a94b7fa21c9dbb2b986229",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517455a94b7fa21c9dbb2b986229",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17855a94b7fa21c9dbb2b986229",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Moderat",
+    "popularity": 54,
+    "type": "artist",
+    "uri": "spotify:artist:2exkZbmNqMKnT8LRWuxWgy"
+  }
+}

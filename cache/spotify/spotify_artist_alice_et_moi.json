@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T20:01:41.840289",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1NcCVE1FRpBSlN3LcAfhn3"
+    },
+    "followers": {
+      "href": null,
+      "total": 83980
+    },
+    "genres": [
+      "french indie pop",
+      "french pop",
+      "french house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1NcCVE1FRpBSlN3LcAfhn3",
+    "id": "1NcCVE1FRpBSlN3LcAfhn3",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebcf8420a36beb175ceb5475ae",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174cf8420a36beb175ceb5475ae",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178cf8420a36beb175ceb5475ae",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Alice et Moi",
+    "popularity": 39,
+    "type": "artist",
+    "uri": "spotify:artist:1NcCVE1FRpBSlN3LcAfhn3"
+  }
+}

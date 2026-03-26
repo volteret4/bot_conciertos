@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:59:15.123334",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1Dpvdqieoo5Xq3zOWDHp30"
+    },
+    "followers": {
+      "href": null,
+      "total": 32724
+    },
+    "genres": [
+      "speedcore"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1Dpvdqieoo5Xq3zOWDHp30",
+    "id": "1Dpvdqieoo5Xq3zOWDHp30",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2734593532e79293edf153ba296",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02d40dfb99930806fa50f85fae",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048514593532e79293edf153ba296",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Feryquitous",
+    "popularity": 37,
+    "type": "artist",
+    "uri": "spotify:artist:1Dpvdqieoo5Xq3zOWDHp30"
+  }
+}

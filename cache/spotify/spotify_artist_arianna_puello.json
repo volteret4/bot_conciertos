@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:49:44.254415",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/19Xm04ZiVtOB6J2Ti5vXhL"
+    },
+    "followers": {
+      "href": null,
+      "total": 106880
+    },
+    "genres": [
+      "latin hip hop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/19Xm04ZiVtOB6J2Ti5vXhL",
+    "id": "19Xm04ZiVtOB6J2Ti5vXhL",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb41010c3359838ab9302e86db",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517441010c3359838ab9302e86db",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17841010c3359838ab9302e86db",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Arianna Puello",
+    "popularity": 37,
+    "type": "artist",
+    "uri": "spotify:artist:19Xm04ZiVtOB6J2Ti5vXhL"
+  }
+}

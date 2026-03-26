@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:04:22.745764",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/69qhRLDvsWJOhWGXXQ0lQQ"
+    },
+    "followers": {
+      "href": null,
+      "total": 151999
+    },
+    "genres": [
+      "latin alternative",
+      "latin indie"
+    ],
+    "href": "https://api.spotify.com/v1/artists/69qhRLDvsWJOhWGXXQ0lQQ",
+    "id": "69qhRLDvsWJOhWGXXQ0lQQ",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb1e34a267ce2fe4f089db71ec",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051741e34a267ce2fe4f089db71ec",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1781e34a267ce2fe4f089db71ec",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Helado Negro",
+    "popularity": 44,
+    "type": "artist",
+    "uri": "spotify:artist:69qhRLDvsWJOhWGXXQ0lQQ"
+  }
+}

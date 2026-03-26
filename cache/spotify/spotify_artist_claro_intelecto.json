@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-10-23T17:54:20.663662",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/47YmGWaq0LIbK64RWleEEh"
+    },
+    "followers": {
+      "href": null,
+      "total": 23341
+    },
+    "genres": [
+      "dub techno",
+      "idm",
+      "minimal techno"
+    ],
+    "href": "https://api.spotify.com/v1/artists/47YmGWaq0LIbK64RWleEEh",
+    "id": "47YmGWaq0LIbK64RWleEEh",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebac2f5343643b59ace1149bcb",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174ac2f5343643b59ace1149bcb",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178ac2f5343643b59ace1149bcb",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Claro Intelecto",
+    "popularity": 21,
+    "type": "artist",
+    "uri": "spotify:artist:47YmGWaq0LIbK64RWleEEh"
+  }
+}

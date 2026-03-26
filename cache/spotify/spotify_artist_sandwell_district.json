@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:04:19.031430",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/51CANyDEIfgYt0mwLKCpZ6"
+    },
+    "followers": {
+      "href": null,
+      "total": 14146
+    },
+    "genres": [
+      "dub techno",
+      "minimal techno"
+    ],
+    "href": "https://api.spotify.com/v1/artists/51CANyDEIfgYt0mwLKCpZ6",
+    "id": "51CANyDEIfgYt0mwLKCpZ6",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb78cd228d6fa1e379f0055111",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517478cd228d6fa1e379f0055111",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17878cd228d6fa1e379f0055111",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Sandwell District",
+    "popularity": 18,
+    "type": "artist",
+    "uri": "spotify:artist:51CANyDEIfgYt0mwLKCpZ6"
+  }
+}

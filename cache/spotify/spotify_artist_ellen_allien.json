@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T20:01:42.875289",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5lsC3H1vh9YSRQckyGv0Up"
+    },
+    "followers": {
+      "href": null,
+      "total": 184189
+    },
+    "genres": [
+      "acid techno",
+      "minimal techno",
+      "electroclash",
+      "idm"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5lsC3H1vh9YSRQckyGv0Up",
+    "id": "5lsC3H1vh9YSRQckyGv0Up",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebc9659d214c4a86facff3df66",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174c9659d214c4a86facff3df66",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178c9659d214c4a86facff3df66",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Ellen Allien",
+    "popularity": 33,
+    "type": "artist",
+    "uri": "spotify:artist:5lsC3H1vh9YSRQckyGv0Up"
+  }
+}

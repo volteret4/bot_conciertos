@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:56:54.108676",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3nFkdlSjzX9mRTtwJOzDYB"
+    },
+    "followers": {
+      "href": null,
+      "total": 10383524
+    },
+    "genres": [
+      "hip hop",
+      "east coast hip hop",
+      "rap"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3nFkdlSjzX9mRTtwJOzDYB",
+    "id": "3nFkdlSjzX9mRTtwJOzDYB",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebc75afcd5a9027f60eaebb5e4",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174c75afcd5a9027f60eaebb5e4",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178c75afcd5a9027f60eaebb5e4",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "JAY-Z",
+    "popularity": 82,
+    "type": "artist",
+    "uri": "spotify:artist:3nFkdlSjzX9mRTtwJOzDYB"
+  }
+}

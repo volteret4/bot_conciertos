@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-11-03T19:59:37.849829",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/31w10aYdvBWe1MDjaGtoIj"
+    },
+    "followers": {
+      "href": null,
+      "total": 189
+    },
+    "genres": [
+      "jazz fusion"
+    ],
+    "href": "https://api.spotify.com/v1/artists/31w10aYdvBWe1MDjaGtoIj",
+    "id": "31w10aYdvBWe1MDjaGtoIj",
+    "images": [],
+    "name": "Bukuru Celestin",
+    "popularity": 4,
+    "type": "artist",
+    "uri": "spotify:artist:31w10aYdvBWe1MDjaGtoIj"
+  }
+}

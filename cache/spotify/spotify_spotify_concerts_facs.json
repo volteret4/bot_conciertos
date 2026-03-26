@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-23T08:35:48.949461",
+  "data": [
+    {
+      "artist": "FACS",
+      "artist_name": "FACS",
+      "name": "FACS at 7th St Entry",
+      "venue": "7th St Entry",
+      "city": "Minneapolis",
+      "country": "US",
+      "date": "2025-09-14",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/5SRfPX6tOQ7lHPoFQCwsVS",
+      "source": "Spotify"
+    },
+    {
+      "artist": "FACS",
+      "artist_name": "FACS",
+      "name": "FACS at 7th St Entry",
+      "venue": "7th St Entry",
+      "city": "Minneapolis",
+      "country": "US",
+      "date": "2025-09-14",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/2V9dJcrwEAf89bIPqSu7Ow",
+      "source": "Spotify"
+    },
+    {
+      "artist": "FACS",
+      "artist_name": "FACS",
+      "name": "FACS at TOTAL DRAG RECORDS",
+      "venue": "TOTAL DRAG RECORDS",
+      "city": "Sioux Falls",
+      "country": "US",
+      "date": "2025-09-15",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/5azO75oia20ApQmFK9c3iR",
+      "source": "Spotify"
+    },
+    {
+      "artist": "FACS",
+      "artist_name": "FACS",
+      "name": "FACS at BABA YAGA",
+      "venue": "BABA YAGA",
+      "city": "Downtown Seattle",
+      "country": "US",
+      "date": "2025-09-19",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/00NGTdyldOPwiwpNlPnwca",
+      "source": "Spotify"
+    },
+    {
+      "artist": "FACS",
+      "artist_name": "FACS",
+      "name": "FACS Concert (080WGyCb)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/080WGyCbyxz8tHUCyf7b3N",
+      "source": "Spotify"
+    }
+  ]
+}

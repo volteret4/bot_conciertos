@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:01:20.107371",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0WEU97rk1SARWForSuYyXj"
+    },
+    "followers": {
+      "href": null,
+      "total": 665
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/0WEU97rk1SARWForSuYyXj",
+    "id": "0WEU97rk1SARWForSuYyXj",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273f6b1b2085380b2e8da5dfc7e",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02f6b1b2085380b2e8da5dfc7e",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851f6b1b2085380b2e8da5dfc7e",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "51 Days",
+    "popularity": 5,
+    "type": "artist",
+    "uri": "spotify:artist:0WEU97rk1SARWForSuYyXj"
+  }
+}

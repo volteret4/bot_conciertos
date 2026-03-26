@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-08-25T08:28:33.515864",
+  "data": [
+    {
+      "artist": "Emmanuel",
+      "artist_name": "Emmanuel",
+      "name": "Emmanuel Concert (4nJ8Ut77)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/4nJ8Ut77QOFHo8gOEtRXlf",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Emmanuel",
+      "artist_name": "Emmanuel",
+      "name": "Emmanuel at The Venetian Theatre at The Venetian Resort",
+      "venue": "The Venetian Theatre at The Venetian Resort",
+      "city": "Las Vegas",
+      "country": "US",
+      "date": "2025-09-15",
+      "time": "8:30 PM",
+      "url": "https://open.spotify.com/concert/3Wifo9Y5c7OPqX8pKZxEZH",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Emmanuel",
+      "artist_name": "Emmanuel",
+      "name": "Emmanuel at Yaamava&#x27; Theater",
+      "venue": "Yaamava&#x27; Theater",
+      "city": "Highland",
+      "country": "",
+      "date": "2025-12-14",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/5kAbUWMYK5N80byBz0XtFM",
+      "source": "Spotify"
+    }
+  ]
+}

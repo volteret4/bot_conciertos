@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-10-23T17:14:38.257448",
+  "concerts": [
+    {
+      "artist": "Röyksopp",
+      "name": "Electric Avenue Music Festival 2026",
+      "venue": "Hagley Park Special Events Area",
+      "city": "Christchurch Central City",
+      "country": "New Zealand",
+      "country_code": "NZ",
+      "date": "2026-02-27",
+      "time": "14:00:00",
+      "url": "https://www.moshtix.co.nz/v2/event/electric-avenue-music-festival-2026/181931",
+      "source": "Ticketmaster",
+      "id": "ZFwVzcymWZ17kv0s"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:57:38.505563",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7C4sUpWGlTy7IANjruj02I"
+    },
+    "followers": {
+      "href": null,
+      "total": 1940818
+    },
+    "genres": [
+      "art rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7C4sUpWGlTy7IANjruj02I",
+    "id": "7C4sUpWGlTy7IANjruj02I",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb997116abcd93201746831544",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174997116abcd93201746831544",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178997116abcd93201746831544",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Peter Gabriel",
+    "popularity": 63,
+    "type": "artist",
+    "uri": "spotify:artist:7C4sUpWGlTy7IANjruj02I"
+  }
+}

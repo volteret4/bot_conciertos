@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T19:59:10.281447",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6P7H3ai06vU1sGvdpBwDmE"
+    },
+    "followers": {
+      "href": null,
+      "total": 2526777
+    },
+    "genres": [
+      "yacht rock",
+      "classic rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6P7H3ai06vU1sGvdpBwDmE",
+    "id": "6P7H3ai06vU1sGvdpBwDmE",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/9d01e4e9aac39b891d684d3d1a5b3a451d7c72bd",
+        "height": 1242,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/067bf3caa525edb4e97e19b2a630ccf361897350",
+        "height": 795,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/c930cc3599a165211fa20c3ec0d70d1a3cbe4778",
+        "height": 248,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/85996811ba349faa5a467296baee6c7cd7518476",
+        "height": 79,
+        "width": 64
+      }
+    ],
+    "name": "Steely Dan",
+    "popularity": 68,
+    "type": "artist",
+    "uri": "spotify:artist:6P7H3ai06vU1sGvdpBwDmE"
+  }
+}

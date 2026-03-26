@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:02:35.527863",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3AA28KZvwAUcZuOKwyblJQ"
+    },
+    "followers": {
+      "href": null,
+      "total": 14527567
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ",
+    "id": "3AA28KZvwAUcZuOKwyblJQ",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebdd5b57b40cf2aaeccd07835e",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174dd5b57b40cf2aaeccd07835e",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178dd5b57b40cf2aaeccd07835e",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Gorillaz",
+    "popularity": 82,
+    "type": "artist",
+    "uri": "spotify:artist:3AA28KZvwAUcZuOKwyblJQ"
+  }
+}

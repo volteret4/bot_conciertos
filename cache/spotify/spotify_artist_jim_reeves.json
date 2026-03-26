@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T19:49:57.144601",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2Ev0e8GUIX4u7d9etNLTXg"
+    },
+    "followers": {
+      "href": null,
+      "total": 489734
+    },
+    "genres": [
+      "classic country",
+      "christian country"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2Ev0e8GUIX4u7d9etNLTXg",
+    "id": "2Ev0e8GUIX4u7d9etNLTXg",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/c39b7fb88bc85c058de0c1151184e6a7f8afe98b",
+        "height": 1167,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/eb151fc77b090be348fd8c0422924b91a792a2ea",
+        "height": 747,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/18c167cdeb4b9b83f38ba1f563809483883b8be0",
+        "height": 233,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/811aba749e911c6e05c237dcd7c2cf99e2c80404",
+        "height": 75,
+        "width": 64
+      }
+    ],
+    "name": "Jim Reeves",
+    "popularity": 53,
+    "type": "artist",
+    "uri": "spotify:artist:2Ev0e8GUIX4u7d9etNLTXg"
+  }
+}

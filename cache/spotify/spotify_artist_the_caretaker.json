@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:59:33.075010",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2uQn9OFibYuvEMqMuH1zaP"
+    },
+    "followers": {
+      "href": null,
+      "total": 226034
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/2uQn9OFibYuvEMqMuH1zaP",
+    "id": "2uQn9OFibYuvEMqMuH1zaP",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebc4942edcbc0cbfd915ea4e75",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174c4942edcbc0cbfd915ea4e75",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178c4942edcbc0cbfd915ea4e75",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "The Caretaker",
+    "popularity": 53,
+    "type": "artist",
+    "uri": "spotify:artist:2uQn9OFibYuvEMqMuH1zaP"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:57:28.717893",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6DiTNNDXXhH95EafbvKisN"
+    },
+    "followers": {
+      "href": null,
+      "total": 3992
+    },
+    "genres": [
+      "drone",
+      "minimalism",
+      "avant-garde",
+      "experimental"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6DiTNNDXXhH95EafbvKisN",
+    "id": "6DiTNNDXXhH95EafbvKisN",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273cdd972e07ca911805df86e5b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02cdd972e07ca911805df86e5b",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851cdd972e07ca911805df86e5b",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Ellen Fullman",
+    "popularity": 9,
+    "type": "artist",
+    "uri": "spotify:artist:6DiTNNDXXhH95EafbvKisN"
+  }
+}

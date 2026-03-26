@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:49:55.203269",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3k8BWRW5BWLewWbhSOImEf"
+    },
+    "followers": {
+      "href": null,
+      "total": 6321
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/3k8BWRW5BWLewWbhSOImEf",
+    "id": "3k8BWRW5BWLewWbhSOImEf",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb4e889a5ca3101b5fbc500932",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051744e889a5ca3101b5fbc500932",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1784e889a5ca3101b5fbc500932",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Rare Silk",
+    "popularity": 19,
+    "type": "artist",
+    "uri": "spotify:artist:3k8BWRW5BWLewWbhSOImEf"
+  }
+}

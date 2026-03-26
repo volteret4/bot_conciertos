@@ -1,0 +1,45 @@
+{
+  "timestamp": "2025-11-03T19:48:59.561798",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3yY2gUcIsjMr8hjo51PoJ8"
+    },
+    "followers": {
+      "href": null,
+      "total": 7740136
+    },
+    "genres": [
+      "new wave",
+      "madchester",
+      "jangle pop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3yY2gUcIsjMr8hjo51PoJ8",
+    "id": "3yY2gUcIsjMr8hjo51PoJ8",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/481b980af463122013e4578c08fb8c5cbfaed1e9",
+        "height": 1516,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/4bf08a9e6eea088b20d4092d1322bbd3f39ff9af",
+        "height": 970,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/bd4c7f5ff2c5c4385604e60c71eac1dd498ddbd9",
+        "height": 303,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/d3a2542f2811b5b01ee3483ec7c193f72a882ea1",
+        "height": 97,
+        "width": 64
+      }
+    ],
+    "name": "The Smiths",
+    "popularity": 78,
+    "type": "artist",
+    "uri": "spotify:artist:3yY2gUcIsjMr8hjo51PoJ8"
+  }
+}

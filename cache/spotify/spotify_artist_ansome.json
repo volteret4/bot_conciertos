@@ -1,0 +1,48 @@
+{
+  "timestamp": "2025-11-03T20:01:49.047956",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/14gRo11WOeTXBDcgFr8Ejb"
+    },
+    "followers": {
+      "href": null,
+      "total": 23100
+    },
+    "genres": [
+      "industrial",
+      "acid techno",
+      "ebm",
+      "hard techno",
+      "tekno",
+      "techno"
+    ],
+    "href": "https://api.spotify.com/v1/artists/14gRo11WOeTXBDcgFr8Ejb",
+    "id": "14gRo11WOeTXBDcgFr8Ejb",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/9a245625cdbe63178b6813c8310833c624aa0d46",
+        "height": 649,
+        "width": 999
+      },
+      {
+        "url": "https://i.scdn.co/image/c2721372c6285f4fa24b620eac9658543688049c",
+        "height": 416,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/72e05b8d62614e8c293cb023e786758eb580233f",
+        "height": 130,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/6ca4e67e0f24f5a589ddc246d7277bf4a666597a",
+        "height": 42,
+        "width": 64
+      }
+    ],
+    "name": "Ansome",
+    "popularity": 17,
+    "type": "artist",
+    "uri": "spotify:artist:14gRo11WOeTXBDcgFr8Ejb"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T20:01:26.176873",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3v6kMn7G7UuNUqrHBgcFGP"
+    },
+    "followers": {
+      "href": null,
+      "total": 39
+    },
+    "genres": [
+      "acid techno",
+      "idm",
+      "speedcore"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3v6kMn7G7UuNUqrHBgcFGP",
+    "id": "3v6kMn7G7UuNUqrHBgcFGP",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2733078fd7ef807f7c23ed2c925",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e023078fd7ef807f7c23ed2c925",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048513078fd7ef807f7c23ed2c925",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Acidwolf",
+    "popularity": 1,
+    "type": "artist",
+    "uri": "spotify:artist:3v6kMn7G7UuNUqrHBgcFGP"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:56:39.703004",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6ywMpa6AmGJpV5Sbyy58Js"
+    },
+    "followers": {
+      "href": null,
+      "total": 61605
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/6ywMpa6AmGJpV5Sbyy58Js",
+    "id": "6ywMpa6AmGJpV5Sbyy58Js",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb75dce533072197e4f02b630e",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517475dce533072197e4f02b630e",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17875dce533072197e4f02b630e",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Shabaka",
+    "popularity": 35,
+    "type": "artist",
+    "uri": "spotify:artist:6ywMpa6AmGJpV5Sbyy58Js"
+  }
+}

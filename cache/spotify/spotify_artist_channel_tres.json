@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:59:38.565678",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4cUkGQyhLFqKHBtL58HYVp"
+    },
+    "followers": {
+      "href": null,
+      "total": 347424
+    },
+    "genres": [
+      "hip house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4cUkGQyhLFqKHBtL58HYVp",
+    "id": "4cUkGQyhLFqKHBtL58HYVp",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebca28bfdecbfca08d150ed84e",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174ca28bfdecbfca08d150ed84e",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178ca28bfdecbfca08d150ed84e",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Channel Tres",
+    "popularity": 56,
+    "type": "artist",
+    "uri": "spotify:artist:4cUkGQyhLFqKHBtL58HYVp"
+  }
+}

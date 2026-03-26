@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T20:00:54.783168",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2I36EjIVz3vDfROgj1MfZ3"
+    },
+    "followers": {
+      "href": null,
+      "total": 123722
+    },
+    "genres": [
+      "downtempo",
+      "nu jazz",
+      "trip hop",
+      "acid jazz",
+      "lounge"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2I36EjIVz3vDfROgj1MfZ3",
+    "id": "2I36EjIVz3vDfROgj1MfZ3",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebaa68d18f9bba57c2cf7b1f02",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174aa68d18f9bba57c2cf7b1f02",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178aa68d18f9bba57c2cf7b1f02",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Boozoo Bajou",
+    "popularity": 49,
+    "type": "artist",
+    "uri": "spotify:artist:2I36EjIVz3vDfROgj1MfZ3"
+  }
+}

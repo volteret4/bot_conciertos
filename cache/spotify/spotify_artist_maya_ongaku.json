@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-11-03T19:47:14.555718",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6Qi7KuRGCkHX22OAEFq3vn"
+    },
+    "followers": {
+      "href": null,
+      "total": 543
+    },
+    "genres": [
+      "anime"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6Qi7KuRGCkHX22OAEFq3vn",
+    "id": "6Qi7KuRGCkHX22OAEFq3vn",
+    "images": [],
+    "name": "マヤノトップガン (CV. 星谷美緒)",
+    "popularity": 47,
+    "type": "artist",
+    "uri": "spotify:artist:6Qi7KuRGCkHX22OAEFq3vn"
+  }
+}

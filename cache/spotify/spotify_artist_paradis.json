@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-11-03T19:49:17.179168",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0gIo6kGl4KsCeIbqtZVHYp"
+    },
+    "followers": {
+      "href": null,
+      "total": 372153
+    },
+    "genres": [
+      "gothic metal",
+      "doom metal",
+      "gothic rock",
+      "sludge metal",
+      "metal",
+      "stoner metal"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0gIo6kGl4KsCeIbqtZVHYp",
+    "id": "0gIo6kGl4KsCeIbqtZVHYp",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb9e99bd6572df986efcdc5bd6",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051749e99bd6572df986efcdc5bd6",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1789e99bd6572df986efcdc5bd6",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Paradise Lost",
+    "popularity": 53,
+    "type": "artist",
+    "uri": "spotify:artist:0gIo6kGl4KsCeIbqtZVHYp"
+  }
+}

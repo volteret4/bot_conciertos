@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:00:52.504388",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3pTE9iaJTkWns3mxpNQlJV"
+    },
+    "followers": {
+      "href": null,
+      "total": 872993
+    },
+    "genres": [
+      "indie rock",
+      "indie"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3pTE9iaJTkWns3mxpNQlJV",
+    "id": "3pTE9iaJTkWns3mxpNQlJV",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebe210b053175600ecb893bf93",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174e210b053175600ecb893bf93",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178e210b053175600ecb893bf93",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Bombay Bicycle Club",
+    "popularity": 52,
+    "type": "artist",
+    "uri": "spotify:artist:3pTE9iaJTkWns3mxpNQlJV"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:47:07.770229",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6v8FB84lnmJs434UJf2Mrm"
+    },
+    "followers": {
+      "href": null,
+      "total": 3342671
+    },
+    "genres": [
+      "classic rock",
+      "folk rock",
+      "singer-songwriter",
+      "roots rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6v8FB84lnmJs434UJf2Mrm",
+    "id": "6v8FB84lnmJs434UJf2Mrm",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebbae8276dffd864ebac759b76",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174bae8276dffd864ebac759b76",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178bae8276dffd864ebac759b76",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Neil Young",
+    "popularity": 70,
+    "type": "artist",
+    "uri": "spotify:artist:6v8FB84lnmJs434UJf2Mrm"
+  }
+}

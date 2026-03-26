@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:47:42.681597",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0baqzsI5oUU3yyeeP7568i"
+    },
+    "followers": {
+      "href": null,
+      "total": 4830
+    },
+    "genres": [
+      "chillwave"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0baqzsI5oUU3yyeeP7568i",
+    "id": "0baqzsI5oUU3yyeeP7568i",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebeec8dbcbb97a97dc8bb02118",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174eec8dbcbb97a97dc8bb02118",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178eec8dbcbb97a97dc8bb02118",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Clive Tanaka y su orquesta",
+    "popularity": 20,
+    "type": "artist",
+    "uri": "spotify:artist:0baqzsI5oUU3yyeeP7568i"
+  }
+}

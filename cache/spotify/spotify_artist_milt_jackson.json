@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T19:56:49.643010",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/23i8EixXKG0EWGRCfHlUGN"
+    },
+    "followers": {
+      "href": null,
+      "total": 42183
+    },
+    "genres": [
+      "hard bop",
+      "jazz",
+      "bebop",
+      "cool jazz",
+      "jazz blues"
+    ],
+    "href": "https://api.spotify.com/v1/artists/23i8EixXKG0EWGRCfHlUGN",
+    "id": "23i8EixXKG0EWGRCfHlUGN",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/00b587aabc5e4623c1725005a03cdd74ab4d4fca",
+        "height": 580,
+        "width": 514
+      },
+      {
+        "url": "https://i.scdn.co/image/7381fdff4cbd2680fe3375116a0170f8fb663a27",
+        "height": 226,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/ee64cef4b6fb6afdca3ec1caa50dac7aa7dc66d5",
+        "height": 72,
+        "width": 64
+      }
+    ],
+    "name": "Milt Jackson",
+    "popularity": 37,
+    "type": "artist",
+    "uri": "spotify:artist:23i8EixXKG0EWGRCfHlUGN"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:57:47.982948",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3vmtDGkzacafVdenyPHPMb"
+    },
+    "followers": {
+      "href": null,
+      "total": 77699
+    },
+    "genres": [
+      "soundtrack"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3vmtDGkzacafVdenyPHPMb",
+    "id": "3vmtDGkzacafVdenyPHPMb",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27391115f174c007a7f24355ee4",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0291115f174c007a7f24355ee4",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485191115f174c007a7f24355ee4",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Murray Gold",
+    "popularity": 47,
+    "type": "artist",
+    "uri": "spotify:artist:3vmtDGkzacafVdenyPHPMb"
+  }
+}

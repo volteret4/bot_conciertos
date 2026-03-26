@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:48:50.832899",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0m5XJwKGYyUjd3VMfcINCQ"
+    },
+    "followers": {
+      "href": null,
+      "total": 315878
+    },
+    "genres": [
+      "psytrance",
+      "downtempo"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0m5XJwKGYyUjd3VMfcINCQ",
+    "id": "0m5XJwKGYyUjd3VMfcINCQ",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb7f40a8a620f1f93449b88f94",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051747f40a8a620f1f93449b88f94",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1787f40a8a620f1f93449b88f94",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Shpongle",
+    "popularity": 42,
+    "type": "artist",
+    "uri": "spotify:artist:0m5XJwKGYyUjd3VMfcINCQ"
+  }
+}

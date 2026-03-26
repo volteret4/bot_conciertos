@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:00:21.248846",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/60oPm94IK14iPqnGwkbw8x"
+    },
+    "followers": {
+      "href": null,
+      "total": 61301
+    },
+    "genres": [
+      "riot grrrl",
+      "queercore"
+    ],
+    "href": "https://api.spotify.com/v1/artists/60oPm94IK14iPqnGwkbw8x",
+    "id": "60oPm94IK14iPqnGwkbw8x",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebc020d74c2145acdfd8850788",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174c020d74c2145acdfd8850788",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178c020d74c2145acdfd8850788",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Be Your Own Pet",
+    "popularity": 36,
+    "type": "artist",
+    "uri": "spotify:artist:60oPm94IK14iPqnGwkbw8x"
+  }
+}

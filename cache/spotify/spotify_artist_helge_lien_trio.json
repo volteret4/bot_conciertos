@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:58:11.279024",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4kWBvU5JdoohnGYl7SMlfY"
+    },
+    "followers": {
+      "href": null,
+      "total": 16441
+    },
+    "genres": [
+      "jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4kWBvU5JdoohnGYl7SMlfY",
+    "id": "4kWBvU5JdoohnGYl7SMlfY",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb360dc9f0ba5f6ff1bb512027",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174360dc9f0ba5f6ff1bb512027",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178360dc9f0ba5f6ff1bb512027",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Helge Lien Trio",
+    "popularity": 23,
+    "type": "artist",
+    "uri": "spotify:artist:4kWBvU5JdoohnGYl7SMlfY"
+  }
+}

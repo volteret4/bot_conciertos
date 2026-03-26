@@ -1,0 +1,45 @@
+{
+  "timestamp": "2025-11-03T19:56:10.083222",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/05uCfJ1rcdJWwsVUKDg9On"
+    },
+    "followers": {
+      "href": null,
+      "total": 20585
+    },
+    "genres": [
+      "smooth jazz",
+      "jazz",
+      "cool jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/05uCfJ1rcdJWwsVUKDg9On",
+    "id": "05uCfJ1rcdJWwsVUKDg9On",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/2160afac0d16c5e9486fa62e0634ee4ae1557df9",
+        "height": 1260,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/83230a98e6d9cb3d93b1467d77a407624f0bcff1",
+        "height": 806,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/a11bb2d331f32c41d3f1b07e5e090b0eeb66d829",
+        "height": 252,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/44e3cf250bc52d424950224443afba0f14a25181",
+        "height": 81,
+        "width": 64
+      }
+    ],
+    "name": "Bobby Lyle",
+    "popularity": 32,
+    "type": "artist",
+    "uri": "spotify:artist:05uCfJ1rcdJWwsVUKDg9On"
+  }
+}

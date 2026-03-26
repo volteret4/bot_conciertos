@@ -1,0 +1,96 @@
+{
+  "timestamp": "2025-10-23T17:08:24.572192",
+  "concerts": [
+    {
+      "artist": "Lady Blackbird",
+      "name": "Lady Blackbird Residency",
+      "venue": "Blue Note Los Angeles",
+      "city": "Los Angeles",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-01",
+      "time": "19:00:00",
+      "url": "https://www.ticketweb.com/event/lady-blackbird-residency-blue-note-los-angeles-tickets/13778164",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AKqzA0"
+    },
+    {
+      "artist": "Lady Blackbird",
+      "name": "Lady Blackbird Residency",
+      "venue": "Blue Note Los Angeles",
+      "city": "Los Angeles",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-12-01",
+      "time": "21:30:00",
+      "url": "https://www.ticketweb.com/event/lady-blackbird-residency-blue-note-los-angeles-tickets/13778154",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AKqzAf"
+    },
+    {
+      "artist": "Lady Blackbird",
+      "name": "Lady Blackbird Residency",
+      "venue": "Blue Note Los Angeles",
+      "city": "Los Angeles",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-01-26",
+      "time": "19:00:00",
+      "url": "https://www.ticketweb.com/event/lady-blackbird-residency-blue-note-los-angeles-tickets/13778184",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AKqzk7"
+    },
+    {
+      "artist": "Lady Blackbird",
+      "name": "Lady Blackbird Residency",
+      "venue": "Blue Note Los Angeles",
+      "city": "Los Angeles",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-01-26",
+      "time": "21:30:00",
+      "url": "https://www.ticketweb.com/event/lady-blackbird-residency-blue-note-los-angeles-tickets/13778204",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AKqzF7"
+    },
+    {
+      "artist": "Lady Blackbird",
+      "name": "LADY BLACKBIRD",
+      "venue": "Jack London Revue",
+      "city": "Portland",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-03-07",
+      "time": "20:00:00",
+      "url": "https://www.ticketweb.com/event/lady-blackbird-jack-london-revue-tickets/14616823",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AfbpON"
+    },
+    {
+      "artist": "Lady Blackbird",
+      "name": "Lady Blackbird Residency",
+      "venue": "Blue Note Los Angeles",
+      "city": "Los Angeles",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-03-23",
+      "time": "19:00:00",
+      "url": "https://www.ticketweb.com/event/lady-blackbird-residency-blue-note-los-angeles-tickets/13829834",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AKOtOV"
+    },
+    {
+      "artist": "Lady Blackbird",
+      "name": "Lady Blackbird Residency",
+      "venue": "Blue Note Los Angeles",
+      "city": "Los Angeles",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-03-23",
+      "time": "21:30:00",
+      "url": "https://www.ticketweb.com/event/lady-blackbird-residency-blue-note-los-angeles-tickets/13829844",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AKOt-7"
+    }
+  ]
+}

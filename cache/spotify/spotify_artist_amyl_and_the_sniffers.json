@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:01:46.435385",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3NqV2DJoAWsjl787bWaHW7"
+    },
+    "followers": {
+      "href": null,
+      "total": 562100
+    },
+    "genres": [
+      "riot grrrl",
+      "punk"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3NqV2DJoAWsjl787bWaHW7",
+    "id": "3NqV2DJoAWsjl787bWaHW7",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebee3647a3cd61071b0ca362e8",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174ee3647a3cd61071b0ca362e8",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178ee3647a3cd61071b0ca362e8",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Amyl and The Sniffers",
+    "popularity": 61,
+    "type": "artist",
+    "uri": "spotify:artist:3NqV2DJoAWsjl787bWaHW7"
+  }
+}

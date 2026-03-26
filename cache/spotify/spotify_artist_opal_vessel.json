@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:55:24.348750",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0xrdCwjtVAWzIdto3Ww9a7"
+    },
+    "followers": {
+      "href": null,
+      "total": 27
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/0xrdCwjtVAWzIdto3Ww9a7",
+    "id": "0xrdCwjtVAWzIdto3Ww9a7",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273d920f02a67674fa3d0c06884",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02d920f02a67674fa3d0c06884",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851d920f02a67674fa3d0c06884",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Opal Skies",
+    "popularity": 46,
+    "type": "artist",
+    "uri": "spotify:artist:0xrdCwjtVAWzIdto3Ww9a7"
+  }
+}

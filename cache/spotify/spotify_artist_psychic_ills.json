@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T19:49:43.583478",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0BdrIHWUDg179f9H7pjJMC"
+    },
+    "followers": {
+      "href": null,
+      "total": 52572
+    },
+    "genres": [
+      "neo-psychedelic",
+      "psychedelic rock",
+      "space rock",
+      "acid rock",
+      "stoner rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0BdrIHWUDg179f9H7pjJMC",
+    "id": "0BdrIHWUDg179f9H7pjJMC",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebcde0a465a714b270157c6c18",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174cde0a465a714b270157c6c18",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178cde0a465a714b270157c6c18",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Psychic Ills",
+    "popularity": 31,
+    "type": "artist",
+    "uri": "spotify:artist:0BdrIHWUDg179f9H7pjJMC"
+  }
+}

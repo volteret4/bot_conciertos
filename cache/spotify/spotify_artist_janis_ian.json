@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-10-23T17:51:52.099828",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5c9uFWpZY2MTlk7Rft0tgp"
+    },
+    "followers": {
+      "href": null,
+      "total": 181057
+    },
+    "genres": [
+      "singer-songwriter",
+      "folk"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5c9uFWpZY2MTlk7Rft0tgp",
+    "id": "5c9uFWpZY2MTlk7Rft0tgp",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb770f4f423820f278b619e579",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174770f4f423820f278b619e579",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178770f4f423820f278b619e579",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Janis Ian",
+    "popularity": 42,
+    "type": "artist",
+    "uri": "spotify:artist:5c9uFWpZY2MTlk7Rft0tgp"
+  }
+}

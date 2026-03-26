@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:49:38.114242",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1k0ZB1aFWMh6dr3y63X5Jr"
+    },
+    "followers": {
+      "href": null,
+      "total": 7111
+    },
+    "genres": [
+      "northern soul",
+      "philly soul",
+      "classic soul",
+      "soul"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1k0ZB1aFWMh6dr3y63X5Jr",
+    "id": "1k0ZB1aFWMh6dr3y63X5Jr",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb44da5fa84c1c6b08618ac8a7",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517444da5fa84c1c6b08618ac8a7",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17844da5fa84c1c6b08618ac8a7",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "David Porter",
+    "popularity": 15,
+    "type": "artist",
+    "uri": "spotify:artist:1k0ZB1aFWMh6dr3y63X5Jr"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-10-23T17:05:32.889794",
+  "concerts": [
+    {
+      "artist": "Tavares",
+      "name": "Saturday Night Dance Fever '25: Kool & The Gang, Heatwave & more",
+      "venue": "The Venue at Thunder Valley Casino Resort",
+      "city": "Lincoln",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-01",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/saturday-night-dance-fever-25-kool-lincoln-california-11-01-2025/event/1C006296C964566D",
+      "source": "Ticketmaster",
+      "id": "G5vYZbtha_A_c"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-11-03T19:57:49.410318",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4zPGlyitRvJo7iz6OKlETa"
+    },
+    "followers": {
+      "href": null,
+      "total": 133213
+    },
+    "genres": [
+      "britpop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4zPGlyitRvJo7iz6OKlETa",
+    "id": "4zPGlyitRvJo7iz6OKlETa",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6772690000c46c35d6cced3beb43da6a850b83",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000dd2235d6cced3beb43da6a850b83",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000bac335d6cced3beb43da6a850b83",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67726900008f7435d6cced3beb43da6a850b83",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Gomez",
+    "popularity": 41,
+    "type": "artist",
+    "uri": "spotify:artist:4zPGlyitRvJo7iz6OKlETa"
+  }
+}

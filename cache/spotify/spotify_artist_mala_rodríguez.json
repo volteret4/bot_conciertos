@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:50:02.927356",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3Ces1OJeGOVGcUB0wPaPXJ"
+    },
+    "followers": {
+      "href": null,
+      "total": 568983
+    },
+    "genres": [
+      "latin hip hop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3Ces1OJeGOVGcUB0wPaPXJ",
+    "id": "3Ces1OJeGOVGcUB0wPaPXJ",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb9daf9c526ead6228439f2dee",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051749daf9c526ead6228439f2dee",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1789daf9c526ead6228439f2dee",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Mala Rodríguez",
+    "popularity": 54,
+    "type": "artist",
+    "uri": "spotify:artist:3Ces1OJeGOVGcUB0wPaPXJ"
+  }
+}

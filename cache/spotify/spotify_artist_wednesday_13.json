@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:46:47.104493",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6Cvzf33JDzCIw2eJU8npQo"
+    },
+    "followers": {
+      "href": null,
+      "total": 108367
+    },
+    "genres": [
+      "horror punk",
+      "psychobilly"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6Cvzf33JDzCIw2eJU8npQo",
+    "id": "6Cvzf33JDzCIw2eJU8npQo",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb99175723cb0aa3309c6e3c8f",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517499175723cb0aa3309c6e3c8f",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17899175723cb0aa3309c6e3c8f",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Wednesday 13",
+    "popularity": 40,
+    "type": "artist",
+    "uri": "spotify:artist:6Cvzf33JDzCIw2eJU8npQo"
+  }
+}

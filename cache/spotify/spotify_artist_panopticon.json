@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:49:16.314904",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2Mz5qpR3WxbcBwZBsmraWE"
+    },
+    "followers": {
+      "href": null,
+      "total": 73205
+    },
+    "genres": [
+      "black metal"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2Mz5qpR3WxbcBwZBsmraWE",
+    "id": "2Mz5qpR3WxbcBwZBsmraWE",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb4a3eb5b6900d12fc3de9683a",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051744a3eb5b6900d12fc3de9683a",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1784a3eb5b6900d12fc3de9683a",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Panopticon",
+    "popularity": 31,
+    "type": "artist",
+    "uri": "spotify:artist:2Mz5qpR3WxbcBwZBsmraWE"
+  }
+}

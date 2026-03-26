@@ -1,0 +1,57 @@
+{
+  "timestamp": "2025-10-23T17:13:33.440271",
+  "concerts": [
+    {
+      "artist": "Tears for Fears",
+      "name": "Tears for Fears",
+      "venue": "Fontainebleau Las Vegas",
+      "city": "Las Vegas",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-10-24",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/tears-for-fears-las-vegas-nevada-10-24-2025/event/170062B0E3558D7A",
+      "source": "Ticketmaster",
+      "id": "17AYvxG65dN4bgB"
+    },
+    {
+      "artist": "Tears for Fears",
+      "name": "Tears for Fears Ticket + Hotel Deals",
+      "venue": "Fontainebleau Las Vegas",
+      "city": "Las Vegas",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-10-24",
+      "time": "20:00:00",
+      "url": "https://ad.doubleclick.net/ddm/clk/615308211;422515541;r;dc_transparent=1;?https://travel.ticketmaster.com/tm-event/170062B0E3558D7A?_uid=53477f82-54f0-4429-b7af-746146806a86&utm_source=FB&utm_medium=TM_ADP_TearsForFears1024",
+      "source": "Ticketmaster",
+      "id": "17AYvxG6GQ05xFr"
+    },
+    {
+      "artist": "Tears for Fears",
+      "name": "Tears for Fears",
+      "venue": "Fontainebleau Las Vegas",
+      "city": "Las Vegas",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-10-25",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/tears-for-fears-las-vegas-nevada-10-25-2025/event/170062B0E35B8D7C",
+      "source": "Ticketmaster",
+      "id": "17AYvxG65dNpzgH"
+    },
+    {
+      "artist": "Tears for Fears",
+      "name": "Tears for Fears Ticket + Hotel Deals",
+      "venue": "Fontainebleau Las Vegas",
+      "city": "Las Vegas",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-10-25",
+      "time": "20:00:00",
+      "url": "https://ad.doubleclick.net/ddm/clk/615381397;422515544;k;dc_transparent=1;?https://travel.ticketmaster.com/tm-event/170062B0E35B8D7C?_uid=53477f82-54f0-4429-b7af-746146806a86&utm_source=FB&utm_medium=TM_ADP_TearsForFears1025",
+      "source": "Ticketmaster",
+      "id": "17AYvxG6GQ0GeFN"
+    }
+  ]
+}

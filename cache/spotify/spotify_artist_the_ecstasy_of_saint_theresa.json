@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T19:58:46.063997",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7bgjou2Fwb15jvve7eXZrm"
+    },
+    "followers": {
+      "href": null,
+      "total": 7305
+    },
+    "genres": [
+      "shoegaze",
+      "dream pop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7bgjou2Fwb15jvve7eXZrm",
+    "id": "7bgjou2Fwb15jvve7eXZrm",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebc3aa782d60da2ab80bbc9056",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174c3aa782d60da2ab80bbc9056",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178c3aa782d60da2ab80bbc9056",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "The Ecstasy Of Saint Theresa",
+    "popularity": 12,
+    "type": "artist",
+    "uri": "spotify:artist:7bgjou2Fwb15jvve7eXZrm"
+  }
+}

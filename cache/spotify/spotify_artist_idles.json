@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:04:18.355474",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/75mafsNqNE1WSEVxIKuY5C"
+    },
+    "followers": {
+      "href": null,
+      "total": 837653
+    },
+    "genres": [
+      "post-punk",
+      "punk"
+    ],
+    "href": "https://api.spotify.com/v1/artists/75mafsNqNE1WSEVxIKuY5C",
+    "id": "75mafsNqNE1WSEVxIKuY5C",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb15a2ab2d3913d5b998e93e71",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517415a2ab2d3913d5b998e93e71",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17815a2ab2d3913d5b998e93e71",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "IDLES",
+    "popularity": 57,
+    "type": "artist",
+    "uri": "spotify:artist:75mafsNqNE1WSEVxIKuY5C"
+  }
+}

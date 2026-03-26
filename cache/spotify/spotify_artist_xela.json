@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:47:03.238414",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1XesPp6ChBekt9GF3KVCbV"
+    },
+    "followers": {
+      "href": null,
+      "total": 141
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/1XesPp6ChBekt9GF3KVCbV",
+    "id": "1XesPp6ChBekt9GF3KVCbV",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273636f48b05d58d62a391db53b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02636f48b05d58d62a391db53b",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851636f48b05d58d62a391db53b",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Xela",
+    "popularity": 4,
+    "type": "artist",
+    "uri": "spotify:artist:1XesPp6ChBekt9GF3KVCbV"
+  }
+}

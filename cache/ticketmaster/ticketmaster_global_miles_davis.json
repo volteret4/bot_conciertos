@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-10-23T17:14:39.522667",
+  "concerts": [
+    {
+      "artist": "Miles Davis",
+      "name": "Kind of Blue: Celebrating the Music of Miles Davis",
+      "venue": "Knight Concert Hall-Adrienne Arsht PAC",
+      "city": "Miami",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-07",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7_Ubk",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7_Ubk"
+    },
+    {
+      "artist": "Miles Davis",
+      "name": "Miles Davis at 100",
+      "venue": "Orchestra Hall - IL",
+      "city": "Chicago",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-03-27",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7_UvZ",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7_UvZ"
+    },
+    {
+      "artist": "Miles Davis",
+      "name": "Jax Symphony: Miles Davis at 100",
+      "venue": "Jacksonville Center for the Performing Arts - Jacoby Hall",
+      "city": "Jacksonville",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-04-19",
+      "time": "15:00:00",
+      "url": "https://www.ticketmaster.com/jax-symphony-miles-davis-at-100-jacksonville-florida-04-19-2026/event/220062D1E2C226AE",
+      "source": "Ticketmaster",
+      "id": "17FOvxG6u6xYxQm"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:49:01.379137",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1w75sgSmxzi7A6rNOrjWqI"
+    },
+    "followers": {
+      "href": null,
+      "total": 397
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/1w75sgSmxzi7A6rNOrjWqI",
+    "id": "1w75sgSmxzi7A6rNOrjWqI",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/4b6d3848ac57e4b8c06559ef674893bac3badb8a",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/0afbf1e444163d4b86ea807d5c604a162bbb1576",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/14f0aede2dc70dba235a2b91c3c48d741b41c700",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/c9c585b6ff1205d3c8dba584c472aa1916366417",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Someday I",
+    "popularity": 0,
+    "type": "artist",
+    "uri": "spotify:artist:1w75sgSmxzi7A6rNOrjWqI"
+  }
+}

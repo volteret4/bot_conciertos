@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-10-23T20:56:28.322669",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2rxgmguaQSynTMnBKZL73G"
+    },
+    "followers": {
+      "href": null,
+      "total": 29571
+    },
+    "genres": [
+      "ambient"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2rxgmguaQSynTMnBKZL73G",
+    "id": "2rxgmguaQSynTMnBKZL73G",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb1f702c5b023cc38e17a3e447",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051741f702c5b023cc38e17a3e447",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1781f702c5b023cc38e17a3e447",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Gaussian Curve",
+    "popularity": 33,
+    "type": "artist",
+    "uri": "spotify:artist:2rxgmguaQSynTMnBKZL73G"
+  }
+}

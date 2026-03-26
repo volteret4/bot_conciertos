@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T20:04:24.955105",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1hrQ50kU6hMQBVLatqUqnO"
+    },
+    "followers": {
+      "href": null,
+      "total": 250584
+    },
+    "genres": [
+      "progressive rock",
+      "art rock",
+      "krautrock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1hrQ50kU6hMQBVLatqUqnO",
+    "id": "1hrQ50kU6hMQBVLatqUqnO",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eba66894a8af6541d3019e1d7a",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174a66894a8af6541d3019e1d7a",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178a66894a8af6541d3019e1d7a",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Gentle Giant",
+    "popularity": 39,
+    "type": "artist",
+    "uri": "spotify:artist:1hrQ50kU6hMQBVLatqUqnO"
+  }
+}

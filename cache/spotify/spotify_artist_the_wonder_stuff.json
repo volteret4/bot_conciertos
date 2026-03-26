@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-03T19:47:00.376371",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0Uo1d5A6BR1I155GlD9WYo"
+    },
+    "followers": {
+      "href": null,
+      "total": 71457
+    },
+    "genres": [
+      "madchester",
+      "britpop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0Uo1d5A6BR1I155GlD9WYo",
+    "id": "0Uo1d5A6BR1I155GlD9WYo",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/11f8024b512d96b0d5a09b092d6c642726997cf6",
+        "height": 669,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/e9bd8bb8e43a37448a28bd7acce2b93fce0cba6b",
+        "height": 428,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/3146b4394faee2a1cf47085e169a4559cd1abf42",
+        "height": 134,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/8ce2ebc5143a5fbd91356aaca528d983d498104e",
+        "height": 43,
+        "width": 64
+      }
+    ],
+    "name": "The Wonder Stuff",
+    "popularity": 35,
+    "type": "artist",
+    "uri": "spotify:artist:0Uo1d5A6BR1I155GlD9WYo"
+  }
+}

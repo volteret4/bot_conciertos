@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:00:54.731747",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3UBLa2huRORV0HmGQq3fGs"
+    },
+    "followers": {
+      "href": null,
+      "total": 96526
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/3UBLa2huRORV0HmGQq3fGs",
+    "id": "3UBLa2huRORV0HmGQq3fGs",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebcc7683cd14108605c8cb7890",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174cc7683cd14108605c8cb7890",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178cc7683cd14108605c8cb7890",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "BoomBox",
+    "popularity": 43,
+    "type": "artist",
+    "uri": "spotify:artist:3UBLa2huRORV0HmGQq3fGs"
+  }
+}

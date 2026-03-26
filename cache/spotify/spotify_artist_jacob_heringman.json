@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:58:12.464792",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6JOHDdnSQ2wFhTbbm789NH"
+    },
+    "followers": {
+      "href": null,
+      "total": 1678
+    },
+    "genres": [
+      "medieval"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6JOHDdnSQ2wFhTbbm789NH",
+    "id": "6JOHDdnSQ2wFhTbbm789NH",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/80742315bc287198ba03fee20ce8be9edfbe7723",
+        "height": 300,
+        "width": 450
+      },
+      {
+        "url": "https://i.scdn.co/image/7b1f0548e07c49b57c2f8c94ebed8b19803401b9",
+        "height": 133,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/f3268f3ff62317115a12d9b73f0fe1bb43c75972",
+        "height": 43,
+        "width": 64
+      }
+    ],
+    "name": "Jacob Heringman",
+    "popularity": 17,
+    "type": "artist",
+    "uri": "spotify:artist:6JOHDdnSQ2wFhTbbm789NH"
+  }
+}

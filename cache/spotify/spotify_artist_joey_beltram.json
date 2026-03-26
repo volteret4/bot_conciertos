@@ -1,0 +1,46 @@
+{
+  "timestamp": "2025-11-03T20:00:25.325641",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4OW0w5K2UNaWtbpRqzWqI0"
+    },
+    "followers": {
+      "href": null,
+      "total": 42654
+    },
+    "genres": [
+      "acid house",
+      "chicago house",
+      "acid techno",
+      "techno"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4OW0w5K2UNaWtbpRqzWqI0",
+    "id": "4OW0w5K2UNaWtbpRqzWqI0",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/7fbdab62e71b7d8740e8b9ca73b84d99742f419b",
+        "height": 1001,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/0cb3c885a7d72ba38d392ee8bf8e9772b228b554",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/8caa3a35eaf066c17484678e9900725a35fc6836",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/e9ff8951c2208952aa57a5953ed034e2b57e73c9",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Joey Beltram",
+    "popularity": 30,
+    "type": "artist",
+    "uri": "spotify:artist:4OW0w5K2UNaWtbpRqzWqI0"
+  }
+}

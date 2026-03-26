@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:59:55.547917",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0DivrXwznd1NcQbRh86cQO"
+    },
+    "followers": {
+      "href": null,
+      "total": 3133
+    },
+    "genres": [
+      "lo-fi house"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0DivrXwznd1NcQbRh86cQO",
+    "id": "0DivrXwznd1NcQbRh86cQO",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebf1a3bc4bf353faf06a7ef51c",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174f1a3bc4bf353faf06a7ef51c",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178f1a3bc4bf353faf06a7ef51c",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Contours",
+    "popularity": 17,
+    "type": "artist",
+    "uri": "spotify:artist:0DivrXwznd1NcQbRh86cQO"
+  }
+}

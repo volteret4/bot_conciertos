@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:04:22.138934",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3qwabfaWewpfli7hMNM3O8"
+    },
+    "followers": {
+      "href": null,
+      "total": 403833
+    },
+    "genres": [
+      "art pop",
+      "electropop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3qwabfaWewpfli7hMNM3O8",
+    "id": "3qwabfaWewpfli7hMNM3O8",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb3e8c7567d63a90e8e5546e00",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051743e8c7567d63a90e8e5546e00",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1783e8c7567d63a90e8e5546e00",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Róisín Murphy",
+    "popularity": 54,
+    "type": "artist",
+    "uri": "spotify:artist:3qwabfaWewpfli7hMNM3O8"
+  }
+}

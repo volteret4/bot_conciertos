@@ -1,0 +1,109 @@
+{
+  "timestamp": "2025-10-23T17:13:56.130215",
+  "concerts": [
+    {
+      "artist": "clipping.",
+      "name": "clipping.",
+      "venue": "Constellation Room",
+      "city": "Santa Ana",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-02-12",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/clipping-santa-ana-california-02-12-2026/event/09006342E4527E26",
+      "source": "Ticketmaster",
+      "id": "vv1AaZkueGkd0fEzJ"
+    },
+    {
+      "artist": "clipping.",
+      "name": "clipping.",
+      "venue": "Music Box",
+      "city": "San Diego",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-02-13",
+      "time": "21:00:00",
+      "url": "https://www.ticketweb.com/event/clipping-music-box-tickets/14595673",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1Afp4_S"
+    },
+    {
+      "artist": "clipping.",
+      "name": "clipping. @ Rialto Theatre",
+      "venue": "Rialto Theatre-Tucson",
+      "city": "Tucson",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-02-14",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/clipping-rialto-theatre-tucson-arizona-02-14-2026/event/19006342D2C340D4",
+      "source": "Ticketmaster",
+      "id": "1A_ZkueGkd3YVdf"
+    },
+    {
+      "artist": "clipping.",
+      "name": "Clipping",
+      "venue": "Ferris Wheelers Backyard and BBQ",
+      "city": "Dallas",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-02-17",
+      "time": "19:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7qkZK",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7qkZK"
+    },
+    {
+      "artist": "clipping.",
+      "name": "Clipping",
+      "venue": "Terminal West",
+      "city": "Atlanta",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-02-19",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7qkZ3",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7qkZ3"
+    },
+    {
+      "artist": "clipping.",
+      "name": "clipping.",
+      "venue": "The Basement East",
+      "city": "Nashville",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-02-20",
+      "time": "19:30:00",
+      "url": "https://www.ticketweb.com/event/clipping-the-basement-east-tickets/14581813",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AfpvOK"
+    },
+    {
+      "artist": "clipping.",
+      "name": "Clipping",
+      "venue": "Gothic Theatre",
+      "city": "Englewood",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-02-22",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7qkZ8",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7qkZ8"
+    },
+    {
+      "artist": "clipping.",
+      "name": "Clipping",
+      "venue": "The UC Theatre",
+      "city": "Berkeley",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-02-27",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7qkZo",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7qkZo"
+    }
+  ]
+}

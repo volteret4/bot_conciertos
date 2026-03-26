@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-03T19:55:29.802203",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4uhd5mHMAsJNvmnLdPHj17"
+    },
+    "followers": {
+      "href": null,
+      "total": 2168
+    },
+    "genres": [
+      "nu jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4uhd5mHMAsJNvmnLdPHj17",
+    "id": "4uhd5mHMAsJNvmnLdPHj17",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2730c833fb1bd529e0b78a36d6b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e020c833fb1bd529e0b78a36d6b",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048510c833fb1bd529e0b78a36d6b",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Ian O'Brien",
+    "popularity": 10,
+    "type": "artist",
+    "uri": "spotify:artist:4uhd5mHMAsJNvmnLdPHj17"
+  }
+}

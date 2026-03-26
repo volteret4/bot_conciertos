@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T20:04:26.990527",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0k17h0D3J5VfsdmQ1iZtE9"
+    },
+    "followers": {
+      "href": null,
+      "total": 22734622
+    },
+    "genres": [
+      "progressive rock",
+      "psychedelic rock",
+      "classic rock",
+      "art rock",
+      "rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0k17h0D3J5VfsdmQ1iZtE9",
+    "id": "0k17h0D3J5VfsdmQ1iZtE9",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb97885ce689d644c91dfba05c",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517497885ce689d644c91dfba05c",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17897885ce689d644c91dfba05c",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Pink Floyd",
+    "popularity": 79,
+    "type": "artist",
+    "uri": "spotify:artist:0k17h0D3J5VfsdmQ1iZtE9"
+  }
+}

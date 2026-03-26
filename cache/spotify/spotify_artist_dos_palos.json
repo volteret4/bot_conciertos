@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:58:33.739753",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/58I9AAQtwMzz3MHYG61jV4"
+    },
+    "followers": {
+      "href": null,
+      "total": 240
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/58I9AAQtwMzz3MHYG61jV4",
+    "id": "58I9AAQtwMzz3MHYG61jV4",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273e410319a6e185bf8e39db6a1",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02e410319a6e185bf8e39db6a1",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851e410319a6e185bf8e39db6a1",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Dos Palos",
+    "popularity": 4,
+    "type": "artist",
+    "uri": "spotify:artist:58I9AAQtwMzz3MHYG61jV4"
+  }
+}

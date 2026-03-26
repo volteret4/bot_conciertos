@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T19:55:47.698378",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/7A4qanEMCOPcywaqZ01yVV"
+    },
+    "followers": {
+      "href": null,
+      "total": 25278
+    },
+    "genres": [
+      "acid house",
+      "minimal techno",
+      "idm",
+      "chicago house",
+      "techno"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7A4qanEMCOPcywaqZ01yVV",
+    "id": "7A4qanEMCOPcywaqZ01yVV",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb94882107bb5b7d1948c0cb4e",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517494882107bb5b7d1948c0cb4e",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17894882107bb5b7d1948c0cb4e",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Kenny Larkin",
+    "popularity": 24,
+    "type": "artist",
+    "uri": "spotify:artist:7A4qanEMCOPcywaqZ01yVV"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:54:49.533047",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3QgSmABpItIdj908ek80n5"
+    },
+    "followers": {
+      "href": null,
+      "total": 400816
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/3QgSmABpItIdj908ek80n5",
+    "id": "3QgSmABpItIdj908ek80n5",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/80d6bb0b980dcf3043465c9bfaa49ca0edeb167a",
+        "height": 1163,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/37cd9d0ba36b8c0c87397c60bd2fc39c1c2b07fb",
+        "height": 744,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/2502c1efc2850552e175f628c177174aa70626f7",
+        "height": 233,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/feda45525507c26a153bf696a43fe1eb11d5d9c2",
+        "height": 74,
+        "width": 64
+      }
+    ],
+    "name": "Morphine",
+    "popularity": 49,
+    "type": "artist",
+    "uri": "spotify:artist:3QgSmABpItIdj908ek80n5"
+  }
+}

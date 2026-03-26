@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-10-23T17:07:37.986439",
+  "concerts": [
+    {
+      "artist": "Midnight Hour",
+      "name": "Spaced, Chico, the Sissy Boys",
+      "venue": "The Midnight Hour",
+      "city": "San Fernando",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-10-23",
+      "time": "19:00:00",
+      "url": "https://www.ticketweb.com/event/spaced-chico-the-sissy-boys-the-midnight-hour-tickets/14511633?REFERRAL_ID=tmfeed",
+      "source": "Ticketmaster",
+      "id": "1AtZkGpGkdD0x8B"
+    },
+    {
+      "artist": "Midnight Hour",
+      "name": "Auditory Anguish, Ironfront, Manos De Fierro, Plagas, Contract Killer,",
+      "venue": "The Midnight Hour",
+      "city": "San Fernando",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-28",
+      "time": "18:30:00",
+      "url": "https://www.ticketweb.com/event/auditory-anguish-ironfront-manos-de-the-midnight-hour-tickets/14627573?REFERRAL_ID=tmfeed",
+      "source": "Ticketmaster",
+      "id": "1k18vNfvGA1_o8g"
+    }
+  ]
+}

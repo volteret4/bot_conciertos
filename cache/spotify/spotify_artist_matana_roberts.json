@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:50:01.905249",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0JsR3SXB4qNYABygCfyozb"
+    },
+    "followers": {
+      "href": null,
+      "total": 16366
+    },
+    "genres": [
+      "free jazz",
+      "avant-garde",
+      "experimental",
+      "jazz"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0JsR3SXB4qNYABygCfyozb",
+    "id": "0JsR3SXB4qNYABygCfyozb",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb0656e11f65f954760fcbc99c",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051740656e11f65f954760fcbc99c",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1780656e11f65f954760fcbc99c",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Matana Roberts",
+    "popularity": 11,
+    "type": "artist",
+    "uri": "spotify:artist:0JsR3SXB4qNYABygCfyozb"
+  }
+}

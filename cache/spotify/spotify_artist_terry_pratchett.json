@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:49:39.913945",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1G6NIhxIm2kDDEiHNKPu6e"
+    },
+    "followers": {
+      "href": null,
+      "total": 17065
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/1G6NIhxIm2kDDEiHNKPu6e",
+    "id": "1G6NIhxIm2kDDEiHNKPu6e",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2731ab72e72918034fb5ecb8c87",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e021ab72e72918034fb5ecb8c87",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048511ab72e72918034fb5ecb8c87",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Terry Pratchett",
+    "popularity": 27,
+    "type": "artist",
+    "uri": "spotify:artist:1G6NIhxIm2kDDEiHNKPu6e"
+  }
+}

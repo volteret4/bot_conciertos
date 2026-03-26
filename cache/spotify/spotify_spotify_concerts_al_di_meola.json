@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-25T08:02:38.763529",
+  "data": [
+    {
+      "artist": "Al Di Meola",
+      "artist_name": "Al Di Meola",
+      "name": "Al Di Meola Concert (4lpqR6zn)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/4lpqR6znb1DyaCfY91758c",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Al Di Meola",
+      "artist_name": "Al Di Meola",
+      "name": "Al Di Meola Concert (0C077H55)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/0C077H55GO7FajW4drm4QL",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Al Di Meola",
+      "artist_name": "Al Di Meola",
+      "name": "Al Di Meola at Maui Arts &amp; Cultural Center",
+      "venue": "Maui Arts &amp; Cultural Center",
+      "city": "Kahului",
+      "country": "",
+      "date": "2025-09-06",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/5myQLTFyZHdwe7LPrCY1hU",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Al Di Meola",
+      "artist_name": "Al Di Meola",
+      "name": "Al Di Meola at Fremont Theater",
+      "venue": "Fremont Theater",
+      "city": "San Luis Obispo",
+      "country": "US",
+      "date": "2025-09-09",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/3XZYpN8ANk5MgDJPx5WTUr",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Al Di Meola",
+      "artist_name": "Al Di Meola",
+      "name": "Al Di Meola at Saban Theatre",
+      "venue": "Saban Theatre",
+      "city": "Beverly Hills",
+      "country": "",
+      "date": "2025-09-10",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/5X2s2f9KHypH03IHRTPJnE",
+      "source": "Spotify"
+    }
+  ]
+}

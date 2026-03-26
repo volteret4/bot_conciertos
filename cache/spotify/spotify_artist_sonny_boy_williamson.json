@@ -1,0 +1,46 @@
+{
+  "timestamp": "2025-11-03T19:46:52.351248",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/69VgCcXFV59QuQWEXSTxfK"
+    },
+    "followers": {
+      "href": null,
+      "total": 198495
+    },
+    "genres": [
+      "blues",
+      "classic blues",
+      "country blues",
+      "blues rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/69VgCcXFV59QuQWEXSTxfK",
+    "id": "69VgCcXFV59QuQWEXSTxfK",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/3d18bea847eb85fe72245591d80a154681ef030c",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/d108a9343e59c2cf94f8bb1edc573e42529e313e",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/98fbe0657eaa3a4143f6772e65740b4cf1c164bc",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/bc318f1715ab066d65405ddf6bace131b31265d9",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Sonny Boy Williamson II",
+    "popularity": 45,
+    "type": "artist",
+    "uri": "spotify:artist:69VgCcXFV59QuQWEXSTxfK"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:59:09.568890",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3dcqf190oFqc5FQNI05mVW"
+    },
+    "followers": {
+      "href": null,
+      "total": 9004
+    },
+    "genres": [
+      "afro house",
+      "afro tech",
+      "tribal house",
+      "gnawa"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3dcqf190oFqc5FQNI05mVW",
+    "id": "3dcqf190oFqc5FQNI05mVW",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb34a5f8ab57624faf9221d9b5",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517434a5f8ab57624faf9221d9b5",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17834a5f8ab57624faf9221d9b5",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "FNX OMAR",
+    "popularity": 39,
+    "type": "artist",
+    "uri": "spotify:artist:3dcqf190oFqc5FQNI05mVW"
+  }
+}

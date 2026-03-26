@@ -1,0 +1,70 @@
+{
+  "timestamp": "2025-10-23T17:10:42.077377",
+  "concerts": [
+    {
+      "artist": "Emerson, Lake & Palmer",
+      "name": "Emerson, Lake & Palmer",
+      "venue": "Ruth Eckerd Hall",
+      "city": "Clearwater",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-08",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7_3xZ",
+      "source": "Ticketmaster",
+      "id": "Z7r9jZ1A7_3xZ"
+    },
+    {
+      "artist": "Emerson, Lake & Palmer",
+      "name": "Welcome Back My Friends - An Evening with Emerson, Lake & Palmer",
+      "venue": "Wells Hall at The Parker",
+      "city": "Ft Lauderdale",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-12",
+      "time": "19:30:00",
+      "url": "https://www.ticketmaster.com/welcome-back-my-friends-an-evening-ft-lauderdale-florida-11-12-2025/event/0D0062B3E06825B9",
+      "source": "Ticketmaster",
+      "id": "vvG1VZbl2OQepy"
+    },
+    {
+      "artist": "Emerson, Lake & Palmer",
+      "name": "The Haller Club prior to An Evening with Emerson, Lake & Palmer",
+      "venue": "The Haller Club at The Parker",
+      "city": "Fort Lauderdale",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-12",
+      "time": "19:30:00",
+      "url": "https://www.ticketmaster.com/the-haller-club-prior-to-an-fort-lauderdale-florida-11-12-2025/event/0D0062B7E05E3C1D",
+      "source": "Ticketmaster",
+      "id": "vvG1VZblLO9NYq"
+    },
+    {
+      "artist": "Emerson, Lake & Palmer",
+      "name": "The Place To Be prior to An Evening with Emerson, Lake & Palmer",
+      "venue": "The Place To Be at The Parker",
+      "city": "Fort Lauderdale",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2025-11-12",
+      "time": "19:30:00",
+      "url": "https://www.ticketmaster.com/the-place-to-be-prior-to-fort-lauderdale-florida-11-12-2025/event/0D0062B7DDE13ABD",
+      "source": "Ticketmaster",
+      "id": "vvG1VZblLqzKnW"
+    },
+    {
+      "artist": "Emerson, Lake & Palmer",
+      "name": "Manticore - The Tribute to Emerson Lake & Palmer",
+      "venue": "Daryl's House",
+      "city": "Pawling",
+      "country": "United States Of America",
+      "country_code": "US",
+      "date": "2026-03-22",
+      "time": "19:00:00",
+      "url": "https://www.ticketweb.com/event/manticore-the-tribute-daryls-house-tickets/14564743",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1Af40qd"
+    }
+  ]
+}

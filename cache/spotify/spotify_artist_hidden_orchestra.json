@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:58:14.122403",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/707cnVfI3ISM4j5uzfTc7J"
+    },
+    "followers": {
+      "href": null,
+      "total": 158329
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/707cnVfI3ISM4j5uzfTc7J",
+    "id": "707cnVfI3ISM4j5uzfTc7J",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2731e2565cb9cc67c378d2a8f31",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e021e2565cb9cc67c378d2a8f31",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048511e2565cb9cc67c378d2a8f31",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Hidden Citizens",
+    "popularity": 48,
+    "type": "artist",
+    "uri": "spotify:artist:707cnVfI3ISM4j5uzfTc7J"
+  }
+}

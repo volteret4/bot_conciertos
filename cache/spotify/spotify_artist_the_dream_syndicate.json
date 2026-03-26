@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T19:58:35.121595",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1l0eT7EY5r7U1gMVm2SyoS"
+    },
+    "followers": {
+      "href": null,
+      "total": 35784
+    },
+    "genres": [
+      "jangle pop",
+      "neo-psychedelic",
+      "power pop",
+      "post-punk"
+    ],
+    "href": "https://api.spotify.com/v1/artists/1l0eT7EY5r7U1gMVm2SyoS",
+    "id": "1l0eT7EY5r7U1gMVm2SyoS",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb62e02841182cb1e77f9081f0",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517462e02841182cb1e77f9081f0",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17862e02841182cb1e77f9081f0",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "The Dream Syndicate",
+    "popularity": 29,
+    "type": "artist",
+    "uri": "spotify:artist:1l0eT7EY5r7U1gMVm2SyoS"
+  }
+}

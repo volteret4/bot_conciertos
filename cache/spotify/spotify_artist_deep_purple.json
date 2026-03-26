@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:58:22.365288",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/568ZhdwyaiCyOGJRtNYhWf"
+    },
+    "followers": {
+      "href": null,
+      "total": 5990244
+    },
+    "genres": [
+      "hard rock",
+      "classic rock",
+      "rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/568ZhdwyaiCyOGJRtNYhWf",
+    "id": "568ZhdwyaiCyOGJRtNYhWf",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb3a475812e97ee788cfd5fd1a",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab676161000051743a475812e97ee788cfd5fd1a",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f1783a475812e97ee788cfd5fd1a",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Deep Purple",
+    "popularity": 65,
+    "type": "artist",
+    "uri": "spotify:artist:568ZhdwyaiCyOGJRtNYhWf"
+  }
+}

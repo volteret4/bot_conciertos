@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:02:08.899048",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2mJcZxeeM5nu7Z3Y7l9Mdx"
+    },
+    "followers": {
+      "href": null,
+      "total": 882
+    },
+    "genres": [
+      "nu disco",
+      "french indie pop"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2mJcZxeeM5nu7Z3Y7l9Mdx",
+    "id": "2mJcZxeeM5nu7Z3Y7l9Mdx",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebd2a4e3b9abcc63aca811eb25",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174d2a4e3b9abcc63aca811eb25",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178d2a4e3b9abcc63aca811eb25",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Bad Business Club",
+    "popularity": 5,
+    "type": "artist",
+    "uri": "spotify:artist:2mJcZxeeM5nu7Z3Y7l9Mdx"
+  }
+}

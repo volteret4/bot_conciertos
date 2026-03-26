@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T20:00:22.241853",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5g8zU3hIMirIT8gwhV6Hlz"
+    },
+    "followers": {
+      "href": null,
+      "total": 25248
+    },
+    "genres": [
+      "progressive rock",
+      "progressive metal",
+      "art rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5g8zU3hIMirIT8gwhV6Hlz",
+    "id": "5g8zU3hIMirIT8gwhV6Hlz",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebd86b7287435947068b9ffbf0",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174d86b7287435947068b9ffbf0",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178d86b7287435947068b9ffbf0",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Beardfish",
+    "popularity": 19,
+    "type": "artist",
+    "uri": "spotify:artist:5g8zU3hIMirIT8gwhV6Hlz"
+  }
+}

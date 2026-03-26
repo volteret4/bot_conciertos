@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T19:56:52.904842",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5cCzokwZSw5IRKcm7LpRbH"
+    },
+    "followers": {
+      "href": null,
+      "total": 21953
+    },
+    "genres": [
+      "drone metal",
+      "experimental",
+      "avant-garde",
+      "industrial",
+      "post-rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5cCzokwZSw5IRKcm7LpRbH",
+    "id": "5cCzokwZSw5IRKcm7LpRbH",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb86a21016da94f44da273b09f",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000517486a21016da94f44da273b09f",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f17886a21016da94f44da273b09f",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Jarboe",
+    "popularity": 19,
+    "type": "artist",
+    "uri": "spotify:artist:5cCzokwZSw5IRKcm7LpRbH"
+  }
+}

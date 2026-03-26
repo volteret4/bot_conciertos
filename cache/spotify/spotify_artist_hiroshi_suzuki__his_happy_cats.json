@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T19:47:30.586793",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3Utb4tfJFIY6uljVwizgWv"
+    },
+    "followers": {
+      "href": null,
+      "total": 19
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/3Utb4tfJFIY6uljVwizgWv",
+    "id": "3Utb4tfJFIY6uljVwizgWv",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2738911f752083d089067a2be44",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e028911f752083d089067a2be44",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048518911f752083d089067a2be44",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "鈴木弘とハッピー・キャッツ",
+    "popularity": 0,
+    "type": "artist",
+    "uri": "spotify:artist:3Utb4tfJFIY6uljVwizgWv"
+  }
+}

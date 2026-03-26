@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-03T20:01:18.598537",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6PfSUFtkMVoDkx4MQkzOi3"
+    },
+    "followers": {
+      "href": null,
+      "total": 666914
+    },
+    "genres": [
+      "hyperpop",
+      "glitch"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6PfSUFtkMVoDkx4MQkzOi3",
+    "id": "6PfSUFtkMVoDkx4MQkzOi3",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebd77a9c855001f3a9b5815bc0",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174d77a9c855001f3a9b5815bc0",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178d77a9c855001f3a9b5815bc0",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "100 gecs",
+    "popularity": 57,
+    "type": "artist",
+    "uri": "spotify:artist:6PfSUFtkMVoDkx4MQkzOi3"
+  }
+}

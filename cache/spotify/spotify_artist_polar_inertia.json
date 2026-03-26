@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:49:35.707205",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0WStQnW9WLEG01RKPDB0oy"
+    },
+    "followers": {
+      "href": null,
+      "total": 15079
+    },
+    "genres": [
+      "dub techno",
+      "minimal techno",
+      "acid techno"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0WStQnW9WLEG01RKPDB0oy",
+    "id": "0WStQnW9WLEG01RKPDB0oy",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2736b7f5021917af5fc74c28ae3",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e026b7f5021917af5fc74c28ae3",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048516b7f5021917af5fc74c28ae3",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Polar Inertia",
+    "popularity": 17,
+    "type": "artist",
+    "uri": "spotify:artist:0WStQnW9WLEG01RKPDB0oy"
+  }
+}

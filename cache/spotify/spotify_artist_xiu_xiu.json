@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-10-23T20:57:30.955718",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5JLqvjW3Nyom2OsRUyFsS9"
+    },
+    "followers": {
+      "href": null,
+      "total": 189317
+    },
+    "genres": [
+      "art pop",
+      "noise rock",
+      "experimental"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5JLqvjW3Nyom2OsRUyFsS9",
+    "id": "5JLqvjW3Nyom2OsRUyFsS9",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb697f6028589d80c3458b1a18",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174697f6028589d80c3458b1a18",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178697f6028589d80c3458b1a18",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Xiu Xiu",
+    "popularity": 27,
+    "type": "artist",
+    "uri": "spotify:artist:5JLqvjW3Nyom2OsRUyFsS9"
+  }
+}

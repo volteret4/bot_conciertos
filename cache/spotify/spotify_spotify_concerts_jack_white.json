@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-08-25T08:44:15.662722",
+  "data": [
+    {
+      "artist": "Jack White",
+      "artist_name": "Jack White",
+      "name": "Jack White at Highland Festival Grounds at KY Expo Center",
+      "venue": "Highland Festival Grounds at KY Expo Center",
+      "city": "Louisville",
+      "country": "US",
+      "date": "2025-09-13",
+      "time": "12:00 AM",
+      "url": "https://open.spotify.com/concert/2FU2Z93osLEgUMMd4yYke9",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Jack White",
+      "artist_name": "Jack White",
+      "name": "Jack White Concert (5dftmcVW)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/5dftmcVWE28NKN3ylHLeYy",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Jack White",
+      "artist_name": "Jack White",
+      "name": "Jack White at Under the K Bridge Park",
+      "venue": "Under the K Bridge Park",
+      "city": "Brooklyn",
+      "country": "US",
+      "date": "2025-09-27",
+      "time": "3:00 PM",
+      "url": "https://open.spotify.com/concert/3ZzVXntdNTqNfj9NKnahvh",
+      "source": "Spotify"
+    }
+  ]
+}

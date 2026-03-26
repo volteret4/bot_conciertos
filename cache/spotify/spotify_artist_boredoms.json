@@ -1,0 +1,46 @@
+{
+  "timestamp": "2025-11-03T20:02:07.922504",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4pxlntE89zyfL0txVloogM"
+    },
+    "followers": {
+      "href": null,
+      "total": 50477
+    },
+    "genres": [
+      "noise rock",
+      "noise music",
+      "avant-garde",
+      "experimental"
+    ],
+    "href": "https://api.spotify.com/v1/artists/4pxlntE89zyfL0txVloogM",
+    "id": "4pxlntE89zyfL0txVloogM",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/d99c94db546257f1d712ab76d7ef5a86a677280a",
+        "height": 1333,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/4783abc35bba08a99d808338cc4fb77d03db1b0f",
+        "height": 853,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/a4d2394451ef0a0db8eb692470a2776f5b4d756c",
+        "height": 267,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/d4898021a7a3865f4f690bc438b7b3f7f738844d",
+        "height": 85,
+        "width": 64
+      }
+    ],
+    "name": "Boredoms",
+    "popularity": 13,
+    "type": "artist",
+    "uri": "spotify:artist:4pxlntE89zyfL0txVloogM"
+  }
+}

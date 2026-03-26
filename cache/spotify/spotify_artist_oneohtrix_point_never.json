@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-11-03T20:04:49.277893",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2wPDbhaGXCqROrVmwDdCrK"
+    },
+    "followers": {
+      "href": null,
+      "total": 268295
+    },
+    "genres": [
+      "idm",
+      "drone",
+      "ambient",
+      "experimental",
+      "vaporwave"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2wPDbhaGXCqROrVmwDdCrK",
+    "id": "2wPDbhaGXCqROrVmwDdCrK",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5eb479c5d1829178f3c53a7e5e9",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174479c5d1829178f3c53a7e5e9",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178479c5d1829178f3c53a7e5e9",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Oneohtrix Point Never",
+    "popularity": 47,
+    "type": "artist",
+    "uri": "spotify:artist:2wPDbhaGXCqROrVmwDdCrK"
+  }
+}

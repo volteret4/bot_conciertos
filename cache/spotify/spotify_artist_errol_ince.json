@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-10-23T17:51:53.672273",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2beODQXGLZD07Bu9S8IkzX"
+    },
+    "followers": {
+      "href": null,
+      "total": 25
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/2beODQXGLZD07Bu9S8IkzX",
+    "id": "2beODQXGLZD07Bu9S8IkzX",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27348deec32204dc4680aa02421",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0248deec32204dc4680aa02421",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485148deec32204dc4680aa02421",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Errol Ince",
+    "popularity": 0,
+    "type": "artist",
+    "uri": "spotify:artist:2beODQXGLZD07Bu9S8IkzX"
+  }
+}

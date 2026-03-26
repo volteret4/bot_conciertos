@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-25T09:17:06.296973",
+  "data": [
+    {
+      "artist": "Richie Hawtin",
+      "artist_name": "Richie Hawtin",
+      "name": "Richie Hawtin at SILO",
+      "venue": "SILO",
+      "city": "Dallas",
+      "country": "US",
+      "date": "2025-08-29",
+      "time": "9:00 PM",
+      "url": "https://open.spotify.com/concert/50QdPu2vfvxJnkgvH4TRt1",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Richie Hawtin",
+      "artist_name": "Richie Hawtin",
+      "name": "Richie Hawtin Concert (6K6lRRDE)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/6K6lRRDEJsAPOcZSIrpkWm",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Richie Hawtin",
+      "artist_name": "Richie Hawtin",
+      "name": "Richie Hawtin at Union Park",
+      "venue": "Union Park",
+      "city": "Chicago",
+      "country": "US",
+      "date": "2025-08-30",
+      "time": "10:00 AM",
+      "url": "https://open.spotify.com/concert/1eL1qd8BenddGLSaDonq2t",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Richie Hawtin",
+      "artist_name": "Richie Hawtin",
+      "name": "Richie Hawtin Concert (1CdPPCXr)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/1CdPPCXrJWFGR71N0AYq1H",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Richie Hawtin",
+      "artist_name": "Richie Hawtin",
+      "name": "Richie Hawtin at Club Space Miami",
+      "venue": "Club Space Miami",
+      "city": "Miami",
+      "country": "US",
+      "date": "2025-08-31",
+      "time": "11:00 PM",
+      "url": "https://open.spotify.com/concert/4vXyrfBXlsSxxw35fTHhhM",
+      "source": "Spotify"
+    }
+  ]
+}

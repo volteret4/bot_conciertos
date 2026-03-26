@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-23T08:10:40.043153",
+  "data": [
+    {
+      "artist": "Ben Allison",
+      "artist_name": "Ben Allison",
+      "name": "Ben Allison Concert (78o85918)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/78o85918EvWvPO1MfQi2pF",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Ben Allison",
+      "artist_name": "Ben Allison",
+      "name": "Ben Allison at Bryant Park",
+      "venue": "Bryant Park",
+      "city": "New York",
+      "country": "US",
+      "date": "2025-08-30",
+      "time": "5:00 PM",
+      "url": "https://open.spotify.com/concert/3HleoVB372W6198N2GVASs",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Ben Allison",
+      "artist_name": "Ben Allison",
+      "name": "Ben Allison Concert (6iNnLuqS)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/6iNnLuqSxErbnbRdkZBkY9",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Ben Allison",
+      "artist_name": "Ben Allison",
+      "name": "Ben Allison Concert (7mViUtQX)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/7mViUtQXyic4V9rfIRO1F6",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Ben Allison",
+      "artist_name": "Ben Allison",
+      "name": "Ben Allison at Smalls Jazz Club",
+      "venue": "Smalls Jazz Club",
+      "city": "New York",
+      "country": "US",
+      "date": "2025-09-10",
+      "time": "6:00 PM",
+      "url": "https://open.spotify.com/concert/56gGYs8EQU2noQsTU7Gp09",
+      "source": "Spotify"
+    }
+  ]
+}

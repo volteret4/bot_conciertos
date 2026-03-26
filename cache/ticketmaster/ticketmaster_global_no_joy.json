@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-10-23T17:14:59.246000",
+  "concerts": [
+    {
+      "artist": "No Joy",
+      "name": "NO JOY",
+      "venue": "Chmury",
+      "city": "Warsaw",
+      "country": "Poland",
+      "country_code": "PL",
+      "date": "2025-10-29",
+      "time": "20:00:00",
+      "url": "https://www.ticketmaster.pl/event/no-joy-tickets/437413974?language=en-us",
+      "source": "Ticketmaster",
+      "id": "Z698xZQpZ1k8M8KPV"
+    },
+    {
+      "artist": "No Joy",
+      "name": "No Joy with Diles Que No Me Maten & LöLä",
+      "venue": "The Astoria",
+      "city": "Vancouver",
+      "country": "Canada",
+      "country_code": "CA",
+      "date": "2025-11-08",
+      "time": "21:00:00",
+      "url": "https://www.ticketweb.ca/event/no-joy-with-diles-que-the-astoria-tickets/13932354",
+      "source": "Ticketmaster",
+      "id": "rZ7HnEZ1AK0wuf"
+    }
+  ]
+}

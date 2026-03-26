@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-25T08:18:31.509818",
+  "data": [
+    {
+      "artist": "Clara La San",
+      "artist_name": "Clara La San",
+      "name": "Clara La San at Substation Seattle",
+      "venue": "Substation Seattle",
+      "city": "Seattle",
+      "country": "US",
+      "date": "2025-10-13",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/4J0VsycDk6XXXGgPr1PSXP",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Clara La San",
+      "artist_name": "Clara La San",
+      "name": "Clara La San Concert (1aUFTnbE)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/1aUFTnbEZ1iXFmnGIGZU0h",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Clara La San",
+      "artist_name": "Clara La San",
+      "name": "Clara La San at August Hall",
+      "venue": "August Hall",
+      "city": "San Francisco",
+      "country": "US",
+      "date": "2025-10-16",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/4xsljKD2kT772ivpyyz3wi",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Clara La San",
+      "artist_name": "Clara La San",
+      "name": "Clara La San Concert (49v7szjr)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/49v7szjrd88ewHCa9M0DDX",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Clara La San",
+      "artist_name": "Clara La San",
+      "name": "Clara La San Concert (7GQ4Gaxw)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/7GQ4GaxwWonyqkPgDQfhII",
+      "source": "Spotify"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+[Unit]
+Description=Telegram Bot Notificaciones
+After=network.target
+
+[Service]
+Type=simple
+User=pepe
+WorkingDirectory=/home/pepe/Scripts/Musica/conciertos/telegram/
+ExecStart=/home/pepe/Scripts/python_venv/bin/python /home/pepe/Scripts/Musica/conciertos/telegram/notifications.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

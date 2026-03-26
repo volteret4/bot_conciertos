@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-11-03T20:01:49.814499",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/5lXkaxOaoMr8fpQFgYdGTc"
+    },
+    "followers": {
+      "href": null,
+      "total": 16711
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/5lXkaxOaoMr8fpQFgYdGTc",
+    "id": "5lXkaxOaoMr8fpQFgYdGTc",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6761610000e5ebf7768a937c774706d6568854",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616100005174f7768a937c774706d6568854",
+        "height": 320,
+        "width": 320
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6761610000f178f7768a937c774706d6568854",
+        "height": 160,
+        "width": 160
+      }
+    ],
+    "name": "Antony Z",
+    "popularity": 46,
+    "type": "artist",
+    "uri": "spotify:artist:5lXkaxOaoMr8fpQFgYdGTc"
+  }
+}

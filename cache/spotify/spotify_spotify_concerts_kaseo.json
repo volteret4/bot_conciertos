@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-23T08:56:07.932230",
+  "data": [
+    {
+      "artist": "Kase.O",
+      "artist_name": "Kase.O",
+      "name": "Kase.O at Explanada del Recinto Expo",
+      "venue": "Explanada del Recinto Expo",
+      "city": "Zaragoza Centro",
+      "country": "ES",
+      "date": "2025-09-07",
+      "time": "5:00 PM",
+      "url": "https://open.spotify.com/concert/1IW051EnjfKpeSNVyqJkH0",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Kase.O",
+      "artist_name": "Kase.O",
+      "name": "Kase.O Concert (4pSDgu3F)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/4pSDgu3Faap2KjArMkpQnX",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Kase.O",
+      "artist_name": "Kase.O",
+      "name": "Kase.O Concert (70MmgwNo)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/70MmgwNod3X6XmKX4LQ8lQ",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Kase.O",
+      "artist_name": "Kase.O",
+      "name": "Kase.O at Auditorio Banamex",
+      "venue": "Auditorio Banamex",
+      "city": "Monterrey",
+      "country": "MX",
+      "date": "2025-10-22",
+      "time": "9:00 PM",
+      "url": "https://open.spotify.com/concert/1zJzThKk9fnipF69WWnuQx",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Kase.O",
+      "artist_name": "Kase.O",
+      "name": "Kase.O Concert (4lwj3qh3)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/4lwj3qh3i6n8O0I0GuqpV8",
+      "source": "Spotify"
+    }
+  ]
+}

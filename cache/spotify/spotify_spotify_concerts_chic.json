@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-24T08:19:58.011257",
+  "data": [
+    {
+      "artist": "Chic",
+      "artist_name": "Chic",
+      "name": "Chic at Anita Dee II - DuSable Harbor",
+      "venue": "Anita Dee II - DuSable Harbor",
+      "city": "Chicago",
+      "country": "US",
+      "date": "2025-08-24",
+      "time": "12:45 PM",
+      "url": "https://open.spotify.com/concert/21Q0tzHBIWgcX6nxntsEMz",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Chic",
+      "artist_name": "Chic",
+      "name": "Chic Concert (6GJnkirW)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/6GJnkirWamSgzWCpstxWXo",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Chic",
+      "artist_name": "Chic",
+      "name": "Chic Concert (6DOhDD5n)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/6DOhDD5nCvtRd2NUrPDUme",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Chic",
+      "artist_name": "Chic",
+      "name": "Chic at Outlaw Field at the Idaho Botanical Garden",
+      "venue": "Outlaw Field at the Idaho Botanical Garden",
+      "city": "Boise",
+      "country": "US",
+      "date": "2025-08-27",
+      "time": "7:00 PM",
+      "url": "https://open.spotify.com/concert/2oBsQ1i5VI8BLurizUtHPC",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Chic",
+      "artist_name": "Chic",
+      "name": "Chic Concert (1wCvhcMq)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/1wCvhcMqMLCtoWgIgKEH2M",
+      "source": "Spotify"
+    }
+  ]
+}

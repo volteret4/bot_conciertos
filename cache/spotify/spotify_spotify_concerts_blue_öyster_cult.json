@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-24T08:14:07.661531",
+  "data": [
+    {
+      "artist": "Blue Öyster Cult",
+      "artist_name": "Blue Öyster Cult",
+      "name": "Blue Öyster Cult at Plaza de César Chávez",
+      "venue": "Plaza de César Chávez",
+      "city": "San Jose",
+      "country": "US",
+      "date": "2025-09-19",
+      "time": "5:00 PM",
+      "url": "https://open.spotify.com/concert/0hQv7NwIcRLKiUktdbuxqt",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Blue Öyster Cult",
+      "artist_name": "Blue Öyster Cult",
+      "name": "Blue Öyster Cult Concert (2OUJ41YZ)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/2OUJ41YZusvTkmWGumjkyW",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Blue Öyster Cult",
+      "artist_name": "Blue Öyster Cult",
+      "name": "Blue Öyster Cult at Brown County Music Center",
+      "venue": "Brown County Music Center",
+      "city": "Nashville",
+      "country": "US",
+      "date": "2025-09-26",
+      "time": "8:00 PM",
+      "url": "https://open.spotify.com/concert/75aSMGhM8KXHb1f8ivHuYk",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Blue Öyster Cult",
+      "artist_name": "Blue Öyster Cult",
+      "name": "Blue Öyster Cult Concert (6L4L8hTr)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/6L4L8hTri8ObBc7mrEVjSb",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Blue Öyster Cult",
+      "artist_name": "Blue Öyster Cult",
+      "name": "Blue Öyster Cult Concert (1wsXUaiJ)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/1wsXUaiJkiwQdTV71lV5f8",
+      "source": "Spotify"
+    }
+  ]
+}

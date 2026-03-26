@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-03T19:57:46.530171",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6YktolrgGPFMwWrmAgf4hu"
+    },
+    "followers": {
+      "href": null,
+      "total": 39128
+    },
+    "genres": [
+      "ambient",
+      "idm",
+      "drone"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6YktolrgGPFMwWrmAgf4hu",
+    "id": "6YktolrgGPFMwWrmAgf4hu",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273ba5db8884d409cfb44c7822d",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02ba5db8884d409cfb44c7822d",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851ba5db8884d409cfb44c7822d",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Global Communication",
+    "popularity": 29,
+    "type": "artist",
+    "uri": "spotify:artist:6YktolrgGPFMwWrmAgf4hu"
+  }
+}

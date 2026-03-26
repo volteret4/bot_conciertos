@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-25T08:40:41.076476",
+  "data": [
+    {
+      "artist": "Henrik Schwarz",
+      "artist_name": "Henrik Schwarz",
+      "name": "Henrik Schwarz at Pacha Ibiza",
+      "venue": "Pacha Ibiza",
+      "city": "Ibiza",
+      "country": "ES",
+      "date": "2025-09-10",
+      "time": "11:00 PM",
+      "url": "https://open.spotify.com/concert/35zKMcuDNVoLi50DECooNJ",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Henrik Schwarz",
+      "artist_name": "Henrik Schwarz",
+      "name": "Henrik Schwarz at Pacha Ibiza",
+      "venue": "Pacha Ibiza",
+      "city": "Ibiza",
+      "country": "ES",
+      "date": "2025-09-25",
+      "time": "11:00 PM",
+      "url": "https://open.spotify.com/concert/2FlmXfQS63gtbDNqv6rPCM",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Henrik Schwarz",
+      "artist_name": "Henrik Schwarz",
+      "name": "Henrik Schwarz at Lula Club",
+      "venue": "Lula Club",
+      "city": "Madrid",
+      "country": "ES",
+      "date": "2025-09-27",
+      "time": "11:59 PM",
+      "url": "https://open.spotify.com/concert/2vua45t1LLND6y2DmNhRkw",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Henrik Schwarz",
+      "artist_name": "Henrik Schwarz",
+      "name": "Henrik Schwarz Concert (3zzL2sLE)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/3zzL2sLEW0K4Wm64uOM3iV",
+      "source": "Spotify"
+    },
+    {
+      "artist": "Henrik Schwarz",
+      "artist_name": "Henrik Schwarz",
+      "name": "Henrik Schwarz Concert (2rHFozyE)",
+      "venue": "Venue information not available",
+      "city": "Location not available",
+      "country": "",
+      "date": "",
+      "time": "",
+      "url": "https://open.spotify.com/concert/2rHFozyEFuncLqOMJGd9SW",
+      "source": "Spotify"
+    }
+  ]
+}

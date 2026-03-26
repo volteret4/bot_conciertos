@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-03T20:02:29.929637",
+  "data": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3HQyFCFFfJO3KKBlUfZsyW"
+    },
+    "followers": {
+      "href": null,
+      "total": 267971
+    },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/3HQyFCFFfJO3KKBlUfZsyW",
+    "id": "3HQyFCFFfJO3KKBlUfZsyW",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab6772690000c46cce7143d8941faa26b2bea7aa",
+        "height": 1000,
+        "width": 1000
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000dd22ce7143d8941faa26b2bea7aa",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab6772690000bac3ce7143d8941faa26b2bea7aa",
+        "height": 200,
+        "width": 200
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67726900008f74ce7143d8941faa26b2bea7aa",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Randy Newman",
+    "popularity": 59,
+    "type": "artist",
+    "uri": "spotify:artist:3HQyFCFFfJO3KKBlUfZsyW"
+  }
+}
