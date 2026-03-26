@@ -59,6 +59,25 @@ muspy_service = None
 muspy_handlers = None
 calendar_handlers = None
 
+def _get_or_register(update: Update) -> Optional[Dict]:
+    """
+    Devuelve el usuario de la BD. Si no existe lo registra automáticamente
+    usando su username de Telegram, o su chat_id como fallback.
+    Nunca devuelve None (salvo error grave de BD).
+    """
+    tg_user = update.effective_user
+    chat_id = update.effective_chat.id
+
+    user = db.get_user_by_chat_id(chat_id)
+    if user:
+        return user
+
+    # Auto-registro
+    username = (tg_user.username or str(tg_user.id)) if tg_user else str(chat_id)
+    db.add_user(username, chat_id)
+    return db.get_user_by_chat_id(chat_id)
+
+
 async def _removed_spotify_command_placeholder():
     pass  # /spotify eliminado — ver commit history
 
@@ -115,11 +134,9 @@ async def _removed_show_spotify_menu_placeholder():
     chat_id = update.effective_chat.id
 
     # Verificar que el usuario esté registrado
-    user = db.get_user_by_chat_id(chat_id)
+    user = _get_or_register(update)
     if not user:
-        await update.message.reply_text(
-            "❌ Primero debes registrarte con `/adduser <tu_nombre>`"
-        )
+        await update.message.reply_text("❌ Error interno. Inténtalo de nuevo.")
         return
 
     # Verificar si ya tiene usuario de Spotify configurado
@@ -282,12 +299,9 @@ async def artist_selection_callback(update: Update, context: ContextTypes.DEFAUL
 
     selected_candidate = candidates[artist_index]
 
-    # Verificar que el usuario esté registrado
-    user = db.get_user_by_chat_id(chat_id)
+    user = _get_or_register(update)
     if not user:
-        await query.edit_message_text(
-            "❌ Primero debes registrarte con `/adduser <tu_nombre>`"
-        )
+        await query.edit_message_text("❌ Error interno. Inténtalo de nuevo.")
         return
 
     # Crear el artista y añadirlo a seguimiento
@@ -359,12 +373,9 @@ async def country_selection_callback(update: Update, context: ContextTypes.DEFAU
 
     selected_country = countries[country_index]
 
-    # Verificar que el usuario esté registrado
-    user = db.get_user_by_chat_id(chat_id)
+    user = _get_or_register(update)
     if not user:
-        await query.edit_message_text(
-            "❌ Primero debes registrarte con `/adduser <tu_nombre>`"
-        )
+        await query.edit_message_text("❌ Error interno. Inténtalo de nuevo.")
         return
 
     # Añadir país
@@ -1662,11 +1673,9 @@ async def playlist_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.effective_chat.id
 
     # Verificar que el usuario esté registrado
-    user = db.get_user_by_chat_id(chat_id)
+    user = _get_or_register(update)
     if not user:
-        await update.message.reply_text(
-            "❌ Primero debes registrarte con `/adduser <tu_nombre>`"
-        )
+        await update.message.reply_text("❌ Error interno. Inténtalo de nuevo.")
         return
 
     services = get_services()
@@ -2831,11 +2840,9 @@ async def showartist_command(update: Update, context: ContextTypes.DEFAULT_TYPE)
     chat_id = update.effective_chat.id
 
     # Verificar que el usuario esté registrado
-    user = db.get_user_by_chat_id(chat_id)
+    user = _get_or_register(update)
     if not user:
-        await update.message.reply_text(
-            "❌ Primero debes registrarte con `/adduser <tu_nombre>`"
-        )
+        await update.message.reply_text("❌ Error interno. Inténtalo de nuevo.")
         return
 
     # Obtener configuración de países del usuario
@@ -2965,11 +2972,9 @@ async def serviceon_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.effective_chat.id
 
     # Verificar que el usuario esté registrado
-    user = db.get_user_by_chat_id(chat_id)
+    user = _get_or_register(update)
     if not user:
-        await update.message.reply_text(
-            "❌ Primero debes registrarte con `/adduser <tu_nombre>`"
-        )
+        await update.message.reply_text("❌ Error interno. Inténtalo de nuevo.")
         return
 
     # Validar servicio
@@ -3006,11 +3011,9 @@ async def serviceoff_command(update: Update, context: ContextTypes.DEFAULT_TYPE)
     chat_id = update.effective_chat.id
 
     # Verificar que el usuario esté registrado
-    user = db.get_user_by_chat_id(chat_id)
+    user = _get_or_register(update)
     if not user:
-        await update.message.reply_text(
-            "❌ Primero debes registrarte con `/adduser <tu_nombre>`"
-        )
+        await update.message.reply_text("❌ Error interno. Inténtalo de nuevo.")
         return
 
     # Validar servicio
@@ -3076,11 +3079,9 @@ async def country_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.effective_chat.id
 
     # Verificar que el usuario esté registrado
-    user = db.get_user_by_chat_id(chat_id)
+    user = _get_or_register(update)
     if not user:
-        await update.message.reply_text(
-            "❌ Primero debes registrarte con `/adduser <tu_nombre>`"
-        )
+        await update.message.reply_text("❌ Error interno. Inténtalo de nuevo.")
         return
 
     # Validar formato del código de país
@@ -3153,11 +3154,9 @@ async def addcountry_command(update: Update, context: ContextTypes.DEFAULT_TYPE)
     chat_id = update.effective_chat.id
 
     # Verificar que el usuario esté registrado
-    user = db.get_user_by_chat_id(chat_id)
+    user = _get_or_register(update)
     if not user:
-        await update.message.reply_text(
-            "❌ Primero debes registrarte con `/adduser <tu_nombre>`"
-        )
+        await update.message.reply_text("❌ Error interno. Inténtalo de nuevo.")
         return
 
     query = " ".join(context.args)
@@ -3256,11 +3255,9 @@ async def removecountry_command(update: Update, context: ContextTypes.DEFAULT_TY
     country_code = context.args[0].upper()
 
     # Verificar que el usuario esté registrado
-    user = db.get_user_by_chat_id(chat_id)
+    user = _get_or_register(update)
     if not user:
-        await update.message.reply_text(
-            "❌ Primero debes registrarte con `/adduser <tu_nombre>`"
-        )
+        await update.message.reply_text("❌ Error interno. Inténtalo de nuevo.")
         return
 
     # Verificar que el usuario tenga más de un país (no puede quedarse sin países)
@@ -3303,11 +3300,9 @@ async def mycountries_command(update: Update, context: ContextTypes.DEFAULT_TYPE
     chat_id = update.effective_chat.id
 
     # Verificar que el usuario esté registrado
-    user = db.get_user_by_chat_id(chat_id)
+    user = _get_or_register(update)
     if not user:
-        await update.message.reply_text(
-            "❌ Primero debes registrarte con `/adduser <tu_nombre>`"
-        )
+        await update.message.reply_text("❌ Error interno. Inténtalo de nuevo.")
         return
 
     # Obtener países del usuario
@@ -3435,11 +3430,9 @@ async def refreshcountries_command(update: Update, context: ContextTypes.DEFAULT
     chat_id = update.effective_chat.id
 
     # Verificar que el usuario esté registrado
-    user = db.get_user_by_chat_id(chat_id)
+    user = _get_or_register(update)
     if not user:
-        await update.message.reply_text(
-            "❌ Primero debes registrarte con `/adduser <tu_nombre>`"
-        )
+        await update.message.reply_text("❌ Error interno. Inténtalo de nuevo.")
         return
 
     # Mensaje de estado
@@ -3481,11 +3474,9 @@ async def config_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.effective_chat.id
 
     # Verificar que el usuario esté registrado
-    user = db.get_user_by_chat_id(chat_id)
+    user = _get_or_register(update)
     if not user:
-        await update.message.reply_text(
-            "❌ Primero debes registrarte con `/adduser <tu_nombre>`"
-        )
+        await update.message.reply_text("❌ Error interno. Inténtalo de nuevo.")
         return
 
     # Mostrar configuración con botones
@@ -3610,11 +3601,9 @@ async def lastfm_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.effective_chat.id
 
     # Verificar que el usuario esté registrado
-    user = db.get_user_by_chat_id(chat_id)
+    user = _get_or_register(update)
     if not user:
-        await update.message.reply_text(
-            "❌ Primero debes registrarte con `/adduser <tu_nombre>`"
-        )
+        await update.message.reply_text("❌ Error interno. Inténtalo de nuevo.")
         return
 
     # Verificar si ya tiene usuario de Last.fm configurado
@@ -3687,86 +3676,82 @@ async def show_lastfm_menu(update, user: Dict, lastfm_user: Dict):
 # ===========================
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    """Comando /start y /help"""
-    services = get_services()
+    """Comando /start"""
+    user = _get_or_register(update)
 
-    help_text = (
-        "🐣Bienvenido al bot de novedades musicales\n\n"
-        "Usa /adduser para registrarte y añadir artistas con /addartist \n"
-        "/spotify y /lastfm permiten añadir artistas facilmente\n"
-        "/muspy sirve para buscar nuevos lanzamientos de tus artistas\n\n"
+    if user:
+        name = user.get('username') or update.effective_user.first_name or "amigo"
+        welcome = (
+            f"👋 Hola, *{name}*! Ya estás listo para usar el bot.\n\n"
+            "🎵 *tumtumpá* — novedades musicales semanales\n\n"
+            "Añade artistas con `/addartist <nombre>` y recibirás cada semana:\n"
+            "• 🎤 Conciertos próximos (Ticketmaster)\n"
+            "• 💿 Nuevos lanzamientos (Muspy)\n\n"
+            "También puedes importar artistas desde:\n"
+            "• `/lastfm` — tus artistas más escuchados en Last.fm\n"
+            "• `/muspy` — tu cuenta de Muspy\n\n"
+            "Usa `/commands` para ver todos los comandos disponibles."
+        )
+    else:
+        welcome = "❌ Error al registrarte. Inténtalo de nuevo con /start."
 
-        "📝 *Comandos básicos*\n"
-        "/addartist <artista> - Añadir artista al bot\n"
-        "/search - Buscar nuevos conciertos de TODOS tus artistas\n"
-        "/show - Ver conciertos guardados de TODOS tus artistas\n"
-        "/mostrar - Ver nuevos lanzamientos de tus artistas de Muspy\n\n"
-    )
-
-    help_text += (
-        "❓ *Comandos directos:*\n"
-        "/commands - Mostrar todos los comandos disponibles\n"
-    )
-
-    await update.message.reply_text(help_text, parse_mode='Markdown')
+    await update.message.reply_text(welcome, parse_mode='Markdown')
 
 async def commands(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Comando /commands"""
     services = get_services()
 
     help_text = (
-        "🐣Bienvenido al bot de novedades musicales\n\n"
+        "📋 *Comandos disponibles — tumtumpá*\n\n"
 
-        "💻 *Menús de configuración*\n"
-        "/config - Configura países, notificaciones y artistas seguidos\n"
-        "/muspy - Usa tu cuenta de muspy para buscar nuevos lanzamientos de tus artistas\n"
-        "/spotify - Permite añadir tus artistas seguidos, añadir artistas de playlists propias o desde enlaces\n"
-        "/lastfm - Posibilita añadir tus artistas más escuchados por períodos de tiempo\n\n"
+        "🎤 *Artistas:*\n"
+        "/addartist <artista> — Seguir un artista\n"
+        "/remove <artista> — Dejar de seguir un artista\n"
+        "/list — Ver artistas seguidos\n\n"
 
-        "📖 *Manejo básico:*\n"
-        "/adduser <usuario> - Registrarte en el sistema\n"
-        "/notify [HH:MM] - Configurar notificaciones semanales\n"
-        "/notify day N - Cambiar día (0=lun … 6=dom)\n\n"
+        "🔍 *Conciertos:*\n"
+        "/search — Buscar conciertos en Ticketmaster (actualiza BD)\n"
+        "/show — Ver conciertos guardados\n"
+        "/searchartist <artista> — Buscar conciertos de un artista\n"
+        "/showartist <artista> — Ver conciertos guardados de un artista\n\n"
 
-        "🤖 *Base de datos del bot:*\n"
-        "/addartist <artista> - Seguir un artista\n"
-        "/remove <artista> - Dejar de seguir un artista\n"
-        "/list [usuario] - Ver artistas seguidos\n\n"
+        "💿 *Lanzamientos (Muspy):*\n"
+        "/mostrar — Ver próximos lanzamientos de tus artistas\n"
+        "/muspy — Conectar/gestionar tu cuenta de Muspy\n"
+        "/artistas — Artistas seguidos en Muspy\n\n"
 
-        "💽 *Lanzamientos musicales*\n"
-        "/mostrar - Ver nuevos lanzamientos de tus artistas\n"
-        "/artistas - Lista los artistas seguidos _en Muspy_\n\n"
+        "📥 *Importar artistas:*\n"
+        "/lastfm — Importar desde tus más escuchados en Last.fm\n\n"
 
-        "🥁 *Buscar conciertos:*\n"
-        "/search - Buscar nuevos conciertos de tus artistas (APIs)\n"
-        "/show - Ver conciertos guardados de tus artistas (BD)\n"
-        "/searchartist <artista> - Buscar conciertos específicos\n"
-        "/showartist <artista> - Ver todos los conciertos de un artista\n\n"
+        "🔔 *Notificaciones semanales:*\n"
+        "/notify — Ver configuración actual\n"
+        "/notify toggle — Activar/desactivar\n"
+        "/notify HH:MM — Cambiar hora (ej: `/notify 09:00`)\n"
+        "/notify day N — Cambiar día (0=lun … 6=dom)\n\n"
 
+        "📅 *Calendario:*\n"
+        "/cal — Generar ICS o enviar eventos a Radicale\n"
+        "/radicale — Configurar servidor CalDAV Radicale\n\n"
     )
 
     if services.get('country_state_city'):
         help_text += (
-            "🌍 *Gestión de países:*\n"
-            "/addcountry <país> - Añadir país a tu configuración\n"
-            "/removecountry <código> - Eliminar país\n"
-            "/mycountries - Ver tus países configurados\n"
-            "/listcountries - Ver países disponibles\n\n"
+            "🌍 *Países:*\n"
+            "/addcountry <país> — Añadir país\n"
+            "/removecountry <código> — Eliminar país\n"
+            "/mycountries — Ver países configurados\n"
+            "/listcountries — Ver países disponibles\n\n"
         )
     else:
         help_text += (
-            "🌍 *Configuración de país:*\n"
-            "/country <código> - Establecer filtro de país (ej: ES, US, FR)\n\n"
+            "🌍 *País:*\n"
+            "/country <código> — Filtro de país (ej: ES, US, FR)\n\n"
         )
 
     help_text += (
-        "❓ *Ayuda:*\n"
-        "/config - Ver tu configuración actual\n"
-        "/help - Mostrar este mensaje de ayuda\n\n"
-
-        "💡 *Diferencia entre comandos:*\n"
-        "• `/search` = Busca nuevos conciertos en APIs (más lento)\n"
-        "• `/show` = Consulta conciertos ya guardados (más rápido)"
+        "⚙️ *Otros:*\n"
+        "/config — Ver tu configuración actual\n"
+        "/help — Ayuda rápida"
     )
 
     await update.message.reply_text(help_text, parse_mode='Markdown')
@@ -3780,37 +3765,16 @@ async def commands_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await commands(update, context)
 
 async def adduser_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    """Comando /adduser"""
-    if not context.args:
+    """Comando /adduser — el registro es automático, este comando es informativo"""
+    user = _get_or_register(update)
+    if user:
         await update.message.reply_text(
-            "❌ Uso incorrecto. Debes especificar un nombre de usuario.\n"
-            "Ejemplo: `/adduser tu_nombre`"
-        )
-        return
-
-    username = context.args[0]
-    chat_id = update.effective_chat.id
-
-    # Validar nombre de usuario
-    if len(username) < 2 or len(username) > 50:
-        await update.message.reply_text(
-            "❌ El nombre de usuario debe tener entre 2 y 50 caracteres."
-        )
-        return
-
-    if db.add_user(username, chat_id):
-        await update.message.reply_text(
-            f"✅ Usuario '{username}' registrado correctamente.\n"
-            f"Ya puedes usar `/addartist` para seguir artistas."
-        )
-        await admin_notify.notify_async(
-            "nuevo_usuario",
-            f"👤 `{username}` (chat\_id: `{chat_id}`)"
+            f"✅ Ya estás registrado como *{user['username']}*.\n"
+            "Usa `/addartist <artista>` para seguir artistas.",
+            parse_mode='Markdown'
         )
     else:
-        await update.message.reply_text(
-            "❌ Error al registrar el usuario. Inténtalo de nuevo."
-        )
+        await update.message.reply_text("❌ Error al registrar. Inténtalo de nuevo.")
 
 async def addartist_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Comando /addartist mejorado con selección múltiple"""
@@ -3825,11 +3789,9 @@ async def addartist_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.effective_chat.id
 
     # Verificar que el usuario esté registrado
-    user = db.get_user_by_chat_id(chat_id)
+    user = _get_or_register(update)
     if not user:
-        await update.message.reply_text(
-            "❌ Primero debes registrarte con `/adduser <tu_nombre>`"
-        )
+        await update.message.reply_text("❌ Error interno. Inténtalo de nuevo.")
         return
 
     # Mensaje de estado
@@ -3990,11 +3952,9 @@ async def list_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         display_name = target_username
     else:
         # Consultar usuario actual
-        current_user = db.get_user_by_chat_id(chat_id)
+        current_user = _get_or_register(update)
         if not current_user:
-            await update.message.reply_text(
-                "❌ Primero debes registrarte con `/adduser <tu_nombre>`"
-            )
+            await update.message.reply_text("❌ Error interno. Inténtalo de nuevo.")
             return
 
         user_id = current_user['id']
@@ -4058,11 +4018,9 @@ async def remove_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.effective_chat.id
 
     # Verificar que el usuario esté registrado
-    user = db.get_user_by_chat_id(chat_id)
+    user = _get_or_register(update)
     if not user:
-        await update.message.reply_text(
-            "❌ Primero debes registrarte con `/adduser <tu_nombre>`"
-        )
+        await update.message.reply_text("❌ Error interno. Inténtalo de nuevo.")
         return
 
     # Eliminar de la lista de seguimiento
@@ -4083,9 +4041,9 @@ async def notify_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Comando /notify para configurar notificaciones semanales"""
     chat_id = update.effective_chat.id
 
-    user = db.get_user_by_chat_id(chat_id)
+    user = _get_or_register(update)
     if not user:
-        await update.message.reply_text("❌ Primero debes registrarte con `/adduser <tu_nombre>`")
+        await update.message.reply_text("❌ Error interno. Inténtalo de nuevo.")
         return
 
     if not context.args:
@@ -4310,11 +4268,9 @@ async def search_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.effective_chat.id
 
     # Verificar que el usuario esté registrado
-    user = db.get_user_by_chat_id(chat_id)
+    user = _get_or_register(update)
     if not user:
-        await update.message.reply_text(
-            "❌ Primero debes registrarte con `/adduser <tu_nombre>`"
-        )
+        await update.message.reply_text("❌ Error interno. Inténtalo de nuevo.")
         return
 
     # Obtener configuración del usuario
@@ -4508,11 +4464,9 @@ async def search_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.effective_chat.id
 
     # Verificar que el usuario esté registrado
-    user = db.get_user_by_chat_id(chat_id)
+    user = _get_or_register(update)
     if not user:
-        await update.message.reply_text(
-            "❌ Primero debes registrarte con `/adduser <tu_nombre>`"
-        )
+        await update.message.reply_text("❌ Error interno. Inténtalo de nuevo.")
         return
 
     # Obtener configuración del usuario
@@ -5096,11 +5050,9 @@ async def show_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.effective_chat.id
 
     # Verificar que el usuario esté registrado
-    user = db.get_user_by_chat_id(chat_id)
+    user = _get_or_register(update)
     if not user:
-        await update.message.reply_text(
-            "❌ Primero debes registrarte con `/adduser <tu_nombre>`"
-        )
+        await update.message.reply_text("❌ Error interno. Inténtalo de nuevo.")
         return
 
     # Obtener configuración del usuario
