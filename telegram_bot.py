@@ -2714,18 +2714,22 @@ def filter_future_concerts_by_countries(all_concerts, user_countries, database_p
 
 
 def _basic_country_filter(concerts, user_countries):
-    """Filtrado básico por código de país"""
-    filtered_concerts = []
+    """Filtrado básico: acepta código ISO (ES) o nombre completo (Spain)."""
+    if not user_countries:
+        return concerts
 
+    upper_codes = {c.upper() for c in user_countries}
+    filtered = []
     for concert in concerts:
-        concert_country = concert.get('country_code', concert.get('country', '')).upper()
-
-        # Si no hay información de país O el país está en la lista del usuario, incluir
-        if not concert_country or concert_country in user_countries:
-            filtered_concerts.append(concert)
-
-    logger.debug(f"Filtrado básico: {len(concerts)} -> {len(filtered_concerts)} conciertos")
-    return filtered_concerts
+        code = concert.get('country_code', '').upper()
+        name = concert.get('country', '').upper()
+        # Sin info de país → incluir; código o nombre coincide → incluir
+        if not code and not name:
+            filtered.append(concert)
+        elif code in upper_codes or name in upper_codes:
+            filtered.append(concert)
+    logger.debug(f"Filtrado básico: {len(concerts)} -> {len(filtered)} conciertos")
+    return filtered
 
 def get_no_concerts_suggestions(is_search, countries_text):
     """Obtiene sugerencias cuando no se encuentran conciertos"""
@@ -2773,12 +2777,11 @@ async def searchartist_command(update: Update, context: ContextTypes.DEFAULT_TYP
             return
 
         # Verificar que tenga países configurados
-        user_countries = user_services_config.get('countries', set())
+        user_countries = {c for c in user_services_config.get('countries', set()) if c}
         if not user_countries:
             await update.message.reply_text(
-                "❌ No tienes países configurados.\n"
-                "Usa `/addcountry <país>` para añadir países.\n"
-                "Ejemplo: `/addcountry ES`"
+                "🌍 Aún no tienes ningún país configurado.",
+                reply_markup=_country_picker_keyboard()
             )
             return
 
@@ -2882,13 +2885,13 @@ async def showartist_command(update: Update, context: ContextTypes.DEFAULT_TYPE)
 
     # Obtener configuración de países del usuario
     user_services_config = user_services.get_user_services(user['id'])
-    if not user_services_config:
-        user_services_config = {'countries': {'ES'}, 'country_filter': 'ES'}
-
-    user_countries = user_services_config.get('countries', set())
+    user_countries = (user_services_config or {}).get('countries', set())
     if not user_countries:
-        country_filter = user_services_config.get('country_filter', 'ES')
-        user_countries = {country_filter}
+        await update.message.reply_text(
+            "🌍 Aún no tienes ningún país configurado.",
+            reply_markup=_country_picker_keyboard()
+        )
+        return
 
     # Obtener TODOS los conciertos del artista de la base de datos
     conn = db.get_connection()
@@ -3710,27 +3713,57 @@ async def show_lastfm_menu(update, user: Dict, lastfm_user: Dict):
 # COMANDOS BÁSICOS
 # ===========================
 
+async def pick_country_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Callback del selector de país inicial: pick_country_XX"""
+    query = update.callback_query
+    await query.answer()
+
+    code = query.data.replace("pick_country_", "").upper()
+    user = _get_or_register(update)
+    if not user:
+        await query.edit_message_text("❌ Error interno.")
+        return
+
+    label = next((l for l, c in _COUNTRY_PICKER if c == code), code)
+    if user_services.set_country_filter(user['id'], code):
+        await query.edit_message_text(
+            f"✅ País principal: *{label}*\n\n"
+            f"Ya puedes usar `/addartist <nombre>` para seguir artistas y `/search` para buscar conciertos.\n"
+            f"Puedes cambiar o añadir países con `/country`.",
+            parse_mode='Markdown'
+        )
+        await admin_notify.notify_async(
+            "notificaciones",
+            f"país → {label} ({code})",
+            username=user.get('username', str(user.get('chat_id', ''))),
+        )
+    else:
+        await query.edit_message_text("❌ Error al guardar el país. Usa `/country <código>` para configurarlo.")
+
+
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Comando /start"""
     user = await _get_or_register_notify(update)
 
-    if user:
-        name = user.get('username') or update.effective_user.first_name or "amigo"
-        welcome = (
-            f"👋 Hola, *{name}*! Ya estás listo para usar el bot.\n\n"
-            "🎵 *tumtumpá* — novedades musicales semanales\n\n"
-            "Añade artistas con `/addartist <nombre>` y recibirás cada semana:\n"
-            "• 🎤 Conciertos próximos (Ticketmaster)\n"
-            "• 💿 Nuevos lanzamientos (Muspy)\n\n"
-            "También puedes importar artistas desde:\n"
-            "• `/lastfm` — tus artistas más escuchados en Last.fm\n"
-            "• `/muspy` — tu cuenta de Muspy\n\n"
-            "Usa `/commands` para ver todos los comandos disponibles."
-        )
-    else:
-        welcome = "❌ Error al registrarte. Inténtalo de nuevo con /start."
+    if not user:
+        await update.message.reply_text("❌ Error al registrarte. Inténtalo de nuevo con /start.")
+        return
 
+    name = user.get('username') or (update.effective_user.first_name if update.effective_user else "amigo")
+    welcome = (
+        f"👋 Hola, *{name}*! Bienvenido a *tumtumpá*.\n\n"
+        "Recibirás cada semana:\n"
+        "• 🎤 Conciertos próximos (Ticketmaster)\n"
+        "• 💿 Nuevos lanzamientos (Muspy)\n\n"
+        "Añade artistas con `/addartist <nombre>` o importa desde `/lastfm` o `/muspy`.\n"
+        "Usa `/commands` para ver todos los comandos."
+    )
     await update.message.reply_text(welcome, parse_mode='Markdown')
+
+    # Si no tiene país configurado, mostrar el selector
+    cfg = user_services.get_user_services(user['id'])
+    if not cfg or not cfg.get('countries'):
+        await _send_country_picker(update)
 
 async def commands(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Comando /commands"""
@@ -4074,6 +4107,37 @@ async def remove_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 _NOTIFY_DAYS = ['lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado', 'domingo']
 
+# Países ofrecidos en el selector inicial
+_COUNTRY_PICKER = [
+    ("🇪🇸 España",    "ES"),
+    ("🇲🇽 México",    "MX"),
+    ("🇦🇷 Argentina", "AR"),
+    ("🇨🇱 Chile",     "CL"),
+    ("🇨🇴 Colombia",  "CO"),
+    ("🇵🇪 Perú",      "PE"),
+]
+
+
+def _country_picker_keyboard() -> InlineKeyboardMarkup:
+    """Teclado inline para elegir país principal."""
+    buttons = [
+        InlineKeyboardButton(label, callback_data=f"pick_country_{code}")
+        for label, code in _COUNTRY_PICKER
+    ]
+    # Dos columnas
+    rows = [buttons[i:i+2] for i in range(0, len(buttons), 2)]
+    return InlineKeyboardMarkup(rows)
+
+
+async def _send_country_picker(update_or_message, text: str = None):
+    """Envía el mensaje de selección de país."""
+    msg = text or (
+        "🌍 *¿En qué país buscamos conciertos principalmente?*\n\n"
+        "Puedes añadir más países después con `/country`."
+    )
+    target = update_or_message if hasattr(update_or_message, 'reply_text') else update_or_message.message
+    await target.reply_text(msg, parse_mode='Markdown', reply_markup=_country_picker_keyboard())
+
 async def notify_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Comando /notify para configurar notificaciones semanales"""
     chat_id = update.effective_chat.id
@@ -4329,17 +4393,14 @@ async def search_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # Obtener configuración del usuario
     user_services_config = user_services.get_user_services(user['id'])
 
-    if not user_services_config:
-        user_services_config = {
-            'countries': {'ES'},
-            'country_filter': 'ES'
-        }
-
     # Verificar países configurados
-    user_countries = user_services_config.get('countries', set())
+    user_countries = (user_services_config or {}).get('countries', set())
     if not user_countries:
-        country_filter = user_services_config.get('country_filter', 'ES')
-        user_countries = {country_filter}
+        await update.message.reply_text(
+            "🌍 Aún no tienes ningún país configurado.",
+            reply_markup=_country_picker_keyboard()
+        )
+        return
 
     # Verificar servicios activos
     active_services = [s for s, active in user_services_config.items() if active and s not in ['country_filter', 'countries']]
@@ -4525,17 +4586,14 @@ async def search_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # Obtener configuración del usuario
     user_services_config = user_services.get_user_services(user['id'])
 
-    if not user_services_config:
-        user_services_config = {
-            'countries': {'ES'},
-            'country_filter': 'ES'
-        }
-
     # Verificar países configurados
-    user_countries = user_services_config.get('countries', set())
+    user_countries = (user_services_config or {}).get('countries', set())
     if not user_countries:
-        country_filter = user_services_config.get('country_filter', 'ES')
-        user_countries = {country_filter}
+        await update.message.reply_text(
+            "🌍 Aún no tienes ningún país configurado.",
+            reply_markup=_country_picker_keyboard()
+        )
+        return
 
     # Verificar servicios activos
     active_services = [s for s, active in user_services_config.items() if active and s not in ['country_filter', 'countries']]
@@ -5094,19 +5152,14 @@ async def show_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # Obtener configuración del usuario
     user_services_config = user_services.get_user_services(user['id'])
 
-    # Manejar caso donde user_services puede ser None
-    if not user_services_config:
-        user_services_config = {
-            'countries': {'ES'},
-            'country_filter': 'ES'
-        }
-
     # Verificar que tenga países configurados
-    user_countries = user_services_config.get('countries', set())
+    user_countries = (user_services_config or {}).get('countries', set())
     if not user_countries:
-        # Usar país por defecto si no tiene configurado
-        country_filter = user_services_config.get('country_filter', 'ES')
-        user_countries = {country_filter}
+        await update.message.reply_text(
+            "🌍 Aún no tienes ningún país configurado.",
+            reply_markup=_country_picker_keyboard()
+        )
+        return
 
     # Mensaje de estado inicial
     countries_text = ", ".join(sorted(user_countries))
@@ -5527,6 +5580,9 @@ def main():
     # ConversationHandler y callbacks de Radicale
     application.add_handler(radicale_conv_handler)
     application.add_handler(CallbackQueryHandler(radicale_callback_handler, pattern="^radicale_(?!setup_)"))
+
+    # Selector de país inicial
+    application.add_handler(CallbackQueryHandler(pick_country_callback, pattern="^pick_country_"))
 
     # Callbacks específicos de países
     application.add_handler(CallbackQueryHandler(country_selection_callback, pattern="^(select_country_|cancel_country_selection)"))

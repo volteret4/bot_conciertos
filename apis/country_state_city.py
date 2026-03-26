@@ -813,29 +813,30 @@ class ArtistTrackerDatabaseExtended:
             return concerts
 
         filtered_concerts = []
+        user_countries_upper = {c.upper() for c in user_countries}
 
         for concert in concerts:
             concert_country = concert.get('country', '').upper()
+            concert_country_code = concert.get('country_code', '').upper()
 
-            # Si ya tiene país asignado y está en los países del usuario
-            if concert_country and concert_country in {c.upper() for c in user_countries}:
+            # Coincidencia directa: nombre de país o código ISO
+            if (concert_country and concert_country in user_countries_upper) or \
+               (concert_country_code and concert_country_code in user_countries_upper):
                 filtered_concerts.append(concert)
                 continue
 
-            # Intentar detectar país por ciudad si no tiene país o no coincide
+            # Intentar detectar país por ciudad si no hay coincidencia directa
             city = concert.get('city', '')
             if city:
-                detected_country = self.country_city_service.find_city_country(city, {c.upper() for c in user_countries})
+                detected_country = self.country_city_service.find_city_country(city, user_countries_upper)
                 if detected_country:
                     concert['country'] = detected_country
-                    if detected_country.upper() in {c.upper() for c in user_countries}:
+                    if detected_country.upper() in user_countries_upper:
                         filtered_concerts.append(concert)
                         continue
 
-            # Si el concierto viene de Ticketmaster pero no tiene país, incluirlo
-            # (Ticketmaster debería tener país, pero por seguridad)
-            if concert.get('source') == 'Ticketmaster' and not concert_country:
-                logger.warning(f"Concierto de Ticketmaster sin país: {concert.get('name')} en {concert.get('city')}")
+            # Sin país identificable: incluir (mejor mostrar de más que de menos)
+            if not concert_country and not concert_country_code:
                 filtered_concerts.append(concert)
 
         logger.info(f"Filtrado de conciertos: {len(concerts)} -> {len(filtered_concerts)} para países {user_countries}")
