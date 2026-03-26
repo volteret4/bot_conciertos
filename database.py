@@ -1931,6 +1931,136 @@ class ArtistTrackerDatabase:
         finally:
             conn.close()
 
+    def init_radicale_tables(self):
+        """Inicializa columnas de Radicale y notification_day en users"""
+        conn = self.get_connection()
+        cursor = conn.cursor()
+
+        try:
+            cursor.execute("PRAGMA table_info(users)")
+            columns = [col[1] for col in cursor.fetchall()]
+
+            migrations = [
+                ('radicale_url',      "ALTER TABLE users ADD COLUMN radicale_url TEXT"),
+                ('radicale_username', "ALTER TABLE users ADD COLUMN radicale_username TEXT"),
+                ('radicale_password', "ALTER TABLE users ADD COLUMN radicale_password TEXT"),
+                ('radicale_calendar', "ALTER TABLE users ADD COLUMN radicale_calendar TEXT"),
+                ('notification_day',  "ALTER TABLE users ADD COLUMN notification_day INTEGER DEFAULT 0"),
+            ]
+            for col_name, sql in migrations:
+                if col_name not in columns:
+                    cursor.execute(sql)
+                    logger.info(f"Columna {col_name} añadida a users")
+
+            conn.commit()
+            logger.info("Columnas de Radicale inicializadas correctamente")
+
+        except sqlite3.Error as e:
+            logger.error(f"Error al inicializar columnas de Radicale: {e}")
+            conn.rollback()
+        finally:
+            conn.close()
+
+    # ======================
+    # FUNCIONES DE RADICALE
+    # ======================
+
+    def save_radicale_config(self, user_id: int, url: str, username: str, password: str, calendar: str) -> bool:
+        """Guarda la configuración de Radicale para un usuario"""
+        conn = self.get_connection()
+        cursor = conn.cursor()
+        try:
+            cursor.execute("""
+                UPDATE users
+                SET radicale_url = ?, radicale_username = ?, radicale_password = ?, radicale_calendar = ?
+                WHERE id = ?
+            """, (url, username, password, calendar, user_id))
+            conn.commit()
+            return cursor.rowcount > 0
+        except sqlite3.Error as e:
+            logger.error(f"Error guardando config Radicale: {e}")
+            return False
+        finally:
+            conn.close()
+
+    def get_radicale_config(self, user_id: int) -> Optional[Dict]:
+        """Obtiene la configuración de Radicale del usuario, o None si no está configurada"""
+        conn = self.get_connection()
+        cursor = conn.cursor()
+        try:
+            cursor.execute("""
+                SELECT radicale_url, radicale_username, radicale_password, radicale_calendar
+                FROM users WHERE id = ?
+            """, (user_id,))
+            row = cursor.fetchone()
+            if row and row[0]:
+                return {
+                    'url': row[0],
+                    'username': row[1],
+                    'password': row[2],
+                    'calendar': row[3],
+                }
+            return None
+        except sqlite3.Error as e:
+            logger.error(f"Error obteniendo config Radicale: {e}")
+            return None
+        finally:
+            conn.close()
+
+    def clear_radicale_config(self, user_id: int) -> bool:
+        """Elimina la configuración de Radicale de un usuario"""
+        conn = self.get_connection()
+        cursor = conn.cursor()
+        try:
+            cursor.execute("""
+                UPDATE users SET radicale_url=NULL, radicale_username=NULL,
+                radicale_password=NULL, radicale_calendar=NULL WHERE id = ?
+            """, (user_id,))
+            conn.commit()
+            return cursor.rowcount > 0
+        except sqlite3.Error as e:
+            logger.error(f"Error eliminando config Radicale: {e}")
+            return False
+        finally:
+            conn.close()
+
+    def set_notification_day(self, user_id: int, day: int) -> bool:
+        """Establece el día de notificación semanal (0=lunes … 6=domingo)"""
+        if day < 0 or day > 6:
+            return False
+        conn = self.get_connection()
+        cursor = conn.cursor()
+        try:
+            cursor.execute("UPDATE users SET notification_day = ? WHERE id = ?", (day, user_id))
+            conn.commit()
+            return cursor.rowcount > 0
+        except sqlite3.Error as e:
+            logger.error(f"Error estableciendo notification_day: {e}")
+            return False
+        finally:
+            conn.close()
+
+    def get_users_for_weekly_notification(self, day: int, time_str: str) -> List[Dict]:
+        """
+        Devuelve usuarios con notificaciones habilitadas cuyo día y hora coincidan.
+        day: 0-6 (lunes-domingo), time_str: 'HH:MM'
+        """
+        conn = self.get_connection()
+        cursor = conn.cursor()
+        try:
+            cursor.execute("""
+                SELECT * FROM users
+                WHERE notification_enabled = 1
+                  AND notification_day = ?
+                  AND notification_time = ?
+            """, (day, time_str))
+            return [dict(row) for row in cursor.fetchall()]
+        except sqlite3.Error as e:
+            logger.error(f"Error obteniendo usuarios para notificación semanal: {e}")
+            return []
+        finally:
+            conn.close()
+
     # ======================
     # FUNCIONES DE MUSPY
     # ======================

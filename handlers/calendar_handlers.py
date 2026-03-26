@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Handlers para funcionalidades de calendario (/cal)
-Genera archivos ICS para conciertos y discos
+Handlers para funcionalidades de calendario (/cal).
+Genera archivos ICS y sube eventos a Radicale (CalDAV).
 """
 
 import logging
@@ -11,45 +11,27 @@ from datetime import datetime, date, timedelta
 from typing import Dict, List, Optional, Tuple
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ContextTypes
-import re
 
 logger = logging.getLogger(__name__)
 
+
 class CalendarHandlers:
-    """Clase que contiene todos los handlers de calendario"""
 
     def __init__(self, database, muspy_service):
         self.db = database
         self.muspy_service = muspy_service
 
-        # Importar servicio de países cuando sea necesario
-        self.country_service = None
+    def _get_ticketmaster(self):
+        try:
+            from user_services import get_services
+            return get_services().get('ticketmaster_service')
+        except Exception:
+            return None
 
-        # Inicializar concert_services como None - se obtendrán cuando sea necesario
-        self.concert_services = None
-
-    def _get_concert_services(self):
-        """Obtiene los servicios de conciertos cuando sea necesario"""
-        if self.concert_services is None:
-            try:
-                from user_services import get_services
-                services = get_services()
-                self.concert_services = {
-                    'ticketmaster': services.get('ticketmaster_service'),
-                    'lastfm': services.get('lastfm_service'),
-                    'bandsintown': None,  # No implementado aún
-                    'setlistfm': services.get('setlistfm_service')
-                }
-                logger.info("✅ Servicios de conciertos obtenidos para calendario")
-            except Exception as e:
-                logger.error(f"❌ Error obteniendo servicios de conciertos: {e}")
-                self.concert_services = {}
-
-        return self.concert_services
+    # ─── /cal panel principal ─────────────────────────────────────────────────
 
     async def cal_command(self, update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-        """Comando /cal - Panel principal de generación de calendarios"""
-        user_id = self._get_or_create_user_id(update)
+        user_id = self._get_user_id(update)
         if not user_id:
             await update.message.reply_text(
                 "❌ Primero debes registrarte con `/adduser <tu_nombre>`",
@@ -57,509 +39,457 @@ class CalendarHandlers:
             )
             return
 
+        radicale_cfg = self.db.get_radicale_config(user_id)
+        radicale_status = f"✅ {radicale_cfg['calendar']}" if radicale_cfg else "❌ No configurado"
+
         text = (
             "📅 *Generador de Calendarios*\n\n"
-            "Selecciona qué tipo de calendario quieres generar:\n\n"
-            "🎵 **Conciertos**: Incluye todos los conciertos de tus artistas seguidos\n"
-            "💿 **Discos**: Incluye todos los próximos lanzamientos de álbumes\n\n"
-            "Los archivos .ics generados son compatibles con Google Calendar, "
-            "Apple Calendar, Outlook y la mayoría de aplicaciones de calendario."
+            "🎵 *Conciertos*: todos los conciertos de tus artistas en tus países\n"
+            "💿 *Discos*: próximos lanzamientos de Muspy\n\n"
+            f"☁️ Radicale: {radicale_status}\n\n"
+            "Los archivos .ics son compatibles con Google Calendar, Apple Calendar, Outlook, etc."
         )
 
         keyboard = [
-            [InlineKeyboardButton("🎵 Conciertos", callback_data=f"cal_concerts_{user_id}")],
-            [InlineKeyboardButton("💿 Discos", callback_data=f"cal_releases_{user_id}")],
+            [
+                InlineKeyboardButton("🎵 Conciertos (ICS)", callback_data=f"cal_concerts_{user_id}"),
+                InlineKeyboardButton("💿 Discos (ICS)", callback_data=f"cal_releases_{user_id}"),
+            ],
         ]
+        if radicale_cfg:
+            keyboard.append([
+                InlineKeyboardButton("☁️ Conciertos → Radicale", callback_data=f"cal_rad_concerts_{user_id}"),
+                InlineKeyboardButton("☁️ Discos → Radicale", callback_data=f"cal_rad_releases_{user_id}"),
+            ])
 
-        reply_markup = InlineKeyboardMarkup(keyboard)
-        await update.message.reply_text(text, reply_markup=reply_markup, parse_mode='Markdown')
+        await update.message.reply_text(text, reply_markup=InlineKeyboardMarkup(keyboard), parse_mode='Markdown')
+
+    # ─── Router de callbacks ──────────────────────────────────────────────────
 
     async def cal_callback_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-        """Maneja los callbacks del generador de calendarios"""
         query = update.callback_query
         await query.answer()
 
-        callback_data = query.data
-        parts = callback_data.split("_")
+        data = query.data  # e.g. "cal_concerts_42" or "cal_rad_concerts_42"
+        parts = data.split("_")
 
-        if len(parts) != 3 or parts[0] != "cal":
+        # Formato: cal_{action}_{user_id}  o  cal_rad_{action}_{user_id}
+        try:
+            if parts[1] == "rad":
+                action = parts[2]          # concerts / releases
+                user_id = int(parts[3])
+                radicale = True
+            else:
+                action = parts[1]          # concerts / releases
+                user_id = int(parts[2])
+                radicale = False
+        except (IndexError, ValueError):
             await query.edit_message_text("❌ Error en el callback.")
             return
 
-        action = parts[1]
-        user_id = int(parts[2])
-
-        # Verificar usuario
         if not self._verify_user(update, user_id):
             await query.edit_message_text("❌ Error de autenticación.")
             return
 
         try:
             if action == "concerts":
-                await self._handle_concerts_calendar(query, user_id)
+                if radicale:
+                    await self._handle_radicale_concerts(query, user_id)
+                else:
+                    await self._handle_concerts_calendar(query, user_id)
             elif action == "releases":
-                await self._handle_releases_calendar(query, user_id)
+                if radicale:
+                    await self._handle_radicale_releases(query, user_id)
+                else:
+                    await self._handle_releases_calendar(query, user_id)
             else:
                 await query.edit_message_text("❌ Acción no reconocida.")
-
         except Exception as e:
             logger.error(f"Error en cal_callback_handler: {e}")
             await query.edit_message_text("❌ Error generando el calendario.")
 
+    # ─── ICS: conciertos ──────────────────────────────────────────────────────
+
     async def _handle_concerts_calendar(self, query, user_id: int):
-        """Genera calendario de conciertos"""
-        await query.edit_message_text("🔍 Obteniendo conciertos para generar calendario...")
+        await query.edit_message_text("🔍 Obteniendo conciertos...")
 
         try:
-            # Obtener servicios de conciertos
-            concert_services = self._get_concert_services()
-
-            if not concert_services:
-                await query.edit_message_text(
-                    "❌ No hay servicios de conciertos disponibles.\n"
-                    "Contacta al administrador para configurar las APIs."
-                )
-                return
-
-            # Obtener artistas seguidos
             followed_artists = self.db.get_user_followed_artists(user_id)
             if not followed_artists:
                 await query.edit_message_text(
-                    "📭 No tienes artistas seguidos.\n"
-                    "Usa `/addartist <nombre>` para empezar a seguir artistas."
+                    "📭 No tienes artistas seguidos.\nUsa `/addartist <nombre>` para empezar."
                 )
                 return
 
-            # Obtener configuración de países del usuario
-            from user_services import get_services
-            services = get_services()
-
-            # Obtener países del usuario usando UserServices
             from user_services import UserServices
-            user_services_instance = UserServices(self.db)
-            user_config = user_services_instance.get_user_services(user_id)
+            user_config = UserServices(self.db).get_user_services(user_id)
             user_countries = user_config.get('countries', {'ES'})
 
-            logger.info(f"Países del usuario {user_id}: {user_countries}")
+            ticketmaster = self._get_ticketmaster()
+            concerts = await self._fetch_concerts(
+                followed_artists, user_countries, ticketmaster, query
+            )
 
-            # Obtener conciertos de todas las fuentes
-            all_concerts = []
-            processed_artists = 0
-            total_artists = len(followed_artists)
-
-            for artist in followed_artists:
-                processed_artists += 1
-
-                # Actualizar progreso cada 5 artistas
-                if processed_artists % 5 == 0 or processed_artists == total_artists:
-                    await query.edit_message_text(
-                        f"🔍 Obteniendo conciertos... {processed_artists}/{total_artists}"
-                    )
-
-                artist_name = artist['name']
-                artist_concerts = []
-
-                # Buscar en todos los servicios disponibles
-                for service_name, service in concert_services.items():
-                    if not service:
-                        continue
-
-                    try:
-                        if service_name == 'ticketmaster':
-                            concerts, _ = service.search_concerts_global(artist_name)
-                            # Los conciertos de Ticketmaster ya vienen con 'artist', 'source', etc.
-                            artist_concerts.extend(concerts)
-
-                        elif service_name == 'spotify':
-                            # Spotify no tiene API de conciertos, skip
-                            continue
-
-                        elif service_name == 'setlistfm':
-                            # Setlist.fm no tiene búsqueda de conciertos futuros, solo setlists pasados
-                            continue
-
-                        # Añadir aquí otros servicios según estén disponibles
-
-                    except Exception as e:
-                        logger.error(f"Error buscando conciertos en {service_name} para {artist_name}: {e}")
-                        continue
-
-                # Filtrar conciertos futuros y eliminar duplicados
-                today = date.today()
-                future_concerts = []
-                seen_concerts = set()
-
-                for concert in artist_concerts:
-                    concert_date = concert.get('date', '')
-                    if concert_date and len(concert_date) >= 10:
-                        try:
-                            concert_date_obj = datetime.strptime(concert_date[:10], '%Y-%m-%d').date()
-                            if concert_date_obj >= today:
-                                # Crear clave única para evitar duplicados
-                                concert_key = (
-                                    artist_name.lower(),
-                                    concert.get('venue', '').lower(),
-                                    concert.get('city', '').lower(),
-                                    concert_date[:10]
-                                )
-
-                                if concert_key not in seen_concerts:
-                                    seen_concerts.add(concert_key)
-                                    future_concerts.append(concert)
-                        except ValueError:
-                            continue
-
-                all_concerts.extend(future_concerts)
-
-            # Filtrar conciertos por países del usuario
-            if services.get('country_state_city'):
-                # Usar el sistema de filtrado por países
-                from apis.country_state_city import ArtistTrackerDatabaseExtended
-                extended_db = ArtistTrackerDatabaseExtended(self.db.db_path, services['country_state_city'])
-                filtered_concerts = extended_db.filter_concerts_by_countries(all_concerts, user_countries)
-            else:
-                # Filtrado básico por país
-                filtered_concerts = []
-                for concert in all_concerts:
-                    concert_country = concert.get('country', '').upper()
-                    if not concert_country or concert_country in {c.upper() for c in user_countries}:
-                        filtered_concerts.append(concert)
-
-            logger.info(f"Conciertos después del filtrado: {len(filtered_concerts)} de {len(all_concerts)} originales")
-
-            if not filtered_concerts:
+            if not concerts:
                 countries_text = ", ".join(sorted(user_countries))
                 await query.edit_message_text(
-                    f"📭 No se encontraron conciertos futuros para tus artistas seguidos en tus países configurados ({countries_text})."
+                    f"📭 No se encontraron conciertos futuros en tus países ({countries_text})."
                 )
                 return
 
-            # Generar archivo ICS
-            await query.edit_message_text(f"📅 Generando calendario con {len(filtered_concerts)} conciertos...")
-
-            ics_content = self._generate_concerts_ics(filtered_concerts)
-
-            # Crear archivo temporal
-            with tempfile.NamedTemporaryFile(mode='w', suffix='.ics', delete=False, encoding='utf-8') as temp_file:
-                temp_file.write(ics_content)
-                temp_file_path = temp_file.name
-
-            # Contar fuentes
-            sources = {}
-            for concert in filtered_concerts:
-                source = concert.get('source', 'Desconocido')
-                sources[source] = sources.get(source, 0) + 1
-
-            sources_text = ", ".join([f"{source}: {count}" for source, count in sources.items()])
-            countries_text = ", ".join(sorted(user_countries))
-
-            # Enviar archivo
-            with open(temp_file_path, 'rb') as file:
-                await query.message.reply_document(
-                    document=file,
-                    filename=f"conciertos_{datetime.now().strftime('%Y%m%d')}.ics",
-                    caption=(
-                        f"📅 *Calendario de Conciertos*\n\n"
-                        f"🎵 {len(filtered_concerts)} conciertos incluidos\n"
-                        f"📊 De {len(followed_artists)} artistas seguidos\n"
-                        f"🌍 Países: {countries_text}\n"
-                        f"🔍 Fuentes: {sources_text}\n\n"
-                        f"💡 Importa este archivo en tu aplicación de calendario favorita."
-                    ),
-                    parse_mode='Markdown'
-                )
-
-            # Limpiar archivo temporal
-            os.unlink(temp_file_path)
-
-            await query.edit_message_text(
-                "✅ ¡Calendario de conciertos generado correctamente!\n"
-                "Revisa el archivo ICS que te he enviado."
+            await query.edit_message_text(f"📅 Generando calendario con {len(concerts)} conciertos...")
+            ics_content = self._generate_concerts_ics(concerts)
+            await self._send_ics_file(
+                query,
+                ics_content,
+                f"conciertos_{datetime.now().strftime('%Y%m%d')}.ics",
+                f"📅 *Calendario de Conciertos*\n\n"
+                f"🎵 {len(concerts)} conciertos\n"
+                f"🌍 Países: {', '.join(sorted(user_countries))}",
             )
+            await query.edit_message_text("✅ Calendario de conciertos enviado.")
 
         except Exception as e:
-            logger.error(f"Error generando calendario de conciertos: {e}")
-            import traceback
-            logger.error(f"Traceback: {traceback.format_exc()}")
+            logger.error(f"Error generando calendario de conciertos: {e}", exc_info=True)
             await query.edit_message_text("❌ Error generando el calendario de conciertos.")
 
+    # ─── ICS: discos ──────────────────────────────────────────────────────────
+
     async def _handle_releases_calendar(self, query, user_id: int):
-        """Genera calendario de lanzamientos de discos"""
-        await query.edit_message_text("🔍 Obteniendo lanzamientos para generar calendario...")
+        await query.edit_message_text("🔍 Obteniendo lanzamientos...")
 
         try:
-            all_releases = []
-
-            # Obtener releases de Muspy si está configurado
-            credentials = self.db.get_muspy_credentials(user_id)
-            if credentials:
-                email, password, userid = credentials
-                muspy_releases, _ = self.muspy_service.get_user_releases(email, password, userid)
-
-                if muspy_releases:
-                    # Filtrar releases futuros
-                    today = date.today().strftime("%Y-%m-%d")
-                    future_releases = [r for r in muspy_releases if r.get('date', '0000-00-00') >= today]
-                    all_releases.extend(future_releases)
-
-            # También podrías añadir otras fuentes de releases aquí
-            # (LastFM, Spotify, etc.)
-
-            if not all_releases:
-                message = "📭 No se encontraron próximos lanzamientos."
+            releases = await self._fetch_releases(user_id)
+            if not releases:
+                msg = "📭 No se encontraron próximos lanzamientos."
+                credentials = self.db.get_muspy_credentials(user_id)
                 if not credentials:
-                    message += "\n\n💡 Configura tu cuenta de Muspy con `/muspy` para acceder a lanzamientos."
-                await query.edit_message_text(message)
+                    msg += "\n\n💡 Configura tu cuenta de Muspy con `/muspy`."
+                await query.edit_message_text(msg)
                 return
 
-            # Generar archivo ICS
-            await query.edit_message_text(f"📅 Generando calendario con {len(all_releases)} lanzamientos...")
-
-            ics_content = self._generate_releases_ics(all_releases)
-
-            # Crear archivo temporal con encoding UTF-8
-            with tempfile.NamedTemporaryFile(mode='w', suffix='.ics', delete=False, encoding='utf-8') as temp_file:
-                temp_file.write(ics_content)
-                temp_file_path = temp_file.name
-
-            # Enviar archivo
-            with open(temp_file_path, 'rb') as file:
-                await query.message.reply_document(
-                    document=file,
-                    filename=f"lanzamientos_{datetime.now().strftime('%Y%m%d')}.ics",
-                    caption=(
-                        f"📅 *Calendario de Lanzamientos*\n\n"
-                        f"💿 {len(all_releases)} lanzamientos incluidos\n\n"
-                        f"💡 Importa este archivo en tu aplicación de calendario favorita.\n"
-                        f"Los eventos son de todo el día para evitar problemas de zona horaria."
-                    ),
-                    parse_mode='Markdown'
-                )
-
-            # Limpiar archivo temporal
-            os.unlink(temp_file_path)
-
-            await query.edit_message_text(
-                "✅ ¡Calendario de lanzamientos generado correctamente!\n"
-                "Revisa el archivo ICS que te he enviado."
+            await query.edit_message_text(f"📅 Generando calendario con {len(releases)} lanzamientos...")
+            ics_content = self._generate_releases_ics(releases)
+            await self._send_ics_file(
+                query,
+                ics_content,
+                f"lanzamientos_{datetime.now().strftime('%Y%m%d')}.ics",
+                f"📅 *Calendario de Lanzamientos*\n\n💿 {len(releases)} lanzamientos",
             )
+            await query.edit_message_text("✅ Calendario de lanzamientos enviado.")
 
         except Exception as e:
             logger.error(f"Error generando calendario de releases: {e}")
             await query.edit_message_text("❌ Error generando el calendario de lanzamientos.")
 
-    def _get_artist_name_from_concert(self, concert: Dict, fallback_name: str = 'Artista desconocido') -> str:
-        """Extrae el nombre del artista de un concierto probando diferentes campos"""
-        # Probar diferentes campos donde puede estar el nombre del artista
-        # Ticketmaster usa 'artist', otros servicios pueden usar 'artist_name', 'name', etc.
-        possible_fields = ['artist', 'artist_name', 'name', 'performer', 'headliner']
+    # ─── Radicale: conciertos ─────────────────────────────────────────────────
 
-        for field in possible_fields:
-            if field in concert and concert[field]:
-                return concert[field]
+    async def _handle_radicale_concerts(self, query, user_id: int):
+        await query.edit_message_text("🔍 Preparando conciertos para Radicale...")
 
-        return fallback_name
+        radicale_cfg = self.db.get_radicale_config(user_id)
+        if not radicale_cfg:
+            await query.edit_message_text(
+                "❌ Radicale no configurado.\nUsa `/radicale` para configurarlo."
+            )
+            return
+
+        followed_artists = self.db.get_user_followed_artists(user_id)
+        if not followed_artists:
+            await query.edit_message_text("📭 No tienes artistas seguidos.")
+            return
+
+        from user_services import UserServices
+        user_config = UserServices(self.db).get_user_services(user_id)
+        user_countries = user_config.get('countries', {'ES'})
+
+        ticketmaster = self._get_ticketmaster()
+        concerts = await self._fetch_concerts(followed_artists, user_countries, ticketmaster, query)
+
+        if not concerts:
+            await query.edit_message_text("📭 No se encontraron conciertos futuros en tus países.")
+            return
+
+        await query.edit_message_text(f"☁️ Subiendo {len(concerts)} conciertos a Radicale...")
+
+        from apis.radicale import RadicaleClient
+        client = RadicaleClient(
+            url=radicale_cfg['url'],
+            username=radicale_cfg['username'],
+            password=radicale_cfg['password'],
+            calendar=radicale_cfg['calendar'],
+        )
+
+        pushed, errors, error_msgs = client.push_events_bulk(concerts, event_type='concert')
+
+        msg = (
+            f"☁️ *Subida a Radicale completada*\n\n"
+            f"✅ Eventos subidos: {pushed}\n"
+            f"❌ Errores: {errors}"
+        )
+        if error_msgs:
+            msg += f"\n\n_Errores: {'; '.join(error_msgs[:3])}_"
+
+        await query.edit_message_text(msg, parse_mode='Markdown')
+
+    # ─── Radicale: discos ─────────────────────────────────────────────────────
+
+    async def _handle_radicale_releases(self, query, user_id: int):
+        await query.edit_message_text("🔍 Preparando lanzamientos para Radicale...")
+
+        radicale_cfg = self.db.get_radicale_config(user_id)
+        if not radicale_cfg:
+            await query.edit_message_text(
+                "❌ Radicale no configurado.\nUsa `/radicale` para configurarlo."
+            )
+            return
+
+        releases = await self._fetch_releases(user_id)
+        if not releases:
+            await query.edit_message_text("📭 No se encontraron próximos lanzamientos.")
+            return
+
+        await query.edit_message_text(f"☁️ Subiendo {len(releases)} lanzamientos a Radicale...")
+
+        from apis.radicale import RadicaleClient
+        client = RadicaleClient(
+            url=radicale_cfg['url'],
+            username=radicale_cfg['username'],
+            password=radicale_cfg['password'],
+            calendar=radicale_cfg['calendar'],
+        )
+
+        pushed, errors, error_msgs = client.push_events_bulk(releases, event_type='release')
+
+        msg = (
+            f"☁️ *Subida a Radicale completada*\n\n"
+            f"✅ Eventos subidos: {pushed}\n"
+            f"❌ Errores: {errors}"
+        )
+        if error_msgs:
+            msg += f"\n\n_Errores: {'; '.join(error_msgs[:3])}_"
+
+        await query.edit_message_text(msg, parse_mode='Markdown')
+
+    # ─── Helpers de fetch ─────────────────────────────────────────────────────
+
+    async def _fetch_concerts(
+        self,
+        followed_artists: List[Dict],
+        user_countries,
+        ticketmaster,
+        query,
+    ) -> List[Dict]:
+        """Busca conciertos futuros para todos los artistas seguidos."""
+        all_concerts = []
+        today = date.today()
+        seen = set()
+        total = len(followed_artists)
+
+        for i, artist in enumerate(followed_artists, 1):
+            if i % 5 == 0 or i == total:
+                await query.edit_message_text(f"🔍 Obteniendo conciertos... {i}/{total}")
+
+            if not ticketmaster:
+                continue
+
+            artist_name = artist['name']
+            for code in user_countries:
+                try:
+                    concerts, _ = ticketmaster.search_concerts(artist_name, code)
+                    for c in concerts:
+                        concert_date = c.get('date', '')
+                        try:
+                            if datetime.strptime(concert_date[:10], '%Y-%m-%d').date() < today:
+                                continue
+                        except (ValueError, IndexError):
+                            pass
+                        key = (artist_name.lower(), c.get('venue', '').lower(), concert_date[:10])
+                        if key not in seen:
+                            seen.add(key)
+                            all_concerts.append(c)
+                except Exception as e:
+                    logger.error(f"Error buscando conciertos para {artist_name} en {code}: {e}")
+
+        return all_concerts
+
+    async def _fetch_releases(self, user_id: int) -> List[Dict]:
+        """Obtiene lanzamientos futuros de Muspy."""
+        credentials = self.db.get_muspy_credentials(user_id)
+        if not credentials:
+            return []
+
+        email, password, userid = credentials
+        try:
+            releases, _ = self.muspy_service.get_user_releases(email, password, userid)
+            today_str = date.today().strftime("%Y-%m-%d")
+            return sorted(
+                [r for r in releases if r.get('date', '0000-00-00') >= today_str],
+                key=lambda r: r.get('date', '')
+            )
+        except Exception as e:
+            logger.error(f"Error obteniendo releases de Muspy para usuario {user_id}: {e}")
+            return []
+
+    async def _send_ics_file(self, query, ics_content: str, filename: str, caption: str):
+        """Escribe el ICS en un fichero temporal y lo envía como documento."""
+        with tempfile.NamedTemporaryFile(mode='w', suffix='.ics', delete=False, encoding='utf-8') as f:
+            f.write(ics_content)
+            tmp_path = f.name
+        try:
+            with open(tmp_path, 'rb') as f:
+                await query.message.reply_document(
+                    document=f,
+                    filename=filename,
+                    caption=caption,
+                    parse_mode='Markdown',
+                )
+        finally:
+            os.unlink(tmp_path)
+
+    # ─── Generación ICS ───────────────────────────────────────────────────────
 
     def _generate_concerts_ics(self, concerts: List[Dict]) -> str:
-        """Genera contenido ICS para conciertos de la base de datos"""
-        ics_lines = [
+        lines = [
             "BEGIN:VCALENDAR",
             "VERSION:2.0",
-            "PRODID:-//Concert Bot//Concert Calendar//EN",
+            "PRODID:-//tumtumpa//bot_conciertos//ES",
             "CALSCALE:GREGORIAN",
             "METHOD:PUBLISH",
             "X-WR-CALNAME:Conciertos",
-            "X-WR-CALDESC:Calendario de conciertos de artistas seguidos"
         ]
 
+        now_stamp = datetime.now().strftime('%Y%m%dT%H%M%SZ')
+
         for concert in concerts:
-            event_id = f"concert-{concert.get('id', hash(str(concert)))}"
-            artist_name = self._get_artist_name_from_concert(concert, 'Artista desconocido')
-            venue = concert.get('venue', 'Venue desconocido')
+            artist = concert.get('artist', concert.get('artist_name', 'Artista desconocido'))
+            venue = concert.get('venue', '')
             city = concert.get('city', '')
             country = concert.get('country', '')
             date_str = concert.get('date', '')
             time_str = concert.get('time', '')
-
-            # Construir título del evento
-            title = f"{artist_name}"
-
-            # Construir ubicación
-            location_parts = [venue]
-            if city:
-                location_parts.append(city)
-            if country:
-                location_parts.append(country)
-            location = ", ".join(location_parts)
-
-            # Construir descripción
-            description = f"Concierto de {artist_name}"
-            if venue != 'Venue desconocido':
-                description += f" en {venue}"
-            if city:
-                description += f", {city}"
-
-            # Añadir fuente
-            source = concert.get('source', '')
-            if source:
-                description += f"\\n\\nFuente: {source}"
-
-            # URL si está disponible
             url = concert.get('url', '')
+            source = concert.get('source', '')
+
+            summary = artist
+            if venue:
+                summary += f" @ {venue}"
+
+            location_parts = [p for p in [venue, city, country] if p]
+            location = ', '.join(location_parts)
+
+            desc_parts = [f"Artista: {artist}"]
+            if venue:
+                desc_parts.append(f"Recinto: {venue}")
+            if city:
+                desc_parts.append(f"Ciudad: {city}")
+            if source:
+                desc_parts.append(f"Fuente: {source}")
             if url:
-                description += f"\\n\\nMás información: {url}"
+                desc_parts.append(f"Entradas: {url}")
 
-            # Parsear fecha y hora
-            if date_str and len(date_str) >= 10:
+            if not date_str or len(date_str) < 10:
+                continue
+            try:
+                date_obj = datetime.strptime(date_str[:10], '%Y-%m-%d')
+            except ValueError:
+                continue
+
+            if time_str and len(time_str) >= 5:
                 try:
-                    # Formato de fecha
-                    date_obj = datetime.strptime(date_str[:10], '%Y-%m-%d')
+                    t = datetime.strptime(time_str[:5], '%H:%M')
+                    start_dt = date_obj.replace(hour=t.hour, minute=t.minute)
+                    end_dt = start_dt + timedelta(hours=3)
+                    dtstart = f"DTSTART:{start_dt.strftime('%Y%m%dT%H%M%S')}"
+                    dtend = f"DTEND:{end_dt.strftime('%Y%m%dT%H%M%S')}"
+                except ValueError:
+                    dtstart = f"DTSTART;VALUE=DATE:{date_obj.strftime('%Y%m%d')}"
+                    dtend = f"DTEND;VALUE=DATE:{(date_obj + timedelta(days=1)).strftime('%Y%m%d')}"
+            else:
+                dtstart = f"DTSTART;VALUE=DATE:{date_obj.strftime('%Y%m%d')}"
+                dtend = f"DTEND;VALUE=DATE:{(date_obj + timedelta(days=1)).strftime('%Y%m%d')}"
 
-                    # Determinar si tenemos hora válida
-                    has_valid_time = False
-                    start_datetime = None
-                    end_datetime = None
+            import uuid
+            uid = str(uuid.uuid4())
+            event = [
+                "BEGIN:VEVENT",
+                f"UID:{uid}",
+                f"DTSTAMP:{now_stamp}",
+                dtstart,
+                dtend,
+                f"SUMMARY:{self._esc(summary)}",
+                f"LOCATION:{self._esc(location)}",
+                f"DESCRIPTION:{self._esc(' | '.join(desc_parts))}",
+            ]
+            if url:
+                event.append(f"URL:{url}")
+            event.append("END:VEVENT")
+            lines.extend(event)
 
-                    if time_str and time_str.strip():
-                        # Intentar parsear hora si está disponible
-                        try:
-                            # Manejar diferentes formatos de hora
-                            if len(time_str) == 8:  # HH:MM:SS
-                                time_obj = datetime.strptime(time_str, '%H:%M:%S').time()
-                            elif len(time_str) == 5:  # HH:MM
-                                time_obj = datetime.strptime(time_str, '%H:%M').time()
-                            else:
-                                # Intentar formato HH:MM:SS como fallback
-                                time_obj = datetime.strptime(time_str, '%H:%M:%S').time()
-
-                            start_datetime = datetime.combine(date_obj.date(), time_obj)
-                            end_datetime = start_datetime + timedelta(hours=3)  # Duración estimada de 3 horas
-                            has_valid_time = True
-
-                        except ValueError:
-                            # Si no se puede parsear la hora, usar evento de todo el día
-                            has_valid_time = False
-
-                    # Crear el evento según si tenemos hora o no
-                    if has_valid_time and start_datetime and end_datetime:
-                        # Evento con hora específica
-                        dtstart = f"DTSTART:{start_datetime.strftime('%Y%m%dT%H%M%S')}"
-                        dtend = f"DTEND:{end_datetime.strftime('%Y%m%dT%H%M%S')}"
-                    else:
-                        # Evento de todo el día solo si no hay hora válida
-                        dtstart = f"DTSTART;VALUE=DATE:{date_obj.strftime('%Y%m%d')}"
-                        dtend = f"DTEND;VALUE=DATE:{(date_obj + timedelta(days=1)).strftime('%Y%m%d')}"
-
-                    # Crear evento (solo UNO, no dos)
-                    event_lines = [
-                        "BEGIN:VEVENT",
-                        f"UID:{event_id}@concertbot.local",
-                        f"SUMMARY:{self._escape_ics_text(title)}",
-                        f"DESCRIPTION:{self._escape_ics_text(description)}",
-                        f"LOCATION:{self._escape_ics_text(location)}",
-                        dtstart,
-                        dtend,
-                        f"DTSTAMP:{datetime.now().strftime('%Y%m%dT%H%M%SZ')}",
-                        "STATUS:CONFIRMED",
-                        "CATEGORIES:Concierto",
-                        "END:VEVENT"
-                    ]
-
-                    ics_lines.extend(event_lines)
-
-                except ValueError as e:
-                    logger.error(f"Error parseando fecha {date_str}: {e}")
-                    continue
-
-        ics_lines.append("END:VCALENDAR")
-        return "\r\n".join(ics_lines)
+        lines.append("END:VCALENDAR")
+        return "\r\n".join(lines)
 
     def _generate_releases_ics(self, releases: List[Dict]) -> str:
-        """Genera contenido ICS para lanzamientos (eventos de todo el día)"""
-        ics_lines = [
+        lines = [
             "BEGIN:VCALENDAR",
             "VERSION:2.0",
-            "PRODID:-//Concert Bot//Releases Calendar//EN",
+            "PRODID:-//tumtumpa//bot_conciertos//ES",
             "CALSCALE:GREGORIAN",
             "METHOD:PUBLISH",
             "X-WR-CALNAME:Lanzamientos",
-            "X-WR-CALDESC:Calendario de lanzamientos de álbumes y discos"
         ]
 
+        now_stamp = datetime.now().strftime('%Y%m%dT%H%M%SZ')
+
         for release in releases:
-            event_id = f"release-{release.get('id', hash(str(release)))}"
-            artist_name = self.muspy_service.extract_artist_name(release) if self.muspy_service else release.get('artist', 'Artista desconocido')
-            title = self.muspy_service.extract_title(release) if self.muspy_service else release.get('title', 'Lanzamiento')
-            release_type = self.muspy_service.extract_release_type(release) if self.muspy_service else release.get('type', 'Release')
+            artist = self.muspy_service.extract_artist_name(release) if self.muspy_service else release.get('artist', '')
+            title = self.muspy_service.extract_title(release) if self.muspy_service else release.get('title', '')
+            rel_type = self.muspy_service.extract_release_type(release) if self.muspy_service else ''
             date_str = release.get('date', '')
 
-            # Construir título del evento
-            event_title = f"🎵 {artist_name} - {title}"
-            if release_type and release_type != 'Release':
-                event_title += f" ({release_type})"
+            summary = f"{artist} — {title}"
+            if rel_type:
+                summary += f" [{rel_type}]"
 
-            # Construir descripción
-            description = f"Lanzamiento de {release_type.lower()} de {artist_name}"
-            description += f"\\n\\nTítulo: {title}"
-            if release_type:
-                description += f"\\nTipo: {release_type}"
+            if not date_str or len(date_str) < 10:
+                continue
+            try:
+                date_obj = datetime.strptime(date_str[:10], '%Y-%m-%d')
+            except ValueError:
+                continue
 
-            # Parsear fecha
-            if date_str and len(date_str) >= 10:
-                try:
-                    date_obj = datetime.strptime(date_str[:10], '%Y-%m-%d')
+            import uuid
+            uid = str(uuid.uuid4())
+            lines.extend([
+                "BEGIN:VEVENT",
+                f"UID:{uid}",
+                f"DTSTAMP:{now_stamp}",
+                f"DTSTART;VALUE=DATE:{date_obj.strftime('%Y%m%d')}",
+                f"DTEND;VALUE=DATE:{(date_obj + timedelta(days=1)).strftime('%Y%m%d')}",
+                f"SUMMARY:{self._esc(summary)}",
+                f"DESCRIPTION:Lanzamiento: {self._esc(artist)} - {self._esc(title)}",
+                "END:VEVENT",
+            ])
 
-                    # Evento de todo el día
-                    dtstart = f"DTSTART;VALUE=DATE:{date_obj.strftime('%Y%m%d')}"
-                    dtend = f"DTEND;VALUE=DATE:{(date_obj + timedelta(days=1)).strftime('%Y%m%d')}"
+        lines.append("END:VCALENDAR")
+        return "\r\n".join(lines)
 
-                    # Crear evento
-                    ics_lines.extend([
-                        "BEGIN:VEVENT",
-                        f"UID:{event_id}@concertbot.local",
-                        f"SUMMARY:{self._escape_ics_text(event_title)}",
-                        f"DESCRIPTION:{self._escape_ics_text(description)}",
-                        dtstart,
-                        dtend,
-                        f"DTSTAMP:{datetime.now().strftime('%Y%m%dT%H%M%SZ')}",
-                        "STATUS:CONFIRMED",
-                        "CATEGORIES:Lanzamiento,Música",
-                        "END:VEVENT"
-                    ])
+    def _esc(self, text: str) -> str:
+        return (str(text)
+                .replace('\\', '\\\\')
+                .replace('\n', '\\n')
+                .replace(',', '\\,')
+                .replace(';', '\\;'))
 
-                except ValueError as e:
-                    logger.error(f"Error parseando fecha {date_str}: {e}")
-                    continue
+    # ─── Autenticación ────────────────────────────────────────────────────────
 
-        ics_lines.append("END:VCALENDAR")
-        return "\r\n".join(ics_lines)
-
-    def _escape_ics_text(self, text: str) -> str:
-        """Escapa texto para formato ICS"""
-        if not text:
-            return ""
-
-        # Escapar caracteres especiales según RFC 5545
-        text = text.replace('\\', '\\\\')  # Backslash primero
-        text = text.replace('\n', '\\n')   # Saltos de línea
-        text = text.replace('\r', '')      # Remover retornos de carro
-        text = text.replace(',', '\\,')    # Comas
-        text = text.replace(';', '\\;')    # Punto y coma
-        text = text.replace('"', '\\"')    # Comillas
-
-        return text
-
-    def _get_or_create_user_id(self, update: Update) -> Optional[int]:
-        """Obtiene el user_id del usuario actual"""
+    def _get_user_id(self, update: Update) -> Optional[int]:
         if hasattr(update, 'callback_query') and update.callback_query:
             chat_id = update.callback_query.message.chat_id
         else:
             chat_id = update.effective_chat.id
-
         user = self.db.get_user_by_chat_id(chat_id)
         return user['id'] if user else None
 
     def _verify_user(self, update: Update, expected_user_id: int) -> bool:
-        """Verifica que el usuario sea el esperado"""
-        actual_user_id = self._get_or_create_user_id(update)
-        return actual_user_id == expected_user_id
+        return self._get_user_id(update) == expected_user_id
