@@ -66,6 +66,11 @@ async def search_concerts_for_artist(
 
     if database and unique:
         await _save_concerts(database, unique)
+    if database:
+        try:
+            database.cleanup_old_concerts(days=7)
+        except Exception as e:
+            logger.warning(f"cleanup_old_concerts: {e}")
 
     logger.info(f"Búsqueda completada para {artist_name}: {len(unique)} conciertos únicos")
     return unique

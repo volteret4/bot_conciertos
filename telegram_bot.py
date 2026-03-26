@@ -4836,19 +4836,10 @@ async def process_and_send_concert_results_safe(update, status_message, concerts
             concerts_by_artist[artist_name] = []
         concerts_by_artist[artist_name].append(concert)
 
-    # Actualizar mensaje de estado
-    await safe_edit_message(
-        status_message.edit_text,
-        f"✅ **Procesamiento completado!**\n\n"
-        f"🎵 **Artistas con conciertos futuros:** {len(concerts_by_artist)}\n"
-        f"📅 **Conciertos próximos:** {len(future_concerts)}\n"
-        f"🎪 **Total encontrados:** {len(concerts)}\n"
-        f"❌ **Errores de búsqueda:** {error_count}\n"
-        f"🌐 **Errores de red:** {network_errors}\n"
-        f"🌍 **Países:** {countries_text}\n\n"
-        f"📤 **Enviando resultados...**",
-        parse_mode='Markdown'
-    )
+    try:
+        await status_message.delete()
+    except Exception:
+        pass
 
     # Enviar un mensaje por cada artista con conciertos futuros
     artists_with_concerts = 0
@@ -4948,20 +4939,6 @@ async def process_and_send_concert_results_safe(update, status_message, concerts
             parse_mode='Markdown'
         )
 
-    # Actualizar mensaje de estado final
-    final_status = f"✅ **{action_text.capitalize()} completada**\n\n"
-    final_status += f"🎵 **Artistas con conciertos:** {artists_with_concerts}\n"
-    final_status += f"📅 **Conciertos futuros:** {len(future_concerts)}\n"
-    final_status += f"📤 **Mensajes enviados:** {messages_sent}"
-
-    if error_count > 0:
-        final_status += f"\n❌ **Errores de búsqueda:** {error_count}"
-    if network_errors > 0:
-        final_status += f"\n🌐 **Errores de red:** {network_errors}"
-    if send_errors > 0:
-        final_status += f"\n📨 **Errores de envío:** {send_errors}"
-
-    await safe_edit_message(status_message.edit_text, final_status, parse_mode='Markdown')
 
 
 async def search_concerts_for_artist_async(artist_name, user_services_config, user_id=None, services=None, database=None):
@@ -5159,14 +5136,10 @@ async def process_and_send_concert_results(update, status_message, concerts, pro
             concerts_by_artist[artist_name] = []
         concerts_by_artist[artist_name].append(concert)
 
-    # Actualizar mensaje de estado
-    await status_message.edit_text(
-        f"✅ Procesamiento completado!\n"
-        f"🎵 {len(concerts_by_artist)} artistas con conciertos futuros\n"
-        f"📅 {len(future_concerts)} conciertos próximos\n"
-        f"🌍 {countries_text}\n\n"
-        f"📤 Enviando resultados..."
-    )
+    try:
+        await status_message.delete()
+    except Exception:
+        pass
 
     # Enviar un mensaje por cada artista con conciertos futuros
     artists_with_concerts = 0
@@ -5238,14 +5211,6 @@ async def process_and_send_concert_results(update, status_message, concerts, pro
             summary_message,
             parse_mode='Markdown'
         )
-
-    # Actualizar mensaje de estado final
-    await status_message.edit_text(
-        f"✅ {action_text.capitalize()} completada\n"
-        f"🎵 {artists_with_concerts} artistas con conciertos\n"
-        f"📅 {len(future_concerts)} conciertos futuros\n"
-        f"📤 {messages_sent} mensajes enviados"
-    )
 
 
 # ===========================

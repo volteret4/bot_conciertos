@@ -984,6 +984,26 @@ class ArtistTrackerDatabase:
         finally:
             conn.close()
 
+    def cleanup_old_concerts(self, days: int = 7) -> int:
+        """Elimina conciertos con fecha anterior a hoy - days días. Devuelve el nº borrados."""
+        conn = self.get_connection()
+        try:
+            cursor = conn.cursor()
+            cursor.execute(
+                "DELETE FROM concerts WHERE date < date('now', ?)",
+                (f"-{days} days",)
+            )
+            deleted = cursor.rowcount
+            conn.commit()
+            if deleted:
+                logger.info(f"cleanup_old_concerts: {deleted} conciertos eliminados (>{days} días atrás)")
+            return deleted
+        except Exception as e:
+            logger.error(f"Error limpiando conciertos antiguos: {e}")
+            return 0
+        finally:
+            conn.close()
+
     def _create_concert_hash(self, concert_data: Dict) -> str:
         """Crea un hash único para un concierto"""
         key_data = f"{concert_data.get('artist', '')}-{concert_data.get('venue', '')}-{concert_data.get('date', '')}-{concert_data.get('source', '')}"

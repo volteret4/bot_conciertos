@@ -156,6 +156,26 @@ class WeeklyNotificationService:
         finally:
             conn.close()
 
+    def _cleanup_old_concerts(self, days: int = 7) -> int:
+        """Elimina conciertos con fecha anterior a hoy - days días."""
+        conn = self._get_db()
+        try:
+            cur = conn.cursor()
+            cur.execute(
+                "DELETE FROM concerts WHERE date < date('now', ?)",
+                (f"-{days} days",)
+            )
+            deleted = cur.rowcount
+            conn.commit()
+            if deleted:
+                logger.info(f"Limpiados {deleted} conciertos con fecha > {days} días atrás")
+            return deleted
+        except Exception as e:
+            logger.error(f"Error limpiando conciertos antiguos: {e}")
+            return 0
+        finally:
+            conn.close()
+
     def save_concert(self, concert: Dict) -> Optional[int]:
         """Guarda un concierto en la BD, devuelve su ID."""
         concert_hash = _make_hash(concert)
@@ -320,6 +340,9 @@ class WeeklyNotificationService:
 
         countries = self.get_user_countries(user)
         logger.info(f"[Búsqueda] Usuario {user_id}: {len(artists)} artistas, países: {countries}")
+
+        # Limpiar conciertos con fecha anterior a hoy-7 días
+        self._cleanup_old_concerts()
 
         for artist in artists:
             concerts = self.search_concerts_for_artist(artist['name'], countries)
