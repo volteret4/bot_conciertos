@@ -79,6 +79,27 @@ def _get_or_register(update: Update) -> Optional[Dict]:
     return db.get_user_by_chat_id(chat_id)
 
 
+async def _get_or_register_notify(update: Update) -> Optional[Dict]:
+    """Igual que _get_or_register pero notifica al admin si es un usuario nuevo."""
+    tg_user = update.effective_user
+    chat_id = update.effective_chat.id
+
+    existing = db.get_user_by_chat_id(chat_id)
+    if existing:
+        return existing
+
+    username = (tg_user.username or str(tg_user.id)) if tg_user else str(chat_id)
+    db.add_user(username, chat_id)
+    user = db.get_user_by_chat_id(chat_id)
+    if user:
+        await admin_notify.notify_async(
+            "nuevo_usuario",
+            f"chat\\_id: `{chat_id}`",
+            username=username,
+        )
+    return user
+
+
 async def _removed_spotify_command_placeholder():
     pass  # /spotify eliminado — ver commit history
 
@@ -328,7 +349,8 @@ async def artist_selection_callback(update: Update, context: ContextTypes.DEFAUL
         )
         await admin_notify.notify_async(
             "artista_añadido",
-            f"🎵 `{selected_candidate['name']}` añadido por `{user.get('username', chat_id)}`"
+            f"`{selected_candidate['name']}`",
+            username=user.get('username', str(user.get('chat_id', ''))),
         )
     else:
         await query.edit_message_text(
@@ -1974,6 +1996,13 @@ async def handle_text_input(update: Update, context: ContextTypes.DEFAULT_TYPE):
                         InlineKeyboardButton("🎵 Abrir Last.fm", callback_data=f"lastfm_menu_{user_id}")
                     ]])
                 )
+                tg_user = update.effective_user
+                tg_username = (tg_user.username or str(tg_user.id)) if tg_user else str(user_id)
+                await admin_notify.notify_async(
+                    "lastfm_conectado",
+                    f"Last.fm: `{lastfm_username}`",
+                    username=tg_username,
+                )
             else:
                 await status_message.edit_text("❌ Error al configurar el usuario de Last.fm.")
 
@@ -2759,6 +2788,11 @@ async def searchartist_command(update: Update, context: ContextTypes.DEFAULT_TYP
             f"🔍 Buscando conciertos para '{artist_name}'...\n"
             f"🔧 Servicios activos: {services_text}\n"
             f"🌍 Países: {countries_text}"
+        )
+        await admin_notify.notify_async(
+            "busqueda",
+            f"`{artist_name}` · {countries_text}",
+            username=user.get('username', str(chat_id)),
         )
     else:
         # Usuario no registrado - usar configuración por defecto
@@ -3678,7 +3712,7 @@ async def show_lastfm_menu(update, user: Dict, lastfm_user: Dict):
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Comando /start"""
-    user = _get_or_register(update)
+    user = await _get_or_register_notify(update)
 
     if user:
         name = user.get('username') or update.effective_user.first_name or "amigo"
@@ -3831,7 +3865,8 @@ async def addartist_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
             )
             await admin_notify.notify_async(
                 "artista_añadido",
-                f"🎵 `{candidates[0]['name']}` añadido por `{user.get('username', chat_id)}`"
+                f"`{candidates[0]['name']}`",
+                username=user.get('username', str(chat_id)),
             )
         else:
             await status_message.edit_text(
@@ -3865,7 +3900,8 @@ async def addartist_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
             )
             await admin_notify.notify_async(
                 "artista_añadido",
-                f"🎵 `{best_candidate['name']}` añadido por `{user.get('username', chat_id)}`"
+                f"`{best_candidate['name']}`",
+                username=user.get('username', str(chat_id)),
             )
         else:
             await status_message.edit_text(
@@ -4067,13 +4103,19 @@ async def notify_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     command = context.args[0].lower()
 
+    uname = user.get('username', str(user.get('chat_id', '')))
+
     if command == "toggle":
         new_state = user_services.toggle_notifications(user['id'])
         status = "activadas ✅" if new_state else "desactivadas ❌"
         await update.message.reply_text(f"🔔 Notificaciones {status}.")
+        await admin_notify.notify_async(
+            "notificaciones",
+            f"toggle → {'activadas' if new_state else 'desactivadas'}",
+            username=uname,
+        )
 
     elif command == "day":
-        # /notify day N
         if len(context.args) < 2:
             await update.message.reply_text("❌ Uso: `/notify day N` (0=lun … 6=dom)", parse_mode='Markdown')
             return
@@ -4086,6 +4128,11 @@ async def notify_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
             return
         if user_services.set_notification_day(user['id'], day):
             await update.message.reply_text(f"✅ Día de notificación cambiado a *{_NOTIFY_DAYS[day]}*.", parse_mode='Markdown')
+            await admin_notify.notify_async(
+                "notificaciones",
+                f"día → {_NOTIFY_DAYS[day]}",
+                username=uname,
+            )
         else:
             await update.message.reply_text("❌ Error al cambiar el día de notificación.")
 
@@ -4103,6 +4150,11 @@ async def notify_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 f"✅ Hora de notificación establecida a las *{time_str}*\n"
                 f"🔔 Notificaciones: {'activadas' if user['notification_enabled'] else 'desactivadas'}",
                 parse_mode='Markdown'
+            )
+            await admin_notify.notify_async(
+                "notificaciones",
+                f"hora → {time_str}",
+                username=uname,
             )
         else:
             await update.message.reply_text("❌ Error al establecer la hora de notificación.")
@@ -4513,6 +4565,12 @@ async def search_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # Mensaje de estado inicial
     countries_text = ", ".join(sorted(user_countries))
     services_text = ", ".join(active_services)
+
+    await admin_notify.notify_async(
+        "busqueda",
+        f"{total_artists} artistas · {countries_text}",
+        username=user.get('username', str(chat_id)),
+    )
 
     status_message = await safe_send_message(
         update.message.reply_text,

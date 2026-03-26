@@ -422,6 +422,20 @@ async def handle_lastfm_do_sync(query, user: Dict, period: str, database, servic
 
         message += f"\nUsa `/list` para ver todos tus artistas seguidos."
 
+        if added_count > 0:
+            try:
+                import admin_notify
+                lastfm_user = database.get_user_lastfm(user['id'])
+                lf_username = lastfm_user.get('lastfm_username', '') if lastfm_user else ''
+                await admin_notify.notify_async(
+                    "lastfm_importacion",
+                    f"{added_count} artistas importados · período: {period_name}"
+                    + (f" · Last.fm: `{lf_username}`" if lf_username else ""),
+                    username=user.get('username', str(user['id'])),
+                )
+            except Exception:
+                pass
+
         keyboard = [[{"text": "🔙 Volver a Last.fm", "callback_data": f"lastfm_menu_{user['id']}"}]]
 
         return message, keyboard

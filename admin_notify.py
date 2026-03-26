@@ -2,12 +2,11 @@
 """
 Notificaciones de administrador.
 
-Envía un mensaje a un chat de Telegram cuando ocurre un evento relevante en el bot
-(nuevo usuario, artista añadido, acción de Muspy, etc.).
+Envía un mensaje a un chat de Telegram cuando ocurre un evento relevante en el bot.
 
 Configura en .env:
     ADMIN_CHAT_ID=<chat_id del admin>
-    ADMIN_BOT_TOKEN=<token del bot admin>  # opcional; si no se define, usa el bot principal
+    ADMIN_BOT_TOKEN=<token del bot admin>  # opcional; usa el bot principal si no se define
 """
 
 import os
@@ -18,7 +17,6 @@ import requests
 
 logger = logging.getLogger(__name__)
 
-# Se cachean en módulo para no leer os.environ en cada llamada
 _ADMIN_CHAT_ID: str = ""
 _ADMIN_BOT_TOKEN: str = ""
 _initialized: bool = False
@@ -28,7 +26,6 @@ def _init():
     global _ADMIN_CHAT_ID, _ADMIN_BOT_TOKEN, _initialized
     if _initialized:
         return
-    # Cargar .env si no se ha cargado aún
     try:
         from dotenv import load_dotenv
         load_dotenv()
@@ -50,28 +47,44 @@ def _init():
         )
 
 
-def notify(event: str, details: str = "", silent: bool = False) -> bool:
+# Emojis de cabecera por usuario (rotación por hash del nombre)
+_USER_COLORS = ["🔴", "🟠", "🟡", "🟢", "🔵", "🟣", "🟤", "⚪", "🔶", "🔷"]
+
+
+def _user_header(username: str) -> str:
+    """Cabecera colorida con el nombre de usuario."""
+    color = _USER_COLORS[hash(username) % len(_USER_COLORS)]
+    return f"{color} *{username}*"
+
+
+def notify(event: str, details: str = "", username: str = "", silent: bool = False) -> bool:
     """
-    Envía una notificación al administrador de forma síncrona.
+    Envía una notificación al administrador.
 
     Args:
-        event: Nombre del evento (ej. "nuevo_usuario", "artista_añadido")
-        details: Información adicional (nombre de usuario, artista, etc.)
-        silent: Si True, no registra errores en el log
-
-    Returns:
-        True si se envió correctamente.
+        event:    Nombre del evento (p.ej. "artista_añadido")
+        details:  Información adicional (artista, configuración, etc.)
+        username: Nombre del usuario que generó el evento (encabeza el mensaje)
+        silent:   Si True, no loguea errores
     """
     _init()
 
     if not _ADMIN_CHAT_ID or not _ADMIN_BOT_TOKEN:
-        return False  # Admin no configurado — silencioso
+        return False
 
     now = datetime.now().strftime("%d/%m/%Y %H:%M")
     icon = _event_icon(event)
-    text = f"{icon} *{event}*\n_{now}_"
+
+    lines = []
+    if username:
+        lines.append(_user_header(username))
+        lines.append("")
+    lines.append(f"{icon} *{event}*  _{now}_")
     if details:
-        text += f"\n\n{details}"
+        lines.append("")
+        lines.append(details)
+
+    text = "\n".join(lines)
 
     try:
         resp = requests.post(
@@ -93,22 +106,26 @@ def notify(event: str, details: str = "", silent: bool = False) -> bool:
         return False
 
 
-async def notify_async(event: str, details: str = "") -> bool:
-    """Versión async (ejecuta la llamada síncrona en un executor)."""
+async def notify_async(event: str, details: str = "", username: str = "") -> bool:
+    """Versión async."""
     import asyncio
     loop = asyncio.get_event_loop()
-    return await loop.run_in_executor(None, lambda: notify(event, details))
+    return await loop.run_in_executor(None, lambda: notify(event, details, username))
 
 
 def _event_icon(event: str) -> str:
     icons = {
-        "nuevo_usuario":    "👤",
-        "artista_añadido":  "🎵",
-        "artista_eliminado": "🗑️",
-        "muspy_conectado":  "🔗",
-        "muspy_desconectado": "🔌",
-        "muspy_importacion": "📥",
+        "nuevo_usuario":        "👤",
+        "artista_añadido":      "🎵",
+        "artista_eliminado":    "🗑️",
+        "muspy_conectado":      "🔗",
+        "muspy_desconectado":   "🔌",
+        "muspy_importacion":    "📥",
+        "lastfm_conectado":     "🎧",
+        "lastfm_importacion":   "📥",
         "radicale_configurado": "📅",
-        "error":            "❌",
+        "notificaciones":       "🔔",
+        "busqueda":             "🔍",
+        "error":                "❌",
     }
     return icons.get(event, "ℹ️")

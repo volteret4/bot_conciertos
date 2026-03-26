@@ -248,9 +248,15 @@ class MuspyHandlers:
                     )
                     try:
                         import admin_notify
+                        tg_username = (
+                            update.effective_user.username
+                            or str(update.effective_user.id)
+                            if update.effective_user else str(user_id)
+                        )
                         await admin_notify.notify_async(
                             "muspy_conectado",
-                            f"Usuario ID `{user_id}` vinculó cuenta Muspy `{email}`"
+                            f"Muspy email: `{email}`",
+                            username=tg_username,
                         )
                     except Exception:
                         pass
@@ -504,9 +510,15 @@ class MuspyHandlers:
             if added_count > 0:
                 try:
                     import admin_notify
+                    tg_username = (
+                        query.from_user.username
+                        or str(query.from_user.id)
+                        if query.from_user else str(user_id)
+                    )
                     await admin_notify.notify_async(
                         "muspy_importacion",
-                        f"Usuario ID `{user_id}` importó {added_count} artistas desde Muspy"
+                        f"{added_count} artistas importados desde Muspy",
+                        username=tg_username,
                     )
                 except Exception:
                     pass
