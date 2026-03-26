@@ -45,8 +45,9 @@ class WeeklyNotificationService:
         self.ticketmaster = None
         self.muspy_service = None
 
-        # Rastrea última semana notificada por usuario: {user_id: "2026-W12"}
+        # Rastrea última semana procesada por usuario
         self._last_notified_week: Dict[int, str] = {}
+        self._last_searched_week: Dict[int, str] = {}
 
         self._init_services()
 
@@ -305,10 +306,36 @@ class WeeklyNotificationService:
             logger.error(f"Excepción enviando mensaje: {e}")
             return False
 
-    # ─── Proceso principal por usuario ───────────────────────────────────────
+    # ─── Búsqueda de datos (fase 1, 2h antes) ────────────────────────────────
+
+    async def search_for_user(self, user: Dict):
+        """
+        Fase 1: busca conciertos en Ticketmaster y guarda en BD.
+        Se ejecuta 2 horas antes de la hora de notificación.
+        """
+        user_id = user['id']
+        artists = self.get_followed_artists(user_id)
+        if not artists:
+            return
+
+        countries = self.get_user_countries(user)
+        logger.info(f"[Búsqueda] Usuario {user_id}: {len(artists)} artistas, países: {countries}")
+
+        for artist in artists:
+            concerts = self.search_concerts_for_artist(artist['name'], countries)
+            for c in concerts:
+                self.save_concert(c)
+            await asyncio.sleep(0.5)
+
+        logger.info(f"[Búsqueda] Completada para usuario {user_id}")
+
+    # ─── Notificación (fase 2, a la hora configurada) ─────────────────────────
 
     async def process_user(self, user: Dict):
-        """Genera y envía el resumen semanal para un usuario."""
+        """
+        Fase 2: lee los conciertos ya guardados en BD, obtiene discos de Muspy
+        y envía el resumen semanal al usuario.
+        """
         user_id = user['id']
         chat_id = user['chat_id']
 
@@ -318,18 +345,32 @@ class WeeklyNotificationService:
             return
 
         countries = self.get_user_countries(user)
-        logger.info(f"Procesando usuario {user_id}: {len(artists)} artistas, países: {countries}")
 
-        # Conciertos por artista
+        # Leer conciertos de la BD (ya buscados en la fase 1)
         concerts_by_artist: Dict[str, List[Dict]] = {}
-        for artist in artists:
-            name = artist['name']
-            concerts = self.search_concerts_for_artist(name, countries)
-            for c in concerts:
-                self.save_concert(c)
-            if concerts:
-                concerts_by_artist[name] = concerts
-            await asyncio.sleep(0.5)  # Respetar rate limit de Ticketmaster
+        artist_names = {a['name'] for a in artists}
+        conn = self._get_db()
+        try:
+            today_str = date.today().isoformat()
+            cur = conn.cursor()
+            cur.execute("""
+                SELECT artist_name, concert_name, venue, city, country, date, time, url, source
+                FROM concerts
+                WHERE date >= ? AND artist_name IN ({})
+                ORDER BY date
+            """.format(','.join('?' * len(artist_names))),
+            [today_str] + list(artist_names))
+
+            for row in cur.fetchall():
+                r = dict(row)
+                # Filtrar por países del usuario
+                if countries and r.get('country', '').upper() not in {c.upper() for c in countries}:
+                    continue
+                concerts_by_artist.setdefault(r['artist_name'], []).append(r)
+        except Exception as e:
+            logger.error(f"Error leyendo conciertos de BD para usuario {user_id}: {e}")
+        finally:
+            conn.close()
 
         # Discos de Muspy (próximos 90 días)
         releases: List[Dict] = []
@@ -370,29 +411,64 @@ class WeeklyNotificationService:
     # ─── Bucle principal ──────────────────────────────────────────────────────
 
     async def run(self):
-        """Bucle principal: comprueba cada minuto si toca notificar."""
+        """
+        Bucle principal. Cada minuto:
+        - Comprueba si toca la BÚSQUEDA (hora_notificación - 2h) → fase 1
+        - Comprueba si toca la NOTIFICACIÓN → fase 2
+        Solo actúa con usuarios que tienen notificaciones habilitadas.
+        No repite ninguna fase más de una vez por semana por usuario.
+        """
         logger.info("🚀 Servicio de notificaciones semanales iniciado")
 
         while True:
             now = datetime.now()
-            current_day = now.weekday()          # 0=lunes … 6=domingo
+            current_day = now.weekday()   # 0=lunes … 6=domingo
             current_time = now.strftime('%H:%M')
             current_week = now.strftime('%Y-W%W')
 
-            users = self.get_users_for_time(current_day, current_time)
+            # ── Fase 1: búsqueda 2 horas antes ──────────────────────────────
+            search_users = self._users_for_search_phase(current_day, current_time)
+            for user in search_users:
+                uid = user['id']
+                if self._last_searched_week.get(uid) == current_week:
+                    continue
+                try:
+                    await self.search_for_user(user)
+                    self._last_searched_week[uid] = current_week
+                except Exception as e:
+                    logger.error(f"Error en búsqueda para usuario {uid}: {e}")
 
-            for user in users:
+            # ── Fase 2: notificación a la hora configurada ───────────────────
+            notify_users = self.get_users_for_time(current_day, current_time)
+            for user in notify_users:
                 uid = user['id']
                 if self._last_notified_week.get(uid) == current_week:
-                    continue  # Ya notificado esta semana
+                    continue
                 try:
                     await self.process_user(user)
                     self._last_notified_week[uid] = current_week
                 except Exception as e:
                     logger.error(f"Error procesando usuario {uid}: {e}")
 
-            # Esperar hasta el próximo minuto exacto
             await asyncio.sleep(60 - datetime.now().second)
+
+    def _users_for_search_phase(self, current_day: int, current_time: str) -> List[Dict]:
+        """
+        Devuelve los usuarios cuya hora de notificación menos 2 horas coincide
+        con current_day y current_time.
+        """
+        try:
+            search_dt = datetime.strptime(current_time, '%H:%M') + timedelta(hours=2)
+            # Si pasar las 24h, el día de búsqueda es el anterior al de notificación
+            notif_day = current_day
+            notif_time = search_dt.strftime('%H:%M')
+            # Si la suma supera el día, ajustar
+            if search_dt.day != datetime.strptime(current_time, '%H:%M').day:
+                notif_day = (current_day + 1) % 7
+        except Exception:
+            return []
+
+        return self.get_users_for_time(notif_day, notif_time)
 
 
 # ─── Utilidades ──────────────────────────────────────────────────────────────
