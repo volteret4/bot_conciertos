@@ -38,7 +38,14 @@ async def search_concerts_for_artist(
 
     user_countries = user_services_config.get('countries', set())
     if not user_countries:
-        user_countries = {user_services_config.get('country_filter', 'ES')}
+        cf = user_services_config.get('country_filter')
+        user_countries = {cf} if cf else set()
+
+    # Eliminar valores None o vacíos
+    user_countries = {c for c in user_countries if c}
+    if not user_countries:
+        logger.warning(f"Sin países configurados para buscar {artist_name}")
+        return []
 
     logger.info(f"Buscando conciertos para {artist_name} en países: {user_countries}")
 

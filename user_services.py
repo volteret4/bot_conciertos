@@ -206,9 +206,10 @@ class UserServices:
                 (user_id,)
             )
             row = cursor.fetchone()
+            country_filter = row[1] if row else None
             services = {
                 'ticketmaster': bool(row[0]) if row else True,
-                'country_filter': row[1] if row else 'ES',
+                'country_filter': country_filter,
             }
 
             if country_state_city:
@@ -216,12 +217,16 @@ class UserServices:
                 services['countries'] = user_countries
                 if user_countries:
                     services['country_filter'] = list(user_countries)[0]
+                elif country_filter:
+                    services['countries'] = {country_filter}
+                else:
+                    services['countries'] = set()
             else:
-                services['countries'] = {services['country_filter']}
+                services['countries'] = {country_filter} if country_filter else set()
 
             return services
         except Exception as e:
             logger.error(f"Error obteniendo servicios del usuario: {e}")
-            return {'ticketmaster': True, 'country_filter': 'ES', 'countries': {'ES'}}
+            return {'ticketmaster': True, 'country_filter': None, 'countries': set()}
         finally:
             conn.close()

@@ -134,8 +134,8 @@ class WeeklyNotificationService:
                     return codes
         except Exception:
             pass
-        cf = user.get('country_filter', 'ES') or 'ES'
-        return {cf}
+        cf = user.get('country_filter') or None
+        return {cf} if cf else set()
 
     def get_muspy_credentials(self, user_id: int) -> Optional[Tuple[str, str, str]]:
         """Devuelve (email, password, userid) de Muspy o None."""
@@ -339,6 +339,10 @@ class WeeklyNotificationService:
             return
 
         countries = self.get_user_countries(user)
+        if not countries:
+            logger.info(f"[Búsqueda] Usuario {user_id} sin países configurados, omitiendo")
+            return
+
         logger.info(f"[Búsqueda] Usuario {user_id}: {len(artists)} artistas, países: {countries}")
 
         # Limpiar conciertos con fecha anterior a hoy-7 días
