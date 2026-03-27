@@ -1957,7 +1957,39 @@ async def handle_text_input(update: Update, context: ContextTypes.DEFAULT_TYPE):
         del context.user_data['waiting_for_country_add']
         return
 
-    # PRIORIDAD 3: Usuario de Last.fm
+    # PRIORIDAD 3: API key de Ticketmaster
+    elif 'waiting_for_tm_key' in context.user_data:
+        user_id = context.user_data['waiting_for_tm_key']
+        api_key = update.message.text.strip()
+        try:
+            await update.message.delete()
+        except Exception:
+            pass
+        panel = context.user_data.get('tm_panel_msg')
+
+        async def _tm_edit(text, markup=None):
+            if panel:
+                try:
+                    await panel.edit_text(text, parse_mode='Markdown', reply_markup=markup)
+                except Exception:
+                    pass
+
+        if not api_key:
+            await _tm_edit("🎫 *Ticketmaster — API Key personal*\n\n❌ Key no válida. Inténtalo de nuevo:")
+            return
+
+        db.set_user_ticketmaster_key(user_id, api_key)
+        del context.user_data['waiting_for_tm_key']
+        masked = api_key[:4] + '****' + api_key[-4:]
+        await _tm_edit(
+            f"✅ API key de Ticketmaster guardada: `{masked}`",
+            markup=InlineKeyboardMarkup([[
+                InlineKeyboardButton("🔙 Volver", callback_data=f"tm_back_{user_id}")
+            ]])
+        )
+        return
+
+    # PRIORIDAD 4: Usuario de Last.fm
     elif 'waiting_for_lastfm_user' in context.user_data:
         user_id = context.user_data['waiting_for_lastfm_user']
         lastfm_username = update.message.text.strip()
@@ -2798,7 +2830,8 @@ async def searchartist_command(update: Update, context: ContextTypes.DEFAULT_TYP
             user_services_config,
             user_id=user['id'] if user else None,
             services=services,
-            database=db
+            database=db,
+            user_ticketmaster_key=db.get_user_ticketmaster_key(user['id']) if user else None,
         )
 
         if not concerts:
@@ -4217,6 +4250,85 @@ async def notify_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 RADICALE_URL, RADICALE_USERNAME, RADICALE_PASSWORD, RADICALE_CALENDAR = range(10, 14)
 
 
+async def ticketmaster_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Comando /ticketmaster — configurar API key personal de Ticketmaster"""
+    user = _get_or_register(update)
+    if not user:
+        await update.message.reply_text("❌ Error interno.")
+        return
+
+    current_key = db.get_user_ticketmaster_key(user['id'])
+    await _show_ticketmaster_panel(update, user['id'], current_key)
+
+
+async def _show_ticketmaster_panel(update_or_query, user_id: int, current_key: str = None, edit: bool = False):
+    if current_key:
+        masked = current_key[:4] + '****' + current_key[-4:]
+        text = (
+            "🎫 *Ticketmaster — API Key personal*\n\n"
+            f"Key activa: `{masked}`\n\n"
+            "Con tu propia key tus búsquedas no comparten cuota con otros usuarios."
+        )
+        keyboard = [
+            [InlineKeyboardButton("🔄 Cambiar key", callback_data=f"tm_set_{user_id}")],
+            [InlineKeyboardButton("🗑 Eliminar key", callback_data=f"tm_del_{user_id}")],
+        ]
+    else:
+        text = (
+            "🎫 *Ticketmaster — API Key personal*\n\n"
+            "No tienes key propia configurada. Se usa la key compartida del servidor.\n\n"
+            "Con tu propia key obtienes cuota independiente (5000 req/día gratis en "
+            "[developer.ticketmaster.com](https://developer.ticketmaster.com))."
+        )
+        keyboard = [
+            [InlineKeyboardButton("➕ Añadir key", callback_data=f"tm_set_{user_id}")],
+        ]
+
+    markup = InlineKeyboardMarkup(keyboard)
+    if edit:
+        await update_or_query.edit_message_text(text, parse_mode='Markdown', reply_markup=markup,
+                                                 disable_web_page_preview=True)
+    else:
+        await update_or_query.message.reply_text(text, parse_mode='Markdown', reply_markup=markup,
+                                                  disable_web_page_preview=True)
+
+
+async def ticketmaster_callback_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    await query.answer()
+    parts = query.data.split('_')
+    # tm_set_<uid> or tm_del_<uid>
+    if len(parts) < 3 or parts[0] != 'tm':
+        return
+    action = parts[1]
+    try:
+        user_id = int(parts[2])
+    except ValueError:
+        return
+
+    user = db.get_user_by_chat_id(query.message.chat_id)
+    if not user or user['id'] != user_id:
+        await query.edit_message_text("❌ Error de autenticación.")
+        return
+
+    if action == 'del':
+        db.set_user_ticketmaster_key(user_id, None)
+        await _show_ticketmaster_panel(query, user_id, current_key=None, edit=True)
+
+    elif action == 'set':
+        context.user_data['waiting_for_tm_key'] = user_id
+        context.user_data['tm_panel_msg'] = query.message
+        await query.edit_message_text(
+            "🎫 *Ticketmaster — API Key personal*\n\n"
+            "Envía tu API key de Ticketmaster:",
+            parse_mode='Markdown'
+        )
+
+    elif action == 'back':
+        current_key = db.get_user_ticketmaster_key(user_id)
+        await _show_ticketmaster_panel(query, user_id, current_key=current_key, edit=True)
+
+
 async def radicale_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Comando /radicale — gestionar integración con servidor Radicale (CalDAV)"""
     chat_id = update.effective_chat.id
@@ -5615,6 +5727,8 @@ def main():
     application.add_handler(CommandHandler("listcountries", listcountries_command))
     application.add_handler(CommandHandler("refreshcountries", refreshcountries_command))
     application.add_handler(CommandHandler("config", config_command))
+    application.add_handler(CommandHandler("ticketmaster", ticketmaster_command))
+    application.add_handler(CallbackQueryHandler(ticketmaster_callback_handler, pattern="^tm_"))
     application.add_handler(CommandHandler("radicale", radicale_command))
     application.add_handler(CommandHandler("lastfm", lastfm_command))
     application.add_handler(CallbackQueryHandler(lastfm_callback_handler, pattern="^lastfm_"))

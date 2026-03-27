@@ -18,6 +18,7 @@ async def search_concerts_for_artist(
     user_id: int = None,
     services: Dict = None,
     database=None,
+    user_ticketmaster_key: str = None,
 ) -> List[Dict]:
     """
     Busca conciertos para un artista en Ticketmaster, filtrando por países del usuario.
@@ -35,6 +36,14 @@ async def search_concerts_for_artist(
     if not ticketmaster:
         logger.warning(f"Ticketmaster no disponible para buscar {artist_name}")
         return []
+
+    # Si el usuario tiene su propia API key, crear instancia temporal con ella
+    if user_ticketmaster_key:
+        from apis.ticketmaster import TicketmasterService
+        ticketmaster = TicketmasterService(
+            api_key=user_ticketmaster_key,
+            cache_dir=ticketmaster.cache_dir,
+        )
 
     user_countries = user_services_config.get('countries', set())
     if not user_countries:

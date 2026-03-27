@@ -87,9 +87,10 @@ class ArtistTrackerDatabase:
                 ('radicale_username', "ALTER TABLE users ADD COLUMN radicale_username TEXT"),
                 ('radicale_password', "ALTER TABLE users ADD COLUMN radicale_password TEXT"),
                 ('radicale_calendar', "ALTER TABLE users ADD COLUMN radicale_calendar TEXT"),
-                ('lastfm_username',   "ALTER TABLE users ADD COLUMN lastfm_username TEXT"),
-                ('lastfm_period',     "ALTER TABLE users ADD COLUMN lastfm_period TEXT DEFAULT '12month'"),
-                ('lastfm_limit',      "ALTER TABLE users ADD COLUMN lastfm_limit INTEGER DEFAULT 50"),
+                ('lastfm_username',        "ALTER TABLE users ADD COLUMN lastfm_username TEXT"),
+                ('lastfm_period',          "ALTER TABLE users ADD COLUMN lastfm_period TEXT DEFAULT '12month'"),
+                ('lastfm_limit',           "ALTER TABLE users ADD COLUMN lastfm_limit INTEGER DEFAULT 50"),
+                ('ticketmaster_api_key',   "ALTER TABLE users ADD COLUMN ticketmaster_api_key TEXT"),
             ]:
                 if col_name not in columns:
                     cursor.execute(col_sql)
@@ -1426,6 +1427,32 @@ class ArtistTrackerDatabase:
         except sqlite3.Error as e:
             logger.error(f"Error obteniendo usuario Last.fm: {e}")
             return None
+        finally:
+            conn.close()
+
+    def get_user_ticketmaster_key(self, user_id: int) -> Optional[str]:
+        conn = self.get_connection()
+        try:
+            cursor = conn.cursor()
+            cursor.execute("SELECT ticketmaster_api_key FROM users WHERE id = ?", (user_id,))
+            row = cursor.fetchone()
+            return row[0] if row and row[0] else None
+        except sqlite3.Error as e:
+            logger.error(f"Error obteniendo ticketmaster_api_key: {e}")
+            return None
+        finally:
+            conn.close()
+
+    def set_user_ticketmaster_key(self, user_id: int, api_key: Optional[str]) -> bool:
+        conn = self.get_connection()
+        try:
+            cursor = conn.cursor()
+            cursor.execute("UPDATE users SET ticketmaster_api_key = ? WHERE id = ?", (api_key, user_id))
+            conn.commit()
+            return cursor.rowcount > 0
+        except sqlite3.Error as e:
+            logger.error(f"Error guardando ticketmaster_api_key: {e}")
+            return False
         finally:
             conn.close()
 
