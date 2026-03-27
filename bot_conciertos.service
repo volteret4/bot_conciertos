@@ -5,9 +5,9 @@ After=network.target
 [Service]
 Type=simple
 User=pepe
-WorkingDirectory=/home/pepe/Scripts/Musica/conciertos/telegram/bot/
-EnvironmentFile=/home/pepe/Scripts/Musica/conciertos/telegram/bot/.env
-ExecStart=/home/pepe/Scripts/python_venv/bin/python /home/pepe/Scripts/Musica/conciertos/telegram/bot/telegram_bot.py
+WorkingDirectory=/home/pepe/gits/pollo/bot_conciertos/
+EnvironmentFile=/home/pepe/gits/pollo/bot_conciertos/.env
+ExecStart=/home/pepe/Scripts/python_venv/bin/python /home/pepe/gits/pollo/bot_conciertos/telegram_bot.py
 Restart=always
 RestartSec=10
 
