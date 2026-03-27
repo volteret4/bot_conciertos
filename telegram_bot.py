@@ -5405,14 +5405,17 @@ async def calendar_callback_handler(update: Update, context: ContextTypes.DEFAUL
     callback_data = query.data
     logger.info(f"Calendar callback recibido: {callback_data}")
 
-    # Parsear callback data
+    # Parsear callback data: cal_{action}_{id} o cal_rad_{action}_{id}
     parts = callback_data.split("_")
-    if len(parts) != 3 or parts[0] != "cal":
+    if parts[0] != "cal" or len(parts) < 3:
         await query.edit_message_text("❌ Callback no válido.")
         return
 
-    action = parts[1]
-    user_id = int(parts[2])
+    try:
+        user_id = int(parts[-1])
+    except (ValueError, IndexError):
+        await query.edit_message_text("❌ Callback no válido.")
+        return
 
     # Verificar que el usuario existe
     user = db.get_user_by_chat_id(query.message.chat_id)
