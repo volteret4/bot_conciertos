@@ -17,48 +17,11 @@ class TicketmasterService:
         # Crear directorio de caché si no existe
         self.cache_dir.mkdir(parents=True, exist_ok=True)
 
-    def _get_attraction_id(self, artist_name: str) -> str | None:
+    def _fetch_events(self, artist_name: str, country_code: str = None, size: int = 200) -> list:
         """
-        Busca el ID de Ticketmaster para un artista usando la API de Attractions.
-        Sólo acepta coincidencia exacta de nombre (case-insensitive).
-        Devuelve el ID o None si no se encuentra.
+        Busca eventos por keyword y filtra: solo acepta eventos donde el artista
+        aparece como attraction con nombre exacto. Si no hay attractions, descarta.
         """
-        try:
-            params = {
-                "keyword": artist_name,
-                "size": 20,
-                "apikey": self.api_key,
-            }
-            response = requests.get(self.attractions_url, params=params, timeout=10)
-            response.raise_for_status()
-            data = response.json()
-            attractions = data.get('_embedded', {}).get('attractions', [])
-            search = artist_name.lower().strip()
-            for att in attractions:
-                if att.get('name', '').lower().strip() == search:
-                    return att['id']
-        except Exception:
-            pass
-        return None
-
-    def _search_events_by_attraction(self, attraction_id: str, country_code: str = None, size: int = 200) -> list:
-        """Busca eventos para un attraction ID dado, opcionalmente filtrado por país."""
-        params = {
-            "attractionId": attraction_id,
-            "size": size,
-            "sort": "date,asc",
-            "apikey": self.api_key,
-        }
-        if country_code:
-            params["countryCode"] = country_code
-
-        response = requests.get(self.base_url, params=params, timeout=15)
-        response.raise_for_status()
-        data = response.json()
-        return data.get('_embedded', {}).get('events', [])
-
-    def _keyword_events(self, artist_name: str, country_code: str = None, size: int = 200) -> list:
-        """Fallback: busca eventos por keyword filtrando por attractions del evento."""
         params = {
             "keyword": artist_name,
             "size": size,
@@ -75,15 +38,11 @@ class TicketmasterService:
         filtered = []
         for event in events:
             attractions = event.get('_embedded', {}).get('attractions', [])
-            if attractions:
-                if any(att.get('name', '').lower().strip() == search for att in attractions):
-                    filtered.append(event)
-                # si hay attractions pero ninguna coincide exactamente, descartar
-            else:
-                # sin attractions: aceptar sólo si el título del evento coincide exactamente
-                event_name = event.get('name', '').lower().strip()
-                if event_name == search:
-                    filtered.append(event)
+            if not attractions:
+                # Sin attractions no podemos verificar: descartar para evitar falsos positivos
+                continue
+            if any(att.get('name', '').lower().strip() == search for att in attractions):
+                filtered.append(event)
         return filtered
 
     def _event_to_concert(self, event: dict, artist_name: str) -> dict | None:
@@ -118,12 +77,7 @@ class TicketmasterService:
             return cached_data, f"Se encontraron {len(cached_data)} conciertos para {artist_name} (caché)"
 
         try:
-            attraction_id = self._get_attraction_id(artist_name)
-            if attraction_id:
-                events = self._search_events_by_attraction(attraction_id, country_code=country_code, size=size)
-            else:
-                events = self._keyword_events(artist_name, country_code=country_code, size=size)
-
+            events = self._fetch_events(artist_name, country_code=country_code, size=size)
             concerts = []
             for event in events:
                 concert = self._event_to_concert(event, artist_name)
@@ -132,7 +86,6 @@ class TicketmasterService:
                 if concert['country_code'] and concert['country_code'] != country_code:
                     continue
                 concerts.append(concert)
-
             self._save_to_cache(cache_file, concerts)
             return concerts, f"Se encontraron {len(concerts)} conciertos para {artist_name}"
 
@@ -143,7 +96,7 @@ class TicketmasterService:
 
     def search_concerts_global(self, artist_name, size=200):
         """
-        Buscar conciertos para un artista globalmente usando attraction ID si está disponible.
+        Buscar conciertos para un artista globalmente.
         """
         if not self.api_key:
             return [], "No se ha configurado API Key para Ticketmaster"
@@ -154,18 +107,12 @@ class TicketmasterService:
             return cached_data, f"Se encontraron {len(cached_data)} conciertos para {artist_name} (caché global)"
 
         try:
-            attraction_id = self._get_attraction_id(artist_name)
-            if attraction_id:
-                events = self._search_events_by_attraction(attraction_id, country_code=None, size=size)
-            else:
-                events = self._keyword_events(artist_name, country_code=None, size=size)
-
+            events = self._fetch_events(artist_name, country_code=None, size=size)
             concerts = []
             for event in events:
                 concert = self._event_to_concert(event, artist_name)
                 if concert is not None:
                     concerts.append(concert)
-
             self._save_to_cache(cache_file, concerts)
             return concerts, f"Se encontraron {len(concerts)} conciertos globales para {artist_name}"
 
