@@ -51,7 +51,7 @@ class TicketmasterService:
                     filtered.append(event)
         return filtered
 
-    def _event_to_concert(self, event: dict, artist_name: str) -> dict | None:
+    def _event_to_concert(self, event: dict, artist_name: str):
         """Convierte un evento de la API al formato interno. Devuelve None si no tiene ciudad."""
         venue_info = self._extract_venue_info(event)
         if not venue_info['city'] or venue_info['city'] == 'Unknown city':
