@@ -195,8 +195,6 @@ def format_single_artist_concerts_complete(
         else:
             line += f"   📍 {location}"
 
-        if source:
-            line += f"\n   🔗 _{source}_"
         if show_notified and c.get('notified'):
             line += " ✅"
 
@@ -283,8 +281,6 @@ def _format_concert_line(concert: Dict, show_notified: bool = False) -> str:
     else:
         line += location
 
-    if source:
-        line += f" _{source}_"
     if show_notified and concert.get('notified'):
         line += " ✅"
 

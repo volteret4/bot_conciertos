@@ -189,6 +189,10 @@ class TicketmasterService:
                 if self._names_match(search, att_name):
                     return True
             return False
+        # Sin attractions: verificar que el título del evento mencione al artista
+        event_name = event.get('name', '').lower().strip()
+        if event_name and not self._names_match(search, event_name):
+            return False
         return True
 
     @staticmethod
