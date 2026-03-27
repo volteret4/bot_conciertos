@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=simple
-User=pepe
+User=huan
 WorkingDirectory=/home/usuario/gits/pollo/bot_conciertos/
 EnvironmentFile=/home/usuario/gits/pollo/bot_conciertos/.env
 ExecStart=/home/usuario/Scripts/python_venv/bin/python /home/usuario/gits/pollo/bot_conciertos/telegram_bot.py

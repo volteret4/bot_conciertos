@@ -182,19 +182,33 @@ class TicketmasterService:
         no solo una coincidencia en el nombre del venue o del evento.
         """
         search = artist_name.lower().strip()
-        # Buscar en _embedded.attractions (performers del evento)
-        attractions = (
-            event.get('_embedded', {}).get('attractions', [])
-        )
+        attractions = event.get('_embedded', {}).get('attractions', [])
         if attractions:
             for att in attractions:
-                att_name = att.get('name', '').lower()
-                if search in att_name or att_name in search:
+                att_name = att.get('name', '').lower().strip()
+                if self._names_match(search, att_name):
                     return True
-            # Si hay attractions pero ninguna coincide, es falso positivo
             return False
-        # Sin attractions en el response: aceptar (no podemos verificar)
         return True
+
+    @staticmethod
+    def _names_match(search: str, att_name: str) -> bool:
+        """
+        Compara dos nombres de artista con tolerancia mínima para evitar falsos positivos
+        como 'moby' vs 'sala moby dick' o 'air' vs 'riyadh air metropolitano'.
+        Sólo acepta si los nombres son iguales o muy similares en longitud (por palabras).
+        """
+        if search == att_name:
+            return True
+        # Rechazar si la proporción de palabras es baja (substring en nombre mucho más largo)
+        n_s = len(search.split())
+        n_a = len(att_name.split())
+        if n_s == 0 or n_a == 0:
+            return False
+        ratio = min(n_s, n_a) / max(n_s, n_a)
+        if ratio < 0.6:
+            return False
+        return search in att_name or att_name in search
 
     def _extract_venue_info(self, event):
         """
