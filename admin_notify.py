@@ -126,6 +126,7 @@ def _event_icon(event: str) -> str:
         "radicale_configurado": "📅",
         "notificaciones":       "🔔",
         "busqueda":             "🔍",
+        "calendario":           "📆",
         "error":                "❌",
     }
     return icons.get(event, "ℹ️")
