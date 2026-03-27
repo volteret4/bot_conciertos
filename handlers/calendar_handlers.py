@@ -21,13 +21,6 @@ class CalendarHandlers:
         self.db = database
         self.muspy_service = muspy_service
 
-    def _get_ticketmaster(self):
-        try:
-            from user_services import get_services
-            return get_services().get('ticketmaster_service')
-        except Exception:
-            return None
-
     # ─── /cal panel principal ─────────────────────────────────────────────────
 
     async def cal_command(self, update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -111,29 +104,20 @@ class CalendarHandlers:
     # ─── ICS: conciertos ──────────────────────────────────────────────────────
 
     async def _handle_concerts_calendar(self, query, user_id: int):
-        await query.edit_message_text("🔍 Obteniendo conciertos...")
+        await query.edit_message_text("📂 Obteniendo conciertos de la base de datos...")
 
         try:
-            followed_artists = self.db.get_user_followed_artists(user_id)
-            if not followed_artists:
-                await query.edit_message_text(
-                    "📭 No tienes artistas seguidos.\nUsa `/addartist <nombre>` para empezar."
-                )
-                return
-
             from user_services import UserServices
             user_config = UserServices(self.db).get_user_services(user_id)
-            user_countries = user_config.get('countries', {'ES'})
+            user_countries = user_config.get('countries', set())
 
-            ticketmaster = self._get_ticketmaster()
-            concerts = await self._fetch_concerts(
-                followed_artists, user_countries, ticketmaster, query
-            )
+            concerts = self._fetch_concerts_from_db(user_id, user_countries)
 
             if not concerts:
-                countries_text = ", ".join(sorted(user_countries))
+                countries_text = ", ".join(sorted(user_countries)) if user_countries else "ninguno"
                 await query.edit_message_text(
-                    f"📭 No se encontraron conciertos futuros en tus países ({countries_text})."
+                    f"📭 No se encontraron conciertos futuros en tus países ({countries_text}).\n"
+                    f"💡 Usa /search primero para buscar conciertos."
                 )
                 return
 
@@ -185,7 +169,7 @@ class CalendarHandlers:
     # ─── Radicale: conciertos ─────────────────────────────────────────────────
 
     async def _handle_radicale_concerts(self, query, user_id: int):
-        await query.edit_message_text("🔍 Preparando conciertos para Radicale...")
+        await query.edit_message_text("📂 Obteniendo conciertos de la base de datos...")
 
         radicale_cfg = self.db.get_radicale_config(user_id)
         if not radicale_cfg:
@@ -194,20 +178,17 @@ class CalendarHandlers:
             )
             return
 
-        followed_artists = self.db.get_user_followed_artists(user_id)
-        if not followed_artists:
-            await query.edit_message_text("📭 No tienes artistas seguidos.")
-            return
-
         from user_services import UserServices
         user_config = UserServices(self.db).get_user_services(user_id)
-        user_countries = user_config.get('countries', {'ES'})
+        user_countries = user_config.get('countries', set())
 
-        ticketmaster = self._get_ticketmaster()
-        concerts = await self._fetch_concerts(followed_artists, user_countries, ticketmaster, query)
+        concerts = self._fetch_concerts_from_db(user_id, user_countries)
 
         if not concerts:
-            await query.edit_message_text("📭 No se encontraron conciertos futuros en tus países.")
+            await query.edit_message_text(
+                "📭 No se encontraron conciertos futuros en la base de datos.\n"
+                "💡 Usa /search primero para buscar conciertos."
+            )
             return
 
         await query.edit_message_text(f"☁️ Subiendo {len(concerts)} conciertos a Radicale...")
@@ -273,45 +254,44 @@ class CalendarHandlers:
 
     # ─── Helpers de fetch ─────────────────────────────────────────────────────
 
-    async def _fetch_concerts(
-        self,
-        followed_artists: List[Dict],
-        user_countries,
-        ticketmaster,
-        query,
-    ) -> List[Dict]:
-        """Busca conciertos futuros para todos los artistas seguidos."""
-        all_concerts = []
-        today = date.today()
-        seen = set()
-        total = len(followed_artists)
+    def _fetch_concerts_from_db(self, user_id: int, user_countries) -> List[Dict]:
+        """Lee conciertos futuros del DB para los artistas seguidos, filtrados por país."""
+        followed_artists = self.db.get_user_followed_artists(user_id)
+        if not followed_artists:
+            return []
 
-        for i, artist in enumerate(followed_artists, 1):
-            if i % 5 == 0 or i == total:
-                await query.edit_message_text(f"🔍 Obteniendo conciertos... {i}/{total}")
+        today_str = date.today().isoformat()
+        artist_names_lower = [a['name'].lower() for a in followed_artists]
 
-            if not ticketmaster:
-                continue
+        conn = self.db.get_connection()
+        try:
+            cursor = conn.cursor()
+            placeholders = ','.join('?' * len(artist_names_lower))
+            cursor.execute(f"""
+                SELECT DISTINCT artist_name, concert_name, venue, city, country, country_code,
+                       date, time, url, source
+                FROM concerts
+                WHERE date >= ? AND LOWER(artist_name) IN ({placeholders})
+                ORDER BY date ASC
+            """, [today_str] + artist_names_lower)
+            rows = [dict(r) for r in cursor.fetchall()]
+        finally:
+            conn.close()
 
-            artist_name = artist['name']
-            for code in user_countries:
-                try:
-                    concerts, _ = ticketmaster.search_concerts(artist_name, code)
-                    for c in concerts:
-                        concert_date = c.get('date', '')
-                        try:
-                            if datetime.strptime(concert_date[:10], '%Y-%m-%d').date() < today:
-                                continue
-                        except (ValueError, IndexError):
-                            pass
-                        key = (artist_name.lower(), c.get('venue', '').lower(), concert_date[:10])
-                        if key not in seen:
-                            seen.add(key)
-                            all_concerts.append(c)
-                except Exception as e:
-                    logger.error(f"Error buscando conciertos para {artist_name} en {code}: {e}")
+        if not user_countries:
+            return rows
 
-        return all_concerts
+        # Filtrar por país (acepta código ISO o nombre completo)
+        upper_countries = {c.upper() for c in user_countries}
+        filtered = []
+        for r in rows:
+            country_val = (r.get('country') or '').upper()
+            code_val = (r.get('country_code') or '').upper()
+            if not country_val and not code_val:
+                filtered.append(r)
+            elif country_val in upper_countries or code_val in upper_countries:
+                filtered.append(r)
+        return filtered
 
     async def _fetch_releases(self, user_id: int) -> List[Dict]:
         """Obtiene lanzamientos futuros de Muspy."""
