@@ -148,103 +148,112 @@ class MuspyHandlers:
             await query.edit_message_text("❌ Error procesando la solicitud.")
 
     async def _start_muspy_login(self, update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
-        """Inicia el proceso de login de Muspy"""
-        if hasattr(update, 'callback_query') and update.callback_query:
-            query = update.callback_query
-            user_id = int(query.data.split("_")[-1])
+        """Inicia el proceso de login de Muspy (inline: edita el panel)"""
+        query = update.callback_query
+        user_id = int(query.data.split("_")[-1])
 
-            await query.edit_message_text(
-                "🔑 *Configuración de Muspy*\n\n"
-                "Para conectar tu cuenta de Muspy, necesito tus credenciales.\n\n"
-                "📧 Envía tu email de Muspy:",
-                parse_mode='Markdown'
-            )
-        else:
-            await update.message.reply_text(
-                "🔑 *Configuración de Muspy*\n\n"
-                "Para conectar tu cuenta de Muspy, necesito tus credenciales.\n\n"
-                "📧 Envía tu email de Muspy:",
-                parse_mode='Markdown'
-            )
-            user_id = self._get_or_create_user_id(update)
-
-        # Guardar user_id en context para el ConversationHandler
+        await query.edit_message_text(
+            "🔑 *Configuración de Muspy — 1/3*\n\n"
+            "📧 Envía tu email de Muspy:",
+            parse_mode='Markdown'
+        )
         context.user_data['muspy_user_id'] = user_id
+        context.user_data['muspy_panel_msg'] = query.message
         return MUSPY_EMAIL
+
+    async def _edit_panel(self, context, text: str, parse_mode='Markdown'):
+        """Edita el mensaje del panel guardado en user_data."""
+        panel_msg = context.user_data.get('muspy_panel_msg')
+        if panel_msg:
+            try:
+                await panel_msg.edit_text(text, parse_mode=parse_mode)
+                return
+            except Exception:
+                pass
 
     async def login_email_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
         """Maneja la entrada del email"""
         email = update.message.text.strip()
+        try:
+            await update.message.delete()
+        except Exception:
+            pass
 
         if not email or '@' not in email:
-            await update.message.reply_text(
-                "❌ Email inválido. Envía un email válido:"
+            await self._edit_panel(context,
+                "🔑 *Configuración de Muspy — 1/3*\n\n"
+                "❌ Email inválido.\n📧 Envía un email válido:"
             )
             return MUSPY_EMAIL
 
         context.user_data['muspy_email'] = email
-        await update.message.reply_text(
-            "✅ Email guardado.\n\n"
-            "🔒 Ahora envía tu contraseña de Muspy:"
+        await self._edit_panel(context,
+            "🔑 *Configuración de Muspy — 2/3*\n\n"
+            f"✅ Email: `{email}`\n\n"
+            "🔒 Envía tu contraseña de Muspy:"
         )
         return MUSPY_PASSWORD
 
     async def login_password_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
         """Maneja la entrada de la contraseña"""
         password = update.message.text.strip()
+        try:
+            await update.message.delete()
+        except Exception:
+            pass
 
         if not password:
-            await update.message.reply_text(
-                "❌ Contraseña vacía. Envía tu contraseña:"
+            await self._edit_panel(context,
+                "🔑 *Configuración de Muspy — 2/3*\n\n"
+                "❌ Contraseña vacía.\n🔒 Envía tu contraseña:"
             )
             return MUSPY_PASSWORD
 
         context.user_data['muspy_password'] = password
-        await update.message.reply_text(
+        await self._edit_panel(context,
+            "🔑 *Configuración de Muspy — 3/3*\n\n"
             "✅ Contraseña guardada.\n\n"
-            "🆔 Finalmente, envía tu User ID de Muspy\n"
-            "(lo puedes encontrar en tu perfil de Muspy):"
+            "🆔 Envía tu User ID de Muspy\n"
+            "_(perfil → Settings → User ID)_:"
         )
         return MUSPY_USERID
 
     async def login_userid_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
         """Maneja la entrada del User ID y completa la configuración"""
         userid = update.message.text.strip()
+        try:
+            await update.message.delete()
+        except Exception:
+            pass
 
         if not userid:
-            await update.message.reply_text(
-                "❌ User ID vacío. Envía tu User ID de Muspy:"
+            await self._edit_panel(context,
+                "🔑 *Configuración de Muspy — 3/3*\n\n"
+                "❌ User ID vacío.\n🆔 Envía tu User ID de Muspy:"
             )
             return MUSPY_USERID
 
-        # Obtener datos del context
         email = context.user_data.get('muspy_email')
         password = context.user_data.get('muspy_password')
         user_id = context.user_data.get('muspy_user_id')
 
         if not all([email, password, user_id]):
-            await update.message.reply_text(
-                "❌ Error en los datos. Proceso cancelado."
-            )
+            await self._edit_panel(context, "❌ Error en los datos. Usa /muspy para reintentar.")
+            context.user_data.clear()
             return ConversationHandler.END
 
-        # Verificar credenciales
-        status_message = await update.message.reply_text(
-            "🔍 Verificando credenciales con Muspy..."
-        )
+        await self._edit_panel(context, "🔍 Verificando credenciales con Muspy...")
 
         try:
             success, message = self.muspy_service.verify_credentials(email, password, userid)
 
             if success:
-                # Guardar credenciales
                 if self.db.save_muspy_credentials(user_id, email, password, userid):
-                    await status_message.edit_text(
-                        "✅ *¡Cuenta de Muspy configurada correctamente!*\n\n"
-                        f"📧 Email: {email}\n"
-                        f"🆔 User ID: {userid}\n\n"
-                        "Usa `/muspy` para acceder a todas las funciones.",
-                        parse_mode='Markdown'
+                    await self._edit_panel(context,
+                        "✅ *¡Cuenta de Muspy configurada!*\n\n"
+                        f"📧 Email: `{email}`\n"
+                        f"🆔 User ID: `{userid}`\n\n"
+                        "Usa /muspy para acceder a todas las funciones."
                     )
                     try:
                         import admin_notify
@@ -261,30 +270,25 @@ class MuspyHandlers:
                     except Exception:
                         pass
                 else:
-                    await status_message.edit_text(
-                        "❌ Error guardando las credenciales. Inténtalo de nuevo."
-                    )
+                    await self._edit_panel(context, "❌ Error guardando credenciales. Inténtalo de nuevo.")
             else:
-                await status_message.edit_text(
-                    f"❌ Error de verificación: {message}\n\n"
-                    "Verifica tus credenciales e inténtalo de nuevo con `/muspy`."
+                await self._edit_panel(context,
+                    f"❌ Error de verificación: {message}\n\nUsa /muspy para reintentar."
                 )
-
         except Exception as e:
             logger.error(f"Error verificando credenciales Muspy: {e}")
-            await status_message.edit_text(
-                "❌ Error de conexión con Muspy. Inténtalo más tarde."
-            )
+            await self._edit_panel(context, "❌ Error de conexión con Muspy. Inténtalo más tarde.")
 
-        # Limpiar datos sensibles
         context.user_data.clear()
         return ConversationHandler.END
 
     async def cancel_login(self, update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
         """Cancela el proceso de login"""
-        await update.message.reply_text(
-            "❌ Configuración de Muspy cancelada."
-        )
+        try:
+            await update.message.delete()
+        except Exception:
+            pass
+        await self._edit_panel(context, "❌ Configuración de Muspy cancelada.\n\nUsa /muspy para volver al panel.")
         context.user_data.clear()
         return ConversationHandler.END
 

@@ -1961,24 +1961,29 @@ async def handle_text_input(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif 'waiting_for_lastfm_user' in context.user_data:
         user_id = context.user_data['waiting_for_lastfm_user']
         lastfm_username = update.message.text.strip()
+        try:
+            await update.message.delete()
+        except Exception:
+            pass
 
         if not lastfm_username:
-            await update.message.reply_text("❌ Nombre de usuario no válido.")
-            del context.user_data['waiting_for_lastfm_user']
+            await _lastfm_edit(context, "🎵 *Configuración de Last.fm*\n\n❌ Nombre de usuario no válido. Inténtalo de nuevo:")
             return
 
         if not services.get('lastfm_service'):
-            await update.message.reply_text("❌ Servicio de Last.fm no disponible.")
+            await _lastfm_edit(context, "❌ Servicio de Last.fm no disponible.")
             del context.user_data['waiting_for_lastfm_user']
             return
 
-        status_message = await update.message.reply_text(f"🔍 Verificando usuario '{lastfm_username}'...")
+        await _lastfm_edit(context, f"🎵 *Configuración de Last.fm*\n\n🔍 Verificando usuario `{lastfm_username}`...")
 
         try:
             if not services['lastfm_service'].check_user_exists(lastfm_username):
-                await status_message.edit_text(
-                    f"❌ El usuario '{lastfm_username}' no existe en Last.fm.\n"
-                    f"Verifica el nombre e inténtalo de nuevo."
+                await _lastfm_edit(
+                    context,
+                    f"🎵 *Configuración de Last.fm*\n\n"
+                    f"❌ El usuario `{lastfm_username}` no existe en Last.fm.\n"
+                    f"Verifica el nombre e inténtalo de nuevo:",
                 )
                 del context.user_data['waiting_for_lastfm_user']
                 return
@@ -1986,12 +1991,13 @@ async def handle_text_input(update: Update, context: ContextTypes.DEFAULT_TYPE):
             user_info = services['lastfm_service'].get_user_info(lastfm_username)
 
             if db.set_user_lastfm(user_id, lastfm_username, user_info):
-                message = f"✅ Usuario de Last.fm configurado: {lastfm_username}"
+                msg = f"✅ Usuario de Last.fm configurado: `{lastfm_username}`"
                 if user_info and user_info.get('playcount', 0) > 0:
-                    message += f"\n📊 Reproducciones: {user_info['playcount']:,}"
+                    msg += f"\n📊 Reproducciones: {user_info['playcount']:,}"
 
-                await status_message.edit_text(
-                    message,
+                await _lastfm_edit(
+                    context,
+                    msg,
                     reply_markup=InlineKeyboardMarkup([[
                         InlineKeyboardButton("🎵 Abrir Last.fm", callback_data=f"lastfm_menu_{user_id}")
                     ]])
@@ -2004,11 +2010,11 @@ async def handle_text_input(update: Update, context: ContextTypes.DEFAULT_TYPE):
                     username=tg_username,
                 )
             else:
-                await status_message.edit_text("❌ Error al configurar el usuario de Last.fm.")
+                await _lastfm_edit(context, "❌ Error al configurar el usuario de Last.fm.")
 
         except Exception as e:
             logger.error(f"Error configurando usuario Last.fm: {e}")
-            await status_message.edit_text("❌ Error verificando el usuario. Inténtalo de nuevo.")
+            await _lastfm_edit(context, "❌ Error verificando el usuario. Inténtalo de nuevo.")
 
         del context.user_data['waiting_for_lastfm_user']
         return
@@ -2094,27 +2100,34 @@ async def handle_text_input(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif 'waiting_for_lastfm_limit' in context.user_data:
         user_id = context.user_data['waiting_for_lastfm_limit']
         limit_text = update.message.text.strip()
+        try:
+            await update.message.delete()
+        except Exception:
+            pass
 
         try:
             limit = int(limit_text)
 
             if limit < 5 or limit > 10000:
-                await update.message.reply_text("❌ El límite debe estar entre 5 y 10000 artistas.")
+                await _lastfm_edit(context, "🔢 *Cambiar cantidad de artistas*\n\n❌ El límite debe estar entre 5 y 10000 artistas.\nInténtalo de nuevo:")
                 del context.user_data['waiting_for_lastfm_limit']
                 return
 
             if db.set_lastfm_sync_limit(user_id, limit):
-                await update.message.reply_text(
+                await _lastfm_edit(
+                    context,
                     f"✅ Límite de sincronización establecido a {limit} artistas.",
                     reply_markup=InlineKeyboardMarkup([[
                         InlineKeyboardButton("🔙 Volver a Last.fm", callback_data=f"lastfm_menu_{user_id}")
                     ]])
                 )
             else:
-                await update.message.reply_text("❌ Error al establecer el límite.")
+                await _lastfm_edit(context, "❌ Error al establecer el límite.")
 
         except ValueError:
-            await update.message.reply_text("❌ Debes enviar un número válido.")
+            await _lastfm_edit(context, "🔢 *Cambiar cantidad de artistas*\n\n❌ Debes enviar un número válido.\nInténtalo de nuevo:")
+            del context.user_data['waiting_for_lastfm_limit']
+            return
 
         del context.user_data['waiting_for_lastfm_limit']
         return
@@ -2150,84 +2163,57 @@ async def handle_text_input(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     # PRIORIDAD 4: Cambio de usuario de Last.fm
     elif 'waiting_for_lastfm_change_user' in context.user_data:
-        # Procesar cambio de usuario de Last.fm
         user_id = context.user_data['waiting_for_lastfm_change_user']
         lastfm_username = update.message.text.strip()
+        try:
+            await update.message.delete()
+        except Exception:
+            pass
 
         if not lastfm_username:
-            await update.message.reply_text("❌ Nombre de usuario no válido.")
-            del context.user_data['waiting_for_lastfm_change_user']
+            await _lastfm_edit(context, "👤 *Cambiar usuario de Last.fm*\n\n❌ Nombre de usuario no válido. Inténtalo de nuevo:")
             return
 
         if not lastfm_service:
-            await update.message.reply_text("❌ Servicio de Last.fm no disponible.")
+            await _lastfm_edit(context, "❌ Servicio de Last.fm no disponible.")
             del context.user_data['waiting_for_lastfm_change_user']
             return
 
-        # Verificar usuario
-        status_message = await update.message.reply_text(f"🔍 Verificando usuario '{lastfm_username}'...")
+        await _lastfm_edit(context, f"👤 *Cambiar usuario de Last.fm*\n\n🔍 Verificando usuario `{lastfm_username}`...")
 
         try:
             if not lastfm_service.check_user_exists(lastfm_username):
-                await status_message.edit_text(
-                    f"❌ El usuario '{lastfm_username}' no existe en Last.fm.\n"
-                    f"Verifica el nombre e inténtalo de nuevo."
+                await _lastfm_edit(
+                    context,
+                    f"👤 *Cambiar usuario de Last.fm*\n\n"
+                    f"❌ El usuario `{lastfm_username}` no existe en Last.fm.\n"
+                    f"Verifica el nombre e inténtalo de nuevo:",
                 )
                 del context.user_data['waiting_for_lastfm_change_user']
                 return
 
-            # Obtener información y actualizar
             user_info = lastfm_service.get_user_info(lastfm_username)
 
             if db.set_user_lastfm(user_id, lastfm_username, user_info):
-                message = f"✅ Usuario de Last.fm actualizado: {lastfm_username}"
+                msg = f"✅ Usuario de Last.fm actualizado: `{lastfm_username}`"
                 if user_info and user_info.get('playcount', 0) > 0:
-                    message += f"\n📊 Reproducciones: {user_info['playcount']:,}"
+                    msg += f"\n📊 Reproducciones: {user_info['playcount']:,}"
 
-                await status_message.edit_text(
-                    message,
+                await _lastfm_edit(
+                    context,
+                    msg,
                     reply_markup=InlineKeyboardMarkup([[
                         InlineKeyboardButton("🔙 Volver a Last.fm", callback_data=f"lastfm_menu_{user_id}")
                     ]])
                 )
             else:
-                await status_message.edit_text("❌ Error al actualizar el usuario de Last.fm.")
+                await _lastfm_edit(context, "❌ Error al actualizar el usuario de Last.fm.")
 
         except Exception as e:
             logger.error(f"Error actualizando usuario Last.fm: {e}")
-            await status_message.edit_text("❌ Error verificando el usuario. Inténtalo de nuevo.")
+            await _lastfm_edit(context, "❌ Error verificando el usuario. Inténtalo de nuevo.")
 
         del context.user_data['waiting_for_lastfm_change_user']
-        return
-
-    # PRIORIDAD 5: Límite de Last.fm
-    elif 'waiting_for_lastfm_limit' in context.user_data:
-        # Procesar nuevo límite de Last.fm
-        user_id = context.user_data['waiting_for_lastfm_limit']
-        limit_text = update.message.text.strip()
-
-        try:
-            limit = int(limit_text)
-
-            if limit < 5 or limit > 10000:
-                await update.message.reply_text("❌ El límite debe estar entre 5 y 10000 artistas.")
-                del context.user_data['waiting_for_lastfm_limit']
-                return
-
-            if db.set_lastfm_sync_limit(user_id, limit):
-                await update.message.reply_text(
-                    f"✅ Límite de sincronización establecido a {limit} artistas.",
-                    reply_markup=InlineKeyboardMarkup([[
-                        InlineKeyboardButton("🔙 Volver a Last.fm", callback_data=f"lastfm_menu_{user_id}")
-                    ]])
-                )
-            else:
-                await update.message.reply_text("❌ Error al establecer el límite.")
-
-        except ValueError:
-            await update.message.reply_text("❌ Debes enviar un número válido.")
-
-        del context.user_data['waiting_for_lastfm_limit']
         return
 
     # PRIORIDAD 6: Añadir artista
@@ -3667,11 +3653,13 @@ async def show_lastfm_setup(update, user: Dict, context = None):
     keyboard = [[InlineKeyboardButton("❌ Cancelar", callback_data=f"lastfm_cancel_{user['id']}")]]
     reply_markup = InlineKeyboardMarkup(keyboard)
 
-    await update.message.reply_text(
+    sent = await update.message.reply_text(
         message,
         parse_mode='Markdown',
         reply_markup=reply_markup
     )
+    if context is not None:
+        context.user_data['lastfm_panel_msg'] = sent
 
 async def show_lastfm_menu(update, user: Dict, lastfm_user: Dict):
     """Muestra el menú principal de Last.fm"""
@@ -4295,46 +4283,97 @@ async def radicale_callback_handler(update: Update, context: ContextTypes.DEFAUL
 
     elif action == "setup":
         context.user_data['radicale_user_id'] = user_id
+        context.user_data['radicale_panel_msg'] = query.message
         await query.edit_message_text(
-            "⚙️ *Configuración de Radicale*\n\n"
-            "Paso 1/4: Envía la URL base del servidor Radicale.\n"
-            "Ejemplo: `http://192.168.1.10:5232`\n\n"
-            "Escribe /cancel para cancelar.",
+            "⚙️ *Configuración de Radicale — 1/4*\n\n"
+            "Envía la URL base del servidor Radicale.\n"
+            "Ejemplo: `http://192.168.1.10:5232`",
             parse_mode='Markdown'
         )
         return RADICALE_URL
 
 
+def _lastfm_panel(context):
+    return context.user_data.get('lastfm_panel_msg')
+
+
+async def _lastfm_edit(context, text, parse_mode='Markdown', reply_markup=None):
+    panel = _lastfm_panel(context)
+    if panel:
+        try:
+            await panel.edit_text(text, parse_mode=parse_mode, reply_markup=reply_markup)
+            return True
+        except Exception:
+            pass
+    return False
+
+
+def _radicale_panel(context):
+    return context.user_data.get('radicale_panel_msg')
+
+
+async def _radicale_edit(context, text, parse_mode='Markdown'):
+    panel = _radicale_panel(context)
+    if panel:
+        try:
+            await panel.edit_text(text, parse_mode=parse_mode)
+            return
+        except Exception:
+            pass
+
+
 async def radicale_url_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    try:
+        await update.message.delete()
+    except Exception:
+        pass
     context.user_data['radicale_url'] = update.message.text.strip()
-    await update.message.reply_text(
-        "Paso 2/4: Envía tu nombre de usuario de Radicale."
+    await _radicale_edit(context,
+        "⚙️ *Configuración de Radicale — 2/4*\n\n"
+        f"✅ URL: `{context.user_data['radicale_url']}`\n\n"
+        "Envía tu nombre de usuario de Radicale:"
     )
     return RADICALE_USERNAME
 
 
 async def radicale_username_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    try:
+        await update.message.delete()
+    except Exception:
+        pass
     context.user_data['radicale_username'] = update.message.text.strip()
-    await update.message.reply_text(
-        "Paso 3/4: Envía tu contraseña de Radicale."
+    await _radicale_edit(context,
+        "⚙️ *Configuración de Radicale — 3/4*\n\n"
+        f"✅ Usuario: `{context.user_data['radicale_username']}`\n\n"
+        "Envía tu contraseña de Radicale:"
     )
     return RADICALE_PASSWORD
 
 
 async def radicale_password_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    try:
+        await update.message.delete()
+    except Exception:
+        pass
     context.user_data['radicale_password'] = update.message.text.strip()
-    await update.message.reply_text(
-        "Paso 4/4: Envía el nombre del calendario (ej: `conciertos`).",
-        parse_mode='Markdown'
+    await _radicale_edit(context,
+        "⚙️ *Configuración de Radicale — 4/4*\n\n"
+        "Envía el nombre del calendario \\(ej: `conciertos`\\):",
+        parse_mode='MarkdownV2'
     )
     return RADICALE_CALENDAR
 
 
 async def radicale_calendar_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     from telegram.ext import ConversationHandler
+    try:
+        await update.message.delete()
+    except Exception:
+        pass
+
     user_id = context.user_data.get('radicale_user_id')
     if not user_id:
-        await update.message.reply_text("❌ Sesión expirada. Usa /radicale de nuevo.")
+        await _radicale_edit(context, "❌ Sesión expirada. Usa /radicale de nuevo.")
         return ConversationHandler.END
 
     url = context.user_data.get('radicale_url', '')
@@ -4342,39 +4381,43 @@ async def radicale_calendar_handler(update: Update, context: ContextTypes.DEFAUL
     password = context.user_data.get('radicale_password', '')
     calendar = update.message.text.strip()
 
-    await update.message.reply_text("🔗 Probando conexión...")
+    await _radicale_edit(context, "🔗 Probando conexión con Radicale...")
 
+    import asyncio
     from apis.radicale import RadicaleClient
     client = RadicaleClient(url, username, password, calendar)
-    ok, msg = client.test_connection()
+    loop = asyncio.get_event_loop()
+    ok, msg = await loop.run_in_executor(None, client.test_connection)
 
     if ok:
         db.save_radicale_config(user_id, url, username, password, calendar)
-        await update.message.reply_text(
-            f"✅ Radicale configurado correctamente.\n\n"
+        await _radicale_edit(context,
+            f"✅ *Radicale configurado correctamente*\n\n"
             f"🌐 URL: `{url}`\n"
             f"👤 Usuario: `{username}`\n"
             f"📅 Calendario: `{calendar}`\n\n"
-            f"Ahora puedes usar `/cal` para subir eventos a Radicale.",
-            parse_mode='Markdown'
+            f"Usa /cal para subir eventos a Radicale."
         )
     else:
-        await update.message.reply_text(
+        await _radicale_edit(context,
             f"❌ No se pudo conectar: {msg}\n\n"
             f"Revisa los datos e inténtalo de nuevo con /radicale."
         )
 
-    for key in ('radicale_url', 'radicale_username', 'radicale_password', 'radicale_user_id'):
+    for key in ('radicale_url', 'radicale_username', 'radicale_password', 'radicale_user_id', 'radicale_panel_msg'):
         context.user_data.pop(key, None)
-
     return ConversationHandler.END
 
 
 async def radicale_cancel_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     from telegram.ext import ConversationHandler
-    for key in ('radicale_url', 'radicale_username', 'radicale_password', 'radicale_user_id'):
+    try:
+        await update.message.delete()
+    except Exception:
+        pass
+    await _radicale_edit(context, "❌ Configuración de Radicale cancelada.\n\nUsa /radicale para volver al panel.")
+    for key in ('radicale_url', 'radicale_username', 'radicale_password', 'radicale_user_id', 'radicale_panel_msg'):
         context.user_data.pop(key, None)
-    await update.message.reply_text("❌ Configuración de Radicale cancelada.")
     return ConversationHandler.END
 
 # ===========================

@@ -443,6 +443,7 @@ async def handle_lastfm_change_limit(query, user: Dict, context):
 
     # Marcar que estamos esperando el límite
     context.user_data['waiting_for_lastfm_limit'] = user['id']
+    context.user_data['lastfm_panel_msg'] = query.message
 
     return message, keyboard
 
@@ -457,6 +458,7 @@ async def handle_lastfm_change_user(query, user: Dict, context):
 
     # Marcar que estamos esperando el nuevo usuario
     context.user_data['waiting_for_lastfm_change_user'] = user['id']
+    context.user_data['lastfm_panel_msg'] = query.message
 
     return message, keyboard
 
