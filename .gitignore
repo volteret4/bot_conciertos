@@ -1,1 +1,4 @@
 __pycache__/
+*.json
+.env
+artist_tracker.db
