@@ -11,6 +11,7 @@ from datetime import datetime, date, timedelta
 from typing import Dict, List, Optional, Tuple
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ContextTypes
+import admin_notify
 
 logger = logging.getLogger(__name__)
 
@@ -20,6 +21,17 @@ class CalendarHandlers:
     def __init__(self, database, muspy_service):
         self.db = database
         self.muspy_service = muspy_service
+
+    def _get_username(self, user_id: int) -> str:
+        try:
+            conn = self.db.get_connection()
+            cur = conn.cursor()
+            cur.execute("SELECT username FROM users WHERE id = ?", (user_id,))
+            row = cur.fetchone()
+            conn.close()
+            return row[0] if row else str(user_id)
+        except Exception:
+            return str(user_id)
 
     # ─── /cal panel principal ─────────────────────────────────────────────────
 
@@ -132,6 +144,11 @@ class CalendarHandlers:
                 f"🌍 Países: {', '.join(sorted(user_countries))}",
             )
             await query.edit_message_text("✅ Calendario de conciertos enviado.")
+            await admin_notify.notify_async(
+                "calendario",
+                f"ICS conciertos · {len(concerts)} eventos",
+                username=self._get_username(user_id),
+            )
 
         except Exception as e:
             logger.error(f"Error generando calendario de conciertos: {e}", exc_info=True)
@@ -194,6 +211,7 @@ class CalendarHandlers:
         await query.edit_message_text(f"☁️ Subiendo {len(concerts)} conciertos a Radicale...")
 
         from apis.radicale import RadicaleClient
+        import asyncio
         client = RadicaleClient(
             url=radicale_cfg['url'],
             username=radicale_cfg['username'],
@@ -201,7 +219,10 @@ class CalendarHandlers:
             calendar=radicale_cfg['calendar'],
         )
 
-        pushed, errors, error_msgs = client.push_events_bulk(concerts, event_type='concert')
+        loop = asyncio.get_event_loop()
+        pushed, errors, error_msgs = await loop.run_in_executor(
+            None, lambda: client.push_events_bulk(concerts, event_type='concert')
+        )
 
         msg = (
             f"☁️ *Subida a Radicale completada*\n\n"
@@ -212,6 +233,12 @@ class CalendarHandlers:
             msg += f"\n\n_Errores: {'; '.join(error_msgs[:3])}_"
 
         await query.edit_message_text(msg, parse_mode='Markdown')
+        if pushed > 0:
+            await admin_notify.notify_async(
+                "calendario",
+                f"Radicale conciertos · {pushed} subidos · {radicale_cfg.get('calendar', '')}",
+                username=self._get_username(user_id),
+            )
 
     # ─── Radicale: discos ─────────────────────────────────────────────────────
 
@@ -233,6 +260,7 @@ class CalendarHandlers:
         await query.edit_message_text(f"☁️ Subiendo {len(releases)} lanzamientos a Radicale...")
 
         from apis.radicale import RadicaleClient
+        import asyncio
         client = RadicaleClient(
             url=radicale_cfg['url'],
             username=radicale_cfg['username'],
@@ -240,7 +268,10 @@ class CalendarHandlers:
             calendar=radicale_cfg['calendar'],
         )
 
-        pushed, errors, error_msgs = client.push_events_bulk(releases, event_type='release')
+        loop = asyncio.get_event_loop()
+        pushed, errors, error_msgs = await loop.run_in_executor(
+            None, lambda: client.push_events_bulk(releases, event_type='release')
+        )
 
         msg = (
             f"☁️ *Subida a Radicale completada*\n\n"

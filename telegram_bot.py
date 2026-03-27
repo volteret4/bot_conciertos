@@ -4154,13 +4154,13 @@ async def notify_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(
             f"🔔 *Configuración de notificaciones:*\n\n"
             f"Estado: {status}\n"
-            f"Día: {day_name} (índice {day_idx})\n"
+            f"Día: {day_name} (día {day_idx + 1})\n"
             f"Hora: {user.get('notification_time', '09:00')}\n\n"
             f"*Comandos:*\n"
             f"`/notify toggle` — Activar/desactivar\n"
             f"`/notify HH:MM` — Cambiar hora (ej: `/notify 09:00`)\n"
-            f"`/notify day N` — Cambiar día (0=lun, 1=mar, 2=mié, 3=jue, 4=vie, 5=sáb, 6=dom)\n\n"
-            f"Las notificaciones son semanales. Asegúrate de ejecutar `python notifications.py`.",
+            f"`/notify day N` — Cambiar día (1=lun, 2=mar, 3=mié, 4=jue, 5=vie, 6=sáb, 7=dom)\n\n"
+            f"Las notificaciones son semanales.",
             parse_mode='Markdown'
         )
         return
@@ -4181,14 +4181,15 @@ async def notify_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     elif command == "day":
         if len(context.args) < 2:
-            await update.message.reply_text("❌ Uso: `/notify day N` (0=lun … 6=dom)", parse_mode='Markdown')
+            await update.message.reply_text("❌ Uso: `/notify day N` (1=lun … 7=dom)", parse_mode='Markdown')
             return
         try:
-            day = int(context.args[1])
-            if not 0 <= day <= 6:
+            day_input = int(context.args[1])
+            if not 1 <= day_input <= 7:
                 raise ValueError
+            day = day_input - 1  # convertir a 0-6 internamente
         except ValueError:
-            await update.message.reply_text("❌ El día debe ser un número entre 0 (lunes) y 6 (domingo).")
+            await update.message.reply_text("❌ El día debe ser un número entre 1 (lunes) y 7 (domingo).")
             return
         if user_services.set_notification_day(user['id'], day):
             await update.message.reply_text(f"✅ Día de notificación cambiado a *{_NOTIFY_DAYS[day]}*.", parse_mode='Markdown')

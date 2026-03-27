@@ -68,6 +68,10 @@ class TicketmasterService:
                 if venue_info['country_code'] and venue_info['country_code'] != country_code:
                     continue
 
+                # FILTRO DE ARTISTA: el artista buscado debe aparecer en los performers del evento
+                if not self._artist_matches_event(artist_name, event):
+                    continue
+
                 concert = {
                     'artist': artist_name,
                     'name': event.get('name', 'No title'),
@@ -143,6 +147,10 @@ class TicketmasterService:
                 if venue_info['city'] == 'Unknown city' or not venue_info['city']:
                     continue
 
+                # FILTRO DE ARTISTA: el artista buscado debe aparecer en los performers
+                if not self._artist_matches_event(artist_name, event):
+                    continue
+
                 concert = {
                     'artist': artist_name,
                     'name': event.get('name', 'No title'),
@@ -167,6 +175,26 @@ class TicketmasterService:
             return [], f"Error en la solicitud: {str(e)}"
         except ValueError as e:
             return [], f"Error procesando respuesta: {str(e)}"
+
+    def _artist_matches_event(self, artist_name: str, event: dict) -> bool:
+        """
+        Verifica que el artista buscado sea un performer real del evento,
+        no solo una coincidencia en el nombre del venue o del evento.
+        """
+        search = artist_name.lower().strip()
+        # Buscar en _embedded.attractions (performers del evento)
+        attractions = (
+            event.get('_embedded', {}).get('attractions', [])
+        )
+        if attractions:
+            for att in attractions:
+                att_name = att.get('name', '').lower()
+                if search in att_name or att_name in search:
+                    return True
+            # Si hay attractions pero ninguna coincide, es falso positivo
+            return False
+        # Sin attractions en el response: aceptar (no podemos verificar)
+        return True
 
     def _extract_venue_info(self, event):
         """
