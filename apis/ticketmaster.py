@@ -26,7 +26,7 @@ class TicketmasterService:
         try:
             params = {
                 "keyword": artist_name,
-                "size": 5,
+                "size": 20,
                 "apikey": self.api_key,
             }
             response = requests.get(self.attractions_url, params=params, timeout=10)
@@ -56,6 +56,35 @@ class TicketmasterService:
         response.raise_for_status()
         data = response.json()
         return data.get('_embedded', {}).get('events', [])
+
+    def _keyword_events(self, artist_name: str, country_code: str = None, size: int = 200) -> list:
+        """Fallback: busca eventos por keyword filtrando por attractions del evento."""
+        params = {
+            "keyword": artist_name,
+            "size": size,
+            "sort": "date,asc",
+            "apikey": self.api_key,
+        }
+        if country_code:
+            params["countryCode"] = country_code
+        response = requests.get(self.base_url, params=params, timeout=15)
+        response.raise_for_status()
+        data = response.json()
+        events = data.get('_embedded', {}).get('events', [])
+        search = artist_name.lower().strip()
+        filtered = []
+        for event in events:
+            attractions = event.get('_embedded', {}).get('attractions', [])
+            if attractions:
+                if any(att.get('name', '').lower().strip() == search for att in attractions):
+                    filtered.append(event)
+                # si hay attractions pero ninguna coincide exactamente, descartar
+            else:
+                # sin attractions: aceptar sólo si el título del evento coincide exactamente
+                event_name = event.get('name', '').lower().strip()
+                if event_name == search:
+                    filtered.append(event)
+        return filtered
 
     def _event_to_concert(self, event: dict, artist_name: str) -> dict | None:
         """Convierte un evento de la API al formato interno. Devuelve None si no tiene ciudad."""
@@ -90,10 +119,10 @@ class TicketmasterService:
 
         try:
             attraction_id = self._get_attraction_id(artist_name)
-            if not attraction_id:
-                return [], f"Artista '{artist_name}' no encontrado en Ticketmaster"
-
-            events = self._search_events_by_attraction(attraction_id, country_code=country_code, size=size)
+            if attraction_id:
+                events = self._search_events_by_attraction(attraction_id, country_code=country_code, size=size)
+            else:
+                events = self._keyword_events(artist_name, country_code=country_code, size=size)
 
             concerts = []
             for event in events:
@@ -114,7 +143,7 @@ class TicketmasterService:
 
     def search_concerts_global(self, artist_name, size=200):
         """
-        Buscar conciertos para un artista globalmente usando attraction ID.
+        Buscar conciertos para un artista globalmente usando attraction ID si está disponible.
         """
         if not self.api_key:
             return [], "No se ha configurado API Key para Ticketmaster"
@@ -126,10 +155,10 @@ class TicketmasterService:
 
         try:
             attraction_id = self._get_attraction_id(artist_name)
-            if not attraction_id:
-                return [], f"Artista '{artist_name}' no encontrado en Ticketmaster"
-
-            events = self._search_events_by_attraction(attraction_id, country_code=None, size=size)
+            if attraction_id:
+                events = self._search_events_by_attraction(attraction_id, country_code=None, size=size)
+            else:
+                events = self._keyword_events(artist_name, country_code=None, size=size)
 
             concerts = []
             for event in events:
