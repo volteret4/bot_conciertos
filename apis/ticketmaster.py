@@ -19,8 +19,10 @@ class TicketmasterService:
 
     def _fetch_events(self, artist_name: str, country_code: str = None, size: int = 200) -> list:
         """
-        Busca eventos por keyword y filtra: solo acepta eventos donde el artista
-        aparece como attraction con nombre exacto. Si no hay attractions, descarta.
+        Busca eventos por keyword y filtra falsos positivos.
+        - Con attractions: el artista debe aparecer con nombre exacto en la lista de performers.
+        - Sin attractions: el nombre del evento debe empezar por el nombre del artista
+          (ej. "Placebo en Madrid" sí, "Noche en Moby Dick Club" no).
         """
         params = {
             "keyword": artist_name,
@@ -38,11 +40,15 @@ class TicketmasterService:
         filtered = []
         for event in events:
             attractions = event.get('_embedded', {}).get('attractions', [])
-            if not attractions:
-                # Sin attractions no podemos verificar: descartar para evitar falsos positivos
-                continue
-            if any(att.get('name', '').lower().strip() == search for att in attractions):
-                filtered.append(event)
+            if attractions:
+                if any(att.get('name', '').lower().strip() == search for att in attractions):
+                    filtered.append(event)
+                # hay attractions pero ninguna coincide → falso positivo, descartar
+            else:
+                # sin attractions: aceptar solo si el título del evento empieza por el artista
+                event_name = event.get('name', '').lower().strip()
+                if event_name == search or event_name.startswith(search + ' '):
+                    filtered.append(event)
         return filtered
 
     def _event_to_concert(self, event: dict, artist_name: str) -> dict | None:
