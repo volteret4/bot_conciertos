@@ -10,89 +10,101 @@ class TicketmasterService:
     def __init__(self, api_key, cache_dir, cache_duration=24):
         self.api_key = api_key
         self.base_url = "https://app.ticketmaster.com/discovery/v2/events.json"
+        self.attractions_url = "https://app.ticketmaster.com/discovery/v2/attractions.json"
         self.cache_dir = Path(cache_dir)
         self.cache_duration = cache_duration  # horas
 
         # Crear directorio de caché si no existe
         self.cache_dir.mkdir(parents=True, exist_ok=True)
 
+    def _get_attraction_id(self, artist_name: str) -> str | None:
+        """
+        Busca el ID de Ticketmaster para un artista usando la API de Attractions.
+        Sólo acepta coincidencia exacta de nombre (case-insensitive).
+        Devuelve el ID o None si no se encuentra.
+        """
+        try:
+            params = {
+                "keyword": artist_name,
+                "size": 5,
+                "apikey": self.api_key,
+            }
+            response = requests.get(self.attractions_url, params=params, timeout=10)
+            response.raise_for_status()
+            data = response.json()
+            attractions = data.get('_embedded', {}).get('attractions', [])
+            search = artist_name.lower().strip()
+            for att in attractions:
+                if att.get('name', '').lower().strip() == search:
+                    return att['id']
+        except Exception:
+            pass
+        return None
+
+    def _search_events_by_attraction(self, attraction_id: str, country_code: str = None, size: int = 200) -> list:
+        """Busca eventos para un attraction ID dado, opcionalmente filtrado por país."""
+        params = {
+            "attractionId": attraction_id,
+            "size": size,
+            "sort": "date,asc",
+            "apikey": self.api_key,
+        }
+        if country_code:
+            params["countryCode"] = country_code
+
+        response = requests.get(self.base_url, params=params, timeout=15)
+        response.raise_for_status()
+        data = response.json()
+        return data.get('_embedded', {}).get('events', [])
+
+    def _event_to_concert(self, event: dict, artist_name: str) -> dict | None:
+        """Convierte un evento de la API al formato interno. Devuelve None si no tiene ciudad."""
+        venue_info = self._extract_venue_info(event)
+        if not venue_info['city'] or venue_info['city'] == 'Unknown city':
+            return None
+        return {
+            'artist': artist_name,
+            'name': event.get('name', ''),
+            'venue': venue_info['venue'],
+            'city': venue_info['city'],
+            'country': venue_info['country'],
+            'country_code': venue_info['country_code'],
+            'date': event.get('dates', {}).get('start', {}).get('localDate', ''),
+            'time': event.get('dates', {}).get('start', {}).get('localTime', ''),
+            'url': event.get('url', ''),
+            'source': 'Ticketmaster',
+            'id': event.get('id', ''),
+        }
+
     def search_concerts(self, artist_name, country_code="ES", size=50):
         """
-        Buscar conciertos para un artista en un país específico, primero en caché y luego en API
-
-        Args:
-            artist_name (str): Nombre del artista a buscar
-            country_code (str): Código de país ISO (ES, US, etc.)
-            size (int): Número máximo de resultados
-
-        Returns:
-            tuple: (lista de conciertos, mensaje)
+        Buscar conciertos para un artista en un país específico usando attraction ID.
         """
         if not self.api_key:
             return [], "No se ha configurado API Key para Ticketmaster"
 
-        # Comprobar si tenemos resultado en caché válido
         cache_file = self._get_cache_file_path(artist_name, country_code)
         cached_data = self._load_from_cache(cache_file)
-
         if cached_data:
             return cached_data, f"Se encontraron {len(cached_data)} conciertos para {artist_name} (caché)"
 
-        # Si no hay caché válido, consultar API
-        params = {
-            "keyword": artist_name,
-            "countryCode": country_code,
-            "size": size,
-            "sort": "date,asc",
-            "apikey": self.api_key
-        }
-
         try:
-            response = requests.get(self.base_url, params=params)
-            response.raise_for_status()
-            data = response.json()
+            attraction_id = self._get_attraction_id(artist_name)
+            if not attraction_id:
+                return [], f"Artista '{artist_name}' no encontrado en Ticketmaster"
 
-            if '_embedded' not in data or 'events' not in data['_embedded']:
-                return [], "No se encontraron eventos"
+            events = self._search_events_by_attraction(attraction_id, country_code=country_code, size=size)
 
             concerts = []
-            for event in data['_embedded']['events']:
-                # Extraer datos relevantes con validación de calidad
-                venue_info = self._extract_venue_info(event)
-
-                # FILTRO DE CALIDAD: Solo guardar si tenemos ciudad válida
-                if venue_info['city'] == 'Unknown city' or not venue_info['city']:
+            for event in events:
+                concert = self._event_to_concert(event, artist_name)
+                if concert is None:
                     continue
-
-                # FILTRO DE PAÍS: Verificar que el código de país coincida
-                if venue_info['country_code'] and venue_info['country_code'] != country_code:
+                if concert['country_code'] and concert['country_code'] != country_code:
                     continue
-
-                # FILTRO DE ARTISTA: el artista buscado debe aparecer en los performers del evento
-                if not self._artist_matches_event(artist_name, event):
-                    continue
-
-                concert = {
-                    'artist': artist_name,
-                    'name': event.get('name', 'No title'),
-                    'venue': venue_info['venue'],
-                    'city': venue_info['city'],
-                    'country': venue_info['country'],
-                    'country_code': venue_info['country_code'],
-                    'date': event.get('dates', {}).get('start', {}).get('localDate', 'Unknown date'),
-                    'time': event.get('dates', {}).get('start', {}).get('localTime', ''),
-                    'image': next((img.get('url', '') for img in event.get('images', [])
-                            if img.get('ratio') == '16_9' and img.get('width') > 500),
-                            event.get('images', [{}])[0].get('url', '') if event.get('images') else ''),
-                    'url': event.get('url', ''),
-                    'source': 'Ticketmaster',
-                    'id': event.get('id', '')
-                }
                 concerts.append(concert)
 
-            # Guardar en caché
             self._save_to_cache(cache_file, concerts)
-
             return concerts, f"Se encontraron {len(concerts)} conciertos para {artist_name}"
 
         except requests.exceptions.RequestException as e:
@@ -102,73 +114,30 @@ class TicketmasterService:
 
     def search_concerts_global(self, artist_name, size=200):
         """
-        Buscar conciertos para un artista globalmente (todos los países)
-
-        Args:
-            artist_name (str): Nombre del artista a buscar
-            size (int): Número máximo de resultados
-
-        Returns:
-            tuple: (lista de conciertos, mensaje)
+        Buscar conciertos para un artista globalmente usando attraction ID.
         """
         if not self.api_key:
             return [], "No se ha configurado API Key para Ticketmaster"
 
-        # Comprobar si tenemos resultado en caché válido
         cache_file = self._get_cache_file_path_global(artist_name)
         cached_data = self._load_from_cache(cache_file)
-
         if cached_data:
             return cached_data, f"Se encontraron {len(cached_data)} conciertos para {artist_name} (caché global)"
 
-        # Si no hay caché válido, consultar API globalmente
-        params = {
-            "keyword": artist_name,
-            "size": size,
-            "sort": "date,asc",
-            "apikey": self.api_key
-            # Sin countryCode para búsqueda global
-        }
-
         try:
-            response = requests.get(self.base_url, params=params)
-            response.raise_for_status()
-            data = response.json()
+            attraction_id = self._get_attraction_id(artist_name)
+            if not attraction_id:
+                return [], f"Artista '{artist_name}' no encontrado en Ticketmaster"
 
-            if '_embedded' not in data or 'events' not in data['_embedded']:
-                return [], "No se encontraron eventos"
+            events = self._search_events_by_attraction(attraction_id, country_code=None, size=size)
 
             concerts = []
-            for event in data['_embedded']['events']:
-                # Extraer datos relevantes incluyendo país
-                venue_info = self._extract_venue_info(event)
+            for event in events:
+                concert = self._event_to_concert(event, artist_name)
+                if concert is not None:
+                    concerts.append(concert)
 
-                # FILTRO DE CALIDAD: Solo guardar si tenemos ciudad válida
-                if venue_info['city'] == 'Unknown city' or not venue_info['city']:
-                    continue
-
-                # FILTRO DE ARTISTA: el artista buscado debe aparecer en los performers
-                if not self._artist_matches_event(artist_name, event):
-                    continue
-
-                concert = {
-                    'artist': artist_name,
-                    'name': event.get('name', 'No title'),
-                    'venue': venue_info['venue'],
-                    'city': venue_info['city'],
-                    'country': venue_info['country'],
-                    'country_code': venue_info['country_code'],
-                    'date': event.get('dates', {}).get('start', {}).get('localDate', 'Unknown date'),
-                    'time': event.get('dates', {}).get('start', {}).get('localTime', ''),
-                    'url': event.get('url', ''),
-                    'source': 'Ticketmaster',
-                    'id': event.get('id', '')
-                }
-                concerts.append(concert)
-
-            # Guardar en caché
             self._save_to_cache(cache_file, concerts)
-
             return concerts, f"Se encontraron {len(concerts)} conciertos globales para {artist_name}"
 
         except requests.exceptions.RequestException as e:
@@ -176,45 +145,7 @@ class TicketmasterService:
         except ValueError as e:
             return [], f"Error procesando respuesta: {str(e)}"
 
-    def _artist_matches_event(self, artist_name: str, event: dict) -> bool:
-        """
-        Verifica que el artista buscado sea un performer real del evento,
-        no solo una coincidencia en el nombre del venue o del evento.
-        """
-        search = artist_name.lower().strip()
-        attractions = event.get('_embedded', {}).get('attractions', [])
-        if attractions:
-            for att in attractions:
-                att_name = att.get('name', '').lower().strip()
-                if self._names_match(search, att_name):
-                    return True
-            return False
-        # Sin attractions: verificar que el título del evento mencione al artista
-        event_name = event.get('name', '').lower().strip()
-        if event_name and not self._names_match(search, event_name):
-            return False
-        return True
-
-    @staticmethod
-    def _names_match(search: str, att_name: str) -> bool:
-        """
-        Compara dos nombres de artista con tolerancia mínima para evitar falsos positivos
-        como 'moby' vs 'sala moby dick' o 'air' vs 'riyadh air metropolitano'.
-        Sólo acepta si los nombres son iguales o muy similares en longitud (por palabras).
-        """
-        if search == att_name:
-            return True
-        # Rechazar si la proporción de palabras es baja (substring en nombre mucho más largo)
-        n_s = len(search.split())
-        n_a = len(att_name.split())
-        if n_s == 0 or n_a == 0:
-            return False
-        ratio = min(n_s, n_a) / max(n_s, n_a)
-        if ratio < 0.6:
-            return False
-        return search in att_name or att_name in search
-
-    def _extract_venue_info(self, event):
+def _extract_venue_info(self, event):
         """
         Extrae información de venue de manera robusta con múltiples fallbacks
         Basado en la estructura oficial de la API de Ticketmaster
