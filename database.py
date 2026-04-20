@@ -461,8 +461,7 @@ class ArtistTrackerDatabase:
         try:
             from apis.mb_artist_info import search_artist_in_musicbrainz
 
-            exact_query = f'"{artist_name}"'
-            search_results = search_artist_in_musicbrainz(exact_query)
+            search_results = search_artist_in_musicbrainz(artist_name)
 
             if not search_results:
                 return []
@@ -504,12 +503,7 @@ class ArtistTrackerDatabase:
         try:
             from apis.mb_artist_info import search_artist_in_musicbrainz
 
-            field_query = f'artist:"{artist_name}"'
-            search_results = search_artist_in_musicbrainz(field_query)
-
-            if not search_results:
-                field_query = f'artist:{artist_name}'
-                search_results = search_artist_in_musicbrainz(field_query)
+            search_results = search_artist_in_musicbrainz(artist_name)
 
             if not search_results:
                 return []
