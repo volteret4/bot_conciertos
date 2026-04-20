@@ -127,7 +127,7 @@ class TicketmasterService:
         except ValueError as e:
             return [], f"Error procesando respuesta: {str(e)}"
 
-def _extract_venue_info(self, event):
+    def _extract_venue_info(self, event):
         """
         Extrae información de venue de manera robusta con múltiples fallbacks
         Basado en la estructura oficial de la API de Ticketmaster
