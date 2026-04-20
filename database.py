@@ -468,7 +468,7 @@ class ArtistTrackerDatabase:
                 return []
 
             candidates = []
-            for result in search_results[:5]:
+            for result in search_results[:10]:
                 candidate = self._parse_search_result(result, boost_score=20)
                 candidates.append(candidate)
 
@@ -489,7 +489,7 @@ class ArtistTrackerDatabase:
                 return []
 
             candidates = []
-            for result in search_results[:8]:
+            for result in search_results[:15]:
                 candidate = self._parse_search_result(result, boost_score=0)
                 candidates.append(candidate)
 
@@ -515,7 +515,7 @@ class ArtistTrackerDatabase:
                 return []
 
             candidates = []
-            for result in search_results[:5]:
+            for result in search_results[:10]:
                 candidate = self._parse_search_result(result, boost_score=10)
                 candidates.append(candidate)
 
