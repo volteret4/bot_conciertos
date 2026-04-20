@@ -457,7 +457,7 @@ def search_artist_in_musicbrainz(artist_name: str) -> List[Dict]:
     
     try:
         logger.info(f"Buscando artista en MusicBrainz: {artist_name}")
-        result = musicbrainzngs.search_artists(artist=artist_name, limit=5)
+        result = musicbrainzngs.search_artists(artist=artist_name, limit=15)
         
         if result and 'artist-list' in result:
             # Guardar en cache
