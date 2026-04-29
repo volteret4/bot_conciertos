@@ -19,6 +19,22 @@ from contextlib import contextmanager
 
 logger = logging.getLogger(__name__)
 
+# MusicBrainz placeholder MBIDs that should never be added as real artists
+_MB_PLACEHOLDER_MBIDS = {
+    'eec63d3c-3b81-4ad4-b1e4-7c147d4d2b61',  # [no artist]
+    '125ec42a-7229-4250-afc5-e057484327fe',   # [unknown]
+    '89ad4ac3-39f7-470e-963a-56509c546377',   # [various artists]
+}
+
+def _filter_mb_placeholders(candidates: list) -> list:
+    """Remove MusicBrainz special placeholder entries from a candidate list."""
+    return [
+        c for c in candidates
+        if c.get('mbid') not in _MB_PLACEHOLDER_MBIDS
+        and c.get('name', '').strip() not in ('', '[no artist]', '[unknown]', '[various artists]')
+    ]
+
+
 class ArtistTrackerDatabase:
     """Clase para manejar la base de datos de usuarios y artistas seguidos"""
 
@@ -443,6 +459,9 @@ class ArtistTrackerDatabase:
                 elif not mbid:
                     unique_candidates.append(candidate)
 
+            # Filtrar entidades placeholder de MusicBrainz
+            unique_candidates = _filter_mb_placeholders(unique_candidates)
+
             # Aplicar filtros de relevancia
             filtered_candidates = self._filter_candidates_by_relevance(unique_candidates, artist_name)
 
@@ -699,6 +718,11 @@ class ArtistTrackerDatabase:
 
         try:
             mbid = candidate['mbid']
+            name = candidate.get('name', '').strip()
+
+            if mbid in _MB_PLACEHOLDER_MBIDS or not name or name in ('[no artist]', '[unknown]', '[various artists]'):
+                logger.warning(f"Rechazando entrada placeholder de MusicBrainz: mbid={mbid}, name={name!r}")
+                return None
 
             # Verificar si ya existe
             cursor.execute("SELECT id FROM artists WHERE mbid = ?", (mbid,))
@@ -711,7 +735,7 @@ class ArtistTrackerDatabase:
             artist_data = get_artist_from_musicbrainz(mbid) if mbid else None
 
             # Extraer información relevante
-            name = candidate['name']
+            # name already validated above
             country = candidate.get('country')
             artist_type = candidate.get('type')
             disambiguation = candidate.get('disambiguation')
@@ -847,14 +871,26 @@ class ArtistTrackerDatabase:
         cursor = conn.cursor()
 
         try:
+            # Try by name first (handles duplicates with IN instead of =)
             cursor.execute("""
                 DELETE FROM user_followed_artists
-                WHERE user_id = ? AND artist_id = (
+                WHERE user_id = ? AND artist_id IN (
                     SELECT id FROM artists WHERE LOWER(name) = LOWER(?)
                 )
             """, (user_id, artist_name))
 
             was_removed = cursor.rowcount > 0
+
+            # If not found by name, try by MBID (useful for placeholder names like [no artist])
+            if not was_removed:
+                cursor.execute("""
+                    DELETE FROM user_followed_artists
+                    WHERE user_id = ? AND artist_id IN (
+                        SELECT id FROM artists WHERE mbid = ?
+                    )
+                """, (user_id, artist_name))
+                was_removed = cursor.rowcount > 0
+
             conn.commit()
             return was_removed
 
