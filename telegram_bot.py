@@ -3763,7 +3763,31 @@ async def pick_country_callback(update: Update, context: ContextTypes.DEFAULT_TY
 
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    """Comando /start"""
+    """Comando /start — en grupos registra el chat_id del grupo; en privado registra al usuario."""
+    chat = update.effective_chat
+
+    if chat.type in ('group', 'supergroup'):
+        chat_id = chat.id
+        group_title = chat.title or str(chat_id)
+        username = f"grupo_{group_title}"
+
+        existing = db.get_user_by_chat_id(chat_id)
+        if existing:
+            await update.message.reply_text(
+                f"*{group_title}* ya está registrado.\n\n"
+                f"chat\\_id: `{chat_id}`",
+                parse_mode='Markdown'
+            )
+        else:
+            db.add_user(username, chat_id)
+            await update.message.reply_text(
+                f"✅ *{group_title}* registrado.\n\n"
+                f"chat\\_id: `{chat_id}`\n\n"
+                "Usa este valor en Grafana u otros servicios para enviar notificaciones a este grupo.",
+                parse_mode='Markdown'
+            )
+        return
+
     user = await _get_or_register_notify(update)
 
     if not user:
