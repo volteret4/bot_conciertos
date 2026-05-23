@@ -4120,6 +4120,108 @@ async def list_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
             plain_response = response.replace('*', '').replace('`', '')
             await update.message.reply_text(plain_response, reply_markup=reply_markup)
 
+async def new_albums_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Comando /new_albums [semanas] — muestra lanzamientos recientes con enlace a YouTube."""
+    user = _get_or_register(update)
+    if not user:
+        await update.message.reply_text("❌ Error interno. Inténtalo de nuevo.")
+        return
+
+    # Parsear argumento de semanas (1-24, por defecto 4)
+    weeks = 4
+    if context.args:
+        try:
+            weeks = int(context.args[0])
+            weeks = max(1, min(24, weeks))
+        except ValueError:
+            await update.message.reply_text(
+                "❌ Uso: `/new_albums [semanas]`\nEjemplo: `/new_albums 4`",
+                parse_mode='Markdown'
+            )
+            return
+
+    status = await update.message.reply_text(
+        f"🔍 Buscando lanzamientos de las últimas {weeks} semana{'s' if weeks != 1 else ''}..."
+    )
+
+    releases = db.get_user_releases_for_weeks(user['id'], weeks)
+
+    if not releases:
+        await status.edit_text(
+            f"📭 No hay lanzamientos registrados en las últimas {weeks} semana{'s' if weeks != 1 else ''}.\n\n"
+            "Los lanzamientos se guardan automáticamente cada semana al recibir el resumen de Muspy.\n"
+            "Asegúrate de tener Muspy configurado con `/muspy`."
+        )
+        return
+
+    # Buscar YT en background para los que no tienen URL (máx. 3 para no tardar mucho)
+    needs_search = [r for r in releases if not r.get('yt_url')]
+    if needs_search:
+        await status.edit_text(
+            f"🎬 Buscando {min(len(needs_search), 3)} enlace{'s' if min(len(needs_search), 3) != 1 else ''} de YouTube..."
+        )
+        from apis.youtube_search import find_youtube_for_release
+
+        searched = 0
+        for rel in needs_search[:3]:
+            try:
+                url, query = await asyncio.get_event_loop().run_in_executor(
+                    None,
+                    find_youtube_for_release,
+                    rel['artist_name'],
+                    rel['release_title'],
+                    rel.get('release_date') or '',
+                    rel.get('release_type') or '',
+                    rel.get('artist_mbid'),
+                )
+                if url:
+                    db.set_release_yt_url(rel['id'], url, query)
+                    rel['yt_url'] = url
+                searched += 1
+            except Exception as e:
+                logger.warning(f"Error buscando YT en /new_albums: {e}")
+
+    # Formatear respuesta
+    week_label = f"{'semana' if weeks == 1 else f'{weeks} semanas'}"
+    lines = [f"💿 *Lanzamientos — últimas {week_label}*\n"]
+
+    for rel in releases:
+        artist = escape_markdown_v2(rel['artist_name'])
+        title = escape_markdown_v2(rel['release_title'])
+        rel_type = rel.get('release_type') or 'Release'
+        rel_date = rel.get('release_date') or ''
+        yt_url = rel.get('yt_url') or ''
+
+        try:
+            from datetime import datetime as _dt
+            formatted_date = _dt.strptime(rel_date[:10], '%Y-%m-%d').strftime('%d/%m/%Y')
+        except Exception:
+            formatted_date = rel_date
+
+        lines.append(f"🎵 *{artist}* — {title}")
+        lines.append(f"   📅 {formatted_date} · {rel_type}")
+        if yt_url:
+            lines.append(f"   🎬 {yt_url}")
+        else:
+            lines.append("   🎬 _Sin vídeo disponible_")
+        lines.append("")
+
+    message = "\n".join(lines).rstrip()
+
+    try:
+        if len(message) > 4000:
+            from concert_search import split_long_message
+            chunks = split_long_message(message)
+            await status.edit_text(chunks[0], parse_mode='Markdown', disable_web_page_preview=True)
+            for chunk in chunks[1:]:
+                await update.message.reply_text(chunk, parse_mode='Markdown', disable_web_page_preview=True)
+        else:
+            await status.edit_text(message, parse_mode='Markdown', disable_web_page_preview=True)
+    except Exception as e:
+        logger.warning(f"Error enviando /new_albums con Markdown: {e}")
+        await status.edit_text(message.replace('*', '').replace('_', ''), disable_web_page_preview=True)
+
+
 async def remove_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Comando /remove"""
     if not context.args:
@@ -5731,6 +5833,7 @@ def main():
     application.add_handler(CommandHandler("addartist", addartist_command))
     application.add_handler(CommandHandler("list", list_command))
     application.add_handler(CommandHandler("remove", remove_command))
+    application.add_handler(CommandHandler("new_albums", new_albums_command))
     application.add_handler(CommandHandler("notify", notify_command))
     application.add_handler(CommandHandler("playlist", playlist_command))
 

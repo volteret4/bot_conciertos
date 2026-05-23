@@ -48,6 +48,8 @@ class WeeklyNotificationService:
         # Rastrea última semana procesada por usuario
         self._last_notified_week: Dict[int, str] = {}
         self._last_searched_week: Dict[int, str] = {}
+        # Evita doble notificación de release-day en el mismo minuto
+        self._release_day_notified_today: Set[Tuple[int, int]] = set()  # {(user_id, release_id)}
 
         self._init_services()
 
@@ -405,7 +407,7 @@ class WeeklyNotificationService:
         finally:
             conn.close()
 
-        # Discos de Muspy (próximos 90 días)
+        # Discos de Muspy: obtener TODOS los futuros, guardar en BD y filtrar a 90 días para el resumen
         releases: List[Dict] = []
         muspy_creds = self.get_muspy_credentials(user_id)
         if muspy_creds and self.muspy_service:
@@ -414,6 +416,10 @@ class WeeklyNotificationService:
                 future_releases, _ = self.muspy_service.get_user_releases(email, password, userid)
                 today = date.today()
                 cutoff = today + timedelta(days=90)
+
+                # Guardar todos los releases futuros en BD (independientemente de la ventana de 90 días)
+                await self._save_releases_for_user(user_id, future_releases)
+
                 for rel in future_releases:
                     rel_date_str = rel.get('date', '')
                     try:
@@ -441,6 +447,130 @@ class WeeklyNotificationService:
 
         logger.info(f"Resumen semanal enviado a usuario {user_id}")
 
+    # ─── Releases: guardar y buscar vídeo ─────────────────────────────────────
+
+    async def _save_releases_for_user(self, user_id: int, muspy_releases: List[Dict]):
+        """
+        Persiste en BD todos los releases futuros obtenidos de Muspy y los vincula al usuario.
+        Para cada release nuevo sin URL de YouTube, lanza una búsqueda en background.
+        """
+        from database import ArtistTrackerDatabase
+        db = ArtistTrackerDatabase(self.db_path)
+
+        for rel in muspy_releases:
+            try:
+                artist_name = self.muspy_service.extract_artist_name(rel)
+                release_title = self.muspy_service.extract_title(rel)
+                release_date = rel.get('date', '')[:10] if rel.get('date') else None
+                release_type = self.muspy_service.extract_release_type(rel)
+                mb_release_id = self.muspy_service.extract_release_mbid(rel)
+                artist_mbid = self.muspy_service.extract_artist_mbid(rel)
+
+                if not artist_name or not release_title:
+                    continue
+
+                release_id = db.save_release(
+                    artist_name=artist_name,
+                    artist_mbid=artist_mbid,
+                    release_title=release_title,
+                    release_date=release_date,
+                    release_type=release_type,
+                    mb_release_id=mb_release_id,
+                )
+                if not release_id:
+                    continue
+
+                is_new = db.link_user_release(user_id, release_id)
+
+                # Buscar URL de YouTube en background si es un release nuevo sin URL
+                if is_new and db.release_needs_yt_search(release_id):
+                    asyncio.create_task(self._search_and_save_yt(
+                        release_id, artist_name, release_title,
+                        release_date or '', release_type, artist_mbid,
+                    ))
+
+            except Exception as e:
+                logger.warning(f"Error procesando release para guardar: {e}")
+
+    async def _search_and_save_yt(
+        self,
+        release_id: int,
+        artist_name: str,
+        release_title: str,
+        release_date: str,
+        release_type: str,
+        artist_mbid: Optional[str],
+    ):
+        """Busca el vídeo de YouTube en un executor (sin bloquear el loop) y guarda el resultado."""
+        try:
+            from apis.youtube_search import find_youtube_for_release
+            from database import ArtistTrackerDatabase
+
+            loop = asyncio.get_event_loop()
+            url, query = await loop.run_in_executor(
+                None,
+                find_youtube_for_release,
+                artist_name, release_title, release_date, release_type, artist_mbid,
+            )
+
+            if url:
+                ArtistTrackerDatabase(self.db_path).set_release_yt_url(release_id, url, query)
+                logger.info(f"YT URL guardada para release {release_id}: {url}")
+            else:
+                logger.info(f"No se encontró vídeo de YT para release {release_id} ('{release_title}')")
+
+        except Exception as e:
+            logger.error(f"Error en búsqueda YT para release {release_id}: {e}")
+
+    # ─── Notificación de día de lanzamiento ────────────────────────────────────
+
+    async def _check_release_day_notifications(self, current_time: str):
+        """
+        Envía una notificación a cada usuario cuyo lanzamiento sale HOY,
+        cuando la hora actual coincide con su hora de notificación configurada.
+        """
+        from database import ArtistTrackerDatabase
+        db = ArtistTrackerDatabase(self.db_path)
+
+        try:
+            today_releases = db.get_users_with_release_today(current_time)
+        except Exception as e:
+            logger.error(f"Error obteniendo releases de hoy: {e}")
+            return
+
+        for row in today_releases:
+            user_id = row['user_id']
+            release_id = row['release_id']
+            key = (user_id, release_id)
+
+            if key in self._release_day_notified_today:
+                continue
+
+            try:
+                artist = _esc(row['artist_name'])
+                title = _esc(row['release_title'])
+                rel_type = row.get('release_type') or 'Release'
+                yt_url = row.get('yt_url') or ''
+
+                lines = [
+                    f"🎉 *¡Hoy sale!* — {artist}",
+                    f"💿 *{title}* [{rel_type}]",
+                ]
+                if yt_url:
+                    lines.append(f"🎬 [Ver en YouTube]({yt_url})")
+                else:
+                    lines.append("🎬 _Sin enlace de vídeo disponible_")
+
+                lines.append("\n_Usa /new\\_albums para ver todos los lanzamientos recientes_")
+
+                await self.send_message(row['chat_id'], '\n'.join(lines))
+                db.mark_release_notified(user_id, release_id)
+                self._release_day_notified_today.add(key)
+                logger.info(f"Release-day notification enviada a usuario {user_id} para release {release_id}")
+
+            except Exception as e:
+                logger.error(f"Error enviando release-day notification a usuario {user_id}: {e}")
+
     # ─── Bucle principal ──────────────────────────────────────────────────────
 
     async def run(self):
@@ -452,12 +582,24 @@ class WeeklyNotificationService:
         No repite ninguna fase más de una vez por semana por usuario.
         """
         logger.info("🚀 Servicio de notificaciones semanales iniciado")
+        _last_cleanup_date = ''
 
         while True:
             now = datetime.now()
             current_day = now.weekday()   # 0=lunes … 6=domingo
             current_time = now.strftime('%H:%M')
             current_week = now.strftime('%Y-W%W')
+            today_str = now.strftime('%Y-%m-%d')
+
+            # ── Limpieza diaria y reseteo de notificaciones de día-de-lanzamiento ──
+            if today_str != _last_cleanup_date:
+                self._release_day_notified_today.clear()
+                try:
+                    from database import ArtistTrackerDatabase
+                    ArtistTrackerDatabase(self.db_path).cleanup_expired_releases()
+                except Exception as e:
+                    logger.warning(f"Error en limpieza de releases: {e}")
+                _last_cleanup_date = today_str
 
             # ── Fase 1: búsqueda 2 horas antes ──────────────────────────────
             search_users = self._users_for_search_phase(current_day, current_time)
@@ -471,7 +613,7 @@ class WeeklyNotificationService:
                 except Exception as e:
                     logger.error(f"Error en búsqueda para usuario {uid}: {e}")
 
-            # ── Fase 2: notificación a la hora configurada ───────────────────
+            # ── Fase 2: notificación semanal ─────────────────────────────────
             notify_users = self.get_users_for_time(current_day, current_time)
             for user in notify_users:
                 uid = user['id']
@@ -482,6 +624,9 @@ class WeeklyNotificationService:
                     self._last_notified_week[uid] = current_week
                 except Exception as e:
                     logger.error(f"Error procesando usuario {uid}: {e}")
+
+            # ── Fase 3: notificación de día de lanzamiento (diaria) ──────────
+            await self._check_release_day_notifications(current_time)
 
             await asyncio.sleep(60 - datetime.now().second)
 

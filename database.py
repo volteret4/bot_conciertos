@@ -263,6 +263,41 @@ class ArtistTrackerDatabase:
                 )
             """)
 
+            # Tabla de lanzamientos (próximos/recientes, máx. 24 semanas)
+            cursor.execute("""
+                CREATE TABLE IF NOT EXISTS releases (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    artist_name TEXT NOT NULL,
+                    artist_mbid TEXT,
+                    release_title TEXT NOT NULL,
+                    release_date TEXT,
+                    release_type TEXT,
+                    mb_release_id TEXT UNIQUE,
+                    yt_url TEXT,
+                    yt_query TEXT,
+                    yt_searched_at TIMESTAMP,
+                    stored_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    expires_at TEXT
+                )
+            """)
+
+            cursor.execute("""
+                CREATE TABLE IF NOT EXISTS user_releases (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    user_id INTEGER NOT NULL,
+                    release_id INTEGER NOT NULL,
+                    notified_at TIMESTAMP,
+                    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+                    FOREIGN KEY (release_id) REFERENCES releases(id) ON DELETE CASCADE,
+                    UNIQUE(user_id, release_id)
+                )
+            """)
+
+            cursor.execute("CREATE INDEX IF NOT EXISTS idx_releases_date ON releases(release_date)")
+            cursor.execute("CREATE INDEX IF NOT EXISTS idx_releases_expires ON releases(expires_at)")
+            cursor.execute("CREATE INDEX IF NOT EXISTS idx_user_releases_user ON user_releases(user_id)")
+            cursor.execute("CREATE INDEX IF NOT EXISTS idx_user_releases_release ON user_releases(release_id)")
+
             # Índices para optimizar consultas
             cursor.execute("CREATE INDEX IF NOT EXISTS idx_users_chat_id ON users(chat_id)")
             cursor.execute("CREATE INDEX IF NOT EXISTS idx_users_username ON users(username)")
@@ -2454,6 +2489,217 @@ class ArtistTrackerDatabase:
             return False
         finally:
             conn.close()
+
+    # ─── Releases (lanzamientos futuros/recientes) ────────────────────────────
+
+    def save_release(
+        self,
+        artist_name: str,
+        artist_mbid: Optional[str],
+        release_title: str,
+        release_date: Optional[str],
+        release_type: Optional[str],
+        mb_release_id: Optional[str],
+    ) -> Optional[int]:
+        """
+        Guarda un lanzamiento en la BD y devuelve su ID.
+        Si ya existe (por mb_release_id o por artista+título+fecha), devuelve el ID existente.
+        Los lanzamientos expiran 24 semanas (168 días) después de su fecha de lanzamiento.
+        """
+        conn = self.get_connection()
+        cursor = conn.cursor()
+        try:
+            # Dedup por mb_release_id
+            if mb_release_id:
+                cursor.execute("SELECT id FROM releases WHERE mb_release_id = ?", (mb_release_id,))
+                row = cursor.fetchone()
+                if row:
+                    return row[0]
+
+            # Dedup por artista + título + fecha
+            cursor.execute("""
+                SELECT id FROM releases
+                WHERE LOWER(artist_name) = LOWER(?) AND LOWER(release_title) = LOWER(?) AND release_date = ?
+            """, (artist_name, release_title, release_date))
+            row = cursor.fetchone()
+            if row:
+                return row[0]
+
+            # Calcular expiración: 168 días (24 semanas) desde la fecha de lanzamiento
+            if release_date:
+                try:
+                    from datetime import date, timedelta
+                    rd = datetime.strptime(release_date[:10], '%Y-%m-%d').date()
+                    expires_at = (rd + timedelta(days=168)).isoformat()
+                except Exception:
+                    expires_at = None
+            else:
+                expires_at = None
+
+            if not expires_at:
+                from datetime import date, timedelta
+                expires_at = (date.today() + timedelta(days=168)).isoformat()
+
+            cursor.execute("""
+                INSERT INTO releases
+                    (artist_name, artist_mbid, release_title, release_date, release_type, mb_release_id, expires_at)
+                VALUES (?, ?, ?, ?, ?, ?, ?)
+            """, (artist_name, artist_mbid, release_title, release_date, release_type, mb_release_id, expires_at))
+
+            release_id = cursor.lastrowid
+            conn.commit()
+            logger.info(f"Release guardado: '{release_title}' de '{artist_name}' (id={release_id})")
+            return release_id
+
+        except sqlite3.Error as e:
+            logger.error(f"Error guardando release: {e}")
+            conn.rollback()
+            return None
+        finally:
+            conn.close()
+
+    def link_user_release(self, user_id: int, release_id: int) -> bool:
+        """Vincula un usuario con un release. Devuelve True si es nuevo."""
+        conn = self.get_connection()
+        cursor = conn.cursor()
+        try:
+            cursor.execute("""
+                INSERT OR IGNORE INTO user_releases (user_id, release_id)
+                VALUES (?, ?)
+            """, (user_id, release_id))
+            new = cursor.rowcount > 0
+            conn.commit()
+            return new
+        except sqlite3.Error as e:
+            logger.error(f"Error vinculando user_release: {e}")
+            conn.rollback()
+            return False
+        finally:
+            conn.close()
+
+    def set_release_yt_url(self, release_id: int, yt_url: str, yt_query: str) -> bool:
+        """Guarda la URL de YouTube encontrada para un release."""
+        conn = self.get_connection()
+        cursor = conn.cursor()
+        try:
+            cursor.execute("""
+                UPDATE releases SET yt_url = ?, yt_query = ?, yt_searched_at = CURRENT_TIMESTAMP
+                WHERE id = ?
+            """, (yt_url, yt_query, release_id))
+            conn.commit()
+            return cursor.rowcount > 0
+        except sqlite3.Error as e:
+            logger.error(f"Error guardando YT URL: {e}")
+            conn.rollback()
+            return False
+        finally:
+            conn.close()
+
+    def release_needs_yt_search(self, release_id: int) -> bool:
+        """Devuelve True si el release no tiene URL de YouTube aún."""
+        conn = self.get_connection()
+        cursor = conn.cursor()
+        try:
+            cursor.execute("SELECT yt_url FROM releases WHERE id = ?", (release_id,))
+            row = cursor.fetchone()
+            return bool(row and not row[0])
+        except sqlite3.Error:
+            return False
+        finally:
+            conn.close()
+
+    def get_user_releases_for_weeks(self, user_id: int, weeks: int) -> List[Dict]:
+        """
+        Devuelve los lanzamientos del usuario en las últimas *weeks* semanas.
+        Incluye releases cuya fecha está entre (hoy - weeks semanas) y hoy.
+        """
+        conn = self.get_connection()
+        cursor = conn.cursor()
+        try:
+            cursor.execute("""
+                SELECT r.id, r.artist_name, r.artist_mbid, r.release_title,
+                       r.release_date, r.release_type, r.mb_release_id,
+                       r.yt_url, r.yt_query, ur.notified_at
+                FROM releases r
+                JOIN user_releases ur ON ur.release_id = r.id
+                WHERE ur.user_id = ?
+                  AND r.release_date >= date('now', ?)
+                  AND r.release_date <= date('now')
+                ORDER BY r.release_date DESC
+            """, (user_id, f"-{weeks * 7} days"))
+            cols = [d[0] for d in cursor.description]
+            return [dict(zip(cols, row)) for row in cursor.fetchall()]
+        except sqlite3.Error as e:
+            logger.error(f"Error obteniendo releases del usuario: {e}")
+            return []
+        finally:
+            conn.close()
+
+    def get_users_with_release_today(self, notification_time: str) -> List[Dict]:
+        """
+        Devuelve filas {user_id, chat_id, release_id, artist_name, release_title,
+        release_type, yt_url} para releases que salen HOY y cuyo usuario aún
+        no ha sido notificado, filtrando por hora de notificación.
+        """
+        conn = self.get_connection()
+        cursor = conn.cursor()
+        try:
+            cursor.execute("""
+                SELECT u.id AS user_id, u.chat_id,
+                       r.id AS release_id, r.artist_name, r.release_title,
+                       r.release_type, r.yt_url
+                FROM releases r
+                JOIN user_releases ur ON ur.release_id = r.id
+                JOIN users u ON u.id = ur.user_id
+                WHERE r.release_date = date('now')
+                  AND ur.notified_at IS NULL
+                  AND u.notification_enabled = 1
+                  AND u.notification_time = ?
+            """, (notification_time,))
+            cols = [d[0] for d in cursor.description]
+            return [dict(zip(cols, row)) for row in cursor.fetchall()]
+        except sqlite3.Error as e:
+            logger.error(f"Error buscando releases de hoy: {e}")
+            return []
+        finally:
+            conn.close()
+
+    def mark_release_notified(self, user_id: int, release_id: int) -> bool:
+        """Marca un release como notificado para el usuario dado."""
+        conn = self.get_connection()
+        cursor = conn.cursor()
+        try:
+            cursor.execute("""
+                UPDATE user_releases SET notified_at = CURRENT_TIMESTAMP
+                WHERE user_id = ? AND release_id = ?
+            """, (user_id, release_id))
+            conn.commit()
+            return cursor.rowcount > 0
+        except sqlite3.Error as e:
+            logger.error(f"Error marcando release notificado: {e}")
+            conn.rollback()
+            return False
+        finally:
+            conn.close()
+
+    def cleanup_expired_releases(self) -> int:
+        """Elimina releases cuya fecha de expiración ha pasado. Devuelve el número de filas eliminadas."""
+        conn = self.get_connection()
+        cursor = conn.cursor()
+        try:
+            cursor.execute("DELETE FROM releases WHERE expires_at < date('now')")
+            deleted = cursor.rowcount
+            conn.commit()
+            if deleted:
+                logger.info(f"Eliminados {deleted} releases expirados")
+            return deleted
+        except sqlite3.Error as e:
+            logger.error(f"Error limpiando releases expirados: {e}")
+            conn.rollback()
+            return 0
+        finally:
+            conn.close()
+
 
 # clase para multihilos
 
