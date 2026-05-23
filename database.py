@@ -35,6 +35,16 @@ def _filter_mb_placeholders(candidates: list) -> list:
     ]
 
 
+def make_concert_hash(artist: str, venue: str, date: str) -> str:
+    """
+    Canonical concert deduplication hash.
+    Uses lowercase artist+venue+date so the result is case-insensitive and
+    independent of source. All save paths must call this function.
+    """
+    raw = f"{artist.lower().strip()}-{venue.strip()}-{date.strip()}"
+    return hashlib.md5(raw.encode()).hexdigest()
+
+
 class ArtistTrackerDatabase:
     """Clase para manejar la base de datos de usuarios y artistas seguidos"""
 
@@ -1093,9 +1103,9 @@ class ArtistTrackerDatabase:
             conn.close()
 
     def _create_concert_hash(self, concert_data: Dict) -> str:
-        """Crea un hash único para un concierto"""
-        key_data = f"{concert_data.get('artist', '')}-{concert_data.get('venue', '')}-{concert_data.get('date', '')}-{concert_data.get('source', '')}"
-        return hashlib.md5(key_data.encode()).hexdigest()
+        """Crea un hash único para un concierto usando la función canónica."""
+        artist = concert_data.get('artist_name') or concert_data.get('artist', '')
+        return make_concert_hash(artist, concert_data.get('venue', ''), concert_data.get('date', ''))
 
     def mark_concert_notified(self, user_id: int, concert_id: int) -> bool:
         """
@@ -2757,47 +2767,42 @@ class DatabaseConcurrentWrapper:
         """Guarda un concierto de forma thread-safe.
         Acepta tanto 'artist_name' como 'artist' como clave del nombre del artista."""
         try:
-            # Normalizar: Ticketmaster usa 'artist', el resto usa 'artist_name'
             artist_name = (
                 concert_data.get('artist_name')
                 or concert_data.get('artist')
                 or ''
             )
+            venue = concert_data.get('venue', '')
+            date = concert_data.get('date', '')
+            concert_hash = make_concert_hash(artist_name, venue, date)
 
             with self.get_connection_context() as conn:
                 cursor = conn.cursor()
 
-                # Verificar si ya existe
-                cursor.execute("""
-                    SELECT id FROM concerts
-                    WHERE artist_name = ? AND venue = ? AND city = ? AND date = ?
-                """, (
-                    artist_name,
-                    concert_data.get('venue', ''),
-                    concert_data.get('city', ''),
-                    concert_data.get('date', '')
-                ))
-
+                cursor.execute(
+                    "SELECT id FROM concerts WHERE concert_hash = ?",
+                    (concert_hash,)
+                )
                 if cursor.fetchone():
                     return  # Ya existe
 
-                # Insertar nuevo concierto
                 cursor.execute("""
                     INSERT INTO concerts (
                         artist_name, concert_name, venue, city, country, country_code,
-                        date, time, url, source, created_at
-                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now'))
+                        date, time, url, source, concert_hash, created_at
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now'))
                 """, (
                     artist_name,
                     concert_data.get('name', '') or concert_data.get('concert_name', ''),
-                    concert_data.get('venue', ''),
+                    venue,
                     concert_data.get('city', ''),
                     concert_data.get('country', ''),
                     concert_data.get('country_code', ''),
-                    concert_data.get('date', ''),
+                    date,
                     concert_data.get('time', ''),
                     concert_data.get('url', ''),
-                    concert_data.get('source', '')
+                    concert_data.get('source', ''),
+                    concert_hash,
                 ))
 
         except Exception as e:

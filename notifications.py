@@ -19,7 +19,6 @@ El proceso principal ejecuta un bucle que:
 import os
 import asyncio
 import logging
-import hashlib
 import time
 from datetime import datetime, timedelta, date
 from typing import List, Dict, Optional, Set, Tuple
@@ -652,9 +651,9 @@ class WeeklyNotificationService:
 # ─── Utilidades ──────────────────────────────────────────────────────────────
 
 def _make_hash(concert: Dict) -> str:
+    from database import make_concert_hash
     artist = concert.get('artist_name') or concert.get('artist', '')
-    raw = f"{artist}-{concert.get('venue','')}-{concert.get('date','')}"
-    return hashlib.md5(raw.encode()).hexdigest()
+    return make_concert_hash(artist, concert.get('venue', ''), concert.get('date', ''))
 
 
 def _esc(text: str) -> str:
