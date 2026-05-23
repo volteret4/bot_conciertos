@@ -4091,20 +4091,18 @@ async def list_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     # Si hay 15 o menos artistas, mostrar sin paginación (comportamiento original)
     if len(followed_artists) <= 15:
-        response, keyboard = await show_artists_without_pagination(update, followed_artists, display_name)
-        reply_markup = InlineKeyboardMarkup(keyboard) if keyboard else None
+        response = await show_artists_without_pagination(update, followed_artists, display_name)
         try:
             await update.message.reply_text(
                 response,
                 parse_mode='Markdown',
-                disable_web_page_preview=True,
-                reply_markup=reply_markup,
+                disable_web_page_preview=True
             )
         except Exception as e:
             # Si hay error con Markdown, enviar sin formato
             logger.warning(f"Error con Markdown en list, enviando texto plano: {e}")
             plain_response = response.replace('*', '').replace('`', '')
-            await update.message.reply_text(plain_response, reply_markup=reply_markup)
+            await update.message.reply_text(plain_response)
     else:
         # Guardar datos para paginación y mostrar primera página
         db.save_list_pagination_data(user_id, followed_artists, display_name)
@@ -4124,6 +4122,42 @@ async def list_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
             logger.warning(f"Error con Markdown en página de artistas: {e}")
             plain_response = response.replace('*', '').replace('`', '')
             await update.message.reply_text(plain_response, reply_markup=reply_markup)
+
+async def info_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Comando /info — muestra panel de detalle de artistas con botones."""
+    current_user = _get_or_register(update)
+    if not current_user:
+        await update.message.reply_text("❌ Error interno. Inténtalo de nuevo.")
+        return
+
+    user_id = current_user['id']
+    followed_artists = db.get_user_followed_artists(user_id)
+
+    if not followed_artists:
+        await update.message.reply_text(
+            "📭 No tienes artistas seguidos aún.\n"
+            "Usa `/addartist <nombre>` para empezar.",
+            parse_mode='Markdown',
+        )
+        return
+
+    # Build 2-column grid of artist name buttons
+    keyboard = []
+    for j in range(0, len(followed_artists), 2):
+        row = []
+        for k in range(2):
+            if j + k < len(followed_artists):
+                a = followed_artists[j + k]
+                label = a['name'][:22]
+                row.append(InlineKeyboardButton(label, callback_data=f"art_{a['id']}"))
+        keyboard.append(row)
+
+    await update.message.reply_text(
+        f"🎵 *Selecciona un artista* ({len(followed_artists)} seguidos):",
+        parse_mode='Markdown',
+        reply_markup=InlineKeyboardMarkup(keyboard),
+    )
+
 
 async def new_albums_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Comando /new_albums [semanas] — muestra lanzamientos recientes con enlace a YouTube."""
@@ -5841,6 +5875,7 @@ def main():
     application.add_handler(CommandHandler("adduser", adduser_command))
     application.add_handler(CommandHandler("addartist", addartist_command))
     application.add_handler(CommandHandler("list", list_command))
+    application.add_handler(CommandHandler("info", info_command))
     application.add_handler(CommandHandler("remove", remove_command))
     application.add_handler(CommandHandler("new_albums", new_albums_command))
     application.add_handler(CommandHandler("notify", notify_command))
