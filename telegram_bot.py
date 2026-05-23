@@ -40,6 +40,8 @@ from handlers.calendar_handlers import CalendarHandlers
 from handlers.muspy_handlers import MuspyHandlers, MUSPY_EMAIL, MUSPY_PASSWORD, MUSPY_USERID
 # artist detail panel
 from handlers.artist_handlers import ArtistHandlers
+# notification service (runs as background task in the same process)
+from notifications import WeeklyNotificationService
 # telegram handlers
 from handlers.handlers_helpers import (
     handle_notification_callback, handle_country_callback, handle_service_callback,
@@ -5905,11 +5907,20 @@ def main():
     # Validar servicios
     validate_services()
 
-    # MEJORA: Crear la aplicación con configuración optimizada para concurrencia
+    # Crear servicio de notificaciones (se lanzará en background al iniciar)
+    notification_service = WeeklyNotificationService(db_path=DB_PATH, telegram_token=TELEGRAM_TOKEN)
+
+    async def post_init(app):
+        """Lanza el servicio de notificaciones como tarea asyncio en background."""
+        asyncio.create_task(notification_service.run())
+        logger.info("🔔 Servicio de notificaciones semanales iniciado en background")
+
+    # Crear la aplicación con configuración optimizada para concurrencia
     application = (
         Application.builder()
         .token(TELEGRAM_TOKEN)
-        .concurrent_updates(256)  # Permitir hasta 256 updates concurrentes
+        .concurrent_updates(256)
+        .post_init(post_init)
         .build()
     )
 
@@ -6046,7 +6057,7 @@ def main():
     else:
         logger.info("⚠️ Sistema de países múltiples no disponible (falta API key)")
 
-    logger.info("🔔 Para notificaciones, ejecuta: python notification_scheduler.py")
+    logger.info("🔔 Servicio de notificaciones integrado (se lanza al iniciar el bot)")
     logger.info("⚡ Máximo 256 updates concurrentes configurados")
     logger.info("🗄️ Pool de 10 conexiones de base de datos para concurrencia")
     logger.info("Presiona Ctrl+C para detenerlo.")
