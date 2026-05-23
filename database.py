@@ -455,6 +455,47 @@ class ArtistTrackerDatabase:
         finally:
             conn.close()
 
+    def get_artist_by_id(self, artist_id: int) -> Optional[Dict]:
+        """Returns the artist row for a given DB id, or None."""
+        conn = self.get_connection()
+        cursor = conn.cursor()
+        try:
+            cursor.execute("SELECT * FROM artists WHERE id = ?", (artist_id,))
+            row = cursor.fetchone()
+            return dict(row) if row else None
+        except sqlite3.Error as e:
+            logger.error(f"Error getting artist by id {artist_id}: {e}")
+            return None
+        finally:
+            conn.close()
+
+    def get_concerts_for_artist(self, artist_name: str, upcoming_only: bool = True) -> List[Dict]:
+        """Returns concerts for a given artist name, optionally only future ones."""
+        conn = self.get_connection()
+        cursor = conn.cursor()
+        try:
+            if upcoming_only:
+                cursor.execute("""
+                    SELECT * FROM concerts
+                    WHERE LOWER(artist_name) = LOWER(?)
+                      AND date >= date('now')
+                    ORDER BY date ASC
+                    LIMIT 20
+                """, (artist_name,))
+            else:
+                cursor.execute("""
+                    SELECT * FROM concerts
+                    WHERE LOWER(artist_name) = LOWER(?)
+                    ORDER BY date DESC
+                    LIMIT 20
+                """, (artist_name,))
+            return [dict(row) for row in cursor.fetchall()]
+        except sqlite3.Error as e:
+            logger.error(f"Error getting concerts for artist {artist_name!r}: {e}")
+            return []
+        finally:
+            conn.close()
+
     def search_artist_candidates(self, artist_name: str) -> List[Dict]:
         """
         Busca candidatos de artistas en MusicBrainz con estrategias mejoradas
