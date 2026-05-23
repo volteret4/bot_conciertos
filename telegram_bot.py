@@ -4123,8 +4123,40 @@ async def list_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
             plain_response = response.replace('*', '').replace('`', '')
             await update.message.reply_text(plain_response, reply_markup=reply_markup)
 
+PER_PAGE_INFO = 10
+
+
+def _build_info_keyboard(artists: List[Dict], page: int, user_id: int) -> InlineKeyboardMarkup:
+    """Build the 2-column artist button grid for /info with page navigation."""
+    total = len(artists)
+    total_pages = max(1, (total + PER_PAGE_INFO - 1) // PER_PAGE_INFO)
+    start = page * PER_PAGE_INFO
+    page_artists = artists[start:start + PER_PAGE_INFO]
+
+    keyboard = []
+    for j in range(0, len(page_artists), 2):
+        row = []
+        for k in range(2):
+            if j + k < len(page_artists):
+                a = page_artists[j + k]
+                row.append(InlineKeyboardButton(a['name'][:22], callback_data=f"art_{a['id']}"))
+        keyboard.append(row)
+
+    # Navigation row
+    nav = []
+    if page > 0:
+        nav.append(InlineKeyboardButton("⬅️ Anterior", callback_data=f"infop_{user_id}_{page-1}"))
+    nav.append(InlineKeyboardButton(f"{page+1}/{total_pages}", callback_data="art_noop"))
+    if page < total_pages - 1:
+        nav.append(InlineKeyboardButton("Siguiente ➡️", callback_data=f"infop_{user_id}_{page+1}"))
+    if len(nav) > 1:
+        keyboard.append(nav)
+
+    return InlineKeyboardMarkup(keyboard)
+
+
 async def info_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    """Comando /info — muestra panel de detalle de artistas con botones."""
+    """Comando /info [artista] — panel de detalle. Sin args muestra lista paginada."""
     current_user = _get_or_register(update)
     if not current_user:
         await update.message.reply_text("❌ Error interno. Inténtalo de nuevo.")
@@ -4141,21 +4173,64 @@ async def info_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         )
         return
 
-    # Build 2-column grid of artist name buttons
-    keyboard = []
-    for j in range(0, len(followed_artists), 2):
-        row = []
-        for k in range(2):
-            if j + k < len(followed_artists):
-                a = followed_artists[j + k]
-                label = a['name'][:22]
-                row.append(InlineKeyboardButton(label, callback_data=f"art_{a['id']}"))
-        keyboard.append(row)
+    # Direct lookup: /info The Beatles
+    if context.args:
+        query_name = ' '.join(context.args).strip().lower()
+        matches = [a for a in followed_artists if query_name in a['name'].lower()]
+        if not matches:
+            await update.message.reply_text(
+                f"❌ No sigues ningún artista que coincida con *{' '.join(context.args)}*.",
+                parse_mode='Markdown',
+            )
+            return
+        if len(matches) == 1:
+            # Show detail directly
+            await artist_handlers.send_artist_detail(update.message, matches[0])
+            return
+        # Multiple matches — show selection buttons
+        keyboard = [[InlineKeyboardButton(a['name'][:40], callback_data=f"art_{a['id']}")] for a in matches[:10]]
+        await update.message.reply_text(
+            f"🔍 Varios artistas coinciden con *{' '.join(context.args)}*:",
+            parse_mode='Markdown',
+            reply_markup=InlineKeyboardMarkup(keyboard),
+        )
+        return
 
+    # Paginated list
+    markup = _build_info_keyboard(followed_artists, 0, user_id)
+    total = len(followed_artists)
+    total_pages = max(1, (total + PER_PAGE_INFO - 1) // PER_PAGE_INFO)
     await update.message.reply_text(
-        f"🎵 *Selecciona un artista* ({len(followed_artists)} seguidos):",
+        f"🎵 *Selecciona un artista* ({total} seguidos, {total_pages} páginas):",
         parse_mode='Markdown',
-        reply_markup=InlineKeyboardMarkup(keyboard),
+        reply_markup=markup,
+    )
+
+
+async def info_page_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Maneja la paginación de /info: infop_<user_id>_<page>."""
+    query = update.callback_query
+    await query.answer()
+
+    try:
+        parts = query.data.split('_')
+        user_id = int(parts[1])
+        page = int(parts[2])
+    except (ValueError, IndexError):
+        return
+
+    followed_artists = db.get_user_followed_artists(user_id)
+    if not followed_artists:
+        await query.edit_message_text("❌ No se encontraron artistas.")
+        return
+
+    total = len(followed_artists)
+    total_pages = max(1, (total + PER_PAGE_INFO - 1) // PER_PAGE_INFO)
+    markup = _build_info_keyboard(followed_artists, page, user_id)
+    await query.edit_message_text(
+        f"🎵 *Selecciona un artista* ({total} seguidos, página {page+1}/{total_pages}):",
+        parse_mode='Markdown',
+        reply_markup=markup,
     )
 
 
@@ -5926,6 +6001,8 @@ def main():
     application.add_handler(CallbackQueryHandler(list_page_callback, pattern="^list_page_"))
     # Artist detail panel callbacks (art_<id>, art_b_<id>, art_i_<id>, art_a_<id>_<page>, etc.)
     application.add_handler(CallbackQueryHandler(artist_handlers.art_callback, pattern="^art_"))
+    # /info pagination
+    application.add_handler(CallbackQueryHandler(info_page_callback, pattern="^infop_"))
     # lastfm_callback_handler y spotify_callback_handler eliminados
 
     # Callbacks de calendario (DESPUÉS de muspy_callback_handler)
