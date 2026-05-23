@@ -341,6 +341,28 @@ class MuspyService:
 
         return 'Release'
 
+    def extract_release_mbid(self, release: Dict) -> Optional[str]:
+        """Extrae el MBID del lanzamiento (campo 'mbid' o 'id')."""
+        return release.get('mbid') or release.get('id') or None
+
+    def extract_artist_mbid(self, release: Dict) -> Optional[str]:
+        """Extrae el MBID del artista principal del lanzamiento."""
+        # artist_credit[0].artist.id  (formato MusicBrainz completo)
+        credits = release.get('artist_credit', [])
+        if isinstance(credits, list) and credits:
+            first = credits[0]
+            if isinstance(first, dict):
+                artist = first.get('artist', {})
+                if isinstance(artist, dict):
+                    mbid = artist.get('id') or artist.get('mbid')
+                    if mbid:
+                        return mbid
+        # artist.mbid / artist.id  (formato simplificado)
+        artist = release.get('artist')
+        if isinstance(artist, dict):
+            return artist.get('mbid') or artist.get('id') or None
+        return None
+
     def __del__(self):
         """Cleanup al destruir el objeto"""
         if hasattr(self, 'executor'):

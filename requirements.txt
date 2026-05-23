@@ -2,3 +2,4 @@ python-telegram-bot>=20.0
 requests
 python-dotenv
 musicbrainzngs
+yt-dlp
