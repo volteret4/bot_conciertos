@@ -27,9 +27,12 @@ logger = logging.getLogger(__name__)
 
 GENIUS_KEY = os.getenv('GENIUS_API_KEY', '')
 LASTFM_KEY = os.getenv('LASTFM_API_KEY', '')
+DISCOGS_TOKEN = os.getenv('DISCOGS_TOKEN', '')
 
 _LASTFM_BASE = 'http://ws.audioscrobbler.com/2.0/'
 _GENIUS_BASE = 'https://api.genius.com'
+_DISCOGS_BASE = 'https://api.discogs.com'
+_DISCOGS_UA = 'tumtumpa-bot/1.0 +viciosmusicales@gmail.com'
 
 # ── helpers ──────────────────────────────────────────────────────────────────
 
@@ -148,30 +151,110 @@ def _search_genius(artist_name: str, page: int, per_page: int = 8) -> Tuple[List
 
 
 def _fetch_genius_lyrics(song_url: str) -> Optional[str]:
-    """Scrape lyrics from a Genius song page."""
+    """Scrape lyrics from a Genius song page.
+
+    Genius embeds lyrics in <div data-lyrics-container="true"> tags which may
+    contain nested divs. The old single-regex approach stopped at the first
+    inner </div>; this version tracks nesting depth explicitly.
+    """
     try:
-        headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:120.0) Gecko/20100101 Firefox/120.0'}
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:125.0) Gecko/20100101 Firefox/125.0',
+            'Accept-Language': 'en-US,en;q=0.5',
+        }
         r = requests.get(song_url, headers=headers, timeout=12)
         html = r.text
-        containers = re.findall(
-            r'data-lyrics-container="true"[^>]*>(.*?)</div>',
-            html, re.DOTALL
-        )
-        if not containers:
+
+        blocks = []
+        for m in re.finditer(r'data-lyrics-container="true"', html):
+            # Advance to the end of the opening tag (the ">")
+            tag_end = html.index('>', m.start()) + 1
+            # Track div nesting to find the correct closing </div>
+            depth = 1
+            i = tag_end
+            while i < len(html) and depth > 0:
+                if html[i:i+4] == '<div':
+                    depth += 1
+                    i += 4
+                elif html[i:i+6] == '</div>':
+                    depth -= 1
+                    if depth == 0:
+                        chunk = html[tag_end:i]
+                        # <br> → newline, strip all other tags
+                        chunk = re.sub(r'<br\s*/?>', '\n', chunk, flags=re.I)
+                        chunk = re.sub(r'<[^>]+>', '', chunk)
+                        for ent, ch in [
+                            ('&amp;', '&'), ('&lt;', '<'), ('&gt;', '>'),
+                            ('&quot;', '"'), ('&#x27;', "'"), ('&nbsp;', ' '),
+                        ]:
+                            chunk = chunk.replace(ent, ch)
+                        chunk = re.sub(r'\n{3,}', '\n\n', chunk).strip()
+                        if chunk:
+                            blocks.append(chunk)
+                        break
+                    i += 6
+                else:
+                    i += 1
+
+        if not blocks:
             return None
-        text = '\n'.join(containers)
-        text = re.sub(r'<br\s*/?>', '\n', text, flags=re.I)
-        text = re.sub(r'<[^>]+>', '', text)
-        for entity, char in [
-            ('&amp;', '&'), ('&lt;', '<'), ('&gt;', '>'),
-            ('&quot;', '"'), ('&#x27;', "'"), ('&nbsp;', ' '),
-        ]:
-            text = text.replace(entity, char)
-        text = re.sub(r'\n{3,}', '\n\n', text).strip()
-        return text or None
+
+        lyrics = '\n\n'.join(blocks)
+        # Remove Genius footer ("123Embed" added by their JS)
+        lyrics = re.sub(r'\s*\d*Embed\s*$', '', lyrics).strip()
+        return lyrics or None
     except Exception as e:
         logger.debug(f"Genius lyrics scrape error for {song_url}: {e}")
         return None
+
+
+def _get_discogs_artist_data(artist_name: str) -> Tuple[Optional[str], List[Dict]]:
+    """Search Discogs for an artist and return (profile_url, recent_masters).
+
+    Uses the Discogs REST API. A DISCOGS_TOKEN env var is optional but helps
+    with rate limits (60 req/min unauth vs 240 req/min auth).
+    """
+    headers = {'User-Agent': _DISCOGS_UA}
+    if DISCOGS_TOKEN:
+        headers['Authorization'] = f'Discogs token={DISCOGS_TOKEN}'
+    try:
+        # 1. Find the artist
+        r = requests.get(
+            f'{_DISCOGS_BASE}/database/search',
+            params={'q': artist_name, 'type': 'artist', 'per_page': 5},
+            headers=headers,
+            timeout=10,
+        )
+        results = r.json().get('results', [])
+        if not results:
+            return None, []
+
+        # Pick the best match (exact name preferred)
+        artist = next(
+            (a for a in results if a.get('title', '').lower() == artist_name.lower()),
+            results[0]
+        )
+        artist_id = artist['id']
+        profile_url = f"https://www.discogs.com{artist.get('uri', f'/artist/{artist_id}')}"
+
+        # 2. Get their master releases (main role only, sorted by year desc)
+        r2 = requests.get(
+            f'{_DISCOGS_BASE}/artists/{artist_id}/releases',
+            params={'sort': 'year', 'sort_order': 'desc', 'per_page': 10, 'page': 1},
+            headers=headers,
+            timeout=10,
+        )
+        releases = r2.json().get('releases', [])
+        # Keep only main-role masters
+        masters = [
+            rel for rel in releases
+            if rel.get('role', '').lower() == 'main' and rel.get('type', '').lower() == 'master'
+        ][:5]
+
+        return profile_url, masters
+    except Exception as e:
+        logger.debug(f"Discogs error for {artist_name!r}: {e}")
+        return None, []
 
 
 def _fmt_num(n: int) -> str:
@@ -393,10 +476,14 @@ class ArtistHandlers:
             return
 
         loop = asyncio.get_event_loop()
-        rgs, total = await loop.run_in_executor(None, _get_mb_release_groups, mbid, page, per_page)
+        # Fetch MB and Discogs concurrently
+        (rgs, total), (discogs_url, discogs_masters) = await asyncio.gather(
+            loop.run_in_executor(None, _get_mb_release_groups, mbid, page, per_page),
+            loop.run_in_executor(None, _get_discogs_artist_data, name),
+        )
 
         total_pages = max(1, (total + per_page - 1) // per_page)
-        lines = [f"*{name}* — Discografía ({total})\n"]
+        lines = [f"*{name}* — Discografía MusicBrainz ({total})\n"]
 
         TYPE_EMOJI = {
             'Album': '💿', 'Single': '🎵', 'EP': '📀',
@@ -410,8 +497,20 @@ class ArtistHandlers:
             mb_url = f"https://musicbrainz.org/release-group/{rg.get('id', '')}"
             lines.append(f"{emoji} [{title}]({mb_url}) ({year})")
 
-        discogs_url = f"https://www.discogs.com/search/?q={name.replace(' ', '+')}&type=release"
-        lines.append(f"\n[🔍 Discogs]({discogs_url})")
+        # Discogs section (only on page 0 to avoid repetition)
+        if page == 0 and discogs_masters:
+            lines.append('\n*Discogs — lanzamientos principales:*')
+            for rel in discogs_masters:
+                title = rel.get('title', '?')
+                year = str(rel.get('year', '?'))
+                rel_url = f"https://www.discogs.com{rel.get('uri', '')}" if rel.get('uri') else ''
+                if rel_url:
+                    lines.append(f"💽 [{title}]({rel_url}) ({year})")
+                else:
+                    lines.append(f"💽 {title} ({year})")
+
+        if discogs_url:
+            lines.append(f"\n[🔍 Perfil en Discogs]({discogs_url})")
 
         text = '\n'.join(lines)[:4000]
 
