@@ -231,6 +231,15 @@ class ArtistHandlers:
     def _get_artist(self, artist_id: int) -> Optional[Dict]:
         return self.db.get_artist_by_id(artist_id)
 
+    async def send_artist_detail(self, message, artist: Dict):
+        """Send artist detail panel from a plain message (e.g. /info command)."""
+        await message.reply_text(
+            _artist_detail_text(artist),
+            parse_mode='Markdown',
+            disable_web_page_preview=True,
+            reply_markup=_main_buttons(artist['id']),
+        )
+
     # ── dispatch ──────────────────────────────────────────────────────────────
 
     async def art_callback(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
