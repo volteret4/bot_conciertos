@@ -682,10 +682,10 @@ def main():
     load_dotenv()
 
     db_path = os.environ.get("DB_PATH", "artist_tracker.db")
-    token = os.environ.get("TELEGRAM_BOT_TOKEN")
+    token = os.environ.get("TELEGRAM_BOT_CONCIERTOS") or os.environ.get("TELEGRAM_BOT_TOKEN")
 
     if not token:
-        logger.error("TELEGRAM_BOT_TOKEN no configurado")
+        logger.error("TELEGRAM_BOT_CONCIERTOS no configurado")
         return
 
     service = WeeklyNotificationService(db_path=db_path, telegram_token=token)
