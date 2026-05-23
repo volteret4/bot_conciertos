@@ -822,16 +822,11 @@ async def show_artists_page(update, user_id: int, followed_artists: List[Dict], 
     ]
 
     for i, artist in enumerate(page_artists, start_idx + 1):
-        # Nombre del artista
         artist_name = artist['name']
 
-        # Crear línea con enlace si está disponible
-        if artist['musicbrainz_url']:
-            line = f"{i}. [{artist_name}]({artist['musicbrainz_url']})"
-        else:
-            line = f"{i}. *{artist_name}*"
+        # Line: bold name + optional MB link at end
+        line = f"{i}. *{artist_name}*"
 
-        # Añadir información adicional si está disponible
         details = []
         if artist['country']:
             details.append(f"🌍 {artist['country']}")
@@ -845,12 +840,25 @@ async def show_artists_page(update, user_id: int, followed_artists: List[Dict], 
         if details:
             line += f" ({', '.join(details)})"
 
+        if artist.get('musicbrainz_url'):
+            line += f" [mb]({artist['musicbrainz_url']})"
+
         message_lines.append(line)
 
     response = "\n".join(message_lines)
 
-    # Crear botones de navegación
+    # Artist buttons — 2-column grid
     keyboard = []
+    for j in range(0, len(page_artists), 2):
+        row = []
+        for k in range(2):
+            if j + k < len(page_artists):
+                a = page_artists[j + k]
+                label = a['name'][:22]
+                row.append(InlineKeyboardButton(label, callback_data=f"art_{a['id']}"))
+        keyboard.append(row)
+
+    # Navigation buttons
     nav_buttons = []
 
     # Botón anterior
@@ -879,21 +887,13 @@ async def show_artists_page(update, user_id: int, followed_artists: List[Dict], 
     return response, keyboard
 
 async def show_artists_without_pagination(update, followed_artists: List[Dict], display_name: str):
-    """Muestra artistas sin paginación (comportamiento original para listas pequeñas)"""
-    # Formatear la lista usando Markdown normal
+    """Muestra artistas sin paginación. Devuelve (response, keyboard)."""
     message_lines = [f"🎵 *Artistas seguidos por {display_name}:*\n"]
 
     for i, artist in enumerate(followed_artists, 1):
-        # Nombre del artista
         artist_name = artist['name']
+        line = f"{i}. *{artist_name}*"
 
-        # Crear línea con enlace si está disponible
-        if artist['musicbrainz_url']:
-            line = f"{i}. [{artist_name}]({artist['musicbrainz_url']})"
-        else:
-            line = f"{i}. *{artist_name}*"
-
-        # Añadir información adicional si está disponible
         details = []
         if artist['country']:
             details.append(f"🌍 {artist['country']}")
@@ -907,13 +907,27 @@ async def show_artists_without_pagination(update, followed_artists: List[Dict], 
         if details:
             line += f" ({', '.join(details)})"
 
+        if artist.get('musicbrainz_url'):
+            line += f" [mb]({artist['musicbrainz_url']})"
+
         message_lines.append(line)
 
     message_lines.append(f"\n📊 Total: {len(followed_artists)} artistas")
 
-    # Unir mensaje
     response = "\n".join(message_lines)
-    return response
+
+    # Artist buttons — 2-column grid
+    keyboard = []
+    for j in range(0, len(followed_artists), 2):
+        row = []
+        for k in range(2):
+            if j + k < len(followed_artists):
+                a = followed_artists[j + k]
+                label = a['name'][:22]
+                row.append(InlineKeyboardButton(label, callback_data=f"art_{a['id']}"))
+        keyboard.append(row)
+
+    return response, keyboard
 
 
 async def show_lastfm_artists_page(query, user: Dict, period: str, artists: List[Dict],

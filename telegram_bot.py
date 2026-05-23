@@ -38,6 +38,8 @@ from concert_search import search_concerts_for_artist, format_concerts_message, 
 from handlers.calendar_handlers import CalendarHandlers
 # muspy
 from handlers.muspy_handlers import MuspyHandlers, MUSPY_EMAIL, MUSPY_PASSWORD, MUSPY_USERID
+# artist detail panel
+from handlers.artist_handlers import ArtistHandlers
 # telegram handlers
 from handlers.handlers_helpers import (
     handle_notification_callback, handle_country_callback, handle_service_callback,
@@ -59,6 +61,7 @@ application = None
 muspy_service = None
 muspy_handlers = None
 calendar_handlers = None
+artist_handlers = None
 
 def _get_or_register(update: Update) -> Optional[Dict]:
     """
@@ -4088,18 +4091,20 @@ async def list_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     # Si hay 15 o menos artistas, mostrar sin paginación (comportamiento original)
     if len(followed_artists) <= 15:
-        response = await show_artists_without_pagination(update, followed_artists, display_name)
+        response, keyboard = await show_artists_without_pagination(update, followed_artists, display_name)
+        reply_markup = InlineKeyboardMarkup(keyboard) if keyboard else None
         try:
             await update.message.reply_text(
                 response,
                 parse_mode='Markdown',
-                disable_web_page_preview=True
+                disable_web_page_preview=True,
+                reply_markup=reply_markup,
             )
         except Exception as e:
             # Si hay error con Markdown, enviar sin formato
             logger.warning(f"Error con Markdown en list, enviando texto plano: {e}")
             plain_response = response.replace('*', '').replace('`', '')
-            await update.message.reply_text(plain_response)
+            await update.message.reply_text(plain_response, reply_markup=reply_markup)
     else:
         # Guardar datos para paginación y mostrar primera página
         db.save_list_pagination_data(user_id, followed_artists, display_name)
@@ -5784,6 +5789,10 @@ def main():
     global calendar_handlers
     calendar_handlers = CalendarHandlers(db, muspy_service)
 
+    # Inicializar handlers de detalle de artista
+    global artist_handlers
+    artist_handlers = ArtistHandlers(db, get_services())
+
     # Validar servicios
     validate_services()
 
@@ -5880,6 +5889,8 @@ def main():
     # Handlers de callbacks específicos (ORDEN IMPORTANTE)
     application.add_handler(CallbackQueryHandler(artist_selection_callback, pattern="^(select_artist_|cancel_artist_selection)"))
     application.add_handler(CallbackQueryHandler(list_page_callback, pattern="^list_page_"))
+    # Artist detail panel callbacks (art_<id>, art_b_<id>, art_i_<id>, art_a_<id>_<page>, etc.)
+    application.add_handler(CallbackQueryHandler(artist_handlers.art_callback, pattern="^art_"))
     # lastfm_callback_handler y spotify_callback_handler eliminados
 
     # Callbacks de calendario (DESPUÉS de muspy_callback_handler)
