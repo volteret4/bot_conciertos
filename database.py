@@ -2127,17 +2127,32 @@ class ArtistTrackerDatabase:
             columns = [col[1] for col in cursor.fetchall()]
 
             migrations = [
-                ('radicale_url',       "ALTER TABLE users ADD COLUMN radicale_url TEXT"),
-                ('radicale_username',  "ALTER TABLE users ADD COLUMN radicale_username TEXT"),
-                ('radicale_password',  "ALTER TABLE users ADD COLUMN radicale_password TEXT"),
-                ('radicale_calendar',  "ALTER TABLE users ADD COLUMN radicale_calendar TEXT"),
-                ('notification_day',   "ALTER TABLE users ADD COLUMN notification_day INTEGER DEFAULT 0"),
-                ('radicale_auto_push', "ALTER TABLE users ADD COLUMN radicale_auto_push INTEGER DEFAULT 0"),
+                ('radicale_url',            "ALTER TABLE users ADD COLUMN radicale_url TEXT"),
+                ('radicale_username',       "ALTER TABLE users ADD COLUMN radicale_username TEXT"),
+                ('radicale_password',       "ALTER TABLE users ADD COLUMN radicale_password TEXT"),
+                ('radicale_calendar',       "ALTER TABLE users ADD COLUMN radicale_calendar TEXT"),
+                ('notification_day',        "ALTER TABLE users ADD COLUMN notification_day INTEGER DEFAULT 0"),
+                ('radicale_auto_push',      "ALTER TABLE users ADD COLUMN radicale_auto_push INTEGER DEFAULT 0"),
+                ('radicale_auto_concerts',  "ALTER TABLE users ADD COLUMN radicale_auto_concerts INTEGER DEFAULT 0"),
+                ('radicale_auto_releases',  "ALTER TABLE users ADD COLUMN radicale_auto_releases INTEGER DEFAULT 0"),
             ]
             for col_name, sql in migrations:
                 if col_name not in columns:
                     cursor.execute(sql)
                     logger.info(f"Columna {col_name} añadida a users")
+
+            # Migrar radicale_auto_push → radicale_auto_concerts + radicale_auto_releases
+            cursor.execute("PRAGMA table_info(users)")
+            columns = [col[1] for col in cursor.fetchall()]
+            if 'radicale_auto_push' in columns and 'radicale_auto_concerts' in columns:
+                cursor.execute("""
+                    UPDATE users SET
+                        radicale_auto_concerts = radicale_auto_push,
+                        radicale_auto_releases = radicale_auto_push
+                    WHERE radicale_auto_push = 1
+                      AND radicale_auto_concerts = 0
+                      AND radicale_auto_releases = 0
+                """)
 
             conn.commit()
             logger.info("Columnas de Radicale inicializadas correctamente")
@@ -2212,39 +2227,63 @@ class ArtistTrackerDatabase:
         finally:
             conn.close()
 
-    def set_radicale_auto_push(self, user_id: int, enabled: bool) -> bool:
-        """Activa o desactiva el auto-push semanal a Radicale."""
+    def set_radicale_auto(self, user_id: int, concerts: bool = None, releases: bool = None) -> bool:
+        """Activa/desactiva el auto-push semanal a Radicale para conciertos y/o discos."""
+        if concerts is None and releases is None:
+            return False
         conn = self.get_connection()
         cursor = conn.cursor()
         try:
-            cursor.execute(
-                "UPDATE users SET radicale_auto_push = ? WHERE id = ?",
-                (1 if enabled else 0, user_id)
-            )
+            updates, params = [], []
+            if concerts is not None:
+                updates.append("radicale_auto_concerts = ?")
+                params.append(1 if concerts else 0)
+            if releases is not None:
+                updates.append("radicale_auto_releases = ?")
+                params.append(1 if releases else 0)
+            params.append(user_id)
+            cursor.execute(f"UPDATE users SET {', '.join(updates)} WHERE id = ?", params)
             conn.commit()
             return cursor.rowcount > 0
         except sqlite3.Error as e:
-            logger.error(f"Error actualizando radicale_auto_push: {e}")
+            logger.error(f"Error actualizando radicale_auto: {e}")
             return False
         finally:
             conn.close()
 
+    def get_radicale_auto(self, user_id: int) -> Dict:
+        """Devuelve {'concerts': bool, 'releases': bool} para el usuario dado."""
+        conn = self.get_connection()
+        cursor = conn.cursor()
+        try:
+            cursor.execute(
+                "SELECT radicale_auto_concerts, radicale_auto_releases FROM users WHERE id = ?",
+                (user_id,)
+            )
+            row = cursor.fetchone()
+            return {'concerts': bool(row[0]), 'releases': bool(row[1])} if row else {'concerts': False, 'releases': False}
+        except sqlite3.Error as e:
+            logger.error(f"Error leyendo radicale_auto: {e}")
+            return {'concerts': False, 'releases': False}
+        finally:
+            conn.close()
+
     def get_users_with_radicale_auto_push(self) -> List[Dict]:
-        """Devuelve usuarios con Radicale configurado y auto_push activado."""
+        """Devuelve usuarios con Radicale configurado y al menos un tipo de auto-push activo."""
         conn = self.get_connection()
         cursor = conn.cursor()
         try:
             cursor.execute("""
                 SELECT id AS user_id, chat_id,
-                       radicale_url, radicale_username, radicale_password, radicale_calendar
+                       radicale_url, radicale_username, radicale_password, radicale_calendar,
+                       radicale_auto_concerts, radicale_auto_releases
                 FROM users
-                WHERE radicale_auto_push = 1
-                  AND radicale_url IS NOT NULL
-                  AND radicale_url != ''
+                WHERE (radicale_auto_concerts = 1 OR radicale_auto_releases = 1)
+                  AND radicale_url IS NOT NULL AND radicale_url != ''
             """)
             return [dict(row) for row in cursor.fetchall()]
         except sqlite3.Error as e:
-            logger.error(f"Error obteniendo usuarios con radicale_auto_push: {e}")
+            logger.error(f"Error obteniendo usuarios con radicale_auto: {e}")
             return []
         finally:
             conn.close()
@@ -2808,17 +2847,33 @@ class ArtistTrackerDatabase:
                     calendar_id TEXT DEFAULT 'primary',
                     pending_auth INTEGER DEFAULT 0,
                     auto_push INTEGER DEFAULT 0,
+                    gcal_auto_concerts INTEGER DEFAULT 0,
+                    gcal_auto_releases INTEGER DEFAULT 0,
                     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
                 )
             """)
             cursor.execute("CREATE INDEX IF NOT EXISTS idx_google_auth_user ON user_google_auth(user_id)")
-            # Migración: añadir auto_push si la tabla ya existía sin esa columna
             cursor.execute("PRAGMA table_info(user_google_auth)")
             gcal_cols = [col[1] for col in cursor.fetchall()]
-            if 'auto_push' not in gcal_cols:
-                cursor.execute("ALTER TABLE user_google_auth ADD COLUMN auto_push INTEGER DEFAULT 0")
+            for col, sql in [
+                ('auto_push',         "ALTER TABLE user_google_auth ADD COLUMN auto_push INTEGER DEFAULT 0"),
+                ('gcal_auto_concerts',"ALTER TABLE user_google_auth ADD COLUMN gcal_auto_concerts INTEGER DEFAULT 0"),
+                ('gcal_auto_releases',"ALTER TABLE user_google_auth ADD COLUMN gcal_auto_releases INTEGER DEFAULT 0"),
+            ]:
+                if col not in gcal_cols:
+                    cursor.execute(sql)
+
+            # Migrar auto_push → gcal_auto_concerts + gcal_auto_releases
+            cursor.execute("""
+                UPDATE user_google_auth SET
+                    gcal_auto_concerts = auto_push,
+                    gcal_auto_releases = auto_push
+                WHERE auto_push = 1
+                  AND gcal_auto_concerts = 0
+                  AND gcal_auto_releases = 0
+            """)
             conn.commit()
         except sqlite3.Error as e:
             logger.error(f"Error inicializando tabla Google Auth: {e}")
@@ -2934,47 +2989,80 @@ class ArtistTrackerDatabase:
         finally:
             conn.close()
 
-    def set_google_auto_push(self, user_id: int, enabled: bool) -> bool:
-        """Activa o desactiva el auto-push semanal a Google Calendar."""
+    def set_gcal_auto(self, user_id: int, concerts: bool = None, releases: bool = None) -> bool:
+        """Activa/desactiva el auto-push semanal a Google Calendar para conciertos y/o discos."""
+        if concerts is None and releases is None:
+            return False
         conn = self.get_connection()
         cursor = conn.cursor()
         try:
-            cursor.execute("""
-                UPDATE user_google_auth SET auto_push = ?, updated_at = CURRENT_TIMESTAMP
-                WHERE user_id = ? AND pending_auth = 0
-            """, (1 if enabled else 0, user_id))
+            updates, params = [], []
+            if concerts is not None:
+                updates.append("gcal_auto_concerts = ?")
+                params.append(1 if concerts else 0)
+            if releases is not None:
+                updates.append("gcal_auto_releases = ?")
+                params.append(1 if releases else 0)
+            params.append(user_id)
+            cursor.execute(
+                f"UPDATE user_google_auth SET {', '.join(updates)}, updated_at = CURRENT_TIMESTAMP WHERE user_id = ? AND pending_auth = 0",
+                params
+            )
             conn.commit()
             return cursor.rowcount > 0
         except sqlite3.Error as e:
-            logger.error(f"Error actualizando auto_push: {e}")
+            logger.error(f"Error actualizando gcal_auto: {e}")
             return False
         finally:
             conn.close()
 
+    def get_gcal_auto(self, user_id: int) -> Dict:
+        """Devuelve {'concerts': bool, 'releases': bool} para el usuario dado."""
+        conn = self.get_connection()
+        cursor = conn.cursor()
+        try:
+            cursor.execute(
+                "SELECT gcal_auto_concerts, gcal_auto_releases FROM user_google_auth WHERE user_id = ? AND pending_auth = 0",
+                (user_id,)
+            )
+            row = cursor.fetchone()
+            return {'concerts': bool(row[0]), 'releases': bool(row[1])} if row else {'concerts': False, 'releases': False}
+        except sqlite3.Error as e:
+            logger.error(f"Error leyendo gcal_auto: {e}")
+            return {'concerts': False, 'releases': False}
+        finally:
+            conn.close()
+
     def get_users_with_gcal_auto_push(self) -> List[Dict]:
-        """Devuelve usuarios con Google Calendar conectado y auto_push activado."""
+        """Devuelve usuarios con Google Calendar conectado y al menos un tipo de auto-push activo."""
         conn = self.get_connection()
         cursor = conn.cursor()
         try:
             cursor.execute("""
                 SELECT u.id AS user_id, u.chat_id,
-                       g.token_data, g.calendar_id
+                       g.token_data, g.calendar_id,
+                       g.gcal_auto_concerts, g.gcal_auto_releases
                 FROM users u
                 JOIN user_google_auth g ON g.user_id = u.id
-                WHERE g.pending_auth = 0 AND g.auto_push = 1
+                WHERE g.pending_auth = 0
+                  AND (g.gcal_auto_concerts = 1 OR g.gcal_auto_releases = 1)
             """)
-            rows = cursor.fetchall()
             result = []
-            for row in rows:
-                result.append({
-                    'user_id': row[0],
-                    'chat_id': row[1],
-                    'token_data': json.loads(row[2]) if row[2] else {},
-                    'calendar_id': row[3] or 'primary',
-                })
+            for row in cursor.fetchall():
+                try:
+                    result.append({
+                        'user_id': row[0],
+                        'chat_id': row[1],
+                        'token_data': json.loads(row[2]) if row[2] else {},
+                        'calendar_id': row[3] or 'primary',
+                        'gcal_auto_concerts': bool(row[4]),
+                        'gcal_auto_releases': bool(row[5]),
+                    })
+                except (json.JSONDecodeError, TypeError):
+                    pass
             return result
-        except (sqlite3.Error, json.JSONDecodeError) as e:
-            logger.error(f"Error obteniendo usuarios con gcal auto_push: {e}")
+        except sqlite3.Error as e:
+            logger.error(f"Error obteniendo usuarios con gcal auto: {e}")
             return []
         finally:
             conn.close()
