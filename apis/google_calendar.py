@@ -51,22 +51,38 @@ class GoogleCalendarService:
         return auth_url
 
     def exchange_code(self, code: str) -> Dict:
-        """Intercambia el código de autorización por tokens. Devuelve dict con los tokens."""
-        from google_auth_oauthlib.flow import Flow
-        os.environ.setdefault('OAUTHLIB_INSECURE_TRANSPORT', '1')
-        flow = Flow.from_client_config(
-            self._client_config, scopes=SCOPES, redirect_uri=REDIRECT_URI
+        """
+        Intercambia el código de autorización por tokens usando el endpoint de Google directamente.
+        Evita la verificación de 'state' de google-auth-oauthlib que falla en bots.
+        """
+        import requests as _requests
+        resp = _requests.post(
+            'https://oauth2.googleapis.com/token',
+            data={
+                'code': code.strip(),
+                'client_id': self.client_id,
+                'client_secret': self.client_secret,
+                'redirect_uri': REDIRECT_URI,
+                'grant_type': 'authorization_code',
+            },
+            timeout=15,
         )
-        flow.fetch_token(code=code.strip())
-        creds = flow.credentials
+        resp.raise_for_status()
+        token_json = resp.json()
+
+        if 'error' in token_json:
+            raise ValueError(
+                f"Error de Google OAuth: {token_json.get('error_description', token_json['error'])}"
+            )
+
         return {
-            'token': creds.token,
-            'refresh_token': creds.refresh_token,
-            'token_uri': creds.token_uri,
-            'client_id': creds.client_id,
-            'client_secret': creds.client_secret,
-            'scopes': list(creds.scopes) if creds.scopes else list(SCOPES),
-            'expiry': creds.expiry.isoformat() if creds.expiry else None,
+            'token': token_json.get('access_token'),
+            'refresh_token': token_json.get('refresh_token'),
+            'token_uri': 'https://oauth2.googleapis.com/token',
+            'client_id': self.client_id,
+            'client_secret': self.client_secret,
+            'scopes': token_json.get('scope', '').split() or list(SCOPES),
+            'expiry': None,
         }
 
     def _build_credentials(self, token_data: Dict):
