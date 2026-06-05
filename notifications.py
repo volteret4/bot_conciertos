@@ -556,7 +556,7 @@ class WeeklyNotificationService:
 
     async def _push_gcal_for_user(self, user_id: int, concerts: List[Dict], releases: List[Dict]):
         """
-        Empuja conciertos y lanzamientos a Google Calendar para un usuario con auto_push activo.
+        Empuja conciertos y/o lanzamientos a Google Calendar según lo configurado por el usuario.
         Opera en background — los errores no interrumpen las notificaciones.
         """
         if not self.gcal_service:
@@ -574,7 +574,7 @@ class WeeklyNotificationService:
             svc = self.gcal_service
             loop = asyncio.get_event_loop()
 
-            if concerts:
+            if concerts and user_gcal.get('gcal_auto_concerts'):
                 new_c, skip_c, err_c, token_data = await loop.run_in_executor(
                     None, lambda: svc.push_concerts(token_data, concerts, calendar_id)
                 )
@@ -583,7 +583,7 @@ class WeeklyNotificationService:
                     f"nuevos={new_c} ya_existían={skip_c} errores={err_c}"
                 )
 
-            if releases:
+            if releases and user_gcal.get('gcal_auto_releases'):
                 new_r, skip_r, err_r, token_data = await loop.run_in_executor(
                     None,
                     lambda: svc.push_releases(token_data, releases, calendar_id, self.muspy_service)
@@ -625,7 +625,7 @@ class WeeklyNotificationService:
 
             loop = asyncio.get_event_loop()
 
-            if concerts:
+            if concerts and user_rad.get('radicale_auto_concerts'):
                 pushed_c, errors_c, _ = await loop.run_in_executor(
                     None, lambda: client.push_events_bulk(concerts, event_type='concert')
                 )
@@ -634,7 +634,7 @@ class WeeklyNotificationService:
                     f"subidos={pushed_c} errores={errors_c}"
                 )
 
-            if releases:
+            if releases and user_rad.get('radicale_auto_releases'):
                 pushed_r, errors_r, _ = await loop.run_in_executor(
                     None, lambda: client.push_events_bulk(releases, event_type='release')
                 )

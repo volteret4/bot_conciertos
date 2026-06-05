@@ -56,14 +56,18 @@ class CalendarHandlers:
             return
 
         radicale_cfg = self.db.get_radicale_config(user_id)
-        radicale_status = f"✅ {radicale_cfg['calendar']}" if radicale_cfg else "❌ No configurado"
+        gcal_auth = self.db.get_google_auth(user_id) if self._get_gcal_service() else None
+
+        radicale_status = f"✅ `{radicale_cfg['calendar']}`" if radicale_cfg else "❌ No configurado"
+        gcal_status = "✅ Conectado" if gcal_auth else ("❌ No conectado" if self._get_gcal_service() else "❌ No disponible")
 
         text = (
             "📅 *Generador de Calendarios*\n\n"
             "🎵 *Conciertos*: todos los conciertos de tus artistas en tus países\n"
             "💿 *Discos*: próximos lanzamientos de Muspy\n\n"
-            f"☁️ Radicale: {radicale_status}\n\n"
-            "Los archivos .ics son compatibles con Google Calendar, Apple Calendar, Outlook, etc."
+            f"☁️ Radicale: {radicale_status}\n"
+            f"📅 Google Calendar: {gcal_status}\n\n"
+            "_Los archivos .ics también son compatibles con Apple Calendar, Outlook, etc._"
         )
 
         keyboard = [
@@ -77,6 +81,15 @@ class CalendarHandlers:
                 InlineKeyboardButton("☁️ Conciertos → Radicale", callback_data=f"cal_rad_concerts_{user_id}"),
                 InlineKeyboardButton("☁️ Discos → Radicale", callback_data=f"cal_rad_releases_{user_id}"),
             ])
+        if gcal_auth:
+            keyboard.append([
+                InlineKeyboardButton("📅 Conciertos → Google", callback_data=f"cal_gcal_concerts_{user_id}"),
+                InlineKeyboardButton("📅 Discos → Google", callback_data=f"cal_gcal_releases_{user_id}"),
+            ])
+        elif self._get_gcal_service():
+            keyboard.append([
+                InlineKeyboardButton("🔐 Conectar Google Calendar", callback_data=f"gcal_connect_{user_id}"),
+            ])
 
         await update.message.reply_text(text, reply_markup=InlineKeyboardMarkup(keyboard), parse_mode='Markdown')
 
@@ -89,16 +102,22 @@ class CalendarHandlers:
         data = query.data  # e.g. "cal_concerts_42" or "cal_rad_concerts_42"
         parts = data.split("_")
 
-        # Formato: cal_{action}_{user_id}  o  cal_rad_{action}_{user_id}
+        # Formatos:
+        #   cal_concerts_{id}           → ICS
+        #   cal_releases_{id}           → ICS
+        #   cal_rad_concerts_{id}       → Radicale
+        #   cal_rad_releases_{id}       → Radicale
+        #   cal_gcal_concerts_{id}      → Google Calendar
+        #   cal_gcal_releases_{id}      → Google Calendar
         try:
-            if parts[1] == "rad":
-                action = parts[2]          # concerts / releases
+            if parts[1] in ("rad", "gcal"):
+                destination = parts[1]     # 'rad' o 'gcal'
+                action = parts[2]          # 'concerts' o 'releases'
                 user_id = int(parts[3])
-                radicale = True
             else:
-                action = parts[1]          # concerts / releases
+                destination = "ics"
+                action = parts[1]
                 user_id = int(parts[2])
-                radicale = False
         except (IndexError, ValueError):
             await query.edit_message_text("❌ Error en el callback.")
             return
@@ -108,18 +127,24 @@ class CalendarHandlers:
             return
 
         try:
-            if action == "concerts":
-                if radicale:
+            if action not in ("concerts", "releases"):
+                await query.edit_message_text("❌ Acción no reconocida.")
+                return
+            if destination == "rad":
+                if action == "concerts":
                     await self._handle_radicale_concerts(query, user_id)
                 else:
-                    await self._handle_concerts_calendar(query, user_id)
-            elif action == "releases":
-                if radicale:
                     await self._handle_radicale_releases(query, user_id)
+            elif destination == "gcal":
+                if action == "concerts":
+                    await self._handle_gcal_concerts(query, user_id)
+                else:
+                    await self._handle_gcal_releases(query, user_id)
+            else:  # ics
+                if action == "concerts":
+                    await self._handle_concerts_calendar(query, user_id)
                 else:
                     await self._handle_releases_calendar(query, user_id)
-            else:
-                await query.edit_message_text("❌ Acción no reconocida.")
         except Exception as e:
             logger.error(f"Error en cal_callback_handler: {e}")
             await query.edit_message_text("❌ Error generando el calendario.")
@@ -527,21 +552,9 @@ class CalendarHandlers:
         status = "✅ Conectado" if connected else "❌ No conectado"
         calendar_id = auth_data['calendar_id'] if connected else 'primary'
 
-        # Leer estado de auto_push directamente de la BD
-        auto_push = False
-        if connected:
-            conn = self.db.get_connection()
-            try:
-                cur = conn.cursor()
-                cur.execute("SELECT auto_push FROM user_google_auth WHERE user_id = ?", (user_id,))
-                row = cur.fetchone()
-                auto_push = bool(row[0]) if row else False
-            except Exception:
-                pass
-            finally:
-                conn.close()
-
-        auto_label = "🔔 Auto-push: ON" if auto_push else "🔕 Auto-push: OFF"
+        auto = self.db.get_gcal_auto(user_id) if connected else {'concerts': False, 'releases': False}
+        apc_label = ("🔔 Auto conciertos: ON" if auto['concerts'] else "🔕 Auto conciertos: OFF")
+        apr_label = ("🔔 Auto discos: ON"      if auto['releases'] else "🔕 Auto discos: OFF")
 
         text = (
             "📅 *Google Calendar*\n\n"
@@ -550,7 +563,8 @@ class CalendarHandlers:
         )
         if connected:
             text += (
-                f"Auto-push semanal: {'✅ activado' if auto_push else '❌ desactivado'}\n\n"
+                f"Auto conciertos: {'✅' if auto['concerts'] else '❌'}  "
+                f"Auto discos: {'✅' if auto['releases'] else '❌'}\n\n"
                 "Elige qué eventos quieres subir a Google Calendar:"
             )
             keyboard = [
@@ -558,7 +572,10 @@ class CalendarHandlers:
                     InlineKeyboardButton("🎵 Conciertos → Google", callback_data=f"gcal_concerts_{user_id}"),
                     InlineKeyboardButton("💿 Discos → Google", callback_data=f"gcal_releases_{user_id}"),
                 ],
-                [InlineKeyboardButton(auto_label, callback_data=f"gcal_autopush_{user_id}")],
+                [
+                    InlineKeyboardButton(apc_label, callback_data=f"gcal_apc_{user_id}"),
+                    InlineKeyboardButton(apr_label, callback_data=f"gcal_apr_{user_id}"),
+                ],
                 [InlineKeyboardButton("🔌 Desconectar Google", callback_data=f"gcal_disconnect_{user_id}")],
             ]
         else:
@@ -599,8 +616,10 @@ class CalendarHandlers:
                 await self._handle_gcal_releases(query, user_id)
             elif action == "disconnect":
                 await self._handle_gcal_disconnect(query, user_id)
-            elif action == "autopush":
-                await self._handle_gcal_toggle_autopush(query, user_id)
+            elif action == "apc":
+                await self._handle_gcal_toggle_apc(query, user_id)
+            elif action == "apr":
+                await self._handle_gcal_toggle_apr(query, user_id)
             else:
                 await query.edit_message_text("❌ Acción no reconocida.")
         except Exception as e:
@@ -677,25 +696,24 @@ class CalendarHandlers:
             parse_mode='Markdown'
         )
 
-    async def _handle_gcal_toggle_autopush(self, query, user_id: int):
-        conn = self.db.get_connection()
-        try:
-            cur = conn.cursor()
-            cur.execute("SELECT auto_push FROM user_google_auth WHERE user_id = ?", (user_id,))
-            row = cur.fetchone()
-            current = bool(row[0]) if row else False
-        except Exception:
-            current = False
-        finally:
-            conn.close()
-
-        new_state = not current
-        self.db.set_google_auto_push(user_id, new_state)
+    async def _handle_gcal_toggle_apc(self, query, user_id: int):
+        current = self.db.get_gcal_auto(user_id)
+        new_state = not current['concerts']
+        self.db.set_gcal_auto(user_id, concerts=new_state)
         state_text = "✅ activado" if new_state else "❌ desactivado"
         await query.edit_message_text(
-            f"🔔 Auto-push semanal a Google Calendar: *{state_text}*\n\n"
-            "Cada semana, cuando se genere el resumen de novedades, los conciertos y "
-            "lanzamientos nuevos se añadirán automáticamente a tu calendario de Google.\n\n"
+            f"🎵 Auto-push de *conciertos* a Google Calendar: *{state_text}*\n\n"
+            "Usa `/gcal` para ver el panel completo.",
+            parse_mode='Markdown'
+        )
+
+    async def _handle_gcal_toggle_apr(self, query, user_id: int):
+        current = self.db.get_gcal_auto(user_id)
+        new_state = not current['releases']
+        self.db.set_gcal_auto(user_id, releases=new_state)
+        state_text = "✅ activado" if new_state else "❌ desactivado"
+        await query.edit_message_text(
+            f"💿 Auto-push de *discos* a Google Calendar: *{state_text}*\n\n"
             "Usa `/gcal` para ver el panel completo.",
             parse_mode='Markdown'
         )
