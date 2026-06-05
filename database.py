@@ -41,7 +41,7 @@ def make_concert_hash(artist: str, venue: str, date: str) -> str:
     Uses lowercase artist+venue+date so the result is case-insensitive and
     independent of source. All save paths must call this function.
     """
-    raw = f"{artist.lower().strip()}-{venue.strip()}-{date.strip()}"
+    raw = f"{artist.lower().strip()}-{venue.lower().strip()}-{date.strip()}"
     return hashlib.md5(raw.encode()).hexdigest()
 
 
@@ -57,6 +57,7 @@ class ArtistTrackerDatabase:
         """
         self.db_path = db_path
         self.init_database()
+        self.init_google_auth_tables()
 
     def get_connection(self) -> sqlite3.Connection:
         """Obtiene una conexión a la base de datos"""
@@ -1101,8 +1102,8 @@ class ArtistTrackerDatabase:
                     date, time, url, source, concert_hash
                 ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """, (
-                concert_data.get('artist', ''),
-                concert_data.get('name', ''),
+                concert_data.get('artist_name') or concert_data.get('artist', ''),
+                concert_data.get('concert_name') or concert_data.get('name', ''),
                 concert_data.get('venue', ''),
                 concert_data.get('city', ''),
                 concert_data.get('country', ''),
@@ -2746,6 +2747,172 @@ class ArtistTrackerDatabase:
             return deleted
         except sqlite3.Error as e:
             logger.error(f"Error limpiando releases expirados: {e}")
+            conn.rollback()
+            return 0
+        finally:
+            conn.close()
+
+    # ======================
+    # GOOGLE CALENDAR AUTH
+    # ======================
+
+    def init_google_auth_tables(self):
+        """Crea la tabla de autenticación de Google Calendar si no existe."""
+        conn = self.get_connection()
+        cursor = conn.cursor()
+        try:
+            cursor.execute("""
+                CREATE TABLE IF NOT EXISTS user_google_auth (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    user_id INTEGER NOT NULL UNIQUE,
+                    token_data TEXT NOT NULL,
+                    calendar_id TEXT DEFAULT 'primary',
+                    pending_auth INTEGER DEFAULT 0,
+                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+                )
+            """)
+            cursor.execute("CREATE INDEX IF NOT EXISTS idx_google_auth_user ON user_google_auth(user_id)")
+            conn.commit()
+        except sqlite3.Error as e:
+            logger.error(f"Error inicializando tabla Google Auth: {e}")
+            conn.rollback()
+        finally:
+            conn.close()
+
+    def save_google_auth(self, user_id: int, token_data: dict, calendar_id: str = 'primary') -> bool:
+        """Guarda o actualiza los tokens de Google Calendar del usuario."""
+        conn = self.get_connection()
+        cursor = conn.cursor()
+        try:
+            cursor.execute("""
+                INSERT INTO user_google_auth (user_id, token_data, calendar_id, pending_auth, updated_at)
+                VALUES (?, ?, ?, 0, CURRENT_TIMESTAMP)
+                ON CONFLICT(user_id) DO UPDATE SET
+                    token_data = excluded.token_data,
+                    calendar_id = excluded.calendar_id,
+                    pending_auth = 0,
+                    updated_at = CURRENT_TIMESTAMP
+            """, (user_id, json.dumps(token_data), calendar_id))
+            conn.commit()
+            return True
+        except sqlite3.Error as e:
+            logger.error(f"Error guardando Google Auth: {e}")
+            conn.rollback()
+            return False
+        finally:
+            conn.close()
+
+    def get_google_auth(self, user_id: int) -> Optional[Dict]:
+        """Devuelve los datos de autenticación de Google Calendar, o None si no están configurados."""
+        conn = self.get_connection()
+        cursor = conn.cursor()
+        try:
+            cursor.execute(
+                "SELECT token_data, calendar_id FROM user_google_auth WHERE user_id = ? AND pending_auth = 0",
+                (user_id,)
+            )
+            row = cursor.fetchone()
+            if row and row[0]:
+                return {'token_data': json.loads(row[0]), 'calendar_id': row[1] or 'primary'}
+            return None
+        except (sqlite3.Error, json.JSONDecodeError) as e:
+            logger.error(f"Error obteniendo Google Auth: {e}")
+            return None
+        finally:
+            conn.close()
+
+    def update_google_token(self, user_id: int, token_data: dict) -> bool:
+        """Actualiza solo el token (tras refresh) sin cambiar el calendar_id."""
+        conn = self.get_connection()
+        cursor = conn.cursor()
+        try:
+            cursor.execute("""
+                UPDATE user_google_auth SET token_data = ?, updated_at = CURRENT_TIMESTAMP
+                WHERE user_id = ?
+            """, (json.dumps(token_data), user_id))
+            conn.commit()
+            return cursor.rowcount > 0
+        except sqlite3.Error as e:
+            logger.error(f"Error actualizando Google token: {e}")
+            return False
+        finally:
+            conn.close()
+
+    def clear_google_auth(self, user_id: int) -> bool:
+        """Elimina los datos de autenticación de Google Calendar del usuario."""
+        conn = self.get_connection()
+        cursor = conn.cursor()
+        try:
+            cursor.execute("DELETE FROM user_google_auth WHERE user_id = ?", (user_id,))
+            conn.commit()
+            return cursor.rowcount > 0
+        except sqlite3.Error as e:
+            logger.error(f"Error eliminando Google Auth: {e}")
+            return False
+        finally:
+            conn.close()
+
+    def set_google_pending_auth(self, user_id: int) -> bool:
+        """Marca que el usuario está en proceso de autenticación de Google Calendar."""
+        conn = self.get_connection()
+        cursor = conn.cursor()
+        try:
+            cursor.execute("""
+                INSERT INTO user_google_auth (user_id, token_data, pending_auth, updated_at)
+                VALUES (?, '{}', 1, CURRENT_TIMESTAMP)
+                ON CONFLICT(user_id) DO UPDATE SET pending_auth = 1, updated_at = CURRENT_TIMESTAMP
+            """, (user_id,))
+            conn.commit()
+            return True
+        except sqlite3.Error as e:
+            logger.error(f"Error marcando pending Google Auth: {e}")
+            conn.rollback()
+            return False
+        finally:
+            conn.close()
+
+    def has_google_pending_auth(self, user_id: int) -> bool:
+        """Devuelve True si el usuario tiene pendiente completar el auth de Google."""
+        conn = self.get_connection()
+        cursor = conn.cursor()
+        try:
+            cursor.execute(
+                "SELECT 1 FROM user_google_auth WHERE user_id = ? AND pending_auth = 1",
+                (user_id,)
+            )
+            return cursor.fetchone() is not None
+        except sqlite3.Error as e:
+            logger.error(f"Error comprobando pending Google Auth: {e}")
+            return False
+        finally:
+            conn.close()
+
+    def deduplicate_concerts(self) -> int:
+        """
+        Elimina filas duplicadas de la tabla concerts basándose en
+        (LOWER(artist_name), LOWER(venue), date), conservando el ID más bajo.
+        Devuelve el número de filas eliminadas.
+        """
+        conn = self.get_connection()
+        cursor = conn.cursor()
+        try:
+            cursor.execute("""
+                DELETE FROM concerts
+                WHERE id NOT IN (
+                    SELECT MIN(id)
+                    FROM concerts
+                    GROUP BY LOWER(artist_name), LOWER(venue), date
+                )
+            """)
+            deleted = cursor.rowcount
+            conn.commit()
+            if deleted:
+                logger.info(f"deduplicate_concerts: {deleted} duplicados eliminados")
+            return deleted
+        except sqlite3.Error as e:
+            logger.error(f"Error deduplicando conciertos: {e}")
             conn.rollback()
             return 0
         finally:

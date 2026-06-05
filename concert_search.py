@@ -71,11 +71,11 @@ async def search_concerts_for_artist(
         elif isinstance(result, list):
             all_concerts.extend(result)
 
-    # Deduplicar por (venue, date)
+    # Deduplicar por (venue, date, city) — case-insensitive
     seen = set()
     unique = []
     for c in all_concerts:
-        key = (c.get('venue', ''), c.get('date', ''), c.get('city', ''))
+        key = (c.get('venue', '').lower(), c.get('date', ''), c.get('city', '').lower())
         if key not in seen:
             seen.add(key)
             unique.append(c)

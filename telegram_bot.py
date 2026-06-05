@@ -5795,6 +5795,34 @@ async def muspy_callback_handler(update: Update, context: ContextTypes.DEFAULT_T
 # CALENDARIO
 # ===========================
 
+async def gcal_callback_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Maneja todos los callbacks de Google Calendar (gcal_*)"""
+    query = update.callback_query
+    await query.answer()
+
+    parts = query.data.split("_")
+    if parts[0] != "gcal" or len(parts) < 3:
+        await query.edit_message_text("❌ Callback no válido.")
+        return
+
+    try:
+        user_id = int(parts[-1])
+    except (ValueError, IndexError):
+        await query.edit_message_text("❌ Callback no válido.")
+        return
+
+    user = db.get_user_by_chat_id(query.message.chat_id)
+    if not user or user['id'] != user_id:
+        await query.edit_message_text("❌ Error de autenticación.")
+        return
+
+    try:
+        await calendar_handlers.gcal_callback_handler(update, context)
+    except Exception as e:
+        logger.error(f"Error en gcal_callback_handler: {e}")
+        await query.edit_message_text("❌ Error procesando la solicitud de Google Calendar.")
+
+
 async def calendar_callback_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Maneja todos los callbacks de calendario"""
     query = update.callback_query
@@ -5969,6 +5997,8 @@ def main():
 
     # Handler de comando calendario
     application.add_handler(CommandHandler("cal", calendar_handlers.cal_command))
+    application.add_handler(CommandHandler("gcal", calendar_handlers.gcal_command))
+    application.add_handler(CommandHandler("gcal_code", calendar_handlers.gcal_auth_code_command))
 
     # MEJORA: Handlers de búsqueda con la nueva versión concurrente
     application.add_handler(CommandHandler("search", search_command))  # Usa la nueva versión concurrente
@@ -6018,6 +6048,7 @@ def main():
 
     # Callbacks de calendario (DESPUÉS de muspy_callback_handler)
     application.add_handler(CallbackQueryHandler(calendar_callback_handler, pattern="^cal_"))
+    application.add_handler(CallbackQueryHandler(gcal_callback_handler, pattern="^gcal_"))
 
     # Callback para página actual (no hace nada, solo evita errores)
     application.add_handler(CallbackQueryHandler(

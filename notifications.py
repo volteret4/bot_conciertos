@@ -226,7 +226,7 @@ class WeeklyNotificationService:
             try:
                 concerts, _ = self.ticketmaster.search_concerts(artist_name, code)
                 for c in concerts:
-                    key = (c.get('venue', ''), c.get('date', ''), c.get('city', ''))
+                    key = (c.get('venue', '').lower(), c.get('date', ''), c.get('city', '').lower())
                     if key not in seen:
                         seen.add(key)
                         all_concerts.append(c)
@@ -392,6 +392,7 @@ class WeeklyNotificationService:
             [today_str] + artist_names_lower)
 
             upper_countries = {c.upper() for c in countries} if countries else set()
+            seen_concerts: Set[Tuple] = set()
             for row in cur.fetchall():
                 r = dict(row)
                 # Filtrar por países del usuario (acepta código ISO o nombre completo)
@@ -400,6 +401,15 @@ class WeeklyNotificationService:
                     code_val = (r.get('country_code') or '').upper()
                     if country_val not in upper_countries and code_val not in upper_countries:
                         continue
+                # Deduplicar por (artist_lower, date, city_lower) para evitar duplicados de BD
+                dedup_key = (
+                    r['artist_name'].lower(),
+                    r.get('date', ''),
+                    (r.get('city') or '').lower(),
+                )
+                if dedup_key in seen_concerts:
+                    continue
+                seen_concerts.add(dedup_key)
                 concerts_by_artist.setdefault(r['artist_name'], []).append(r)
         except Exception as e:
             logger.error(f"Error leyendo conciertos de BD para usuario {user_id}: {e}")
@@ -595,9 +605,13 @@ class WeeklyNotificationService:
                 self._release_day_notified_today.clear()
                 try:
                     from database import ArtistTrackerDatabase
-                    ArtistTrackerDatabase(self.db_path).cleanup_expired_releases()
+                    _db = ArtistTrackerDatabase(self.db_path)
+                    _db.cleanup_expired_releases()
+                    removed = _db.deduplicate_concerts()
+                    if removed:
+                        logger.info(f"Limpieza diaria: {removed} conciertos duplicados eliminados")
                 except Exception as e:
-                    logger.warning(f"Error en limpieza de releases: {e}")
+                    logger.warning(f"Error en limpieza diaria: {e}")
                 _last_cleanup_date = today_str
 
             # ── Fase 1: búsqueda 2 horas antes ──────────────────────────────

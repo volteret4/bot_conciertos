@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Handlers para funcionalidades de calendario (/cal).
-Genera archivos ICS y sube eventos a Radicale (CalDAV).
+Handlers para funcionalidades de calendario (/cal, /gcal).
+Genera archivos ICS, sube eventos a Radicale (CalDAV) y a Google Calendar.
 """
 
 import logging
@@ -21,6 +21,17 @@ class CalendarHandlers:
     def __init__(self, database, muspy_service):
         self.db = database
         self.muspy_service = muspy_service
+        self._gcal_service = None
+
+    def _get_gcal_service(self):
+        """Construye o devuelve el servicio de Google Calendar (singleton por proceso)."""
+        if self._gcal_service is None:
+            client_id = os.environ.get('GOOGLE_CLIENT_ID')
+            client_secret = os.environ.get('GOOGLE_CLIENT_SECRET')
+            if client_id and client_secret:
+                from apis.google_calendar import GoogleCalendarService
+                self._gcal_service = GoogleCalendarService(client_id, client_secret)
+        return self._gcal_service
 
     def _get_username(self, user_id: int) -> str:
         try:
@@ -491,6 +502,254 @@ class CalendarHandlers:
                 .replace('\n', '\\n')
                 .replace(',', '\\,')
                 .replace(';', '\\;'))
+
+    # ─── /gcal: Google Calendar ───────────────────────────────────────────────
+
+    async def gcal_command(self, update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+        user_id = self._get_user_id(update)
+        if not user_id:
+            await update.message.reply_text(
+                "❌ Primero debes registrarte con `/adduser <tu_nombre>`",
+                parse_mode='Markdown'
+            )
+            return
+
+        gcal_svc = self._get_gcal_service()
+        if not gcal_svc:
+            await update.message.reply_text(
+                "❌ Google Calendar no está configurado en este bot.\n"
+                "El administrador debe definir `GOOGLE_CLIENT_ID` y `GOOGLE_CLIENT_SECRET`."
+            )
+            return
+
+        auth_data = self.db.get_google_auth(user_id)
+        connected = auth_data is not None
+        status = "✅ Conectado" if connected else "❌ No conectado"
+        calendar_id = auth_data['calendar_id'] if connected else 'primary'
+
+        text = (
+            "📅 *Google Calendar*\n\n"
+            f"Estado: {status}\n"
+            f"Calendario: `{calendar_id}`\n\n"
+        )
+        if connected:
+            text += "Elige qué eventos quieres subir a Google Calendar:"
+            keyboard = [
+                [
+                    InlineKeyboardButton("🎵 Conciertos → Google", callback_data=f"gcal_concerts_{user_id}"),
+                    InlineKeyboardButton("💿 Discos → Google", callback_data=f"gcal_releases_{user_id}"),
+                ],
+                [InlineKeyboardButton("🔌 Desconectar Google", callback_data=f"gcal_disconnect_{user_id}")],
+            ]
+        else:
+            text += (
+                "Conecta tu cuenta de Google para subir eventos directamente a tu calendario.\n\n"
+                "ℹ️ Se abrirá una URL de autorización de Google."
+            )
+            keyboard = [
+                [InlineKeyboardButton("🔐 Conectar Google Calendar", callback_data=f"gcal_connect_{user_id}")],
+            ]
+
+        await update.message.reply_text(
+            text, reply_markup=InlineKeyboardMarkup(keyboard), parse_mode='Markdown'
+        )
+
+    async def gcal_callback_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+        query = update.callback_query
+        await query.answer()
+        data = query.data  # gcal_{action}_{user_id}
+        parts = data.split("_")
+        try:
+            action = parts[1]
+            user_id = int(parts[2])
+        except (IndexError, ValueError):
+            await query.edit_message_text("❌ Callback no válido.")
+            return
+
+        if not self._verify_user(update, user_id):
+            await query.edit_message_text("❌ Error de autenticación.")
+            return
+
+        try:
+            if action == "connect":
+                await self._handle_gcal_connect(query, user_id)
+            elif action == "concerts":
+                await self._handle_gcal_concerts(query, user_id)
+            elif action == "releases":
+                await self._handle_gcal_releases(query, user_id)
+            elif action == "disconnect":
+                await self._handle_gcal_disconnect(query, user_id)
+            else:
+                await query.edit_message_text("❌ Acción no reconocida.")
+        except Exception as e:
+            logger.error(f"Error en gcal_callback_handler: {e}")
+            await query.edit_message_text("❌ Error procesando la solicitud de Google Calendar.")
+
+    async def gcal_auth_code_command(self, update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+        """Maneja /gcal_code <código> — intercambia el código por tokens de Google."""
+        user_id = self._get_user_id(update)
+        if not user_id:
+            await update.message.reply_text("❌ Debes registrarte primero.")
+            return
+
+        args = context.args
+        if not args:
+            await update.message.reply_text(
+                "❌ Uso: `/gcal_code <código>`\n\n"
+                "Ejecuta primero `/gcal` para obtener la URL de autorización.",
+                parse_mode='Markdown'
+            )
+            return
+
+        code = args[0].strip()
+        gcal_svc = self._get_gcal_service()
+        if not gcal_svc:
+            await update.message.reply_text("❌ Google Calendar no está configurado.")
+            return
+
+        await update.message.reply_text("🔄 Verificando código con Google...")
+        try:
+            token_data = gcal_svc.exchange_code(code)
+            self.db.save_google_auth(user_id, token_data)
+            await update.message.reply_text(
+                "✅ *¡Google Calendar conectado!*\n\n"
+                "Ya puedes usar `/gcal` para subir conciertos y lanzamientos.",
+                parse_mode='Markdown'
+            )
+            await admin_notify.notify_async(
+                "gcal",
+                "Nuevo usuario conectado a Google Calendar",
+                username=self._get_username(user_id),
+            )
+        except Exception as e:
+            logger.error(f"Error intercambiando código de Google: {e}")
+            await update.message.reply_text(
+                "❌ El código no es válido o ha expirado.\n"
+                "Ejecuta `/gcal` de nuevo para obtener una URL de autorización nueva.",
+                parse_mode='Markdown'
+            )
+
+    async def _handle_gcal_connect(self, query, user_id: int):
+        gcal_svc = self._get_gcal_service()
+        if not gcal_svc:
+            await query.edit_message_text("❌ Google Calendar no está configurado.")
+            return
+
+        auth_url = gcal_svc.get_auth_url()
+        text = (
+            "🔐 *Conectar Google Calendar*\n\n"
+            "1\\. Abre este enlace en tu navegador:\n\n"
+            f"[Autorizar acceso a Google Calendar]({auth_url})\n\n"
+            "2\\. Inicia sesión con tu cuenta de Google y acepta los permisos\\.\n\n"
+            "3\\. Serás redirigido a `http://localhost` \\(puede dar error de conexión, es normal\\)\\. "
+            "Copia el valor del parámetro `code` de la URL\\.\n\n"
+            "4\\. Envía el código al bot con:\n"
+            "`/gcal_code <código>`"
+        )
+        await query.edit_message_text(text, parse_mode='MarkdownV2', disable_web_page_preview=True)
+
+    async def _handle_gcal_disconnect(self, query, user_id: int):
+        self.db.clear_google_auth(user_id)
+        await query.edit_message_text(
+            "✅ Google Calendar desconectado.\nUsa `/gcal` para volver a conectar.",
+            parse_mode='Markdown'
+        )
+
+    async def _handle_gcal_concerts(self, query, user_id: int):
+        gcal_svc = self._get_gcal_service()
+        if not gcal_svc:
+            await query.edit_message_text("❌ Google Calendar no está configurado.")
+            return
+
+        auth_data = self.db.get_google_auth(user_id)
+        if not auth_data:
+            await query.edit_message_text(
+                "❌ No estás conectado a Google Calendar.\nUsa `/gcal` para conectar.",
+                parse_mode='Markdown'
+            )
+            return
+
+        await query.edit_message_text("📂 Obteniendo conciertos de la base de datos...")
+
+        from user_services import UserServices
+        user_config = UserServices(self.db).get_user_services(user_id)
+        user_countries = user_config.get('countries', set())
+        concerts = self._fetch_concerts_from_db(user_id, user_countries)
+
+        if not concerts:
+            await query.edit_message_text(
+                "📭 No se encontraron conciertos futuros.\n💡 Usa /search primero."
+            )
+            return
+
+        await query.edit_message_text(f"☁️ Subiendo {len(concerts)} conciertos a Google Calendar...")
+
+        import asyncio
+        loop = asyncio.get_event_loop()
+        success, errors, updated_token = await loop.run_in_executor(
+            None,
+            lambda: gcal_svc.push_concerts(
+                auth_data['token_data'], concerts, auth_data['calendar_id']
+            )
+        )
+
+        if updated_token != auth_data['token_data']:
+            self.db.update_google_token(user_id, updated_token)
+
+        msg = (
+            f"📅 *Subida a Google Calendar completada*\n\n"
+            f"✅ Eventos subidos: {success}\n"
+            f"❌ Errores: {errors}"
+        )
+        await query.edit_message_text(msg, parse_mode='Markdown')
+        if success > 0:
+            await admin_notify.notify_async(
+                "gcal",
+                f"Conciertos → GCal · {success} subidos",
+                username=self._get_username(user_id),
+            )
+
+    async def _handle_gcal_releases(self, query, user_id: int):
+        gcal_svc = self._get_gcal_service()
+        if not gcal_svc:
+            await query.edit_message_text("❌ Google Calendar no está configurado.")
+            return
+
+        auth_data = self.db.get_google_auth(user_id)
+        if not auth_data:
+            await query.edit_message_text(
+                "❌ No estás conectado a Google Calendar.\nUsa `/gcal` para conectar.",
+                parse_mode='Markdown'
+            )
+            return
+
+        await query.edit_message_text("🔍 Obteniendo lanzamientos...")
+        releases = await self._fetch_releases(user_id)
+
+        if not releases:
+            await query.edit_message_text("📭 No se encontraron próximos lanzamientos.")
+            return
+
+        await query.edit_message_text(f"☁️ Subiendo {len(releases)} lanzamientos a Google Calendar...")
+
+        import asyncio
+        loop = asyncio.get_event_loop()
+        success, errors, updated_token = await loop.run_in_executor(
+            None,
+            lambda: gcal_svc.push_releases(
+                auth_data['token_data'], releases, auth_data['calendar_id'], self.muspy_service
+            )
+        )
+
+        if updated_token != auth_data['token_data']:
+            self.db.update_google_token(user_id, updated_token)
+
+        msg = (
+            f"📅 *Subida a Google Calendar completada*\n\n"
+            f"✅ Eventos subidos: {success}\n"
+            f"❌ Errores: {errors}"
+        )
+        await query.edit_message_text(msg, parse_mode='Markdown')
 
     # ─── Autenticación ────────────────────────────────────────────────────────
 
