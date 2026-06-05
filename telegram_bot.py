@@ -4581,14 +4581,29 @@ async def radicale_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     cfg = db.get_radicale_config(user['id'])
     if cfg:
+        # Leer estado de auto_push
+        conn = db.get_connection()
+        try:
+            cur = conn.cursor()
+            cur.execute("SELECT radicale_auto_push FROM users WHERE id = ?", (user['id'],))
+            row = cur.fetchone()
+            auto_push = bool(row[0]) if row else False
+        except Exception:
+            auto_push = False
+        finally:
+            conn.close()
+
+        auto_label = "🔔 Auto-push: ON" if auto_push else "🔕 Auto-push: OFF"
         status = (
             f"✅ *Radicale configurado*\n\n"
             f"🌐 URL: `{cfg['url']}`\n"
             f"👤 Usuario: `{cfg['username']}`\n"
-            f"📅 Calendario: `{cfg['calendar']}`\n\n"
+            f"📅 Calendario: `{cfg['calendar']}`\n"
+            f"Auto-push semanal: {'✅ activado' if auto_push else '❌ desactivado'}\n\n"
         )
         keyboard = [
             [InlineKeyboardButton("🔗 Probar conexión", callback_data=f"radicale_test_{user['id']}")],
+            [InlineKeyboardButton(auto_label, callback_data=f"radicale_autopush_{user['id']}")],
             [InlineKeyboardButton("✏️ Reconfigurar", callback_data=f"radicale_setup_{user['id']}")],
             [InlineKeyboardButton("🗑️ Eliminar configuración", callback_data=f"radicale_clear_{user['id']}")],
         ]
@@ -4634,6 +4649,30 @@ async def radicale_callback_handler(update: Update, context: ContextTypes.DEFAUL
     elif action == "clear":
         db.clear_radicale_config(user_id)
         await query.edit_message_text("🗑️ Configuración de Radicale eliminada.")
+
+    elif action == "autopush":
+        conn = db.get_connection()
+        try:
+            cur = conn.cursor()
+            cur.execute("SELECT radicale_auto_push FROM users WHERE id = ?", (user_id,))
+            row = cur.fetchone()
+            current = bool(row[0]) if row else False
+        except Exception:
+            current = False
+        finally:
+            conn.close()
+        new_state = not current
+        db.set_radicale_auto_push(user_id, new_state)
+        state_text = "✅ activado" if new_state else "❌ desactivado"
+        await query.edit_message_text(
+            f"🔔 Auto-push semanal a Radicale: *{state_text}*\n\n"
+            "Cada semana, cuando se genere el resumen de novedades, los conciertos y "
+            "lanzamientos se subirán automáticamente a tu calendario Radicale.\n\n"
+            "El evento usa un identificador fijo, por lo que si el mismo concierto "
+            "aparece varias semanas, solo se actualiza en lugar de duplicarse.\n\n"
+            "Usa `/radicale` para ver el panel completo.",
+            parse_mode='Markdown'
+        )
 
     elif action == "setup":
         context.user_data['radicale_user_id'] = user_id
