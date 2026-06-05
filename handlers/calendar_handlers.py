@@ -527,23 +527,43 @@ class CalendarHandlers:
         status = "✅ Conectado" if connected else "❌ No conectado"
         calendar_id = auth_data['calendar_id'] if connected else 'primary'
 
+        # Leer estado de auto_push directamente de la BD
+        auto_push = False
+        if connected:
+            conn = self.db.get_connection()
+            try:
+                cur = conn.cursor()
+                cur.execute("SELECT auto_push FROM user_google_auth WHERE user_id = ?", (user_id,))
+                row = cur.fetchone()
+                auto_push = bool(row[0]) if row else False
+            except Exception:
+                pass
+            finally:
+                conn.close()
+
+        auto_label = "🔔 Auto-push: ON" if auto_push else "🔕 Auto-push: OFF"
+
         text = (
             "📅 *Google Calendar*\n\n"
             f"Estado: {status}\n"
-            f"Calendario: `{calendar_id}`\n\n"
+            f"Calendario: `{calendar_id}`\n"
         )
         if connected:
-            text += "Elige qué eventos quieres subir a Google Calendar:"
+            text += (
+                f"Auto-push semanal: {'✅ activado' if auto_push else '❌ desactivado'}\n\n"
+                "Elige qué eventos quieres subir a Google Calendar:"
+            )
             keyboard = [
                 [
                     InlineKeyboardButton("🎵 Conciertos → Google", callback_data=f"gcal_concerts_{user_id}"),
                     InlineKeyboardButton("💿 Discos → Google", callback_data=f"gcal_releases_{user_id}"),
                 ],
+                [InlineKeyboardButton(auto_label, callback_data=f"gcal_autopush_{user_id}")],
                 [InlineKeyboardButton("🔌 Desconectar Google", callback_data=f"gcal_disconnect_{user_id}")],
             ]
         else:
             text += (
-                "Conecta tu cuenta de Google para subir eventos directamente a tu calendario.\n\n"
+                "\n\nConecta tu cuenta de Google para subir eventos directamente a tu calendario.\n\n"
                 "ℹ️ Se abrirá una URL de autorización de Google."
             )
             keyboard = [
@@ -579,6 +599,8 @@ class CalendarHandlers:
                 await self._handle_gcal_releases(query, user_id)
             elif action == "disconnect":
                 await self._handle_gcal_disconnect(query, user_id)
+            elif action == "autopush":
+                await self._handle_gcal_toggle_autopush(query, user_id)
             else:
                 await query.edit_message_text("❌ Acción no reconocida.")
         except Exception as e:
@@ -655,6 +677,29 @@ class CalendarHandlers:
             parse_mode='Markdown'
         )
 
+    async def _handle_gcal_toggle_autopush(self, query, user_id: int):
+        conn = self.db.get_connection()
+        try:
+            cur = conn.cursor()
+            cur.execute("SELECT auto_push FROM user_google_auth WHERE user_id = ?", (user_id,))
+            row = cur.fetchone()
+            current = bool(row[0]) if row else False
+        except Exception:
+            current = False
+        finally:
+            conn.close()
+
+        new_state = not current
+        self.db.set_google_auto_push(user_id, new_state)
+        state_text = "✅ activado" if new_state else "❌ desactivado"
+        await query.edit_message_text(
+            f"🔔 Auto-push semanal a Google Calendar: *{state_text}*\n\n"
+            "Cada semana, cuando se genere el resumen de novedades, los conciertos y "
+            "lanzamientos nuevos se añadirán automáticamente a tu calendario de Google.\n\n"
+            "Usa `/gcal` para ver el panel completo.",
+            parse_mode='Markdown'
+        )
+
     async def _handle_gcal_concerts(self, query, user_id: int):
         gcal_svc = self._get_gcal_service()
         if not gcal_svc:
@@ -686,7 +731,7 @@ class CalendarHandlers:
 
         import asyncio
         loop = asyncio.get_event_loop()
-        success, errors, updated_token = await loop.run_in_executor(
+        new_c, skip_c, err_c, updated_token = await loop.run_in_executor(
             None,
             lambda: gcal_svc.push_concerts(
                 auth_data['token_data'], concerts, auth_data['calendar_id']
@@ -698,14 +743,15 @@ class CalendarHandlers:
 
         msg = (
             f"📅 *Subida a Google Calendar completada*\n\n"
-            f"✅ Eventos subidos: {success}\n"
-            f"❌ Errores: {errors}"
+            f"✅ Eventos nuevos: {new_c}\n"
+            f"⏭ Ya existían: {skip_c}\n"
+            f"❌ Errores: {err_c}"
         )
         await query.edit_message_text(msg, parse_mode='Markdown')
-        if success > 0:
+        if new_c > 0:
             await admin_notify.notify_async(
                 "gcal",
-                f"Conciertos → GCal · {success} subidos",
+                f"Conciertos → GCal · {new_c} nuevos",
                 username=self._get_username(user_id),
             )
 
@@ -734,7 +780,7 @@ class CalendarHandlers:
 
         import asyncio
         loop = asyncio.get_event_loop()
-        success, errors, updated_token = await loop.run_in_executor(
+        new_r, skip_r, err_r, updated_token = await loop.run_in_executor(
             None,
             lambda: gcal_svc.push_releases(
                 auth_data['token_data'], releases, auth_data['calendar_id'], self.muspy_service
@@ -746,8 +792,9 @@ class CalendarHandlers:
 
         msg = (
             f"📅 *Subida a Google Calendar completada*\n\n"
-            f"✅ Eventos subidos: {success}\n"
-            f"❌ Errores: {errors}"
+            f"✅ Eventos nuevos: {new_r}\n"
+            f"⏭ Ya existían: {skip_r}\n"
+            f"❌ Errores: {err_r}"
         )
         await query.edit_message_text(msg, parse_mode='Markdown')
 

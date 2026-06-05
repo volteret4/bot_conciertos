@@ -127,8 +127,12 @@ class GoogleCalendarService:
 
     def push_concerts(
         self, token_data: Dict, concerts: List[Dict], calendar_id: str = 'primary'
-    ) -> Tuple[int, int, Dict]:
-        """Sube conciertos a Google Calendar. Devuelve (éxitos, errores, token_actualizado)."""
+    ) -> Tuple[int, int, int, Dict]:
+        """
+        Sube conciertos a Google Calendar.
+        Usa iCalUID basado en concert_hash para evitar duplicados.
+        Devuelve (nuevos, ya_existían, errores, token_actualizado).
+        """
         try:
             from googleapiclient.errors import HttpError
             service, creds = self._get_service(token_data)
@@ -139,28 +143,35 @@ class GoogleCalendarService:
             }
         except Exception as e:
             logger.error(f"Error construyendo servicio de Google Calendar: {e}")
-            return 0, len(concerts), token_data
+            return 0, 0, len(concerts), token_data
 
         from googleapiclient.errors import HttpError
-        success, errors = 0, 0
+        new_count, already_count, errors = 0, 0, 0
         for concert in concerts:
             try:
                 event = _concert_to_gcal_event(concert)
                 service.events().insert(calendarId=calendar_id, body=event).execute()
-                success += 1
+                new_count += 1
             except HttpError as e:
-                logger.error(f"HttpError añadiendo concierto a GCal: {e}")
-                errors += 1
+                if e.resp.status == 409:
+                    already_count += 1
+                else:
+                    logger.error(f"HttpError añadiendo concierto a GCal: {e}")
+                    errors += 1
             except Exception as e:
                 logger.error(f"Error añadiendo concierto a GCal: {e}")
                 errors += 1
-        return success, errors, updated_token
+        return new_count, already_count, errors, updated_token
 
     def push_releases(
         self, token_data: Dict, releases: List[Dict],
         calendar_id: str = 'primary', muspy_service=None
-    ) -> Tuple[int, int, Dict]:
-        """Sube lanzamientos a Google Calendar. Devuelve (éxitos, errores, token_actualizado)."""
+    ) -> Tuple[int, int, int, Dict]:
+        """
+        Sube lanzamientos a Google Calendar.
+        Usa iCalUID basado en mb_release_id para evitar duplicados.
+        Devuelve (nuevos, ya_existían, errores, token_actualizado).
+        """
         try:
             from googleapiclient.errors import HttpError
             service, creds = self._get_service(token_data)
@@ -171,22 +182,32 @@ class GoogleCalendarService:
             }
         except Exception as e:
             logger.error(f"Error construyendo servicio de Google Calendar: {e}")
-            return 0, len(releases), token_data
+            return 0, 0, len(releases), token_data
 
         from googleapiclient.errors import HttpError
-        success, errors = 0, 0
+        new_count, already_count, errors = 0, 0, 0
         for release in releases:
             try:
                 event = _release_to_gcal_event(release, muspy_service)
                 service.events().insert(calendarId=calendar_id, body=event).execute()
-                success += 1
+                new_count += 1
             except HttpError as e:
-                logger.error(f"HttpError añadiendo lanzamiento a GCal: {e}")
-                errors += 1
+                if e.resp.status == 409:
+                    already_count += 1
+                else:
+                    logger.error(f"HttpError añadiendo lanzamiento a GCal: {e}")
+                    errors += 1
             except Exception as e:
                 logger.error(f"Error añadiendo lanzamiento a GCal: {e}")
                 errors += 1
-        return success, errors, updated_token
+        return new_count, already_count, errors, updated_token
+
+
+def _make_ical_uid(prefix: str, key: str) -> str:
+    """Genera un iCalUID determinista para evitar duplicados en Google Calendar."""
+    import hashlib
+    h = hashlib.md5(key.encode()).hexdigest()
+    return f"{prefix}-{h}@tumtumpa.bot"
 
 
 def _concert_to_gcal_event(concert: Dict) -> Dict:
@@ -223,7 +244,14 @@ def _concert_to_gcal_event(concert: Dict) -> Dict:
     if url:
         desc_parts.append(f"Entradas: {url}")
 
+    # iCalUID determinista: usa concert_hash si está disponible, si no lo genera
+    concert_hash = concert.get('concert_hash') or ''
+    if not concert_hash:
+        concert_hash = f"{artist.lower()}-{venue.lower()}-{date_str}"
+    ical_uid = _make_ical_uid('concert', concert_hash)
+
     event: Dict = {
+        'iCalUID': ical_uid,
         'summary': summary,
         'location': location,
         'start': event_start,
@@ -240,17 +268,24 @@ def _release_to_gcal_event(release: Dict, muspy_service=None) -> Dict:
         artist = muspy_service.extract_artist_name(release)
         title = muspy_service.extract_title(release)
         rel_type = muspy_service.extract_release_type(release)
+        mb_id = muspy_service.extract_release_mbid(release) or ''
     else:
         artist = release.get('artist', '')
         title = release.get('title', '')
         rel_type = ''
+        mb_id = release.get('mbid', '')
 
     date_str = (release.get('date', '') or '')[:10]
     summary = f"💿 {artist} — {title}"
     if rel_type:
         summary += f" [{rel_type}]"
 
+    # iCalUID determinista: usa mb_release_id si está disponible
+    uid_key = mb_id or f"{artist.lower()}-{title.lower()}-{date_str}"
+    ical_uid = _make_ical_uid('release', uid_key)
+
     return {
+        'iCalUID': ical_uid,
         'summary': summary,
         'start': {'date': date_str},
         'end': {'date': date_str},

@@ -162,19 +162,42 @@ def _escape(text: str) -> str:
     return str(text).replace('\\', '\\\\').replace('\n', '\\n').replace(',', '\\,').replace(';', '\\;')
 
 
+def _deterministic_uid(prefix: str, key: str) -> str:
+    """UID determinista para evitar duplicados en CalDAV (PUT idempotente)."""
+    import hashlib
+    h = hashlib.md5(key.encode()).hexdigest()
+    return f"{prefix}-{h}@tumtumpa"
+
+
 def _build_event_ics(event: Dict, event_type: str) -> Tuple[str, str]:
     """
     Construye un VCALENDAR con un único VEVENT a partir de un dict de concierto o disco.
+    Usa UID determinista para que subir el mismo evento dos veces solo lo actualice.
 
     Returns:
         (ics_content, uid)
     """
-    uid = str(uuid.uuid4())
     now = datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')
 
     if event_type == 'release':
+        # UID basado en mb_release_id o hash de (artist, title, date)
+        mb_id = event.get('mb_release_id') or event.get('mbid', '')
+        if not mb_id:
+            artist = event.get('artist_name', event.get('artist', ''))
+            title = event.get('release_title', event.get('title', ''))
+            date = event.get('release_date', event.get('date', ''))
+            mb_id = f"{artist.lower()}-{title.lower()}-{date}"
+        uid = _deterministic_uid('rel', mb_id)
         return _build_release_ics(event, uid, now), uid
     else:
+        # UID basado en concert_hash o hash de (artist, venue, date)
+        concert_hash = event.get('concert_hash', '')
+        if not concert_hash:
+            artist = event.get('artist_name', event.get('artist', ''))
+            venue = event.get('venue', '')
+            date = event.get('date', '')
+            concert_hash = f"{artist.lower()}-{venue.lower()}-{date}"
+        uid = _deterministic_uid('con', concert_hash)
         return _build_concert_ics(event, uid, now), uid
 
 

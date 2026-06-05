@@ -43,6 +43,7 @@ class WeeklyNotificationService:
 
         self.ticketmaster = None
         self.muspy_service = None
+        self.gcal_service = None
 
         # Rastrea última semana procesada por usuario
         self._last_notified_week: Dict[int, str] = {}
@@ -77,6 +78,16 @@ class WeeklyNotificationService:
             logger.info("✅ MuspyService inicializado")
         except Exception as e:
             logger.error(f"Error inicializando MuspyService: {e}")
+
+        gcal_id = os.environ.get("GOOGLE_CLIENT_ID")
+        gcal_secret = os.environ.get("GOOGLE_CLIENT_SECRET")
+        if gcal_id and gcal_secret:
+            try:
+                from apis.google_calendar import GoogleCalendarService
+                self.gcal_service = GoogleCalendarService(gcal_id, gcal_secret)
+                logger.info("✅ GoogleCalendarService inicializado")
+            except Exception as e:
+                logger.error(f"Error inicializando GoogleCalendarService: {e}")
 
     # ─── Base de datos ────────────────────────────────────────────────────────
 
@@ -384,7 +395,8 @@ class WeeklyNotificationService:
             cur = conn.cursor()
             artist_names_lower = [n.lower() for n in artist_names]
             cur.execute("""
-                SELECT artist_name, concert_name, venue, city, country, country_code, date, time, url, source
+                SELECT artist_name, concert_name, venue, city, country, country_code,
+                       date, time, url, source, concert_hash
                 FROM concerts
                 WHERE date >= ? AND LOWER(artist_name) IN ({})
                 ORDER BY date
@@ -455,6 +467,15 @@ class WeeklyNotificationService:
             await self.send_message(chat_id, message)
 
         logger.info(f"Resumen semanal enviado a usuario {user_id}")
+
+        all_concerts = [c for cs in concerts_by_artist.values() for c in cs]
+
+        # Auto-push a Google Calendar (best-effort)
+        if self.gcal_service:
+            await self._push_gcal_for_user(user_id, all_concerts, releases)
+
+        # Auto-push a Radicale (best-effort)
+        await self._push_radicale_for_user(user_id, all_concerts, releases)
 
     # ─── Releases: guardar y buscar vídeo ─────────────────────────────────────
 
@@ -530,6 +551,100 @@ class WeeklyNotificationService:
 
         except Exception as e:
             logger.error(f"Error en búsqueda YT para release {release_id}: {e}")
+
+    # ─── Auto-push a Google Calendar ─────────────────────────────────────────
+
+    async def _push_gcal_for_user(self, user_id: int, concerts: List[Dict], releases: List[Dict]):
+        """
+        Empuja conciertos y lanzamientos a Google Calendar para un usuario con auto_push activo.
+        Opera en background — los errores no interrumpen las notificaciones.
+        """
+        if not self.gcal_service:
+            return
+        try:
+            from database import ArtistTrackerDatabase
+            db = ArtistTrackerDatabase(self.db_path)
+            gcal_users = db.get_users_with_gcal_auto_push()
+            user_gcal = next((u for u in gcal_users if u['user_id'] == user_id), None)
+            if not user_gcal:
+                return
+
+            token_data = user_gcal['token_data']
+            calendar_id = user_gcal['calendar_id']
+            svc = self.gcal_service
+            loop = asyncio.get_event_loop()
+
+            if concerts:
+                new_c, skip_c, err_c, token_data = await loop.run_in_executor(
+                    None, lambda: svc.push_concerts(token_data, concerts, calendar_id)
+                )
+                logger.info(
+                    f"[GCal auto-push] usuario {user_id}: conciertos "
+                    f"nuevos={new_c} ya_existían={skip_c} errores={err_c}"
+                )
+
+            if releases:
+                new_r, skip_r, err_r, token_data = await loop.run_in_executor(
+                    None,
+                    lambda: svc.push_releases(token_data, releases, calendar_id, self.muspy_service)
+                )
+                logger.info(
+                    f"[GCal auto-push] usuario {user_id}: lanzamientos "
+                    f"nuevos={new_r} ya_existían={skip_r} errores={err_r}"
+                )
+
+            db.update_google_token(user_id, token_data)
+
+        except Exception as e:
+            logger.error(f"Error en _push_gcal_for_user (usuario {user_id}): {e}")
+
+    # ─── Auto-push a Radicale ────────────────────────────────────────────────
+
+    async def _push_radicale_for_user(self, user_id: int, concerts: List[Dict], releases: List[Dict]):
+        """
+        Empuja conciertos y lanzamientos a Radicale para usuarios con auto_push activo.
+        Opera en background — los errores no interrumpen las notificaciones.
+        El UID del evento es determinista, así que subir el mismo concierto dos veces
+        solo actualiza el evento existente (PUT idempotente en CalDAV).
+        """
+        try:
+            from database import ArtistTrackerDatabase
+            db = ArtistTrackerDatabase(self.db_path)
+            rad_users = db.get_users_with_radicale_auto_push()
+            user_rad = next((u for u in rad_users if u['user_id'] == user_id), None)
+            if not user_rad:
+                return
+
+            from apis.radicale import RadicaleClient
+            client = RadicaleClient(
+                url=user_rad['radicale_url'],
+                username=user_rad['radicale_username'],
+                password=user_rad['radicale_password'],
+                calendar=user_rad['radicale_calendar'],
+            )
+
+            loop = asyncio.get_event_loop()
+
+            if concerts:
+                pushed_c, errors_c, _ = await loop.run_in_executor(
+                    None, lambda: client.push_events_bulk(concerts, event_type='concert')
+                )
+                logger.info(
+                    f"[Radicale auto-push] usuario {user_id}: conciertos "
+                    f"subidos={pushed_c} errores={errors_c}"
+                )
+
+            if releases:
+                pushed_r, errors_r, _ = await loop.run_in_executor(
+                    None, lambda: client.push_events_bulk(releases, event_type='release')
+                )
+                logger.info(
+                    f"[Radicale auto-push] usuario {user_id}: lanzamientos "
+                    f"subidos={pushed_r} errores={errors_r}"
+                )
+
+        except Exception as e:
+            logger.error(f"Error en _push_radicale_for_user (usuario {user_id}): {e}")
 
     # ─── Notificación de día de lanzamiento ────────────────────────────────────
 
