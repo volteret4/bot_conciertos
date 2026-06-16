@@ -4298,13 +4298,14 @@ async def new_albums_command(update: Update, context: ContextTypes.DEFAULT_TYPE)
                 logger.warning(f"Error buscando YT en /new_albums: {e}")
 
     # Formatear respuesta
+    import html as _html
     week_label = f"{'semana' if weeks == 1 else f'{weeks} semanas'}"
-    lines = [f"💿 *Lanzamientos — últimas {week_label}*\n"]
+    lines = [f"💿 <b>Lanzamientos — últimas {week_label}</b>\n"]
 
     for rel in releases:
-        artist = escape_markdown_v2(rel['artist_name'])
-        title = escape_markdown_v2(rel['release_title'])
-        rel_type = rel.get('release_type') or 'Release'
+        artist = _html.escape(rel['artist_name'])
+        title = _html.escape(rel['release_title'])
+        rel_type = _html.escape(rel.get('release_type') or 'Release')
         rel_date = rel.get('release_date') or ''
         yt_url = rel.get('yt_url') or ''
 
@@ -4312,30 +4313,42 @@ async def new_albums_command(update: Update, context: ContextTypes.DEFAULT_TYPE)
             from datetime import datetime as _dt
             formatted_date = _dt.strptime(rel_date[:10], '%Y-%m-%d').strftime('%d/%m/%Y')
         except Exception:
-            formatted_date = rel_date
+            formatted_date = _html.escape(rel_date)
 
-        lines.append(f"🎵 *{artist}* — {title}")
+        lines.append(f"🎵 <b>{artist}</b> — {title}")
         lines.append(f"   📅 {formatted_date} · {rel_type}")
         if yt_url:
-            lines.append(f"   🎬 {yt_url}")
+            lines.append(f"   🎬 {_html.escape(yt_url)}")
         else:
-            lines.append("   🎬 _Sin vídeo disponible_")
+            lines.append("   🎬 <i>Sin vídeo disponible</i>")
         lines.append("")
 
     message = "\n".join(lines).rstrip()
 
-    try:
-        if len(message) > 4000:
+    async def _edit_or_reply_html(text):
+        if len(text) > 4000:
             from concert_search import split_long_message
-            chunks = split_long_message(message)
-            await status.edit_text(chunks[0], parse_mode='Markdown', disable_web_page_preview=True)
+            chunks = split_long_message(text)
+            await status.edit_text(chunks[0], parse_mode='HTML', disable_web_page_preview=True)
             for chunk in chunks[1:]:
-                await update.message.reply_text(chunk, parse_mode='Markdown', disable_web_page_preview=True)
+                await update.message.reply_text(chunk, parse_mode='HTML', disable_web_page_preview=True)
         else:
-            await status.edit_text(message, parse_mode='Markdown', disable_web_page_preview=True)
+            await status.edit_text(text, parse_mode='HTML', disable_web_page_preview=True)
+
+    try:
+        await _edit_or_reply_html(message)
     except Exception as e:
-        logger.warning(f"Error enviando /new_albums con Markdown: {e}")
-        await status.edit_text(message.replace('*', '').replace('_', ''), disable_web_page_preview=True)
+        logger.warning(f"Error enviando /new_albums con HTML: {e}")
+        import re as _re
+        plain = _re.sub(r'<[^>]+>', '', message)
+        if len(plain) > 4000:
+            from concert_search import split_long_message
+            chunks = split_long_message(plain)
+            await status.edit_text(chunks[0], disable_web_page_preview=True)
+            for chunk in chunks[1:]:
+                await update.message.reply_text(chunk, disable_web_page_preview=True)
+        else:
+            await status.edit_text(plain, disable_web_page_preview=True)
 
 
 async def remove_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
