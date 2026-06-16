@@ -2738,6 +2738,27 @@ class ArtistTrackerDatabase:
         finally:
             conn.close()
 
+    def get_release_by_id(self, release_id: int) -> Optional[Dict]:
+        """Devuelve todos los campos de un release por su ID, o None si no existe."""
+        conn = self.get_connection()
+        cursor = conn.cursor()
+        try:
+            cursor.execute("""
+                SELECT id, artist_name, artist_mbid, release_title, release_date,
+                       release_type, mb_release_id, yt_url, yt_query, yt_searched_at
+                FROM releases WHERE id = ?
+            """, (release_id,))
+            row = cursor.fetchone()
+            if not row:
+                return None
+            cols = [d[0] for d in cursor.description]
+            return dict(zip(cols, row))
+        except sqlite3.Error as e:
+            logger.error(f"Error obteniendo release {release_id}: {e}")
+            return None
+        finally:
+            conn.close()
+
     def get_user_releases_for_weeks(self, user_id: int, weeks: int) -> List[Dict]:
         """
         Devuelve los lanzamientos del usuario en las últimas *weeks* semanas.

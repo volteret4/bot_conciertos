@@ -516,7 +516,7 @@ class WeeklyNotificationService:
                 if is_new and db.release_needs_yt_search(release_id):
                     asyncio.create_task(self._search_and_save_yt(
                         release_id, artist_name, release_title,
-                        release_date or '', release_type, artist_mbid,
+                        release_date or '', release_type, artist_mbid, mb_release_id,
                     ))
 
             except Exception as e:
@@ -530,6 +530,7 @@ class WeeklyNotificationService:
         release_date: str,
         release_type: str,
         artist_mbid: Optional[str],
+        mb_release_id: Optional[str] = None,
     ):
         """Busca el vídeo de YouTube en un executor (sin bloquear el loop) y guarda el resultado."""
         try:
@@ -540,7 +541,7 @@ class WeeklyNotificationService:
             url, query = await loop.run_in_executor(
                 None,
                 find_youtube_for_release,
-                artist_name, release_title, release_date, release_type, artist_mbid,
+                artist_name, release_title, release_date, release_type, artist_mbid, mb_release_id,
             )
 
             if url:

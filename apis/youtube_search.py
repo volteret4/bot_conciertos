@@ -2,11 +2,11 @@
 """
 YouTube video search for new releases.
 
-Strategy:
-  - Singles / EPs  → search directly: "{artist} {title} official"
-  - Future albums  → query MusicBrainz for the most recent lead single, then
-                     fall back to "{artist} {album}" if none found.
-  - Past albums    → search "{artist} {title}" directly.
+Strategy (on/after release date only — never before):
+  - Singles / EPs  → "{artist} {title} official"
+  - Albums         → 1) "{artist} {title} full album"
+                     2) MusicBrainz tracklist → first track found on YT
+                     3) "{artist} {title}" generic fallback
 
 Uses yt-dlp (ytsearch) to resolve the final YouTube URL without downloading.
 """
@@ -44,54 +44,43 @@ def search_youtube(query: str) -> Optional[str]:
     return None
 
 
-def get_lead_single_from_mb(artist_mbid: str, before_date: str) -> Optional[str]:
+def get_tracklist_from_mb(mb_release_id: str) -> list:
     """
-    Find the title of the most recent single released by *artist_mbid*
-    strictly before *before_date* (ISO YYYY-MM-DD).
-
-    Respects the MusicBrainz 1-request-per-second rate limit via time.sleep.
-    Returns None if nothing is found or on any error.
+    Fetch track titles for a MusicBrainz release ID.
+    Returns a list of track title strings (empty on failure).
+    Respects the 1 req/sec MB rate limit.
     """
-    if not artist_mbid:
-        return None
+    if not mb_release_id:
+        return []
 
     import requests
 
     try:
         headers = {'User-Agent': 'tumtumpa-bot/1.0 (viciosmusicales@gmail.com)'}
-        params = {
-            'artist': artist_mbid,
-            'type': 'single',
-            'fmt': 'json',
-            'limit': 25,
-        }
         resp = requests.get(
-            'https://musicbrainz.org/ws/2/release-group',
-            params=params,
+            f'https://musicbrainz.org/ws/2/release/{mb_release_id}',
+            params={'inc': 'recordings', 'fmt': 'json'},
             headers=headers,
             timeout=10,
         )
-        time.sleep(1)   # MB rate limit: 1 req/sec
+        time.sleep(1)  # MB rate limit: 1 req/sec
 
         if resp.status_code != 200:
-            logger.warning(f"MB returned {resp.status_code} for artist {artist_mbid}")
-            return None
+            logger.warning(f"MB returned {resp.status_code} for release {mb_release_id}")
+            return []
 
-        rgs = resp.json().get('release-groups', [])
-        candidates = [
-            (rg['first-release-date'], rg.get('title', ''))
-            for rg in rgs
-            if rg.get('first-release-date') and rg['first-release-date'] < before_date
-        ]
-        if not candidates:
-            return None
-
-        candidates.sort(reverse=True)          # most recent first
-        return candidates[0][1] or None
+        data = resp.json()
+        tracks = []
+        for medium in data.get('media', []):
+            for track in medium.get('tracks', []):
+                title = track.get('title') or track.get('recording', {}).get('title', '')
+                if title:
+                    tracks.append(title)
+        return tracks
 
     except Exception as e:
-        logger.warning(f"MB lead-single lookup failed for {artist_mbid}: {e}")
-        return None
+        logger.warning(f"MB tracklist lookup failed for {mb_release_id}: {e}")
+        return []
 
 
 def find_youtube_for_release(
@@ -100,37 +89,51 @@ def find_youtube_for_release(
     release_date: str,
     release_type: str,
     artist_mbid: Optional[str] = None,
+    mb_release_id: Optional[str] = None,
 ) -> tuple:
     """
-    Determine the best YouTube video for a release and return (url, query).
+    Return (url, query) for the best YouTube video for this release.
 
-    - Singles/EPs  → direct search with 'official'.
-    - Future albums → try lead single via MusicBrainz first.
-    - Past albums   → search album title directly.
+    Only searches on/after the release date — returns (None, None) for future releases
+    so stale videos from previous works are never cached.
 
-    Always returns a 2-tuple; url is None when nothing is found.
+    Album search order:
+      1. "{artist} {title} full album"
+      2. MusicBrainz tracklist → first track found on YouTube
+      3. "{artist} {title}" generic fallback
     """
     import datetime
 
-    release_type_lower = (release_type or '').lower()
     today = datetime.date.today().isoformat()
 
-    # Singles and EPs: search directly
+    # Never search before the release date
+    if release_date and release_date > today:
+        return None, None
+
+    release_type_lower = (release_type or '').lower()
+
+    # Singles and EPs: direct "official" search
     if release_type_lower in ('single', 'ep'):
         query = f"{artist_name} {release_title} official"
         return search_youtube(query), query
 
-    # Future albums: try lead single via MusicBrainz
-    is_future = bool(release_date) and release_date > today
-    if is_future and artist_mbid:
-        lead_single = get_lead_single_from_mb(artist_mbid, release_date)
-        if lead_single:
-            query = f"{artist_name} {lead_single} official"
-            url = search_youtube(query)
-            if url:
-                logger.info(f"Found YT via lead single '{lead_single}' for album '{release_title}'")
-                return url, query
+    # Albums: try full album video first
+    query = f"{artist_name} {release_title} full album"
+    url = search_youtube(query)
+    if url:
+        logger.info(f"Found full album YT for '{release_title}': {url}")
+        return url, query
 
-    # Fallback: search for the album/release title
+    # Fall back to MusicBrainz tracklist
+    if mb_release_id:
+        tracks = get_tracklist_from_mb(mb_release_id)
+        for track in tracks[:3]:
+            track_query = f"{artist_name} {track} official"
+            url = search_youtube(track_query)
+            if url:
+                logger.info(f"Found YT via MB track '{track}' for album '{release_title}'")
+                return url, track_query
+
+    # Generic fallback
     query = f"{artist_name} {release_title}"
     return search_youtube(query), query

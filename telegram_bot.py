@@ -4236,119 +4236,175 @@ async def info_page_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
     )
 
 
+_NA_PER_PAGE = 10
+
+
+def _build_new_albums_keyboard(releases: list, page: int, weeks: int) -> InlineKeyboardMarkup:
+    total = len(releases)
+    total_pages = max(1, (total + _NA_PER_PAGE - 1) // _NA_PER_PAGE)
+    page = max(0, min(page, total_pages - 1))
+
+    start = page * _NA_PER_PAGE
+    page_releases = releases[start:start + _NA_PER_PAGE]
+
+    keyboard = []
+    for rel in page_releases:
+        artist = rel['artist_name']
+        title = rel['release_title']
+        rel_date = rel.get('release_date', '')
+        try:
+            from datetime import datetime as _dt
+            short_date = _dt.strptime(rel_date[:10], '%Y-%m-%d').strftime('%d/%m/%y')
+        except Exception:
+            short_date = ''
+
+        label = f"🎵 {artist} — {title}"
+        if short_date:
+            label += f" ({short_date})"
+        if len(label) > 60:
+            label = label[:57] + "…"
+
+        keyboard.append([InlineKeyboardButton(label, callback_data=f"na_yt_{rel['id']}")])
+
+    nav = []
+    if page > 0:
+        nav.append(InlineKeyboardButton("◀", callback_data=f"na_page_{page - 1}_{weeks}"))
+    if total_pages > 1:
+        nav.append(InlineKeyboardButton(f"{page + 1}/{total_pages}", callback_data="na_noop"))
+    if page < total_pages - 1:
+        nav.append(InlineKeyboardButton("▶", callback_data=f"na_page_{page + 1}_{weeks}"))
+    if nav:
+        keyboard.append(nav)
+
+    return InlineKeyboardMarkup(keyboard)
+
+
 async def new_albums_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    """Comando /new_albums [semanas] — muestra lanzamientos recientes con enlace a YouTube."""
+    """Comando /new_albums [semanas] — muestra lanzamientos recientes como botones paginados."""
     user = _get_or_register(update)
     if not user:
         await update.message.reply_text("❌ Error interno. Inténtalo de nuevo.")
         return
 
-    # Parsear argumento de semanas (1-24, por defecto 4)
     weeks = 4
     if context.args:
         try:
-            weeks = int(context.args[0])
-            weeks = max(1, min(24, weeks))
+            weeks = max(1, min(24, int(context.args[0])))
         except ValueError:
-            await update.message.reply_text(
-                "❌ Uso: `/new_albums [semanas]`\nEjemplo: `/new_albums 4`",
-                parse_mode='Markdown'
-            )
+            await update.message.reply_text("❌ Uso: /new_albums [semanas]  — Ejemplo: /new_albums 8")
             return
-
-    status = await update.message.reply_text(
-        f"🔍 Buscando lanzamientos de las últimas {weeks} semana{'s' if weeks != 1 else ''}..."
-    )
 
     releases = db.get_user_releases_for_weeks(user['id'], weeks)
 
     if not releases:
-        await status.edit_text(
-            f"📭 No hay lanzamientos registrados en las últimas {weeks} semana{'s' if weeks != 1 else ''}.\n\n"
-            "Los lanzamientos se guardan automáticamente cada semana al recibir el resumen de Muspy.\n"
-            "Asegúrate de tener Muspy configurado con `/muspy`."
+        await update.message.reply_text(
+            f"📭 No hay lanzamientos registrados en las últimas "
+            f"{weeks} semana{'s' if weeks != 1 else ''}.\n\n"
+            "Los lanzamientos se guardan al recibir el resumen de Muspy.\n"
+            "Asegúrate de tener Muspy configurado con /muspy."
         )
         return
 
-    # Buscar YT en background para los que no tienen URL (máx. 3 para no tardar mucho)
-    needs_search = [r for r in releases if not r.get('yt_url')]
-    if needs_search:
-        await status.edit_text(
-            f"🎬 Buscando {min(len(needs_search), 3)} enlace{'s' if min(len(needs_search), 3) != 1 else ''} de YouTube..."
-        )
-        from apis.youtube_search import find_youtube_for_release
+    week_label = 'semana' if weeks == 1 else f'{weeks} semanas'
+    keyboard = _build_new_albums_keyboard(releases, 0, weeks)
+    await update.message.reply_text(
+        f"💿 <b>Lanzamientos — últimas {week_label}</b> ({len(releases)} encontrados)\n"
+        "Pulsa un álbum para obtener el enlace de YouTube:",
+        parse_mode='HTML',
+        reply_markup=keyboard,
+    )
 
-        searched = 0
-        for rel in needs_search[:3]:
-            try:
-                url, query = await asyncio.get_event_loop().run_in_executor(
-                    None,
-                    find_youtube_for_release,
-                    rel['artist_name'],
-                    rel['release_title'],
-                    rel.get('release_date') or '',
-                    rel.get('release_type') or '',
-                    rel.get('artist_mbid'),
-                )
-                if url:
-                    db.set_release_yt_url(rel['id'], url, query)
-                    rel['yt_url'] = url
-                searched += 1
-            except Exception as e:
-                logger.warning(f"Error buscando YT en /new_albums: {e}")
 
-    # Formatear respuesta
+async def new_albums_page_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Paginación del teclado /new_albums."""
+    query = update.callback_query
+    await query.answer()
+
+    if query.data == "na_noop":
+        return
+
+    user = _get_or_register(update)
+    if not user:
+        return
+
+    parts = query.data.split('_')   # na_page_{page}_{weeks}
+    page = int(parts[2])
+    weeks = int(parts[3])
+
+    releases = db.get_user_releases_for_weeks(user['id'], weeks)
+    if not releases:
+        await query.edit_message_text("📭 No hay lanzamientos.")
+        return
+
+    week_label = 'semana' if weeks == 1 else f'{weeks} semanas'
+    keyboard = _build_new_albums_keyboard(releases, page, weeks)
+    await query.edit_message_text(
+        f"💿 <b>Lanzamientos — últimas {week_label}</b> ({len(releases)} encontrados)\n"
+        "Pulsa un álbum para obtener el enlace de YouTube:",
+        parse_mode='HTML',
+        reply_markup=keyboard,
+    )
+
+
+async def new_albums_yt_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Devuelve el enlace de YouTube al pulsar un botón de lanzamiento."""
     import html as _html
-    week_label = f"{'semana' if weeks == 1 else f'{weeks} semanas'}"
-    lines = [f"💿 <b>Lanzamientos — últimas {week_label}</b>\n"]
+    query = update.callback_query
 
-    for rel in releases:
-        artist = _html.escape(rel['artist_name'])
-        title = _html.escape(rel['release_title'])
-        rel_type = _html.escape(rel.get('release_type') or 'Release')
-        rel_date = rel.get('release_date') or ''
-        yt_url = rel.get('yt_url') or ''
+    release_id = int(query.data.split('_')[2])  # na_yt_{release_id}
+    release = db.get_release_by_id(release_id)
 
+    if not release:
+        await query.answer("❌ Release no encontrado.", show_alert=True)
+        return
+
+    release_date = release.get('release_date') or ''
+    yt_url = release.get('yt_url')
+    yt_searched_at = (release.get('yt_searched_at') or '')[:10]
+
+    # Re-buscar si la URL fue encontrada antes de la fecha de lanzamiento
+    stale = yt_url and release_date and yt_searched_at < release_date
+    needs_search = not yt_url or stale
+
+    if needs_search:
+        await query.answer("🔍 Buscando vídeo…")
+        from apis.youtube_search import find_youtube_for_release
         try:
-            from datetime import datetime as _dt
-            formatted_date = _dt.strptime(rel_date[:10], '%Y-%m-%d').strftime('%d/%m/%Y')
-        except Exception:
-            formatted_date = _html.escape(rel_date)
+            url, search_query = await asyncio.get_event_loop().run_in_executor(
+                None,
+                find_youtube_for_release,
+                release['artist_name'],
+                release['release_title'],
+                release_date,
+                release.get('release_type') or '',
+                release.get('artist_mbid'),
+                release.get('mb_release_id'),
+            )
+        except Exception as e:
+            logger.warning(f"Error buscando YT para release {release_id}: {e}")
+            url, search_query = None, None
 
-        lines.append(f"🎵 <b>{artist}</b> — {title}")
-        lines.append(f"   📅 {formatted_date} · {rel_type}")
-        if yt_url:
-            lines.append(f"   🎬 {_html.escape(yt_url)}")
+        if url:
+            db.set_release_yt_url(release_id, url, search_query)
+            yt_url = url
         else:
-            lines.append("   🎬 <i>Sin vídeo disponible</i>")
-        lines.append("")
+            yt_url = None
+    else:
+        await query.answer()
 
-    message = "\n".join(lines).rstrip()
+    artist = _html.escape(release['artist_name'])
+    title = _html.escape(release['release_title'])
 
-    async def _edit_or_reply_html(text):
-        if len(text) > 4000:
-            from concert_search import split_long_message
-            chunks = split_long_message(text)
-            await status.edit_text(chunks[0], parse_mode='HTML', disable_web_page_preview=True)
-            for chunk in chunks[1:]:
-                await update.message.reply_text(chunk, parse_mode='HTML', disable_web_page_preview=True)
-        else:
-            await status.edit_text(text, parse_mode='HTML', disable_web_page_preview=True)
-
-    try:
-        await _edit_or_reply_html(message)
-    except Exception as e:
-        logger.warning(f"Error enviando /new_albums con HTML: {e}")
-        import re as _re
-        plain = _re.sub(r'<[^>]+>', '', message)
-        if len(plain) > 4000:
-            from concert_search import split_long_message
-            chunks = split_long_message(plain)
-            await status.edit_text(chunks[0], disable_web_page_preview=True)
-            for chunk in chunks[1:]:
-                await update.message.reply_text(chunk, disable_web_page_preview=True)
-        else:
-            await status.edit_text(plain, disable_web_page_preview=True)
+    if yt_url:
+        await query.message.reply_text(
+            f"🎬 <b>{artist}</b> — {title}\n{yt_url}",
+            parse_mode='HTML',
+        )
+    else:
+        await query.message.reply_text(
+            f"❌ No se encontró vídeo para <b>{artist}</b> — {title}",
+            parse_mode='HTML',
+        )
 
 
 async def remove_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -6036,6 +6092,8 @@ def main():
     application.add_handler(CommandHandler("info", info_command))
     application.add_handler(CommandHandler("remove", remove_command))
     application.add_handler(CommandHandler("new_albums", new_albums_command))
+    application.add_handler(CallbackQueryHandler(new_albums_page_callback, pattern="^na_page_|^na_noop$"))
+    application.add_handler(CallbackQueryHandler(new_albums_yt_callback, pattern="^na_yt_"))
     application.add_handler(CommandHandler("notify", notify_command))
     application.add_handler(CommandHandler("playlist", playlist_command))
 
