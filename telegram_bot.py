@@ -1906,6 +1906,37 @@ async def handle_text_input(update: Update, context: ContextTypes.DEFAULT_TYPE):
     logger.info(f"DEBUG: handle_text_input llamado con user_data: {context.user_data}")
     services = get_services()
 
+    # PRIORIDAD 0: Wizard /setup — hora de notificación
+    if 'setup_awaiting_time' in context.user_data:
+        setup_data = context.user_data['setup_awaiting_time']
+        user_id = setup_data['user_id']
+        day = setup_data['day']
+        time_str = update.message.text.strip()
+
+        try:
+            datetime.strptime(time_str, '%H:%M')
+        except ValueError:
+            await update.message.reply_text(
+                "❌ Formato inválido. Escribe la hora como <code>HH:MM</code>, por ejemplo <code>09:00</code>",
+                parse_mode='HTML',
+            )
+            return
+
+        del context.user_data['setup_awaiting_time']
+        user_services.set_notification_time(user_id, time_str)
+        user_services.set_notification_enabled(user_id, True)
+
+        await update.message.reply_text(
+            f"✅ Notificaciones: <b>{_NOTIFY_DAYS[day].capitalize()}</b> a las <b>{time_str}</b>",
+            parse_mode='HTML',
+        )
+        await update.message.reply_text(
+            _SETUP_OPTIONALS_TEXT,
+            parse_mode='HTML',
+            reply_markup=_setup_optionals_keyboard(),
+        )
+        return
+
     # PRIORIDAD 1: Cambio de hora de notificación
     if 'waiting_for_time' in context.user_data:
         user_id = context.user_data['waiting_for_time']
@@ -4708,7 +4739,7 @@ async def setup_notify_onoff_callback(update: Update, context: ContextTypes.DEFA
             parse_mode='HTML',
             reply_markup=_setup_optionals_keyboard(),
         )
-        return SETUP_OPTIONALS
+        return ConversationHandler.END
 
     # Sí → pedir día
     await query.edit_message_text(
@@ -4730,7 +4761,8 @@ async def setup_notify_day_callback(update: Update, context: ContextTypes.DEFAUL
         return ConversationHandler.END
 
     user_services.set_notification_day(user['id'], day)
-    context.user_data['setup_notify_day'] = day
+    # Guardar en user_data para que handle_text_input lo recoja
+    context.user_data['setup_awaiting_time'] = {'user_id': user['id'], 'day': day}
 
     await query.edit_message_text(
         f"✅ Día: <b>{_NOTIFY_DAYS[day].capitalize()}</b>\n\n"
@@ -4738,39 +4770,7 @@ async def setup_notify_day_callback(update: Update, context: ContextTypes.DEFAUL
         "Escribe la hora en formato 24h, por ejemplo <code>09:00</code> o <code>20:30</code>",
         parse_mode='HTML',
     )
-    return SETUP_NOTIFY_TIME
-
-
-async def setup_notify_time_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    time_str = update.message.text.strip()
-    user = _get_or_register(update)
-    if not user:
-        await update.message.reply_text("❌ Error interno.")
-        return ConversationHandler.END
-
-    try:
-        datetime.strptime(time_str, '%H:%M')
-    except ValueError:
-        await update.message.reply_text(
-            "❌ Formato inválido. Escribe la hora como <code>HH:MM</code>, por ejemplo <code>09:00</code>",
-            parse_mode='HTML',
-        )
-        return SETUP_NOTIFY_TIME
-
-    user_services.set_notification_time(user['id'], time_str)
-    user_services.set_notification_enabled(user['id'], True)
-
-    day = context.user_data.get('setup_notify_day', 0)
-    await update.message.reply_text(
-        f"✅ Notificaciones configuradas: <b>{_NOTIFY_DAYS[day].capitalize()}</b> a las <b>{time_str}</b>",
-        parse_mode='HTML',
-    )
-    await update.message.reply_text(
-        _SETUP_OPTIONALS_TEXT,
-        parse_mode='HTML',
-        reply_markup=_setup_optionals_keyboard(),
-    )
-    return SETUP_OPTIONALS
+    return ConversationHandler.END
 
 
 async def setup_optionals_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -6378,18 +6378,14 @@ def main():
             SETUP_NOTIFY_DAY: [
                 CallbackQueryHandler(setup_notify_day_callback, pattern="^setup_day_"),
             ],
-            SETUP_NOTIFY_TIME: [
-                MessageHandler(filters.TEXT & ~filters.COMMAND, setup_notify_time_handler),
-            ],
-            SETUP_OPTIONALS: [
-                CallbackQueryHandler(setup_optionals_callback, pattern="^setup_opt_|^setup_done$"),
-            ],
         },
         fallbacks=[CommandHandler('cancel', setup_cancel)],
         per_chat=True,
         per_user=True,
     )
     application.add_handler(setup_conv_handler)
+    # Opcionales del setup: handler global (no necesita ConversationHandler)
+    application.add_handler(CallbackQueryHandler(setup_optionals_callback, pattern="^setup_opt_|^setup_done$"))
 
     # ConversationHandler para login de Muspy
     application.add_handler(muspy_login_conv_handler)
