@@ -154,6 +154,22 @@ class UserServices:
         """day: 0=lunes … 6=domingo"""
         return self.db.set_notification_day(user_id, day)
 
+    def set_notification_enabled(self, user_id: int, enabled: bool) -> bool:
+        conn = self.db.get_connection()
+        cursor = conn.cursor()
+        try:
+            cursor.execute(
+                "UPDATE users SET notification_enabled = ? WHERE id = ?",
+                (bool(enabled), user_id)
+            )
+            conn.commit()
+            return cursor.rowcount > 0
+        except Exception as e:
+            logger.error(f"Error estableciendo notificaciones: {e}")
+            return False
+        finally:
+            conn.close()
+
     def toggle_notifications(self, user_id: int) -> bool:
         conn = self.db.get_connection()
         cursor = conn.cursor()

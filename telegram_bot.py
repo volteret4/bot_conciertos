@@ -4557,6 +4557,249 @@ async def notify_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
             await update.message.reply_text("❌ Error al establecer la hora de notificación.")
 
 
+# ─── Estados para ConversationHandler de /setup ───────────────────────────────
+SETUP_COUNTRY, SETUP_NOTIFY_ONOFF, SETUP_NOTIFY_DAY, SETUP_NOTIFY_TIME, SETUP_OPTIONALS = range(20, 25)
+
+_SETUP_OPTIONALS_TEXT = (
+    "⚙️ <b>Servicios opcionales</b>\n\n"
+    "Cada servicio añade más funciones al bot. Pulsa para ver qué hace cada uno.\n"
+    "Puedes configurarlos ahora o más adelante."
+)
+
+_SETUP_DONE_TEXT = (
+    "✅ <b>¡Configuración completada!</b>\n\n"
+    "<b>Cómo empezar:</b>\n"
+    "• <code>/addartist Radiohead</code> — añadir un artista\n"
+    "• <code>/search</code> — buscar conciertos de tus artistas\n"
+    "• <code>/new_albums</code> — ver nuevos lanzamientos\n"
+    "• <code>/cal</code> — exportar eventos al calendario\n\n"
+    "<b>Más opciones:</b>\n"
+    "• <code>/addcountry</code> — añadir más países\n"
+    "• <code>/notify</code> — cambiar hora/día de notificaciones\n"
+    "• <code>/muspy</code> — conectar Muspy (lanzamientos)\n"
+    "• <code>/lastfm</code> — importar artistas desde Last.fm\n"
+    "• <code>/gcal</code> — conectar Google Calendar\n"
+    "• <code>/radicale</code> — conectar servidor CalDAV\n\n"
+    "Usa <code>/commands</code> para ver todos los comandos disponibles."
+)
+
+_SETUP_OPT_DESCRIPTIONS = {
+    "lastfm": (
+        "🎵 <b>Last.fm</b>\n\n"
+        "Importa automáticamente tus artistas más escuchados en Last.fm directamente al bot, "
+        "sin tener que añadirlos uno a uno.\n\n"
+        "Configúralo con /lastfm"
+    ),
+    "muspy": (
+        "💿 <b>Muspy</b>\n\n"
+        "Muspy rastrea nuevos álbumes, singles y EPs de tus artistas. "
+        "El bot lo usa para enviarte notificaciones semanales de lanzamientos y "
+        "para el comando /new_albums.\n\n"
+        "Configúralo con /muspy"
+    ),
+    "gcal": (
+        "📅 <b>Google Calendar</b>\n\n"
+        "Exporta conciertos y lanzamientos directamente a tu Google Calendar. "
+        "Puedes activar la sincronización automática al recibir las notificaciones semanales.\n\n"
+        "Configúralo con /gcal"
+    ),
+    "radicale": (
+        "📡 <b>Radicale (CalDAV)</b>\n\n"
+        "Si tienes un servidor Radicale propio con URL pública (accesible desde Internet), "
+        "el bot puede sincronizar conciertos y lanzamientos con él como eventos de calendario.\n\n"
+        "⚠️ Requiere una URL pública — no funciona en servidores locales sin acceso externo.\n\n"
+        "Configúralo con /radicale"
+    ),
+}
+
+
+def _setup_country_keyboard() -> InlineKeyboardMarkup:
+    buttons = [
+        InlineKeyboardButton(label, callback_data=f"setup_country_{code}")
+        for label, code in _COUNTRY_PICKER
+    ]
+    rows = [buttons[i:i + 2] for i in range(0, len(buttons), 2)]
+    return InlineKeyboardMarkup(rows)
+
+
+def _setup_notify_onoff_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup([
+        [InlineKeyboardButton("✅ Sí, quiero notificaciones", callback_data="setup_notify_yes")],
+        [InlineKeyboardButton("❌ No, por ahora no", callback_data="setup_notify_no")],
+    ])
+
+
+def _setup_day_keyboard() -> InlineKeyboardMarkup:
+    days = _NOTIFY_DAYS
+    row1 = [InlineKeyboardButton(days[i].capitalize(), callback_data=f"setup_day_{i}") for i in range(4)]
+    row2 = [InlineKeyboardButton(days[i].capitalize(), callback_data=f"setup_day_{i}") for i in range(4, 7)]
+    return InlineKeyboardMarkup([row1, row2])
+
+
+def _setup_optionals_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup([
+        [InlineKeyboardButton("🎵 Last.fm", callback_data="setup_opt_lastfm"),
+         InlineKeyboardButton("💿 Muspy", callback_data="setup_opt_muspy")],
+        [InlineKeyboardButton("📅 Google Calendar", callback_data="setup_opt_gcal"),
+         InlineKeyboardButton("📡 Radicale CalDAV", callback_data="setup_opt_radicale")],
+        [InlineKeyboardButton("✅ ¡Listo, empezar a usar el bot!", callback_data="setup_done")],
+    ])
+
+
+async def setup_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Wizard de configuración inicial /setup."""
+    user = await _get_or_register_notify(update)
+    if not user:
+        await update.message.reply_text("❌ Error interno. Inténtalo de nuevo.")
+        return ConversationHandler.END
+
+    name = user.get('username') or (update.effective_user.first_name if update.effective_user else "")
+
+    await update.message.reply_text(
+        f"👋 Hola, <b>{name}</b>! Vamos a configurar <b>tumtumpá</b> en un momento.\n\n"
+        "Primero, <b>¿en qué país buscamos conciertos?</b>\n"
+        "<i>Podrás añadir más países después con /addcountry</i>",
+        parse_mode='HTML',
+        reply_markup=_setup_country_keyboard(),
+    )
+    return SETUP_COUNTRY
+
+
+async def setup_country_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    await query.answer()
+
+    code = query.data.replace("setup_country_", "").upper()
+    user = _get_or_register(update)
+    if not user:
+        await query.edit_message_text("❌ Error interno.")
+        return ConversationHandler.END
+
+    label = next((l for l, c in _COUNTRY_PICKER if c == code), code)
+    user_services.set_country_filter(user['id'], code)
+
+    await query.edit_message_text(
+        f"✅ País configurado: <b>{label}</b>\n\n"
+        "🔔 <b>¿Quieres recibir un resumen semanal</b> con conciertos y nuevos álbumes de tus artistas?",
+        parse_mode='HTML',
+        reply_markup=_setup_notify_onoff_keyboard(),
+    )
+    return SETUP_NOTIFY_ONOFF
+
+
+async def setup_notify_onoff_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    await query.answer()
+
+    user = _get_or_register(update)
+    if not user:
+        await query.edit_message_text("❌ Error interno.")
+        return ConversationHandler.END
+
+    if query.data == "setup_notify_no":
+        user_services.set_notification_enabled(user['id'], False)
+        await query.edit_message_text(
+            "🔕 Notificaciones desactivadas.\n"
+            "<i>Puedes activarlas cuando quieras con /notify toggle</i>",
+            parse_mode='HTML',
+        )
+        await query.message.reply_text(
+            _SETUP_OPTIONALS_TEXT,
+            parse_mode='HTML',
+            reply_markup=_setup_optionals_keyboard(),
+        )
+        return SETUP_OPTIONALS
+
+    # Sí → pedir día
+    await query.edit_message_text(
+        "📅 <b>¿Qué día de la semana quieres recibirlo?</b>",
+        parse_mode='HTML',
+        reply_markup=_setup_day_keyboard(),
+    )
+    return SETUP_NOTIFY_DAY
+
+
+async def setup_notify_day_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    await query.answer()
+
+    day = int(query.data.replace("setup_day_", ""))
+    user = _get_or_register(update)
+    if not user:
+        await query.edit_message_text("❌ Error interno.")
+        return ConversationHandler.END
+
+    user_services.set_notification_day(user['id'], day)
+    context.user_data['setup_notify_day'] = day
+
+    await query.edit_message_text(
+        f"✅ Día: <b>{_NOTIFY_DAYS[day].capitalize()}</b>\n\n"
+        "🕐 <b>¿A qué hora?</b>\n"
+        "Escribe la hora en formato 24h, por ejemplo <code>09:00</code> o <code>20:30</code>",
+        parse_mode='HTML',
+    )
+    return SETUP_NOTIFY_TIME
+
+
+async def setup_notify_time_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    time_str = update.message.text.strip()
+    user = _get_or_register(update)
+    if not user:
+        await update.message.reply_text("❌ Error interno.")
+        return ConversationHandler.END
+
+    try:
+        datetime.strptime(time_str, '%H:%M')
+    except ValueError:
+        await update.message.reply_text(
+            "❌ Formato inválido. Escribe la hora como <code>HH:MM</code>, por ejemplo <code>09:00</code>",
+            parse_mode='HTML',
+        )
+        return SETUP_NOTIFY_TIME
+
+    user_services.set_notification_time(user['id'], time_str)
+    user_services.set_notification_enabled(user['id'], True)
+
+    day = context.user_data.get('setup_notify_day', 0)
+    await update.message.reply_text(
+        f"✅ Notificaciones configuradas: <b>{_NOTIFY_DAYS[day].capitalize()}</b> a las <b>{time_str}</b>",
+        parse_mode='HTML',
+    )
+    await update.message.reply_text(
+        _SETUP_OPTIONALS_TEXT,
+        parse_mode='HTML',
+        reply_markup=_setup_optionals_keyboard(),
+    )
+    return SETUP_OPTIONALS
+
+
+async def setup_optionals_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+
+    if query.data == "setup_done":
+        await query.answer()
+        await query.edit_message_reply_markup(reply_markup=None)
+        await query.message.reply_text(_SETUP_DONE_TEXT, parse_mode='HTML')
+        return ConversationHandler.END
+
+    service = query.data.replace("setup_opt_", "")
+    desc = _SETUP_OPT_DESCRIPTIONS.get(service, "")
+    if desc:
+        await query.answer()
+        await query.message.reply_text(desc, parse_mode='HTML')
+    else:
+        await query.answer("Servicio no reconocido.", show_alert=True)
+
+    return SETUP_OPTIONALS
+
+
+async def setup_cancel(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await update.message.reply_text(
+        "Setup cancelado. Puedes ejecutarlo de nuevo con /setup cuando quieras."
+    )
+    return ConversationHandler.END
+
+
 # ─── Estados para ConversationHandler de Radicale ─────────────────────────────
 RADICALE_URL, RADICALE_USERNAME, RADICALE_PASSWORD, RADICALE_CALENDAR = range(10, 14)
 
@@ -6121,6 +6364,32 @@ def main():
     application.add_handler(CommandHandler("radicale", radicale_command))
     application.add_handler(CommandHandler("lastfm", lastfm_command))
     application.add_handler(CallbackQueryHandler(lastfm_callback_handler, pattern="^lastfm_"))
+
+    # ConversationHandler de /setup (wizard de configuración inicial)
+    setup_conv_handler = ConversationHandler(
+        entry_points=[CommandHandler('setup', setup_command)],
+        states={
+            SETUP_COUNTRY: [
+                CallbackQueryHandler(setup_country_callback, pattern="^setup_country_"),
+            ],
+            SETUP_NOTIFY_ONOFF: [
+                CallbackQueryHandler(setup_notify_onoff_callback, pattern="^setup_notify_"),
+            ],
+            SETUP_NOTIFY_DAY: [
+                CallbackQueryHandler(setup_notify_day_callback, pattern="^setup_day_"),
+            ],
+            SETUP_NOTIFY_TIME: [
+                MessageHandler(filters.TEXT & ~filters.COMMAND, setup_notify_time_handler),
+            ],
+            SETUP_OPTIONALS: [
+                CallbackQueryHandler(setup_optionals_callback, pattern="^setup_opt_|^setup_done$"),
+            ],
+        },
+        fallbacks=[CommandHandler('cancel', setup_cancel)],
+        per_chat=True,
+        per_user=True,
+    )
+    application.add_handler(setup_conv_handler)
 
     # ConversationHandler para login de Muspy
     application.add_handler(muspy_login_conv_handler)
