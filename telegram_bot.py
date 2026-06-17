@@ -3857,18 +3857,20 @@ async def commands(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "/addartist <artista> — Seguir un artista\n"
         "/cargar\\_txt — Carga masiva desde archivo .txt\n"
         "/remove <artista> — Dejar de seguir un artista\n"
-        "/list — Ver artistas seguidos\n\n"
+        "/list — Ver artistas seguidos\n"
+        "/info <artista> — Info detallada de un artista\n\n"
 
         "🔍 *Conciertos:*\n"
         "/search — Buscar conciertos en Ticketmaster (actualiza BD)\n"
         "/show — Ver conciertos guardados\n"
         "/searchartist <artista> — Buscar conciertos de un artista\n"
-        "/showartist <artista> — Ver conciertos guardados de un artista\n\n"
+        "/showartist <artista> — Ver conciertos guardados de un artista\n"
+        "/ticketmaster — Panel de gestión de Ticketmaster\n\n"
 
-        "💿 *Lanzamientos (Muspy):*\n"
-        "/mostrar — Ver próximos lanzamientos de tus artistas\n"
+        "💿 *Lanzamientos:*\n"
+        "/new\\_albums — Ver nuevos lanzamientos de tus artistas\n"
         "/muspy — Conectar/gestionar tu cuenta de Muspy\n"
-        "/artistas — Artistas seguidos en Muspy\n\n"
+        "/playlist — Generar playlist de lanzamientos recientes\n\n"
 
         "📥 *Importar artistas:*\n"
         "/lastfm — Importar desde tus más escuchados en Last.fm\n\n"
@@ -3881,6 +3883,7 @@ async def commands(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
         "📅 *Calendario:*\n"
         "/cal — Generar ICS o enviar eventos a Radicale\n"
+        "/gcal — Conectar Google Calendar\n"
         "/radicale — Configurar servidor CalDAV Radicale\n\n"
     )
 
@@ -3890,7 +3893,8 @@ async def commands(update: Update, context: ContextTypes.DEFAULT_TYPE):
             "/addcountry <país> — Añadir país\n"
             "/removecountry <código> — Eliminar país\n"
             "/mycountries — Ver países configurados\n"
-            "/listcountries — Ver países disponibles\n\n"
+            "/listcountries — Ver países disponibles\n"
+            "/refreshcountries — Refrescar lista de países\n\n"
         )
     else:
         help_text += (
@@ -3900,7 +3904,9 @@ async def commands(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     help_text += (
         "⚙️ *Otros:*\n"
+        "/setup — Wizard de configuración inicial\n"
         "/config — Ver tu configuración actual\n"
+        "/adduser — Registrarse en el bot\n"
         "/help — Ayuda rápida"
     )
 
