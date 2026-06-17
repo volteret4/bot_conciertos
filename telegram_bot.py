@@ -3855,6 +3855,7 @@ async def commands(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
         "🎤 *Artistas:*\n"
         "/addartist <artista> — Seguir un artista\n"
+        "/cargar\\_txt — Carga masiva desde archivo .txt\n"
         "/remove <artista> — Dejar de seguir un artista\n"
         "/list — Ver artistas seguidos\n\n"
 
@@ -4025,6 +4026,149 @@ async def addartist_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     # Múltiples candidatos: mostrar opciones
     await show_artist_candidates(update, candidates, artist_name, status_message)
+
+
+async def cargar_txt_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Comando /cargar_txt — carga masiva de artistas desde un archivo .txt"""
+    user = _get_or_register(update)
+    if not user:
+        await update.message.reply_text("❌ Error interno. Inténtalo de nuevo.")
+        return
+
+    doc = update.message.document
+    if not doc:
+        await update.message.reply_text(
+            "📄 *Carga masiva de artistas*\n\n"
+            "Envía un archivo `.txt` con un artista por línea.\n"
+            "Puedes adjuntarlo con `/cargar_txt` como descripción del archivo.",
+            parse_mode='Markdown'
+        )
+        return
+
+    if not doc.file_name or not doc.file_name.lower().endswith('.txt'):
+        await update.message.reply_text("❌ Solo se aceptan archivos `.txt`.", parse_mode='Markdown')
+        return
+
+    status = await update.message.reply_text("⏳ Descargando archivo...")
+
+    try:
+        tg_file = await doc.get_file()
+        data = await tg_file.download_as_bytearray()
+        text = data.decode('utf-8', errors='replace')
+    except Exception as e:
+        logger.error(f"Error descargando archivo txt: {e}")
+        await status.edit_text("❌ No se pudo descargar el archivo.")
+        return
+
+    lines = [l.strip() for l in text.splitlines() if l.strip()]
+    if not lines:
+        await status.edit_text("❌ El archivo está vacío o no contiene nombres de artistas.")
+        return
+
+    await status.edit_text(f"🔍 Procesando {len(lines)} artistas...")
+
+    added = []
+    already = []
+    not_found = []
+    ambiguous = []
+    errors = []
+
+    for i, artist_name in enumerate(lines):
+        if i > 0 and i % 10 == 0:
+            try:
+                await status.edit_text(f"🔍 Procesando {i}/{len(lines)}...")
+            except Exception:
+                pass
+
+        try:
+            candidates = db.search_artist_candidates(artist_name)
+        except Exception as e:
+            logger.error(f"Error buscando '{artist_name}': {e}")
+            errors.append(artist_name)
+            continue
+
+        if not candidates:
+            not_found.append(artist_name)
+            continue
+
+        selected = None
+        if len(candidates) == 1:
+            selected = candidates[0]
+        else:
+            best = candidates[0]
+            second = candidates[1]
+            if best['score'] >= 95 and best['score'] - second['score'] >= 20:
+                selected = best
+            elif best['score'] >= 90 and best['name'].lower() == artist_name.lower():
+                selected = best
+
+        if not selected:
+            names = [c['name'] for c in candidates[:3]]
+            ambiguous.append(f"{artist_name} → {', '.join(names)}")
+            continue
+
+        try:
+            artist_id = db.create_artist_from_candidate(selected)
+            if not artist_id:
+                errors.append(artist_name)
+                continue
+
+            was_new = db.add_followed_artist(user['id'], artist_id)
+            if was_new:
+                added.append(selected['name'])
+            else:
+                already.append(selected['name'])
+        except Exception as e:
+            logger.error(f"Error añadiendo '{artist_name}': {e}")
+            errors.append(artist_name)
+
+        await asyncio.sleep(0.3)
+
+    report = ["📄 *Resultado de carga masiva*\n"]
+
+    if added:
+        report.append(f"✅ *Añadidos ({len(added)}):*")
+        for name in added:
+            report.append(f"  • {name}")
+        report.append("")
+
+    if already:
+        report.append(f"ℹ️ *Ya seguidos ({len(already)}):*")
+        for name in already:
+            report.append(f"  • {name}")
+        report.append("")
+
+    if ambiguous:
+        report.append(f"⚠️ *Ambiguos ({len(ambiguous)}):*")
+        for item in ambiguous:
+            report.append(f"  • {item}")
+        report.append("_Usa `/addartist` para añadirlos manualmente._")
+        report.append("")
+
+    if not_found:
+        report.append(f"❌ *No encontrados ({len(not_found)}):*")
+        for name in not_found:
+            report.append(f"  • {name}")
+        report.append("")
+
+    if errors:
+        report.append(f"💥 *Errores ({len(errors)}):*")
+        for name in errors:
+            report.append(f"  • {name}")
+
+    result_text = "\n".join(report)
+    if len(result_text) > 4000:
+        result_text = result_text[:3950] + "\n\n_…lista truncada_"
+
+    await status.edit_text(result_text, parse_mode='Markdown')
+
+    if added:
+        await admin_notify.notify_async(
+            "carga_masiva",
+            f"{len(added)} artistas añadidos desde TXT",
+            username=user.get('username', str(update.effective_chat.id)),
+        )
+
 
 async def show_artist_candidates(update: Update, candidates: List[Dict], original_query: str, message_to_edit):
     """Muestra una lista de candidatos para que el usuario elija"""
@@ -6331,6 +6475,7 @@ def main():
     application.add_handler(CommandHandler("commands", commands_command))
     application.add_handler(CommandHandler("adduser", adduser_command))
     application.add_handler(CommandHandler("addartist", addartist_command))
+    application.add_handler(CommandHandler("cargar_txt", cargar_txt_command))
     application.add_handler(CommandHandler("list", list_command))
     application.add_handler(CommandHandler("info", info_command))
     application.add_handler(CommandHandler("remove", remove_command))
@@ -6425,6 +6570,9 @@ def main():
 
     # Handler genérico de configuración (DEBE IR AL FINAL de los callbacks)
     application.add_handler(CallbackQueryHandler(config_callback_handler, pattern="^(config_|notif_|country_|service_|artist_)"))
+
+    # Handler de documentos .txt para carga masiva de artistas
+    application.add_handler(MessageHandler(filters.Document.FileExtension("txt"), cargar_txt_command))
 
     # Handler de texto (DEBE SER EL ÚLTIMO)
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_text_input))
