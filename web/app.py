@@ -20,6 +20,117 @@ LASTFM_API_KEY = os.environ.get('LASTFM_API_KEY', '')
 
 app = Flask(__name__)
 
+# ── Panel de configuración (⚙) ───────────────────────────────────────────────
+# Mismo patrón que el resto de apps. NOTA: _env (arriba) apunta a
+# parent.parent, que en Docker no resuelve a nada real — Dockerfile.web solo
+# copia web/ a /app, así que "la carpeta padre" dentro del contenedor es "/"
+# y ese .env nunca existió ahí (por eso el loader manual de arriba es en la
+# práctica un no-op en Docker; las vars llegan igualmente vía env_file). El
+# panel usa su propia ruta, correcta y montada de verdad: /app/.env.
+SETTINGS_ENV_PATH = Path(__file__).parent / '.env'
+SETTINGS_PASSWORD = os.environ.get("SETTINGS_PASSWORD", "")
+VARS_SPEC = [
+    {"name": "TELEGRAM_BOT_TOKEN", "secret": True, "help": "Token del bot de Telegram principal"},
+    {"name": "TELEGRAM_BOT_CONCIERTOS", "secret": True, "help": "Token del bot de Telegram de conciertos (alternativa a TELEGRAM_BOT_TOKEN)"},
+    {"name": "ADMIN_BOT_TOKEN", "secret": True, "help": "Token del bot de notificaciones a admin"},
+    {"name": "ADMIN_CHAT_ID", "secret": False, "help": "Chat ID de Telegram del admin"},
+    {"name": "TICKETMASTER_API_KEY", "secret": True, "help": "API key de Ticketmaster"},
+    {"name": "SPOTIFY_CLIENT_ID", "secret": False, "help": "Client ID de Spotify"},
+    {"name": "SPOTIFY_CLIENT_SECRET", "secret": True, "help": "Client secret de Spotify"},
+    {"name": "GOOGLE_CLIENT_ID", "secret": False, "help": "Client ID de Google"},
+    {"name": "GOOGLE_CLIENT_SECRET", "secret": True, "help": "Client secret de Google"},
+    {"name": "COUNTRY_CITY_API_KEY", "secret": True, "help": "API key de geolocalización país/ciudad"},
+    {"name": "LASTFM_API_KEY", "secret": True, "help": "API key de Last.fm"},
+    {"name": "CACHE_DIR", "secret": False, "help": "Directorio de caché"},
+]
+_HAS_SECRETS = any(v.get("secret") for v in VARS_SPEC)
+
+
+def _read_env_file(path):
+    values = {}
+    if not os.path.exists(path):
+        return values
+    with open(path, "r", encoding="utf-8") as f:
+        for line in f:
+            s = line.strip()
+            if not s or s.startswith("#") or "=" not in s:
+                continue
+            k, v = s.split("=", 1)
+            v = v.strip()
+            if len(v) >= 2 and v[0] == v[-1] and v[0] in ('"', "'"):
+                v = v[1:-1]
+            values[k.strip()] = v
+    return values
+
+
+def _write_env_file(path, updates):
+    lines = []
+    if os.path.exists(path):
+        with open(path, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+    seen = set()
+    out = []
+    for line in lines:
+        s = line.strip()
+        if s and not s.startswith("#") and "=" in s:
+            k = s.split("=", 1)[0].strip()
+            if k in updates:
+                out.append(f"{k}={updates[k]}\n")
+                seen.add(k)
+                continue
+        out.append(line)
+    for k, v in updates.items():
+        if k not in seen:
+            if out and not out[-1].endswith("\n"):
+                out[-1] += "\n"
+            out.append(f"{k}={v}\n")
+    with open(path, "w", encoding="utf-8") as f:
+        f.writelines(out)
+
+
+def _current_value(spec):
+    file_vals = _read_env_file(SETTINGS_ENV_PATH)
+    if spec["name"] in file_vals:
+        return file_vals[spec["name"]]
+    return os.environ.get(spec["name"], spec.get("default", ""))
+
+
+def _check_auth(password):
+    if not SETTINGS_PASSWORD:
+        return not _HAS_SECRETS
+    return password == SETTINGS_PASSWORD
+
+
+@app.route("/api/settings", methods=["POST"])
+def api_settings():
+    d = request.get_json(silent=True) or {}
+    password = d.get("password") or ""
+    requires = bool(SETTINGS_PASSWORD) or _HAS_SECRETS
+    authorized = _check_auth(password)
+    if requires and not authorized:
+        error = "Contraseña incorrecta" if password else None
+        if not SETTINGS_PASSWORD:
+            error = "Este servicio tiene credenciales pero no hay SETTINGS_PASSWORD configurada. Añádela al .env y reinicia el contenedor."
+        return jsonify({"requires_password": True, "authorized": False, "error": error})
+    vars_out = [
+        {"name": v["name"], "value": _current_value(v), "secret": v["secret"], "help": v.get("help", "")}
+        for v in VARS_SPEC
+    ]
+    return jsonify({"requires_password": requires, "authorized": True, "vars": vars_out})
+
+
+@app.route("/api/settings/save", methods=["POST"])
+def api_settings_save():
+    d = request.get_json(silent=True) or {}
+    if not _check_auth(d.get("password") or ""):
+        return jsonify({"error": "Contraseña incorrecta"}), 403
+    known = {v["name"] for v in VARS_SPEC}
+    updates = {k: v for k, v in (d.get("values") or {}).items() if k in known}
+    if not updates:
+        return jsonify({"error": "Nada que guardar"}), 400
+    _write_env_file(SETTINGS_ENV_PATH, updates)
+    return jsonify({"ok": True, "message": "Guardado. Reinicia el/los contenedor(es) (bot_conciertos y bot_conciertos_web) para aplicar los cambios."})
+
 
 def get_db():
     conn = sqlite3.connect(DB_PATH)
