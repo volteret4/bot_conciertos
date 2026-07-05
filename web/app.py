@@ -15,7 +15,7 @@ if _env.exists():
             k, _, v = line.partition('=')
             os.environ.setdefault(k.strip(), v.strip())
 
-DB_PATH = os.environ.get('DB_PATH', str(Path(__file__).parent.parent / 'artist_tracker.db'))
+DB_PATH = os.environ.get('DB_PATH', str(Path(__file__).parent / 'artist_tracker.db'))
 LASTFM_API_KEY = os.environ.get('LASTFM_API_KEY', '')
 
 app = Flask(__name__)
