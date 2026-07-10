@@ -528,13 +528,56 @@ body.panel-open #sidePanel { transform: translateX(0); }
 }
 .placeholder .icon { font-size: 3rem; display: block; margin-bottom: 12px; }
 
-/* ── RESPONSIVE ── */
-@media (max-width: 600px) {
+/* ── RESPONSIVE ──
+   Two breakpoints: ~768px (tablet) and ~480px (phone). Both are non-exclusive
+   max-width queries, so on a phone (<480px) the 768px rules apply too and the
+   480px rules layer on top / override where needed. */
+@media (max-width: 768px) {
+  :root { --panel-w: min(420px, 92vw); }
+
+  header {
+    flex-wrap: wrap;
+    row-gap: 8px;
+    padding: 10px 16px;
+  }
+  .user-select-wrap { order: 3; flex-basis: 100%; }
+
+  #mainContent { padding: 20px 16px; max-width: 100%; }
+
+  /* The side panel is already an off-canvas overlay (slide-in + dim
+     backdrop) on all sizes, so on tablet/phone don't also squeeze
+     #mainContent to make room beside it — that just re-creates a cramped
+     side-by-side layout. Let the panel overlay on top instead. */
+  body.panel-open #mainContent { padding-right: 16px; }
+
+  /* Tap targets ~44px on touch-sized screens */
+  select#userSelect { min-height: 44px; padding: 10px 12px; }
+  .view-toggle button { min-height: 44px; padding: 10px 16px; }
+  .cal-nav button { width: 44px; height: 44px; }
+  .panel-close { width: 44px; height: 44px; }
+  .event-card { min-height: 44px; }
+}
+
+@media (max-width: 480px) {
   :root { --panel-w: 100vw; }
-  header { flex-wrap: wrap; padding: 10px 14px; }
+
+  header { padding: 10px 12px; gap: 10px; }
+  .logo { font-size: 1.2rem; }
+
   #mainContent { padding: 16px 12px; }
   body.panel-open #mainContent { padding-right: 12px; }
-  .event-card { grid-template-columns: 44px auto 1fr; gap: 10px; }
+
+  .event-card { grid-template-columns: 44px auto 1fr; gap: 8px; padding: 10px 12px; }
+  .day-num { font-size: 1.2rem; }
+  .badge { font-size: 0.65rem; padding: 3px 7px; }
+
+  .cal-grid { gap: 3px; }
+  .cal-cell { min-height: 64px; padding: 6px 4px; }
+  .cal-day-header { font-size: 0.62rem; padding: 4px 0; }
+  .cal-event-label { font-size: 0.6rem; }
+
+  .panel-hero { height: 160px; }
+  .panel-artist-name { font-size: 1.15rem; }
 }
 </style>
 <link rel="stylesheet" href="{{ url_for('static', filename='theme-palettes.css') }}">
