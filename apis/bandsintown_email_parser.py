@@ -43,31 +43,30 @@ def parse_bandsintown_email(html: str) -> dict | None:
     if cal is None:
         return None
 
-    date_ps = []
-    node = cal
-    for _ in range(6):
-        node = node.find_next("p")
-        if node is None:
-            break
-        date_ps.append(node.get_text(strip=True))
-        if len(date_ps) == 2:
-            break
+    # Los <p> de fecha/hora (o recinto/ciudad) viven en el <td> que sigue al
+    # icono, NUNCA se buscan con find_next("p") suelto: si a un evento le
+    # falta la hora (o la ciudad), ese find_next cruzaría al siguiente
+    # bloque del correo (el recinto, o un concierto "Promoted" ajeno) y
+    # devolvería basura en vez de None.
+    date_td = cal.find_next("td")
+    date_ps = [p.get_text(strip=True) for p in date_td.find_all("p")] if date_td else []
     date_str = date_ps[0] if date_ps else None
-    time_str = date_ps[1] if len(date_ps) > 1 else None
+    time_str = None
+    if len(date_ps) > 1:
+        candidate = date_ps[1]
+        if re.match(r"^\d{1,2}:\d{2}\s*[AP]M$", candidate, re.IGNORECASE):
+            time_str = candidate
+        else:
+            # No es una hora real (p.ej. año suelto "2026" en eventos de
+            # varios días tipo "Jun 12-13") -- se pliega en la fecha.
+            date_str = f"{date_str} {candidate}"
 
     pin = soup.find("img", alt="Pin-Icon")
     venue = city_country = None
     is_livestream = pin is None
     if pin is not None:
-        loc_ps = []
-        node = pin
-        for _ in range(6):
-            node = node.find_next("p")
-            if node is None:
-                break
-            loc_ps.append(node.get_text(strip=True))
-            if len(loc_ps) == 2:
-                break
+        loc_td = pin.find_next("td")
+        loc_ps = [p.get_text(strip=True) for p in loc_td.find_all("p")] if loc_td else []
         venue = loc_ps[0] if loc_ps else None
         city_country = loc_ps[1] if len(loc_ps) > 1 else None
     else:

@@ -83,17 +83,27 @@ def normalize_date_time(raw_date, raw_time, reference=None):
         return None, None
     day = int(m.group(2))
 
-    candidates = []
-    for year in (reference.year - 1, reference.year, reference.year + 1):
+    # Algunos formatos (rango de varios días, fechas lejanas) sí traen año
+    # explícito en el propio texto -- usarlo directo en vez de adivinar.
+    ym = re.search(r"\b(20\d{2})\b", raw_date or "")
+    if ym:
         try:
-            candidates.append(date(year, month, day))
+            chosen = date(int(ym.group(1)), month, day)
         except ValueError:
-            continue
-    if not candidates:
-        return None, None
-    future_or_recent = [d for d in candidates if (d - reference).days >= -30]
-    chosen = min(future_or_recent or candidates, key=lambda d: abs((d - reference).days))
-    date_str = chosen.isoformat()
+            return None, None
+        date_str = chosen.isoformat()
+    else:
+        candidates = []
+        for year in (reference.year - 1, reference.year, reference.year + 1):
+            try:
+                candidates.append(date(year, month, day))
+            except ValueError:
+                continue
+        if not candidates:
+            return None, None
+        future_or_recent = [d for d in candidates if (d - reference).days >= -30]
+        chosen = min(future_or_recent or candidates, key=lambda d: abs((d - reference).days))
+        date_str = chosen.isoformat()
 
     time_str = None
     tm = re.search(r"(\d{1,2}):(\d{2})\s*(AM|PM)?", raw_time or "", re.IGNORECASE)
