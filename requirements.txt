@@ -1,6 +1,7 @@
 python-telegram-bot>=20.0
 requests
 python-dotenv
+beautifulsoup4
 musicbrainzngs
 yt-dlp
 google-auth>=2.0
