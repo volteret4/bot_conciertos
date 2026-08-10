@@ -118,19 +118,27 @@ def normalize_date_time(raw_date, raw_time, reference=None):
     return date_str, time_str
 
 
+def _escape_md(text):
+    """admin_notify.notify() envía con parse_mode=Markdown (legacy) — un
+    '_'/'*'/'`'/'[' suelto (frecuentísimo en las URL de tracking de
+    Sendgrid, o en nombres de artista/recinto) revienta el parseo de
+    entidades con HTTP 400 y el correo se queda sin marcar como leído."""
+    return re.sub(r"([_*`\[])", r"\\\1", text or "")
+
+
 def format_telegram_message(concert):
     kind = "📡 Livestream/anuncio" if concert["is_livestream"] else "🎫 Nuevo concierto"
-    lines = [f"{kind}: {concert['artist']}"]
-    lines.append(f"📅 {concert['raw_date']}" + (f" {concert['raw_time']}" if concert["raw_time"] else ""))
+    lines = [f"{kind}: {_escape_md(concert['artist'])}"]
+    lines.append(f"📅 {_escape_md(concert['raw_date'])}" + (f" {_escape_md(concert['raw_time'])}" if concert["raw_time"] else ""))
     if concert["venue"]:
-        loc = concert["venue"]
+        loc = _escape_md(concert["venue"])
         if concert["city"]:
-            loc += f" — {concert['city']}"
+            loc += f" — {_escape_md(concert['city'])}"
             if concert["country"]:
-                loc += f", {concert['country']}"
+                loc += f", {_escape_md(concert['country'])}"
         lines.append(f"📍 {loc}")
     if concert["url"]:
-        lines.append(concert["url"])
+        lines.append(_escape_md(concert["url"]))
     return "\n".join(lines)
 
 
