@@ -229,7 +229,11 @@ def main():
             ids = data[0].split()
             log.info("%s: %d correo(s) nuevo(s)", kw, len(ids))
             for msg_id in ids:
-                typ, msgdata = m.fetch(msg_id, "(RFC822)")
+                # BODY.PEEK[] (a diferencia de RFC822/BODY[]) no marca
+                # \Seen como efecto secundario del fetch -- sin esto, un
+                # fallo de envío (p.ej. el HTTP 400 de Markdown ya visto)
+                # marca el correo como leído igualmente y se pierde el evento.
+                typ, msgdata = m.fetch(msg_id, "(BODY.PEEK[])")
                 if typ != "OK" or not msgdata or not msgdata[0]:
                     log.warning("No se pudo leer el mensaje %s", msg_id)
                     continue
