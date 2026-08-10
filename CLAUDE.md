@@ -84,3 +84,54 @@ File-based JSON cache in `./cache/`:
 - `ticketmaster/`: per-artist per-country, 24h TTL
 - `lastfm/`: per-username per-period, 24h TTL
 - MusicBrainz: single persistent JSON file, 30-day TTL
+
+## `email_concerts.py` — conciertos por correo (Bandsintown/Dice.fm/RA)
+
+Tercer proceso independiente (además de `telegram_bot.py`/`notifications.py`),
+pensado para ejecutarse periódicamente vía Ofelia. Revisa el `INBOX` del
+mismo buzón de disroot que usa `bandcamp_imap`/`discogs_wantlist_notifier`
+en busca de correos de notificación de conciertos de artistas seguidos, y
+por cada uno nuevo (`UNSEEN`):
+
+1. Envía un aviso por Telegram vía `admin_notify.notify()` (el bot admin ya
+   configurado en este mismo `.env` — no el bot de usuarios del propio
+   `telegram_bot.py`).
+2. Si el evento tiene recinto físico (no es un livestream/anuncio), lo sube
+   al calendario "conciertos" de Radicale con `RadicaleClient.push_events_bulk()`
+   — el mismo mecanismo que usa `/cal` para Ticketmaster, pero con
+   credenciales propias en `.env` (`RADICALE_URL`/`RADICALE_USERNAME`/
+   `RADICALE_PASSWORD`/`RADICALE_CALENDAR`), no las de la tabla `users`
+   (que a día de escribir esto no tiene ningún usuario con Radicale
+   configurado vía `/radicale`).
+3. Marca el correo como leído — única deduplicación, igual que
+   `discogs_wantlist_notifier`.
+
+**Solo Bandsintown está implementado** (`apis/bandsintown_email_parser.py`).
+Dice.fm y Resident Advisor no están enganchados: a fecha de creación de
+este script, el buzón no tiene ningún correo de notificación de conciertos
+de ninguno de los dos (0 de Dice.fm, y el único de RA es un aviso de login,
+no de concierto) — sin una muestra real de HTML no hay nada que parsear.
+Cuando lleguen correos reales de esas fuentes, añadir su parser a
+`SOURCE_PARSERS` en `email_concerts.py` siguiendo el mismo patrón que
+Bandsintown (devolver un dict con `artist`, `raw_date`, `raw_time`, `venue`,
+`city`, `country`, `is_livestream`, `url`, `source`).
+
+Variables de entorno adicionales (mismo `.env` del bot):
+```
+IMAP_SERVER=...
+IMAP_PORT=993
+IMAP_EMAIL=...
+IMAP_PASSWORD=...
+RADICALE_URL=...
+RADICALE_USERNAME=...
+RADICALE_PASSWORD=...
+RADICALE_CALENDAR=...   # UUID del calendario "conciertos", no el nombre
+```
+Si `RADICALE_PASSWORD` (o cualquiera de las otras tres) no está configurada,
+el push a Radicale se omite con un aviso en el log, pero el correo se sigue
+marcando como leído y el aviso de Telegram se envía igual — el fallo de
+Radicale nunca bloquea la notificación.
+
+```bash
+python email_concerts.py --dry-run   # imprime por stdout, no envía/marca nada
+```

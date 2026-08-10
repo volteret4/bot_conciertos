@@ -127,6 +127,7 @@ def _event_icon(event: str) -> str:
         "notificaciones":       "🔔",
         "busqueda":             "🔍",
         "calendario":           "📆",
+        "concierto_email":      "🎫",
         "error":                "❌",
     }
     return icons.get(event, "ℹ️")
