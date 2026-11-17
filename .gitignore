@@ -3,3 +3,7 @@ __pycache__/
 .env
 artist_tracker.db
 cache
+datos/
+apis/.env
+.cache
+cache copy/

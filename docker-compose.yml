@@ -1,0 +1,52 @@
+# Instalación por separado. Dentro de REPEAT-ONE se usa el docker-compose.yml de REPEAT-ONE.
+services:
+  bot-conciertos:
+    build: .
+    restart: unless-stopped
+    user: "${UID_GID:-1000:1000}"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      - HOME=/tmp
+      - PYTHONDONTWRITEBYTECODE=1
+      - DB_PATH=/app/artist_tracker.db
+    volumes:
+      - .:/app
+    labels:
+      ofelia.enabled: "true"
+      repeat-one.ofelia: "bot_conciertos"
+      ofelia.job-exec.bot-conciertos-email-scan.schedule: "0 0 */2 * * *"
+      ofelia.job-exec.bot-conciertos-email-scan.command: "nice -n 19 ionice -c 3 python3 email_concerts.py"
+
+  bot-conciertos-web:
+    build:
+      context: .
+      dockerfile: Dockerfile.web
+    restart: unless-stopped
+    user: "${UID_GID:-1000:1000}"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      - HOME=/tmp
+      - PYTHONDONTWRITEBYTECODE=1
+      - DB_PATH=/bot/artist_tracker.db
+    volumes:
+      - .:/bot
+    ports:
+      - "${PUERTO_BOT_CONCIERTOS_WEB:-8747}:8747"
+
+  # Ofelia lanza los trabajos programados de las etiquetas ofelia.job-exec.* de arriba
+  # (los mismos horarios que en REPEAT-ONE). Solo ve los contenedores de este repo.
+  # Si no quieres actualizaciones automáticas: docker compose stop ofelia
+  ofelia:
+    image: mcuadros/ofelia:latest
+    restart: unless-stopped
+    command: daemon --docker --docker-filter=label=repeat-one.ofelia=bot_conciertos
+    environment:
+      - TZ=${TZ:-Europe/Madrid}
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    depends_on:
+      - bot-conciertos
