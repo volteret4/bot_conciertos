@@ -11,6 +11,7 @@ Strategy (on/after release date only — never before):
 Uses yt-dlp (ytsearch) to resolve the final YouTube URL without downloading.
 """
 
+import os
 import time
 import logging
 from typing import Optional
@@ -56,7 +57,7 @@ def get_tracklist_from_mb(mb_release_id: str) -> list:
     import requests
 
     try:
-        headers = {'User-Agent': 'tumtumpa-bot/1.0 (contacto@example.org)'}
+        headers = {'User-Agent': f"tumtumpa-bot/1.0 ({os.environ.get('MB_CONTACT', 'https://github.com/volteret4/bot_conciertos')})"}
         resp = requests.get(
             f'https://musicbrainz.org/ws/2/release/{mb_release_id}',
             params={'inc': 'recordings', 'fmt': 'json'},

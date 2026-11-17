@@ -32,7 +32,7 @@ DISCOGS_TOKEN = os.getenv('DISCOGS_TOKEN', '')
 _LASTFM_BASE = 'http://ws.audioscrobbler.com/2.0/'
 _GENIUS_BASE = 'https://api.genius.com'
 _DISCOGS_BASE = 'https://api.discogs.com'
-_DISCOGS_UA = 'tumtumpa-bot/1.0 +contacto@example.org'
+_DISCOGS_UA = f"tumtumpa-bot/1.0 +{os.environ.get('MB_CONTACT', 'https://github.com/volteret4/bot_conciertos')}"
 
 # ── helpers ──────────────────────────────────────────────────────────────────
 
@@ -106,7 +106,7 @@ def _get_mb_release_groups(mbid: str, page: int, per_page: int = 8) -> Tuple[Lis
     """Fetch release groups from MusicBrainz for an artist."""
     try:
         import musicbrainzngs
-        musicbrainzngs.set_useragent('tumtumpa-bot', '1.0', 'contacto@example.org')
+        musicbrainzngs.set_useragent('tumtumpa-bot', '1.0', os.environ.get('MB_CONTACT', 'https://github.com/volteret4/bot_conciertos'))
         result = musicbrainzngs.get_artist_by_id(mbid, includes=['release-groups'])
         rgs = result['artist'].get('release-group-list', [])
         rgs.sort(key=lambda x: x.get('first-release-date', '0000'), reverse=True)

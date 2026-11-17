@@ -6403,7 +6403,7 @@ def main():
     user_agent = {
         "app": "MusicLiveShowsTrackerBot",
         "version": "0.1",
-        "contact": "contacto@example.org"
+        "contact": os.environ.get("MB_CONTACT", "https://github.com/volteret4/bot_conciertos")
     }
 
     try:
